@@ -20,3 +20,5 @@ C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.pdb
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.Form2.resources
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.Form3.resources
+C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.UnitLocationControl.resources
+C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.UnitTeamControl.resources

@@ -66,6 +66,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitLocationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnitLocationControl.Designer.cs">
+      <DependentUpon>UnitLocationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitTeamControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnitTeamControl.Designer.cs">
+      <DependentUpon>UnitTeamControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +97,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UnitLocationControl.resx">
+      <DependentUpon>UnitLocationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitTeamControl.resx">
+      <DependentUpon>UnitTeamControl.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
