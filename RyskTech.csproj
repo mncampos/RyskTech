@@ -58,11 +58,17 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="ShowTableForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="ShowTableForm.Designer.cs">
+      <DependentUpon>ShowTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostAdvanced.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostAdvanced.Designer.cs">
+      <DependentUpon>MostAdvanced.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,14 +84,32 @@
     <Compile Include="UnitTeamControl.Designer.cs">
       <DependentUpon>UnitTeamControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="UnitHistoryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnitHistoryControl.Designer.cs">
+      <DependentUpon>UnitHistoryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitMethodologyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnitMethodologyControl.Designer.cs">
+      <DependentUpon>UnitMethodologyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitStructureControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnitStructureControl.Designer.cs">
+      <DependentUpon>UnitStructureControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="MostAdvanced.resx">
+      <DependentUpon>MostAdvanced.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -97,11 +121,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ShowTableForm.resx">
+      <DependentUpon>ShowTableForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UnitLocationControl.resx">
       <DependentUpon>UnitLocationControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UnitStructureControl.resx">
+      <DependentUpon>UnitStructureControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UnitTeamControl.resx">
       <DependentUpon>UnitTeamControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitHistoryControl.resx">
+      <DependentUpon>UnitHistoryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitMethodologyControl.resx">
+      <DependentUpon>UnitMethodologyControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -118,6 +154,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Etapa1_Classificacao_de_risco_ANVISA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\default_method.txt" />
+    <Content Include="Resources\Quadro2.png" />
+    <Content Include="Resources\Quadro3.png" />
+    <Content Include="Resources\Quadro4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

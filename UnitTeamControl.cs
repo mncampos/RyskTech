@@ -16,5 +16,25 @@ namespace RyskTech
         {
             InitializeComponent();
         }
+
+        private void OtherTextBox_Leave(object sender, EventArgs e)
+        {
+            if (OtherTextBox.Text == "")
+            {
+                OtherTextBox.Text = "Outros...";
+
+                OtherTextBox.ForeColor = Color.Silver;
+            }
+        }
+
+        private void OtherTextBox_Enter(object sender, EventArgs e)
+        {
+            if (OtherTextBox.Text == "Outros...")
+            {
+                OtherTextBox.Text = "";
+
+                OtherTextBox.ForeColor = Color.Black;
+            }
+        }
     }
 }

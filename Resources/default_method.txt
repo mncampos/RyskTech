@@ -1,0 +1,19 @@
+	Na análise foram considerados os ricos provocados por agentes químicos, físicos e biológicos. Complementarmente, também foram identificados os riscos de acidente por agêntes mecânicos.
+  
+	De acordo com a NR-9 do Ministério do Trabalho e Emprego (MTE, 1994), consideram-se agentes químicos substâncias, compostos ou produtos que possam penetrar no orgnismo pela via respiratória, nas formas de poeiras, fumo, névoas, neblinas, gases ou vapores, ou que pela natureza da atividade de exposição, possam ter contato ou ser abosrvidos pelo organismo através da pele ou por ingestão. Agentes físicos referem-se às diversas formas de energia a que possam os trabalhadores estar expostos, como ruídos, vibrações, pressões anormais, temperaturas extremas, ultrassom, infrassom, radiações ionizantes e radiações não ionizantes (MTE, 1994). Finalmente, consideram-se agentes biológicos bactérias, fungos, parasitas, protozoários, vírus, entre outros. A classificação de risco de agentes biológicos é dada pela RDC nº 222 (ANVISA, 2018), conforme o Quadro 1.
+
+	Já os riscos mecânicos (de acidente) são aqueles que demandam contato físico direto com as pessoas para manifestar a sua nocividade. Caracterizam-se por atuar em pontos específicos do ambiente de trabalho; agir, em geral, sobre usuários diretos do agente gerador de risco; e ocasionar, muitas vezes, lesões agudas e imediatas (MATTOS; MÁSCULLO, 2011, p. 37). Compreendem o arranjo físico inadequado, máquinas e equipamentos sem proteção, ferramentas inadequadas ou defeituosas, iluminação incorreta, problemas elétricos, probabilidade de incêndio e/ou explosão, armazenamento impróprio, animais peçonhentos, entre outros (ROJAS, 2015, p. 112).
+	
+	A APR desenvolvida, considerando os diferentes agentes, seguiu as diretrizes do Manual de Análise de Riscos Industriais da FEPAM (FEPAM, 2016) e a Norma CETESB P4.261 (CETESB, 2011). Na metodologia da APR, os cenários de acidentes devem ser classificados em categorias de severidade, as quais fornecem uma indicação qualitativa do grau de severidade das consequências de cada cenário identificado. No quadro 2 são apresentadas as categorias de severidade utilizadas.
+	
+	Ainda de acordo com a metodologia da APR, os cenários de acidentes são classificados em categorias de frequência, as quais fornecem uma indicação qualitativa da frequência esperada de ocorrência de cada cenário identificado, conforme exemplofica o Quadro 3.
+	
+	As categorias de frequência e severidade podem ser combinadas para gerarem-se categorias de risco. Utilizam-se cinco cores para classificação de acordo com o risco:
+	
+	1. Desprezível (amarelo)
+	2. Menor (verde)
+	3. Moderado (marrom)
+	4. Sério (roxo)
+	5. Crítico (vermelho)
+	
+	O quadro 4 Apresenta as categorias de risco mencionadas.

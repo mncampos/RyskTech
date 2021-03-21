@@ -44,7 +44,7 @@ namespace RyskTech
             }
             catch (Exception ex)
             {
-                //nil
+                MessageBox.Show(ex.StackTrace);
             }
         }
 
