@@ -526,12 +526,11 @@ namespace RyskTech
             // concludeButton
             // 
             this.concludeButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.concludeButton.Enabled = false;
             this.concludeButton.Location = new System.Drawing.Point(239, 3);
             this.concludeButton.Name = "concludeButton";
             this.concludeButton.Size = new System.Drawing.Size(113, 29);
             this.concludeButton.TabIndex = 0;
-            this.concludeButton.Text = "\'\'\'\'";
+            this.concludeButton.Text = "Conluir e enviar";
             this.concludeButton.UseVisualStyleBackColor = true;
             this.concludeButton.Click += new System.EventHandler(this.concludeButton_Click);
             // 

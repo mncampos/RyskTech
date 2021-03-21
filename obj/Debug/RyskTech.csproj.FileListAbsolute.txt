@@ -26,3 +26,11 @@ C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.MostAdvanced.resources
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.ShowTableForm.resources
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.UnitStructureControl.resources
+C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\bin\Debug\Syncfusion.Compression.Base.dll
+C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\bin\Debug\Syncfusion.DocIO.Base.dll
+C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\bin\Debug\Syncfusion.OfficeChart.Base.dll
+C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\bin\Debug\Syncfusion.Compression.Base.xml
+C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\bin\Debug\Syncfusion.DocIO.Base.xml
+C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\bin\Debug\Syncfusion.OfficeChart.Base.xml
+C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.csproj.CopyComplete

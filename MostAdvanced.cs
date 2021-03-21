@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+// From the nuget package
+using Syncfusion.DocIO.DLS;
 
 namespace RyskTech
 {
@@ -39,11 +42,25 @@ namespace RyskTech
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            
         }
 
         private void concludeButton_Click(object sender, EventArgs e)
         {
             // TODO Pegar todas as info de todas as abas, juntar e gerar o docx
+           
+            // Testing
+            using (WordDocument document = new WordDocument())
+            {
+                // Add section and paragraph for testing
+                document.EnsureMinimal();
+
+                // Append some text to the document
+                document.LastParagraph.AppendText("Testing");
+
+                // Save
+                document.Save("output.docx");
+            }
         }
 
         private void showTable1Button_Click(object sender, EventArgs e)
