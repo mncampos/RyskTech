@@ -1,15 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
-// From the nuget package
-using Syncfusion.DocIO.DLS;
 
 namespace RyskTech
 {
@@ -22,7 +13,7 @@ namespace RyskTech
 
         private void UnitNameTextBox_Enter(object sender, EventArgs e)
         {
-            if (UnitNameTextBox.Text == "Nome da sua unidade")
+            if (UnitNameTextBox.Text == "Nome da sua unidade/Laboratório/Espaço/Setor")
             {
                 UnitNameTextBox.Text = "";
 
@@ -34,7 +25,7 @@ namespace RyskTech
         {
             if (UnitNameTextBox.Text == "")
             {
-                UnitNameTextBox.Text = "Nome da sua unidade";
+                UnitNameTextBox.Text = "Nome da sua unidade/Laboratório/Espaço/Setor";
 
                 UnitNameTextBox.ForeColor = Color.Silver;
             }
@@ -42,25 +33,21 @@ namespace RyskTech
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            
+            // Try to load last version of the document
+            if (APR.LoadPrevious())
+            {
+                // TODO If possible, fill the form fields with the information in that version
+            }
+
         }
 
         private void concludeButton_Click(object sender, EventArgs e)
         {
-            // TODO Pegar todas as info de todas as abas, juntar e gerar o docx
-           
-            // Testing
-            using (WordDocument document = new WordDocument())
-            {
-                // Add section and paragraph for testing
-                document.EnsureMinimal();
+            // Generate document
+            APR.GenerateDocument();
 
-                // Append some text to the document
-                document.LastParagraph.AppendText("Testing");
-
-                // Save
-                document.Save("output.docx");
-            }
+            // Show success message
+            MessageBox.Show("APR Gerada com sucesso!");
         }
 
         private void showTable1Button_Click(object sender, EventArgs e)
@@ -85,6 +72,11 @@ namespace RyskTech
         {
             ShowTableForm table1 = new ShowTableForm("../../Resources/Quadro4.png", "Quadro 4");
             table1.ShowDialog();
+        }
+
+        private void UnitNameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

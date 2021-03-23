@@ -39,6 +39,10 @@ namespace RyskTech
             this.phys_checkbox = new System.Windows.Forms.CheckBox();
             this.chem_checkbox = new System.Windows.Forms.CheckBox();
             this.introdution_groupbox = new System.Windows.Forms.GroupBox();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.IntroductionLabelEnd = new System.Windows.Forms.Label();
             this.UnitNameTextBox = new System.Windows.Forms.TextBox();
             this.IntroductionLabelStart = new System.Windows.Forms.Label();
@@ -201,6 +205,10 @@ namespace RyskTech
             // introdution_groupbox
             // 
             this.tableLayoutPanel3.SetColumnSpan(this.introdution_groupbox, 2);
+            this.introdution_groupbox.Controls.Add(this.radioButton4);
+            this.introdution_groupbox.Controls.Add(this.radioButton3);
+            this.introdution_groupbox.Controls.Add(this.radioButton2);
+            this.introdution_groupbox.Controls.Add(this.radioButton1);
             this.introdution_groupbox.Controls.Add(this.IntroductionLabelEnd);
             this.introdution_groupbox.Controls.Add(this.UnitNameTextBox);
             this.introdution_groupbox.Controls.Add(this.IntroductionLabelStart);
@@ -212,11 +220,59 @@ namespace RyskTech
             this.introdution_groupbox.TabStop = false;
             this.introdution_groupbox.Text = "Introdução";
             // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton4.Location = new System.Drawing.Point(472, 47);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(60, 21);
+            this.radioButton4.TabIndex = 6;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Setor";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.Location = new System.Drawing.Point(300, 47);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(73, 21);
+            this.radioButton3.TabIndex = 5;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Espaço";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(139, 47);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(99, 21);
+            this.radioButton2.TabIndex = 4;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Laboratório";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(17, 47);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(79, 21);
+            this.radioButton1.TabIndex = 3;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Unidade";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // IntroductionLabelEnd
             // 
             this.IntroductionLabelEnd.AutoSize = true;
             this.IntroductionLabelEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IntroductionLabelEnd.Location = new System.Drawing.Point(14, 79);
+            this.IntroductionLabelEnd.Location = new System.Drawing.Point(14, 119);
             this.IntroductionLabelEnd.Name = "IntroductionLabelEnd";
             this.IntroductionLabelEnd.Size = new System.Drawing.Size(151, 34);
             this.IntroductionLabelEnd.TabIndex = 2;
@@ -226,11 +282,12 @@ namespace RyskTech
             // 
             this.UnitNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UnitNameTextBox.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.UnitNameTextBox.Location = new System.Drawing.Point(17, 53);
+            this.UnitNameTextBox.Location = new System.Drawing.Point(17, 74);
             this.UnitNameTextBox.Name = "UnitNameTextBox";
-            this.UnitNameTextBox.Size = new System.Drawing.Size(473, 23);
+            this.UnitNameTextBox.Size = new System.Drawing.Size(644, 23);
             this.UnitNameTextBox.TabIndex = 1;
-            this.UnitNameTextBox.Text = "Nome da sua unidade";
+            this.UnitNameTextBox.Text = "Nome da sua unidade/Laboratório/Espaço/Setor";
+            this.UnitNameTextBox.TextChanged += new System.EventHandler(this.UnitNameTextBox_TextChanged);
             this.UnitNameTextBox.Enter += new System.EventHandler(this.UnitNameTextBox_Enter);
             this.UnitNameTextBox.Leave += new System.EventHandler(this.UnitNameTextBox_Leave);
             // 
@@ -240,10 +297,9 @@ namespace RyskTech
             this.IntroductionLabelStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IntroductionLabelStart.Location = new System.Drawing.Point(14, 27);
             this.IntroductionLabelStart.Name = "IntroductionLabelStart";
-            this.IntroductionLabelStart.Size = new System.Drawing.Size(545, 34);
+            this.IntroductionLabelStart.Size = new System.Drawing.Size(490, 17);
             this.IntroductionLabelStart.TabIndex = 0;
-            this.IntroductionLabelStart.Text = "Visamos, por meio deste, apresentar a Análise Preliminar de Risco (APR) da unidad" +
-    "e\r\n\r\n";
+            this.IntroductionLabelStart.Text = "Visamos, por meio deste, apresentar a Análise Preliminar de Risco (APR) da";
             // 
             // unit_tab
             // 
@@ -620,5 +676,9 @@ namespace RyskTech
         private System.Windows.Forms.Button showTable3Button;
         private System.Windows.Forms.Button showTable4Button;
         private UnitStructureControl unitStructureControl1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton3;
     }
 }
