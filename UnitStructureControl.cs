@@ -22,11 +22,16 @@ namespace RyskTech
             foreach (DataGridViewRow row in InternalStructureDataGridView.Rows)
             {
                 UnitInformation.StructureInformation entry = new UnitInformation.StructureInformation();
-                entry.building = row.Cells[0].Value.ToString();
-                entry.room = row.Cells[1].Value.ToString();
-                entry.floor = row.Cells[2].Value.ToString(); 
-                entry.turn_start = System.TimeSpan.Parse(row.Cells[3].Value.ToString());
-                entry.turn_end = System.TimeSpan.Parse(row.Cells[4].Value.ToString());
+                if (row.Cells[0].Value != null)
+                    entry.building = row.Cells[0].Value.ToString();
+                if (row.Cells[1].Value != null)
+                    entry.room = row.Cells[1].Value.ToString();
+                if (row.Cells[2].Value != null)
+                    entry.floor = row.Cells[2].Value.ToString();
+                if (row.Cells[3].Value != null)
+                    entry.turn_start = System.TimeSpan.Parse(row.Cells[3].Value.ToString());
+                if (row.Cells[4].Value != null)
+                    entry.turn_end = System.TimeSpan.Parse(row.Cells[4].Value.ToString());
 
                 result.Add(entry);
             }
