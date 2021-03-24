@@ -87,6 +87,7 @@ namespace RyskTech
             this.MethodologyTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.MethodologyTextBox.Size = new System.Drawing.Size(606, 288);
             this.MethodologyTextBox.TabIndex = 1;
+            this.MethodologyTextBox.TextChanged += new System.EventHandler(this.MethodologyTextBox_TextChanged);
             // 
             // UnitMethodologyControl
             // 

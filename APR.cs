@@ -1,50 +1,52 @@
 ﻿// Nuget package SyncFusion
 using Syncfusion.DocIO.DLS;
+using System.Collections.Generic;
 
 namespace RyskTech
 {
-    enum LocationPrefix { Rua, Avenida, Alameda, Travessa, Rodovia }
-    enum CivilianType { Publico, Estudantes, Docentes, Tecnico_Administrativos, Outros }
+    public enum LocationPrefix { Rua, Avenida, Alameda, Travessa, Rodovia }
+    public enum CivilianType { Publico, Estudantes, Docentes, Tecnico_Administrativos, Outros }
 
-    struct UnitInformation
+    public class UnitInformation
     {
         // Name of the unit
-        string unit_name;
+        public string unit_name;
 
         // Location info
-        struct LocationInformation
+        public class LocationInformation
         {
-            LocationPrefix prefix;
-            uint number;
-            string neighborhood;
-            string ZIP;
-            string complement;
+            public LocationPrefix prefix;
+            public string street_name;
+            public uint number;
+            public string neighborhood;
+            public string ZIP;
+            public string complement;
         }
-        LocationInformation location;
+        public LocationInformation location;
 
         // Relevant info about the surroundings
-        string surroundings;
+        public string surroundings;
 
         // Contact info
-        string phone;
+        public string phone;
 
         // Team info
-        struct TeamInformation
+        public class TeamInformation
         {
-            struct ProfessionalInformation
+            public class ProfessionalInformation
             {
-                string name;
-                string e_mail;
-                string phone;
+                public string name;
+                public string e_mail;
+                public string phone;
             }
-            ProfessionalInformation director;
-            ProfessionalInformation vice_director;
+            public ProfessionalInformation director;
+            public ProfessionalInformation vice_director;
 
-            struct CivilianInformation
+            public class CivilianInformation
             {
-                CivilianType kind;
-                string description;
-                uint count;
+                public CivilianType kind;
+                public string description;
+                public uint count;
 
                 public CivilianInformation(CivilianType kind, string desc)
                 {
@@ -57,31 +59,47 @@ namespace RyskTech
                 }
             }
 
-            CivilianInformation general_public;
-            CivilianInformation students;
-            CivilianInformation teachers;
-            CivilianInformation technics;
-            CivilianInformation[] other;
+            public CivilianInformation general_public;
+            public CivilianInformation students;
+            public CivilianInformation teachers;
+            public CivilianInformation technics;
+            public CivilianInformation other;
+
+            public TeamInformation()
+            {
+                director = new ProfessionalInformation();
+                vice_director = new ProfessionalInformation();
+
+                general_public = new CivilianInformation(CivilianType.Publico, null);
+                students = new CivilianInformation(CivilianType.Estudantes, null);
+                teachers = new CivilianInformation(CivilianType.Docentes, null);
+                technics = new CivilianInformation(CivilianType.Tecnico_Administrativos, null);
+            }
         }
-        TeamInformation team;
+        public TeamInformation team;
 
         // Structure info
-        struct StructureInformation
+        public class StructureInformation
         {
-            string building;
-            string room;
-            string floor;
-            System.TimeSpan turn_start;
-            System.TimeSpan turn_end;
+            public string building;
+            public string room;
+            public string floor;
+            public System.TimeSpan turn_start;
+            public System.TimeSpan turn_end;
         }
-        StructureInformation[] spaces;
+        public List<StructureInformation> spaces;
 
         // History
-        string history;
+        public string history;
 
         // Methodology
-        string methodology;
+        public string methodology = "";
 
+        public UnitInformation()
+        {
+            location = new LocationInformation();
+            team = new TeamInformation();
+        }
     };
 
     static class APR
@@ -90,7 +108,7 @@ namespace RyskTech
         public static bool[] considered_agents = new bool[4];
 
         // Information about the unit
-        public static UnitInformation unit_info;
+        public static UnitInformation unit_info = new UnitInformation();
 
         public static bool LoadPrevious()
         {
@@ -101,6 +119,9 @@ namespace RyskTech
 
         public static void GenerateDocument()
         {
+            // Read any information that has not been filled yet (mostly data view grids)
+            unit_info.spaces = ((MostAdvanced)System.Windows.Forms.Application.OpenForms["MostAdvanced"]).getStructureData();
+
             // TODO generate document here with all the information
             using (WordDocument document = new WordDocument())
             {
@@ -109,6 +130,8 @@ namespace RyskTech
 
                 // Append some text to the document
                 document.LastParagraph.AppendText("Testing");
+
+                document.LastParagraph.AppendText(APR.unit_info.unit_name);
 
                 // Save
                 document.Save("output.docx");

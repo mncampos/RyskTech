@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -76,7 +77,12 @@ namespace RyskTech
 
         private void UnitNameTextBox_TextChanged(object sender, EventArgs e)
         {
+            APR.unit_info.unit_name = UnitNameTextBox.Text;
+        }
 
+        public List<UnitInformation.StructureInformation> getStructureData()
+        {
+            return this.unitStructureControl1.getStructureData();
         }
     }
 }

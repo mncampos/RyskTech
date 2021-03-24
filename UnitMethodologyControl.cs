@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RyskTech
@@ -24,10 +17,16 @@ namespace RyskTech
                 string default_method_text = re.ReadToEnd();
                 MethodologyTextBox.Text = default_method_text;
                 re.Close();
-            }catch (Exception ex)
-            {
-                MessageBox.Show(ex.StackTrace);
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.StackTrace + ex.Message);
+            }
+        }
+
+        private void MethodologyTextBox_TextChanged(object sender, EventArgs e)
+        {
+            APR.unit_info.methodology = MethodologyTextBox.Text;
         }
     }
 }

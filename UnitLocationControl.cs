@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RyskTech
@@ -48,89 +42,54 @@ namespace RyskTech
             }
         }
 
-        private void tableLayoutPanel8_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
-        {
-
-        }
-
         private void RodoviaButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            APR.unit_info.location.prefix = RyskTech.LocationPrefix.Rodovia;
         }
 
         private void TravessaButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            APR.unit_info.location.prefix = RyskTech.LocationPrefix.Travessa;
         }
 
         private void AlamedaButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            APR.unit_info.location.prefix = RyskTech.LocationPrefix.Alameda;
         }
 
         private void AvenidaButton_CheckedChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void StreetTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void UnitLocationGroupBox_Enter(object sender, EventArgs e)
-        {
-
+            APR.unit_info.location.prefix = RyskTech.LocationPrefix.Avenida;
         }
 
         private void RuaButton_CheckedChanged(object sender, EventArgs e)
         {
+            APR.unit_info.location.prefix = RyskTech.LocationPrefix.Rua;
+        }
 
+        private void StreetTextBox_TextChanged(object sender, EventArgs e)
+        {
+            APR.unit_info.location.street_name = StreetTextBox.Text;
+        }
+
+        private void NeighborHoodTextBox_TextChanged(object sender, EventArgs e)
+        {
+            APR.unit_info.location.neighborhood = NeighborhoodTextBox.Text;
+        }
+
+        private void ZIPTextBox_TextChanged(object sender, EventArgs e)
+        {
+            APR.unit_info.location.ZIP = ZIPTextBox.Text;
+        }
+
+        private void ComplementTextBox_TextChanged(object sender, EventArgs e)
+        {
+            APR.unit_info.location.complement = ComplementTextBox.Text;
+        }
+
+        private void NumberTextBox_TextChanged(object sender, EventArgs e)
+        {
+            APR.unit_info.location.number = uint.Parse(NumberTextBox.Text);
         }
     }
 }

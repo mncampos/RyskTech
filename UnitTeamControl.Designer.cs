@@ -38,42 +38,40 @@ namespace RyskTech
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.DirectorEmailTextBox = new System.Windows.Forms.TextBox();
+            this.DirectorPhoneTextBox = new System.Windows.Forms.TextBox();
+            this.VicePhoneTextBox = new System.Windows.Forms.TextBox();
+            this.ViceEmailTextBox = new System.Windows.Forms.TextBox();
+            this.ViceNameTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DirectorNameTextBox = new System.Windows.Forms.TextBox();
             this.TeamInfoGroupBox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.OtherNumericUpDownCounter = new System.Windows.Forms.NumericUpDown();
+            this.PublicNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.StudentsNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.ProfessionalNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.TeachersNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.OtherTextBox = new System.Windows.Forms.TextBox();
             this.ContactGroupBox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.UnitContactTextBox = new System.Windows.Forms.TextBox();
             this.UnitTeamGroupBox.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.DirectorInfoGroupBox.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.TeamInfoGroupBox.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OtherNumericUpDownCounter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PublicNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StudentsNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProfessionalNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TeachersNumericUpDown)).BeginInit();
             this.ContactGroupBox.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
@@ -130,13 +128,13 @@ namespace RyskTech
             this.tableLayoutPanel2.Controls.Add(this.label4, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label2, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.textBox2, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.textBox3, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.textBox4, 3, 2);
-            this.tableLayoutPanel2.Controls.Add(this.textBox5, 3, 1);
-            this.tableLayoutPanel2.Controls.Add(this.textBox6, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.DirectorEmailTextBox, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.DirectorPhoneTextBox, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.VicePhoneTextBox, 3, 2);
+            this.tableLayoutPanel2.Controls.Add(this.ViceEmailTextBox, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.ViceNameTextBox, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.textBox1, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.DirectorNameTextBox, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 16);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -204,45 +202,50 @@ namespace RyskTech
             this.label2.TabIndex = 7;
             this.label2.Text = "Vice Diretor(a)";
             // 
-            // textBox2
+            // DirectorEmailTextBox
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(61, 46);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(178, 20);
-            this.textBox2.TabIndex = 1;
+            this.DirectorEmailTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DirectorEmailTextBox.Location = new System.Drawing.Point(61, 46);
+            this.DirectorEmailTextBox.Name = "DirectorEmailTextBox";
+            this.DirectorEmailTextBox.Size = new System.Drawing.Size(178, 20);
+            this.DirectorEmailTextBox.TabIndex = 1;
+            this.DirectorEmailTextBox.TextChanged += new System.EventHandler(this.DirectorEmailTextBox_TextChanged);
             // 
-            // textBox3
+            // DirectorPhoneTextBox
             // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Location = new System.Drawing.Point(61, 89);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(178, 20);
-            this.textBox3.TabIndex = 2;
+            this.DirectorPhoneTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DirectorPhoneTextBox.Location = new System.Drawing.Point(61, 89);
+            this.DirectorPhoneTextBox.Name = "DirectorPhoneTextBox";
+            this.DirectorPhoneTextBox.Size = new System.Drawing.Size(178, 20);
+            this.DirectorPhoneTextBox.TabIndex = 2;
+            this.DirectorPhoneTextBox.TextChanged += new System.EventHandler(this.DirectorPhoneTextBox_TextChanged);
             // 
-            // textBox4
+            // VicePhoneTextBox
             // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Location = new System.Drawing.Point(304, 89);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(183, 20);
-            this.textBox4.TabIndex = 3;
+            this.VicePhoneTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.VicePhoneTextBox.Location = new System.Drawing.Point(304, 89);
+            this.VicePhoneTextBox.Name = "VicePhoneTextBox";
+            this.VicePhoneTextBox.Size = new System.Drawing.Size(183, 20);
+            this.VicePhoneTextBox.TabIndex = 3;
+            this.VicePhoneTextBox.TextChanged += new System.EventHandler(this.VicePhoneTextBox_TextChanged);
             // 
-            // textBox5
+            // ViceEmailTextBox
             // 
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Location = new System.Drawing.Point(304, 46);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(183, 20);
-            this.textBox5.TabIndex = 4;
+            this.ViceEmailTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ViceEmailTextBox.Location = new System.Drawing.Point(304, 46);
+            this.ViceEmailTextBox.Name = "ViceEmailTextBox";
+            this.ViceEmailTextBox.Size = new System.Drawing.Size(183, 20);
+            this.ViceEmailTextBox.TabIndex = 4;
+            this.ViceEmailTextBox.TextChanged += new System.EventHandler(this.ViceEmailTextBox_TextChanged);
             // 
-            // textBox6
+            // ViceNameTextBox
             // 
-            this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox6.Location = new System.Drawing.Point(304, 3);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(183, 20);
-            this.textBox6.TabIndex = 5;
+            this.ViceNameTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ViceNameTextBox.Location = new System.Drawing.Point(304, 3);
+            this.ViceNameTextBox.Name = "ViceNameTextBox";
+            this.ViceNameTextBox.Size = new System.Drawing.Size(183, 20);
+            this.ViceNameTextBox.TabIndex = 5;
+            this.ViceNameTextBox.TextChanged += new System.EventHandler(this.ViceNameTextBox_TextChanged);
             // 
             // label1
             // 
@@ -256,13 +259,14 @@ namespace RyskTech
             this.label1.Text = "Diretor(a)";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox1
+            // DirectorNameTextBox
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(61, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(178, 20);
-            this.textBox1.TabIndex = 0;
+            this.DirectorNameTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DirectorNameTextBox.Location = new System.Drawing.Point(61, 3);
+            this.DirectorNameTextBox.Name = "DirectorNameTextBox";
+            this.DirectorNameTextBox.Size = new System.Drawing.Size(178, 20);
+            this.DirectorNameTextBox.TabIndex = 0;
+            this.DirectorNameTextBox.TextChanged += new System.EventHandler(this.DirectorNameTextBox_TextChanged);
             // 
             // TeamInfoGroupBox
             // 
@@ -280,15 +284,15 @@ namespace RyskTech
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.66109F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.33891F));
-            this.tableLayoutPanel3.Controls.Add(this.numericUpDown5, 1, 4);
-            this.tableLayoutPanel3.Controls.Add(this.numericUpDown4, 1, 3);
-            this.tableLayoutPanel3.Controls.Add(this.numericUpDown3, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.numericUpDown2, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.OtherNumericUpDownCounter, 1, 4);
+            this.tableLayoutPanel3.Controls.Add(this.PublicNumericUpDown, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.StudentsNumericUpDown, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.ProfessionalNumericUpDown, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.label9, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label10, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.label11, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.label12, 0, 3);
-            this.tableLayoutPanel3.Controls.Add(this.numericUpDown1, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.TeachersNumericUpDown, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.OtherTextBox, 0, 4);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 16);
@@ -302,33 +306,37 @@ namespace RyskTech
             this.tableLayoutPanel3.Size = new System.Drawing.Size(239, 131);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
-            // numericUpDown5
+            // OtherNumericUpDownCounter
             // 
-            this.numericUpDown5.Location = new System.Drawing.Point(190, 107);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(46, 20);
-            this.numericUpDown5.TabIndex = 9;
+            this.OtherNumericUpDownCounter.Location = new System.Drawing.Point(190, 107);
+            this.OtherNumericUpDownCounter.Name = "OtherNumericUpDownCounter";
+            this.OtherNumericUpDownCounter.Size = new System.Drawing.Size(46, 20);
+            this.OtherNumericUpDownCounter.TabIndex = 9;
+            this.OtherNumericUpDownCounter.ValueChanged += new System.EventHandler(this.OtherNumericUpDownCounter_ValueChanged);
             // 
-            // numericUpDown4
+            // PublicNumericUpDown
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(190, 81);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(46, 20);
-            this.numericUpDown4.TabIndex = 8;
+            this.PublicNumericUpDown.Location = new System.Drawing.Point(190, 81);
+            this.PublicNumericUpDown.Name = "PublicNumericUpDown";
+            this.PublicNumericUpDown.Size = new System.Drawing.Size(46, 20);
+            this.PublicNumericUpDown.TabIndex = 8;
+            this.PublicNumericUpDown.ValueChanged += new System.EventHandler(this.PublicNumericUpDown_ValueChanged);
             // 
-            // numericUpDown3
+            // StudentsNumericUpDown
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(190, 55);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(46, 20);
-            this.numericUpDown3.TabIndex = 7;
+            this.StudentsNumericUpDown.Location = new System.Drawing.Point(190, 55);
+            this.StudentsNumericUpDown.Name = "StudentsNumericUpDown";
+            this.StudentsNumericUpDown.Size = new System.Drawing.Size(46, 20);
+            this.StudentsNumericUpDown.TabIndex = 7;
+            this.StudentsNumericUpDown.ValueChanged += new System.EventHandler(this.StudentsNumericUpDown_ValueChanged);
             // 
-            // numericUpDown2
+            // ProfessionalNumericUpDown
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(190, 29);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(46, 20);
-            this.numericUpDown2.TabIndex = 6;
+            this.ProfessionalNumericUpDown.Location = new System.Drawing.Point(190, 29);
+            this.ProfessionalNumericUpDown.Name = "ProfessionalNumericUpDown";
+            this.ProfessionalNumericUpDown.Size = new System.Drawing.Size(46, 20);
+            this.ProfessionalNumericUpDown.TabIndex = 6;
+            this.ProfessionalNumericUpDown.ValueChanged += new System.EventHandler(this.ProfessionalNumericUpDown_ValueChanged);
             // 
             // label9
             // 
@@ -366,12 +374,13 @@ namespace RyskTech
             this.label12.TabIndex = 3;
             this.label12.Text = "Público";
             // 
-            // numericUpDown1
+            // TeachersNumericUpDown
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(190, 3);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(46, 20);
-            this.numericUpDown1.TabIndex = 5;
+            this.TeachersNumericUpDown.Location = new System.Drawing.Point(190, 3);
+            this.TeachersNumericUpDown.Name = "TeachersNumericUpDown";
+            this.TeachersNumericUpDown.Size = new System.Drawing.Size(46, 20);
+            this.TeachersNumericUpDown.TabIndex = 5;
+            this.TeachersNumericUpDown.ValueChanged += new System.EventHandler(this.TeachersNumericUpDown_ValueChanged);
             // 
             // OtherTextBox
             // 
@@ -382,6 +391,7 @@ namespace RyskTech
             this.OtherTextBox.Size = new System.Drawing.Size(181, 20);
             this.OtherTextBox.TabIndex = 10;
             this.OtherTextBox.Text = "Outros...";
+            this.OtherTextBox.TextChanged += new System.EventHandler(this.OtherTextBox_TextChanged);
             this.OtherTextBox.Enter += new System.EventHandler(this.OtherTextBox_Enter);
             this.OtherTextBox.Leave += new System.EventHandler(this.OtherTextBox_Leave);
             // 
@@ -401,10 +411,8 @@ namespace RyskTech
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.UnitContactTextBox, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.label7, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label8, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.textBox7, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.textBox8, 1, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 16);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -417,40 +425,23 @@ namespace RyskTech
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Location = new System.Drawing.Point(3, 0);
+            this.label7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label7.Location = new System.Drawing.Point(3, 51);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(113, 64);
+            this.label7.Size = new System.Drawing.Size(113, 13);
             this.label7.TabIndex = 0;
             this.label7.Text = "Telefone (DDD)";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label8
+            // UnitContactTextBox
             // 
-            this.label8.AutoSize = true;
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Location = new System.Drawing.Point(3, 64);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(113, 67);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Ramal";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox7.Location = new System.Drawing.Point(122, 3);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(114, 20);
-            this.textBox7.TabIndex = 2;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox8.Location = new System.Drawing.Point(122, 67);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(114, 20);
-            this.textBox8.TabIndex = 3;
+            this.tableLayoutPanel4.SetColumnSpan(this.UnitContactTextBox, 2);
+            this.UnitContactTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.UnitContactTextBox.Location = new System.Drawing.Point(3, 108);
+            this.UnitContactTextBox.Name = "UnitContactTextBox";
+            this.UnitContactTextBox.Size = new System.Drawing.Size(233, 20);
+            this.UnitContactTextBox.TabIndex = 2;
+            this.UnitContactTextBox.TextChanged += new System.EventHandler(this.UnitContactTextBox_TextChanged);
             // 
             // UnitTeamControl
             // 
@@ -467,11 +458,11 @@ namespace RyskTech
             this.TeamInfoGroupBox.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OtherNumericUpDownCounter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PublicNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StudentsNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProfessionalNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TeachersNumericUpDown)).EndInit();
             this.ContactGroupBox.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
@@ -490,30 +481,28 @@ namespace RyskTech
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox DirectorEmailTextBox;
+        private System.Windows.Forms.TextBox DirectorPhoneTextBox;
+        private System.Windows.Forms.TextBox VicePhoneTextBox;
+        private System.Windows.Forms.TextBox ViceEmailTextBox;
+        private System.Windows.Forms.TextBox ViceNameTextBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox DirectorNameTextBox;
         private System.Windows.Forms.GroupBox TeamInfoGroupBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.GroupBox ContactGroupBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox UnitContactTextBox;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown OtherNumericUpDownCounter;
+        private System.Windows.Forms.NumericUpDown PublicNumericUpDown;
+        private System.Windows.Forms.NumericUpDown StudentsNumericUpDown;
+        private System.Windows.Forms.NumericUpDown ProfessionalNumericUpDown;
+        private System.Windows.Forms.NumericUpDown TeachersNumericUpDown;
         private System.Windows.Forms.TextBox OtherTextBox;
     }
 }

@@ -32,7 +32,7 @@ namespace RyskTech
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.UnitHistoryTextBox = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +54,7 @@ namespace RyskTech
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.UnitHistoryTextBox, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 16);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -76,16 +76,17 @@ namespace RyskTech
             this.label1.Text = "Descreva brevemente o histórico da sua Unidade";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // UnitHistoryTextBox
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox1, 2);
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(3, 28);
-            this.textBox1.MaxLength = 3000;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(530, 312);
-            this.textBox1.TabIndex = 1;
+            this.tableLayoutPanel1.SetColumnSpan(this.UnitHistoryTextBox, 2);
+            this.UnitHistoryTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UnitHistoryTextBox.Location = new System.Drawing.Point(3, 28);
+            this.UnitHistoryTextBox.MaxLength = 3000;
+            this.UnitHistoryTextBox.Multiline = true;
+            this.UnitHistoryTextBox.Name = "UnitHistoryTextBox";
+            this.UnitHistoryTextBox.Size = new System.Drawing.Size(530, 312);
+            this.UnitHistoryTextBox.TabIndex = 1;
+            this.UnitHistoryTextBox.TextChanged += new System.EventHandler(this.UnitHistoryTextBox_TextChanged);
             // 
             // UnitHistoryControl
             // 
@@ -106,6 +107,6 @@ namespace RyskTech
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox UnitHistoryTextBox;
     }
 }
