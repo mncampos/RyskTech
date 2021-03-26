@@ -45,7 +45,7 @@ namespace RyskTech
         private void concludeButton_Click(object sender, EventArgs e)
         {
             // Generate document
-            APR.GenerateDocument();
+            APR.generateDocument();
 
             // Show success message
             MessageBox.Show("APR Gerada com sucesso!");
