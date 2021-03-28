@@ -79,7 +79,8 @@ namespace RyskTech
 
         private void OtherNumericUpDownCounter_ValueChanged(object sender, EventArgs e)
         {
-            APR.unit_info.team.other.count = (uint)OtherNumericUpDownCounter.Value;
+            if (APR.unit_info.team.other != null)
+                APR.unit_info.team.other.count = (uint)OtherNumericUpDownCounter.Value;
         }
 
         private void StudentsNumericUpDown_ValueChanged(object sender, EventArgs e)

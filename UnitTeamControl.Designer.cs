@@ -59,8 +59,8 @@ namespace RyskTech
             this.OtherTextBox = new System.Windows.Forms.TextBox();
             this.ContactGroupBox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label7 = new System.Windows.Forms.Label();
             this.UnitContactTextBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.UnitTeamGroupBox.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.DirectorInfoGroupBox.SuspendLayout();
@@ -422,6 +422,16 @@ namespace RyskTech
             this.tableLayoutPanel4.Size = new System.Drawing.Size(239, 131);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
+            // UnitContactTextBox
+            // 
+            this.tableLayoutPanel4.SetColumnSpan(this.UnitContactTextBox, 2);
+            this.UnitContactTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.UnitContactTextBox.Location = new System.Drawing.Point(3, 108);
+            this.UnitContactTextBox.Name = "UnitContactTextBox";
+            this.UnitContactTextBox.Size = new System.Drawing.Size(233, 20);
+            this.UnitContactTextBox.TabIndex = 2;
+            this.UnitContactTextBox.TextChanged += new System.EventHandler(this.UnitContactTextBox_TextChanged);
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -432,16 +442,6 @@ namespace RyskTech
             this.label7.TabIndex = 0;
             this.label7.Text = "Telefone (DDD)";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // UnitContactTextBox
-            // 
-            this.tableLayoutPanel4.SetColumnSpan(this.UnitContactTextBox, 2);
-            this.UnitContactTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.UnitContactTextBox.Location = new System.Drawing.Point(3, 108);
-            this.UnitContactTextBox.Name = "UnitContactTextBox";
-            this.UnitContactTextBox.Size = new System.Drawing.Size(233, 20);
-            this.UnitContactTextBox.TabIndex = 2;
-            this.UnitContactTextBox.TextChanged += new System.EventHandler(this.UnitContactTextBox_TextChanged);
             // 
             // UnitTeamControl
             // 

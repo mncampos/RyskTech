@@ -59,17 +59,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="APR.cs" />
+    <Compile Include="DocumentBuilder.cs" />
     <Compile Include="ShowTableForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ShowTableForm.Designer.cs">
       <DependentUpon>ShowTableForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MostAdvanced.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MostAdvanced.Designer.cs">
-      <DependentUpon>MostAdvanced.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -103,8 +104,8 @@
     <Compile Include="UnitStructureControl.Designer.cs">
       <DependentUpon>UnitStructureControl.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="MostAdvanced.resx">
-      <DependentUpon>MostAdvanced.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,7 +1,7 @@
 ﻿
 namespace RyskTech
 {
-    partial class MostAdvanced
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -601,14 +601,14 @@ namespace RyskTech
             this.button2.Text = "Concluir depois";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // MostAdvanced
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(722, 442);
             this.Controls.Add(this.tableLayoutPanel1);
             this.MinimumSize = new System.Drawing.Size(500, 200);
-            this.Name = "MostAdvanced";
+            this.Name = "MainForm";
             this.Text = "RyskTech";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

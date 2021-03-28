@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace RyskTech
 {
-    public partial class MostAdvanced : Form
+    public partial class MainForm : Form
     {
-        public MostAdvanced()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -45,7 +45,10 @@ namespace RyskTech
         private void concludeButton_Click(object sender, EventArgs e)
         {
             // Generate document
-            APR.generateDocument();
+            //APR.generateDocument();
+
+            DocumentBuilder builder = new DocumentBuilder("APR.docx");
+            builder.CreateDocumentFromAPR();
 
             // Show success message
             MessageBox.Show("APR Gerada com sucesso!");

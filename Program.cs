@@ -14,7 +14,7 @@ namespace RyskTech
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MostAdvanced());
+            Application.Run(new MainForm());
         }
     }
 }

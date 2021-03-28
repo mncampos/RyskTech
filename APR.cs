@@ -3,7 +3,7 @@ using Syncfusion.DocIO.DLS;
 using System.Collections.Generic;
 
 namespace RyskTech
-{
+{ 
     public enum LocationPrefix { Rua, Avenida, Alameda, Travessa, Rodovia }
     public enum CivilianType { Publico, Estudantes, Docentes, Tecnico_Administrativos, Outros }
 
@@ -116,10 +116,7 @@ namespace RyskTech
         // Chemical, Physical, Biological, Mechanic
         public static bool[] considered_agents = new bool[4];
 
-        // Information about the unit
         public static UnitInformation unit_info = new UnitInformation();
-
-        private static WordDocument document;
 
         public static bool LoadPrevious()
         {
@@ -128,73 +125,63 @@ namespace RyskTech
             return false;
         }
 
-        public static void generateDocument()
+        public static void FetchSpaceInformation()
         {
             // Read any information that has not been filled yet (mostly data view grids)
-            unit_info.spaces = ((MostAdvanced)System.Windows.Forms.Application.OpenForms["MostAdvanced"]).getStructureData();
+            unit_info.spaces = ((MainForm)System.Windows.Forms.Application.OpenForms["MainForm"]).getStructureData();
+        }
 
-            document = new WordDocument();
-            document.EnsureMinimal();
-
-            // Write unit structure section
-            IWSection unit_structure_section = addSectionWithTitle(document.Sections.Count + ") Estrutura");
-            addParagraphWithText(unit_structure_section, "A unidade utiliza os seguintes espaços: ");
-
-            // Create table with rooms, buildings and time ranges
-            IWTable unit_spaces_table = unit_structure_section.AddTable();
-            unit_spaces_table.ResetCells(unit_info.spaces.Count + 1, 4);
-            unit_spaces_table[0, 0].AddParagraph().AppendText("Prédio");
-            unit_spaces_table[0, 1].AddParagraph().AppendText("Sala");
-            unit_spaces_table[0, 2].AddParagraph().AppendText("Andar");
-            unit_spaces_table[0, 3].AddParagraph().AppendText("Período de uso");
-            for (int i = 0; i < unit_info.spaces.Count; i++)
+        public static string GetLocationString()
+        {
+            string location = "";
+            
+            switch (unit_info.location.prefix)
             {
-                unit_spaces_table[i + 1, 0].AddParagraph().AppendText(unit_info.spaces[i].building);
-                unit_spaces_table[i + 1, 1].AddParagraph().AppendText(unit_info.spaces[i].room);
-                unit_spaces_table[i + 1, 2].AddParagraph().AppendText(unit_info.spaces[i].floor);
-                unit_spaces_table[i + 1, 3].AddParagraph().AppendText(unit_info.spaces[i].turn_start.ToString() + " - " + unit_info.spaces[i].turn_end.ToString());
+                case LocationPrefix.Rua:
+                    location = "Rua ";
+                    break;
+                case LocationPrefix.Avenida:
+                    location = "Avenida ";
+                    break;
+                case LocationPrefix.Alameda:
+                    location = "Alameda ";
+                    break;
+                case LocationPrefix.Travessa:
+                    location = "Travessa ";
+                    break;
+                case LocationPrefix.Rodovia:
+                    location = "Rodovia ";
+                    break;
+                default:
+                    break;
             }
 
-            // Write unit surroundings section
-            IWSection unit_surroundings_section = addSectionWithTitle(document.Sections.Count + ") Posicionamento geográfico");
-            addParagraphWithText(unit_surroundings_section, unit_info.surroundings);
+            location += unit_info.location.street_name + ", ";
+            location += "número " + unit_info.location.number + ", ";
+            location += "bairro " + unit_info.location.neighborhood + ", ";
+            location += "complemento " + unit_info.location.complement + ", ";
+            location += "CEP " + unit_info.location.ZIP;
 
-            // Write unit history section
-            IWSection unit_history_section = addSectionWithTitle(document.Sections.Count + ") Histórico");
-            addParagraphWithText(unit_history_section, unit_info.history);
-
-            // Write unit methodology section
-            IWSection unit_methodology_section = addSectionWithTitle(document.Sections.Count + ") Metodologia");
-            addParagraphWithText(unit_methodology_section, unit_info.methodology);
-
-            // Save & close
-            document.Save("output.docx", Syncfusion.DocIO.FormatType.Docx);
-            document.Close();
-
+            return location;
         }
 
-        private static IWSection addSectionWithTitle(string title)
+        public static List<string> GetDirectors()
         {
-            IWSection section = document.AddSection();
-            section.BreakCode = SectionBreakCode.NoBreak;
-            section.PageSetup.Margins.All = 50f;
-            IWParagraph title_paragraph = section.AddParagraph();
-            title_paragraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
-            IWTextRange title_text = title_paragraph.AppendText(title);
-            title_text.CharacterFormat.Bold = true;
-            title_text.CharacterFormat.FontName = "Times New Roman";
-            title_text.CharacterFormat.UnderlineStyle = UnderlineStyle.Single;
-            title_text.CharacterFormat.FontSize = 16;
-            title_paragraph.AppendText("\n");
+            string director = "";
+            director += "Diretor: " + unit_info.team.director.name;
+            director += ", Telefone: " + unit_info.team.director.phone;
+            director += ", E-Mail: " + unit_info.team.director.e_mail;
 
-            return section;
-        }
+            string vice_director = "";
+            vice_director += "Vice-Diretor: " + unit_info.team.vice_director.name;
+            vice_director += ", Telefone: " + unit_info.team.vice_director.phone;
+            vice_director += ", E-Mail: " + unit_info.team.vice_director.e_mail;
 
-        private static IWTextRange addParagraphWithText(IWSection section, string text)
-        {
-            IWParagraph paragraph = section.AddParagraph();
-            paragraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Justify;
-            return paragraph.AppendText(text);
+            List<string> directors = new List<string>();
+            directors.Add(director);
+            directors.Add(vice_director);
+
+            return directors;
         }
     }
 }
