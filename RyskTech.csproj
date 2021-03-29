@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="APR.cs" />
     <Compile Include="DocumentBuilder.cs" />
+    <Compile Include="LabInformation.cs" />
     <Compile Include="SafetyControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
