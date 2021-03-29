@@ -117,11 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Etapa1_Classificacao_de_risco_ANVISA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Etapa1_Classificacao_de_risco_ANVISA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="placeHolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Main\placeHolder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="introductionTextLabel.Text" xml:space="preserve">
+    <value>Bem vindo ao software RyskTech! 
+
+O objetivo desta aplicação é apresentar uma maneira automatizada de geração de uma análise preliminar de risco (APR) em um formato padronizado para a sua unidade. Os laboratórios da sua unidade devem também realizar o download deste software, e selecionar a opção "Somos um laboratório!" para que possam realizar sua parte da APR. Como gerente de uma unidade, será necessário que você preencha as informações nas abas seguintes com relação à localização e composição da sua unidade. Quando concluir o preenchimento de todas as informações, por favor retorne para esta aba e pressione o botão abaixo para gerar o seu documento. 
+
+Após gerado o documento, por favor envie-o para &lt;template.email@gmail.com&gt; com o assunto &lt;ASSUNTO-ESPERADO-NO-EMAIL&gt;.</value>
   </data>
 </root>

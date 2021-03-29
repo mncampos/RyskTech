@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RyskTech.Forms;
+using System;
 using System.Windows.Forms;
 
 namespace RyskTech
@@ -14,7 +15,7 @@ namespace RyskTech
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new WelcomeForm());
         }
     }
 }
