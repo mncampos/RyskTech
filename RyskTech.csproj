@@ -59,7 +59,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="APR.cs" />
+    <Compile Include="ChemicalResidueControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChemicalResidueControl.Designer.cs">
+      <DependentUpon>ChemicalResidueControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="DocumentBuilder.cs" />
+    <Compile Include="EditChemicalResidueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditChemicalResidueForm.Designer.cs">
+      <DependentUpon>EditChemicalResidueForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LabInformation.cs" />
     <Compile Include="SafetyControl.cs">
       <SubType>UserControl</SubType>
@@ -113,6 +125,12 @@
     <Compile Include="UnitStructureControl.Designer.cs">
       <DependentUpon>UnitStructureControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChemicalResidueControl.resx">
+      <DependentUpon>ChemicalResidueControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditChemicalResidueForm.resx">
+      <DependentUpon>EditChemicalResidueForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

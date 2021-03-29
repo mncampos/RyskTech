@@ -87,5 +87,10 @@ namespace RyskTech
         {
             return this.unitStructureControl1.getStructureData();
         }
+
+        public void addChemicalResidue(ChemicalAgent agent)
+        {
+            //
+        }
     }
 }
