@@ -35,12 +35,20 @@ namespace RyskTech.Forms.Unit
             this.locationTabPage = new System.Windows.Forms.TabPage();
             this.locationControl1 = new RyskTech.LocationControl();
             this.teamTabPage = new System.Windows.Forms.TabPage();
+            this.teamControl1 = new RyskTech.TeamControl();
             this.structureTabPage = new System.Windows.Forms.TabPage();
             this.historyTabPage = new System.Windows.Forms.TabPage();
+            this.historyControl1 = new RyskTech.HistoryControl();
             this.methodologyTabPage = new System.Windows.Forms.TabPage();
+            this.methodologyControl1 = new RyskTech.MethodologyControl();
+            this.structureControl1 = new RyskTech.StructureControl();
             this.unitMainTabControl.SuspendLayout();
             this.welcomeTabPage.SuspendLayout();
             this.locationTabPage.SuspendLayout();
+            this.teamTabPage.SuspendLayout();
+            this.structureTabPage.SuspendLayout();
+            this.historyTabPage.SuspendLayout();
+            this.methodologyTabPage.SuspendLayout();
             this.SuspendLayout();
             // 
             // unitMainTabControl
@@ -98,6 +106,7 @@ namespace RyskTech.Forms.Unit
             // 
             // teamTabPage
             // 
+            this.teamTabPage.Controls.Add(this.teamControl1);
             this.teamTabPage.Location = new System.Drawing.Point(4, 22);
             this.teamTabPage.Name = "teamTabPage";
             this.teamTabPage.Size = new System.Drawing.Size(826, 435);
@@ -105,8 +114,17 @@ namespace RyskTech.Forms.Unit
             this.teamTabPage.Text = "Equipe";
             this.teamTabPage.UseVisualStyleBackColor = true;
             // 
+            // teamControl1
+            // 
+            this.teamControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.teamControl1.Location = new System.Drawing.Point(0, 0);
+            this.teamControl1.Name = "teamControl1";
+            this.teamControl1.Size = new System.Drawing.Size(826, 435);
+            this.teamControl1.TabIndex = 0;
+            // 
             // structureTabPage
             // 
+            this.structureTabPage.Controls.Add(this.structureControl1);
             this.structureTabPage.Location = new System.Drawing.Point(4, 22);
             this.structureTabPage.Name = "structureTabPage";
             this.structureTabPage.Size = new System.Drawing.Size(826, 435);
@@ -116,6 +134,7 @@ namespace RyskTech.Forms.Unit
             // 
             // historyTabPage
             // 
+            this.historyTabPage.Controls.Add(this.historyControl1);
             this.historyTabPage.Location = new System.Drawing.Point(4, 22);
             this.historyTabPage.Name = "historyTabPage";
             this.historyTabPage.Size = new System.Drawing.Size(826, 435);
@@ -123,14 +142,39 @@ namespace RyskTech.Forms.Unit
             this.historyTabPage.Text = "Histórico";
             this.historyTabPage.UseVisualStyleBackColor = true;
             // 
+            // historyControl1
+            // 
+            this.historyControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.historyControl1.Location = new System.Drawing.Point(0, 0);
+            this.historyControl1.Name = "historyControl1";
+            this.historyControl1.Size = new System.Drawing.Size(826, 435);
+            this.historyControl1.TabIndex = 0;
+            // 
             // methodologyTabPage
             // 
+            this.methodologyTabPage.Controls.Add(this.methodologyControl1);
             this.methodologyTabPage.Location = new System.Drawing.Point(4, 22);
             this.methodologyTabPage.Name = "methodologyTabPage";
             this.methodologyTabPage.Size = new System.Drawing.Size(826, 435);
             this.methodologyTabPage.TabIndex = 5;
             this.methodologyTabPage.Text = "Metodologia";
             this.methodologyTabPage.UseVisualStyleBackColor = true;
+            // 
+            // methodologyControl1
+            // 
+            this.methodologyControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.methodologyControl1.Location = new System.Drawing.Point(0, 0);
+            this.methodologyControl1.Name = "methodologyControl1";
+            this.methodologyControl1.Size = new System.Drawing.Size(826, 435);
+            this.methodologyControl1.TabIndex = 0;
+            // 
+            // structureControl1
+            // 
+            this.structureControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.structureControl1.Location = new System.Drawing.Point(0, 0);
+            this.structureControl1.Name = "structureControl1";
+            this.structureControl1.Size = new System.Drawing.Size(826, 435);
+            this.structureControl1.TabIndex = 0;
             // 
             // UnitMainForm
             // 
@@ -145,6 +189,10 @@ namespace RyskTech.Forms.Unit
             this.unitMainTabControl.ResumeLayout(false);
             this.welcomeTabPage.ResumeLayout(false);
             this.locationTabPage.ResumeLayout(false);
+            this.teamTabPage.ResumeLayout(false);
+            this.structureTabPage.ResumeLayout(false);
+            this.historyTabPage.ResumeLayout(false);
+            this.methodologyTabPage.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -160,5 +208,9 @@ namespace RyskTech.Forms.Unit
         private System.Windows.Forms.TabPage historyTabPage;
         private System.Windows.Forms.TabPage methodologyTabPage;
         private LocationControl locationControl1;
+        private TeamControl teamControl1;
+        private HistoryControl historyControl1;
+        private MethodologyControl methodologyControl1;
+        private StructureControl structureControl1;
     }
 }

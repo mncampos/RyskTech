@@ -64,7 +64,7 @@ namespace RyskTech
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60.26667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.73333F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(548, 375);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(826, 435);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // internalStructureGroupBox
@@ -74,7 +74,7 @@ namespace RyskTech
             this.internalStructureGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.internalStructureGroupBox.Location = new System.Drawing.Point(3, 3);
             this.internalStructureGroupBox.Name = "internalStructureGroupBox";
-            this.internalStructureGroupBox.Size = new System.Drawing.Size(542, 220);
+            this.internalStructureGroupBox.Size = new System.Drawing.Size(820, 256);
             this.internalStructureGroupBox.TabIndex = 0;
             this.internalStructureGroupBox.TabStop = false;
             this.internalStructureGroupBox.Text = "Interna";
@@ -92,17 +92,20 @@ namespace RyskTech
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.75F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(536, 201);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(814, 237);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tableLayoutPanel2.SetColumnSpan(this.label1, 2);
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(530, 22);
+            this.label1.Size = new System.Drawing.Size(808, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Preencha a tabela abaixo com as informações sobre prédios, salas e espaços utiliz" +
     "ados na unidade";
@@ -119,9 +122,9 @@ namespace RyskTech
             this.usage_end});
             this.tableLayoutPanel2.SetColumnSpan(this.InternalStructureDataGridView, 2);
             this.InternalStructureDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.InternalStructureDataGridView.Location = new System.Drawing.Point(3, 25);
+            this.InternalStructureDataGridView.Location = new System.Drawing.Point(3, 29);
             this.InternalStructureDataGridView.Name = "InternalStructureDataGridView";
-            this.InternalStructureDataGridView.Size = new System.Drawing.Size(530, 173);
+            this.InternalStructureDataGridView.Size = new System.Drawing.Size(808, 205);
             this.InternalStructureDataGridView.TabIndex = 1;
             // 
             // building
@@ -154,9 +157,9 @@ namespace RyskTech
             this.tableLayoutPanel1.SetColumnSpan(this.externalStructureGroupBox, 2);
             this.externalStructureGroupBox.Controls.Add(this.tableLayoutPanel3);
             this.externalStructureGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.externalStructureGroupBox.Location = new System.Drawing.Point(3, 229);
+            this.externalStructureGroupBox.Location = new System.Drawing.Point(3, 265);
             this.externalStructureGroupBox.Name = "externalStructureGroupBox";
-            this.externalStructureGroupBox.Size = new System.Drawing.Size(542, 143);
+            this.externalStructureGroupBox.Size = new System.Drawing.Size(820, 167);
             this.externalStructureGroupBox.TabIndex = 1;
             this.externalStructureGroupBox.TabStop = false;
             this.externalStructureGroupBox.Text = "Externa";
@@ -171,30 +174,33 @@ namespace RyskTech
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 16);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.12903F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.87096F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(536, 124);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.2973F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.70271F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(814, 148);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(530, 20);
+            this.label2.Size = new System.Drawing.Size(808, 32);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Por favor, preencha a caixa de texto abaixo com informações relevantes sobre o en" +
-    "torno da sua unidade";
+            this.label2.Text = "Preencha a caixa de texto abaixo com informações relevantes sobre o entorno da su" +
+    "a unidade";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SurroundingInfoTextBox
             // 
             this.SurroundingInfoTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SurroundingInfoTextBox.Location = new System.Drawing.Point(3, 23);
+            this.SurroundingInfoTextBox.Location = new System.Drawing.Point(3, 35);
             this.SurroundingInfoTextBox.Multiline = true;
             this.SurroundingInfoTextBox.Name = "SurroundingInfoTextBox";
-            this.SurroundingInfoTextBox.Size = new System.Drawing.Size(530, 98);
+            this.SurroundingInfoTextBox.Size = new System.Drawing.Size(808, 110);
             this.SurroundingInfoTextBox.TabIndex = 1;
             this.SurroundingInfoTextBox.TextChanged += new System.EventHandler(this.SurroundingInfoTextBox_TextChanged);
             // 
@@ -204,7 +210,7 @@ namespace RyskTech
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "StructureControl";
-            this.Size = new System.Drawing.Size(548, 375);
+            this.Size = new System.Drawing.Size(826, 435);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.internalStructureGroupBox.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

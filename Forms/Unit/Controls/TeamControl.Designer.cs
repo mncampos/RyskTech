@@ -61,6 +61,7 @@ namespace RyskTech
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.UnitContactTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.UnitTeamGroupBox.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.DirectorInfoGroupBox.SuspendLayout();
@@ -82,7 +83,7 @@ namespace RyskTech
             this.UnitTeamGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.UnitTeamGroupBox.Location = new System.Drawing.Point(0, 0);
             this.UnitTeamGroupBox.Name = "UnitTeamGroupBox";
-            this.UnitTeamGroupBox.Size = new System.Drawing.Size(508, 330);
+            this.UnitTeamGroupBox.Size = new System.Drawing.Size(826, 435);
             this.UnitTeamGroupBox.TabIndex = 0;
             this.UnitTeamGroupBox.TabStop = false;
             this.UnitTeamGroupBox.Text = "Equipe";
@@ -101,7 +102,7 @@ namespace RyskTech
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(502, 311);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(820, 416);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // DirectorInfoGroupBox
@@ -111,7 +112,7 @@ namespace RyskTech
             this.DirectorInfoGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DirectorInfoGroupBox.Location = new System.Drawing.Point(3, 3);
             this.DirectorInfoGroupBox.Name = "DirectorInfoGroupBox";
-            this.DirectorInfoGroupBox.Size = new System.Drawing.Size(496, 149);
+            this.DirectorInfoGroupBox.Size = new System.Drawing.Size(814, 202);
             this.DirectorInfoGroupBox.TabIndex = 0;
             this.DirectorInfoGroupBox.TabStop = false;
             this.DirectorInfoGroupBox.Text = "Informações da Direção";
@@ -142,17 +143,17 @@ namespace RyskTech
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(490, 130);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(808, 183);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(245, 86);
+            this.label6.Location = new System.Drawing.Point(403, 122);
             this.label6.Name = "label6";
             this.label6.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
-            this.label6.Size = new System.Drawing.Size(53, 44);
+            this.label6.Size = new System.Drawing.Size(92, 61);
             this.label6.TabIndex = 11;
             this.label6.Text = "Telefone/Ramal";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -161,10 +162,10 @@ namespace RyskTech
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(3, 86);
+            this.label5.Location = new System.Drawing.Point(3, 122);
             this.label5.Name = "label5";
             this.label5.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
-            this.label5.Size = new System.Drawing.Size(52, 44);
+            this.label5.Size = new System.Drawing.Size(90, 61);
             this.label5.TabIndex = 10;
             this.label5.Text = "Telefone /Ramal\r\n";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -173,10 +174,10 @@ namespace RyskTech
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(245, 43);
+            this.label4.Location = new System.Drawing.Point(403, 61);
             this.label4.Name = "label4";
             this.label4.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
-            this.label4.Size = new System.Drawing.Size(53, 43);
+            this.label4.Size = new System.Drawing.Size(92, 61);
             this.label4.TabIndex = 9;
             this.label4.Text = "E-Mail";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -185,10 +186,10 @@ namespace RyskTech
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(3, 43);
+            this.label3.Location = new System.Drawing.Point(3, 61);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
-            this.label3.Size = new System.Drawing.Size(52, 43);
+            this.label3.Size = new System.Drawing.Size(90, 61);
             this.label3.TabIndex = 8;
             this.label3.Text = "E-Mail";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -196,54 +197,54 @@ namespace RyskTech
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(245, 0);
+            this.label2.Location = new System.Drawing.Point(403, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 26);
+            this.label2.Size = new System.Drawing.Size(74, 13);
             this.label2.TabIndex = 7;
             this.label2.Text = "Vice Diretor(a)";
             // 
             // DirectorEmailTextBox
             // 
             this.DirectorEmailTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DirectorEmailTextBox.Location = new System.Drawing.Point(61, 46);
+            this.DirectorEmailTextBox.Location = new System.Drawing.Point(99, 64);
             this.DirectorEmailTextBox.Name = "DirectorEmailTextBox";
-            this.DirectorEmailTextBox.Size = new System.Drawing.Size(178, 20);
+            this.DirectorEmailTextBox.Size = new System.Drawing.Size(298, 20);
             this.DirectorEmailTextBox.TabIndex = 1;
             this.DirectorEmailTextBox.TextChanged += new System.EventHandler(this.DirectorEmailTextBox_TextChanged);
             // 
             // DirectorPhoneTextBox
             // 
             this.DirectorPhoneTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DirectorPhoneTextBox.Location = new System.Drawing.Point(61, 89);
+            this.DirectorPhoneTextBox.Location = new System.Drawing.Point(99, 125);
             this.DirectorPhoneTextBox.Name = "DirectorPhoneTextBox";
-            this.DirectorPhoneTextBox.Size = new System.Drawing.Size(178, 20);
+            this.DirectorPhoneTextBox.Size = new System.Drawing.Size(298, 20);
             this.DirectorPhoneTextBox.TabIndex = 2;
             this.DirectorPhoneTextBox.TextChanged += new System.EventHandler(this.DirectorPhoneTextBox_TextChanged);
             // 
             // VicePhoneTextBox
             // 
             this.VicePhoneTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.VicePhoneTextBox.Location = new System.Drawing.Point(304, 89);
+            this.VicePhoneTextBox.Location = new System.Drawing.Point(501, 125);
             this.VicePhoneTextBox.Name = "VicePhoneTextBox";
-            this.VicePhoneTextBox.Size = new System.Drawing.Size(183, 20);
+            this.VicePhoneTextBox.Size = new System.Drawing.Size(304, 20);
             this.VicePhoneTextBox.TabIndex = 3;
             this.VicePhoneTextBox.TextChanged += new System.EventHandler(this.VicePhoneTextBox_TextChanged);
             // 
             // ViceEmailTextBox
             // 
             this.ViceEmailTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ViceEmailTextBox.Location = new System.Drawing.Point(304, 46);
+            this.ViceEmailTextBox.Location = new System.Drawing.Point(501, 64);
             this.ViceEmailTextBox.Name = "ViceEmailTextBox";
-            this.ViceEmailTextBox.Size = new System.Drawing.Size(183, 20);
+            this.ViceEmailTextBox.Size = new System.Drawing.Size(304, 20);
             this.ViceEmailTextBox.TabIndex = 4;
             this.ViceEmailTextBox.TextChanged += new System.EventHandler(this.ViceEmailTextBox_TextChanged);
             // 
             // ViceNameTextBox
             // 
             this.ViceNameTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ViceNameTextBox.Location = new System.Drawing.Point(304, 3);
+            this.ViceNameTextBox.Location = new System.Drawing.Point(501, 3);
             this.ViceNameTextBox.Name = "ViceNameTextBox";
-            this.ViceNameTextBox.Size = new System.Drawing.Size(183, 20);
+            this.ViceNameTextBox.Size = new System.Drawing.Size(304, 20);
             this.ViceNameTextBox.TabIndex = 5;
             this.ViceNameTextBox.TextChanged += new System.EventHandler(this.ViceNameTextBox_TextChanged);
             // 
@@ -254,7 +255,7 @@ namespace RyskTech
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.label1.Size = new System.Drawing.Size(52, 43);
+            this.label1.Size = new System.Drawing.Size(90, 61);
             this.label1.TabIndex = 6;
             this.label1.Text = "Diretor(a)";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -262,9 +263,9 @@ namespace RyskTech
             // DirectorNameTextBox
             // 
             this.DirectorNameTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DirectorNameTextBox.Location = new System.Drawing.Point(61, 3);
+            this.DirectorNameTextBox.Location = new System.Drawing.Point(99, 3);
             this.DirectorNameTextBox.Name = "DirectorNameTextBox";
-            this.DirectorNameTextBox.Size = new System.Drawing.Size(178, 20);
+            this.DirectorNameTextBox.Size = new System.Drawing.Size(298, 20);
             this.DirectorNameTextBox.TabIndex = 0;
             this.DirectorNameTextBox.TextChanged += new System.EventHandler(this.DirectorNameTextBox_TextChanged);
             // 
@@ -272,9 +273,9 @@ namespace RyskTech
             // 
             this.TeamInfoGroupBox.Controls.Add(this.tableLayoutPanel3);
             this.TeamInfoGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TeamInfoGroupBox.Location = new System.Drawing.Point(3, 158);
+            this.TeamInfoGroupBox.Location = new System.Drawing.Point(3, 211);
             this.TeamInfoGroupBox.Name = "TeamInfoGroupBox";
-            this.TeamInfoGroupBox.Size = new System.Drawing.Size(245, 150);
+            this.TeamInfoGroupBox.Size = new System.Drawing.Size(404, 202);
             this.TeamInfoGroupBox.TabIndex = 1;
             this.TeamInfoGroupBox.TabStop = false;
             this.TeamInfoGroupBox.Text = "Composição";
@@ -303,12 +304,12 @@ namespace RyskTech
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(239, 131);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(398, 183);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // OtherNumericUpDownCounter
             // 
-            this.OtherNumericUpDownCounter.Location = new System.Drawing.Point(190, 107);
+            this.OtherNumericUpDownCounter.Location = new System.Drawing.Point(316, 147);
             this.OtherNumericUpDownCounter.Name = "OtherNumericUpDownCounter";
             this.OtherNumericUpDownCounter.Size = new System.Drawing.Size(46, 20);
             this.OtherNumericUpDownCounter.TabIndex = 9;
@@ -316,7 +317,7 @@ namespace RyskTech
             // 
             // PublicNumericUpDown
             // 
-            this.PublicNumericUpDown.Location = new System.Drawing.Point(190, 81);
+            this.PublicNumericUpDown.Location = new System.Drawing.Point(316, 111);
             this.PublicNumericUpDown.Name = "PublicNumericUpDown";
             this.PublicNumericUpDown.Size = new System.Drawing.Size(46, 20);
             this.PublicNumericUpDown.TabIndex = 8;
@@ -324,7 +325,7 @@ namespace RyskTech
             // 
             // StudentsNumericUpDown
             // 
-            this.StudentsNumericUpDown.Location = new System.Drawing.Point(190, 55);
+            this.StudentsNumericUpDown.Location = new System.Drawing.Point(316, 75);
             this.StudentsNumericUpDown.Name = "StudentsNumericUpDown";
             this.StudentsNumericUpDown.Size = new System.Drawing.Size(46, 20);
             this.StudentsNumericUpDown.TabIndex = 7;
@@ -332,7 +333,7 @@ namespace RyskTech
             // 
             // ProfessionalNumericUpDown
             // 
-            this.ProfessionalNumericUpDown.Location = new System.Drawing.Point(190, 29);
+            this.ProfessionalNumericUpDown.Location = new System.Drawing.Point(316, 39);
             this.ProfessionalNumericUpDown.Name = "ProfessionalNumericUpDown";
             this.ProfessionalNumericUpDown.Size = new System.Drawing.Size(46, 20);
             this.ProfessionalNumericUpDown.TabIndex = 6;
@@ -350,7 +351,7 @@ namespace RyskTech
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(3, 26);
+            this.label10.Location = new System.Drawing.Point(3, 36);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(180, 13);
             this.label10.TabIndex = 1;
@@ -359,7 +360,7 @@ namespace RyskTech
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 52);
+            this.label11.Location = new System.Drawing.Point(3, 72);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(104, 13);
             this.label11.TabIndex = 2;
@@ -368,7 +369,7 @@ namespace RyskTech
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(3, 78);
+            this.label12.Location = new System.Drawing.Point(3, 108);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(42, 13);
             this.label12.TabIndex = 3;
@@ -376,7 +377,7 @@ namespace RyskTech
             // 
             // TeachersNumericUpDown
             // 
-            this.TeachersNumericUpDown.Location = new System.Drawing.Point(190, 3);
+            this.TeachersNumericUpDown.Location = new System.Drawing.Point(316, 3);
             this.TeachersNumericUpDown.Name = "TeachersNumericUpDown";
             this.TeachersNumericUpDown.Size = new System.Drawing.Size(46, 20);
             this.TeachersNumericUpDown.TabIndex = 5;
@@ -386,9 +387,9 @@ namespace RyskTech
             // 
             this.OtherTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.OtherTextBox.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.OtherTextBox.Location = new System.Drawing.Point(3, 107);
+            this.OtherTextBox.Location = new System.Drawing.Point(3, 147);
             this.OtherTextBox.Name = "OtherTextBox";
-            this.OtherTextBox.Size = new System.Drawing.Size(181, 20);
+            this.OtherTextBox.Size = new System.Drawing.Size(307, 20);
             this.OtherTextBox.TabIndex = 10;
             this.OtherTextBox.Text = "Outros...";
             this.OtherTextBox.TextChanged += new System.EventHandler(this.OtherTextBox_TextChanged);
@@ -399,9 +400,9 @@ namespace RyskTech
             // 
             this.ContactGroupBox.Controls.Add(this.tableLayoutPanel4);
             this.ContactGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContactGroupBox.Location = new System.Drawing.Point(254, 158);
+            this.ContactGroupBox.Location = new System.Drawing.Point(413, 211);
             this.ContactGroupBox.Name = "ContactGroupBox";
-            this.ContactGroupBox.Size = new System.Drawing.Size(245, 150);
+            this.ContactGroupBox.Size = new System.Drawing.Size(404, 202);
             this.ContactGroupBox.TabIndex = 2;
             this.ContactGroupBox.TabStop = false;
             this.ContactGroupBox.Text = "Contato";
@@ -409,39 +410,58 @@ namespace RyskTech
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.UnitContactTextBox, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.label7, 0, 0);
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.8794F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.12061F));
+            this.tableLayoutPanel4.Controls.Add(this.UnitContactTextBox, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.label7, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.label8, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 16);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.29578F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.70422F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(239, 131);
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(398, 183);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // UnitContactTextBox
             // 
-            this.tableLayoutPanel4.SetColumnSpan(this.UnitContactTextBox, 2);
-            this.UnitContactTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.UnitContactTextBox.Location = new System.Drawing.Point(3, 108);
+            this.UnitContactTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UnitContactTextBox.Location = new System.Drawing.Point(110, 98);
+            this.UnitContactTextBox.Margin = new System.Windows.Forms.Padding(8);
             this.UnitContactTextBox.Name = "UnitContactTextBox";
-            this.UnitContactTextBox.Size = new System.Drawing.Size(233, 20);
+            this.UnitContactTextBox.Size = new System.Drawing.Size(280, 20);
             this.UnitContactTextBox.TabIndex = 2;
             this.UnitContactTextBox.TextChanged += new System.EventHandler(this.UnitContactTextBox_TextChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label7.Location = new System.Drawing.Point(3, 51);
+            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label7.Location = new System.Drawing.Point(10, 100);
+            this.label7.Margin = new System.Windows.Forms.Padding(10);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(113, 13);
+            this.label7.Size = new System.Drawing.Size(82, 73);
             this.label7.TabIndex = 0;
             this.label7.Text = "Telefone (DDD)";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel4.SetColumnSpan(this.label8, 2);
+            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(3, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(392, 90);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Aqui, informe o telefone de contato público da únidade (como, por exemplo, recepç" +
+    "ão)";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TeamControl
             // 
@@ -449,7 +469,7 @@ namespace RyskTech
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.UnitTeamGroupBox);
             this.Name = "TeamControl";
-            this.Size = new System.Drawing.Size(508, 330);
+            this.Size = new System.Drawing.Size(826, 435);
             this.UnitTeamGroupBox.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.DirectorInfoGroupBox.ResumeLayout(false);
@@ -504,5 +524,6 @@ namespace RyskTech
         private System.Windows.Forms.NumericUpDown ProfessionalNumericUpDown;
         private System.Windows.Forms.NumericUpDown TeachersNumericUpDown;
         private System.Windows.Forms.TextBox OtherTextBox;
+        private System.Windows.Forms.Label label8;
     }
 }
