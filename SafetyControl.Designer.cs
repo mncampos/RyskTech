@@ -32,12 +32,9 @@ namespace RyskTech
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.safetyLabel = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.safety_training = new System.Windows.Forms.TabPage();
             this.safety_equipment = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.epiGroupBox = new System.Windows.Forms.GroupBox();
-            this.epcGroupBox = new System.Windows.Forms.GroupBox();
-            this.firstAidGroupBox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.glassesCheckBox = new System.Windows.Forms.CheckBox();
@@ -46,9 +43,10 @@ namespace RyskTech
             this.doserCheckBox = new System.Windows.Forms.CheckBox();
             this.dustProcetorCheckBox = new System.Windows.Forms.CheckBox();
             this.otherEPICheckBox = new System.Windows.Forms.CheckBox();
-            this.maskCheckBox = new System.Windows.Forms.CheckBox();
-            this.otherEPITextBox = new System.Windows.Forms.TextBox();
             this.masksEPITextBox = new System.Windows.Forms.TextBox();
+            this.otherEPITextBox = new System.Windows.Forms.TextBox();
+            this.maskCheckBox = new System.Windows.Forms.CheckBox();
+            this.epcGroupBox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.sandobxCheckBox = new System.Windows.Forms.CheckBox();
@@ -59,6 +57,7 @@ namespace RyskTech
             this.exhaustCheckBox = new System.Windows.Forms.CheckBox();
             this.otherEPCCheckBox = new System.Windows.Forms.CheckBox();
             this.otherEPCTextBox = new System.Windows.Forms.TextBox();
+            this.firstAidGroupBox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.noEmergentyBoxCheckBox = new System.Windows.Forms.CheckBox();
@@ -68,39 +67,40 @@ namespace RyskTech
             this.microporeTapeCheckBox = new System.Windows.Forms.CheckBox();
             this.otherFirstAidCheckBox = new System.Windows.Forms.CheckBox();
             this.otherFirstAidTextBox = new System.Windows.Forms.TextBox();
+            this.safety_training = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
-            this.yesCheckBox = new System.Windows.Forms.CheckBox();
-            this.noCheckBox = new System.Windows.Forms.CheckBox();
             this.periodicityGroupBox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
-            this.daysRadioButton = new System.Windows.Forms.RadioButton();
             this.weeksRadioButton = new System.Windows.Forms.RadioButton();
+            this.daysRadioButton = new System.Windows.Forms.RadioButton();
             this.monthsRadioButton = new System.Windows.Forms.RadioButton();
             this.yearsRadioButton = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.personellGroupBox = new System.Windows.Forms.GroupBox();
+            this.personnelGroupBox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.yesRadioButton = new System.Windows.Forms.RadioButton();
+            this.noRadioButton = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.safety_training.SuspendLayout();
             this.safety_equipment.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.epiGroupBox.SuspendLayout();
-            this.epcGroupBox.SuspendLayout();
-            this.firstAidGroupBox.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.epcGroupBox.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.firstAidGroupBox.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            this.safety_training.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.periodicityGroupBox.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            this.personellGroupBox.SuspendLayout();
+            this.personnelGroupBox.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -145,17 +145,6 @@ namespace RyskTech
             this.tabControl1.Size = new System.Drawing.Size(601, 374);
             this.tabControl1.TabIndex = 1;
             // 
-            // safety_training
-            // 
-            this.safety_training.Controls.Add(this.tableLayoutPanel6);
-            this.safety_training.Location = new System.Drawing.Point(4, 22);
-            this.safety_training.Name = "safety_training";
-            this.safety_training.Padding = new System.Windows.Forms.Padding(3);
-            this.safety_training.Size = new System.Drawing.Size(593, 348);
-            this.safety_training.TabIndex = 0;
-            this.safety_training.Text = "Treinamento da equipe";
-            this.safety_training.UseVisualStyleBackColor = true;
-            // 
             // safety_equipment
             // 
             this.safety_equipment.Controls.Add(this.tableLayoutPanel2);
@@ -194,29 +183,6 @@ namespace RyskTech
             this.epiGroupBox.TabIndex = 0;
             this.epiGroupBox.TabStop = false;
             this.epiGroupBox.Text = "EPI";
-            // 
-            // epcGroupBox
-            // 
-            this.epcGroupBox.Controls.Add(this.tableLayoutPanel4);
-            this.epcGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.epcGroupBox.Location = new System.Drawing.Point(296, 3);
-            this.epcGroupBox.Name = "epcGroupBox";
-            this.epcGroupBox.Size = new System.Drawing.Size(288, 196);
-            this.epcGroupBox.TabIndex = 1;
-            this.epcGroupBox.TabStop = false;
-            this.epcGroupBox.Text = "EPC";
-            // 
-            // firstAidGroupBox
-            // 
-            this.tableLayoutPanel2.SetColumnSpan(this.firstAidGroupBox, 2);
-            this.firstAidGroupBox.Controls.Add(this.tableLayoutPanel5);
-            this.firstAidGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.firstAidGroupBox.Location = new System.Drawing.Point(3, 205);
-            this.firstAidGroupBox.Name = "firstAidGroupBox";
-            this.firstAidGroupBox.Size = new System.Drawing.Size(581, 134);
-            this.firstAidGroupBox.TabIndex = 2;
-            this.firstAidGroupBox.TabStop = false;
-            this.firstAidGroupBox.Text = "Primeiros Socorros";
             // 
             // tableLayoutPanel3
             // 
@@ -270,6 +236,7 @@ namespace RyskTech
             this.glassesCheckBox.Text = "Óculos";
             this.glassesCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.glassesCheckBox.UseVisualStyleBackColor = true;
+            this.glassesCheckBox.CheckedChanged += new System.EventHandler(this.glassesCheckBox_CheckedChanged);
             // 
             // concreteWallCheckBox
             // 
@@ -282,6 +249,7 @@ namespace RyskTech
             this.concreteWallCheckBox.Text = "Mureta de Chumbo";
             this.concreteWallCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.concreteWallCheckBox.UseVisualStyleBackColor = true;
+            this.concreteWallCheckBox.CheckedChanged += new System.EventHandler(this.concreteWallCheckBox_CheckedChanged);
             // 
             // glovesCheckBox
             // 
@@ -294,6 +262,7 @@ namespace RyskTech
             this.glovesCheckBox.Text = "Luvas";
             this.glovesCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.glovesCheckBox.UseVisualStyleBackColor = true;
+            this.glovesCheckBox.CheckedChanged += new System.EventHandler(this.glovesCheckBox_CheckedChanged);
             // 
             // doserCheckBox
             // 
@@ -306,6 +275,7 @@ namespace RyskTech
             this.doserCheckBox.Text = "Dosímetro";
             this.doserCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.doserCheckBox.UseVisualStyleBackColor = true;
+            this.doserCheckBox.CheckedChanged += new System.EventHandler(this.doserCheckBox_CheckedChanged);
             // 
             // dustProcetorCheckBox
             // 
@@ -318,6 +288,7 @@ namespace RyskTech
             this.dustProcetorCheckBox.Text = "Guarda-pó";
             this.dustProcetorCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.dustProcetorCheckBox.UseVisualStyleBackColor = true;
+            this.dustProcetorCheckBox.CheckedChanged += new System.EventHandler(this.dustProcetorCheckBox_CheckedChanged);
             // 
             // otherEPICheckBox
             // 
@@ -330,6 +301,27 @@ namespace RyskTech
             this.otherEPICheckBox.Text = "Outros";
             this.otherEPICheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.otherEPICheckBox.UseVisualStyleBackColor = true;
+            this.otherEPICheckBox.CheckedChanged += new System.EventHandler(this.otherEPICheckBox_CheckedChanged);
+            // 
+            // masksEPITextBox
+            // 
+            this.masksEPITextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.masksEPITextBox.Enabled = false;
+            this.masksEPITextBox.Location = new System.Drawing.Point(143, 148);
+            this.masksEPITextBox.Name = "masksEPITextBox";
+            this.masksEPITextBox.Size = new System.Drawing.Size(135, 20);
+            this.masksEPITextBox.TabIndex = 9;
+            this.masksEPITextBox.TextChanged += new System.EventHandler(this.masksEPITextBox_TextChanged);
+            // 
+            // otherEPITextBox
+            // 
+            this.otherEPITextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.otherEPITextBox.Enabled = false;
+            this.otherEPITextBox.Location = new System.Drawing.Point(143, 120);
+            this.otherEPITextBox.Name = "otherEPITextBox";
+            this.otherEPITextBox.Size = new System.Drawing.Size(135, 20);
+            this.otherEPITextBox.TabIndex = 8;
+            this.otherEPITextBox.TextChanged += new System.EventHandler(this.otherEPITextBox_TextChanged);
             // 
             // maskCheckBox
             // 
@@ -342,22 +334,18 @@ namespace RyskTech
             this.maskCheckBox.Text = "Máscaras";
             this.maskCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.maskCheckBox.UseVisualStyleBackColor = true;
+            this.maskCheckBox.CheckedChanged += new System.EventHandler(this.maskCheckBox_CheckedChanged);
             // 
-            // otherEPITextBox
+            // epcGroupBox
             // 
-            this.otherEPITextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.otherEPITextBox.Location = new System.Drawing.Point(143, 120);
-            this.otherEPITextBox.Name = "otherEPITextBox";
-            this.otherEPITextBox.Size = new System.Drawing.Size(135, 20);
-            this.otherEPITextBox.TabIndex = 8;
-            // 
-            // masksEPITextBox
-            // 
-            this.masksEPITextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.masksEPITextBox.Location = new System.Drawing.Point(143, 148);
-            this.masksEPITextBox.Name = "masksEPITextBox";
-            this.masksEPITextBox.Size = new System.Drawing.Size(135, 20);
-            this.masksEPITextBox.TabIndex = 9;
+            this.epcGroupBox.Controls.Add(this.tableLayoutPanel4);
+            this.epcGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.epcGroupBox.Location = new System.Drawing.Point(296, 3);
+            this.epcGroupBox.Name = "epcGroupBox";
+            this.epcGroupBox.Size = new System.Drawing.Size(288, 196);
+            this.epcGroupBox.TabIndex = 1;
+            this.epcGroupBox.TabStop = false;
+            this.epcGroupBox.Text = "EPC";
             // 
             // tableLayoutPanel4
             // 
@@ -408,6 +396,7 @@ namespace RyskTech
             this.sandobxCheckBox.Text = "Caixa de areia";
             this.sandobxCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.sandobxCheckBox.UseVisualStyleBackColor = true;
+            this.sandobxCheckBox.CheckedChanged += new System.EventHandler(this.sandobxCheckBox_CheckedChanged);
             // 
             // vermiculitaCheckBox
             // 
@@ -420,6 +409,7 @@ namespace RyskTech
             this.vermiculitaCheckBox.Text = "Caixa de vermiculita";
             this.vermiculitaCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.vermiculitaCheckBox.UseVisualStyleBackColor = true;
+            this.vermiculitaCheckBox.CheckedChanged += new System.EventHandler(this.vermiculitaCheckBox_CheckedChanged);
             // 
             // calboxCheckBox
             // 
@@ -432,6 +422,7 @@ namespace RyskTech
             this.calboxCheckBox.Text = "Caixa de cal";
             this.calboxCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.calboxCheckBox.UseVisualStyleBackColor = true;
+            this.calboxCheckBox.CheckedChanged += new System.EventHandler(this.calboxCheckBox_CheckedChanged);
             // 
             // shovelCheckBox
             // 
@@ -444,6 +435,7 @@ namespace RyskTech
             this.shovelCheckBox.Text = "Pá";
             this.shovelCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.shovelCheckBox.UseVisualStyleBackColor = true;
+            this.shovelCheckBox.CheckedChanged += new System.EventHandler(this.shovelCheckBox_CheckedChanged);
             // 
             // chapelCheckBox
             // 
@@ -456,6 +448,7 @@ namespace RyskTech
             this.chapelCheckBox.Text = "Capela";
             this.chapelCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chapelCheckBox.UseVisualStyleBackColor = true;
+            this.chapelCheckBox.CheckedChanged += new System.EventHandler(this.chapelCheckBox_CheckedChanged);
             // 
             // exhaustCheckBox
             // 
@@ -468,6 +461,7 @@ namespace RyskTech
             this.exhaustCheckBox.Text = "Exaustor";
             this.exhaustCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.exhaustCheckBox.UseVisualStyleBackColor = true;
+            this.exhaustCheckBox.CheckedChanged += new System.EventHandler(this.exhaustCheckBox_CheckedChanged);
             // 
             // otherEPCCheckBox
             // 
@@ -480,6 +474,7 @@ namespace RyskTech
             this.otherEPCCheckBox.Text = "Outros";
             this.otherEPCCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.otherEPCCheckBox.UseVisualStyleBackColor = true;
+            this.otherEPCCheckBox.CheckedChanged += new System.EventHandler(this.otherEPCCheckBox_CheckedChanged);
             // 
             // otherEPCTextBox
             // 
@@ -489,6 +484,19 @@ namespace RyskTech
             this.otherEPCTextBox.Name = "otherEPCTextBox";
             this.otherEPCTextBox.Size = new System.Drawing.Size(135, 20);
             this.otherEPCTextBox.TabIndex = 8;
+            this.otherEPCTextBox.TextChanged += new System.EventHandler(this.otherEPCTextBox_TextChanged);
+            // 
+            // firstAidGroupBox
+            // 
+            this.tableLayoutPanel2.SetColumnSpan(this.firstAidGroupBox, 2);
+            this.firstAidGroupBox.Controls.Add(this.tableLayoutPanel5);
+            this.firstAidGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.firstAidGroupBox.Location = new System.Drawing.Point(3, 205);
+            this.firstAidGroupBox.Name = "firstAidGroupBox";
+            this.firstAidGroupBox.Size = new System.Drawing.Size(581, 134);
+            this.firstAidGroupBox.TabIndex = 2;
+            this.firstAidGroupBox.TabStop = false;
+            this.firstAidGroupBox.Text = "Primeiros Socorros";
             // 
             // tableLayoutPanel5
             // 
@@ -538,6 +546,7 @@ namespace RyskTech
             this.noEmergentyBoxCheckBox.Text = "Não há uma caixa de primeiros socorros";
             this.noEmergentyBoxCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.noEmergentyBoxCheckBox.UseVisualStyleBackColor = true;
+            this.noEmergentyBoxCheckBox.CheckedChanged += new System.EventHandler(this.noEmergentyBoxCheckBox_CheckedChanged);
             // 
             // gazeCheckBox
             // 
@@ -550,6 +559,7 @@ namespace RyskTech
             this.gazeCheckBox.Text = "Gaze";
             this.gazeCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.gazeCheckBox.UseVisualStyleBackColor = true;
+            this.gazeCheckBox.CheckedChanged += new System.EventHandler(this.gazeCheckBox_CheckedChanged);
             // 
             // scisorsCheckBox
             // 
@@ -562,6 +572,7 @@ namespace RyskTech
             this.scisorsCheckBox.Text = "Tesoura";
             this.scisorsCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.scisorsCheckBox.UseVisualStyleBackColor = true;
+            this.scisorsCheckBox.CheckedChanged += new System.EventHandler(this.scisorsCheckBox_CheckedChanged);
             // 
             // waterCheckBox
             // 
@@ -574,6 +585,7 @@ namespace RyskTech
             this.waterCheckBox.Text = "Água boricada";
             this.waterCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.waterCheckBox.UseVisualStyleBackColor = true;
+            this.waterCheckBox.CheckedChanged += new System.EventHandler(this.waterCheckBox_CheckedChanged);
             // 
             // microporeTapeCheckBox
             // 
@@ -586,6 +598,7 @@ namespace RyskTech
             this.microporeTapeCheckBox.Text = "Fita Microporo";
             this.microporeTapeCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.microporeTapeCheckBox.UseVisualStyleBackColor = true;
+            this.microporeTapeCheckBox.CheckedChanged += new System.EventHandler(this.microporeTapeCheckBox_CheckedChanged);
             // 
             // otherFirstAidCheckBox
             // 
@@ -598,6 +611,7 @@ namespace RyskTech
             this.otherFirstAidCheckBox.Text = "Outros";
             this.otherFirstAidCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.otherFirstAidCheckBox.UseVisualStyleBackColor = true;
+            this.otherFirstAidCheckBox.CheckedChanged += new System.EventHandler(this.otherFirstAidCheckBox_CheckedChanged);
             // 
             // otherFirstAidTextBox
             // 
@@ -607,6 +621,18 @@ namespace RyskTech
             this.otherFirstAidTextBox.Name = "otherFirstAidTextBox";
             this.otherFirstAidTextBox.Size = new System.Drawing.Size(140, 20);
             this.otherFirstAidTextBox.TabIndex = 7;
+            this.otherFirstAidTextBox.TextChanged += new System.EventHandler(this.otherFirstAidTextBox_TextChanged);
+            // 
+            // safety_training
+            // 
+            this.safety_training.Controls.Add(this.tableLayoutPanel6);
+            this.safety_training.Location = new System.Drawing.Point(4, 22);
+            this.safety_training.Name = "safety_training";
+            this.safety_training.Padding = new System.Windows.Forms.Padding(3);
+            this.safety_training.Size = new System.Drawing.Size(593, 348);
+            this.safety_training.TabIndex = 0;
+            this.safety_training.Text = "Treinamento da equipe";
+            this.safety_training.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel6
             // 
@@ -615,10 +641,10 @@ namespace RyskTech
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 423F));
             this.tableLayoutPanel6.Controls.Add(this.label4, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.yesCheckBox, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.noCheckBox, 1, 1);
             this.tableLayoutPanel6.Controls.Add(this.periodicityGroupBox, 0, 2);
-            this.tableLayoutPanel6.Controls.Add(this.personellGroupBox, 0, 3);
+            this.tableLayoutPanel6.Controls.Add(this.personnelGroupBox, 0, 3);
+            this.tableLayoutPanel6.Controls.Add(this.yesRadioButton, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.noRadioButton, 1, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -643,35 +669,12 @@ namespace RyskTech
     "s?";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // yesCheckBox
-            // 
-            this.yesCheckBox.AutoSize = true;
-            this.yesCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.yesCheckBox.Location = new System.Drawing.Point(3, 38);
-            this.yesCheckBox.Name = "yesCheckBox";
-            this.yesCheckBox.Size = new System.Drawing.Size(76, 26);
-            this.yesCheckBox.TabIndex = 1;
-            this.yesCheckBox.Text = "Sim";
-            this.yesCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.yesCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // noCheckBox
-            // 
-            this.noCheckBox.AutoSize = true;
-            this.noCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.noCheckBox.Location = new System.Drawing.Point(85, 38);
-            this.noCheckBox.Name = "noCheckBox";
-            this.noCheckBox.Size = new System.Drawing.Size(76, 26);
-            this.noCheckBox.TabIndex = 2;
-            this.noCheckBox.Text = "Não";
-            this.noCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.noCheckBox.UseVisualStyleBackColor = true;
-            // 
             // periodicityGroupBox
             // 
             this.tableLayoutPanel6.SetColumnSpan(this.periodicityGroupBox, 3);
             this.periodicityGroupBox.Controls.Add(this.tableLayoutPanel7);
             this.periodicityGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.periodicityGroupBox.Enabled = false;
             this.periodicityGroupBox.Location = new System.Drawing.Point(3, 70);
             this.periodicityGroupBox.Name = "periodicityGroupBox";
             this.periodicityGroupBox.Size = new System.Drawing.Size(581, 137);
@@ -684,7 +687,7 @@ namespace RyskTech
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.73771F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.26229F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 240F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 241F));
             this.tableLayoutPanel7.Controls.Add(this.label5, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.weeksRadioButton, 1, 2);
             this.tableLayoutPanel7.Controls.Add(this.daysRadioButton, 0, 2);
@@ -715,17 +718,6 @@ namespace RyskTech
             this.label5.Text = "Com qual periodicidade?";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // daysRadioButton
-            // 
-            this.daysRadioButton.AutoSize = true;
-            this.daysRadioButton.Location = new System.Drawing.Point(3, 71);
-            this.daysRadioButton.Name = "daysRadioButton";
-            this.daysRadioButton.Size = new System.Drawing.Size(46, 17);
-            this.daysRadioButton.TabIndex = 1;
-            this.daysRadioButton.TabStop = true;
-            this.daysRadioButton.Text = "Dias";
-            this.daysRadioButton.UseVisualStyleBackColor = true;
-            // 
             // weeksRadioButton
             // 
             this.weeksRadioButton.AutoSize = true;
@@ -736,6 +728,19 @@ namespace RyskTech
             this.weeksRadioButton.TabStop = true;
             this.weeksRadioButton.Text = "Semanas";
             this.weeksRadioButton.UseVisualStyleBackColor = true;
+            this.weeksRadioButton.CheckedChanged += new System.EventHandler(this.weeksRadioButton_CheckedChanged);
+            // 
+            // daysRadioButton
+            // 
+            this.daysRadioButton.AutoSize = true;
+            this.daysRadioButton.Location = new System.Drawing.Point(3, 71);
+            this.daysRadioButton.Name = "daysRadioButton";
+            this.daysRadioButton.Size = new System.Drawing.Size(46, 17);
+            this.daysRadioButton.TabIndex = 1;
+            this.daysRadioButton.TabStop = true;
+            this.daysRadioButton.Text = "Dias";
+            this.daysRadioButton.UseVisualStyleBackColor = true;
+            this.daysRadioButton.CheckedChanged += new System.EventHandler(this.daysRadioButton_CheckedChanged);
             // 
             // monthsRadioButton
             // 
@@ -748,6 +753,7 @@ namespace RyskTech
             this.monthsRadioButton.Text = "Meses";
             this.monthsRadioButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.monthsRadioButton.UseVisualStyleBackColor = true;
+            this.monthsRadioButton.CheckedChanged += new System.EventHandler(this.monthsRadioButton_CheckedChanged);
             // 
             // yearsRadioButton
             // 
@@ -759,6 +765,7 @@ namespace RyskTech
             this.yearsRadioButton.TabStop = true;
             this.yearsRadioButton.Text = "Anos";
             this.yearsRadioButton.UseVisualStyleBackColor = true;
+            this.yearsRadioButton.CheckedChanged += new System.EventHandler(this.yearsRadioButton_CheckedChanged);
             // 
             // label6
             // 
@@ -776,20 +783,22 @@ namespace RyskTech
             this.numericUpDown1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDown1.Location = new System.Drawing.Point(189, 39);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(142, 20);
+            this.numericUpDown1.Size = new System.Drawing.Size(141, 20);
             this.numericUpDown1.TabIndex = 6;
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
-            // personellGroupBox
+            // personnelGroupBox
             // 
-            this.tableLayoutPanel6.SetColumnSpan(this.personellGroupBox, 3);
-            this.personellGroupBox.Controls.Add(this.tableLayoutPanel8);
-            this.personellGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.personellGroupBox.Location = new System.Drawing.Point(3, 213);
-            this.personellGroupBox.Name = "personellGroupBox";
-            this.personellGroupBox.Size = new System.Drawing.Size(581, 126);
-            this.personellGroupBox.TabIndex = 4;
-            this.personellGroupBox.TabStop = false;
-            this.personellGroupBox.Text = "Envolvidos";
+            this.tableLayoutPanel6.SetColumnSpan(this.personnelGroupBox, 3);
+            this.personnelGroupBox.Controls.Add(this.tableLayoutPanel8);
+            this.personnelGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.personnelGroupBox.Enabled = false;
+            this.personnelGroupBox.Location = new System.Drawing.Point(3, 213);
+            this.personnelGroupBox.Name = "personnelGroupBox";
+            this.personnelGroupBox.Size = new System.Drawing.Size(581, 126);
+            this.personnelGroupBox.TabIndex = 4;
+            this.personnelGroupBox.TabStop = false;
+            this.personnelGroupBox.Text = "Envolvidos";
             // 
             // tableLayoutPanel8
             // 
@@ -812,7 +821,7 @@ namespace RyskTech
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Location = new System.Drawing.Point(3, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(569, 20);
+            this.label7.Size = new System.Drawing.Size(569, 21);
             this.label7.TabIndex = 0;
             this.label7.Text = "Cite brevemente quem são as pessoas envolvidas no treinamento";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -820,11 +829,36 @@ namespace RyskTech
             // textBox1
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(3, 23);
+            this.textBox1.Location = new System.Drawing.Point(3, 24);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(569, 81);
+            this.textBox1.Size = new System.Drawing.Size(569, 80);
             this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // yesRadioButton
+            // 
+            this.yesRadioButton.AutoSize = true;
+            this.yesRadioButton.Location = new System.Drawing.Point(3, 38);
+            this.yesRadioButton.Name = "yesRadioButton";
+            this.yesRadioButton.Size = new System.Drawing.Size(42, 17);
+            this.yesRadioButton.TabIndex = 5;
+            this.yesRadioButton.TabStop = true;
+            this.yesRadioButton.Text = "Sim";
+            this.yesRadioButton.UseVisualStyleBackColor = true;
+            this.yesRadioButton.CheckedChanged += new System.EventHandler(this.yesRadioButton_CheckedChanged);
+            // 
+            // noRadioButton
+            // 
+            this.noRadioButton.AutoSize = true;
+            this.noRadioButton.Location = new System.Drawing.Point(85, 38);
+            this.noRadioButton.Name = "noRadioButton";
+            this.noRadioButton.Size = new System.Drawing.Size(45, 17);
+            this.noRadioButton.TabIndex = 6;
+            this.noRadioButton.TabStop = true;
+            this.noRadioButton.Text = "Não";
+            this.noRadioButton.UseVisualStyleBackColor = true;
+            this.noRadioButton.CheckedChanged += new System.EventHandler(this.noRadioButton_CheckedChanged);
             // 
             // SafetyControl
             // 
@@ -836,25 +870,25 @@ namespace RyskTech
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            this.safety_training.ResumeLayout(false);
             this.safety_equipment.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.epiGroupBox.ResumeLayout(false);
-            this.epcGroupBox.ResumeLayout(false);
-            this.firstAidGroupBox.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.epcGroupBox.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            this.firstAidGroupBox.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
+            this.safety_training.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
             this.periodicityGroupBox.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            this.personellGroupBox.ResumeLayout(false);
+            this.personnelGroupBox.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
             this.ResumeLayout(false);
@@ -904,8 +938,6 @@ namespace RyskTech
         private System.Windows.Forms.TextBox otherFirstAidTextBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox yesCheckBox;
-        private System.Windows.Forms.CheckBox noCheckBox;
         private System.Windows.Forms.GroupBox periodicityGroupBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label label5;
@@ -915,9 +947,11 @@ namespace RyskTech
         private System.Windows.Forms.RadioButton yearsRadioButton;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.GroupBox personellGroupBox;
+        private System.Windows.Forms.GroupBox personnelGroupBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RadioButton yesRadioButton;
+        private System.Windows.Forms.RadioButton noRadioButton;
     }
 }
