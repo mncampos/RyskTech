@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RyskTech.Data;
+using System;
 using System.Text;
 using System.Windows.Forms;
 
@@ -6,35 +7,25 @@ namespace RyskTech
 {
     public partial class LocationControl : UserControl
     {
+        private Location data;
+
         public LocationControl()
         {
             InitializeComponent();
         }
 
+        private void LocationControl_Load(object sender, EventArgs e)
+        {
+            data = new Location();
+        }
+
         private void UnitSearchButton_Click(object sender, EventArgs e)
         {
-
-            string street = StreetTextBox.Text;
-            string city = "Porto Alegre";
-            string state = "RS";
-
             try
             {
-                StringBuilder address = new StringBuilder();
-                address.Append("https://maps.google.com/maps?q=");
-
-                if (street != string.Empty)
-                {
-                    address.Append(street + "," + "+");
-                }
-
-                address.Append(city + "," + "+");
-                address.Append(state + "," + "+");
-
                 // Temporary fix until I find out why javascript is giving errors
                 webBrowser1.ScriptErrorsSuppressed = true;
-
-                webBrowser1.Navigate(address.ToString());
+                webBrowser1.Navigate(data.GetGoogleMapsSearchURL());
             }
             catch (Exception ex)
             {
@@ -44,52 +35,57 @@ namespace RyskTech
 
         private void RodoviaButton_CheckedChanged(object sender, EventArgs e)
         {
-            APR.unit_info.location.prefix = RyskTech.LocationPrefix.Rodovia;
+            data.prefix = LocationPrefix.Highway;
         }
 
         private void TravessaButton_CheckedChanged(object sender, EventArgs e)
         {
-            APR.unit_info.location.prefix = RyskTech.LocationPrefix.Travessa;
+            data.prefix = LocationPrefix.Crossing;
         }
 
         private void AlamedaButton_CheckedChanged(object sender, EventArgs e)
         {
-            APR.unit_info.location.prefix = RyskTech.LocationPrefix.Alameda;
+            data.prefix = LocationPrefix.Boulevard;
         }
 
         private void AvenidaButton_CheckedChanged(object sender, EventArgs e)
         {
-            APR.unit_info.location.prefix = RyskTech.LocationPrefix.Avenida;
+            data.prefix = LocationPrefix.Avenue;
         }
 
         private void RuaButton_CheckedChanged(object sender, EventArgs e)
         {
-            APR.unit_info.location.prefix = RyskTech.LocationPrefix.Rua;
+            data.prefix = LocationPrefix.Road;
         }
 
         private void StreetTextBox_TextChanged(object sender, EventArgs e)
         {
-            APR.unit_info.location.street_name = StreetTextBox.Text;
+            data.streetName = StreetTextBox.Text;
         }
 
         private void NeighborHoodTextBox_TextChanged(object sender, EventArgs e)
         {
-            APR.unit_info.location.neighborhood = NeighborhoodTextBox.Text;
+            data.district = NeighborhoodTextBox.Text;
         }
 
         private void ZIPTextBox_TextChanged(object sender, EventArgs e)
         {
-            APR.unit_info.location.ZIP = ZIPTextBox.Text;
+            data.ZIPCode = ZIPTextBox.Text;
         }
 
         private void ComplementTextBox_TextChanged(object sender, EventArgs e)
         {
-            APR.unit_info.location.complement = ComplementTextBox.Text;
+            data.complement = ComplementTextBox.Text;
         }
 
         private void NumberTextBox_TextChanged(object sender, EventArgs e)
         {
-            APR.unit_info.location.number = uint.Parse(NumberTextBox.Text);
+            data.streetNumber = int.Parse(NumberTextBox.Text);
+        }
+    
+        public void ValidateData()
+        {
+            data.CheckForErrorsOrIncompleteFields();
         }
     }
 }

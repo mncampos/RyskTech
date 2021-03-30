@@ -12,16 +12,16 @@ namespace RyskTech
 
         private void SurroundingInfoTextBox_TextChanged(object sender, System.EventArgs e)
         {
-            APR.unit_info.surroundings = SurroundingInfoTextBox.Text;
+            APR.unit.surroundingsDetails = SurroundingInfoTextBox.Text;
         }
 
-        public List<UnitInformation.StructureInformation> getStructureData()
+        public List<Unit.StructureInformation> getStructureData()
         {
-            List<UnitInformation.StructureInformation> result = new List<UnitInformation.StructureInformation>();
+            List<Unit.StructureInformation> result = new List<Unit.StructureInformation>();
 
             foreach (DataGridViewRow row in InternalStructureDataGridView.Rows)
             {
-                UnitInformation.StructureInformation entry = new UnitInformation.StructureInformation();
+                Unit.StructureInformation entry = new Unit.StructureInformation();
                 if (row.Cells[0].Value != null)
                     entry.building = row.Cells[0].Value.ToString();
                 if (row.Cells[1].Value != null)

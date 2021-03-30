@@ -26,7 +26,7 @@ namespace RyskTech
 
         private void MethodologyTextBox_TextChanged(object sender, EventArgs e)
         {
-            APR.unit_info.methodology = MethodologyTextBox.Text;
+            APR.unit.methodologyDescription = MethodologyTextBox.Text;
         }
 
         private void showTable1Button_Click(object sender, EventArgs e)

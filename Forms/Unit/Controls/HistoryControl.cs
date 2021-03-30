@@ -12,7 +12,7 @@ namespace RyskTech
 
         private void UnitHistoryTextBox_TextChanged(object sender, EventArgs e)
         {
-            APR.unit_info.history = UnitHistoryTextBox.Text;
+            APR.unit.history = UnitHistoryTextBox.Text;
         }
     }
 }

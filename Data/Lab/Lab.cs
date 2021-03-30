@@ -1,11 +1,10 @@
 ﻿namespace RyskTech
 {
-    class LabInformation
+    class Lab
     {
         public SafetyInformation safety_info = new SafetyInformation();
 
-        public LabInformation() { }
-
+        public Lab() { }
 
     }
 }

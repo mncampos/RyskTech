@@ -45,10 +45,10 @@ namespace RyskTech
             this.ComplementTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.RuaButton = new System.Windows.Forms.RadioButton();
-            this.UnitSearchButton = new System.Windows.Forms.Button();
             this.unitLocationIntroductionLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.UnitSearchButton = new System.Windows.Forms.Button();
             this.searchButtonExplanationLabel = new System.Windows.Forms.Label();
             this.UnitLocationGroupBox.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
@@ -270,18 +270,6 @@ namespace RyskTech
             this.RuaButton.UseVisualStyleBackColor = true;
             this.RuaButton.CheckedChanged += new System.EventHandler(this.RuaButton_CheckedChanged);
             // 
-            // UnitSearchButton
-            // 
-            this.UnitSearchButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UnitSearchButton.Location = new System.Drawing.Point(237, 364);
-            this.UnitSearchButton.Margin = new System.Windows.Forms.Padding(12, 20, 12, 20);
-            this.UnitSearchButton.Name = "UnitSearchButton";
-            this.UnitSearchButton.Size = new System.Drawing.Size(56, 26);
-            this.UnitSearchButton.TabIndex = 0;
-            this.UnitSearchButton.Text = "Procurar";
-            this.UnitSearchButton.UseVisualStyleBackColor = true;
-            this.UnitSearchButton.Click += new System.EventHandler(this.UnitSearchButton_Click);
-            // 
             // unitLocationIntroductionLabel
             // 
             this.unitLocationIntroductionLabel.AutoSize = true;
@@ -317,6 +305,18 @@ namespace RyskTech
             this.webBrowser1.Size = new System.Drawing.Size(429, 316);
             this.webBrowser1.TabIndex = 0;
             // 
+            // UnitSearchButton
+            // 
+            this.UnitSearchButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UnitSearchButton.Location = new System.Drawing.Point(237, 364);
+            this.UnitSearchButton.Margin = new System.Windows.Forms.Padding(12, 20, 12, 20);
+            this.UnitSearchButton.Name = "UnitSearchButton";
+            this.UnitSearchButton.Size = new System.Drawing.Size(56, 26);
+            this.UnitSearchButton.TabIndex = 0;
+            this.UnitSearchButton.Text = "Procurar";
+            this.UnitSearchButton.UseVisualStyleBackColor = true;
+            this.UnitSearchButton.Click += new System.EventHandler(this.UnitSearchButton_Click);
+            // 
             // searchButtonExplanationLabel
             // 
             this.searchButtonExplanationLabel.AutoSize = true;
@@ -337,6 +337,7 @@ namespace RyskTech
             this.Controls.Add(this.UnitLocationGroupBox);
             this.Name = "LocationControl";
             this.Size = new System.Drawing.Size(820, 429);
+            this.Load += new System.EventHandler(this.LocationControl_Load);
             this.UnitLocationGroupBox.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
