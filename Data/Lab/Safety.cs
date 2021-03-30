@@ -1,6 +1,6 @@
 ﻿namespace RyskTech.Data
 {
-    public class SafetyInformation
+    public class Safety
     {
         // Equipment
         public bool[] EPCS; // areia, vermiculita, cal, pa, capela, exaustor, outros
@@ -20,7 +20,7 @@
 
         public string involvedPersonel;
 
-        public SafetyInformation()
+        public Safety()
         {
             this.EPCS = new bool[7];
             this.EPIS = new bool[7];

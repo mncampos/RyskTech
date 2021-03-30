@@ -1,6 +1,7 @@
 ﻿// Nuget package SyncFusion
 using Syncfusion.DocIO.DLS;
 using System.Collections.Generic;
+using RyskTech.Data;
 
 namespace RyskTech
 {
@@ -8,24 +9,33 @@ namespace RyskTech
     {
         private string documentName;
         private WordDocument documentReference;
+        private APR apr;
 
-        public DocumentBuilder(string documentName)
+        public DocumentBuilder(APR apr, string documentName)
         {
+            this.apr = apr;
             this.documentName = documentName;
 
-            this.documentReference = new WordDocument();
-            this.documentReference.EnsureMinimal();
+            documentReference = new WordDocument();
+            documentReference.EnsureMinimal();
         }
 
-        public int CreateDocumentFromAPR()
+        public int CreateUnitDocumentFromAPR()
         {
             AddUnitInformation();
 
-            // TODO Do this for every lab
-            //AddLabInformation();
+            documentReference.Save(documentName, Syncfusion.DocIO.FormatType.Docx);
+            documentReference.Close();
 
-            this.documentReference.Save(documentName, Syncfusion.DocIO.FormatType.Docx);
-            this.documentReference.Close();
+            return 0;
+        }
+
+        public int CreateLabDocumentFromAPR()
+        {
+            AddLabInformation();
+
+            documentReference.Save(documentName, Syncfusion.DocIO.FormatType.Docx);
+            documentReference.Close();
 
             return 0;
         }
@@ -51,20 +61,20 @@ namespace RyskTech
 
         private void AddUnitTeamInformation()
         {
-            List<string> directors = APR.GetDirectors();
+            List<string> directors = apr.GetDirectorsFormattedDescriptionList();
 
             AddSectionWithTitle(this.documentReference.Sections.Count + ". Equipe");
             AddTextParagraph("A unidade tem como equipe da direção: ");
             AddListWithItems(directors);
             AddTextParagraph("A composição do pessoal presente na unidade se encontra na tabela abaixo: ");
             AddTeamCompositionTable();
-            AddTextParagraph("Para entrar em contato com a unidade, utilizar o telefone " + APR.unit_info.phone);
+            AddTextParagraph("Para entrar em contato com a unidade, utilizar o telefone " + apr.unit.team.contactPhone);
         }
 
         private void AddUnitLocationInformation()
         {
             AddSectionWithTitle(this.documentReference.Sections.Count + ". Localização");
-            AddTextParagraph("A unidade está localizada em " + APR.GetLocationString() + "." + APR.unit_info.surroundings);
+            AddTextParagraph("A unidade está localizada em " + apr.GetLocationString() + "." + apr.unit.structure.surroundingsDetails);
         }
 
         private void AddUnitStructureInformation()
@@ -77,33 +87,30 @@ namespace RyskTech
         private void AddUnitHistoryInformation()
         {
             AddSectionWithTitle(this.documentReference.Sections.Count + ". Histórico");
-            AddTextParagraph(APR.unit_info.history);
+            AddTextParagraph(apr.unit.history);
         }
 
         private void AddAPRMethodologyInformation()
         {
             AddSectionWithTitle(this.documentReference.Sections.Count + ". Metodologia");
-            AddTextParagraph(APR.unit_info.methodology);
+            AddTextParagraph(apr.unit.methodologyDescription);
         }
 
         private void AddRoomsBuildingsTimesTable()
         {
-            // We need to do this so the information is updated in the APR class
-            APR.FetchSpaceInformation();
-
             // Create table with rooms, buildings and time ranges
             IWTable unit_spaces_table = GetCurrentSection().AddTable();
-            unit_spaces_table.ResetCells(APR.unit_info.spaces.Count + 1, 4);
-            unit_spaces_table[0, 0].AddParagraph().AppendText("Prédio");
-            unit_spaces_table[0, 1].AddParagraph().AppendText("Sala");
-            unit_spaces_table[0, 2].AddParagraph().AppendText("Andar");
-            unit_spaces_table[0, 3].AddParagraph().AppendText("Período de uso");
-            for (int i = 0; i < APR.unit_info.spaces.Count; i++)
+            unit_spaces_table.ResetCells(apr.unit.structure.spaces.Count + 1, 4);
+            unit_spaces_table[0, 0].AddParagraph().AppendText(Resources.Language.pt_local.Building);
+            unit_spaces_table[0, 1].AddParagraph().AppendText(Resources.Language.pt_local.Room);
+            unit_spaces_table[0, 2].AddParagraph().AppendText(Resources.Language.pt_local.Floor);
+            unit_spaces_table[0, 3].AddParagraph().AppendText(Resources.Language.pt_local.UsagePeriod);
+            for (int i = 0; i < apr.unit.structure.spaces.Count; i++)
             {
-                unit_spaces_table[i + 1, 0].AddParagraph().AppendText(APR.unit_info.spaces[i].building);
-                unit_spaces_table[i + 1, 1].AddParagraph().AppendText(APR.unit_info.spaces[i].room);
-                unit_spaces_table[i + 1, 2].AddParagraph().AppendText(APR.unit_info.spaces[i].floor);
-                unit_spaces_table[i + 1, 3].AddParagraph().AppendText(APR.unit_info.spaces[i].turn_start.ToString() + " - " + APR.unit_info.spaces[i].turn_end.ToString());
+                unit_spaces_table[i + 1, 0].AddParagraph().AppendText(apr.unit.structure.spaces[i].buildingIdentifier);
+                unit_spaces_table[i + 1, 1].AddParagraph().AppendText(apr.unit.structure.spaces[i].roomIdentifier);
+                unit_spaces_table[i + 1, 2].AddParagraph().AppendText(apr.unit.structure.spaces[i].floorIdentifier);
+                unit_spaces_table[i + 1, 3].AddParagraph().AppendText(apr.unit.structure.spaces[i].turnStart.ToString() + " - " + apr.unit.structure.spaces[i].turnEnd.ToString()); // TODO Parse times
             }
         }
 
@@ -111,30 +118,30 @@ namespace RyskTech
         {
             IWTable unit_team_table = GetCurrentSection().AddTable();
             unit_team_table.ResetCells(6, 2);
-            unit_team_table[0, 0].AddParagraph().AppendText("Tipo");
-            unit_team_table[0, 1].AddParagraph().AppendText("Quantidade");
+            unit_team_table[0, 0].AddParagraph().AppendText(Resources.Language.pt_local.Type);
+            unit_team_table[0, 1].AddParagraph().AppendText(Resources.Language.pt_local.Quantity);
 
             // Public
-            unit_team_table[1, 0].AddParagraph().AppendText("Público");
-            unit_team_table[1, 1].AddParagraph().AppendText(APR.unit_info.team.general_public.count.ToString());
+            unit_team_table[1, 0].AddParagraph().AppendText(Resources.Language.pt_local.Public);
+            unit_team_table[1, 1].AddParagraph().AppendText(apr.unit.team.generalPublicCount.ToString());
 
             // Students
-            unit_team_table[2, 0].AddParagraph().AppendText("Alunos e Estudantes");
-            unit_team_table[2, 1].AddParagraph().AppendText(APR.unit_info.team.students.count.ToString());
+            unit_team_table[2, 0].AddParagraph().AppendText(Resources.Language.pt_local.Students);
+            unit_team_table[2, 1].AddParagraph().AppendText(apr.unit.team.studentsCount.ToString());
 
             // Teachers
-            unit_team_table[3, 0].AddParagraph().AppendText("Professores");
-            unit_team_table[3, 1].AddParagraph().AppendText(APR.unit_info.team.teachers.count.ToString());
+            unit_team_table[3, 0].AddParagraph().AppendText(Resources.Language.pt_local.Teachers);
+            unit_team_table[3, 1].AddParagraph().AppendText(apr.unit.team.teachersCount.ToString());
 
             // Technics
-            unit_team_table[4, 0].AddParagraph().AppendText("Profissionais Técnico-Administrativos");
-            unit_team_table[4, 1].AddParagraph().AppendText(APR.unit_info.team.technics.count.ToString());
+            unit_team_table[4, 0].AddParagraph().AppendText(Resources.Language.pt_local.Technics);
+            unit_team_table[4, 1].AddParagraph().AppendText(apr.unit.team.technicsCount.ToString());
 
-            // Technics
-            if (APR.unit_info.team.other != null)
+            // Other
+            if (apr.unit.team.otherDescription != null)
             {
-                unit_team_table[5, 0].AddParagraph().AppendText(APR.unit_info.team.other.description);
-                unit_team_table[5, 1].AddParagraph().AppendText(APR.unit_info.team.other.count.ToString());
+                unit_team_table[5, 0].AddParagraph().AppendText(apr.unit.team.otherDescription);
+                unit_team_table[5, 1].AddParagraph().AppendText(apr.unit.team.otherCount.ToString());
             }
         }
 

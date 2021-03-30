@@ -123,8 +123,11 @@ namespace RyskTech
             // safetyLabel
             // 
             this.safetyLabel.AutoSize = true;
+            this.safetyLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.safetyLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tableLayoutPanel1.SetColumnSpan(this.safetyLabel, 2);
             this.safetyLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.safetyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.safetyLabel.Location = new System.Drawing.Point(3, 0);
             this.safetyLabel.Name = "safetyLabel";
             this.safetyLabel.Size = new System.Drawing.Size(601, 33);
@@ -687,7 +690,7 @@ namespace RyskTech
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.73771F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.26229F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 242F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 244F));
             this.tableLayoutPanel7.Controls.Add(this.label5, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.weeksRadioButton, 1, 2);
             this.tableLayoutPanel7.Controls.Add(this.daysRadioButton, 0, 2);
@@ -713,7 +716,7 @@ namespace RyskTech
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label5.Location = new System.Drawing.Point(3, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(179, 36);
+            this.label5.Size = new System.Drawing.Size(178, 36);
             this.label5.TabIndex = 0;
             this.label5.Text = "Com qual periodicidade?";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -721,7 +724,7 @@ namespace RyskTech
             // weeksRadioButton
             // 
             this.weeksRadioButton.AutoSize = true;
-            this.weeksRadioButton.Location = new System.Drawing.Point(188, 71);
+            this.weeksRadioButton.Location = new System.Drawing.Point(187, 71);
             this.weeksRadioButton.Name = "weeksRadioButton";
             this.weeksRadioButton.Size = new System.Drawing.Size(69, 17);
             this.weeksRadioButton.TabIndex = 2;
@@ -758,7 +761,7 @@ namespace RyskTech
             // yearsRadioButton
             // 
             this.yearsRadioButton.AutoSize = true;
-            this.yearsRadioButton.Location = new System.Drawing.Point(188, 95);
+            this.yearsRadioButton.Location = new System.Drawing.Point(187, 95);
             this.yearsRadioButton.Name = "yearsRadioButton";
             this.yearsRadioButton.Size = new System.Drawing.Size(49, 17);
             this.yearsRadioButton.TabIndex = 4;
@@ -773,7 +776,7 @@ namespace RyskTech
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Location = new System.Drawing.Point(3, 36);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(179, 32);
+            this.label6.Size = new System.Drawing.Size(178, 32);
             this.label6.TabIndex = 5;
             this.label6.Text = "A cada...";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -781,9 +784,9 @@ namespace RyskTech
             // numericUpDown1
             // 
             this.numericUpDown1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numericUpDown1.Location = new System.Drawing.Point(188, 39);
+            this.numericUpDown1.Location = new System.Drawing.Point(187, 39);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(141, 20);
+            this.numericUpDown1.Size = new System.Drawing.Size(140, 20);
             this.numericUpDown1.TabIndex = 6;
             this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
@@ -867,6 +870,7 @@ namespace RyskTech
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "SafetyControl";
             this.Size = new System.Drawing.Size(607, 413);
+            this.Load += new System.EventHandler(this.SafetyControl_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
