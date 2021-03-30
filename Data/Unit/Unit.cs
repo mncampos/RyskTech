@@ -1,28 +1,12 @@
-﻿using RyskTech.Data;
-using System.Collections.Generic;
-
-namespace RyskTech
+﻿namespace RyskTech.Data
 {
-    public enum CivilianType { Publico, Estudantes, Docentes, Tecnico_Administrativos, Outros }
-
     public class Unit
     {
-        public string name;
+        public Scope generalInformation;
         public Location location;
-        public string contactPhone;
+        public Structure structure;
         public string history;
         public string methodologyDescription;
-        public List<Space> spaces;
-
-        public Individual director;
-        public Individual viceDirector;
-
-        public int generalPublicCount;
-        public int studentsCount;
-        public int teachersCount;
-        public int technicsCount;
-        public int otherCount;
-        public string otherDescription;
 
         public Unit() { }
     };

@@ -20,7 +20,7 @@ namespace RyskTech.Data
 
         public Location() { }
 
-        public Location(LocationPrefix prefix, string streetName, int streetNumber, string district, string ZIPCode, string complement, string surroundingsDetails)
+        public Location(LocationPrefix prefix, string streetName, int streetNumber, string district, string ZIPCode, string complement)
         {
             this.prefix = prefix;
             this.streetName = streetName;
@@ -28,7 +28,6 @@ namespace RyskTech.Data
             this.district = district;
             this.ZIPCode = ZIPCode;
             this.complement = complement;
-            this.surroundingsDetails = surroundingsDetails;
         }
 
         public string GetFormattedLocationString()
@@ -87,15 +86,14 @@ namespace RyskTech.Data
         public void CheckForErrorsOrIncompleteFields()
         {
             string errorListing = "";
-            
+
             // TODO create exceptions for each of these cases
             bool status = prefix != LocationPrefix.Invalid
                 && streetName != null
                 && streetNumber != -1
                 && district != null
                 && ZIPCode != null && Regex.Match(ZIPCode, ZIPCODE_REGEX).Success
-                && complement != null
-                && surroundingsDetails != null;
+                && complement != null;
             
 
             if (errorListing.Length > 0)

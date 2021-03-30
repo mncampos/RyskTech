@@ -1,4 +1,4 @@
-﻿namespace RyskTech
+﻿namespace RyskTech.Data
 {
     class Lab
     {
