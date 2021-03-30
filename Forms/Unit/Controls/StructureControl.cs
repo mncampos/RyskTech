@@ -1,21 +1,35 @@
-﻿using System.Collections.Generic;
+﻿using RyskTech.Data;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace RyskTech
 {
     public partial class StructureControl : UserControl
     {
+        private Structure data;
+        
         public StructureControl()
         {
             InitializeComponent();
         }
 
-        private void SurroundingInfoTextBox_TextChanged(object sender, System.EventArgs e)
+        private void StructureControl_Load(object sender, System.EventArgs e)
         {
-            APR.unit.surroundingsDetails = SurroundingInfoTextBox.Text;
+            data = new Structure();
         }
 
-        public List<Unit.StructureInformation> getStructureData()
+        private void SurroundingInfoTextBox_TextChanged(object sender, System.EventArgs e)
+        {
+            data.surroundingsDetails = SurroundingInfoTextBox.Text;
+        }
+
+        public void ValidateData()
+        {
+            // TODO
+        }
+
+        /*
+        public List<Structure> getStructureData()
         {
             List<Unit.StructureInformation> result = new List<Unit.StructureInformation>();
 
@@ -38,5 +52,6 @@ namespace RyskTech
 
             return result;
         }
+        */
     }
 }

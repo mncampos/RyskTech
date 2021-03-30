@@ -37,11 +37,11 @@ namespace RyskTech.Forms.Unit
             this.teamTabPage = new System.Windows.Forms.TabPage();
             this.teamControl1 = new RyskTech.TeamControl();
             this.structureTabPage = new System.Windows.Forms.TabPage();
+            this.structureControl1 = new RyskTech.StructureControl();
             this.historyTabPage = new System.Windows.Forms.TabPage();
             this.historyControl1 = new RyskTech.HistoryControl();
             this.methodologyTabPage = new System.Windows.Forms.TabPage();
             this.methodologyControl1 = new RyskTech.MethodologyControl();
-            this.structureControl1 = new RyskTech.StructureControl();
             this.unitMainTabControl.SuspendLayout();
             this.welcomeTabPage.SuspendLayout();
             this.locationTabPage.SuspendLayout();
@@ -132,6 +132,14 @@ namespace RyskTech.Forms.Unit
             this.structureTabPage.Text = "Estrutura";
             this.structureTabPage.UseVisualStyleBackColor = true;
             // 
+            // structureControl1
+            // 
+            this.structureControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.structureControl1.Location = new System.Drawing.Point(0, 0);
+            this.structureControl1.Name = "structureControl1";
+            this.structureControl1.Size = new System.Drawing.Size(826, 435);
+            this.structureControl1.TabIndex = 0;
+            // 
             // historyTabPage
             // 
             this.historyTabPage.Controls.Add(this.historyControl1);
@@ -168,14 +176,6 @@ namespace RyskTech.Forms.Unit
             this.methodologyControl1.Size = new System.Drawing.Size(826, 435);
             this.methodologyControl1.TabIndex = 0;
             // 
-            // structureControl1
-            // 
-            this.structureControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.structureControl1.Location = new System.Drawing.Point(0, 0);
-            this.structureControl1.Name = "structureControl1";
-            this.structureControl1.Size = new System.Drawing.Size(826, 435);
-            this.structureControl1.TabIndex = 0;
-            // 
             // UnitMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -186,6 +186,7 @@ namespace RyskTech.Forms.Unit
             this.MinimumSize = new System.Drawing.Size(850, 500);
             this.Name = "UnitMainForm";
             this.Text = "Análise de Risco Ambiental - Unidades";
+            this.Load += new System.EventHandler(this.UnitMainForm_Load);
             this.unitMainTabControl.ResumeLayout(false);
             this.welcomeTabPage.ResumeLayout(false);
             this.locationTabPage.ResumeLayout(false);

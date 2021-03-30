@@ -211,6 +211,7 @@ namespace RyskTech
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "StructureControl";
             this.Size = new System.Drawing.Size(826, 435);
+            this.Load += new System.EventHandler(this.StructureControl_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.internalStructureGroupBox.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

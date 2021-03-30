@@ -1,6 +1,6 @@
 ﻿namespace RyskTech.Data
 {
-    class SafetyInformation
+    public class SafetyInformation
     {
         // Equipment
         public bool[] EPCS; // areia, vermiculita, cal, pa, capela, exaustor, outros

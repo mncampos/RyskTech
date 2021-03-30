@@ -3,35 +3,34 @@ using RyskTech.Data;
 
 namespace RyskTech
 {
-    static class APR
+    public class APR
     {
-        public static Unit unit = new Unit();
-        public static Lab lab = new Lab();
+        public Unit unit;
+        public Lab lab;
 
-        public static bool LoadPrevious()
+        public APR(Unit unit)
         {
-            // TODO Try to load an old version of the form
-
-            return false;
+            this.unit = unit;
+            this.lab = null;
         }
 
-        public static void FetchSpaceInformation()
+        public APR(Lab lab)
         {
-            // Read any information that has not been filled yet (mostly data view grids)
-            //unit_info.spaces = ((UnitMainFormOld)System.Windows.Forms.Application.OpenForms["MainForm"]).getStructureData();
+            this.unit = null;
+            this.lab = lab;
         }
 
-        public static string GetLocationString()
+        public string GetLocationString()
         {
             return unit.location.GetFormattedLocationString();
         }
 
-        public static List<string> GetDirectorsFormattedDescriptionList()
+        public List<string> GetDirectorsFormattedDescriptionList()
         {
             List<string> directors = new List<string>();
 
-            directors.Add(unit.director.GetFormattedIndividualString());
-            directors.Add(unit.viceDirector.GetFormattedIndividualString());
+            directors.Add(unit.team.director.GetFormattedIndividualString());
+            directors.Add(unit.team.director.GetFormattedIndividualString());
 
             return directors;
         }

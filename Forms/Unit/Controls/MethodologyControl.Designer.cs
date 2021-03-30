@@ -82,7 +82,7 @@ namespace RyskTech
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(814, 68);
+            this.label1.Size = new System.Drawing.Size(814, 69);
             this.label1.TabIndex = 0;
             this.label1.Text = "Altere a metodologia abaixo de acordo com a metodologia de análise utilizada na s" +
     "ua unidade.";
@@ -92,11 +92,11 @@ namespace RyskTech
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.MethodologyTextBox, 2);
             this.MethodologyTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MethodologyTextBox.Location = new System.Drawing.Point(3, 71);
+            this.MethodologyTextBox.Location = new System.Drawing.Point(3, 72);
             this.MethodologyTextBox.Multiline = true;
             this.MethodologyTextBox.Name = "MethodologyTextBox";
             this.MethodologyTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.MethodologyTextBox.Size = new System.Drawing.Size(702, 342);
+            this.MethodologyTextBox.Size = new System.Drawing.Size(702, 341);
             this.MethodologyTextBox.TabIndex = 1;
             this.MethodologyTextBox.TextChanged += new System.EventHandler(this.MethodologyTextBox_TextChanged);
             // 
@@ -109,14 +109,14 @@ namespace RyskTech
             this.tableLayoutPanel2.Controls.Add(this.showTable3Button, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.showTable4Button, 0, 3);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(711, 71);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(711, 72);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(106, 342);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(106, 341);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // showTable1Button
@@ -161,7 +161,7 @@ namespace RyskTech
             this.showTable4Button.Location = new System.Drawing.Point(20, 285);
             this.showTable4Button.Margin = new System.Windows.Forms.Padding(20, 30, 20, 30);
             this.showTable4Button.Name = "showTable4Button";
-            this.showTable4Button.Size = new System.Drawing.Size(66, 27);
+            this.showTable4Button.Size = new System.Drawing.Size(66, 26);
             this.showTable4Button.TabIndex = 3;
             this.showTable4Button.Text = "Quadro 4";
             this.showTable4Button.UseVisualStyleBackColor = true;
@@ -174,6 +174,7 @@ namespace RyskTech
             this.Controls.Add(this.groupBox1);
             this.Name = "MethodologyControl";
             this.Size = new System.Drawing.Size(826, 435);
+            this.Load += new System.EventHandler(this.MethodologyControl_Load);
             this.groupBox1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

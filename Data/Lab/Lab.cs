@@ -1,6 +1,6 @@
 ﻿namespace RyskTech.Data
 {
-    class Lab
+    public class Lab
     {
         public SafetyInformation safety_info = new SafetyInformation();
 

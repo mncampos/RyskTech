@@ -393,8 +393,6 @@ namespace RyskTech
             this.OtherTextBox.TabIndex = 10;
             this.OtherTextBox.Text = "Outros...";
             this.OtherTextBox.TextChanged += new System.EventHandler(this.OtherTextBox_TextChanged);
-            this.OtherTextBox.Enter += new System.EventHandler(this.OtherTextBox_Enter);
-            this.OtherTextBox.Leave += new System.EventHandler(this.OtherTextBox_Leave);
             // 
             // ContactGroupBox
             // 
@@ -470,6 +468,7 @@ namespace RyskTech
             this.Controls.Add(this.UnitTeamGroupBox);
             this.Name = "TeamControl";
             this.Size = new System.Drawing.Size(826, 435);
+            this.Load += new System.EventHandler(this.TeamControl_Load);
             this.UnitTeamGroupBox.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.DirectorInfoGroupBox.ResumeLayout(false);

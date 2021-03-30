@@ -140,6 +140,7 @@ namespace RyskTech.Forms.Unit.Controls
             this.unitNameTextBox.Name = "unitNameTextBox";
             this.unitNameTextBox.Size = new System.Drawing.Size(605, 20);
             this.unitNameTextBox.TabIndex = 1;
+            this.unitNameTextBox.TextChanged += new System.EventHandler(this.unitNameTextBox_TextChanged);
             // 
             // unitMaterialsHandledLabel
             // 
@@ -165,6 +166,7 @@ namespace RyskTech.Forms.Unit.Controls
             this.chemicalAgentsUsedCheckBox.Text = "Agentes Químicos";
             this.chemicalAgentsUsedCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chemicalAgentsUsedCheckBox.UseVisualStyleBackColor = true;
+            this.chemicalAgentsUsedCheckBox.CheckedChanged += new System.EventHandler(this.chemicalAgentsUsedCheckBox_CheckedChanged);
             // 
             // biologicalAgentsUsedCheckBox
             // 
@@ -174,9 +176,10 @@ namespace RyskTech.Forms.Unit.Controls
             this.biologicalAgentsUsedCheckBox.Name = "biologicalAgentsUsedCheckBox";
             this.biologicalAgentsUsedCheckBox.Size = new System.Drawing.Size(151, 36);
             this.biologicalAgentsUsedCheckBox.TabIndex = 4;
-            this.biologicalAgentsUsedCheckBox.Text = "Agentes biológicos";
+            this.biologicalAgentsUsedCheckBox.Text = "Agentes Biológicos";
             this.biologicalAgentsUsedCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.biologicalAgentsUsedCheckBox.UseVisualStyleBackColor = true;
+            this.biologicalAgentsUsedCheckBox.CheckedChanged += new System.EventHandler(this.biologicalAgentsUsedCheckBox_CheckedChanged);
             // 
             // physicalAgentsUsedCheckBox
             // 
@@ -189,6 +192,7 @@ namespace RyskTech.Forms.Unit.Controls
             this.physicalAgentsUsedCheckBox.Text = "Agentes Físicos";
             this.physicalAgentsUsedCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.physicalAgentsUsedCheckBox.UseVisualStyleBackColor = true;
+            this.physicalAgentsUsedCheckBox.CheckedChanged += new System.EventHandler(this.physicalAgentsUsedCheckBox_CheckedChanged);
             // 
             // mechanicalAgentsUsedCheckBox
             // 
@@ -201,6 +205,7 @@ namespace RyskTech.Forms.Unit.Controls
             this.mechanicalAgentsUsedCheckBox.Text = "Agentes Mecânicos";
             this.mechanicalAgentsUsedCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.mechanicalAgentsUsedCheckBox.UseVisualStyleBackColor = true;
+            this.mechanicalAgentsUsedCheckBox.CheckedChanged += new System.EventHandler(this.mechanicalAgentsUsedCheckBox_CheckedChanged);
             // 
             // concludeButton
             // 
@@ -221,6 +226,7 @@ namespace RyskTech.Forms.Unit.Controls
             this.Controls.Add(this.welcomeTableLayoutPanel);
             this.Name = "WelcomeControl";
             this.Size = new System.Drawing.Size(850, 430);
+            this.Load += new System.EventHandler(this.WelcomeControl_Load);
             this.welcomeTableLayoutPanel.ResumeLayout(false);
             this.welcomeTableLayoutPanel.PerformLayout();
             this.firstStepsGroupBox.ResumeLayout(false);

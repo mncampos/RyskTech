@@ -1,27 +1,55 @@
-﻿using System.Windows.Forms;
+﻿using RyskTech.Data;
+using System.Windows.Forms;
 
 namespace RyskTech.Forms.Unit.Controls
 {
     public partial class WelcomeControl : UserControl
     {
+        private Scope data;
+
         public WelcomeControl()
         {
             InitializeComponent();
         }
 
+        private void WelcomeControl_Load(object sender, System.EventArgs e)
+        {
+            data = new Scope();
+        }
+
         private void concludeButton_Click(object sender, System.EventArgs e)
         {
-            // TODO Validate the entire form so we make sure every field has been filled
+            ((UnitMainForm)this.TopLevelControl).Complete();
+        }
 
-            DocumentBuilder docBuilder = new DocumentBuilder("APR.docx");
-            int statusCode = 0;// docBuilder.CreateDocumentFromAPR();
+        private void unitNameTextBox_TextChanged(object sender, System.EventArgs e)
+        {
+            data.name = unitNameTextBox.Text;
+        }
 
-            if (statusCode == 0)
-                MessageBox.Show("APR Gerada com sucesso!", "Obrigado por usar RyskTech! :)");
-            else
-                MessageBox.Show("Foram encontrados alguns erros na geração da APR", ":(");
+        private void chemicalAgentsUsedCheckBox_CheckedChanged(object sender, System.EventArgs e)
+        {
+            data.manipulatesChemicalAgents = chemicalAgentsUsedCheckBox.Checked;
+        }
 
-            ((Form)this.TopLevelControl).Close();
+        private void biologicalAgentsUsedCheckBox_CheckedChanged(object sender, System.EventArgs e)
+        {
+            data.manipulatesBiologicalAgents = biologicalAgentsUsedCheckBox.Checked;
+        }
+
+        private void physicalAgentsUsedCheckBox_CheckedChanged(object sender, System.EventArgs e)
+        {
+            data.manipulatesPhysicalAgents = physicalAgentsUsedCheckBox.Checked;
+        }
+
+        private void mechanicalAgentsUsedCheckBox_CheckedChanged(object sender, System.EventArgs e)
+        {
+            data.manipulatesMechanicalAgents = mechanicalAgentsUsedCheckBox.Checked;
+        }
+    
+        public void ValidateData()
+        {
+            // TODO
         }
     }
 }

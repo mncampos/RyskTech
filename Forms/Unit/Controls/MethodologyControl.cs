@@ -6,10 +6,15 @@ namespace RyskTech
 {
     public partial class MethodologyControl : UserControl
     {
+        private string methodology;
+
         public MethodologyControl()
         {
             InitializeComponent();
+        }
 
+        private void MethodologyControl_Load(object sender, EventArgs e)
+        {
             // Load default text to textbox
             try
             {
@@ -26,7 +31,7 @@ namespace RyskTech
 
         private void MethodologyTextBox_TextChanged(object sender, EventArgs e)
         {
-            APR.unit.methodologyDescription = MethodologyTextBox.Text;
+            methodology = MethodologyTextBox.Text;
         }
 
         private void showTable1Button_Click(object sender, EventArgs e)
@@ -51,6 +56,11 @@ namespace RyskTech
         {
             ShowTableForm table1 = new ShowTableForm("../../Resources/Quadro4.png", "Quadro 4");
             table1.ShowDialog();
+        }
+
+        public void ValidateData()
+        {
+            // TODO
         }
     }
 }

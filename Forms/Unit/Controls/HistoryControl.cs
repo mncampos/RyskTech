@@ -5,6 +5,8 @@ namespace RyskTech
 {
     public partial class HistoryControl : UserControl
     {
+        private string history;
+
         public HistoryControl()
         {
             InitializeComponent();
@@ -12,7 +14,12 @@ namespace RyskTech
 
         private void UnitHistoryTextBox_TextChanged(object sender, EventArgs e)
         {
-            APR.unit.history = UnitHistoryTextBox.Text;
+            history = UnitHistoryTextBox.Text;
+        }
+
+        public void ValidateData()
+        {
+            // TODO
         }
     }
 }
