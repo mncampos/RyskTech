@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using System.Text.RegularExpressions;
 
 
@@ -63,7 +64,7 @@ namespace RyskTech.Data
 
             return location;
         }
-    
+
         public string GetGoogleMapsSearchURL()
         {
             string city = "Porto Alegre";
@@ -83,22 +84,23 @@ namespace RyskTech.Data
             return address.ToString();
         }
 
-        public void CheckForErrorsOrIncompleteFields()
+        public void CheckValidity()
         {
-            string errorListing = "";
+            if (prefix != LocationPrefix.Invalid)
+                throw new ApplicationException(Resources.Language.pt_local.LocationPrefixInvalid);
 
-            // TODO create exceptions for each of these cases
-            bool status = prefix != LocationPrefix.Invalid
-                && streetName != null
-                && streetNumber != -1
-                && district != null
-                && ZIPCode != null && Regex.Match(ZIPCode, ZIPCODE_REGEX).Success
-                && complement != null;
-            
+            if (streetName == null || streetName.Length <= 0)
+                throw new ApplicationException(Resources.Language.pt_local.LocationStreetInvalid);
 
-            if (errorListing.Length > 0)
-                throw new System.ApplicationException(errorListing);
+            if (streetNumber <= 0)
+                throw new ApplicationException(Resources.Language.pt_local.LocationNumberInvalid);
+
+            if (district == null || district.Length <= 0)
+                throw new ApplicationException(Resources.Language.pt_local.LocationDistrictInvalid);
+
+            if (ZIPCode == null || !Regex.Match(ZIPCode, ZIPCODE_REGEX).Success)
+                throw new ApplicationException(Resources.Language.pt_local.LocationZIPInvalid);
         }
-    
+
     }
 }

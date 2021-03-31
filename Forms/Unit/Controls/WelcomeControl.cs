@@ -5,7 +5,7 @@ namespace RyskTech.Forms.Unit.Controls
 {
     public partial class WelcomeControl : UserControl
     {
-        private Scope data;
+        public Scope data;
 
         public WelcomeControl()
         {
@@ -46,10 +46,10 @@ namespace RyskTech.Forms.Unit.Controls
         {
             data.manipulatesMechanicalAgents = mechanicalAgentsUsedCheckBox.Checked;
         }
-    
+
         public void ValidateData()
         {
-            // TODO
+            data.CheckValidity();
         }
     }
 }

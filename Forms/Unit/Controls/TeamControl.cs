@@ -1,12 +1,12 @@
-﻿using System;
+﻿using RyskTech.Data;
+using System;
 using System.Windows.Forms;
-using RyskTech.Data;
 
 namespace RyskTech
 {
     public partial class TeamControl : UserControl
     {
-        private Team data;
+        public Team data;
 
         public TeamControl()
         {
@@ -85,7 +85,10 @@ namespace RyskTech
 
         public void ValidateData()
         {
-            // TODO
+            if (data != null)
+                data.CheckValidity();
+            else
+                throw new ApplicationException(Resources.Language.pt_local.NotAllTabsVisited);
         }
     }
 }

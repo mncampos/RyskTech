@@ -1,4 +1,6 @@
-﻿namespace RyskTech.Data
+﻿using System;
+
+namespace RyskTech.Data
 {
     public class Scope
     {
@@ -17,6 +19,15 @@
             manipulatesBiologicalAgents = false;
             manipulatesPhysicalAgents = false;
             manipulatesMechanicalAgents = false;
+        }
+
+        public void CheckValidity()
+        {
+            if (this.name == null || this.name.Length <= 0)
+                throw new ApplicationException(Resources.Language.pt_local.UnitWelcomeScreen + " : " + Resources.Language.pt_local.ErrorInvalidUnitName);
+
+            if (!manipulatesBiologicalAgents && !manipulatesChemicalAgents && !manipulatesMechanicalAgents && !manipulatesPhysicalAgents)
+                throw new ApplicationException(Resources.Language.pt_local.UnitWelcomeScreen + " : " + Resources.Language.pt_local.ErrorNoManipulatedAreasSelected);
         }
     }
 }

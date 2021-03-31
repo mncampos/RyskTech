@@ -5,7 +5,7 @@ namespace RyskTech
 {
     public partial class HistoryControl : UserControl
     {
-        private string history;
+        public string history;
 
         public HistoryControl()
         {
@@ -19,7 +19,8 @@ namespace RyskTech
 
         public void ValidateData()
         {
-            // TODO
+            if (history == null || history.Length <= 0)
+                throw new ApplicationException(Resources.Language.pt_local.NoHistory);
         }
     }
 }

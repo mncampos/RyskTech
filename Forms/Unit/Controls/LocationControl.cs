@@ -6,7 +6,7 @@ namespace RyskTech
 {
     public partial class LocationControl : UserControl
     {
-        private Location data;
+        public Location data;
 
         public LocationControl()
         {
@@ -81,10 +81,13 @@ namespace RyskTech
         {
             data.streetNumber = int.Parse(NumberTextBox.Text);
         }
-    
+
         public void ValidateData()
         {
-            data.CheckForErrorsOrIncompleteFields();
+            if (data != null)
+                data.CheckValidity();
+            else
+                throw new ApplicationException(Resources.Language.pt_local.NotAllTabsVisited);
         }
     }
 }

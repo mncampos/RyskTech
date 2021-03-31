@@ -6,8 +6,8 @@ namespace RyskTech
 {
     public partial class StructureControl : UserControl
     {
-        private Structure data;
-        
+        public Structure data;
+
         public StructureControl()
         {
             InitializeComponent();
@@ -23,35 +23,38 @@ namespace RyskTech
             data.surroundingsDetails = SurroundingInfoTextBox.Text;
         }
 
-        public void ValidateData()
+        private List<Space> GetStructureData()
         {
-            // TODO
-        }
-
-        /*
-        public List<Structure> getStructureData()
-        {
-            List<Unit.StructureInformation> result = new List<Unit.StructureInformation>();
+            List<Space> result = new List<Space>();
 
             foreach (DataGridViewRow row in InternalStructureDataGridView.Rows)
             {
-                Unit.StructureInformation entry = new Unit.StructureInformation();
-                if (row.Cells[0].Value != null)
-                    entry.building = row.Cells[0].Value.ToString();
-                if (row.Cells[1].Value != null)
-                    entry.room = row.Cells[1].Value.ToString();
-                if (row.Cells[2].Value != null)
-                    entry.floor = row.Cells[2].Value.ToString();
-                if (row.Cells[3].Value != null)
-                    entry.turn_start = System.TimeSpan.Parse(row.Cells[3].Value.ToString());
-                if (row.Cells[4].Value != null)
-                    entry.turn_end = System.TimeSpan.Parse(row.Cells[4].Value.ToString());
+                Space entry = new Space();
 
-                result.Add(entry);
+                if (row.Cells[0].Value != null)
+                {
+                    entry.buildingIdentifier = row.Cells[0].Value.ToString();
+                    if (row.Cells[1].Value != null)
+                        entry.roomIdentifier = row.Cells[1].Value.ToString();
+                    if (row.Cells[2].Value != null)
+                        entry.floorIdentifier = row.Cells[2].Value.ToString();
+                    if (row.Cells[3].Value != null)
+                        entry.turnStart = System.TimeSpan.Parse(row.Cells[3].Value.ToString());
+                    if (row.Cells[4].Value != null)
+                        entry.turnEnd = System.TimeSpan.Parse(row.Cells[4].Value.ToString());
+
+                    result.Add(entry);
+                }
             }
 
             return result;
         }
-        */
+
+        public void ValidateData()
+        {
+            data.spaces = GetStructureData();
+            data.CheckValidity();
+        }
+        
     }
 }

@@ -6,11 +6,13 @@ namespace RyskTech
 {
     public partial class MethodologyControl : UserControl
     {
-        private string methodology;
+        public string methodology;
+        private bool visited = false;
 
         public MethodologyControl()
         {
             InitializeComponent();
+            visited = true;
         }
 
         private void MethodologyControl_Load(object sender, EventArgs e)
@@ -60,7 +62,8 @@ namespace RyskTech
 
         public void ValidateData()
         {
-            // TODO
+            if (!visited)
+                throw new ApplicationException(Resources.Language.pt_local.NotAllTabsVisited);
         }
     }
 }

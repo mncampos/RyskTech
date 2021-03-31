@@ -160,6 +160,24 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Nome de unidade inválido!.
+        /// </summary>
+        internal static string ErrorInvalidUnitName {
+            get {
+                return ResourceManager.GetString("ErrorInvalidUnitName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Selecione pelo menos um tipo de material manipulado na sua unidade!.
+        /// </summary>
+        internal static string ErrorNoManipulatedAreasSelected {
+            get {
+                return ResourceManager.GetString("ErrorNoManipulatedAreasSelected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Andar.
         /// </summary>
         internal static string Floor {
@@ -178,11 +196,173 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Por favor informe a quantidade de cada integrante do time.
+        /// </summary>
+        internal static string IncompleteTeamCounter {
+            get {
+                return ResourceManager.GetString("IncompleteTeamCounter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor digite um endereço de e-mail válido.
+        /// </summary>
+        internal static string InvalidEmail {
+            get {
+                return ResourceManager.GetString("InvalidEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor digite um nome válido.
+        /// </summary>
+        internal static string InvalidName {
+            get {
+                return ResourceManager.GetString("InvalidName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor digite um número de telefone válido.
+        /// </summary>
+        internal static string InvalidPhoneNumber {
+            get {
+                return ResourceManager.GetString("InvalidPhoneNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor indique o prédio para todos os espaços da sua unidade.
+        /// </summary>
+        internal static string InvalidSpaceBuilding {
+            get {
+                return ResourceManager.GetString("InvalidSpaceBuilding", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor indique o andar para todos os espaços da sua unidade.
+        /// </summary>
+        internal static string InvalidSpaceFloor {
+            get {
+                return ResourceManager.GetString("InvalidSpaceFloor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor indique a sala para todos os espaços da sua unidade.
+        /// </summary>
+        internal static string InvalidSpaceRoom {
+            get {
+                return ResourceManager.GetString("InvalidSpaceRoom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor indique horários no formato HH:MM em notação 24h.
+        /// </summary>
+        internal static string InvalidTimeFormat {
+            get {
+                return ResourceManager.GetString("InvalidTimeFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor indique os horários de início e fim de todos os espaços da sua unidade.
+        /// </summary>
+        internal static string InvalidUsageTurn {
+            get {
+                return ResourceManager.GetString("InvalidUsageTurn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor digite um bairro válido para sua unidade!.
+        /// </summary>
+        internal static string LocationDistrictInvalid {
+            get {
+                return ResourceManager.GetString("LocationDistrictInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor digite um número válido para sua unidade!.
+        /// </summary>
+        internal static string LocationNumberInvalid {
+            get {
+                return ResourceManager.GetString("LocationNumberInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Selecione um prefixo para o endereço da sua unidade!.
+        /// </summary>
+        internal static string LocationPrefixInvalid {
+            get {
+                return ResourceManager.GetString("LocationPrefixInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor digite o nome do logradouro da sua unidade!.
+        /// </summary>
+        internal static string LocationStreetInvalid {
+            get {
+                return ResourceManager.GetString("LocationStreetInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor digite o CEP no formato correto!.
+        /// </summary>
+        internal static string LocationZIPInvalid {
+            get {
+                return ResourceManager.GetString("LocationZIPInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Não.
         /// </summary>
         internal static string No {
             get {
                 return ResourceManager.GetString("No", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor preencha o formulário com o histórico da sua unidade.
+        /// </summary>
+        internal static string NoHistory {
+            get {
+                return ResourceManager.GetString("NoHistory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor insira os espaços utilizados pela sua unidade.
+        /// </summary>
+        internal static string NoSpacesAdded {
+            get {
+                return ResourceManager.GetString("NoSpacesAdded", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor insira informações sobre os arredores da sua unidade.
+        /// </summary>
+        internal static string NoSurroundingsDetailsAdded {
+            get {
+                return ResourceManager.GetString("NoSurroundingsDetailsAdded", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor preencha todas as abas antes de completar o documento!.
+        /// </summary>
+        internal static string NotAllTabsVisited {
+            get {
+                return ResourceManager.GetString("NotAllTabsVisited", resourceCulture);
             }
         }
         
@@ -273,6 +453,60 @@ namespace RyskTech.Resources.Language {
         internal static string Type {
             get {
                 return ResourceManager.GetString("Type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [Unidade - Histórico].
+        /// </summary>
+        internal static string UnitHistoryScreen {
+            get {
+                return ResourceManager.GetString("UnitHistoryScreen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [Unidade - Localização].
+        /// </summary>
+        internal static string UnitLocationScreen {
+            get {
+                return ResourceManager.GetString("UnitLocationScreen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [Unidade - Metodologia].
+        /// </summary>
+        internal static string UnitMethodologyScreen {
+            get {
+                return ResourceManager.GetString("UnitMethodologyScreen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [Unidade - Estrutura].
+        /// </summary>
+        internal static string UnitStructureScreen {
+            get {
+                return ResourceManager.GetString("UnitStructureScreen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [Unidade - Time].
+        /// </summary>
+        internal static string UnitTeamScreen {
+            get {
+                return ResourceManager.GetString("UnitTeamScreen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [Unidade - Bem Vindo!].
+        /// </summary>
+        internal static string UnitWelcomeScreen {
+            get {
+                return ResourceManager.GetString("UnitWelcomeScreen", resourceCulture);
             }
         }
         

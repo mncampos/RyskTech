@@ -150,14 +150,74 @@
   <data name="EMail" xml:space="preserve">
     <value>Endereço de e-mail</value>
   </data>
+  <data name="ErrorInvalidUnitName" xml:space="preserve">
+    <value>Nome de unidade inválido!</value>
+  </data>
+  <data name="ErrorNoManipulatedAreasSelected" xml:space="preserve">
+    <value>Selecione pelo menos um tipo de material manipulado na sua unidade!</value>
+  </data>
   <data name="Floor" xml:space="preserve">
     <value>Andar</value>
   </data>
   <data name="Highway" xml:space="preserve">
     <value>Rodovia</value>
   </data>
+  <data name="IncompleteTeamCounter" xml:space="preserve">
+    <value>Por favor informe a quantidade de cada integrante do time</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Por favor digite um endereço de e-mail válido</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>Por favor digite um nome válido</value>
+  </data>
+  <data name="InvalidPhoneNumber" xml:space="preserve">
+    <value>Por favor digite um número de telefone válido</value>
+  </data>
+  <data name="InvalidSpaceBuilding" xml:space="preserve">
+    <value>Por favor indique o prédio para todos os espaços da sua unidade</value>
+  </data>
+  <data name="InvalidSpaceFloor" xml:space="preserve">
+    <value>Por favor indique o andar para todos os espaços da sua unidade</value>
+  </data>
+  <data name="InvalidSpaceRoom" xml:space="preserve">
+    <value>Por favor indique a sala para todos os espaços da sua unidade</value>
+  </data>
+  <data name="InvalidTimeFormat" xml:space="preserve">
+    <value>Por favor indique horários no formato HH:MM em notação 24h</value>
+  </data>
+  <data name="InvalidUsageTurn" xml:space="preserve">
+    <value>Por favor indique os horários de início e fim de todos os espaços da sua unidade</value>
+  </data>
+  <data name="LocationDistrictInvalid" xml:space="preserve">
+    <value>Por favor digite um bairro válido para sua unidade!</value>
+  </data>
+  <data name="LocationNumberInvalid" xml:space="preserve">
+    <value>Por favor digite um número válido para sua unidade!</value>
+  </data>
+  <data name="LocationPrefixInvalid" xml:space="preserve">
+    <value>Selecione um prefixo para o endereço da sua unidade!</value>
+  </data>
+  <data name="LocationStreetInvalid" xml:space="preserve">
+    <value>Por favor digite o nome do logradouro da sua unidade!</value>
+  </data>
+  <data name="LocationZIPInvalid" xml:space="preserve">
+    <value>Por favor digite o CEP no formato correto!</value>
+  </data>
   <data name="No" xml:space="preserve">
     <value>Não</value>
+  </data>
+  <data name="NoHistory" xml:space="preserve">
+    <value>Por favor preencha o formulário com o histórico da sua unidade</value>
+  </data>
+  <data name="NoSpacesAdded" xml:space="preserve">
+    <value>Por favor insira os espaços utilizados pela sua unidade</value>
+  </data>
+  <data name="NoSurroundingsDetailsAdded" xml:space="preserve">
+    <value>Por favor insira informações sobre os arredores da sua unidade</value>
+  </data>
+  <data name="NotAllTabsVisited" xml:space="preserve">
+    <value>Por favor preencha todas as abas antes de completar o documento!</value>
   </data>
   <data name="Phone" xml:space="preserve">
     <value>Telefone</value>
@@ -188,6 +248,24 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>Tipo</value>
+  </data>
+  <data name="UnitHistoryScreen" xml:space="preserve">
+    <value>[Unidade - Histórico]</value>
+  </data>
+  <data name="UnitLocationScreen" xml:space="preserve">
+    <value>[Unidade - Localização]</value>
+  </data>
+  <data name="UnitMethodologyScreen" xml:space="preserve">
+    <value>[Unidade - Metodologia]</value>
+  </data>
+  <data name="UnitStructureScreen" xml:space="preserve">
+    <value>[Unidade - Estrutura]</value>
+  </data>
+  <data name="UnitTeamScreen" xml:space="preserve">
+    <value>[Unidade - Time]</value>
+  </data>
+  <data name="UnitWelcomeScreen" xml:space="preserve">
+    <value>[Unidade - Bem Vindo!]</value>
   </data>
   <data name="UsagePeriod" xml:space="preserve">
     <value>Período de Uso</value>

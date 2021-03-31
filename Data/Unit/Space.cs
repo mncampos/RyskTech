@@ -20,5 +20,20 @@ namespace RyskTech.Data
             this.turnStart = startTime;
             this.turnEnd = endTime;
         }
+
+        public void CheckValidity()
+        {
+            if (buildingIdentifier == null || buildingIdentifier.Length <= 0)
+                throw new ApplicationException(Resources.Language.pt_local.InvalidSpaceBuilding);
+
+            if (roomIdentifier == null || roomIdentifier.Length <= 0)
+                throw new ApplicationException(Resources.Language.pt_local.InvalidSpaceRoom);
+
+            if (floorIdentifier == null || floorIdentifier.Length <= 0)
+                throw new ApplicationException(Resources.Language.pt_local.InvalidSpaceFloor);
+
+            if (turnStart == null || turnEnd == null)
+                throw new ApplicationException(Resources.Language.pt_local.InvalidUsageTurn);
+        }
     }
 }

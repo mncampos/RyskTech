@@ -5,7 +5,7 @@ namespace RyskTech.Forms.Unit
 {
     public partial class UnitMainForm : Form
     {
-        Data.Unit data;
+        private Data.Unit data;
 
         public UnitMainForm()
         {
@@ -17,45 +17,49 @@ namespace RyskTech.Forms.Unit
             data = new Data.Unit();
         }
 
-        private bool IsReadyForGeneration()
+        private void PrepareForGeneration()
         {
-            try
-            {
-                welcomeControl1.ValidateData();
-                locationControl1.ValidateData();
-                teamControl1.ValidateData();
-                structureControl1.ValidateData();
-                historyControl1.ValidateData();
-                methodologyControl1.ValidateData();                
+            welcomeControl1.ValidateData();
+            data.generalInformation = welcomeControl1.data;
 
-                return true;
+            locationControl1.ValidateData();
+            data.location = locationControl1.data;
             
-            } catch(Exception ex)
-            {
-                MessageBox.Show(ex.StackTrace);
-                return false;
-            }
+            teamControl1.ValidateData();
+            data.team = teamControl1.data;
+            
+            structureControl1.ValidateData();
+            data.structure = structureControl1.data;
+            
+            historyControl1.ValidateData();
+            data.history = historyControl1.history;
+            
+            methodologyControl1.ValidateData();
+            data.methodologyDescription = methodologyControl1.methodology;
         }
 
         public void Complete()
         {
-            if (!IsReadyForGeneration())
+            try
             {
-                MessageBox.Show("Form incomplete"); // TODO
+                PrepareForGeneration();
+
+                APR compilation = new APR(data);
+                DocumentBuilder docBuilder = new DocumentBuilder(compilation, "APR_Unidade.docx");
+
+                int statusCode = docBuilder.CreateUnitDocumentFromAPR();
+
+                if (statusCode == 0)
+                    MessageBox.Show("APR Gerada com sucesso!", "Obrigado por usar RyskTech! :)");
+                else
+                    MessageBox.Show("Foram encontrados alguns erros na geração da APR", ":(");
+
                 Close();
             }
-
-            APR compilation = new APR(data);
-            DocumentBuilder docBuilder = new DocumentBuilder(compilation, "APR_Unidade.docx");
-
-            int statusCode = docBuilder.CreateUnitDocumentFromAPR();
-
-            if (statusCode == 0)
-                MessageBox.Show("APR Gerada com sucesso!", "Obrigado por usar RyskTech! :)");
-            else
-                MessageBox.Show("Foram encontrados alguns erros na geração da APR", ":(");
-
-            Close();
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
