@@ -79,6 +79,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Vidro temperado âmbar.
+        /// </summary>
+        internal static string AmberGlassContainer {
+            get {
+                return ResourceManager.GetString("AmberGlassContainer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Avenida.
         /// </summary>
         internal static string Avenue {
@@ -205,6 +214,42 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Por favor indique os detalhes de contenção do agente.
+        /// </summary>
+        internal static string InvalidAgentContainer {
+            get {
+                return ResourceManager.GetString("InvalidAgentContainer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor indique a unidade de medida utilizada.
+        /// </summary>
+        internal static string InvalidAgentMeasureUnit {
+            get {
+                return ResourceManager.GetString("InvalidAgentMeasureUnit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor digite o nome do agente.
+        /// </summary>
+        internal static string InvalidAgentName {
+            get {
+                return ResourceManager.GetString("InvalidAgentName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor indique a quantidade mantida do agente.
+        /// </summary>
+        internal static string InvalidAgentQuantity {
+            get {
+                return ResourceManager.GetString("InvalidAgentQuantity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Por favor digite um endereço de e-mail válido.
         /// </summary>
         internal static string InvalidEmail {
@@ -228,6 +273,15 @@ namespace RyskTech.Resources.Language {
         internal static string InvalidPhoneNumber {
             get {
                 return ResourceManager.GetString("InvalidPhoneNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor indique o estado físico do agente.
+        /// </summary>
+        internal static string InvalidPhysicalState {
+            get {
+                return ResourceManager.GetString("InvalidPhysicalState", resourceCulture);
             }
         }
         
@@ -367,11 +421,29 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Por favor especifique o que são &quot;Outros&quot;.
+        /// </summary>
+        internal static string OtherNotSpecified {
+            get {
+                return ResourceManager.GetString("OtherNotSpecified", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Telefone.
         /// </summary>
         internal static string Phone {
             get {
                 return ResourceManager.GetString("Phone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bombona plástica.
+        /// </summary>
+        internal static string PlasticContainer {
+            get {
+                return ResourceManager.GetString("PlasticContainer", resourceCulture);
             }
         }
         
@@ -444,6 +516,33 @@ namespace RyskTech.Resources.Language {
         internal static string Technics {
             get {
                 return ResourceManager.GetString("Technics", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vidro temperado transparente.
+        /// </summary>
+        internal static string TemperedGlassContainer {
+            get {
+                return ResourceManager.GetString("TemperedGlassContainer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor informe a periodicidade com a qual seu laboratório treina seu pessoal.
+        /// </summary>
+        internal static string TrainingPeriodicityNotComplete {
+            get {
+                return ResourceManager.GetString("TrainingPeriodicityNotComplete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor especifique quem são aqueles envolvidos no seu treinamento.
+        /// </summary>
+        internal static string TrainingPersonelNotSpecified {
+            get {
+                return ResourceManager.GetString("TrainingPersonelNotSpecified", resourceCulture);
             }
         }
         

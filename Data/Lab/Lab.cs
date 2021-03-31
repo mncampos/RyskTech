@@ -2,9 +2,9 @@
 {
     public class Lab
     {
-        public Safety safety_info = new Safety();
+        Equipment safetyEquipment;
+        Training safetyTraining;
 
         public Lab() { }
-
     }
 }

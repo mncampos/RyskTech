@@ -2,20 +2,20 @@
 using System;
 using System.Windows.Forms;
 
-namespace RyskTech
+namespace RyskTech.Forms.Lab.Controls
 {
-    public partial class SafetyControl : UserControl
+    public partial class SafetyEquipmentControl : UserControl
     {
-        private Safety data;
+        public Equipment data;
 
-        public SafetyControl()
+        public SafetyEquipmentControl()
         {
             InitializeComponent();
         }
 
-        private void SafetyControl_Load(object sender, EventArgs e)
+        private void SafetyEquipmentControl_Load(object sender, EventArgs e)
         {
-            data = new Safety();
+            data = new Equipment();
         }
 
         private void glassesCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -158,48 +158,12 @@ namespace RyskTech
             data.noFirstAid = !data.noFirstAid;
         }
 
-        private void yesRadioButton_CheckedChanged(object sender, EventArgs e)
+        public void ValidateData()
         {
-            periodicityGroupBox.Enabled = true;
-            personnelGroupBox.Enabled = true;
-            data.providesTraining = true;
-        }
-
-        private void noRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            periodicityGroupBox.Enabled = false;
-            personnelGroupBox.Enabled = false;
-            data.providesTraining = false;
-        }
-
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-            data.periodicityAmount = (int)numericUpDown1.Value;
-        }
-
-        private void daysRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            data.periodicityUnit = "Dias";
-        }
-
-        private void weeksRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            data.periodicityUnit = "Semanas";
-        }
-
-        private void monthsRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            data.periodicityUnit = "Meses";
-        }
-
-        private void yearsRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            data.periodicityUnit = "Anos";
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            data.involvedPersonel = textBox1.Text;
+            if (data != null)
+                data.CheckValidity();
+            else
+                throw new ApplicationException(Resources.Language.pt_local.NotAllTabsVisited);
         }
     }
 }

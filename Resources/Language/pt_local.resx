@@ -123,6 +123,9 @@
   <data name="AddressZIP" xml:space="preserve">
     <value>CEP</value>
   </data>
+  <data name="AmberGlassContainer" xml:space="preserve">
+    <value>Vidro temperado âmbar</value>
+  </data>
   <data name="Avenue" xml:space="preserve">
     <value>Avenida</value>
   </data>
@@ -165,6 +168,18 @@
   <data name="IncompleteTeamCounter" xml:space="preserve">
     <value>Por favor informe a quantidade de cada integrante do time</value>
   </data>
+  <data name="InvalidAgentContainer" xml:space="preserve">
+    <value>Por favor indique os detalhes de contenção do agente</value>
+  </data>
+  <data name="InvalidAgentMeasureUnit" xml:space="preserve">
+    <value>Por favor indique a unidade de medida utilizada</value>
+  </data>
+  <data name="InvalidAgentName" xml:space="preserve">
+    <value>Por favor digite o nome do agente</value>
+  </data>
+  <data name="InvalidAgentQuantity" xml:space="preserve">
+    <value>Por favor indique a quantidade mantida do agente</value>
+  </data>
   <data name="InvalidEmail" xml:space="preserve">
     <value>Por favor digite um endereço de e-mail válido</value>
   </data>
@@ -173,6 +188,9 @@
   </data>
   <data name="InvalidPhoneNumber" xml:space="preserve">
     <value>Por favor digite um número de telefone válido</value>
+  </data>
+  <data name="InvalidPhysicalState" xml:space="preserve">
+    <value>Por favor indique o estado físico do agente</value>
   </data>
   <data name="InvalidSpaceBuilding" xml:space="preserve">
     <value>Por favor indique o prédio para todos os espaços da sua unidade</value>
@@ -219,8 +237,14 @@
   <data name="NotAllTabsVisited" xml:space="preserve">
     <value>Por favor preencha todas as abas antes de completar o documento!</value>
   </data>
+  <data name="OtherNotSpecified" xml:space="preserve">
+    <value>Por favor especifique o que são "Outros"</value>
+  </data>
   <data name="Phone" xml:space="preserve">
     <value>Telefone</value>
+  </data>
+  <data name="PlasticContainer" xml:space="preserve">
+    <value>Bombona plástica</value>
   </data>
   <data name="Public" xml:space="preserve">
     <value>Público</value>
@@ -245,6 +269,15 @@
   </data>
   <data name="Technics" xml:space="preserve">
     <value>Profissionais Técnico-Administrativos</value>
+  </data>
+  <data name="TemperedGlassContainer" xml:space="preserve">
+    <value>Vidro temperado transparente</value>
+  </data>
+  <data name="TrainingPeriodicityNotComplete" xml:space="preserve">
+    <value>Por favor informe a periodicidade com a qual seu laboratório treina seu pessoal</value>
+  </data>
+  <data name="TrainingPersonelNotSpecified" xml:space="preserve">
+    <value>Por favor especifique quem são aqueles envolvidos no seu treinamento</value>
   </data>
   <data name="Type" xml:space="preserve">
     <value>Tipo</value>

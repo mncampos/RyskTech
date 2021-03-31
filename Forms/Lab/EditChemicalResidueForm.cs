@@ -22,15 +22,13 @@ namespace RyskTech
 
         private void concludeButton_Click(object sender, EventArgs e)
         {
-            // TODO Validate?
-
             string container = "";
             if (transparentGlassRadioButton.Checked)
-                container = "Vidro temperado transparente";
+                container = Resources.Language.pt_local.TemperedGlassContainer;
             if (amberGlassRadioButton.Checked)
-                container = "Vidro temperado âmbar";
+                container = Resources.Language.pt_local.AmberGlassContainer;
             if (plasticRadioButton.Checked)
-                container = "Bombona plástica";
+                container = Resources.Language.pt_local.PlasticContainer;
 
 
             string[] origins = new string[originCheckedListBox.CheckedItems.Count];
@@ -57,8 +55,17 @@ namespace RyskTech
                     storageLocationTextBox.Text
                 );
 
-            this.createdAgent = new_agent;
-            this.Close();
+            try
+            {
+                new_agent.CheckValidity();
+                this.createdAgent = new_agent;
+                this.Close();
+            }
+            catch(Exception ex)
+            {
+                this.createdAgent = null;
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void cancelButton_Click(object sender, EventArgs e)

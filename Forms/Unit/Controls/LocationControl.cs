@@ -79,7 +79,18 @@ namespace RyskTech
 
         private void NumberTextBox_TextChanged(object sender, EventArgs e)
         {
-            data.streetNumber = int.Parse(NumberTextBox.Text);
+            if (NumberTextBox.Text.Length > 0)
+            {
+                try
+                {
+                    data.streetNumber = int.Parse(NumberTextBox.Text);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Por favor digite apenas números");
+                    NumberTextBox.Text = "";
+                }
+            }
         }
 
         public void ValidateData()

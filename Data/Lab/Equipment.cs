@@ -1,8 +1,9 @@
-﻿namespace RyskTech.Data
+﻿using System;
+
+namespace RyskTech.Data
 {
-    public class Safety
+    public class Equipment
     {
-        // Equipment
         public bool[] EPCS; // areia, vermiculita, cal, pa, capela, exaustor, outros
         public string otherEPC;
         public bool[] EPIS; // oculos, mureta, luva, dosimetro, po, mascara, outros
@@ -12,15 +13,7 @@
         public string otherFirstAid;
         public bool noFirstAid = false;
 
-        // Training
-        public bool providesTraining;
-
-        public int periodicityAmount;
-        public string periodicityUnit;
-
-        public string involvedPersonel;
-
-        public Safety()
+        public Equipment()
         {
             this.EPCS = new bool[7];
             this.EPIS = new bool[7];
@@ -33,6 +26,18 @@
                 if (i < 5)
                     this.firstAidObjects[i] = false;
             }
+        }
+
+        public void CheckValidity()
+        {
+            if (EPCS[6] && (otherEPC == null || otherEPC.Length <= 0))
+                throw new ApplicationException(Resources.Language.pt_local.OtherNotSpecified);
+
+            if (EPIS[6] && (otherEPI == null || otherEPI.Length <= 0))
+                throw new ApplicationException(Resources.Language.pt_local.OtherNotSpecified);
+
+            if (firstAidObjects[4] && (otherFirstAid == null || otherFirstAid.Length <= 0))
+                throw new ApplicationException(Resources.Language.pt_local.OtherNotSpecified);
         }
     }
 }

@@ -32,30 +32,30 @@ namespace RyskTech
             this.residueStorageTab = new System.Windows.Forms.TabPage();
             this.chemicalResidueStorageGroupBox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.nbrLinkLabel = new System.Windows.Forms.LinkLabel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.noRadioButton = new System.Windows.Forms.RadioButton();
             this.yesRadioButton = new System.Windows.Forms.RadioButton();
+            this.noRadioButton = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.nbrLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.residueListTab = new System.Windows.Forms.TabPage();
             this.residueListGroupBox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.safetyControl1 = new RyskTech.SafetyControl();
-            this.removeResidueButton = new System.Windows.Forms.Button();
-            this.editResidueButton = new System.Windows.Forms.Button();
-            this.addResidueButton = new System.Windows.Forms.Button();
             this.chemicalResidueData = new System.Windows.Forms.DataGridView();
-            this.chemicalResidueContainer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chemicalResidueStorageLocation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.inertState = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chemicalResidueDangers = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chemicalResidueQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chemicalResidueOrigin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chemicalResiduePhysicalState = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chemicalResidueName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chemicalResiduePhysicalState = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chemicalResidueOrigin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chemicalResidueQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.measurement = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chemicalResidueDangers = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.inertState = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chemicalResidueStorageLocation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chemicalResidueContainer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addResidueButton = new System.Windows.Forms.Button();
+            this.editResidueButton = new System.Windows.Forms.Button();
+            this.removeResidueButton = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.residueStorageTab.SuspendLayout();
             this.chemicalResidueStorageGroupBox.SuspendLayout();
@@ -96,7 +96,7 @@ namespace RyskTech
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.45901F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 241F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 122F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel2.Controls.Add(this.yesRadioButton, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.noRadioButton, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
@@ -118,36 +118,56 @@ namespace RyskTech
             this.tableLayoutPanel2.Size = new System.Drawing.Size(505, 329);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // textBox2
+            // yesRadioButton
             // 
-            this.tableLayoutPanel2.SetColumnSpan(this.textBox2, 5);
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(3, 212);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(499, 114);
-            this.textBox2.TabIndex = 7;
+            this.yesRadioButton.AutoSize = true;
+            this.yesRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.yesRadioButton.Location = new System.Drawing.Point(3, 29);
+            this.yesRadioButton.Name = "yesRadioButton";
+            this.yesRadioButton.Size = new System.Drawing.Size(43, 23);
+            this.yesRadioButton.TabIndex = 0;
+            this.yesRadioButton.TabStop = true;
+            this.yesRadioButton.Text = "Sim";
+            this.yesRadioButton.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // noRadioButton
             // 
-            this.label3.AutoSize = true;
-            this.tableLayoutPanel2.SetColumnSpan(this.label3, 5);
-            this.label3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label3.Location = new System.Drawing.Point(3, 187);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(347, 22);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Qual o destino dos resíduos químicos gerados pelo laboratório/espaço?";
+            this.noRadioButton.AutoSize = true;
+            this.noRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.noRadioButton.Location = new System.Drawing.Point(52, 29);
+            this.noRadioButton.Name = "noRadioButton";
+            this.noRadioButton.Size = new System.Drawing.Size(49, 23);
+            this.noRadioButton.TabIndex = 1;
+            this.noRadioButton.TabStop = true;
+            this.noRadioButton.Text = "Não";
+            this.noRadioButton.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // label1
             // 
-            this.tableLayoutPanel2.SetColumnSpan(this.textBox1, 5);
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(3, 91);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(499, 93);
-            this.textBox1.TabIndex = 5;
+            this.label1.AutoSize = true;
+            this.tableLayoutPanel2.SetColumnSpan(this.label1, 3);
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Location = new System.Drawing.Point(1, 1);
+            this.label1.Margin = new System.Windows.Forms.Padding(1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(343, 24);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Os recipientes dos resíduos químicos estão rotulados de acordo com a ";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // nbrLinkLabel
+            // 
+            this.nbrLinkLabel.AutoSize = true;
+            this.nbrLinkLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.nbrLinkLabel.Location = new System.Drawing.Point(346, 1);
+            this.nbrLinkLabel.Margin = new System.Windows.Forms.Padding(1);
+            this.nbrLinkLabel.Name = "nbrLinkLabel";
+            this.nbrLinkLabel.Size = new System.Drawing.Size(120, 24);
+            this.nbrLinkLabel.TabIndex = 3;
+            this.nbrLinkLabel.TabStop = true;
+            this.nbrLinkLabel.Text = "NBR-14725-3:2017 ?";
+            this.nbrLinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.nbrLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.nbrLinkLabel_LinkClicked);
             // 
             // label2
             // 
@@ -162,56 +182,36 @@ namespace RyskTech
             this.label2.Text = "Como é feito o armazenamento dos resíduos químicos do laboratório/espaço?";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // nbrLinkLabel
+            // textBox1
             // 
-            this.nbrLinkLabel.AutoSize = true;
-            this.nbrLinkLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.nbrLinkLabel.Location = new System.Drawing.Point(348, 1);
-            this.nbrLinkLabel.Margin = new System.Windows.Forms.Padding(1);
-            this.nbrLinkLabel.Name = "nbrLinkLabel";
-            this.nbrLinkLabel.Size = new System.Drawing.Size(120, 24);
-            this.nbrLinkLabel.TabIndex = 3;
-            this.nbrLinkLabel.TabStop = true;
-            this.nbrLinkLabel.Text = "NBR-14725-3:2017 ?";
-            this.nbrLinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.nbrLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.nbrLinkLabel_LinkClicked);
+            this.tableLayoutPanel2.SetColumnSpan(this.textBox1, 5);
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox1.Location = new System.Drawing.Point(3, 91);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(499, 93);
+            this.textBox1.TabIndex = 5;
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.tableLayoutPanel2.SetColumnSpan(this.label1, 3);
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(1, 1);
-            this.label1.Margin = new System.Windows.Forms.Padding(1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(345, 24);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Os recipientes dos resíduos químicos estão rotulados de acordo com a ";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.AutoSize = true;
+            this.tableLayoutPanel2.SetColumnSpan(this.label3, 5);
+            this.label3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label3.Location = new System.Drawing.Point(3, 187);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(347, 22);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Qual o destino dos resíduos químicos gerados pelo laboratório/espaço?";
             // 
-            // noRadioButton
+            // textBox2
             // 
-            this.noRadioButton.AutoSize = true;
-            this.noRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.noRadioButton.Location = new System.Drawing.Point(53, 29);
-            this.noRadioButton.Name = "noRadioButton";
-            this.noRadioButton.Size = new System.Drawing.Size(50, 23);
-            this.noRadioButton.TabIndex = 1;
-            this.noRadioButton.TabStop = true;
-            this.noRadioButton.Text = "Não";
-            this.noRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // yesRadioButton
-            // 
-            this.yesRadioButton.AutoSize = true;
-            this.yesRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.yesRadioButton.Location = new System.Drawing.Point(3, 29);
-            this.yesRadioButton.Name = "yesRadioButton";
-            this.yesRadioButton.Size = new System.Drawing.Size(44, 23);
-            this.yesRadioButton.TabIndex = 0;
-            this.yesRadioButton.TabStop = true;
-            this.yesRadioButton.Text = "Sim";
-            this.yesRadioButton.UseVisualStyleBackColor = true;
+            this.tableLayoutPanel2.SetColumnSpan(this.textBox2, 5);
+            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox2.Location = new System.Drawing.Point(3, 212);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(499, 114);
+            this.textBox2.TabIndex = 7;
             // 
             // residueListTab
             // 
@@ -246,7 +246,6 @@ namespace RyskTech
             this.tableLayoutPanel1.Controls.Add(this.addResidueButton, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.editResidueButton, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.removeResidueButton, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.safetyControl1, 3, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 16);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -256,36 +255,82 @@ namespace RyskTech
             this.tableLayoutPanel1.Size = new System.Drawing.Size(505, 329);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // safetyControl1
+            // chemicalResidueData
             // 
-            this.safetyControl1.Location = new System.Drawing.Point(255, 293);
-            this.safetyControl1.Name = "safetyControl1";
-            this.safetyControl1.Size = new System.Drawing.Size(247, 33);
-            this.safetyControl1.TabIndex = 4;
+            this.chemicalResidueData.AllowUserToAddRows = false;
+            this.chemicalResidueData.AllowUserToDeleteRows = false;
+            this.chemicalResidueData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.chemicalResidueData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.chemicalResidueName,
+            this.chemicalResiduePhysicalState,
+            this.chemicalResidueOrigin,
+            this.chemicalResidueQuantity,
+            this.measurement,
+            this.chemicalResidueDangers,
+            this.inertState,
+            this.chemicalResidueStorageLocation,
+            this.chemicalResidueContainer});
+            this.tableLayoutPanel1.SetColumnSpan(this.chemicalResidueData, 4);
+            this.chemicalResidueData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chemicalResidueData.Location = new System.Drawing.Point(3, 3);
+            this.chemicalResidueData.Name = "chemicalResidueData";
+            this.chemicalResidueData.ReadOnly = true;
+            this.chemicalResidueData.Size = new System.Drawing.Size(499, 284);
+            this.chemicalResidueData.TabIndex = 0;
             // 
-            // removeResidueButton
+            // chemicalResidueName
             // 
-            this.removeResidueButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.removeResidueButton.Location = new System.Drawing.Point(176, 298);
-            this.removeResidueButton.Margin = new System.Windows.Forms.Padding(8);
-            this.removeResidueButton.Name = "removeResidueButton";
-            this.removeResidueButton.Size = new System.Drawing.Size(68, 23);
-            this.removeResidueButton.TabIndex = 3;
-            this.removeResidueButton.Text = "Remover";
-            this.removeResidueButton.UseVisualStyleBackColor = true;
-            this.removeResidueButton.Click += new System.EventHandler(this.removeResidueButton_Click);
+            this.chemicalResidueName.HeaderText = "Nome";
+            this.chemicalResidueName.Name = "chemicalResidueName";
+            this.chemicalResidueName.ReadOnly = true;
             // 
-            // editResidueButton
+            // chemicalResiduePhysicalState
             // 
-            this.editResidueButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.editResidueButton.Location = new System.Drawing.Point(92, 298);
-            this.editResidueButton.Margin = new System.Windows.Forms.Padding(8);
-            this.editResidueButton.Name = "editResidueButton";
-            this.editResidueButton.Size = new System.Drawing.Size(68, 23);
-            this.editResidueButton.TabIndex = 2;
-            this.editResidueButton.Text = "Editar";
-            this.editResidueButton.UseVisualStyleBackColor = true;
-            this.editResidueButton.Click += new System.EventHandler(this.editResidueButton_Click);
+            this.chemicalResiduePhysicalState.HeaderText = "Estado Físico";
+            this.chemicalResiduePhysicalState.Name = "chemicalResiduePhysicalState";
+            this.chemicalResiduePhysicalState.ReadOnly = true;
+            // 
+            // chemicalResidueOrigin
+            // 
+            this.chemicalResidueOrigin.HeaderText = "Origem";
+            this.chemicalResidueOrigin.Name = "chemicalResidueOrigin";
+            this.chemicalResidueOrigin.ReadOnly = true;
+            // 
+            // chemicalResidueQuantity
+            // 
+            this.chemicalResidueQuantity.HeaderText = "Quantidade";
+            this.chemicalResidueQuantity.Name = "chemicalResidueQuantity";
+            this.chemicalResidueQuantity.ReadOnly = true;
+            // 
+            // measurement
+            // 
+            this.measurement.HeaderText = "Unidade de Medida";
+            this.measurement.Name = "measurement";
+            this.measurement.ReadOnly = true;
+            // 
+            // chemicalResidueDangers
+            // 
+            this.chemicalResidueDangers.HeaderText = "Perigoso?";
+            this.chemicalResidueDangers.Name = "chemicalResidueDangers";
+            this.chemicalResidueDangers.ReadOnly = true;
+            // 
+            // inertState
+            // 
+            this.inertState.HeaderText = "Inerte?";
+            this.inertState.Name = "inertState";
+            this.inertState.ReadOnly = true;
+            // 
+            // chemicalResidueStorageLocation
+            // 
+            this.chemicalResidueStorageLocation.HeaderText = "Armazenamento";
+            this.chemicalResidueStorageLocation.Name = "chemicalResidueStorageLocation";
+            this.chemicalResidueStorageLocation.ReadOnly = true;
+            // 
+            // chemicalResidueContainer
+            // 
+            this.chemicalResidueContainer.HeaderText = "Recipiente";
+            this.chemicalResidueContainer.Name = "chemicalResidueContainer";
+            this.chemicalResidueContainer.ReadOnly = true;
             // 
             // addResidueButton
             // 
@@ -299,75 +344,29 @@ namespace RyskTech
             this.addResidueButton.UseVisualStyleBackColor = true;
             this.addResidueButton.Click += new System.EventHandler(this.addResidueButton_Click);
             // 
-            // chemicalResidueData
+            // editResidueButton
             // 
-            this.chemicalResidueData.AllowUserToAddRows = false;
-            this.chemicalResidueData.AllowUserToDeleteRows = false;
-            this.chemicalResidueData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.chemicalResidueData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.chemicalResidueName,
-            this.chemicalResiduePhysicalState,
-            this.chemicalResidueOrigin,
-            this.chemicalResidueQuantity,
-            this.chemicalResidueDangers,
-            this.inertState,
-            this.chemicalResidueStorageLocation,
-            this.chemicalResidueContainer});
-            this.tableLayoutPanel1.SetColumnSpan(this.chemicalResidueData, 4);
-            this.chemicalResidueData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chemicalResidueData.Location = new System.Drawing.Point(3, 3);
-            this.chemicalResidueData.Name = "chemicalResidueData";
-            this.chemicalResidueData.ReadOnly = true;
-            this.chemicalResidueData.Size = new System.Drawing.Size(499, 284);
-            this.chemicalResidueData.TabIndex = 0;
+            this.editResidueButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.editResidueButton.Location = new System.Drawing.Point(92, 298);
+            this.editResidueButton.Margin = new System.Windows.Forms.Padding(8);
+            this.editResidueButton.Name = "editResidueButton";
+            this.editResidueButton.Size = new System.Drawing.Size(68, 23);
+            this.editResidueButton.TabIndex = 2;
+            this.editResidueButton.Text = "Editar";
+            this.editResidueButton.UseVisualStyleBackColor = true;
+            this.editResidueButton.Click += new System.EventHandler(this.editResidueButton_Click);
             // 
-            // chemicalResidueContainer
+            // removeResidueButton
             // 
-            this.chemicalResidueContainer.HeaderText = "Recipiente";
-            this.chemicalResidueContainer.Name = "chemicalResidueContainer";
-            this.chemicalResidueContainer.ReadOnly = true;
-            // 
-            // chemicalResidueStorageLocation
-            // 
-            this.chemicalResidueStorageLocation.HeaderText = "Armazenamento";
-            this.chemicalResidueStorageLocation.Name = "chemicalResidueStorageLocation";
-            this.chemicalResidueStorageLocation.ReadOnly = true;
-            // 
-            // inertState
-            // 
-            this.inertState.HeaderText = "Inerte?";
-            this.inertState.Name = "inertState";
-            this.inertState.ReadOnly = true;
-            // 
-            // chemicalResidueDangers
-            // 
-            this.chemicalResidueDangers.HeaderText = "Perigoso?";
-            this.chemicalResidueDangers.Name = "chemicalResidueDangers";
-            this.chemicalResidueDangers.ReadOnly = true;
-            // 
-            // chemicalResidueQuantity
-            // 
-            this.chemicalResidueQuantity.HeaderText = "Quantidade";
-            this.chemicalResidueQuantity.Name = "chemicalResidueQuantity";
-            this.chemicalResidueQuantity.ReadOnly = true;
-            // 
-            // chemicalResidueOrigin
-            // 
-            this.chemicalResidueOrigin.HeaderText = "Origem";
-            this.chemicalResidueOrigin.Name = "chemicalResidueOrigin";
-            this.chemicalResidueOrigin.ReadOnly = true;
-            // 
-            // chemicalResiduePhysicalState
-            // 
-            this.chemicalResiduePhysicalState.HeaderText = "Estado Físico";
-            this.chemicalResiduePhysicalState.Name = "chemicalResiduePhysicalState";
-            this.chemicalResiduePhysicalState.ReadOnly = true;
-            // 
-            // chemicalResidueName
-            // 
-            this.chemicalResidueName.HeaderText = "Nome";
-            this.chemicalResidueName.Name = "chemicalResidueName";
-            this.chemicalResidueName.ReadOnly = true;
+            this.removeResidueButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.removeResidueButton.Location = new System.Drawing.Point(176, 298);
+            this.removeResidueButton.Margin = new System.Windows.Forms.Padding(8);
+            this.removeResidueButton.Name = "removeResidueButton";
+            this.removeResidueButton.Size = new System.Drawing.Size(68, 23);
+            this.removeResidueButton.TabIndex = 3;
+            this.removeResidueButton.Text = "Remover";
+            this.removeResidueButton.UseVisualStyleBackColor = true;
+            this.removeResidueButton.Click += new System.EventHandler(this.removeResidueButton_Click);
             // 
             // tabControl1
             // 
@@ -387,6 +386,7 @@ namespace RyskTech
             this.Controls.Add(this.tabControl1);
             this.Name = "ChemicalResidueControl";
             this.Size = new System.Drawing.Size(525, 380);
+            this.Load += new System.EventHandler(this.ChemicalResidueControl_Load);
             this.residueStorageTab.ResumeLayout(false);
             this.chemicalResidueStorageGroupBox.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -417,18 +417,18 @@ namespace RyskTech
         private System.Windows.Forms.GroupBox residueListGroupBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.DataGridView chemicalResidueData;
+        private System.Windows.Forms.Button addResidueButton;
+        private System.Windows.Forms.Button editResidueButton;
+        private System.Windows.Forms.Button removeResidueButton;
+        private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.DataGridViewTextBoxColumn chemicalResidueName;
         private System.Windows.Forms.DataGridViewTextBoxColumn chemicalResiduePhysicalState;
         private System.Windows.Forms.DataGridViewTextBoxColumn chemicalResidueOrigin;
         private System.Windows.Forms.DataGridViewTextBoxColumn chemicalResidueQuantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn measurement;
         private System.Windows.Forms.DataGridViewTextBoxColumn chemicalResidueDangers;
         private System.Windows.Forms.DataGridViewTextBoxColumn inertState;
         private System.Windows.Forms.DataGridViewTextBoxColumn chemicalResidueStorageLocation;
         private System.Windows.Forms.DataGridViewTextBoxColumn chemicalResidueContainer;
-        private System.Windows.Forms.Button addResidueButton;
-        private System.Windows.Forms.Button editResidueButton;
-        private System.Windows.Forms.Button removeResidueButton;
-        private SafetyControl safetyControl1;
-        private System.Windows.Forms.TabControl tabControl1;
     }
 }

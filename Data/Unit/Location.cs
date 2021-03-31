@@ -9,17 +9,21 @@ namespace RyskTech.Data
 
     public class Location
     {
-        private const string ZIPCODE_REGEX = "^\\d{5}-\\d{3}}$";
+        private const string ZIPCODE_REGEX = "^\\d{5}-\\d{3}$";
 
-        public LocationPrefix prefix = LocationPrefix.Invalid;
+        public LocationPrefix prefix;
         public string streetName;
-        public int streetNumber = -1;
+        public int streetNumber;
         public string district;
         public string ZIPCode;
         public string complement;
         public string surroundingsDetails;
 
-        public Location() { }
+        public Location() 
+        {
+            prefix = LocationPrefix.Invalid;
+            streetNumber = -1;
+        }
 
         public Location(LocationPrefix prefix, string streetName, int streetNumber, string district, string ZIPCode, string complement)
         {
@@ -86,7 +90,7 @@ namespace RyskTech.Data
 
         public void CheckValidity()
         {
-            if (prefix != LocationPrefix.Invalid)
+            if (prefix == LocationPrefix.Invalid)
                 throw new ApplicationException(Resources.Language.pt_local.LocationPrefixInvalid);
 
             if (streetName == null || streetName.Length <= 0)
