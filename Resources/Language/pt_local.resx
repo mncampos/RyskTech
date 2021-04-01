@@ -162,6 +162,12 @@
   <data name="ErrorNoManipulatedAreasSelected" xml:space="preserve">
     <value>Selecione pelo menos um tipo de material manipulado na sua unidade!</value>
   </data>
+  <data name="ErrorNoResidueDestination" xml:space="preserve">
+    <value>Por favor indique o destino dos resíduos</value>
+  </data>
+  <data name="ErrorNoResidueStorageDescription" xml:space="preserve">
+    <value>Por favor descreva de maneira geral como são mantidos os resíduos</value>
+  </data>
   <data name="Floor" xml:space="preserve">
     <value>Andar</value>
   </data>

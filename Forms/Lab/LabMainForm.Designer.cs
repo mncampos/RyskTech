@@ -31,13 +31,13 @@ namespace RyskTech.Forms.Lab
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.welcomeTabPage = new System.Windows.Forms.TabPage();
+            this.labWelcomeControl1 = new RyskTech.Forms.Lab.Controls.LabWelcomeControl();
             this.safetyEquipmentTab = new System.Windows.Forms.TabPage();
             this.safetyEquipmentControl1 = new RyskTech.Forms.Lab.Controls.SafetyEquipmentControl();
             this.safetyTrainingTab = new System.Windows.Forms.TabPage();
-            this.satefyTrainingControl1 = new RyskTech.Forms.Lab.Controls.SatefyTrainingControl();
             this.chemicalResidueInformationTab = new System.Windows.Forms.TabPage();
             this.chemicalResidueControl1 = new RyskTech.ChemicalResidueControl();
-            this.labWelcomeControl1 = new RyskTech.Forms.Lab.Controls.LabWelcomeControl();
+            this.safetyTrainingControl2 = new RyskTech.Forms.Lab.Controls.SafetyTrainingControl();
             this.tabControl1.SuspendLayout();
             this.welcomeTabPage.SuspendLayout();
             this.safetyEquipmentTab.SuspendLayout();
@@ -69,6 +69,14 @@ namespace RyskTech.Forms.Lab
             this.welcomeTabPage.Text = "Bem Vindo!";
             this.welcomeTabPage.UseVisualStyleBackColor = true;
             // 
+            // labWelcomeControl1
+            // 
+            this.labWelcomeControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labWelcomeControl1.Location = new System.Drawing.Point(3, 3);
+            this.labWelcomeControl1.Name = "labWelcomeControl1";
+            this.labWelcomeControl1.Size = new System.Drawing.Size(820, 429);
+            this.labWelcomeControl1.TabIndex = 0;
+            // 
             // safetyEquipmentTab
             // 
             this.safetyEquipmentTab.Controls.Add(this.safetyEquipmentControl1);
@@ -90,21 +98,13 @@ namespace RyskTech.Forms.Lab
             // 
             // safetyTrainingTab
             // 
-            this.safetyTrainingTab.Controls.Add(this.satefyTrainingControl1);
+            this.safetyTrainingTab.Controls.Add(this.safetyTrainingControl2);
             this.safetyTrainingTab.Location = new System.Drawing.Point(4, 22);
             this.safetyTrainingTab.Name = "safetyTrainingTab";
             this.safetyTrainingTab.Size = new System.Drawing.Size(826, 435);
             this.safetyTrainingTab.TabIndex = 2;
             this.safetyTrainingTab.Text = "Treinamento de Segurança";
             this.safetyTrainingTab.UseVisualStyleBackColor = true;
-            // 
-            // satefyTrainingControl1
-            // 
-            this.satefyTrainingControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.satefyTrainingControl1.Location = new System.Drawing.Point(0, 0);
-            this.satefyTrainingControl1.Name = "satefyTrainingControl1";
-            this.satefyTrainingControl1.Size = new System.Drawing.Size(826, 435);
-            this.satefyTrainingControl1.TabIndex = 0;
             // 
             // chemicalResidueInformationTab
             // 
@@ -124,13 +124,13 @@ namespace RyskTech.Forms.Lab
             this.chemicalResidueControl1.Size = new System.Drawing.Size(826, 435);
             this.chemicalResidueControl1.TabIndex = 0;
             // 
-            // labWelcomeControl1
+            // safetyTrainingControl2
             // 
-            this.labWelcomeControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labWelcomeControl1.Location = new System.Drawing.Point(3, 3);
-            this.labWelcomeControl1.Name = "labWelcomeControl1";
-            this.labWelcomeControl1.Size = new System.Drawing.Size(820, 429);
-            this.labWelcomeControl1.TabIndex = 0;
+            this.safetyTrainingControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.safetyTrainingControl2.Location = new System.Drawing.Point(0, 0);
+            this.safetyTrainingControl2.Name = "safetyTrainingControl2";
+            this.safetyTrainingControl2.Size = new System.Drawing.Size(826, 435);
+            this.safetyTrainingControl2.TabIndex = 0;
             // 
             // LabMainForm
             // 
@@ -155,11 +155,12 @@ namespace RyskTech.Forms.Lab
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage welcomeTabPage;
         private System.Windows.Forms.TabPage safetyEquipmentTab;
-        private System.Windows.Forms.TabPage safetyTrainingTab;
         private System.Windows.Forms.TabPage chemicalResidueInformationTab;
         private Controls.SafetyEquipmentControl safetyEquipmentControl1;
-        private Controls.SatefyTrainingControl satefyTrainingControl1;
         private ChemicalResidueControl chemicalResidueControl1;
         private Controls.LabWelcomeControl labWelcomeControl1;
+        private Controls.SafetyTrainingControl safetyTrainingControl1;
+        private System.Windows.Forms.TabPage safetyTrainingTab;
+        private Controls.SafetyTrainingControl safetyTrainingControl2;
     }
 }

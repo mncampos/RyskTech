@@ -40,4 +40,4 @@ C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.pdb
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.Forms.Lab.Controls.LabWelcomeControl.resources
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.Forms.Lab.Controls.SafetyEquipmentControl.resources
-C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.Forms.Lab.Controls.SatefyTrainingControl.resources
+C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.Forms.Lab.Controls.SafetyTrainingControl.resources

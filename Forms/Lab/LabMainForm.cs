@@ -19,8 +19,21 @@ namespace RyskTech.Forms.Lab
 
         private void PrepareForGeneration()
         {
+            labWelcomeControl1.ValidateData();
+            data.generalInformation = labWelcomeControl1.data;
+
+            safetyEquipmentControl1.ValidateData();
+            data.safetyEquipment = safetyEquipmentControl1.data;
+
+            safetyTrainingControl1.ValidateData();
+            data.safetyTraining = safetyTrainingControl1.data;
+
+            chemicalResidueControl1.ValidateData();
+            data.manipulatedChemicalAgents = chemicalResidueControl1.residueData;
+            data.chemicalResidueStorageInfo = chemicalResidueControl1.storageInfo;
+
             // TODO Validate all subtabs
-            throw new NotImplementedException();
+            // throw new NotImplementedException();
         }
 
         public void Complete()

@@ -96,7 +96,7 @@ namespace RyskTech
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.45901F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 241F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 122F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38F));
             this.tableLayoutPanel2.Controls.Add(this.yesRadioButton, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.noRadioButton, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
@@ -129,6 +129,7 @@ namespace RyskTech
             this.yesRadioButton.TabStop = true;
             this.yesRadioButton.Text = "Sim";
             this.yesRadioButton.UseVisualStyleBackColor = true;
+            this.yesRadioButton.CheckedChanged += new System.EventHandler(this.yesRadioButton_CheckedChanged);
             // 
             // noRadioButton
             // 
@@ -136,11 +137,12 @@ namespace RyskTech
             this.noRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.noRadioButton.Location = new System.Drawing.Point(52, 29);
             this.noRadioButton.Name = "noRadioButton";
-            this.noRadioButton.Size = new System.Drawing.Size(49, 23);
+            this.noRadioButton.Size = new System.Drawing.Size(48, 23);
             this.noRadioButton.TabIndex = 1;
             this.noRadioButton.TabStop = true;
             this.noRadioButton.Text = "Não";
             this.noRadioButton.UseVisualStyleBackColor = true;
+            this.noRadioButton.CheckedChanged += new System.EventHandler(this.noRadioButton_CheckedChanged);
             // 
             // label1
             // 
@@ -150,7 +152,7 @@ namespace RyskTech
             this.label1.Location = new System.Drawing.Point(1, 1);
             this.label1.Margin = new System.Windows.Forms.Padding(1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(343, 24);
+            this.label1.Size = new System.Drawing.Size(342, 24);
             this.label1.TabIndex = 2;
             this.label1.Text = "Os recipientes dos resíduos químicos estão rotulados de acordo com a ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -159,7 +161,7 @@ namespace RyskTech
             // 
             this.nbrLinkLabel.AutoSize = true;
             this.nbrLinkLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.nbrLinkLabel.Location = new System.Drawing.Point(346, 1);
+            this.nbrLinkLabel.Location = new System.Drawing.Point(345, 1);
             this.nbrLinkLabel.Margin = new System.Windows.Forms.Padding(1);
             this.nbrLinkLabel.Name = "nbrLinkLabel";
             this.nbrLinkLabel.Size = new System.Drawing.Size(120, 24);
@@ -191,6 +193,7 @@ namespace RyskTech
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(499, 93);
             this.textBox1.TabIndex = 5;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -212,6 +215,7 @@ namespace RyskTech
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(499, 114);
             this.textBox2.TabIndex = 7;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // residueListTab
             // 

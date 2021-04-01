@@ -6,7 +6,7 @@ namespace RyskTech.Forms.Lab.Controls
 {
     public partial class LabWelcomeControl : UserControl
     {
-        private LabScope data;
+        public LabScope data;
 
         public LabWelcomeControl()
         {

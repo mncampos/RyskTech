@@ -4,11 +4,11 @@ using System.Windows.Forms;
 
 namespace RyskTech.Forms.Lab.Controls
 {
-    public partial class SatefyTrainingControl : UserControl
+    public partial class SafetyTrainingControl : UserControl
     {
         public Training data;
 
-        public SatefyTrainingControl()
+        public SafetyTrainingControl()
         {
             InitializeComponent();
         }

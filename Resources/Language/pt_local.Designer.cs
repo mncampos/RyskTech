@@ -196,6 +196,24 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Por favor indique o destino dos resíduos.
+        /// </summary>
+        internal static string ErrorNoResidueDestination {
+            get {
+                return ResourceManager.GetString("ErrorNoResidueDestination", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor descreva de maneira geral como são mantidos os resíduos.
+        /// </summary>
+        internal static string ErrorNoResidueStorageDescription {
+            get {
+                return ResourceManager.GetString("ErrorNoResidueStorageDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Andar.
         /// </summary>
         internal static string Floor {

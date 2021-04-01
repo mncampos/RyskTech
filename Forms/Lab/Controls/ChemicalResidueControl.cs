@@ -7,7 +7,8 @@ namespace RyskTech
 {
     public partial class ChemicalResidueControl : UserControl
     {
-        public List<ChemicalAgent> residues;
+        public List<ChemicalAgent> residueData;
+        public Storage storageInfo;
 
         public ChemicalResidueControl()
         {
@@ -16,7 +17,8 @@ namespace RyskTech
 
         private void ChemicalResidueControl_Load(object sender, EventArgs e)
         {
-            residues = new List<ChemicalAgent>();
+            residueData = new List<ChemicalAgent>();
+            storageInfo = new Storage();
         }
 
         private void nbrLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -62,7 +64,7 @@ namespace RyskTech
                     agent.storageDetails = row.Cells[7].Value.ToString();
                     agent.container = row.Cells[8].Value.ToString();
 
-                    residues.Add(agent);
+                    residueData.Add(agent);
                 }
             }
         }
@@ -85,11 +87,34 @@ namespace RyskTech
             }
         }
 
+        private void yesRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            storageInfo.NBRCompliant = true;
+        }
+
+        private void noRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            storageInfo.NBRCompliant = false;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            storageInfo.storageDescription = textBox1.Text;
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            storageInfo.residueDestination = textBox2.Text;
+        }
+
         public void ValidateData()
         {
             // I think only this is necessary, because it's possible
             // that no chemical agents are manipulated on the lab
             CreateResidueList();
+
+            storageInfo.CheckValidity();
         }
+
     }
 }
