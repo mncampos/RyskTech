@@ -5,7 +5,7 @@ namespace RyskTech.Forms.Unit.Controls
 {
     public partial class WelcomeControl : UserControl
     {
-        public Scope data;
+        public UnitScope data;
 
         public WelcomeControl()
         {
@@ -14,7 +14,7 @@ namespace RyskTech.Forms.Unit.Controls
 
         private void WelcomeControl_Load(object sender, System.EventArgs e)
         {
-            data = new Scope();
+            data = new UnitScope();
         }
 
         private void concludeButton_Click(object sender, System.EventArgs e)

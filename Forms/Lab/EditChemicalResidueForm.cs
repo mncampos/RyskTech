@@ -15,11 +15,6 @@ namespace RyskTech
             InitializeComponent();
         }
 
-        private void concludeButton_Validating(object sender, CancelEventArgs e)
-        {
-            //?
-        }
-
         private void concludeButton_Click(object sender, EventArgs e)
         {
             string container = "";

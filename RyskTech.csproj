@@ -99,7 +99,7 @@
     <Compile Include="Data\Lab\Training.cs" />
     <Compile Include="Data\Unit\Individual.cs" />
     <Compile Include="Data\Unit\Location.cs" />
-    <Compile Include="Data\Unit\Scope.cs" />
+    <Compile Include="Data\Unit\UnitScope.cs" />
     <Compile Include="Data\Unit\Space.cs" />
     <Compile Include="Data\Unit\Structure.cs" />
     <Compile Include="Data\Unit\Team.cs" />

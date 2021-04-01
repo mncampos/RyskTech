@@ -2,7 +2,7 @@
 
 namespace RyskTech.Data
 {
-    public class Scope
+    public class UnitScope
     {
         public string name;
 
@@ -13,7 +13,7 @@ namespace RyskTech.Data
 
         // TODO Analysis scope goes here maybe?
 
-        public Scope()
+        public UnitScope()
         {
             manipulatesChemicalAgents = false;
             manipulatesBiologicalAgents = false;

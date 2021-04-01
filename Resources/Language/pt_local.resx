@@ -153,6 +153,9 @@
   <data name="EMail" xml:space="preserve">
     <value>Endereço de e-mail</value>
   </data>
+  <data name="ErrorInvalidLabName" xml:space="preserve">
+    <value>Por favor informe o nome ou descritor do seu espaço</value>
+  </data>
   <data name="ErrorInvalidUnitName" xml:space="preserve">
     <value>Nome de unidade inválido!</value>
   </data>

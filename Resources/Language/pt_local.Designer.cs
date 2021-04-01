@@ -169,6 +169,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Por favor informe o nome ou descritor do seu espaço.
+        /// </summary>
+        internal static string ErrorInvalidLabName {
+            get {
+                return ResourceManager.GetString("ErrorInvalidLabName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Nome de unidade inválido!.
         /// </summary>
         internal static string ErrorInvalidUnitName {

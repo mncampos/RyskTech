@@ -2,7 +2,7 @@
 {
     public class Unit
     {
-        public Scope generalInformation;
+        public UnitScope generalInformation;
         public Location location;
         public Structure structure;
         public Team team;
