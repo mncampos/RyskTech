@@ -94,6 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\APR.cs" />
+    <Compile Include="Data\Lab\Characteristics.cs" />
     <Compile Include="Data\Lab\ChemicalAgent.cs" />
     <Compile Include="Data\Lab\Equipment.cs" />
     <Compile Include="Data\Lab\LabScope.cs" />
@@ -113,6 +114,12 @@
       <DependentUpon>ChemicalResidueControl.cs</DependentUpon>
     </Compile>
     <Compile Include="BusinessLogic\DocumentBuilder.cs" />
+    <Compile Include="Forms\Lab\Controls\GeneralInformationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\GeneralInformationControl.Designer.cs">
+      <DependentUpon>GeneralInformationControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Lab\Controls\LabWelcomeControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -207,6 +214,9 @@
     </Compile>
     <EmbeddedResource Include="Forms\Lab\Controls\ChemicalResidueControl.resx">
       <DependentUpon>ChemicalResidueControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\Controls\GeneralInformationControl.resx">
+      <DependentUpon>GeneralInformationControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lab\Controls\LabWelcomeControl.resx">
       <DependentUpon>LabWelcomeControl.cs</DependentUpon>

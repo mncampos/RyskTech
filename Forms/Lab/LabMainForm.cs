@@ -22,6 +22,9 @@ namespace RyskTech.Forms.Lab
             labWelcomeControl1.ValidateData();
             data.generalInformation = labWelcomeControl1.data;
 
+            generalInformationControl1.ValidateData();
+            data.spaceCharacterization = generalInformationControl1.data;
+
             safetyEquipmentControl1.ValidateData();
             data.safetyEquipment = safetyEquipmentControl1.data;
 

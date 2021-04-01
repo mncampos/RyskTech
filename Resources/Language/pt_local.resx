@@ -168,6 +168,9 @@
   <data name="ErrorNoResidueStorageDescription" xml:space="preserve">
     <value>Por favor descreva de maneira geral como são mantidos os resíduos</value>
   </data>
+  <data name="ErrorNoUsageDescription" xml:space="preserve">
+    <value>Por favor descreva o uso do seu espaço</value>
+  </data>
   <data name="Floor" xml:space="preserve">
     <value>Andar</value>
   </data>

@@ -214,6 +214,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Por favor descreva o uso do seu espaço.
+        /// </summary>
+        internal static string ErrorNoUsageDescription {
+            get {
+                return ResourceManager.GetString("ErrorNoUsageDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Andar.
         /// </summary>
         internal static string Floor {
