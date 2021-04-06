@@ -1,17 +1,27 @@
-﻿using RyskTech.Data;
-using System;
+﻿using System;
 using System.Linq;
 using System.Windows.Forms;
+using RyskTech.Data;
 
-namespace RyskTech
+namespace RyskTech.Forms.Lab
 {
-    public partial class EditChemicalResidueForm : Form
+    public partial class EditChemicalReactorForm : Form
     {
-        public ChemicalResidue createdAgent;
+        public ChemicalReactor createdAgent;
 
-        public EditChemicalResidueForm()
+        public EditChemicalReactorForm()
         {
             InitializeComponent();
+        }
+
+        private void pureRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            mixedSubstanceTextBox.Enabled = false;
+        }
+
+        private void mixedRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            mixedSubstanceTextBox.Enabled = true;
         }
 
         private void concludeButton_Click(object sender, EventArgs e)
@@ -36,19 +46,17 @@ namespace RyskTech
 
 
             // Create agent
-            ChemicalResidue new_agent =
-                new ChemicalResidue(
-                    residueNameTextBox.Text,
-                    physicalStateComboBox.Text,
-                    isInertCheckBox.Checked,
-                    (float)quantityUpDown.Value,
-                    measurementUnitComboBox.Text,
-                    origins,
-                    isDangerousCheckBox.Checked,
-                    dangers,
-                    container,
-                    storageLocationTextBox.Text
-                );
+            ChemicalReactor new_agent = new ChemicalReactor(
+                residueNameTextBox.Text,
+                physicalStateComboBox.Text,
+                (float)quantityUpDown.Value,
+                measurementUnitComboBox.Text,
+                origins,
+                casNumberTextBox.Text,
+                mixedRadioButton.Checked ? mixedSubstanceTextBox.Text : "Pura",
+                dangers, 
+                container,
+                storageLocationTextBox.Text);
 
             try
             {
@@ -56,7 +64,7 @@ namespace RyskTech
                 this.createdAgent = new_agent;
                 this.Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 this.createdAgent = null;
                 MessageBox.Show(ex.Message);

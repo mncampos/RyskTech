@@ -159,6 +159,9 @@
   <data name="ErrorInvalidUnitName" xml:space="preserve">
     <value>Nome de unidade inválido!</value>
   </data>
+  <data name="ErrorNoFISPQExplanation" xml:space="preserve">
+    <value>Por favor preencha com suas informações de concordância FISPQ</value>
+  </data>
   <data name="ErrorNoManipulatedAreasSelected" xml:space="preserve">
     <value>Selecione pelo menos um tipo de material manipulado na sua unidade!</value>
   </data>

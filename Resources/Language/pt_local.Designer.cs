@@ -187,6 +187,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Por favor preencha com suas informações de concordância FISPQ.
+        /// </summary>
+        internal static string ErrorNoFISPQExplanation {
+            get {
+                return ResourceManager.GetString("ErrorNoFISPQExplanation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Selecione pelo menos um tipo de material manipulado na sua unidade!.
         /// </summary>
         internal static string ErrorNoManipulatedAreasSelected {

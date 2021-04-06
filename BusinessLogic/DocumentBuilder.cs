@@ -55,9 +55,28 @@ namespace RyskTech
 
         private void AddLabInformation()
         {
+            IWSection labSection = AddSectionWithTitle(apr.lab.generalInformation.labName);
 
+            AddLabGeneralInfo(labSection);
+            AddLabGeneralDescription(labSection);
+
+            // TODO Add chemical agents info
 
             // TODO complete when we have this info
+        }
+
+        private void AddLabGeneralInfo(IWSection section)
+        {
+            List<string> items = apr.GetFormattedGeneralInfoList();
+
+            AddSubsectionTitle(section,"a) Informações gerais");
+            AddListWithItems(items);
+        }
+
+        private void AddLabGeneralDescription(IWSection section)
+        {
+            AddSubsectionTitle(section, "b) Descrição geral");
+            AddTextParagraph(apr.lab.spaceCharacterization.usageCharacterization);
         }
 
         private void AddUnitTeamInformation()
@@ -165,6 +184,17 @@ namespace RyskTech
             IWParagraph titleParagraph = AddTitleToSection(section, title);
 
             return section;
+        }
+
+        private void AddSubsectionTitle(IWSection section, string subsectionTile)
+        {
+            IWParagraph title_paragraph = section.AddParagraph();
+            IWTextRange title_text = title_paragraph.AppendText(subsectionTile);
+            title_text.CharacterFormat.Bold = false;
+            title_text.CharacterFormat.FontName = "Times New Roman";
+            title_text.CharacterFormat.UnderlineStyle = UnderlineStyle.Single;
+            title_text.CharacterFormat.FontSize = 14;
+            title_paragraph.AppendText("\n");
         }
 
         private IWSection AddSection()

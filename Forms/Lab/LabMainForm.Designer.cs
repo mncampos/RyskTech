@@ -33,13 +33,13 @@ namespace RyskTech.Forms.Lab
             this.welcomeTabPage = new System.Windows.Forms.TabPage();
             this.labWelcomeControl1 = new RyskTech.Forms.Lab.Controls.LabWelcomeControl();
             this.generalInfoTab = new System.Windows.Forms.TabPage();
+            this.generalInformationControl1 = new RyskTech.Forms.Lab.Controls.GeneralInformationControl();
             this.safetyEquipmentTab = new System.Windows.Forms.TabPage();
             this.safetyEquipmentControl1 = new RyskTech.Forms.Lab.Controls.SafetyEquipmentControl();
             this.safetyTrainingTab = new System.Windows.Forms.TabPage();
             this.safetyTrainingControl2 = new RyskTech.Forms.Lab.Controls.SafetyTrainingControl();
             this.chemicalResidueInformationTab = new System.Windows.Forms.TabPage();
             this.chemicalResidueControl1 = new RyskTech.ChemicalResidueControl();
-            this.generalInformationControl1 = new RyskTech.Forms.Lab.Controls.GeneralInformationControl();
             this.tabControl1.SuspendLayout();
             this.welcomeTabPage.SuspendLayout();
             this.generalInfoTab.SuspendLayout();
@@ -91,6 +91,14 @@ namespace RyskTech.Forms.Lab
             this.generalInfoTab.Text = "Informações Gerais";
             this.generalInfoTab.UseVisualStyleBackColor = true;
             // 
+            // generalInformationControl1
+            // 
+            this.generalInformationControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.generalInformationControl1.Location = new System.Drawing.Point(0, 0);
+            this.generalInformationControl1.Name = "generalInformationControl1";
+            this.generalInformationControl1.Size = new System.Drawing.Size(826, 435);
+            this.generalInformationControl1.TabIndex = 0;
+            // 
             // safetyEquipmentTab
             // 
             this.safetyEquipmentTab.Controls.Add(this.safetyEquipmentControl1);
@@ -124,6 +132,7 @@ namespace RyskTech.Forms.Lab
             // 
             this.safetyTrainingControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.safetyTrainingControl2.Location = new System.Drawing.Point(0, 0);
+            this.safetyTrainingControl2.Margin = new System.Windows.Forms.Padding(10);
             this.safetyTrainingControl2.Name = "safetyTrainingControl2";
             this.safetyTrainingControl2.Size = new System.Drawing.Size(826, 435);
             this.safetyTrainingControl2.TabIndex = 0;
@@ -135,7 +144,7 @@ namespace RyskTech.Forms.Lab
             this.chemicalResidueInformationTab.Name = "chemicalResidueInformationTab";
             this.chemicalResidueInformationTab.Size = new System.Drawing.Size(826, 435);
             this.chemicalResidueInformationTab.TabIndex = 3;
-            this.chemicalResidueInformationTab.Text = "Resíduos Químicos";
+            this.chemicalResidueInformationTab.Text = "Agentes Químicos";
             this.chemicalResidueInformationTab.UseVisualStyleBackColor = true;
             // 
             // chemicalResidueControl1
@@ -145,14 +154,6 @@ namespace RyskTech.Forms.Lab
             this.chemicalResidueControl1.Name = "chemicalResidueControl1";
             this.chemicalResidueControl1.Size = new System.Drawing.Size(826, 435);
             this.chemicalResidueControl1.TabIndex = 0;
-            // 
-            // generalInformationControl1
-            // 
-            this.generalInformationControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.generalInformationControl1.Location = new System.Drawing.Point(0, 0);
-            this.generalInformationControl1.Name = "generalInformationControl1";
-            this.generalInformationControl1.Size = new System.Drawing.Size(826, 435);
-            this.generalInformationControl1.TabIndex = 0;
             // 
             // LabMainForm
             // 
