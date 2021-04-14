@@ -100,6 +100,7 @@
     <Compile Include="Data\Lab\ChemicalResidue.cs" />
     <Compile Include="Data\Lab\Equipment.cs" />
     <Compile Include="Data\Lab\LabScope.cs" />
+    <Compile Include="Data\Lab\Risk.cs" />
     <Compile Include="Data\Lab\Storage.cs" />
     <Compile Include="Data\Lab\Training.cs" />
     <Compile Include="Data\Unit\Individual.cs" />
@@ -127,6 +128,12 @@
     </Compile>
     <Compile Include="Forms\Lab\Controls\LabWelcomeControl.Designer.cs">
       <DependentUpon>LabWelcomeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\RiskAnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\RiskAnalysisControl.Designer.cs">
+      <DependentUpon>RiskAnalysisControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Lab\Controls\SafetyEquipmentControl.cs">
       <SubType>UserControl</SubType>
@@ -228,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lab\Controls\LabWelcomeControl.resx">
       <DependentUpon>LabWelcomeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\Controls\RiskAnalysisControl.resx">
+      <DependentUpon>RiskAnalysisControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lab\Controls\SafetyEquipmentControl.resx">
       <DependentUpon>SafetyEquipmentControl.cs</DependentUpon>

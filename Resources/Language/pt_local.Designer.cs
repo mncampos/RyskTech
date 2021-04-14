@@ -205,11 +205,29 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Por favor insira o perigo assocaido a todos os riscos.
+        /// </summary>
+        internal static string ErrorNoAssociatedDanger {
+            get {
+                return ResourceManager.GetString("ErrorNoAssociatedDanger", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Por favor preencha com suas informações de concordância FISPQ.
         /// </summary>
         internal static string ErrorNoFISPQExplanation {
             get {
                 return ResourceManager.GetString("ErrorNoFISPQExplanation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor indique a classe de frequência de todos os riscos.
+        /// </summary>
+        internal static string ErrorNoFrequencyClassificaiton {
+            get {
+                return ResourceManager.GetString("ErrorNoFrequencyClassificaiton", resourceCulture);
             }
         }
         
@@ -237,6 +255,24 @@ namespace RyskTech.Resources.Language {
         internal static string ErrorNoResidueStorageDescription {
             get {
                 return ResourceManager.GetString("ErrorNoResidueStorageDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor descreva todos os riscos listados.
+        /// </summary>
+        internal static string ErrorNoRiskDescription {
+            get {
+                return ResourceManager.GetString("ErrorNoRiskDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor indique a classe de severidade de todos os riscos.
+        /// </summary>
+        internal static string ErrorNoSeverityClassification {
+            get {
+                return ResourceManager.GetString("ErrorNoSeverityClassification", resourceCulture);
             }
         }
         

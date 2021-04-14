@@ -165,8 +165,14 @@
   <data name="ErrorInvalidUnitName" xml:space="preserve">
     <value>Nome de unidade inválido!</value>
   </data>
+  <data name="ErrorNoAssociatedDanger" xml:space="preserve">
+    <value>Por favor insira o perigo assocaido a todos os riscos</value>
+  </data>
   <data name="ErrorNoFISPQExplanation" xml:space="preserve">
     <value>Por favor preencha com suas informações de concordância FISPQ</value>
+  </data>
+  <data name="ErrorNoFrequencyClassificaiton" xml:space="preserve">
+    <value>Por favor indique a classe de frequência de todos os riscos</value>
   </data>
   <data name="ErrorNoManipulatedAreasSelected" xml:space="preserve">
     <value>Selecione pelo menos um tipo de material manipulado na sua unidade!</value>
@@ -176,6 +182,12 @@
   </data>
   <data name="ErrorNoResidueStorageDescription" xml:space="preserve">
     <value>Por favor descreva de maneira geral como são mantidos os resíduos</value>
+  </data>
+  <data name="ErrorNoRiskDescription" xml:space="preserve">
+    <value>Por favor descreva todos os riscos listados</value>
+  </data>
+  <data name="ErrorNoSeverityClassification" xml:space="preserve">
+    <value>Por favor indique a classe de severidade de todos os riscos</value>
   </data>
   <data name="ErrorNoUsageDescription" xml:space="preserve">
     <value>Por favor descreva o uso do seu espaço</value>

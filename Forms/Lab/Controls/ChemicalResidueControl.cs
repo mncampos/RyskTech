@@ -202,7 +202,8 @@ namespace RyskTech
 
             CreateReactorList();
 
-            storageInfo.CheckValidity();
+            if (storageInfo != null)
+                storageInfo.CheckValidity();
         }
     }
 }
