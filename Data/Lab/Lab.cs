@@ -9,7 +9,8 @@ namespace RyskTech.Data
         public Equipment safetyEquipment;
         public Training safetyTraining;
 
-        public List<ChemicalResidue> manipulatedChemicalAgents;
+        public List<ChemicalResidue> manipulatedChemicalResidues;
+        public List<ChemicalReactor> manipulatedChemicalReactors;
         public Storage chemicalResidueStorageInfo;
 
         public Lab() { }

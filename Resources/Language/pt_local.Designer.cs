@@ -133,11 +133,29 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Recipiente.
+        /// </summary>
+        internal static string Container {
+            get {
+                return ResourceManager.GetString("Container", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Travessa.
         /// </summary>
         internal static string Crossing {
             get {
                 return ResourceManager.GetString("Crossing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Características de periculosidade.
+        /// </summary>
+        internal static string DangerCharacteristics {
+            get {
+                return ResourceManager.GetString("DangerCharacteristics", resourceCulture);
             }
         }
         
@@ -255,6 +273,15 @@ namespace RyskTech.Resources.Language {
         internal static string IncompleteTeamCounter {
             get {
                 return ResourceManager.GetString("IncompleteTeamCounter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Inerte.
+        /// </summary>
+        internal static string Inert {
+            get {
+                return ResourceManager.GetString("Inert", resourceCulture);
             }
         }
         
@@ -421,6 +448,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Nome.
+        /// </summary>
+        internal static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Não.
         /// </summary>
         internal static string No {
@@ -466,6 +502,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Origem.
+        /// </summary>
+        internal static string Origin {
+            get {
+                return ResourceManager.GetString("Origin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Por favor especifique o que são &quot;Outros&quot;.
         /// </summary>
         internal static string OtherNotSpecified {
@@ -480,6 +525,15 @@ namespace RyskTech.Resources.Language {
         internal static string Phone {
             get {
                 return ResourceManager.GetString("Phone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Estado físico.
+        /// </summary>
+        internal static string PhysicalState {
+            get {
+                return ResourceManager.GetString("PhysicalState", resourceCulture);
             }
         }
         
@@ -525,6 +579,15 @@ namespace RyskTech.Resources.Language {
         internal static string Room {
             get {
                 return ResourceManager.GetString("Room", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Informações adicionais de armazenamento.
+        /// </summary>
+        internal static string StorageInfo {
+            get {
+                return ResourceManager.GetString("StorageInfo", resourceCulture);
             }
         }
         

@@ -32,7 +32,8 @@ namespace RyskTech.Forms.Lab
             data.safetyTraining = safetyTrainingControl1.data;
 
             chemicalResidueControl1.ValidateData();
-            data.manipulatedChemicalAgents = chemicalResidueControl1.residueData;
+            data.manipulatedChemicalResidues = chemicalResidueControl1.residueData;
+            data.manipulatedChemicalReactors = chemicalResidueControl1.reactorData;
             data.chemicalResidueStorageInfo = chemicalResidueControl1.storageInfo;
 
             // TODO Validate all subtabs

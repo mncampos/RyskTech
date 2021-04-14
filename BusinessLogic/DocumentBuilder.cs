@@ -1,5 +1,6 @@
 ﻿// Nuget package SyncFusion
 using Syncfusion.DocIO.DLS;
+using System;
 using System.Collections.Generic;
 
 namespace RyskTech
@@ -60,7 +61,8 @@ namespace RyskTech
             AddLabGeneralInfo(labSection);
             AddLabGeneralDescription(labSection);
 
-            // TODO Add chemical agents info
+            if (apr.lab.generalInformation.manipulatesChemicalAgents)
+                AddLabChemicalAgentInfo(labSection);
 
             // TODO complete when we have this info
         }
@@ -77,6 +79,55 @@ namespace RyskTech
         {
             AddSubsectionTitle(section, "b) Descrição geral");
             AddTextParagraph(apr.lab.spaceCharacterization.usageCharacterization);
+        }
+
+        private void AddLabChemicalAgentInfo(IWSection section)
+        {
+            if (apr.lab.manipulatedChemicalReactors.Count > 0)
+            {
+                AddSubsectionTitle(section, "c) Compilação dos reagentes químicos");
+                AddChemicalReactorsTable();
+            }
+
+            if (apr.lab.manipulatedChemicalResidues.Count > 0)
+            {
+                AddSubsectionTitle(section, "d) Compilação dos resíduos químicos");
+                AddChemicalResidueTable();
+            }
+
+            // TODO Add information about storage
+            // TODO Add information about safety training and equipment
+        }
+
+        private void AddChemicalReactorsTable()
+        {
+            // TODO
+        }
+
+        private void AddChemicalResidueTable()
+        {
+            IWTable chemicalResiduesTable = GetCurrentSection().AddTable();
+            chemicalResiduesTable.ResetCells(apr.lab.manipulatedChemicalResidues.Count + 1, 8);
+            chemicalResiduesTable[0, 0].AddParagraph().AppendText(Resources.Language.pt_local.Name);
+            chemicalResiduesTable[0, 1].AddParagraph().AppendText(Resources.Language.pt_local.PhysicalState);
+            chemicalResiduesTable[0, 2].AddParagraph().AppendText(Resources.Language.pt_local.Origin);
+            chemicalResiduesTable[0, 3].AddParagraph().AppendText(Resources.Language.pt_local.Quantity);
+            chemicalResiduesTable[0, 4].AddParagraph().AppendText(Resources.Language.pt_local.DangerCharacteristics);
+            chemicalResiduesTable[0, 5].AddParagraph().AppendText(Resources.Language.pt_local.Inert);
+            chemicalResiduesTable[0, 6].AddParagraph().AppendText(Resources.Language.pt_local.Container);
+            chemicalResiduesTable[0, 7].AddParagraph().AppendText(Resources.Language.pt_local.StorageInfo);
+
+            for (int i = 0; i < apr.lab.manipulatedChemicalResidues.Count; i++)
+            {
+                chemicalResiduesTable[i + 1, 0].AddParagraph().AppendText(apr.lab.manipulatedChemicalResidues[i].name);
+                chemicalResiduesTable[i + 1, 1].AddParagraph().AppendText(apr.lab.manipulatedChemicalResidues[i].physicalState);
+                chemicalResiduesTable[i + 1, 2].AddParagraph().AppendText(String.Join("\n", apr.lab.manipulatedChemicalResidues[i].origin));
+                chemicalResiduesTable[i + 1, 3].AddParagraph().AppendText(apr.lab.manipulatedChemicalResidues[i].quantity + " " + apr.lab.manipulatedChemicalResidues[i].measurementUnit);
+                chemicalResiduesTable[i + 1, 4].AddParagraph().AppendText(String.Join("\n", apr.lab.manipulatedChemicalResidues[i].dangerCharacteristics));
+                chemicalResiduesTable[i + 1, 5].AddParagraph().AppendText(apr.lab.manipulatedChemicalResidues[i].inert ? Resources.Language.pt_local.Yes : Resources.Language.pt_local.No);
+                chemicalResiduesTable[i + 1, 6].AddParagraph().AppendText(apr.lab.manipulatedChemicalResidues[i].container);
+                chemicalResiduesTable[i + 1, 7].AddParagraph().AppendText(apr.lab.manipulatedChemicalResidues[i].storageDetails);
+            }
         }
 
         private void AddUnitTeamInformation()

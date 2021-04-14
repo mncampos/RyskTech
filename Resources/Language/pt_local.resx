@@ -141,8 +141,14 @@
   <data name="Confirm" xml:space="preserve">
     <value>Confirmar</value>
   </data>
+  <data name="Container" xml:space="preserve">
+    <value>Recipiente</value>
+  </data>
   <data name="Crossing" xml:space="preserve">
     <value>Travessa</value>
+  </data>
+  <data name="DangerCharacteristics" xml:space="preserve">
+    <value>Características de periculosidade</value>
   </data>
   <data name="Director" xml:space="preserve">
     <value>Diretor</value>
@@ -182,6 +188,9 @@
   </data>
   <data name="IncompleteTeamCounter" xml:space="preserve">
     <value>Por favor informe a quantidade de cada integrante do time</value>
+  </data>
+  <data name="Inert" xml:space="preserve">
+    <value>Inerte</value>
   </data>
   <data name="InvalidAgentContainer" xml:space="preserve">
     <value>Por favor indique os detalhes de contenção do agente</value>
@@ -237,6 +246,9 @@
   <data name="LocationZIPInvalid" xml:space="preserve">
     <value>Por favor digite o CEP no formato correto!</value>
   </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
   <data name="No" xml:space="preserve">
     <value>Não</value>
   </data>
@@ -252,11 +264,17 @@
   <data name="NotAllTabsVisited" xml:space="preserve">
     <value>Por favor preencha todas as abas antes de completar o documento!</value>
   </data>
+  <data name="Origin" xml:space="preserve">
+    <value>Origem</value>
+  </data>
   <data name="OtherNotSpecified" xml:space="preserve">
     <value>Por favor especifique o que são "Outros"</value>
   </data>
   <data name="Phone" xml:space="preserve">
     <value>Telefone</value>
+  </data>
+  <data name="PhysicalState" xml:space="preserve">
+    <value>Estado físico</value>
   </data>
   <data name="PlasticContainer" xml:space="preserve">
     <value>Bombona plástica</value>
@@ -272,6 +290,9 @@
   </data>
   <data name="Room" xml:space="preserve">
     <value>Sala</value>
+  </data>
+  <data name="StorageInfo" xml:space="preserve">
+    <value>Informações adicionais de armazenamento</value>
   </data>
   <data name="StreetNumber" xml:space="preserve">
     <value>No.</value>

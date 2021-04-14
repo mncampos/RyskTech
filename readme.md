@@ -36,3 +36,8 @@ The laboratory manager (whoever is responsible for it's maintenance) will be ask
 
 ### Potential environmental risk analysis document
 Finally, with all the information that was gathered from the labs and/or units, the software must generate a document which contains all of the above information, formatted according to some standard to be defined. Either the software itself should send the document to a central point of analysis or the software must instruct the user where to send the document, once completed.
+
+## Resources
+Some resources for development are listed below
+    * Jamboard with interface requirements: https://jamboard.google.com/d/1yrfbC4A2FgMeFCsPLOxwW4NwteOtxSnUUdqXfzW54Uk/viewer
+    * 
