@@ -34,14 +34,14 @@ namespace RyskTech.Forms.Lab.Controls
             this.mainTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.riskAnalysisInstructionLabel = new System.Windows.Forms.Label();
             this.riskDataGridView = new System.Windows.Forms.DataGridView();
-            this.tableButtonsLayoutPannel = new System.Windows.Forms.TableLayoutPanel();
-            this.severityClassesButton = new System.Windows.Forms.Button();
-            this.frequencyClassesButton = new System.Windows.Forms.Button();
             this.risk = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.danger = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.safetyNet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.frequency = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.severity = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.tableButtonsLayoutPannel = new System.Windows.Forms.TableLayoutPanel();
+            this.severityClassesButton = new System.Windows.Forms.Button();
+            this.frequencyClassesButton = new System.Windows.Forms.Button();
             this.riskAnalysisGroupBox.SuspendLayout();
             this.mainTableLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.riskDataGridView)).BeginInit();
@@ -109,44 +109,6 @@ namespace RyskTech.Forms.Lab.Controls
             this.riskDataGridView.Size = new System.Drawing.Size(670, 312);
             this.riskDataGridView.TabIndex = 1;
             // 
-            // tableButtonsLayoutPannel
-            // 
-            this.tableButtonsLayoutPannel.ColumnCount = 2;
-            this.tableButtonsLayoutPannel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableButtonsLayoutPannel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableButtonsLayoutPannel.Controls.Add(this.severityClassesButton, 0, 0);
-            this.tableButtonsLayoutPannel.Controls.Add(this.frequencyClassesButton, 1, 0);
-            this.tableButtonsLayoutPannel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableButtonsLayoutPannel.Location = new System.Drawing.Point(3, 393);
-            this.tableButtonsLayoutPannel.Name = "tableButtonsLayoutPannel";
-            this.tableButtonsLayoutPannel.Padding = new System.Windows.Forms.Padding(2);
-            this.tableButtonsLayoutPannel.RowCount = 1;
-            this.tableButtonsLayoutPannel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableButtonsLayoutPannel.Size = new System.Drawing.Size(233, 37);
-            this.tableButtonsLayoutPannel.TabIndex = 2;
-            // 
-            // severityClassesButton
-            // 
-            this.severityClassesButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.severityClassesButton.Location = new System.Drawing.Point(5, 5);
-            this.severityClassesButton.Name = "severityClassesButton";
-            this.severityClassesButton.Size = new System.Drawing.Size(108, 27);
-            this.severityClassesButton.TabIndex = 0;
-            this.severityClassesButton.Text = "Severidade";
-            this.severityClassesButton.UseVisualStyleBackColor = true;
-            this.severityClassesButton.Click += new System.EventHandler(this.severityClassesButton_Click);
-            // 
-            // frequencyClassesButton
-            // 
-            this.frequencyClassesButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.frequencyClassesButton.Location = new System.Drawing.Point(119, 5);
-            this.frequencyClassesButton.Name = "frequencyClassesButton";
-            this.frequencyClassesButton.Size = new System.Drawing.Size(109, 27);
-            this.frequencyClassesButton.TabIndex = 1;
-            this.frequencyClassesButton.Text = "Frequência";
-            this.frequencyClassesButton.UseVisualStyleBackColor = true;
-            this.frequencyClassesButton.Click += new System.EventHandler(this.frequencyClassesButton_Click);
-            // 
             // risk
             // 
             this.risk.HeaderText = "Risco";
@@ -186,6 +148,44 @@ namespace RyskTech.Forms.Lab.Controls
             this.severity.Name = "severity";
             this.severity.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.severity.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // tableButtonsLayoutPannel
+            // 
+            this.tableButtonsLayoutPannel.ColumnCount = 2;
+            this.tableButtonsLayoutPannel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableButtonsLayoutPannel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableButtonsLayoutPannel.Controls.Add(this.severityClassesButton, 0, 0);
+            this.tableButtonsLayoutPannel.Controls.Add(this.frequencyClassesButton, 1, 0);
+            this.tableButtonsLayoutPannel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableButtonsLayoutPannel.Location = new System.Drawing.Point(3, 393);
+            this.tableButtonsLayoutPannel.Name = "tableButtonsLayoutPannel";
+            this.tableButtonsLayoutPannel.Padding = new System.Windows.Forms.Padding(2);
+            this.tableButtonsLayoutPannel.RowCount = 1;
+            this.tableButtonsLayoutPannel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableButtonsLayoutPannel.Size = new System.Drawing.Size(233, 37);
+            this.tableButtonsLayoutPannel.TabIndex = 2;
+            // 
+            // severityClassesButton
+            // 
+            this.severityClassesButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.severityClassesButton.Location = new System.Drawing.Point(5, 5);
+            this.severityClassesButton.Name = "severityClassesButton";
+            this.severityClassesButton.Size = new System.Drawing.Size(108, 27);
+            this.severityClassesButton.TabIndex = 0;
+            this.severityClassesButton.Text = "Severidade";
+            this.severityClassesButton.UseVisualStyleBackColor = true;
+            this.severityClassesButton.Click += new System.EventHandler(this.severityClassesButton_Click);
+            // 
+            // frequencyClassesButton
+            // 
+            this.frequencyClassesButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.frequencyClassesButton.Location = new System.Drawing.Point(119, 5);
+            this.frequencyClassesButton.Name = "frequencyClassesButton";
+            this.frequencyClassesButton.Size = new System.Drawing.Size(109, 27);
+            this.frequencyClassesButton.TabIndex = 1;
+            this.frequencyClassesButton.Text = "Frequência";
+            this.frequencyClassesButton.UseVisualStyleBackColor = true;
+            this.frequencyClassesButton.Click += new System.EventHandler(this.frequencyClassesButton_Click);
             // 
             // RiskAnalysisControl
             // 

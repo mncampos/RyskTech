@@ -214,6 +214,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Por favor complete as considerações gerais sobre os resultados da análise.
+        /// </summary>
+        internal static string ErrorNoConclusion {
+            get {
+                return ResourceManager.GetString("ErrorNoConclusion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Por favor preencha com suas informações de concordância FISPQ.
         /// </summary>
         internal static string ErrorNoFISPQExplanation {
@@ -273,6 +282,15 @@ namespace RyskTech.Resources.Language {
         internal static string ErrorNoSeverityClassification {
             get {
                 return ResourceManager.GetString("ErrorNoSeverityClassification", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor sugira formas de melhorar a segurança no seu ambiente.
+        /// </summary>
+        internal static string ErrorNoSugestions {
+            get {
+                return ResourceManager.GetString("ErrorNoSugestions", resourceCulture);
             }
         }
         

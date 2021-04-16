@@ -168,6 +168,9 @@
   <data name="ErrorNoAssociatedDanger" xml:space="preserve">
     <value>Por favor insira o perigo assocaido a todos os riscos</value>
   </data>
+  <data name="ErrorNoConclusion" xml:space="preserve">
+    <value>Por favor complete as considerações gerais sobre os resultados da análise</value>
+  </data>
   <data name="ErrorNoFISPQExplanation" xml:space="preserve">
     <value>Por favor preencha com suas informações de concordância FISPQ</value>
   </data>
@@ -188,6 +191,9 @@
   </data>
   <data name="ErrorNoSeverityClassification" xml:space="preserve">
     <value>Por favor indique a classe de severidade de todos os riscos</value>
+  </data>
+  <data name="ErrorNoSugestions" xml:space="preserve">
+    <value>Por favor sugira formas de melhorar a segurança no seu ambiente</value>
   </data>
   <data name="ErrorNoUsageDescription" xml:space="preserve">
     <value>Por favor descreva o uso do seu espaço</value>
