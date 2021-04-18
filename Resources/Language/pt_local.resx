@@ -189,6 +189,9 @@
   <data name="ErrorNoRiskDescription" xml:space="preserve">
     <value>Por favor descreva todos os riscos listados</value>
   </data>
+  <data name="ErrorNoRisks" xml:space="preserve">
+    <value>Por favor indique os riscos presentes no seu laboratório</value>
+  </data>
   <data name="ErrorNoSeverityClassification" xml:space="preserve">
     <value>Por favor indique a classe de severidade de todos os riscos</value>
   </data>

@@ -105,7 +105,6 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.mainTableLayoutPanel.SetColumnSpan(this.recomendationTextBox, 2);
             this.recomendationTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.recomendationTextBox.Enabled = false;
             this.recomendationTextBox.Location = new System.Drawing.Point(3, 258);
             this.recomendationTextBox.Multiline = true;
             this.recomendationTextBox.Name = "recomendationTextBox";

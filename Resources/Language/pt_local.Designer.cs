@@ -277,6 +277,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Por favor indique os riscos presentes no seu laboratório.
+        /// </summary>
+        internal static string ErrorNoRisks {
+            get {
+                return ResourceManager.GetString("ErrorNoRisks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Por favor indique a classe de severidade de todos os riscos.
         /// </summary>
         internal static string ErrorNoSeverityClassification {

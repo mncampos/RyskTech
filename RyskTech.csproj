@@ -101,6 +101,7 @@
     <Compile Include="Data\Lab\Equipment.cs" />
     <Compile Include="Data\Lab\LabScope.cs" />
     <Compile Include="Data\Lab\Risk.cs" />
+    <Compile Include="Data\Lab\RiskAnalysis.cs" />
     <Compile Include="Data\Lab\Storage.cs" />
     <Compile Include="Data\Lab\Training.cs" />
     <Compile Include="Data\Unit\Individual.cs" />
@@ -110,6 +111,12 @@
     <Compile Include="Data\Unit\Structure.cs" />
     <Compile Include="Data\Unit\Team.cs" />
     <Compile Include="Data\Unit\Unit.cs" />
+    <Compile Include="Forms\Lab\Controls\AccidentHistoryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\AccidentHistoryControl.Designer.cs">
+      <DependentUpon>AccidentHistoryControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Lab\Controls\ChemicalResidueControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -122,6 +129,12 @@
     </Compile>
     <Compile Include="Forms\Lab\Controls\ConclusionControl.Designer.cs">
       <DependentUpon>ConclusionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\FinalConsiderationsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\FinalConsiderationsControl.Designer.cs">
+      <DependentUpon>FinalConsiderationsControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Lab\Controls\GeneralInformationControl.cs">
       <SubType>UserControl</SubType>
@@ -233,11 +246,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>pt_local.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\Lab\Controls\AccidentHistoryControl.resx">
+      <DependentUpon>AccidentHistoryControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lab\Controls\ChemicalResidueControl.resx">
       <DependentUpon>ChemicalResidueControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lab\Controls\ConclusionControl.resx">
       <DependentUpon>ConclusionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\Controls\FinalConsiderationsControl.resx">
+      <DependentUpon>FinalConsiderationsControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lab\Controls\GeneralInformationControl.resx">
       <DependentUpon>GeneralInformationControl.cs</DependentUpon>

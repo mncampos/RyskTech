@@ -107,7 +107,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.73771F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.26229F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 253F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 254F));
             this.tableLayoutPanel7.Controls.Add(this.label5, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.weeksRadioButton, 1, 2);
             this.tableLayoutPanel7.Controls.Add(this.daysRadioButton, 0, 2);
@@ -203,7 +203,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.numericUpDown1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDown1.Location = new System.Drawing.Point(181, 42);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(136, 20);
+            this.numericUpDown1.Size = new System.Drawing.Size(135, 20);
             this.numericUpDown1.TabIndex = 6;
             this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
