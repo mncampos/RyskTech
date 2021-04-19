@@ -124,6 +124,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Número CAS.
+        /// </summary>
+        internal static string CasNumber {
+            get {
+                return ResourceManager.GetString("CasNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Confirmar.
         /// </summary>
         internal static string Confirm {
@@ -507,6 +516,15 @@ namespace RyskTech.Resources.Language {
         internal static string LocationZIPInvalid {
             get {
                 return ResourceManager.GetString("LocationZIPInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mistura.
+        /// </summary>
+        internal static string Mixture {
+            get {
+                return ResourceManager.GetString("Mixture", resourceCulture);
             }
         }
         

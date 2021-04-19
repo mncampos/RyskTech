@@ -138,6 +138,9 @@
   <data name="Cancel" xml:space="preserve">
     <value>Cancelar</value>
   </data>
+  <data name="CasNumber" xml:space="preserve">
+    <value>Número CAS</value>
+  </data>
   <data name="Confirm" xml:space="preserve">
     <value>Confirmar</value>
   </data>
@@ -266,6 +269,9 @@
   </data>
   <data name="LocationZIPInvalid" xml:space="preserve">
     <value>Por favor digite o CEP no formato correto!</value>
+  </data>
+  <data name="Mixture" xml:space="preserve">
+    <value>Mistura</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Nome</value>

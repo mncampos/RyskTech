@@ -107,7 +107,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.73771F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.26229F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 254F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 255F));
             this.tableLayoutPanel7.Controls.Add(this.label5, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.weeksRadioButton, 1, 2);
             this.tableLayoutPanel7.Controls.Add(this.daysRadioButton, 0, 2);
@@ -133,7 +133,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label5.Location = new System.Drawing.Point(3, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(172, 39);
+            this.label5.Size = new System.Drawing.Size(171, 39);
             this.label5.TabIndex = 0;
             this.label5.Text = "Com qual periodicidade?";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -141,7 +141,7 @@ namespace RyskTech.Forms.Lab.Controls
             // weeksRadioButton
             // 
             this.weeksRadioButton.AutoSize = true;
-            this.weeksRadioButton.Location = new System.Drawing.Point(181, 76);
+            this.weeksRadioButton.Location = new System.Drawing.Point(180, 76);
             this.weeksRadioButton.Name = "weeksRadioButton";
             this.weeksRadioButton.Size = new System.Drawing.Size(69, 17);
             this.weeksRadioButton.TabIndex = 2;
@@ -178,7 +178,7 @@ namespace RyskTech.Forms.Lab.Controls
             // yearsRadioButton
             // 
             this.yearsRadioButton.AutoSize = true;
-            this.yearsRadioButton.Location = new System.Drawing.Point(181, 100);
+            this.yearsRadioButton.Location = new System.Drawing.Point(180, 100);
             this.yearsRadioButton.Name = "yearsRadioButton";
             this.yearsRadioButton.Size = new System.Drawing.Size(49, 17);
             this.yearsRadioButton.TabIndex = 4;
@@ -193,7 +193,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Location = new System.Drawing.Point(3, 39);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(172, 34);
+            this.label6.Size = new System.Drawing.Size(171, 34);
             this.label6.TabIndex = 5;
             this.label6.Text = "A cada...";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -201,7 +201,7 @@ namespace RyskTech.Forms.Lab.Controls
             // numericUpDown1
             // 
             this.numericUpDown1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numericUpDown1.Location = new System.Drawing.Point(181, 42);
+            this.numericUpDown1.Location = new System.Drawing.Point(180, 42);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(135, 20);
             this.numericUpDown1.TabIndex = 6;

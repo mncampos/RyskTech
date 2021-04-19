@@ -95,13 +95,38 @@ namespace RyskTech
                 AddChemicalResidueTable();
             }
 
-            // TODO Add information about storage
-            // TODO Add information about safety training and equipment
+            AddChemicalResidueStorageInfo();
+            AddSafetyInfo();
         }
 
         private void AddChemicalReactorsTable()
         {
-            // TODO
+            IWTable chemicalReactorTable = GetCurrentSection().AddTable();
+            chemicalReactorTable.ResetCells(apr.lab.manipulatedChemicalReactors.Count + 1, 10);
+            chemicalReactorTable[0, 0].AddParagraph().AppendText(Resources.Language.pt_local.Name);
+            chemicalReactorTable[0, 1].AddParagraph().AppendText(Resources.Language.pt_local.PhysicalState);
+            chemicalReactorTable[0, 2].AddParagraph().AppendText(Resources.Language.pt_local.Origin);
+            chemicalReactorTable[0, 3].AddParagraph().AppendText(Resources.Language.pt_local.Quantity);
+            chemicalReactorTable[0, 4].AddParagraph().AppendText(Resources.Language.pt_local.Mixture);
+            chemicalReactorTable[0, 5].AddParagraph().AppendText(Resources.Language.pt_local.CasNumber);
+            chemicalReactorTable[0, 6].AddParagraph().AppendText(Resources.Language.pt_local.DangerCharacteristics);
+            chemicalReactorTable[0, 7].AddParagraph().AppendText(Resources.Language.pt_local.Inert);
+            chemicalReactorTable[0, 8].AddParagraph().AppendText(Resources.Language.pt_local.Container);
+            chemicalReactorTable[0, 9].AddParagraph().AppendText(Resources.Language.pt_local.StorageInfo);
+        
+            for (int i = 0; i < apr.lab.manipulatedChemicalReactors.Count; i++)
+            {
+                chemicalReactorTable[i + 1, 0].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].name);
+                chemicalReactorTable[i + 1, 1].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].physicalState);
+                chemicalReactorTable[i + 1, 2].AddParagraph().AppendText(String.Join("\n", apr.lab.manipulatedChemicalReactors[i].origin));
+                chemicalReactorTable[i + 1, 3].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].quantity + " " + apr.lab.manipulatedChemicalReactors[i].measurementUnit);
+                chemicalReactorTable[i + 1, 4].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].mixtureDescription);
+                chemicalReactorTable[i + 1, 5].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].casNumber);
+                chemicalReactorTable[i + 1, 6].AddParagraph().AppendText(String.Join("\n", apr.lab.manipulatedChemicalReactors[i].dangerCharacteristics));
+                chemicalReactorTable[i + 1, 7].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].inert? Resources.Language.pt_local.Yes : Resources.Language.pt_local.No);
+                chemicalReactorTable[i + 1, 8].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].container);
+                chemicalReactorTable[i + 1, 9].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].storageDetails);
+            }
         }
 
         private void AddChemicalResidueTable()
@@ -128,6 +153,29 @@ namespace RyskTech
                 chemicalResiduesTable[i + 1, 6].AddParagraph().AppendText(apr.lab.manipulatedChemicalResidues[i].container);
                 chemicalResiduesTable[i + 1, 7].AddParagraph().AppendText(apr.lab.manipulatedChemicalResidues[i].storageDetails);
             }
+        }
+
+        private void AddChemicalResidueStorageInfo()
+        {
+            AddSubsectionTitle(GetCurrentSection(), "e) Informações de armazenamento e disposição");
+            
+            AddTextParagraph(apr.lab.chemicalResidueStorageInfo.storageDescription);
+            AddTextParagraph(apr.lab.chemicalResidueStorageInfo.residueDestination);
+
+            if (!apr.lab.chemicalResidueStorageInfo.NBRCompliant)
+                AddTextParagraph("O espaço não apresenta conformidade com a NBR-14725-3:2017");
+            else
+                AddTextParagraph("O espaço apresenta armazenamento dos seus resíduos de acordo com a NBR-14725-3:2017");
+
+            if (!apr.lab.chemicalResidueStorageInfo.FISPQCompliant)
+                AddTextParagraph("O espaço não apresenta FISPQ em conformidade com a NBR-14725-4:2014");
+            else
+                AddTextParagraph(apr.lab.chemicalResidueStorageInfo.FISPQExplanation);
+        }
+
+        private void AddSafetyInfo()
+        {
+            // TODO
         }
 
         private void AddUnitTeamInformation()
