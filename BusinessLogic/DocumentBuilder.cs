@@ -175,7 +175,52 @@ namespace RyskTech
 
         private void AddSafetyInfo()
         {
-            // TODO
+            AddSubsectionTitle(GetCurrentSection(), "f) Informações de segurança");
+            AddSafetyEquipmentInfo();
+            AddSafetyTrainingInfo();
+        }
+
+        private void AddSafetyEquipmentInfo()
+        {
+            List<String> epis = apr.lab.safetyEquipment.getEPIS();
+            List<String> epcs = apr.lab.safetyEquipment.getEPCS();
+            List<String> firstAid = apr.lab.safetyEquipment.getFirstAidObjects();
+
+            if (epis == null || epis.Count <= 0)
+                AddTextParagraph("O espaço não apresenta Equipamentos de Proteção Individual.");
+            else
+            {
+                AddTextParagraph("O espaço apresenta os seguintes Equipamentos de Proteção Individual (EPIs):");
+                AddListWithItems(epis);
+            }
+
+            if (epcs == null || epcs.Count <= 0)
+                AddTextParagraph("O espaço não apresenta Equipamentos de Proteção Coletiva.");
+            else
+            {
+                AddTextParagraph("O espaço apresenta os seguintes Equipamentos de Proteção Coletiva (EPCs):");
+                AddListWithItems(epcs);
+            }
+
+            if (apr.lab.safetyEquipment.noFirstAid)
+                AddTextParagraph("O espaço não possui uma caixa de primeiros socorros.");
+            else
+            {
+                AddTextParagraph("O espaço possui uma caixa de primeiros socorros com os seguintes itens:");
+                AddListWithItems(firstAid);
+            }
+        }
+
+        private void AddSafetyTrainingInfo()
+        {
+            if (!apr.lab.safetyTraining.providesTraining)
+                AddTextParagraph("O espaço não fornece treinamentos de segurança aos indivíduos.");
+            else
+            {
+                AddTextParagraph("O espaço fornece treinamentos de segurança aos indivíduos a cada" +
+                    apr.lab.safetyTraining.periodicityAmount + " " + apr.lab.safetyTraining.periodicityUnit + "." + "Os indivíduos envolvidos são:");
+                AddTextParagraph(apr.lab.safetyTraining.involvedPersonel);
+            }
         }
 
         private void AddUnitTeamInformation()
