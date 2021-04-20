@@ -56,7 +56,8 @@ namespace RyskTech.Forms.Lab
                 mixedRadioButton.Checked ? mixedSubstanceTextBox.Text : "Pura",
                 dangers, 
                 container,
-                storageLocationTextBox.Text);
+                storageLocationTextBox.Text,
+                inertCheckbox.Checked);
 
             try
             {

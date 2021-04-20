@@ -40,12 +40,15 @@ namespace RyskTech.Forms.Lab
             this.safetyTrainingControl2 = new RyskTech.Forms.Lab.Controls.SafetyTrainingControl();
             this.chemicalResidueInformationTab = new System.Windows.Forms.TabPage();
             this.chemicalResidueControl1 = new RyskTech.ChemicalResidueControl();
+            this.finalConsiderationsTab = new System.Windows.Forms.TabPage();
+            this.finalConsiderationsControl1 = new RyskTech.Forms.Lab.Controls.FinalConsiderationsControl();
             this.tabControl1.SuspendLayout();
             this.welcomeTabPage.SuspendLayout();
             this.generalInfoTab.SuspendLayout();
             this.safetyEquipmentTab.SuspendLayout();
             this.safetyTrainingTab.SuspendLayout();
             this.chemicalResidueInformationTab.SuspendLayout();
+            this.finalConsiderationsTab.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -55,6 +58,7 @@ namespace RyskTech.Forms.Lab
             this.tabControl1.Controls.Add(this.safetyEquipmentTab);
             this.tabControl1.Controls.Add(this.safetyTrainingTab);
             this.tabControl1.Controls.Add(this.chemicalResidueInformationTab);
+            this.tabControl1.Controls.Add(this.finalConsiderationsTab);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -155,6 +159,24 @@ namespace RyskTech.Forms.Lab
             this.chemicalResidueControl1.Size = new System.Drawing.Size(826, 435);
             this.chemicalResidueControl1.TabIndex = 0;
             // 
+            // finalConsiderationsTab
+            // 
+            this.finalConsiderationsTab.Controls.Add(this.finalConsiderationsControl1);
+            this.finalConsiderationsTab.Location = new System.Drawing.Point(4, 22);
+            this.finalConsiderationsTab.Name = "finalConsiderationsTab";
+            this.finalConsiderationsTab.Size = new System.Drawing.Size(826, 435);
+            this.finalConsiderationsTab.TabIndex = 5;
+            this.finalConsiderationsTab.Text = "Considerações Finais";
+            this.finalConsiderationsTab.UseVisualStyleBackColor = true;
+            // 
+            // finalConsiderationsControl1
+            // 
+            this.finalConsiderationsControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.finalConsiderationsControl1.Location = new System.Drawing.Point(0, 0);
+            this.finalConsiderationsControl1.Name = "finalConsiderationsControl1";
+            this.finalConsiderationsControl1.Size = new System.Drawing.Size(826, 435);
+            this.finalConsiderationsControl1.TabIndex = 0;
+            // 
             // LabMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,6 +192,7 @@ namespace RyskTech.Forms.Lab
             this.safetyEquipmentTab.ResumeLayout(false);
             this.safetyTrainingTab.ResumeLayout(false);
             this.chemicalResidueInformationTab.ResumeLayout(false);
+            this.finalConsiderationsTab.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -188,5 +211,7 @@ namespace RyskTech.Forms.Lab
         private Controls.SafetyTrainingControl safetyTrainingControl2;
         private System.Windows.Forms.TabPage generalInfoTab;
         private Controls.GeneralInformationControl generalInformationControl1;
+        private System.Windows.Forms.TabPage finalConsiderationsTab;
+        private Controls.FinalConsiderationsControl finalConsiderationsControl1;
     }
 }

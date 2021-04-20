@@ -65,19 +65,22 @@ namespace RyskTech
                 AddLabChemicalAgentInfo(labSection);
 
             // TODO complete when we have this info
+
+            AddLabIdentifiedRisks();
+            AddLabFinalConsiderations();
         }
 
         private void AddLabGeneralInfo(IWSection section)
         {
             List<string> items = apr.GetFormattedGeneralInfoList();
 
-            AddSubsectionTitle(section,"a) Informações gerais");
+            AddSubsectionTitle(section,"Informações gerais");
             AddListWithItems(items);
         }
 
         private void AddLabGeneralDescription(IWSection section)
         {
-            AddSubsectionTitle(section, "b) Descrição geral");
+            AddSubsectionTitle(section, "Descrição geral");
             AddTextParagraph(apr.lab.spaceCharacterization.usageCharacterization);
         }
 
@@ -85,13 +88,13 @@ namespace RyskTech
         {
             if (apr.lab.manipulatedChemicalReactors.Count > 0)
             {
-                AddSubsectionTitle(section, "c) Compilação dos reagentes químicos");
+                AddSubsectionTitle(section, "Compilação dos reagentes químicos");
                 AddChemicalReactorsTable();
             }
 
             if (apr.lab.manipulatedChemicalResidues.Count > 0)
             {
-                AddSubsectionTitle(section, "d) Compilação dos resíduos químicos");
+                AddSubsectionTitle(section, "Compilação dos resíduos químicos");
                 AddChemicalResidueTable();
             }
 
@@ -157,7 +160,7 @@ namespace RyskTech
 
         private void AddChemicalResidueStorageInfo()
         {
-            AddSubsectionTitle(GetCurrentSection(), "e) Informações de armazenamento e disposição");
+            AddSubsectionTitle(GetCurrentSection(), "Informações de armazenamento e disposição");
             
             AddTextParagraph(apr.lab.chemicalResidueStorageInfo.storageDescription);
             AddTextParagraph(apr.lab.chemicalResidueStorageInfo.residueDestination);
@@ -175,7 +178,7 @@ namespace RyskTech
 
         private void AddSafetyInfo()
         {
-            AddSubsectionTitle(GetCurrentSection(), "f) Informações de segurança");
+            AddSubsectionTitle(GetCurrentSection(), "Informações de segurança");
             AddSafetyEquipmentInfo();
             AddSafetyTrainingInfo();
         }
@@ -221,6 +224,40 @@ namespace RyskTech
                     apr.lab.safetyTraining.periodicityAmount + " " + apr.lab.safetyTraining.periodicityUnit + "." + "Os indivíduos envolvidos são:");
                 AddTextParagraph(apr.lab.safetyTraining.involvedPersonel);
             }
+        }
+
+        private void AddLabIdentifiedRisks()
+        {
+            AddSubsectionTitle(GetCurrentSection(), "Riscos Identificados");
+            AddIdentifiedRisksTable();
+        }
+
+        private void AddIdentifiedRisksTable()
+        {
+            IWTable risksTable = GetCurrentSection().AddTable();
+            risksTable.ResetCells(apr.lab.riskAnalysisInformation.identifiedRisks.Count + 1, 6);
+            risksTable[0,0].AddParagraph().AppendText(Resources.Language.pt_local.Risk);
+            risksTable[0,1].AddParagraph().AppendText(Resources.Language.pt_local.Danger);
+            risksTable[0,2].AddParagraph().AppendText(Resources.Language.pt_local.SafetyNet);
+            risksTable[0,3].AddParagraph().AppendText(Resources.Language.pt_local.SeverityClassification);
+            risksTable[0,4].AddParagraph().AppendText(Resources.Language.pt_local.FrequencyClassification);
+            risksTable[0,5].AddParagraph().AppendText(Resources.Language.pt_local.RiskClassification);
+            
+            for (int i = 0; i < apr.lab.riskAnalysisInformation.identifiedRisks.Count; i++)
+                for (int j = 0; j < 6; j++)
+                    risksTable[i, j].AddParagraph().AppendText(apr.lab.riskAnalysisInformation.GetFormattedRiskList()[i][j]);
+        }
+
+        private void AddLabFinalConsiderations()
+        {
+            AddSubsectionTitle(GetCurrentSection(), "Histórico de acidentes");
+            AddTextParagraph(apr.lab.riskAnalysisInformation.accidents);
+
+            AddSubsectionTitle(GetCurrentSection(), "Conclusões");
+            AddTextParagraph(apr.lab.riskAnalysisInformation.conclusion);
+
+            AddSubsectionTitle(GetCurrentSection(), "Recomendações");
+            AddTextParagraph(apr.lab.riskAnalysisInformation.recomendations);
         }
 
         private void AddUnitTeamInformation()

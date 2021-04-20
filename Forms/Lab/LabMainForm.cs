@@ -38,6 +38,9 @@ namespace RyskTech.Forms.Lab
 
             // TODO Validate all subtabs
             // throw new NotImplementedException();
+
+            finalConsiderationsControl1.ValidateData();
+            data.riskAnalysisInformation = finalConsiderationsControl1.data;
         }
 
         public void Complete()

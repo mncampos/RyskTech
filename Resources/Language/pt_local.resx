@@ -150,6 +150,9 @@
   <data name="Crossing" xml:space="preserve">
     <value>Travessa</value>
   </data>
+  <data name="Danger" xml:space="preserve">
+    <value>Perigo</value>
+  </data>
   <data name="DangerCharacteristics" xml:space="preserve">
     <value>Características de periculosidade</value>
   </data>
@@ -206,6 +209,9 @@
   </data>
   <data name="Floor" xml:space="preserve">
     <value>Andar</value>
+  </data>
+  <data name="FrequencyClassification" xml:space="preserve">
+    <value>Classificação de Frequência</value>
   </data>
   <data name="Highway" xml:space="preserve">
     <value>Rodovia</value>
@@ -312,11 +318,23 @@
   <data name="Quantity" xml:space="preserve">
     <value>Quantidade</value>
   </data>
+  <data name="Risk" xml:space="preserve">
+    <value>Risco</value>
+  </data>
+  <data name="RiskClassification" xml:space="preserve">
+    <value>Classe de Risco</value>
+  </data>
   <data name="Road" xml:space="preserve">
     <value>Rua</value>
   </data>
   <data name="Room" xml:space="preserve">
     <value>Sala</value>
+  </data>
+  <data name="SafetyNet" xml:space="preserve">
+    <value>Salvaguarda</value>
+  </data>
+  <data name="SeverityClassification" xml:space="preserve">
+    <value>Classificação de severidade</value>
   </data>
   <data name="StorageInfo" xml:space="preserve">
     <value>Informações adicionais de armazenamento</value>

@@ -54,6 +54,20 @@ namespace RyskTech.Data
             this.riskClassification = riskClassificationMap[new Tuple<string,string>(frequencyClassification, severityClassification)];
         }
 
+        public List<String> GetFormattedRiskList()
+        {
+            List<String> formattedRisk = new List<string>();
+
+            formattedRisk.Add(description);
+            formattedRisk.Add(associatedDanger);
+            formattedRisk.Add(safetyNet);
+            formattedRisk.Add(severityClassification);
+            formattedRisk.Add(frequencyClassification);
+            formattedRisk.Add(riskClassification.ToString());
+
+            return formattedRisk;
+        }
+
         public void CheckValidity()
         {
             if (this.description == null || this.description.Length <= 0)

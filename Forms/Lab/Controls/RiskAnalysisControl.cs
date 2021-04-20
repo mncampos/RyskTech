@@ -27,7 +27,7 @@ namespace RyskTech.Forms.Lab.Controls
 
         private void frequencyClassesButton_Click(object sender, EventArgs e)
         {
-            ShowTableForm table = new ShowTableForm("../../Resources/Quadro3.jpg", "Classificação quanto à frequência");
+            ShowTableForm table = new ShowTableForm("../../Resources/Quadro3.png", "Classificação quanto à frequência");
             table.ShowDialog();
         }
 

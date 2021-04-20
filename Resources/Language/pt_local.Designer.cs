@@ -160,6 +160,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Perigo.
+        /// </summary>
+        internal static string Danger {
+            get {
+                return ResourceManager.GetString("Danger", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Características de periculosidade.
         /// </summary>
         internal static string DangerCharacteristics {
@@ -327,6 +336,15 @@ namespace RyskTech.Resources.Language {
         internal static string Floor {
             get {
                 return ResourceManager.GetString("Floor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Classificação de Frequência.
+        /// </summary>
+        internal static string FrequencyClassification {
+            get {
+                return ResourceManager.GetString("FrequencyClassification", resourceCulture);
             }
         }
         
@@ -646,6 +664,24 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Risco.
+        /// </summary>
+        internal static string Risk {
+            get {
+                return ResourceManager.GetString("Risk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Classe de Risco.
+        /// </summary>
+        internal static string RiskClassification {
+            get {
+                return ResourceManager.GetString("RiskClassification", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Rua.
         /// </summary>
         internal static string Road {
@@ -660,6 +696,24 @@ namespace RyskTech.Resources.Language {
         internal static string Room {
             get {
                 return ResourceManager.GetString("Room", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Salvaguarda.
+        /// </summary>
+        internal static string SafetyNet {
+            get {
+                return ResourceManager.GetString("SafetyNet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Classificação de severidade.
+        /// </summary>
+        internal static string SeverityClassification {
+            get {
+                return ResourceManager.GetString("SeverityClassification", resourceCulture);
             }
         }
         
