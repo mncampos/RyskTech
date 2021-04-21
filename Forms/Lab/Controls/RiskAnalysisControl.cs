@@ -33,6 +33,7 @@ namespace RyskTech.Forms.Lab.Controls
 
         private void CreateRiskList()
         {
+            data = new List<Risk>();
             foreach (DataGridViewRow row in riskDataGridView.Rows)
             {
                 if (row.Cells[0] != null && row.Cells[0].Value != null)

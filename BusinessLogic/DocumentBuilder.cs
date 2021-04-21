@@ -55,7 +55,7 @@ namespace RyskTech
 
         private void AddLabInformation()
         {
-            IWSection labSection = AddSectionWithTitle(apr.lab.generalInformation.labName);
+            IWSection labSection = AddSectionWithTitle(apr.lab.generalInformation.labName + " (" + apr.lab.generalInformation.belongingUnitName + ")");
 
             AddLabGeneralInfo(labSection);
             AddLabGeneralDescription(labSection);

@@ -77,6 +77,7 @@ namespace RyskTech
 
         private void CreateResidueList()
         {
+            residueData = new List<ChemicalResidue>();
             foreach (DataGridViewRow row in chemicalResidueData.Rows)
             {
                 if (row.Cells[0] != null)
@@ -100,7 +101,8 @@ namespace RyskTech
 
         private void CreateReactorList()
         {
-            foreach(DataGridViewRow row in chemicalReactorData.Rows)
+            reactorData = new List<ChemicalReactor>();
+            foreach (DataGridViewRow row in chemicalReactorData.Rows)
             {
                 if (row.Cells[0] != null)
                 {
