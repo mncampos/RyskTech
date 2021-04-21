@@ -39,5 +39,4 @@ Finally, with all the information that was gathered from the labs and/or units, 
 
 ## Resources
 Some resources for development are listed below
-    * Jamboard with interface requirements: https://jamboard.google.com/d/1yrfbC4A2FgMeFCsPLOxwW4NwteOtxSnUUdqXfzW54Uk/viewer
-    * 
+* Jamboard with interface requirements: https://jamboard.google.com/d/1yrfbC4A2FgMeFCsPLOxwW4NwteOtxSnUUdqXfzW54Uk/viewer

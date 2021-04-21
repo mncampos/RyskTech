@@ -1,4 +1,5 @@
 ﻿using RyskTech.Data;
+using System;
 using System.Windows.Forms;
 
 namespace RyskTech.Forms.Lab.Controls
@@ -19,6 +20,9 @@ namespace RyskTech.Forms.Lab.Controls
 
         public void ValidateData()
         {
+            if (this.data == null)
+                throw new ApplicationException(Resources.Language.pt_local.NotAllTabsVisited);
+
             accidentHistoryControl1.ValidateData();
             data.accidents = accidentHistoryControl1.accidentHistory;
 

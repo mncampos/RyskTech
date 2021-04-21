@@ -73,7 +73,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.accidentLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accidentLabel.Location = new System.Drawing.Point(3, 0);
             this.accidentLabel.Name = "accidentLabel";
-            this.accidentLabel.Size = new System.Drawing.Size(719, 65);
+            this.accidentLabel.Size = new System.Drawing.Size(719, 66);
             this.accidentLabel.TabIndex = 0;
             this.accidentLabel.Text = "Por favor descreva abaixo um breve histórico dos acidentes notáveis que ocorreram" +
     " no seu ambiente de trabalho. Caso não haja nenhum, poderá pular este passo";
@@ -83,10 +83,10 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.mainTableLayoutPanel.SetColumnSpan(this.accidentHistoryTextBox, 2);
             this.accidentHistoryTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.accidentHistoryTextBox.Location = new System.Drawing.Point(3, 68);
+            this.accidentHistoryTextBox.Location = new System.Drawing.Point(3, 69);
             this.accidentHistoryTextBox.Multiline = true;
             this.accidentHistoryTextBox.Name = "accidentHistoryTextBox";
-            this.accidentHistoryTextBox.Size = new System.Drawing.Size(719, 389);
+            this.accidentHistoryTextBox.Size = new System.Drawing.Size(719, 388);
             this.accidentHistoryTextBox.TabIndex = 1;
             this.accidentHistoryTextBox.TextChanged += new System.EventHandler(this.accidentHistoryTextBox_TextChanged);
             // 
@@ -97,6 +97,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.Controls.Add(this.accidentGroupBox);
             this.Name = "AccidentHistoryControl";
             this.Size = new System.Drawing.Size(731, 479);
+            this.Load += new System.EventHandler(this.AccidentHistoryControl_Load);
             this.accidentGroupBox.ResumeLayout(false);
             this.mainTableLayoutPanel.ResumeLayout(false);
             this.mainTableLayoutPanel.PerformLayout();

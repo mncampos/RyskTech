@@ -35,7 +35,7 @@ namespace RyskTech.Forms.Lab.Controls
         {
             foreach (DataGridViewRow row in riskDataGridView.Rows)
             {
-                if (row.Cells[0] != null)
+                if (row.Cells[0] != null && row.Cells[0].Value != null)
                 {
                     Risk risk = new Risk(
                         row.Cells[0].ToString(),

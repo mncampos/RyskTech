@@ -13,6 +13,12 @@ namespace RyskTech.Forms.Lab.Controls
             InitializeComponent();
         }
 
+        private void ConclusionControl_Load(object sender, EventArgs e)
+        {
+            conclusion = "";
+            recomendation = "";
+        }
+
         private void conclusionTextBox_TextChanged(object sender, System.EventArgs e)
         {
             conclusion = conclusionTextBox.Text;

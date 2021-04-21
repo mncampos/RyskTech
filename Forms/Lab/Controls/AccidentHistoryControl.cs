@@ -11,6 +11,11 @@ namespace RyskTech.Forms.Lab.Controls
             InitializeComponent();
         }
 
+        private void AccidentHistoryControl_Load(object sender, System.EventArgs e)
+        {
+            accidentHistory = "";
+        }
+
         private void accidentHistoryTextBox_TextChanged(object sender, System.EventArgs e)
         {
             accidentHistory = accidentHistoryTextBox.Text;

@@ -130,6 +130,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.Controls.Add(this.mainGroupBox);
             this.Name = "ConclusionControl";
             this.Size = new System.Drawing.Size(726, 448);
+            this.Load += new System.EventHandler(this.ConclusionControl_Load);
             this.mainGroupBox.ResumeLayout(false);
             this.mainTableLayoutPanel.ResumeLayout(false);
             this.mainTableLayoutPanel.PerformLayout();

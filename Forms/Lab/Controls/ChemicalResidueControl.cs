@@ -111,11 +111,11 @@ namespace RyskTech
                     agent.quantity = (float)row.Cells[3].Value;
                     agent.measurementUnit = row.Cells[4].ToString();
                     agent.mixtureDescription = row.Cells[5].Value.ToString();
-                    agent.inert = (bool)row.Cells[6].Value;
-                    agent.casNumber = row.Cells[7].Value.ToString();
-                    agent.dangerCharacteristics = (string[])row.Cells[7].Value;                    
-                    agent.storageDetails = row.Cells[8].Value.ToString();
-                    agent.container = row.Cells[9].Value.ToString();
+                    agent.casNumber = row.Cells[6].Value.ToString();
+                    agent.dangerCharacteristics = (string[])row.Cells[7].Value;
+                    agent.inert = (bool)row.Cells[8].Value;
+                    agent.storageDetails = row.Cells[9].Value.ToString();
+                    agent.container = row.Cells[10].Value.ToString();
 
                     reactorData.Add(agent);
                 }
@@ -154,6 +154,7 @@ namespace RyskTech
                     createdAgent.mixtureDescription,
                     createdAgent.casNumber,
                     createdAgent.dangerCharacteristics, //
+                    createdAgent.inert,
                     createdAgent.storageDetails,
                     createdAgent.container
                     );
@@ -197,6 +198,9 @@ namespace RyskTech
 
         public void ValidateData()
         {
+            if (residueData == null)
+                throw new ApplicationException(Resources.Language.pt_local.NotAllTabsVisited);
+
             // I think only this is necessary, because it's possible
             // that no chemical agents are manipulated on the lab
             CreateResidueList();
