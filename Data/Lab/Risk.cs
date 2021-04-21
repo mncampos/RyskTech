@@ -6,33 +6,33 @@ namespace RyskTech.Data
     public class Risk
     {
 
-        private static Dictionary<Tuple<string, string>, int> riskClassificationMap =
-            new Dictionary<Tuple<string, string>, int>()
+        private static Dictionary<string, int> riskClassificationMap =
+            new Dictionary<string, int>()
             {
-                {new Tuple<string, string>("A","1"), 1 },
-                {new Tuple<string, string>("A","2"), 1 },
-                {new Tuple<string, string>("A","3"), 1 },
-                {new Tuple<string, string>("A","4"), 2 },
+                {"A1", 1 },
+                {"A2", 1 },
+                {"A3", 1 },
+                {"A4", 2 },
 
-                {new Tuple<string, string>("B","1"), 1 },
-                {new Tuple<string, string>("B","2"), 1 },
-                {new Tuple<string, string>("B","3"), 2 },
-                {new Tuple<string, string>("B","4"), 3 },
+                {"B1", 1 },
+                {"B2", 1 },
+                {"B3", 2 },
+                {"B4", 3 },
 
-                {new Tuple<string, string>("C","1"), 1 },
-                {new Tuple<string, string>("C","2"), 2 },
-                {new Tuple<string, string>("C","3"), 3 },
-                {new Tuple<string, string>("C","4"), 4 },
+                {"C1", 1 },
+                {"C2", 2 },
+                {"C3", 3 },
+                {"C4", 4 },
 
-                {new Tuple<string, string>("D","1"), 2 },
-                {new Tuple<string, string>("D","2"), 3 },
-                {new Tuple<string, string>("D","3"), 4 },
-                {new Tuple<string, string>("D","4"), 5 },
+                {"D1", 2 },
+                {"D2", 3 },
+                {"D3", 4 },
+                {"D4", 5 },
 
-                {new Tuple<string, string>("E","1"), 3 },
-                {new Tuple<string, string>("E","2"), 4 },
-                {new Tuple<string, string>("E","3"), 5 },
-                {new Tuple<string, string>("E","4"), 5 }
+                {"E1", 3 },
+                {"E2", 4 },
+                {"E3", 5 },
+                {"E4", 5 }
             };
 
         public string description;
@@ -44,14 +44,14 @@ namespace RyskTech.Data
 
         public Risk() { }
 
-        public Risk(string description, string associatedDanger, string safetyNet, string severityClassification, string frequencyClassification)
+        public Risk(string description, string associatedDanger, string safetyNet, string frequencyClassification, string severityClassification)
         {
             this.description = description;
             this.associatedDanger = associatedDanger;
             this.safetyNet = safetyNet;
             this.severityClassification = severityClassification;
             this.frequencyClassification = frequencyClassification;
-            this.riskClassification = riskClassificationMap[new Tuple<string,string>(frequencyClassification, severityClassification)];
+            this.riskClassification = riskClassificationMap[frequencyClassification + severityClassification];
         }
 
         public List<String> GetFormattedRiskList()

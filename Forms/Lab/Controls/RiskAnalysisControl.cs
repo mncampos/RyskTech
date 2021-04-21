@@ -38,11 +38,11 @@ namespace RyskTech.Forms.Lab.Controls
                 if (row.Cells[0] != null && row.Cells[0].Value != null)
                 {
                     Risk risk = new Risk(
-                        row.Cells[0].ToString(),
-                        row.Cells[1].ToString(),
-                        row.Cells[2].ToString(),
-                        row.Cells[3].ToString(),
-                        row.Cells[4].ToString());
+                        row.Cells[0].Value.ToString(),
+                        row.Cells[1].Value.ToString(),
+                        row.Cells[2].Value.ToString(),
+                        row.Cells[3].Value.ToString(),
+                        row.Cells[4].Value.ToString());
 
                     data.Add(risk);
                 }

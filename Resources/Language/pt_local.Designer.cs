@@ -223,6 +223,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Por favor indique a origem de todos os agentes químicos.
+        /// </summary>
+        internal static string ErrorNoAgentOrigin {
+            get {
+                return ResourceManager.GetString("ErrorNoAgentOrigin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Por favor insira o perigo assocaido a todos os riscos.
         /// </summary>
         internal static string ErrorNoAssociatedDanger {

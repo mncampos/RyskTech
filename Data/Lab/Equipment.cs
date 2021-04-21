@@ -100,7 +100,7 @@ namespace RyskTech.Data
                 firstAid.Add("Fita microporo");
 
             if (firstAidObjects[4])
-                firstAid.Add("otherFirstAid");
+                firstAid.Add(otherFirstAid);
 
             return firstAid;
         }

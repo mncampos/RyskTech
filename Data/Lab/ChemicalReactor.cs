@@ -11,7 +11,7 @@
 
         }
 
-        public ChemicalReactor(string name, string physicalState, float quantity, string measurementUnit, string[] origin, string casNumber, string mixtureDescription, string[] dangerCharacteristics, string container, string storageDetails, bool inert)
+        public ChemicalReactor(string name, string physicalState, float quantity, string measurementUnit, string origin, string casNumber, string mixtureDescription, string dangerCharacteristics, string container, string storageDetails, bool inert)
         {
             this.name = name;
             this.physicalState = physicalState;

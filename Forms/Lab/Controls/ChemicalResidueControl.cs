@@ -84,14 +84,16 @@ namespace RyskTech
                     ChemicalResidue agent = new ChemicalResidue();
                     agent.name = row.Cells[0].Value.ToString();
                     agent.physicalState = row.Cells[1].Value.ToString();
-                    agent.origin = (string[])row.Cells[2].Value;
+                    agent.origin = row.Cells[2].Value.ToString();
                     agent.quantity = (float)row.Cells[3].Value;
-                    agent.measurementUnit = row.Cells[4].ToString();
+                    agent.measurementUnit = row.Cells[4].Value.ToString();
                     agent.dangerous = (bool)row.Cells[5].Value;
-                    agent.dangerCharacteristics = (string[])row.Cells[6].Value;
+                    agent.dangerCharacteristics = row.Cells[6].Value.ToString();
                     agent.inert = (bool)row.Cells[7].Value;
                     agent.storageDetails = row.Cells[8].Value.ToString();
                     agent.container = row.Cells[9].Value.ToString();
+
+                    MessageBox.Show(String.Join("\n", (string[])row.Cells[2].Value));
 
                     residueData.Add(agent);
                 }
@@ -107,12 +109,12 @@ namespace RyskTech
                     ChemicalReactor agent = new ChemicalReactor();
                     agent.name = row.Cells[0].Value.ToString();
                     agent.physicalState = row.Cells[1].Value.ToString();
-                    agent.origin = (string[])row.Cells[2].Value;
+                    agent.origin = row.Cells[2].Value.ToString();
                     agent.quantity = (float)row.Cells[3].Value;
-                    agent.measurementUnit = row.Cells[4].ToString();
+                    agent.measurementUnit = row.Cells[4].Value.ToString();
                     agent.mixtureDescription = row.Cells[5].Value.ToString();
                     agent.casNumber = row.Cells[6].Value.ToString();
-                    agent.dangerCharacteristics = (string[])row.Cells[7].Value;
+                    agent.dangerCharacteristics = row.Cells[7].Value.ToString();
                     agent.inert = (bool)row.Cells[8].Value;
                     agent.storageDetails = row.Cells[9].Value.ToString();
                     agent.container = row.Cells[10].Value.ToString();
@@ -145,6 +147,7 @@ namespace RyskTech
         {
             if (createdAgent != null)
             {
+                MessageBox.Show(String.Join("\n", createdAgent.origin));
                 this.chemicalReactorData.Rows.Add(
                     createdAgent.name,
                     createdAgent.physicalState,

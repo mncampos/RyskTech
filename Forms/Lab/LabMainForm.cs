@@ -21,18 +21,17 @@ namespace RyskTech.Forms.Lab
         {
             labWelcomeControl1.ValidateData();
             data.generalInformation = labWelcomeControl1.data;
-            MessageBox.Show("Welcome data validated");
+
             generalInformationControl1.ValidateData();
             data.spaceCharacterization = generalInformationControl1.data;
-            MessageBox.Show("General info validated");
+
             safetyEquipmentControl1.ValidateData();
             data.safetyEquipment = safetyEquipmentControl1.data;
-            MessageBox.Show("Safety equipment validated");
+
             safetyTrainingControl2.ValidateData();
             data.safetyTraining = safetyTrainingControl2.data;
-            MessageBox.Show("safety training validated");
+
             chemicalResidueControl1.ValidateData();
-            MessageBox.Show("chemical agent data validated");
             data.manipulatedChemicalResidues = chemicalResidueControl1.residueData;
             data.manipulatedChemicalReactors = chemicalResidueControl1.reactorData;
             data.chemicalResidueStorageInfo = chemicalResidueControl1.storageInfo;
@@ -42,8 +41,6 @@ namespace RyskTech.Forms.Lab
 
             finalConsiderationsControl1.ValidateData();
             data.riskAnalysisInformation = finalConsiderationsControl1.data;
-
-            MessageBox.Show("final considerations data validated");
         }
 
         public void Complete()

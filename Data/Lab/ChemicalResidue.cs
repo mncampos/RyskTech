@@ -9,7 +9,7 @@
         {
         }
 
-        public ChemicalResidue(string name, string physicalState, bool inert, float quantity, string measurementUnit, string[] origin, bool dangerous, string[] dangerCharacteristics, string container, string storageDetails)
+        public ChemicalResidue(string name, string physicalState, bool inert, float quantity, string measurementUnit, string origin, bool dangerous, string dangerCharacteristics, string container, string storageDetails)
         {
             this.name = name;
             this.physicalState = physicalState;
