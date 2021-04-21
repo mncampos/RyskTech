@@ -10,7 +10,6 @@ namespace RyskTech
         private string documentName;
         private WordDocument documentReference;
         private APR apr;
-
         public DocumentBuilder(APR apr, string documentName)
         {
             this.apr = apr;

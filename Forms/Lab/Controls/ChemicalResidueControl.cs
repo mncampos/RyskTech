@@ -93,8 +93,6 @@ namespace RyskTech
                     agent.storageDetails = row.Cells[8].Value.ToString();
                     agent.container = row.Cells[9].Value.ToString();
 
-                    MessageBox.Show(String.Join("\n", (string[])row.Cells[2].Value));
-
                     residueData.Add(agent);
                 }
             }
@@ -147,8 +145,7 @@ namespace RyskTech
         {
             if (createdAgent != null)
             {
-                MessageBox.Show(String.Join("\n", createdAgent.origin));
-                this.chemicalReactorData.Rows.Add(
+               this.chemicalReactorData.Rows.Add(
                     createdAgent.name,
                     createdAgent.physicalState,
                     createdAgent.origin, //
