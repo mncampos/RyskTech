@@ -71,6 +71,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.accidentLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mainTableLayoutPanel.SetColumnSpan(this.accidentLabel, 2);
             this.accidentLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accidentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accidentLabel.Location = new System.Drawing.Point(3, 0);
             this.accidentLabel.Name = "accidentLabel";
             this.accidentLabel.Size = new System.Drawing.Size(719, 66);

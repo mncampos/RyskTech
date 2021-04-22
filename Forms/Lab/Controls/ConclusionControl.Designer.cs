@@ -77,6 +77,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.conclusionLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mainTableLayoutPanel.SetColumnSpan(this.conclusionLabel, 2);
             this.conclusionLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.conclusionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conclusionLabel.Location = new System.Drawing.Point(3, 0);
             this.conclusionLabel.Name = "conclusionLabel";
             this.conclusionLabel.Size = new System.Drawing.Size(714, 42);
@@ -93,6 +94,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.recomentaionsLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mainTableLayoutPanel.SetColumnSpan(this.recomentaionsLabel, 2);
             this.recomentaionsLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.recomentaionsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.recomentaionsLabel.Location = new System.Drawing.Point(3, 213);
             this.recomentaionsLabel.Name = "recomentaionsLabel";
             this.recomentaionsLabel.Size = new System.Drawing.Size(714, 42);
