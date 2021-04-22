@@ -5,8 +5,8 @@ namespace RyskTech.Forms.Lab.Controls
 {
     public partial class BioStorage : UserControl
     {
-        string storage;
-        string destination;
+        public string storage;
+        public string destination;
 
         public BioStorage()
         {

@@ -399,6 +399,9 @@
   <data name="UnitWelcomeScreen" xml:space="preserve">
     <value>[Unidade - Bem Vindo!]</value>
   </data>
+  <data name="Usage" xml:space="preserve">
+    <value>Uso</value>
+  </data>
   <data name="UsagePeriod" xml:space="preserve">
     <value>Período de Uso</value>
   </data>

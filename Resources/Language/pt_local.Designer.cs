@@ -907,6 +907,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Uso.
+        /// </summary>
+        internal static string Usage {
+            get {
+                return ResourceManager.GetString("Usage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Período de Uso.
         /// </summary>
         internal static string UsagePeriod {

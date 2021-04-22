@@ -63,6 +63,9 @@ namespace RyskTech
             if (apr.lab.generalInformation.manipulatesChemicalAgents)
                 AddLabChemicalAgentInfo(labSection);
 
+            if (apr.lab.generalInformation.manipulatesBiologicalAgents)
+                AddLabBiologicalAgentInfo(labSection);
+
             // TODO complete when we have this info
 
             AddLabIdentifiedRisks();
@@ -223,6 +226,55 @@ namespace RyskTech
                     apr.lab.safetyTraining.periodicityAmount + " " + apr.lab.safetyTraining.periodicityUnit + ". Os indivíduos envolvidos são:");
                 AddTextParagraph(apr.lab.safetyTraining.involvedPersonel);
             }
+        }
+
+        private void AddLabBiologicalAgentInfo(IWSection section)
+        {
+            AddSubsectionTitle(section,"Compilação dos agentes biológicos");
+            AddBiologicalAgentsTable();
+
+            AddProcessedBioSamples();
+            AddBioRegistryInformation();
+
+            AddSubsectionTitle(section, "Armazenamento e destino");
+            AddBioStorageDestinationInformation();
+        }
+
+        private void AddBiologicalAgentsTable()
+        {
+            IWTable bioAgentsTable = GetCurrentSection().AddTable();
+            bioAgentsTable.ResetCells(apr.lab.biologicalAgentsInfo.biologicalAgentList.Count + 1, 3);
+            bioAgentsTable[0, 0].AddParagraph().AppendText(Resources.Language.pt_local.Name);
+            bioAgentsTable[0, 1].AddParagraph().AppendText(Resources.Language.pt_local.RiskClassification);
+            bioAgentsTable[0, 2].AddParagraph().AppendText(Resources.Language.pt_local.Usage);
+
+            for (int i = 0; i < apr.lab.biologicalAgentsInfo.biologicalAgentList.Count; i++)
+            {
+                bioAgentsTable[i + 1, 0].AddParagraph().AppendText(apr.lab.biologicalAgentsInfo.biologicalAgentList[i].name);
+                bioAgentsTable[i + 1, 1].AddParagraph().AppendText(apr.lab.biologicalAgentsInfo.biologicalAgentList[i].riskClassification);
+                bioAgentsTable[i + 1, 2].AddParagraph().AppendText(apr.lab.biologicalAgentsInfo.biologicalAgentList[i].usageScenarios);
+            }
+        }
+
+        private void AddProcessedBioSamples()
+        {
+            AddTextParagraph("O laboratório processa os seguintes tipos de amostras biológicas");
+            AddListWithItems(apr.lab.biologicalAgentsInfo.processedSamples);
+        }
+
+        private void AddBioRegistryInformation()
+        {
+            AddTextParagraph("O espaço " + (apr.lab.biologicalAgentsInfo.hasOGM ? "" : "não") + " manipula organismos genéticamente modificados (OGMS), e" +
+                (apr.lab.biologicalAgentsInfo.hasBioSecurityCertificate? "" : "não") + " possui certificado de qualidade em biosegurança.");
+
+            if (apr.lab.biologicalAgentsInfo.SISGEN.Length > 0)
+                AddTextParagraph("O espaço possui número de cadastro SISGEN " + apr.lab.biologicalAgentsInfo.SISGEN);
+        }
+
+        private void AddBioStorageDestinationInformation()
+        {
+            AddTextParagraph(apr.lab.biologicalAgentsStorage);
+            AddTextParagraph(apr.lab.biologicalAgentsDestination);
         }
 
         private void AddLabIdentifiedRisks()

@@ -36,6 +36,11 @@ namespace RyskTech.Forms.Lab
             data.manipulatedChemicalReactors = chemicalResidueControl1.reactorData;
             data.chemicalResidueStorageInfo = chemicalResidueControl1.storageInfo;
 
+            biologicalAgentsInformation1.ValidateData();
+            data.biologicalAgentsInfo = biologicalAgentsInformation1.data;
+            data.biologicalAgentsDestination = biologicalAgentsInformation1.destination;
+            data.biologicalAgentsStorage = biologicalAgentsInformation1.storage;
+
             // TODO Validate all subtabs
             // throw new NotImplementedException();
 
