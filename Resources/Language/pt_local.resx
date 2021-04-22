@@ -171,11 +171,20 @@
   <data name="ErrorInvalidUnitName" xml:space="preserve">
     <value>Nome de unidade inválido!</value>
   </data>
+  <data name="ErrorNoAgentName" xml:space="preserve">
+    <value>Por favor indique o nome do agente</value>
+  </data>
   <data name="ErrorNoAgentOrigin" xml:space="preserve">
     <value>Por favor indique a origem de todos os agentes químicos</value>
   </data>
+  <data name="ErrorNoAgentUsage" xml:space="preserve">
+    <value>Por favor indique os usos do seu agente</value>
+  </data>
   <data name="ErrorNoAssociatedDanger" xml:space="preserve">
     <value>Por favor insira o perigo assocaido a todos os riscos</value>
+  </data>
+  <data name="ErrorNoBiologicalAgents" xml:space="preserve">
+    <value>Por favor indique os agentes biológicos presentes em seu laboratório</value>
   </data>
   <data name="ErrorNoConclusion" xml:space="preserve">
     <value>Por favor complete as considerações gerais sobre os resultados da análise</value>
@@ -189,11 +198,17 @@
   <data name="ErrorNoManipulatedAreasSelected" xml:space="preserve">
     <value>Selecione pelo menos um tipo de material manipulado na sua unidade!</value>
   </data>
+  <data name="ErrorNoProcessedSamples" xml:space="preserve">
+    <value>Por favor indique todas as amostras biológicasprocessadas pelo seu laboratório</value>
+  </data>
   <data name="ErrorNoResidueDestination" xml:space="preserve">
     <value>Por favor indique o destino dos resíduos</value>
   </data>
   <data name="ErrorNoResidueStorageDescription" xml:space="preserve">
     <value>Por favor descreva de maneira geral como são mantidos os resíduos</value>
+  </data>
+  <data name="ErrorNoRiskClassificaiton" xml:space="preserve">
+    <value>Por favor indique a classe de risco do agente</value>
   </data>
   <data name="ErrorNoRiskDescription" xml:space="preserve">
     <value>Por favor descreva todos os riscos listados</value>

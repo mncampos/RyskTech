@@ -223,6 +223,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Por favor indique o nome do agente.
+        /// </summary>
+        internal static string ErrorNoAgentName {
+            get {
+                return ResourceManager.GetString("ErrorNoAgentName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Por favor indique a origem de todos os agentes químicos.
         /// </summary>
         internal static string ErrorNoAgentOrigin {
@@ -232,11 +241,29 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Por favor indique os usos do seu agente.
+        /// </summary>
+        internal static string ErrorNoAgentUsage {
+            get {
+                return ResourceManager.GetString("ErrorNoAgentUsage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Por favor insira o perigo assocaido a todos os riscos.
         /// </summary>
         internal static string ErrorNoAssociatedDanger {
             get {
                 return ResourceManager.GetString("ErrorNoAssociatedDanger", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor indique os agentes biológicos presentes em seu laboratório.
+        /// </summary>
+        internal static string ErrorNoBiologicalAgents {
+            get {
+                return ResourceManager.GetString("ErrorNoBiologicalAgents", resourceCulture);
             }
         }
         
@@ -277,6 +304,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Por favor indique todas as amostras biológicasprocessadas pelo seu laboratório.
+        /// </summary>
+        internal static string ErrorNoProcessedSamples {
+            get {
+                return ResourceManager.GetString("ErrorNoProcessedSamples", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Por favor indique o destino dos resíduos.
         /// </summary>
         internal static string ErrorNoResidueDestination {
@@ -291,6 +327,15 @@ namespace RyskTech.Resources.Language {
         internal static string ErrorNoResidueStorageDescription {
             get {
                 return ResourceManager.GetString("ErrorNoResidueStorageDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor indique a classe de risco do agente.
+        /// </summary>
+        internal static string ErrorNoRiskClassificaiton {
+            get {
+                return ResourceManager.GetString("ErrorNoRiskClassificaiton", resourceCulture);
             }
         }
         
