@@ -37,20 +37,23 @@ namespace RyskTech.Forms.Lab
             this.safetyEquipmentTab = new System.Windows.Forms.TabPage();
             this.safetyEquipmentControl1 = new RyskTech.Forms.Lab.Controls.SafetyEquipmentControl();
             this.safetyTrainingTab = new System.Windows.Forms.TabPage();
+            this.securityTrainingGroupBox = new System.Windows.Forms.GroupBox();
             this.safetyTrainingControl2 = new RyskTech.Forms.Lab.Controls.SafetyTrainingControl();
             this.chemicalResidueInformationTab = new System.Windows.Forms.TabPage();
             this.chemicalResidueControl1 = new RyskTech.ChemicalResidueControl();
             this.finalConsiderationsTab = new System.Windows.Forms.TabPage();
             this.finalConsiderationsControl1 = new RyskTech.Forms.Lab.Controls.FinalConsiderationsControl();
-            this.securityTrainingGroupBox = new System.Windows.Forms.GroupBox();
+            this.biologicalResidueInformationTab = new System.Windows.Forms.TabPage();
+            this.biologicalAgentsInformation1 = new RyskTech.Forms.Lab.Controls.BiologicalAgentsInformation();
             this.tabControl1.SuspendLayout();
             this.welcomeTabPage.SuspendLayout();
             this.generalInfoTab.SuspendLayout();
             this.safetyEquipmentTab.SuspendLayout();
             this.safetyTrainingTab.SuspendLayout();
+            this.securityTrainingGroupBox.SuspendLayout();
             this.chemicalResidueInformationTab.SuspendLayout();
             this.finalConsiderationsTab.SuspendLayout();
-            this.securityTrainingGroupBox.SuspendLayout();
+            this.biologicalResidueInformationTab.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -60,6 +63,7 @@ namespace RyskTech.Forms.Lab
             this.tabControl1.Controls.Add(this.safetyEquipmentTab);
             this.tabControl1.Controls.Add(this.safetyTrainingTab);
             this.tabControl1.Controls.Add(this.chemicalResidueInformationTab);
+            this.tabControl1.Controls.Add(this.biologicalResidueInformationTab);
             this.tabControl1.Controls.Add(this.finalConsiderationsTab);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
@@ -135,6 +139,17 @@ namespace RyskTech.Forms.Lab
             this.safetyTrainingTab.Text = "Treinamento de Segurança";
             this.safetyTrainingTab.UseVisualStyleBackColor = true;
             // 
+            // securityTrainingGroupBox
+            // 
+            this.securityTrainingGroupBox.Controls.Add(this.safetyTrainingControl2);
+            this.securityTrainingGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.securityTrainingGroupBox.Location = new System.Drawing.Point(3, 3);
+            this.securityTrainingGroupBox.Name = "securityTrainingGroupBox";
+            this.securityTrainingGroupBox.Size = new System.Drawing.Size(820, 429);
+            this.securityTrainingGroupBox.TabIndex = 1;
+            this.securityTrainingGroupBox.TabStop = false;
+            this.securityTrainingGroupBox.Text = "Segurança";
+            // 
             // safetyTrainingControl2
             // 
             this.safetyTrainingControl2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -180,16 +195,23 @@ namespace RyskTech.Forms.Lab
             this.finalConsiderationsControl1.Size = new System.Drawing.Size(826, 435);
             this.finalConsiderationsControl1.TabIndex = 0;
             // 
-            // securityTrainingGroupBox
+            // biologicalResidueInformationTab
             // 
-            this.securityTrainingGroupBox.Controls.Add(this.safetyTrainingControl2);
-            this.securityTrainingGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.securityTrainingGroupBox.Location = new System.Drawing.Point(3, 3);
-            this.securityTrainingGroupBox.Name = "securityTrainingGroupBox";
-            this.securityTrainingGroupBox.Size = new System.Drawing.Size(820, 429);
-            this.securityTrainingGroupBox.TabIndex = 1;
-            this.securityTrainingGroupBox.TabStop = false;
-            this.securityTrainingGroupBox.Text = "Segurança";
+            this.biologicalResidueInformationTab.Controls.Add(this.biologicalAgentsInformation1);
+            this.biologicalResidueInformationTab.Location = new System.Drawing.Point(4, 22);
+            this.biologicalResidueInformationTab.Name = "biologicalResidueInformationTab";
+            this.biologicalResidueInformationTab.Size = new System.Drawing.Size(826, 435);
+            this.biologicalResidueInformationTab.TabIndex = 6;
+            this.biologicalResidueInformationTab.Text = "Agentes Biológicos";
+            this.biologicalResidueInformationTab.UseVisualStyleBackColor = true;
+            // 
+            // biologicalAgentsInformation1
+            // 
+            this.biologicalAgentsInformation1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.biologicalAgentsInformation1.Location = new System.Drawing.Point(0, 0);
+            this.biologicalAgentsInformation1.Name = "biologicalAgentsInformation1";
+            this.biologicalAgentsInformation1.Size = new System.Drawing.Size(826, 435);
+            this.biologicalAgentsInformation1.TabIndex = 0;
             // 
             // LabMainForm
             // 
@@ -207,9 +229,10 @@ namespace RyskTech.Forms.Lab
             this.generalInfoTab.ResumeLayout(false);
             this.safetyEquipmentTab.ResumeLayout(false);
             this.safetyTrainingTab.ResumeLayout(false);
+            this.securityTrainingGroupBox.ResumeLayout(false);
             this.chemicalResidueInformationTab.ResumeLayout(false);
             this.finalConsiderationsTab.ResumeLayout(false);
-            this.securityTrainingGroupBox.ResumeLayout(false);
+            this.biologicalResidueInformationTab.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -231,5 +254,7 @@ namespace RyskTech.Forms.Lab
         private System.Windows.Forms.TabPage finalConsiderationsTab;
         private Controls.FinalConsiderationsControl finalConsiderationsControl1;
         private System.Windows.Forms.GroupBox securityTrainingGroupBox;
+        private System.Windows.Forms.TabPage biologicalResidueInformationTab;
+        private Controls.BiologicalAgentsInformation biologicalAgentsInformation1;
     }
 }

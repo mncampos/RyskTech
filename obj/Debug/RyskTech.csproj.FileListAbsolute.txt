@@ -47,3 +47,7 @@ C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.Forms.Lab.Controls.ConclusionControl.resources
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.Forms.Lab.Controls.FinalConsiderationsControl.resources
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.Forms.Lab.Controls.RiskAnalysisControl.resources
+C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.Forms.Lab.Controls.BiologicalAgentsInformation.resources
+C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.Forms.Lab.Controls.BiologicalResidues.resources
+C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.Forms.Lab.Controls.BioStorage.resources
+C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Debug\RyskTech.Forms.Lab.EditBiologicalAgentForm.resources

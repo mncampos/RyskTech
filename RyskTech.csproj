@@ -119,11 +119,23 @@
     <Compile Include="Forms\Lab\Controls\AccidentHistoryControl.Designer.cs">
       <DependentUpon>AccidentHistoryControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Lab\Controls\BiologicalAgentsInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\BiologicalAgentsInformation.Designer.cs">
+      <DependentUpon>BiologicalAgentsInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Lab\Controls\BiologicalResidues.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\Lab\Controls\BiologicalResidues.Designer.cs">
       <DependentUpon>BiologicalResidues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\BioStorage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\BioStorage.Designer.cs">
+      <DependentUpon>BioStorage.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Lab\Controls\ChemicalResidueControl.cs">
       <SubType>UserControl</SubType>
@@ -263,8 +275,14 @@
     <EmbeddedResource Include="Forms\Lab\Controls\AccidentHistoryControl.resx">
       <DependentUpon>AccidentHistoryControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\Controls\BiologicalAgentsInformation.resx">
+      <DependentUpon>BiologicalAgentsInformation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lab\Controls\BiologicalResidues.resx">
       <DependentUpon>BiologicalResidues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\Controls\BioStorage.resx">
+      <DependentUpon>BioStorage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lab\Controls\ChemicalResidueControl.resx">
       <DependentUpon>ChemicalResidueControl.cs</DependentUpon>
