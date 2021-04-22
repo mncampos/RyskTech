@@ -77,6 +77,7 @@ namespace RyskTech
 
         private void CreateResidueList()
         {
+            residueData = new List<ChemicalResidue>();
             foreach (DataGridViewRow row in chemicalResidueData.Rows)
             {
                 if (row.Cells[0] != null)
@@ -84,11 +85,11 @@ namespace RyskTech
                     ChemicalResidue agent = new ChemicalResidue();
                     agent.name = row.Cells[0].Value.ToString();
                     agent.physicalState = row.Cells[1].Value.ToString();
-                    agent.origin = (string[])row.Cells[2].Value;
+                    agent.origin = row.Cells[2].Value.ToString();
                     agent.quantity = (float)row.Cells[3].Value;
-                    agent.measurementUnit = row.Cells[4].ToString();
+                    agent.measurementUnit = row.Cells[4].Value.ToString();
                     agent.dangerous = (bool)row.Cells[5].Value;
-                    agent.dangerCharacteristics = (string[])row.Cells[6].Value;
+                    agent.dangerCharacteristics = row.Cells[6].Value.ToString();
                     agent.inert = (bool)row.Cells[7].Value;
                     agent.storageDetails = row.Cells[8].Value.ToString();
                     agent.container = row.Cells[9].Value.ToString();
@@ -100,21 +101,23 @@ namespace RyskTech
 
         private void CreateReactorList()
         {
-            foreach(DataGridViewRow row in chemicalReactorData.Rows)
+            reactorData = new List<ChemicalReactor>();
+            foreach (DataGridViewRow row in chemicalReactorData.Rows)
             {
                 if (row.Cells[0] != null)
                 {
                     ChemicalReactor agent = new ChemicalReactor();
                     agent.name = row.Cells[0].Value.ToString();
                     agent.physicalState = row.Cells[1].Value.ToString();
-                    agent.origin = (string[])row.Cells[2].Value;
+                    agent.origin = row.Cells[2].Value.ToString();
                     agent.quantity = (float)row.Cells[3].Value;
-                    agent.measurementUnit = row.Cells[4].ToString();
+                    agent.measurementUnit = row.Cells[4].Value.ToString();
                     agent.mixtureDescription = row.Cells[5].Value.ToString();
-                    agent.casNumber = row.Cells[7].Value.ToString();
-                    agent.dangerCharacteristics = (string[])row.Cells[7].Value;                    
-                    agent.storageDetails = row.Cells[8].Value.ToString();
-                    agent.container = row.Cells[9].Value.ToString();
+                    agent.casNumber = row.Cells[6].Value.ToString();
+                    agent.dangerCharacteristics = row.Cells[7].Value.ToString();
+                    agent.inert = (bool)row.Cells[8].Value;
+                    agent.storageDetails = row.Cells[9].Value.ToString();
+                    agent.container = row.Cells[10].Value.ToString();
 
                     reactorData.Add(agent);
                 }
@@ -144,7 +147,7 @@ namespace RyskTech
         {
             if (createdAgent != null)
             {
-                this.chemicalReactorData.Rows.Add(
+               this.chemicalReactorData.Rows.Add(
                     createdAgent.name,
                     createdAgent.physicalState,
                     createdAgent.origin, //
@@ -153,6 +156,7 @@ namespace RyskTech
                     createdAgent.mixtureDescription,
                     createdAgent.casNumber,
                     createdAgent.dangerCharacteristics, //
+                    createdAgent.inert,
                     createdAgent.storageDetails,
                     createdAgent.container
                     );
@@ -196,13 +200,17 @@ namespace RyskTech
 
         public void ValidateData()
         {
+            if (residueData == null)
+                throw new ApplicationException(Resources.Language.pt_local.NotAllTabsVisited);
+
             // I think only this is necessary, because it's possible
             // that no chemical agents are manipulated on the lab
             CreateResidueList();
 
             CreateReactorList();
 
-            storageInfo.CheckValidity();
+            if (storageInfo != null)
+                storageInfo.CheckValidity();
         }
     }
 }

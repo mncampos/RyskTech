@@ -86,7 +86,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.35672F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.64328F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(539, 345);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(820, 429);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // epiGroupBox
@@ -95,7 +95,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.epiGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.epiGroupBox.Location = new System.Drawing.Point(3, 3);
             this.epiGroupBox.Name = "epiGroupBox";
-            this.epiGroupBox.Size = new System.Drawing.Size(263, 198);
+            this.epiGroupBox.Size = new System.Drawing.Size(404, 248);
             this.epiGroupBox.TabIndex = 0;
             this.epiGroupBox.TabStop = false;
             this.epiGroupBox.Text = "EPI";
@@ -126,17 +126,20 @@ namespace RyskTech.Forms.Lab.Controls
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.21374F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.21374F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(257, 179);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(398, 229);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tableLayoutPanel3.SetColumnSpan(this.label1, 2);
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 33);
+            this.label1.Size = new System.Drawing.Size(392, 43);
             this.label1.TabIndex = 0;
             this.label1.Text = "Quais equipamentos de proteção individual (EPI) são disponibilizados?";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -145,9 +148,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.glassesCheckBox.AutoSize = true;
             this.glassesCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.glassesCheckBox.Location = new System.Drawing.Point(3, 36);
+            this.glassesCheckBox.Location = new System.Drawing.Point(3, 46);
             this.glassesCheckBox.Name = "glassesCheckBox";
-            this.glassesCheckBox.Size = new System.Drawing.Size(122, 23);
+            this.glassesCheckBox.Size = new System.Drawing.Size(193, 31);
             this.glassesCheckBox.TabIndex = 1;
             this.glassesCheckBox.Text = "Óculos";
             this.glassesCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -158,9 +161,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.concreteWallCheckBox.AutoSize = true;
             this.concreteWallCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.concreteWallCheckBox.Location = new System.Drawing.Point(131, 36);
+            this.concreteWallCheckBox.Location = new System.Drawing.Point(202, 46);
             this.concreteWallCheckBox.Name = "concreteWallCheckBox";
-            this.concreteWallCheckBox.Size = new System.Drawing.Size(123, 23);
+            this.concreteWallCheckBox.Size = new System.Drawing.Size(193, 31);
             this.concreteWallCheckBox.TabIndex = 2;
             this.concreteWallCheckBox.Text = "Mureta de Chumbo";
             this.concreteWallCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -171,9 +174,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.glovesCheckBox.AutoSize = true;
             this.glovesCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.glovesCheckBox.Location = new System.Drawing.Point(3, 65);
+            this.glovesCheckBox.Location = new System.Drawing.Point(3, 83);
             this.glovesCheckBox.Name = "glovesCheckBox";
-            this.glovesCheckBox.Size = new System.Drawing.Size(122, 23);
+            this.glovesCheckBox.Size = new System.Drawing.Size(193, 31);
             this.glovesCheckBox.TabIndex = 3;
             this.glovesCheckBox.Text = "Luvas";
             this.glovesCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -184,9 +187,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.doserCheckBox.AutoSize = true;
             this.doserCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.doserCheckBox.Location = new System.Drawing.Point(131, 65);
+            this.doserCheckBox.Location = new System.Drawing.Point(202, 83);
             this.doserCheckBox.Name = "doserCheckBox";
-            this.doserCheckBox.Size = new System.Drawing.Size(123, 23);
+            this.doserCheckBox.Size = new System.Drawing.Size(193, 31);
             this.doserCheckBox.TabIndex = 4;
             this.doserCheckBox.Text = "Dosímetro";
             this.doserCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -197,9 +200,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.dustProcetorCheckBox.AutoSize = true;
             this.dustProcetorCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dustProcetorCheckBox.Location = new System.Drawing.Point(3, 94);
+            this.dustProcetorCheckBox.Location = new System.Drawing.Point(3, 120);
             this.dustProcetorCheckBox.Name = "dustProcetorCheckBox";
-            this.dustProcetorCheckBox.Size = new System.Drawing.Size(122, 23);
+            this.dustProcetorCheckBox.Size = new System.Drawing.Size(193, 31);
             this.dustProcetorCheckBox.TabIndex = 5;
             this.dustProcetorCheckBox.Text = "Guarda-pó";
             this.dustProcetorCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -210,9 +213,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.otherEPICheckBox.AutoSize = true;
             this.otherEPICheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.otherEPICheckBox.Location = new System.Drawing.Point(3, 123);
+            this.otherEPICheckBox.Location = new System.Drawing.Point(3, 157);
             this.otherEPICheckBox.Name = "otherEPICheckBox";
-            this.otherEPICheckBox.Size = new System.Drawing.Size(122, 23);
+            this.otherEPICheckBox.Size = new System.Drawing.Size(193, 31);
             this.otherEPICheckBox.TabIndex = 6;
             this.otherEPICheckBox.Text = "Outros";
             this.otherEPICheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -223,9 +226,10 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.masksEPITextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.masksEPITextBox.Enabled = false;
-            this.masksEPITextBox.Location = new System.Drawing.Point(131, 152);
+            this.masksEPITextBox.Location = new System.Drawing.Point(202, 201);
+            this.masksEPITextBox.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.masksEPITextBox.Name = "masksEPITextBox";
-            this.masksEPITextBox.Size = new System.Drawing.Size(123, 20);
+            this.masksEPITextBox.Size = new System.Drawing.Size(193, 20);
             this.masksEPITextBox.TabIndex = 9;
             this.masksEPITextBox.TextChanged += new System.EventHandler(this.masksEPITextBox_TextChanged);
             // 
@@ -233,9 +237,10 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.otherEPITextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.otherEPITextBox.Enabled = false;
-            this.otherEPITextBox.Location = new System.Drawing.Point(131, 123);
+            this.otherEPITextBox.Location = new System.Drawing.Point(202, 164);
+            this.otherEPITextBox.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.otherEPITextBox.Name = "otherEPITextBox";
-            this.otherEPITextBox.Size = new System.Drawing.Size(123, 20);
+            this.otherEPITextBox.Size = new System.Drawing.Size(193, 20);
             this.otherEPITextBox.TabIndex = 8;
             this.otherEPITextBox.TextChanged += new System.EventHandler(this.otherEPITextBox_TextChanged);
             // 
@@ -243,9 +248,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.maskCheckBox.AutoSize = true;
             this.maskCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.maskCheckBox.Location = new System.Drawing.Point(3, 152);
+            this.maskCheckBox.Location = new System.Drawing.Point(3, 194);
             this.maskCheckBox.Name = "maskCheckBox";
-            this.maskCheckBox.Size = new System.Drawing.Size(122, 24);
+            this.maskCheckBox.Size = new System.Drawing.Size(193, 32);
             this.maskCheckBox.TabIndex = 7;
             this.maskCheckBox.Text = "Máscaras";
             this.maskCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -256,9 +261,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.epcGroupBox.Controls.Add(this.tableLayoutPanel4);
             this.epcGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.epcGroupBox.Location = new System.Drawing.Point(272, 3);
+            this.epcGroupBox.Location = new System.Drawing.Point(413, 3);
             this.epcGroupBox.Name = "epcGroupBox";
-            this.epcGroupBox.Size = new System.Drawing.Size(264, 198);
+            this.epcGroupBox.Size = new System.Drawing.Size(404, 248);
             this.epcGroupBox.TabIndex = 1;
             this.epcGroupBox.TabStop = false;
             this.epcGroupBox.Text = "EPC";
@@ -286,17 +291,20 @@ namespace RyskTech.Forms.Lab.Controls
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.26405F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.26405F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.26405F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(258, 179);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(398, 229);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tableLayoutPanel4.SetColumnSpan(this.label2, 2);
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(252, 33);
+            this.label2.Size = new System.Drawing.Size(392, 43);
             this.label2.TabIndex = 0;
             this.label2.Text = "Quais equipamentos de proteção coletiva (EPC) são disponibilizados?";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -305,9 +313,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.sandobxCheckBox.AutoSize = true;
             this.sandobxCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sandobxCheckBox.Location = new System.Drawing.Point(3, 36);
+            this.sandobxCheckBox.Location = new System.Drawing.Point(3, 46);
             this.sandobxCheckBox.Name = "sandobxCheckBox";
-            this.sandobxCheckBox.Size = new System.Drawing.Size(123, 30);
+            this.sandobxCheckBox.Size = new System.Drawing.Size(193, 40);
             this.sandobxCheckBox.TabIndex = 1;
             this.sandobxCheckBox.Text = "Caixa de areia";
             this.sandobxCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -318,9 +326,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.vermiculitaCheckBox.AutoSize = true;
             this.vermiculitaCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.vermiculitaCheckBox.Location = new System.Drawing.Point(132, 36);
+            this.vermiculitaCheckBox.Location = new System.Drawing.Point(202, 46);
             this.vermiculitaCheckBox.Name = "vermiculitaCheckBox";
-            this.vermiculitaCheckBox.Size = new System.Drawing.Size(123, 30);
+            this.vermiculitaCheckBox.Size = new System.Drawing.Size(193, 40);
             this.vermiculitaCheckBox.TabIndex = 2;
             this.vermiculitaCheckBox.Text = "Caixa de vermiculita";
             this.vermiculitaCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -331,9 +339,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.calboxCheckBox.AutoSize = true;
             this.calboxCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.calboxCheckBox.Location = new System.Drawing.Point(3, 72);
+            this.calboxCheckBox.Location = new System.Drawing.Point(3, 92);
             this.calboxCheckBox.Name = "calboxCheckBox";
-            this.calboxCheckBox.Size = new System.Drawing.Size(123, 30);
+            this.calboxCheckBox.Size = new System.Drawing.Size(193, 40);
             this.calboxCheckBox.TabIndex = 3;
             this.calboxCheckBox.Text = "Caixa de cal";
             this.calboxCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -344,9 +352,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.shovelCheckBox.AutoSize = true;
             this.shovelCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.shovelCheckBox.Location = new System.Drawing.Point(132, 72);
+            this.shovelCheckBox.Location = new System.Drawing.Point(202, 92);
             this.shovelCheckBox.Name = "shovelCheckBox";
-            this.shovelCheckBox.Size = new System.Drawing.Size(123, 30);
+            this.shovelCheckBox.Size = new System.Drawing.Size(193, 40);
             this.shovelCheckBox.TabIndex = 4;
             this.shovelCheckBox.Text = "Pá";
             this.shovelCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -357,9 +365,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.chapelCheckBox.AutoSize = true;
             this.chapelCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chapelCheckBox.Location = new System.Drawing.Point(3, 108);
+            this.chapelCheckBox.Location = new System.Drawing.Point(3, 138);
             this.chapelCheckBox.Name = "chapelCheckBox";
-            this.chapelCheckBox.Size = new System.Drawing.Size(123, 30);
+            this.chapelCheckBox.Size = new System.Drawing.Size(193, 40);
             this.chapelCheckBox.TabIndex = 5;
             this.chapelCheckBox.Text = "Capela";
             this.chapelCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -370,9 +378,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.exhaustCheckBox.AutoSize = true;
             this.exhaustCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.exhaustCheckBox.Location = new System.Drawing.Point(132, 108);
+            this.exhaustCheckBox.Location = new System.Drawing.Point(202, 138);
             this.exhaustCheckBox.Name = "exhaustCheckBox";
-            this.exhaustCheckBox.Size = new System.Drawing.Size(123, 30);
+            this.exhaustCheckBox.Size = new System.Drawing.Size(193, 40);
             this.exhaustCheckBox.TabIndex = 6;
             this.exhaustCheckBox.Text = "Exaustor";
             this.exhaustCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -383,9 +391,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.otherEPCCheckBox.AutoSize = true;
             this.otherEPCCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.otherEPCCheckBox.Location = new System.Drawing.Point(3, 144);
+            this.otherEPCCheckBox.Location = new System.Drawing.Point(3, 184);
             this.otherEPCCheckBox.Name = "otherEPCCheckBox";
-            this.otherEPCCheckBox.Size = new System.Drawing.Size(123, 32);
+            this.otherEPCCheckBox.Size = new System.Drawing.Size(193, 42);
             this.otherEPCCheckBox.TabIndex = 7;
             this.otherEPCCheckBox.Text = "Outros";
             this.otherEPCCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -395,10 +403,11 @@ namespace RyskTech.Forms.Lab.Controls
             // otherEPCTextBox
             // 
             this.otherEPCTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.otherEPCTextBox.Location = new System.Drawing.Point(132, 151);
+            this.otherEPCTextBox.Enabled = false;
+            this.otherEPCTextBox.Location = new System.Drawing.Point(202, 191);
             this.otherEPCTextBox.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.otherEPCTextBox.Name = "otherEPCTextBox";
-            this.otherEPCTextBox.Size = new System.Drawing.Size(123, 20);
+            this.otherEPCTextBox.Size = new System.Drawing.Size(193, 20);
             this.otherEPCTextBox.TabIndex = 8;
             this.otherEPCTextBox.TextChanged += new System.EventHandler(this.otherEPCTextBox_TextChanged);
             // 
@@ -407,9 +416,9 @@ namespace RyskTech.Forms.Lab.Controls
             this.tableLayoutPanel2.SetColumnSpan(this.firstAidGroupBox, 2);
             this.firstAidGroupBox.Controls.Add(this.tableLayoutPanel5);
             this.firstAidGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.firstAidGroupBox.Location = new System.Drawing.Point(3, 207);
+            this.firstAidGroupBox.Location = new System.Drawing.Point(3, 257);
             this.firstAidGroupBox.Name = "firstAidGroupBox";
-            this.firstAidGroupBox.Size = new System.Drawing.Size(533, 135);
+            this.firstAidGroupBox.Size = new System.Drawing.Size(814, 169);
             this.firstAidGroupBox.TabIndex = 2;
             this.firstAidGroupBox.TabStop = false;
             this.firstAidGroupBox.Text = "Primeiros Socorros";
@@ -417,10 +426,10 @@ namespace RyskTech.Forms.Lab.Controls
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 4;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.28713F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.50495F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.63861F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.81683F));
             this.tableLayoutPanel5.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.noEmergentyBoxCheckBox, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.gazeCheckBox, 1, 1);
@@ -436,17 +445,20 @@ namespace RyskTech.Forms.Lab.Controls
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.02301F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37.4885F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37.4885F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(527, 116);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(808, 150);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tableLayoutPanel5.SetColumnSpan(this.label3, 4);
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(521, 29);
+            this.label3.Size = new System.Drawing.Size(802, 37);
             this.label3.TabIndex = 0;
             this.label3.Text = "Quais dos itens a seguir estão presentes na sua caixa de primeiros socorros?";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -455,9 +467,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.noEmergentyBoxCheckBox.AutoSize = true;
             this.noEmergentyBoxCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.noEmergentyBoxCheckBox.Location = new System.Drawing.Point(3, 32);
+            this.noEmergentyBoxCheckBox.Location = new System.Drawing.Point(3, 40);
             this.noEmergentyBoxCheckBox.Name = "noEmergentyBoxCheckBox";
-            this.noEmergentyBoxCheckBox.Size = new System.Drawing.Size(125, 37);
+            this.noEmergentyBoxCheckBox.Size = new System.Drawing.Size(165, 50);
             this.noEmergentyBoxCheckBox.TabIndex = 1;
             this.noEmergentyBoxCheckBox.Text = "Não há uma caixa de primeiros socorros";
             this.noEmergentyBoxCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -468,9 +480,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.gazeCheckBox.AutoSize = true;
             this.gazeCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gazeCheckBox.Location = new System.Drawing.Point(134, 32);
+            this.gazeCheckBox.Location = new System.Drawing.Point(174, 40);
             this.gazeCheckBox.Name = "gazeCheckBox";
-            this.gazeCheckBox.Size = new System.Drawing.Size(125, 37);
+            this.gazeCheckBox.Size = new System.Drawing.Size(191, 50);
             this.gazeCheckBox.TabIndex = 2;
             this.gazeCheckBox.Text = "Gaze";
             this.gazeCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -481,9 +493,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.scisorsCheckBox.AutoSize = true;
             this.scisorsCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.scisorsCheckBox.Location = new System.Drawing.Point(265, 32);
+            this.scisorsCheckBox.Location = new System.Drawing.Point(371, 40);
             this.scisorsCheckBox.Name = "scisorsCheckBox";
-            this.scisorsCheckBox.Size = new System.Drawing.Size(125, 37);
+            this.scisorsCheckBox.Size = new System.Drawing.Size(184, 50);
             this.scisorsCheckBox.TabIndex = 3;
             this.scisorsCheckBox.Text = "Tesoura";
             this.scisorsCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -494,9 +506,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.waterCheckBox.AutoSize = true;
             this.waterCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.waterCheckBox.Location = new System.Drawing.Point(396, 32);
+            this.waterCheckBox.Location = new System.Drawing.Point(561, 40);
             this.waterCheckBox.Name = "waterCheckBox";
-            this.waterCheckBox.Size = new System.Drawing.Size(128, 37);
+            this.waterCheckBox.Size = new System.Drawing.Size(244, 50);
             this.waterCheckBox.TabIndex = 4;
             this.waterCheckBox.Text = "Água boricada";
             this.waterCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -507,9 +519,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.microporeTapeCheckBox.AutoSize = true;
             this.microporeTapeCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.microporeTapeCheckBox.Location = new System.Drawing.Point(134, 75);
+            this.microporeTapeCheckBox.Location = new System.Drawing.Point(174, 96);
             this.microporeTapeCheckBox.Name = "microporeTapeCheckBox";
-            this.microporeTapeCheckBox.Size = new System.Drawing.Size(125, 38);
+            this.microporeTapeCheckBox.Size = new System.Drawing.Size(191, 51);
             this.microporeTapeCheckBox.TabIndex = 5;
             this.microporeTapeCheckBox.Text = "Fita Microporo";
             this.microporeTapeCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -520,9 +532,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.otherFirstAidCheckBox.AutoSize = true;
             this.otherFirstAidCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.otherFirstAidCheckBox.Location = new System.Drawing.Point(265, 75);
+            this.otherFirstAidCheckBox.Location = new System.Drawing.Point(371, 96);
             this.otherFirstAidCheckBox.Name = "otherFirstAidCheckBox";
-            this.otherFirstAidCheckBox.Size = new System.Drawing.Size(125, 38);
+            this.otherFirstAidCheckBox.Size = new System.Drawing.Size(184, 51);
             this.otherFirstAidCheckBox.TabIndex = 6;
             this.otherFirstAidCheckBox.Text = "Outros";
             this.otherFirstAidCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -532,10 +544,11 @@ namespace RyskTech.Forms.Lab.Controls
             // otherFirstAidTextBox
             // 
             this.otherFirstAidTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.otherFirstAidTextBox.Location = new System.Drawing.Point(396, 82);
-            this.otherFirstAidTextBox.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.otherFirstAidTextBox.Enabled = false;
+            this.otherFirstAidTextBox.Location = new System.Drawing.Point(561, 111);
+            this.otherFirstAidTextBox.Margin = new System.Windows.Forms.Padding(3, 18, 3, 3);
             this.otherFirstAidTextBox.Name = "otherFirstAidTextBox";
-            this.otherFirstAidTextBox.Size = new System.Drawing.Size(128, 20);
+            this.otherFirstAidTextBox.Size = new System.Drawing.Size(244, 20);
             this.otherFirstAidTextBox.TabIndex = 7;
             this.otherFirstAidTextBox.TextChanged += new System.EventHandler(this.otherFirstAidTextBox_TextChanged);
             // 
@@ -545,7 +558,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel2);
             this.Name = "SafetyEquipmentControl";
-            this.Size = new System.Drawing.Size(539, 345);
+            this.Size = new System.Drawing.Size(820, 429);
             this.Load += new System.EventHandler(this.SafetyEquipmentControl_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.epiGroupBox.ResumeLayout(false);

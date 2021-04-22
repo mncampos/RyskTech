@@ -8,14 +8,14 @@ namespace RyskTech.Data
         public string physicalState;
         public float quantity;
         public string measurementUnit;
-        public string[] origin;
-        public string[] dangerCharacteristics;
+        public string origin;
+        public string dangerCharacteristics;
         public string container;
         public string storageDetails;
 
         public ChemicalAgent() { }
 
-        public ChemicalAgent(string name, string physicalState, float quantity, string measurementUnit, string[] origin, string[] dangerCharacteristics, string container, string storageDetails)
+        public ChemicalAgent(string name, string physicalState, float quantity, string measurementUnit, string origin, string dangerCharacteristics, string container, string storageDetails)
         {
             this.name = name;
             this.physicalState = physicalState;
@@ -43,6 +43,9 @@ namespace RyskTech.Data
 
             if (storageDetails == null || storageDetails.Length <= 0)
                 throw new ApplicationException(Resources.Language.pt_local.InvalidAgentContainer);
+
+            if (origin == null || origin.Length <= 0)
+                throw new ApplicationException(Resources.Language.pt_local.ErrorNoAgentOrigin);
         }
     }
 }

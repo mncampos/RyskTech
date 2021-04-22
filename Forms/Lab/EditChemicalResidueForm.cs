@@ -25,14 +25,14 @@ namespace RyskTech
                 container = Resources.Language.pt_local.PlasticContainer;
 
 
-            string[] origins = new string[originCheckedListBox.CheckedItems.Count];
+            string origins = "";
             foreach (string item in originCheckedListBox.CheckedItems)
-                origins.Append(item);
+                origins += item + "\n";
 
 
-            string[] dangers = new string[dangerCharacteristicsListBox.CheckedItems.Count];
+            string dangers = "";
             foreach (string item in dangerCharacteristicsListBox.CheckedItems)
-                dangers.Append(item);
+                dangers += item + "\n";
 
 
             // Create agent

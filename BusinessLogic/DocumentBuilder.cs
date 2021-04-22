@@ -10,7 +10,6 @@ namespace RyskTech
         private string documentName;
         private WordDocument documentReference;
         private APR apr;
-
         public DocumentBuilder(APR apr, string documentName)
         {
             this.apr = apr;
@@ -56,7 +55,7 @@ namespace RyskTech
 
         private void AddLabInformation()
         {
-            IWSection labSection = AddSectionWithTitle(apr.lab.generalInformation.labName);
+            IWSection labSection = AddSectionWithTitle(apr.lab.generalInformation.labName + " (" + apr.lab.generalInformation.belongingUnitName + ")");
 
             AddLabGeneralInfo(labSection);
             AddLabGeneralDescription(labSection);
@@ -65,19 +64,22 @@ namespace RyskTech
                 AddLabChemicalAgentInfo(labSection);
 
             // TODO complete when we have this info
+
+            AddLabIdentifiedRisks();
+            AddLabFinalConsiderations();
         }
 
         private void AddLabGeneralInfo(IWSection section)
         {
             List<string> items = apr.GetFormattedGeneralInfoList();
 
-            AddSubsectionTitle(section,"a) Informações gerais");
+            AddSubsectionTitle(section,"Informações gerais");
             AddListWithItems(items);
         }
 
         private void AddLabGeneralDescription(IWSection section)
         {
-            AddSubsectionTitle(section, "b) Descrição geral");
+            AddSubsectionTitle(section, "Descrição geral");
             AddTextParagraph(apr.lab.spaceCharacterization.usageCharacterization);
         }
 
@@ -85,23 +87,48 @@ namespace RyskTech
         {
             if (apr.lab.manipulatedChemicalReactors.Count > 0)
             {
-                AddSubsectionTitle(section, "c) Compilação dos reagentes químicos");
+                AddSubsectionTitle(section, "Compilação dos reagentes químicos");
                 AddChemicalReactorsTable();
             }
 
             if (apr.lab.manipulatedChemicalResidues.Count > 0)
             {
-                AddSubsectionTitle(section, "d) Compilação dos resíduos químicos");
+                AddSubsectionTitle(section, "Compilação dos resíduos químicos");
                 AddChemicalResidueTable();
             }
 
-            // TODO Add information about storage
-            // TODO Add information about safety training and equipment
+            AddChemicalResidueStorageInfo();
+            AddSafetyInfo();
         }
 
         private void AddChemicalReactorsTable()
         {
-            // TODO
+            IWTable chemicalReactorTable = GetCurrentSection().AddTable();
+            chemicalReactorTable.ResetCells(apr.lab.manipulatedChemicalReactors.Count + 1, 10);
+            chemicalReactorTable[0, 0].AddParagraph().AppendText(Resources.Language.pt_local.Name);
+            chemicalReactorTable[0, 1].AddParagraph().AppendText(Resources.Language.pt_local.PhysicalState);
+            chemicalReactorTable[0, 2].AddParagraph().AppendText(Resources.Language.pt_local.Origin);
+            chemicalReactorTable[0, 3].AddParagraph().AppendText(Resources.Language.pt_local.Quantity);
+            chemicalReactorTable[0, 4].AddParagraph().AppendText(Resources.Language.pt_local.Mixture);
+            chemicalReactorTable[0, 5].AddParagraph().AppendText(Resources.Language.pt_local.CasNumber);
+            chemicalReactorTable[0, 6].AddParagraph().AppendText(Resources.Language.pt_local.DangerCharacteristics);
+            chemicalReactorTable[0, 7].AddParagraph().AppendText(Resources.Language.pt_local.Inert);
+            chemicalReactorTable[0, 8].AddParagraph().AppendText(Resources.Language.pt_local.Container);
+            chemicalReactorTable[0, 9].AddParagraph().AppendText(Resources.Language.pt_local.StorageInfo);
+        
+            for (int i = 0; i < apr.lab.manipulatedChemicalReactors.Count; i++)
+            {
+                chemicalReactorTable[i + 1, 0].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].name);
+                chemicalReactorTable[i + 1, 1].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].physicalState);
+                chemicalReactorTable[i + 1, 2].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].origin);
+                chemicalReactorTable[i + 1, 3].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].quantity + " " + apr.lab.manipulatedChemicalReactors[i].measurementUnit);
+                chemicalReactorTable[i + 1, 4].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].mixtureDescription);
+                chemicalReactorTable[i + 1, 5].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].casNumber);
+                chemicalReactorTable[i + 1, 6].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].dangerCharacteristics);
+                chemicalReactorTable[i + 1, 7].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].inert? Resources.Language.pt_local.Yes : Resources.Language.pt_local.No);
+                chemicalReactorTable[i + 1, 8].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].container);
+                chemicalReactorTable[i + 1, 9].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].storageDetails);
+            }
         }
 
         private void AddChemicalResidueTable()
@@ -121,13 +148,115 @@ namespace RyskTech
             {
                 chemicalResiduesTable[i + 1, 0].AddParagraph().AppendText(apr.lab.manipulatedChemicalResidues[i].name);
                 chemicalResiduesTable[i + 1, 1].AddParagraph().AppendText(apr.lab.manipulatedChemicalResidues[i].physicalState);
-                chemicalResiduesTable[i + 1, 2].AddParagraph().AppendText(String.Join("\n", apr.lab.manipulatedChemicalResidues[i].origin));
+                chemicalResiduesTable[i + 1, 2].AddParagraph().AppendText(apr.lab.manipulatedChemicalResidues[i].origin);
                 chemicalResiduesTable[i + 1, 3].AddParagraph().AppendText(apr.lab.manipulatedChemicalResidues[i].quantity + " " + apr.lab.manipulatedChemicalResidues[i].measurementUnit);
-                chemicalResiduesTable[i + 1, 4].AddParagraph().AppendText(String.Join("\n", apr.lab.manipulatedChemicalResidues[i].dangerCharacteristics));
+                chemicalResiduesTable[i + 1, 4].AddParagraph().AppendText(apr.lab.manipulatedChemicalResidues[i].dangerCharacteristics);
                 chemicalResiduesTable[i + 1, 5].AddParagraph().AppendText(apr.lab.manipulatedChemicalResidues[i].inert ? Resources.Language.pt_local.Yes : Resources.Language.pt_local.No);
                 chemicalResiduesTable[i + 1, 6].AddParagraph().AppendText(apr.lab.manipulatedChemicalResidues[i].container);
                 chemicalResiduesTable[i + 1, 7].AddParagraph().AppendText(apr.lab.manipulatedChemicalResidues[i].storageDetails);
             }
+        }
+
+        private void AddChemicalResidueStorageInfo()
+        {
+            AddSubsectionTitle(GetCurrentSection(), "Informações de armazenamento e disposição");
+            
+            AddTextParagraph(apr.lab.chemicalResidueStorageInfo.storageDescription);
+            AddTextParagraph(apr.lab.chemicalResidueStorageInfo.residueDestination);
+
+            if (!apr.lab.chemicalResidueStorageInfo.NBRCompliant)
+                AddTextParagraph("O espaço não apresenta conformidade com a NBR-14725-3:2017 quanto à rotulagem dos resíduos.");
+            else
+                AddTextParagraph("O espaço apresenta rotulagem dos seus resíduos armazenados de acordo com a NBR-14725-3:2017");
+
+            if (!apr.lab.chemicalResidueStorageInfo.FISPQCompliant)
+                AddTextParagraph("O espaço não apresenta FISPQ em conformidade com a NBR-14725-4:2014");
+            else
+                AddTextParagraph("O espaço apresenta FISPQ em conformidade com a NBR-14725-4:2014. " + apr.lab.chemicalResidueStorageInfo.FISPQExplanation);
+        }
+
+        private void AddSafetyInfo()
+        {
+            AddSubsectionTitle(GetCurrentSection(), "Informações de segurança");
+            AddSafetyEquipmentInfo();
+            AddSafetyTrainingInfo();
+        }
+
+        private void AddSafetyEquipmentInfo()
+        {
+            List<String> epis = apr.lab.safetyEquipment.getEPIS();
+            List<String> epcs = apr.lab.safetyEquipment.getEPCS();
+            List<String> firstAid = apr.lab.safetyEquipment.getFirstAidObjects();
+
+            if (epis == null || epis.Count <= 0)
+                AddTextParagraph("O espaço não apresenta Equipamentos de Proteção Individual.");
+            else
+            {
+                AddTextParagraph("O espaço apresenta os seguintes Equipamentos de Proteção Individual (EPIs):");
+                AddListWithItems(epis);
+            }
+
+            if (epcs == null || epcs.Count <= 0)
+                AddTextParagraph("O espaço não apresenta Equipamentos de Proteção Coletiva.");
+            else
+            {
+                AddTextParagraph("O espaço apresenta os seguintes Equipamentos de Proteção Coletiva (EPCs):");
+                AddListWithItems(epcs);
+            }
+
+            if (apr.lab.safetyEquipment.noFirstAid)
+                AddTextParagraph("O espaço não possui uma caixa de primeiros socorros.");
+            else
+            {
+                AddTextParagraph("O espaço possui uma caixa de primeiros socorros com os seguintes itens:");
+                AddListWithItems(firstAid);
+            }
+        }
+
+        private void AddSafetyTrainingInfo()
+        {
+            if (!apr.lab.safetyTraining.providesTraining)
+                AddTextParagraph("O espaço não fornece treinamentos de segurança aos indivíduos.");
+            else
+            {
+                AddTextParagraph("O espaço fornece treinamentos de segurança aos indivíduos a cada " +
+                    apr.lab.safetyTraining.periodicityAmount + " " + apr.lab.safetyTraining.periodicityUnit + ". Os indivíduos envolvidos são:");
+                AddTextParagraph(apr.lab.safetyTraining.involvedPersonel);
+            }
+        }
+
+        private void AddLabIdentifiedRisks()
+        {
+            AddSubsectionTitle(GetCurrentSection(), "Riscos Identificados");
+            AddIdentifiedRisksTable();
+        }
+
+        private void AddIdentifiedRisksTable()
+        {
+            IWTable risksTable = GetCurrentSection().AddTable();
+            risksTable.ResetCells(apr.lab.riskAnalysisInformation.identifiedRisks.Count + 1, 6);
+            risksTable[0,0].AddParagraph().AppendText(Resources.Language.pt_local.Risk);
+            risksTable[0,1].AddParagraph().AppendText(Resources.Language.pt_local.Danger);
+            risksTable[0,2].AddParagraph().AppendText(Resources.Language.pt_local.SafetyNet);
+            risksTable[0,3].AddParagraph().AppendText(Resources.Language.pt_local.SeverityClassification);
+            risksTable[0,4].AddParagraph().AppendText(Resources.Language.pt_local.FrequencyClassification);
+            risksTable[0,5].AddParagraph().AppendText(Resources.Language.pt_local.RiskClassification);
+            
+            for (int i = 0; i < apr.lab.riskAnalysisInformation.identifiedRisks.Count; i++)
+                for (int j = 0; j < 6; j++)
+                    risksTable[i + 1, j].AddParagraph().AppendText(apr.lab.riskAnalysisInformation.GetFormattedRiskList()[i][j]);
+        }
+
+        private void AddLabFinalConsiderations()
+        {
+            AddSubsectionTitle(GetCurrentSection(), "Histórico de acidentes");
+            AddTextParagraph(apr.lab.riskAnalysisInformation.accidents);
+
+            AddSubsectionTitle(GetCurrentSection(), "Conclusões");
+            AddTextParagraph(apr.lab.riskAnalysisInformation.conclusion);
+
+            AddSubsectionTitle(GetCurrentSection(), "Recomendações");
+            AddTextParagraph(apr.lab.riskAnalysisInformation.recomendations);
         }
 
         private void AddUnitTeamInformation()

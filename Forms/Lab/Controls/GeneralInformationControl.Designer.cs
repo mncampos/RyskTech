@@ -201,6 +201,7 @@ namespace RyskTech.Forms.Lab.Controls
             // buildingLabel
             // 
             this.buildingLabel.AutoSize = true;
+            this.buildingLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buildingLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.buildingLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buildingLabel.Location = new System.Drawing.Point(12, 12);
@@ -214,6 +215,7 @@ namespace RyskTech.Forms.Lab.Controls
             // roomLabel
             // 
             this.roomLabel.AutoSize = true;
+            this.roomLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.roomLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.roomLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.roomLabel.Location = new System.Drawing.Point(12, 120);

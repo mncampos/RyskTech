@@ -28,8 +28,8 @@ namespace RyskTech.Forms.Lab
             safetyEquipmentControl1.ValidateData();
             data.safetyEquipment = safetyEquipmentControl1.data;
 
-            safetyTrainingControl1.ValidateData();
-            data.safetyTraining = safetyTrainingControl1.data;
+            safetyTrainingControl2.ValidateData();
+            data.safetyTraining = safetyTrainingControl2.data;
 
             chemicalResidueControl1.ValidateData();
             data.manipulatedChemicalResidues = chemicalResidueControl1.residueData;
@@ -38,6 +38,9 @@ namespace RyskTech.Forms.Lab
 
             // TODO Validate all subtabs
             // throw new NotImplementedException();
+
+            finalConsiderationsControl1.ValidateData();
+            data.riskAnalysisInformation = finalConsiderationsControl1.data;
         }
 
         public void Complete()
@@ -48,7 +51,7 @@ namespace RyskTech.Forms.Lab
 
                 APR compilation = new APR(data);
 
-                DocumentBuilder docBuilder = new DocumentBuilder(compilation, "APR_Unidade.docx");
+                DocumentBuilder docBuilder = new DocumentBuilder(compilation, "APR_Laboratorio.docx");
 
                 int statusCode = docBuilder.CreateLabDocumentFromAPR();
 

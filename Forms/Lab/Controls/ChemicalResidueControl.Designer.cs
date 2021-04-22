@@ -119,18 +119,18 @@ namespace RyskTech
             this.chemicalResidueStorageGroupBox.Size = new System.Drawing.Size(812, 403);
             this.chemicalResidueStorageGroupBox.TabIndex = 0;
             this.chemicalResidueStorageGroupBox.TabStop = false;
-            this.chemicalResidueStorageGroupBox.Text = "Containers";
+            this.chemicalResidueStorageGroupBox.Text = "Recipientes";
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 7;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.82927F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.17073F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 191F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 121F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 72F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 208F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 207F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 67F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 209F));
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.nbrLinkLabel, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 2);
@@ -150,8 +150,8 @@ namespace RyskTech
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.45763F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52.54237F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 99F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 96F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 119F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(806, 384);
             this.tableLayoutPanel2.TabIndex = 0;
@@ -164,7 +164,7 @@ namespace RyskTech
             this.label1.Location = new System.Drawing.Point(1, 1);
             this.label1.Margin = new System.Windows.Forms.Padding(1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(332, 50);
+            this.label1.Size = new System.Drawing.Size(347, 50);
             this.label1.TabIndex = 2;
             this.label1.Text = "Os recipientes dos resíduos químicos estão rotulados de acordo com a ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -173,10 +173,10 @@ namespace RyskTech
             // 
             this.nbrLinkLabel.AutoSize = true;
             this.nbrLinkLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.nbrLinkLabel.Location = new System.Drawing.Point(335, 1);
+            this.nbrLinkLabel.Location = new System.Drawing.Point(350, 1);
             this.nbrLinkLabel.Margin = new System.Windows.Forms.Padding(1);
             this.nbrLinkLabel.Name = "nbrLinkLabel";
-            this.nbrLinkLabel.Size = new System.Drawing.Size(119, 50);
+            this.nbrLinkLabel.Size = new System.Drawing.Size(113, 50);
             this.nbrLinkLabel.TabIndex = 3;
             this.nbrLinkLabel.TabStop = true;
             this.nbrLinkLabel.Text = "NBR-14725-3:2017 ?";
@@ -186,12 +186,14 @@ namespace RyskTech
             // label2
             // 
             this.label2.AutoSize = true;
-            this.tableLayoutPanel2.SetColumnSpan(this.label2, 5);
+            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel2.SetColumnSpan(this.label2, 6);
             this.label2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 110);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(376, 33);
+            this.label2.Size = new System.Drawing.Size(532, 33);
             this.label2.TabIndex = 4;
             this.label2.Text = "Como é feito o armazenamento dos resíduos químicos do laboratório/espaço?";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -203,20 +205,24 @@ namespace RyskTech
             this.textBox1.Location = new System.Drawing.Point(3, 146);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(800, 93);
+            this.textBox1.Size = new System.Drawing.Size(800, 90);
             this.textBox1.TabIndex = 5;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tableLayoutPanel2.SetColumnSpan(this.label3, 5);
             this.label3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label3.Location = new System.Drawing.Point(3, 242);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 239);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(347, 22);
+            this.label3.Size = new System.Drawing.Size(486, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "Qual o destino dos resíduos químicos gerados pelo laboratório/espaço?";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox2
             // 
@@ -236,7 +242,7 @@ namespace RyskTech
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Location = new System.Drawing.Point(3, 52);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(328, 58);
+            this.label4.Size = new System.Drawing.Size(343, 58);
             this.label4.TabIndex = 8;
             this.label4.Text = "O laboratório possui FIPSQ em concordância com a";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -245,9 +251,9 @@ namespace RyskTech
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel1.Location = new System.Drawing.Point(337, 52);
+            this.linkLabel1.Location = new System.Drawing.Point(352, 52);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(115, 58);
+            this.linkLabel1.Size = new System.Drawing.Size(109, 58);
             this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "NBR-14725-4:2014 ?";
@@ -258,9 +264,9 @@ namespace RyskTech
             // 
             this.noRadioButton.AutoSize = true;
             this.noRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.noRadioButton.Location = new System.Drawing.Point(458, 3);
+            this.noRadioButton.Location = new System.Drawing.Point(467, 3);
             this.noRadioButton.Name = "noRadioButton";
-            this.noRadioButton.Size = new System.Drawing.Size(66, 46);
+            this.noRadioButton.Size = new System.Drawing.Size(61, 46);
             this.noRadioButton.TabIndex = 1;
             this.noRadioButton.TabStop = true;
             this.noRadioButton.Text = "Não";
@@ -271,9 +277,9 @@ namespace RyskTech
             // 
             this.yesRadioButton.AutoSize = true;
             this.yesRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.yesRadioButton.Location = new System.Drawing.Point(530, 3);
+            this.yesRadioButton.Location = new System.Drawing.Point(534, 3);
             this.yesRadioButton.Name = "yesRadioButton";
-            this.yesRadioButton.Size = new System.Drawing.Size(64, 46);
+            this.yesRadioButton.Size = new System.Drawing.Size(59, 46);
             this.yesRadioButton.TabIndex = 0;
             this.yesRadioButton.TabStop = true;
             this.yesRadioButton.Text = "Sim";
@@ -285,9 +291,9 @@ namespace RyskTech
             this.tableLayoutPanel2.SetColumnSpan(this.panel1, 2);
             this.panel1.Controls.Add(this.tableLayoutPanel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(458, 55);
+            this.panel1.Location = new System.Drawing.Point(467, 55);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(136, 52);
+            this.panel1.Size = new System.Drawing.Size(126, 52);
             this.panel1.TabIndex = 10;
             // 
             // tableLayoutPanel4
@@ -302,16 +308,16 @@ namespace RyskTech
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(136, 52);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(126, 52);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // hasFISPQRadioButton
             // 
             this.hasFISPQRadioButton.AutoSize = true;
             this.hasFISPQRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.hasFISPQRadioButton.Location = new System.Drawing.Point(71, 3);
+            this.hasFISPQRadioButton.Location = new System.Drawing.Point(66, 3);
             this.hasFISPQRadioButton.Name = "hasFISPQRadioButton";
-            this.hasFISPQRadioButton.Size = new System.Drawing.Size(62, 46);
+            this.hasFISPQRadioButton.Size = new System.Drawing.Size(57, 46);
             this.hasFISPQRadioButton.TabIndex = 1;
             this.hasFISPQRadioButton.TabStop = true;
             this.hasFISPQRadioButton.Text = "Sim";
@@ -324,7 +330,7 @@ namespace RyskTech
             this.noFISPQRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.noFISPQRadioButton.Location = new System.Drawing.Point(3, 3);
             this.noFISPQRadioButton.Name = "noFISPQRadioButton";
-            this.noFISPQRadioButton.Size = new System.Drawing.Size(62, 46);
+            this.noFISPQRadioButton.Size = new System.Drawing.Size(57, 46);
             this.noFISPQRadioButton.TabIndex = 0;
             this.noFISPQRadioButton.TabStop = true;
             this.noFISPQRadioButton.Text = "Não";
@@ -334,10 +340,10 @@ namespace RyskTech
             // fispqExplanation
             // 
             this.fispqExplanation.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fispqExplanation.Location = new System.Drawing.Point(600, 55);
+            this.fispqExplanation.Location = new System.Drawing.Point(599, 55);
             this.fispqExplanation.Multiline = true;
             this.fispqExplanation.Name = "fispqExplanation";
-            this.fispqExplanation.Size = new System.Drawing.Size(203, 52);
+            this.fispqExplanation.Size = new System.Drawing.Size(204, 52);
             this.fispqExplanation.TabIndex = 11;
             this.fispqExplanation.TextChanged += new System.EventHandler(this.fispqExplanation_TextChanged);
             // 
@@ -520,6 +526,7 @@ namespace RyskTech
             this.reactorListTab.Controls.Add(this.groupBox1);
             this.reactorListTab.Location = new System.Drawing.Point(4, 22);
             this.reactorListTab.Name = "reactorListTab";
+            this.reactorListTab.Padding = new System.Windows.Forms.Padding(3);
             this.reactorListTab.Size = new System.Drawing.Size(818, 409);
             this.reactorListTab.TabIndex = 2;
             this.reactorListTab.Text = "Reagentes";
@@ -529,9 +536,9 @@ namespace RyskTech
             // 
             this.groupBox1.Controls.Add(this.tableLayoutPanel3);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(818, 409);
+            this.groupBox1.Size = new System.Drawing.Size(812, 403);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Reagentes";
@@ -553,7 +560,8 @@ namespace RyskTech
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.1459F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.8541F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(812, 390);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(806, 384);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // chemicalReactorData
@@ -574,11 +582,10 @@ namespace RyskTech
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewTextBoxColumn10});
             this.tableLayoutPanel3.SetColumnSpan(this.chemicalReactorData, 4);
-            this.chemicalReactorData.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chemicalReactorData.Location = new System.Drawing.Point(3, 3);
             this.chemicalReactorData.Name = "chemicalReactorData";
             this.chemicalReactorData.ReadOnly = true;
-            this.chemicalReactorData.Size = new System.Drawing.Size(806, 337);
+            this.chemicalReactorData.Size = new System.Drawing.Size(800, 332);
             this.chemicalReactorData.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
@@ -650,10 +657,10 @@ namespace RyskTech
             // addReactorButton
             // 
             this.addReactorButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addReactorButton.Location = new System.Drawing.Point(8, 351);
+            this.addReactorButton.Location = new System.Drawing.Point(8, 346);
             this.addReactorButton.Margin = new System.Windows.Forms.Padding(8);
             this.addReactorButton.Name = "addReactorButton";
-            this.addReactorButton.Size = new System.Drawing.Size(119, 31);
+            this.addReactorButton.Size = new System.Drawing.Size(118, 30);
             this.addReactorButton.TabIndex = 1;
             this.addReactorButton.Text = "Novo";
             this.addReactorButton.UseVisualStyleBackColor = true;
@@ -662,10 +669,10 @@ namespace RyskTech
             // editReactorButton
             // 
             this.editReactorButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.editReactorButton.Location = new System.Drawing.Point(143, 351);
+            this.editReactorButton.Location = new System.Drawing.Point(142, 346);
             this.editReactorButton.Margin = new System.Windows.Forms.Padding(8);
             this.editReactorButton.Name = "editReactorButton";
-            this.editReactorButton.Size = new System.Drawing.Size(119, 31);
+            this.editReactorButton.Size = new System.Drawing.Size(118, 30);
             this.editReactorButton.TabIndex = 2;
             this.editReactorButton.Text = "Editar";
             this.editReactorButton.UseVisualStyleBackColor = true;
@@ -674,10 +681,10 @@ namespace RyskTech
             // removeReactorButton
             // 
             this.removeReactorButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.removeReactorButton.Location = new System.Drawing.Point(278, 351);
+            this.removeReactorButton.Location = new System.Drawing.Point(276, 346);
             this.removeReactorButton.Margin = new System.Windows.Forms.Padding(8);
             this.removeReactorButton.Name = "removeReactorButton";
-            this.removeReactorButton.Size = new System.Drawing.Size(119, 31);
+            this.removeReactorButton.Size = new System.Drawing.Size(118, 30);
             this.removeReactorButton.TabIndex = 3;
             this.removeReactorButton.Text = "Remover";
             this.removeReactorButton.UseVisualStyleBackColor = true;

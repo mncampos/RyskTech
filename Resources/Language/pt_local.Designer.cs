@@ -124,6 +124,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Número CAS.
+        /// </summary>
+        internal static string CasNumber {
+            get {
+                return ResourceManager.GetString("CasNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Confirmar.
         /// </summary>
         internal static string Confirm {
@@ -147,6 +156,15 @@ namespace RyskTech.Resources.Language {
         internal static string Crossing {
             get {
                 return ResourceManager.GetString("Crossing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Perigo.
+        /// </summary>
+        internal static string Danger {
+            get {
+                return ResourceManager.GetString("Danger", resourceCulture);
             }
         }
         
@@ -205,11 +223,47 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Por favor indique a origem de todos os agentes químicos.
+        /// </summary>
+        internal static string ErrorNoAgentOrigin {
+            get {
+                return ResourceManager.GetString("ErrorNoAgentOrigin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor insira o perigo assocaido a todos os riscos.
+        /// </summary>
+        internal static string ErrorNoAssociatedDanger {
+            get {
+                return ResourceManager.GetString("ErrorNoAssociatedDanger", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor complete as considerações gerais sobre os resultados da análise.
+        /// </summary>
+        internal static string ErrorNoConclusion {
+            get {
+                return ResourceManager.GetString("ErrorNoConclusion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Por favor preencha com suas informações de concordância FISPQ.
         /// </summary>
         internal static string ErrorNoFISPQExplanation {
             get {
                 return ResourceManager.GetString("ErrorNoFISPQExplanation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor indique a classe de frequência de todos os riscos.
+        /// </summary>
+        internal static string ErrorNoFrequencyClassificaiton {
+            get {
+                return ResourceManager.GetString("ErrorNoFrequencyClassificaiton", resourceCulture);
             }
         }
         
@@ -241,6 +295,42 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Por favor descreva todos os riscos listados.
+        /// </summary>
+        internal static string ErrorNoRiskDescription {
+            get {
+                return ResourceManager.GetString("ErrorNoRiskDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor indique os riscos presentes no seu laboratório.
+        /// </summary>
+        internal static string ErrorNoRisks {
+            get {
+                return ResourceManager.GetString("ErrorNoRisks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor indique a classe de severidade de todos os riscos.
+        /// </summary>
+        internal static string ErrorNoSeverityClassification {
+            get {
+                return ResourceManager.GetString("ErrorNoSeverityClassification", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor sugira formas de melhorar a segurança no seu ambiente.
+        /// </summary>
+        internal static string ErrorNoSugestions {
+            get {
+                return ResourceManager.GetString("ErrorNoSugestions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Por favor descreva o uso do seu espaço.
         /// </summary>
         internal static string ErrorNoUsageDescription {
@@ -255,6 +345,15 @@ namespace RyskTech.Resources.Language {
         internal static string Floor {
             get {
                 return ResourceManager.GetString("Floor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Classificação de Frequência.
+        /// </summary>
+        internal static string FrequencyClassification {
+            get {
+                return ResourceManager.GetString("FrequencyClassification", resourceCulture);
             }
         }
         
@@ -448,6 +547,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Mistura.
+        /// </summary>
+        internal static string Mixture {
+            get {
+                return ResourceManager.GetString("Mixture", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Nome.
         /// </summary>
         internal static string Name {
@@ -565,6 +673,24 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Risco.
+        /// </summary>
+        internal static string Risk {
+            get {
+                return ResourceManager.GetString("Risk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Classe de Risco.
+        /// </summary>
+        internal static string RiskClassification {
+            get {
+                return ResourceManager.GetString("RiskClassification", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Rua.
         /// </summary>
         internal static string Road {
@@ -579,6 +705,24 @@ namespace RyskTech.Resources.Language {
         internal static string Room {
             get {
                 return ResourceManager.GetString("Room", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Salvaguarda.
+        /// </summary>
+        internal static string SafetyNet {
+            get {
+                return ResourceManager.GetString("SafetyNet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Classificação de severidade.
+        /// </summary>
+        internal static string SeverityClassification {
+            get {
+                return ResourceManager.GetString("SeverityClassification", resourceCulture);
             }
         }
         

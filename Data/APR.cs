@@ -44,7 +44,7 @@ namespace RyskTech
             info.Add("Sala: " + lab.spaceCharacterization.room);
             info.Add("Responsável: " + lab.spaceCharacterization.responsiblePersonName + "(" + lab.spaceCharacterization.responsiblePersonContact+ ")");
 
-            return null;
+            return info;
         }
     }
 }

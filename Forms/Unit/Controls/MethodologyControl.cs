@@ -27,7 +27,7 @@ namespace RyskTech
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.StackTrace + ex.Message, "WHAT THE FUCK WHY DOES THIS KEEP SHOWING UP");
+                MessageBox.Show(ex.StackTrace + ex.Message, "Error opening methodology file");
             }
         }
 

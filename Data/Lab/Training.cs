@@ -13,7 +13,7 @@ namespace RyskTech.Data
         {
             this.providesTraining = false;
         }
-    
+
         public void CheckValidity()
         {
             if (providesTraining)

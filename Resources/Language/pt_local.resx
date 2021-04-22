@@ -138,6 +138,9 @@
   <data name="Cancel" xml:space="preserve">
     <value>Cancelar</value>
   </data>
+  <data name="CasNumber" xml:space="preserve">
+    <value>Número CAS</value>
+  </data>
   <data name="Confirm" xml:space="preserve">
     <value>Confirmar</value>
   </data>
@@ -146,6 +149,9 @@
   </data>
   <data name="Crossing" xml:space="preserve">
     <value>Travessa</value>
+  </data>
+  <data name="Danger" xml:space="preserve">
+    <value>Perigo</value>
   </data>
   <data name="DangerCharacteristics" xml:space="preserve">
     <value>Características de periculosidade</value>
@@ -165,8 +171,20 @@
   <data name="ErrorInvalidUnitName" xml:space="preserve">
     <value>Nome de unidade inválido!</value>
   </data>
+  <data name="ErrorNoAgentOrigin" xml:space="preserve">
+    <value>Por favor indique a origem de todos os agentes químicos</value>
+  </data>
+  <data name="ErrorNoAssociatedDanger" xml:space="preserve">
+    <value>Por favor insira o perigo assocaido a todos os riscos</value>
+  </data>
+  <data name="ErrorNoConclusion" xml:space="preserve">
+    <value>Por favor complete as considerações gerais sobre os resultados da análise</value>
+  </data>
   <data name="ErrorNoFISPQExplanation" xml:space="preserve">
     <value>Por favor preencha com suas informações de concordância FISPQ</value>
+  </data>
+  <data name="ErrorNoFrequencyClassificaiton" xml:space="preserve">
+    <value>Por favor indique a classe de frequência de todos os riscos</value>
   </data>
   <data name="ErrorNoManipulatedAreasSelected" xml:space="preserve">
     <value>Selecione pelo menos um tipo de material manipulado na sua unidade!</value>
@@ -177,11 +195,26 @@
   <data name="ErrorNoResidueStorageDescription" xml:space="preserve">
     <value>Por favor descreva de maneira geral como são mantidos os resíduos</value>
   </data>
+  <data name="ErrorNoRiskDescription" xml:space="preserve">
+    <value>Por favor descreva todos os riscos listados</value>
+  </data>
+  <data name="ErrorNoRisks" xml:space="preserve">
+    <value>Por favor indique os riscos presentes no seu laboratório</value>
+  </data>
+  <data name="ErrorNoSeverityClassification" xml:space="preserve">
+    <value>Por favor indique a classe de severidade de todos os riscos</value>
+  </data>
+  <data name="ErrorNoSugestions" xml:space="preserve">
+    <value>Por favor sugira formas de melhorar a segurança no seu ambiente</value>
+  </data>
   <data name="ErrorNoUsageDescription" xml:space="preserve">
     <value>Por favor descreva o uso do seu espaço</value>
   </data>
   <data name="Floor" xml:space="preserve">
     <value>Andar</value>
+  </data>
+  <data name="FrequencyClassification" xml:space="preserve">
+    <value>Classificação de Frequência</value>
   </data>
   <data name="Highway" xml:space="preserve">
     <value>Rodovia</value>
@@ -246,6 +279,9 @@
   <data name="LocationZIPInvalid" xml:space="preserve">
     <value>Por favor digite o CEP no formato correto!</value>
   </data>
+  <data name="Mixture" xml:space="preserve">
+    <value>Mistura</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>Nome</value>
   </data>
@@ -285,11 +321,23 @@
   <data name="Quantity" xml:space="preserve">
     <value>Quantidade</value>
   </data>
+  <data name="Risk" xml:space="preserve">
+    <value>Risco</value>
+  </data>
+  <data name="RiskClassification" xml:space="preserve">
+    <value>Classe de Risco</value>
+  </data>
   <data name="Road" xml:space="preserve">
     <value>Rua</value>
   </data>
   <data name="Room" xml:space="preserve">
     <value>Sala</value>
+  </data>
+  <data name="SafetyNet" xml:space="preserve">
+    <value>Salvaguarda</value>
+  </data>
+  <data name="SeverityClassification" xml:space="preserve">
+    <value>Classificação de severidade</value>
   </data>
   <data name="StorageInfo" xml:space="preserve">
     <value>Informações adicionais de armazenamento</value>
