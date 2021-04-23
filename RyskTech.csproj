@@ -102,6 +102,7 @@
     <Compile Include="Data\Lab\ChemicalResidue.cs" />
     <Compile Include="Data\Lab\Equipment.cs" />
     <Compile Include="Data\Lab\LabScope.cs" />
+    <Compile Include="Data\Lab\MechanicalAgent.cs" />
     <Compile Include="Data\Lab\Risk.cs" />
     <Compile Include="Data\Lab\RiskAnalysis.cs" />
     <Compile Include="Data\Lab\Storage.cs" />
@@ -168,6 +169,12 @@
     <Compile Include="Forms\Lab\Controls\LabWelcomeControl.Designer.cs">
       <DependentUpon>LabWelcomeControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Lab\Controls\MechanicalAgentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\MechanicalAgentControl.Designer.cs">
+      <DependentUpon>MechanicalAgentControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Lab\Controls\RiskAnalysisControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -205,6 +212,12 @@
       <DependentUpon>EditChemicalResidueForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\Lab\Lab.cs" />
+    <Compile Include="Forms\Lab\EditMechanicalAgentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\EditMechanicalAgentForm.Designer.cs">
+      <DependentUpon>EditMechanicalAgentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Lab\LabMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -299,6 +312,9 @@
     <EmbeddedResource Include="Forms\Lab\Controls\LabWelcomeControl.resx">
       <DependentUpon>LabWelcomeControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\Controls\MechanicalAgentControl.resx">
+      <DependentUpon>MechanicalAgentControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lab\Controls\RiskAnalysisControl.resx">
       <DependentUpon>RiskAnalysisControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -316,6 +332,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lab\EditChemicalResidueForm.resx">
       <DependentUpon>EditChemicalResidueForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\EditMechanicalAgentForm.resx">
+      <DependentUpon>EditMechanicalAgentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lab\LabMainForm.resx">
       <DependentUpon>LabMainForm.cs</DependentUpon>

@@ -61,6 +61,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Informações Adicionais.
+        /// </summary>
+        internal static string AdditionalInformation {
+            get {
+                return ResourceManager.GetString("AdditionalInformation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Complemento.
         /// </summary>
         internal static string AddressComplement {
@@ -79,11 +88,29 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Agente.
+        /// </summary>
+        internal static string Agent {
+            get {
+                return ResourceManager.GetString("Agent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Vidro temperado âmbar.
         /// </summary>
         internal static string AmberGlassContainer {
             get {
                 return ResourceManager.GetString("AmberGlassContainer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Risco Associado.
+        /// </summary>
+        internal static string AssociatedRisk {
+            get {
+                return ResourceManager.GetString("AssociatedRisk", resourceCulture);
             }
         }
         

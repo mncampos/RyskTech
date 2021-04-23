@@ -117,14 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AdditionalInformation" xml:space="preserve">
+    <value>Informações Adicionais</value>
+  </data>
   <data name="AddressComplement" xml:space="preserve">
     <value>Complemento</value>
   </data>
   <data name="AddressZIP" xml:space="preserve">
     <value>CEP</value>
   </data>
+  <data name="Agent" xml:space="preserve">
+    <value>Agente</value>
+  </data>
   <data name="AmberGlassContainer" xml:space="preserve">
     <value>Vidro temperado âmbar</value>
+  </data>
+  <data name="AssociatedRisk" xml:space="preserve">
+    <value>Risco Associado</value>
   </data>
   <data name="Avenue" xml:space="preserve">
     <value>Avenida</value>

@@ -17,6 +17,8 @@ namespace RyskTech.Data
         public string biologicalAgentsStorage;
         public string biologicalAgentsDestination;
 
+        public List<MechanicalAgent> mechanicalAgentsInfo;
+
         public RiskAnalysis riskAnalysisInformation;
 
         public Lab() { }

@@ -47,6 +47,12 @@ namespace RyskTech.Forms.Lab
                 data.biologicalAgentsStorage = biologicalAgentsInformation1.storage;
             }
 
+            if (data.generalInformation.manipulatesMechanicalAgents)
+            {
+                mechanicalAgentControl1.ValidateData();
+                data.mechanicalAgentsInfo = mechanicalAgentControl1.mechanicalAgentList;
+            }
+
             // TODO Validate all subtabs
             // throw new NotImplementedException();
 
