@@ -232,6 +232,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Máquina/Equipamento.
+        /// </summary>
+        internal static string Equipment {
+            get {
+                return ResourceManager.GetString("Equipment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Por favor informe o nome ou descritor do seu espaço.
         /// </summary>
         internal static string ErrorInvalidLabName {

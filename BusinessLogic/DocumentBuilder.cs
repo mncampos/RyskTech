@@ -69,7 +69,8 @@ namespace RyskTech
             if (apr.lab.generalInformation.manipulatesMechanicalAgents)
                 AddLabMechAgentInfo(labSection);
 
-            // TODO complete when we have this info
+            if (apr.lab.generalInformation.manipulatesPhysicalAgents)
+                AddLabPhysicalAgentInfo(labSection);
 
             AddLabIdentifiedRisks();
             AddLabFinalConsiderations();
@@ -299,6 +300,28 @@ namespace RyskTech
                 mechanicalAgentsTable[i + 1, 1].AddParagraph().AppendText(apr.lab.mechanicalAgentsInfo[i].associatedRisk);
                 mechanicalAgentsTable[i + 1, 2].AddParagraph().AppendText(apr.lab.mechanicalAgentsInfo[i].additionalInfo);
             }
+        }
+
+        private void AddLabPhysicalAgentInfo(IWSection section)
+        {
+            AddSubsectionTitle(section,"Compilação dos agentes físicos");
+            AddPhysicalAgentsTable();
+        }
+
+        private void AddPhysicalAgentsTable()
+        {
+            IWTable physicalAgentsTable = GetCurrentSection().AddTable();
+            physicalAgentsTable.ResetCells(apr.lab.physicalAgentsInfo.Count + 1, 3);
+            physicalAgentsTable[0, 0].AddParagraph().AppendText(Resources.Language.pt_local.Equipment);
+            physicalAgentsTable[0, 1].AddParagraph().AppendText(Resources.Language.pt_local.Usage);
+            physicalAgentsTable[0, 2].AddParagraph().AppendText(Resources.Language.pt_local.AssociatedRisk);
+            for (int i = 0; i < apr.lab.physicalAgentsInfo.Count;  i++)
+            {
+                physicalAgentsTable[i + 1, 0].AddParagraph().AppendText(apr.lab.physicalAgentsInfo[i].equipment);
+                physicalAgentsTable[i + 1, 1].AddParagraph().AppendText(apr.lab.physicalAgentsInfo[i].usage);
+                physicalAgentsTable[i + 1, 2].AddParagraph().AppendText(apr.lab.physicalAgentsInfo[i].generatedRisks);
+            }
+        
         }
 
         private void AddLabIdentifiedRisks()
