@@ -94,6 +94,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\APR.cs" />
+    <Compile Include="Data\Lab\BiologicalAgent.cs" />
+    <Compile Include="Data\Lab\BiologicalInfo.cs" />
     <Compile Include="Data\Lab\Characteristics.cs" />
     <Compile Include="Data\Lab\ChemicalAgent.cs" />
     <Compile Include="Data\Lab\ChemicalReactor.cs" />
@@ -116,6 +118,24 @@
     </Compile>
     <Compile Include="Forms\Lab\Controls\AccidentHistoryControl.Designer.cs">
       <DependentUpon>AccidentHistoryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\BiologicalAgentsInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\BiologicalAgentsInformation.Designer.cs">
+      <DependentUpon>BiologicalAgentsInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\BiologicalResidues.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\BiologicalResidues.Designer.cs">
+      <DependentUpon>BiologicalResidues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\BioStorage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\BioStorage.Designer.cs">
+      <DependentUpon>BioStorage.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Lab\Controls\ChemicalResidueControl.cs">
       <SubType>UserControl</SubType>
@@ -165,6 +185,12 @@
     </Compile>
     <Compile Include="Forms\Lab\Controls\SafetyTrainingControl.Designer.cs">
       <DependentUpon>SafetyTrainingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\EditBiologicalAgentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\EditBiologicalAgentForm.Designer.cs">
+      <DependentUpon>EditBiologicalAgentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Lab\EditChemicalReactorForm.cs">
       <SubType>Form</SubType>
@@ -249,6 +275,15 @@
     <EmbeddedResource Include="Forms\Lab\Controls\AccidentHistoryControl.resx">
       <DependentUpon>AccidentHistoryControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\Controls\BiologicalAgentsInformation.resx">
+      <DependentUpon>BiologicalAgentsInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\Controls\BiologicalResidues.resx">
+      <DependentUpon>BiologicalResidues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\Controls\BioStorage.resx">
+      <DependentUpon>BioStorage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lab\Controls\ChemicalResidueControl.resx">
       <DependentUpon>ChemicalResidueControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -272,6 +307,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lab\Controls\SafetyTrainingControl.resx">
       <DependentUpon>SafetyTrainingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\EditBiologicalAgentForm.resx">
+      <DependentUpon>EditBiologicalAgentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lab\EditChemicalReactorForm.resx">
       <DependentUpon>EditChemicalReactorForm.cs</DependentUpon>

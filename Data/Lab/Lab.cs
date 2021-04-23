@@ -13,6 +13,10 @@ namespace RyskTech.Data
         public List<ChemicalReactor> manipulatedChemicalReactors;
         public Storage chemicalResidueStorageInfo;
 
+        public BiologicalInfo biologicalAgentsInfo;
+        public string biologicalAgentsStorage;
+        public string biologicalAgentsDestination;
+
         public RiskAnalysis riskAnalysisInformation;
 
         public Lab() { }
