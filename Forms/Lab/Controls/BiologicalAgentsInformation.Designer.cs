@@ -31,8 +31,8 @@ namespace RyskTech.Forms.Lab.Controls
         {
             this.bioTabControl = new System.Windows.Forms.TabControl();
             this.agentInfoTabPage = new System.Windows.Forms.TabPage();
-            this.storageDestinationTabPage = new System.Windows.Forms.TabPage();
             this.biologicalResidues1 = new RyskTech.Forms.Lab.Controls.BiologicalResidues();
+            this.storageDestinationTabPage = new System.Windows.Forms.TabPage();
             this.bioStorage1 = new RyskTech.Forms.Lab.Controls.BioStorage();
             this.bioTabControl.SuspendLayout();
             this.agentInfoTabPage.SuspendLayout();
@@ -61,6 +61,14 @@ namespace RyskTech.Forms.Lab.Controls
             this.agentInfoTabPage.Text = "Agentes e resíduos";
             this.agentInfoTabPage.UseVisualStyleBackColor = true;
             // 
+            // biologicalResidues1
+            // 
+            this.biologicalResidues1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.biologicalResidues1.Location = new System.Drawing.Point(3, 3);
+            this.biologicalResidues1.Name = "biologicalResidues1";
+            this.biologicalResidues1.Size = new System.Drawing.Size(806, 397);
+            this.biologicalResidues1.TabIndex = 0;
+            // 
             // storageDestinationTabPage
             // 
             this.storageDestinationTabPage.Controls.Add(this.bioStorage1);
@@ -71,14 +79,6 @@ namespace RyskTech.Forms.Lab.Controls
             this.storageDestinationTabPage.TabIndex = 1;
             this.storageDestinationTabPage.Text = "Armazenamento e Destino";
             this.storageDestinationTabPage.UseVisualStyleBackColor = true;
-            // 
-            // biologicalResidues1
-            // 
-            this.biologicalResidues1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.biologicalResidues1.Location = new System.Drawing.Point(3, 3);
-            this.biologicalResidues1.Name = "biologicalResidues1";
-            this.biologicalResidues1.Size = new System.Drawing.Size(806, 397);
-            this.biologicalResidues1.TabIndex = 0;
             // 
             // bioStorage1
             // 
@@ -95,6 +95,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.Controls.Add(this.bioTabControl);
             this.Name = "BiologicalAgentsInformation";
             this.Size = new System.Drawing.Size(820, 429);
+            this.Load += new System.EventHandler(this.BiologicalAgentsInformation_Load);
             this.bioTabControl.ResumeLayout(false);
             this.agentInfoTabPage.ResumeLayout(false);
             this.storageDestinationTabPage.ResumeLayout(false);

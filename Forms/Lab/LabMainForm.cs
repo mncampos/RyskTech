@@ -31,15 +31,21 @@ namespace RyskTech.Forms.Lab
             safetyTrainingControl2.ValidateData();
             data.safetyTraining = safetyTrainingControl2.data;
 
-            chemicalResidueControl1.ValidateData();
-            data.manipulatedChemicalResidues = chemicalResidueControl1.residueData;
-            data.manipulatedChemicalReactors = chemicalResidueControl1.reactorData;
-            data.chemicalResidueStorageInfo = chemicalResidueControl1.storageInfo;
+            if (data.generalInformation.manipulatesChemicalAgents)
+            {
+                chemicalResidueControl1.ValidateData();
+                data.manipulatedChemicalResidues = chemicalResidueControl1.residueData;
+                data.manipulatedChemicalReactors = chemicalResidueControl1.reactorData;
+                data.chemicalResidueStorageInfo = chemicalResidueControl1.storageInfo;
+            }
 
-            biologicalAgentsInformation1.ValidateData();
-            data.biologicalAgentsInfo = biologicalAgentsInformation1.data;
-            data.biologicalAgentsDestination = biologicalAgentsInformation1.destination;
-            data.biologicalAgentsStorage = biologicalAgentsInformation1.storage;
+            if (data.generalInformation.manipulatesBiologicalAgents)
+            {
+                biologicalAgentsInformation1.ValidateData();
+                data.biologicalAgentsInfo = biologicalAgentsInformation1.data;
+                data.biologicalAgentsDestination = biologicalAgentsInformation1.destination;
+                data.biologicalAgentsStorage = biologicalAgentsInformation1.storage;
+            }
 
             // TODO Validate all subtabs
             // throw new NotImplementedException();

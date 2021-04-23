@@ -49,6 +49,8 @@ namespace RyskTech.Forms.Lab.Controls
         {
             if (newProcessedSampleTextBox.Text != null && newProcessedSampleTextBox.Text.Length > 0)
                 processedSamplesListBox.Items.Add(newProcessedSampleTextBox.Text);
+
+            newProcessedSampleTextBox.Text = "";
         }
 
         private void sisgenRegistryNumberTextBox_TextChanged(object sender, EventArgs e)

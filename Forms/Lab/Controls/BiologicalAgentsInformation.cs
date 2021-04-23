@@ -15,6 +15,11 @@ namespace RyskTech.Forms.Lab.Controls
             InitializeComponent();
         }
 
+        private void BiologicalAgentsInformation_Load(object sender, EventArgs e)
+        {
+            data = new BiologicalInfo();
+        }
+
         public void ValidateData()
         {
             if (this.data == null)
