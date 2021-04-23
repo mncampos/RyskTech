@@ -2,6 +2,7 @@
 using Syncfusion.DocIO.DLS;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 
 namespace RyskTech
 {
@@ -22,6 +23,7 @@ namespace RyskTech
         public int CreateUnitDocumentFromAPR()
         {
             AddUnitInformation();
+            AddAnnexSection();
 
             documentReference.Save(documentName, Syncfusion.DocIO.FormatType.Docx);
             documentReference.Close();
@@ -32,6 +34,7 @@ namespace RyskTech
         public int CreateLabDocumentFromAPR()
         {
             AddLabInformation();
+            AddAnnexSection();
 
             documentReference.Save(documentName, Syncfusion.DocIO.FormatType.Docx);
             documentReference.Close();
@@ -41,16 +44,11 @@ namespace RyskTech
 
         private void AddUnitInformation()
         {
-            // Objective and abrangency
-            // TODO Where is this information supposed to come from?
-
             AddUnitTeamInformation();
             AddUnitLocationInformation();
             AddUnitStructureInformation();
             AddUnitHistoryInformation();
             AddAPRMethodologyInformation();
-
-            // TODO Anything else?
         }
 
         private void AddLabInformation()
@@ -444,6 +442,37 @@ namespace RyskTech
             }
         }
 
+        private void AddAnnexSection()
+        {
+            AddSectionWithTitle("Anexos");
+
+            Image table1 = Image.FromFile("../../Resources/Etapa1_Classificacao_de_risco_ANVISA.jpg");
+            Image table2 = Image.FromFile("../../Resources/Quadro2.png");
+            Image table3 = Image.FromFile("../../Resources/Quadro3.png");
+            Image table4 = Image.FromFile("../../Resources/Quadro4.png");
+
+            AddSubsectionTitle(GetCurrentSection(), "Quadro1");
+            IWPicture table1pic = GetCurrentSection().AddParagraph().AppendPicture(table1);
+            table1pic.Height = 400;
+            table1pic.Width = 500;
+
+            AddSubsectionTitle(GetCurrentSection(), "Quadro2");
+            IWPicture table2pic = GetCurrentSection().AddParagraph().AppendPicture(table2);
+            table2pic.Height = 300;
+            table2pic.Width = 450;
+
+            AddSubsectionTitle(GetCurrentSection(), "Quadro3");
+            IWPicture table3pic = GetCurrentSection().AddParagraph().AppendPicture(table3);
+            table3pic.Height = 300;
+            table3pic.Width = 450;
+
+            AddSubsectionTitle(GetCurrentSection(), "Quadro4");
+            IWPicture table4pic = GetCurrentSection().AddParagraph().AppendPicture(table4);
+            table4pic.Height = 250;
+            table4pic.Width = 500;
+
+        }
+
         private void AddListWithItems(List<string> items)
         {
             IWParagraph listParagraph = GetCurrentSection().AddParagraph();
@@ -467,6 +496,8 @@ namespace RyskTech
 
         private void AddSubsectionTitle(IWSection section, string subsectionTile)
         {
+            IWParagraph spacingParagraph = section.AddParagraph();
+            spacingParagraph.AppendText("\n");
             IWParagraph title_paragraph = section.AddParagraph();
             IWTextRange title_text = title_paragraph.AppendText(subsectionTile);
             title_text.CharacterFormat.Bold = false;
