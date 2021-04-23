@@ -53,8 +53,11 @@ namespace RyskTech.Forms.Lab
                 data.mechanicalAgentsInfo = mechanicalAgentControl1.mechanicalAgentList;
             }
 
-            // TODO Validate all subtabs
-            // throw new NotImplementedException();
+            if (data.generalInformation.manipulatesPhysicalAgents)
+            {
+                physicalAgentsControl1.ValidateData();
+                data.physicalAgentsInfo = physicalAgentsControl1.physicalAgentList;
+            }
 
             finalConsiderationsControl1.ValidateData();
             data.riskAnalysisInformation = finalConsiderationsControl1.data;

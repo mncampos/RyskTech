@@ -207,6 +207,9 @@
   <data name="ErrorNoManipulatedAreasSelected" xml:space="preserve">
     <value>Selecione pelo menos um tipo de material manipulado na sua unidade!</value>
   </data>
+  <data name="ErrorNoPhyisicalAgents" xml:space="preserve">
+    <value>Por favor cite todos os agentes físicos e seus riscos associados</value>
+  </data>
   <data name="ErrorNoProcessedSamples" xml:space="preserve">
     <value>Por favor indique todas as amostras biológicasprocessadas pelo seu laboratório</value>
   </data>

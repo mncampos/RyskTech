@@ -43,10 +43,12 @@ namespace RyskTech.Forms.Lab
             this.chemicalResidueControl1 = new RyskTech.ChemicalResidueControl();
             this.biologicalResidueInformationTab = new System.Windows.Forms.TabPage();
             this.biologicalAgentsInformation1 = new RyskTech.Forms.Lab.Controls.BiologicalAgentsInformation();
+            this.physicalAgentTab = new System.Windows.Forms.TabPage();
             this.mechanicalAgentTab = new System.Windows.Forms.TabPage();
+            this.mechanicalAgentControl1 = new RyskTech.Forms.Lab.Controls.MechanicalAgentControl();
             this.finalConsiderationsTab = new System.Windows.Forms.TabPage();
             this.finalConsiderationsControl1 = new RyskTech.Forms.Lab.Controls.FinalConsiderationsControl();
-            this.mechanicalAgentControl1 = new RyskTech.Forms.Lab.Controls.MechanicalAgentControl();
+            this.physicalAgentsControl1 = new RyskTech.Forms.Lab.Controls.PhysicalAgentsControl();
             this.tabControl1.SuspendLayout();
             this.welcomeTabPage.SuspendLayout();
             this.generalInfoTab.SuspendLayout();
@@ -55,6 +57,7 @@ namespace RyskTech.Forms.Lab
             this.securityTrainingGroupBox.SuspendLayout();
             this.chemicalResidueInformationTab.SuspendLayout();
             this.biologicalResidueInformationTab.SuspendLayout();
+            this.physicalAgentTab.SuspendLayout();
             this.mechanicalAgentTab.SuspendLayout();
             this.finalConsiderationsTab.SuspendLayout();
             this.SuspendLayout();
@@ -67,6 +70,7 @@ namespace RyskTech.Forms.Lab
             this.tabControl1.Controls.Add(this.safetyTrainingTab);
             this.tabControl1.Controls.Add(this.chemicalResidueInformationTab);
             this.tabControl1.Controls.Add(this.biologicalResidueInformationTab);
+            this.tabControl1.Controls.Add(this.physicalAgentTab);
             this.tabControl1.Controls.Add(this.mechanicalAgentTab);
             this.tabControl1.Controls.Add(this.finalConsiderationsTab);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -199,6 +203,16 @@ namespace RyskTech.Forms.Lab
             this.biologicalAgentsInformation1.Size = new System.Drawing.Size(826, 435);
             this.biologicalAgentsInformation1.TabIndex = 0;
             // 
+            // physicalAgentTab
+            // 
+            this.physicalAgentTab.Controls.Add(this.physicalAgentsControl1);
+            this.physicalAgentTab.Location = new System.Drawing.Point(4, 22);
+            this.physicalAgentTab.Name = "physicalAgentTab";
+            this.physicalAgentTab.Size = new System.Drawing.Size(826, 435);
+            this.physicalAgentTab.TabIndex = 8;
+            this.physicalAgentTab.Text = "Agentes Físicos";
+            this.physicalAgentTab.UseVisualStyleBackColor = true;
+            // 
             // mechanicalAgentTab
             // 
             this.mechanicalAgentTab.Controls.Add(this.mechanicalAgentControl1);
@@ -208,6 +222,14 @@ namespace RyskTech.Forms.Lab
             this.mechanicalAgentTab.TabIndex = 7;
             this.mechanicalAgentTab.Text = "Agentes Mecânicos";
             this.mechanicalAgentTab.UseVisualStyleBackColor = true;
+            // 
+            // mechanicalAgentControl1
+            // 
+            this.mechanicalAgentControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mechanicalAgentControl1.Location = new System.Drawing.Point(0, 0);
+            this.mechanicalAgentControl1.Name = "mechanicalAgentControl1";
+            this.mechanicalAgentControl1.Size = new System.Drawing.Size(826, 435);
+            this.mechanicalAgentControl1.TabIndex = 0;
             // 
             // finalConsiderationsTab
             // 
@@ -227,13 +249,13 @@ namespace RyskTech.Forms.Lab
             this.finalConsiderationsControl1.Size = new System.Drawing.Size(826, 435);
             this.finalConsiderationsControl1.TabIndex = 0;
             // 
-            // mechanicalAgentControl1
+            // physicalAgentsControl1
             // 
-            this.mechanicalAgentControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mechanicalAgentControl1.Location = new System.Drawing.Point(0, 0);
-            this.mechanicalAgentControl1.Name = "mechanicalAgentControl1";
-            this.mechanicalAgentControl1.Size = new System.Drawing.Size(826, 435);
-            this.mechanicalAgentControl1.TabIndex = 0;
+            this.physicalAgentsControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.physicalAgentsControl1.Location = new System.Drawing.Point(0, 0);
+            this.physicalAgentsControl1.Name = "physicalAgentsControl1";
+            this.physicalAgentsControl1.Size = new System.Drawing.Size(826, 435);
+            this.physicalAgentsControl1.TabIndex = 0;
             // 
             // LabMainForm
             // 
@@ -254,6 +276,7 @@ namespace RyskTech.Forms.Lab
             this.securityTrainingGroupBox.ResumeLayout(false);
             this.chemicalResidueInformationTab.ResumeLayout(false);
             this.biologicalResidueInformationTab.ResumeLayout(false);
+            this.physicalAgentTab.ResumeLayout(false);
             this.mechanicalAgentTab.ResumeLayout(false);
             this.finalConsiderationsTab.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -281,5 +304,7 @@ namespace RyskTech.Forms.Lab
         private Controls.BiologicalAgentsInformation biologicalAgentsInformation1;
         private System.Windows.Forms.TabPage mechanicalAgentTab;
         private Controls.MechanicalAgentControl mechanicalAgentControl1;
+        private System.Windows.Forms.TabPage physicalAgentTab;
+        private Controls.PhysicalAgentsControl physicalAgentsControl1;
     }
 }

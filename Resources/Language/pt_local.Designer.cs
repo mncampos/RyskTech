@@ -331,6 +331,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Por favor cite todos os agentes físicos e seus riscos associados.
+        /// </summary>
+        internal static string ErrorNoPhyisicalAgents {
+            get {
+                return ResourceManager.GetString("ErrorNoPhyisicalAgents", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Por favor indique todas as amostras biológicasprocessadas pelo seu laboratório.
         /// </summary>
         internal static string ErrorNoProcessedSamples {
