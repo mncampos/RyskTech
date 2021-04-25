@@ -15,7 +15,7 @@ namespace RyskTech.Forms.Lab
 
         private void showRiskClassTableButton_Click(object sender, EventArgs e)
         {
-            ShowTableForm table = new ShowTableForm("../../Resources/Etapa1_Classificacao_de_risco_ANVISA.jpg", "Classificação de risco");
+            ShowTableForm table = new ShowTableForm(Properties.Resources.Quadro1, "Classificação de risco");
             table.ShowDialog();
         }
 

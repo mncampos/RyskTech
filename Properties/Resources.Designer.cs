@@ -61,11 +61,22 @@ namespace RyskTech.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 	Na análise foram considerados os ricos provocados por agentes químicos, físicos e biológicos. Complementarmente, também foram identificados os riscos de acidente por agêntes mecânicos.
+        ///  
+        ///	De acordo com a NR-9 do Ministério do Trabalho e Emprego (MTE, 1994), consideram-se agentes químicos substâncias, compostos ou produtos que possam penetrar no orgnismo pela via respiratória, nas formas de poeiras, fumo, névoas, neblinas, gases ou vapores, ou que pela natureza da atividade de exposição, possam ter conta [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string default_methodology {
+            get {
+                return ResourceManager.GetString("default_methodology", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Etapa1_Classificacao_de_risco_ANVISA {
+        internal static System.Drawing.Bitmap logo {
             get {
-                object obj = ResourceManager.GetObject("Etapa1_Classificacao_de_risco_ANVISA", resourceCulture);
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +84,39 @@ namespace RyskTech.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap placeHolder {
+        internal static System.Drawing.Bitmap Quadro1 {
             get {
-                object obj = ResourceManager.GetObject("placeHolder", resourceCulture);
+                object obj = ResourceManager.GetObject("Quadro1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Quadro2 {
+            get {
+                object obj = ResourceManager.GetObject("Quadro2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Quadro3 {
+            get {
+                object obj = ResourceManager.GetObject("Quadro3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Quadro4 {
+            get {
+                object obj = ResourceManager.GetObject("Quadro4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

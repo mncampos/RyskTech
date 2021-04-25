@@ -21,13 +21,13 @@ namespace RyskTech.Forms.Lab.Controls
 
         private void severityClassesButton_Click(object sender, EventArgs e)
         {
-            ShowTableForm table = new ShowTableForm("../../Resources/Etapa1_Classificacao_de_risco_ANVISA.jpg", "Classificação quanto à severidade");
+            ShowTableForm table = new ShowTableForm(Properties.Resources.Quadro1, "Classificação quanto à severidade");
             table.ShowDialog();
         }
 
         private void frequencyClassesButton_Click(object sender, EventArgs e)
         {
-            ShowTableForm table = new ShowTableForm("../../Resources/Quadro3.png", "Classificação quanto à frequência");
+            ShowTableForm table = new ShowTableForm(Properties.Resources.Quadro3, "Classificação quanto à frequência");
             table.ShowDialog();
         }
 

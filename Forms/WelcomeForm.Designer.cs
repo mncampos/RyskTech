@@ -98,8 +98,8 @@ namespace RyskTech.Forms
             // 
             this.mainTableLayoutPanel.SetColumnSpan(this.pictureBox1, 2);
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::RyskTech.Properties.Resources.placeHolder;
-            this.pictureBox1.InitialImage = global::RyskTech.Properties.Resources.placeHolder;
+            this.pictureBox1.Image = global::RyskTech.Properties.Resources.logo;
+            this.pictureBox1.InitialImage = global::RyskTech.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(100, 59);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(100, 3, 100, 3);
             this.pictureBox1.Name = "pictureBox1";
