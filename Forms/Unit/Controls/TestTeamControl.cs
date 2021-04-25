@@ -1,21 +1,38 @@
 ﻿using RyskTech.Data;
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RyskTech
+namespace RyskTech.Forms.Unit.Controls
 {
-    public partial class TeamControl : UserControl
+    public partial class TestTeamControl : UserControl
     {
         public Team data;
 
-        public TeamControl()
+        public TestTeamControl()
         {
             InitializeComponent();
         }
 
-        private void TeamControl_Load(object sender, EventArgs e)
+        private void TestTeamControl_Load(object sender, EventArgs e)
         {
             data = new Team();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void DirectorNameTextBox_TextChanged(object sender, EventArgs e)
@@ -89,11 +106,6 @@ namespace RyskTech
                 data.CheckValidity();
             else
                 throw new ApplicationException(Resources.Language.pt_local.NotAllTabsVisited);
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

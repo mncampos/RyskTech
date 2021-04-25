@@ -23,7 +23,7 @@ namespace RyskTech.Forms
 
         private void iAmAUnitManagerButton_Click(object sender, EventArgs e)
         {
-            Form unitForm = new UnitMainForm();
+            Form unitForm = new UITestForm();
 
             this.Hide();
             unitForm.ShowDialog();

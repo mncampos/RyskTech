@@ -240,11 +240,53 @@
     <Compile Include="Forms\Lab\LabMainForm.Designer.cs">
       <DependentUpon>LabMainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Unit\Controls\TestHistoryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\TestHistoryControl.Designer.cs">
+      <DependentUpon>TestHistoryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\TestLocationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\TestLocationControl.Designer.cs">
+      <DependentUpon>TestLocationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\TestMethodologyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\TestMethodologyControl.Designer.cs">
+      <DependentUpon>TestMethodologyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\TestStructureControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\TestStructureControl.Designer.cs">
+      <DependentUpon>TestStructureControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\TestTeamControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\TestTeamControl.Designer.cs">
+      <DependentUpon>TestTeamControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\TestWelcomeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\TestWelcomeControl.Designer.cs">
+      <DependentUpon>TestWelcomeControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Unit\Controls\WelcomeControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\Unit\Controls\WelcomeControl.Designer.cs">
       <DependentUpon>WelcomeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Unit\UITestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Unit\UITestForm.Designer.cs">
+      <DependentUpon>UITestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Unit\UnitMainForm.cs">
       <SubType>Form</SubType>
@@ -361,8 +403,29 @@
     <EmbeddedResource Include="Forms\Lab\LabMainForm.resx">
       <DependentUpon>LabMainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Unit\Controls\TestHistoryControl.resx">
+      <DependentUpon>TestHistoryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Unit\Controls\TestLocationControl.resx">
+      <DependentUpon>TestLocationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Unit\Controls\TestMethodologyControl.resx">
+      <DependentUpon>TestMethodologyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Unit\Controls\TestStructureControl.resx">
+      <DependentUpon>TestStructureControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Unit\Controls\TestTeamControl.resx">
+      <DependentUpon>TestTeamControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Unit\Controls\TestWelcomeControl.resx">
+      <DependentUpon>TestWelcomeControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Unit\Controls\WelcomeControl.resx">
       <DependentUpon>WelcomeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Unit\UITestForm.resx">
+      <DependentUpon>UITestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Unit\UnitMainForm.resx">
       <DependentUpon>UnitMainForm.cs</DependentUpon>
@@ -422,7 +485,15 @@
   <ItemGroup>
     <Content Include="icon.ico" />
     <Content Include="Resources\default_method.txt" />
+    <None Include="Resources\Image1.bmp" />
     <Content Include="Resources\logo.jpg" />
+    <None Include="Resources\NavbarIcons\history.png" />
+    <None Include="Resources\NavbarIcons\location.png" />
+    <None Include="Resources\NavbarIcons\methodolody.png" />
+    <None Include="Resources\NavbarIcons\structure.png" />
+    <None Include="Resources\NavbarIcons\team.png" />
+    <None Include="Resources\NavbarIcons\welcome.png" />
+    <None Include="Resources\NavbarIcons\home.png" />
     <Content Include="Resources\Quadro2.png" />
     <Content Include="Resources\Quadro3.png" />
     <Content Include="Resources\Quadro4.png" />

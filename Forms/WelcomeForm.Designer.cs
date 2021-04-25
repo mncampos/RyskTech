@@ -78,7 +78,7 @@ namespace RyskTech.Forms
             this.iAmALaboratoryButton.Name = "iAmALaboratoryButton";
             this.iAmALaboratoryButton.Size = new System.Drawing.Size(169, 36);
             this.iAmALaboratoryButton.TabIndex = 2;
-            this.iAmALaboratoryButton.Text = "Somos um laboratório!";
+            this.iAmALaboratoryButton.Text = "Somos um laboratório";
             this.iAmALaboratoryButton.UseVisualStyleBackColor = true;
             this.iAmALaboratoryButton.Click += new System.EventHandler(this.iAmALaboratoryButton_Click);
             // 
@@ -90,7 +90,7 @@ namespace RyskTech.Forms
             this.iAmAUnitManagerButton.Name = "iAmAUnitManagerButton";
             this.iAmAUnitManagerButton.Size = new System.Drawing.Size(170, 36);
             this.iAmAUnitManagerButton.TabIndex = 3;
-            this.iAmAUnitManagerButton.Text = "Sou gerente de uma unidade!";
+            this.iAmAUnitManagerButton.Text = "Sou gerente de uma unidade";
             this.iAmAUnitManagerButton.UseVisualStyleBackColor = true;
             this.iAmAUnitManagerButton.Click += new System.EventHandler(this.iAmAUnitManagerButton_Click);
             // 

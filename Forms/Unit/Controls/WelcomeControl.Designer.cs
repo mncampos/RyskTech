@@ -38,10 +38,10 @@ namespace RyskTech.Forms.Unit.Controls
             this.unitNameTextBox = new System.Windows.Forms.TextBox();
             this.unitMaterialsHandledLabel = new System.Windows.Forms.Label();
             this.chemicalAgentsUsedCheckBox = new System.Windows.Forms.CheckBox();
-            this.biologicalAgentsUsedCheckBox = new System.Windows.Forms.CheckBox();
             this.physicalAgentsUsedCheckBox = new System.Windows.Forms.CheckBox();
             this.mechanicalAgentsUsedCheckBox = new System.Windows.Forms.CheckBox();
             this.concludeButton = new System.Windows.Forms.Button();
+            this.biologicalAgentsUsedCheckBox = new System.Windows.Forms.CheckBox();
             this.welcomeTableLayoutPanel.SuspendLayout();
             this.firstStepsGroupBox.SuspendLayout();
             this.firstStepsTableLayoutPanel.SuspendLayout();
@@ -103,10 +103,10 @@ namespace RyskTech.Forms.Unit.Controls
             this.firstStepsTableLayoutPanel.Controls.Add(this.unitNameTextBox, 1, 0);
             this.firstStepsTableLayoutPanel.Controls.Add(this.unitMaterialsHandledLabel, 0, 1);
             this.firstStepsTableLayoutPanel.Controls.Add(this.chemicalAgentsUsedCheckBox, 1, 1);
-            this.firstStepsTableLayoutPanel.Controls.Add(this.biologicalAgentsUsedCheckBox, 2, 1);
             this.firstStepsTableLayoutPanel.Controls.Add(this.physicalAgentsUsedCheckBox, 3, 1);
             this.firstStepsTableLayoutPanel.Controls.Add(this.mechanicalAgentsUsedCheckBox, 4, 1);
             this.firstStepsTableLayoutPanel.Controls.Add(this.concludeButton, 4, 3);
+            this.firstStepsTableLayoutPanel.Controls.Add(this.biologicalAgentsUsedCheckBox, 2, 1);
             this.firstStepsTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.firstStepsTableLayoutPanel.Location = new System.Drawing.Point(3, 16);
             this.firstStepsTableLayoutPanel.Name = "firstStepsTableLayoutPanel";
@@ -168,19 +168,6 @@ namespace RyskTech.Forms.Unit.Controls
             this.chemicalAgentsUsedCheckBox.UseVisualStyleBackColor = true;
             this.chemicalAgentsUsedCheckBox.CheckedChanged += new System.EventHandler(this.chemicalAgentsUsedCheckBox_CheckedChanged);
             // 
-            // biologicalAgentsUsedCheckBox
-            // 
-            this.biologicalAgentsUsedCheckBox.AutoSize = true;
-            this.biologicalAgentsUsedCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.biologicalAgentsUsedCheckBox.Location = new System.Drawing.Point(369, 45);
-            this.biologicalAgentsUsedCheckBox.Name = "biologicalAgentsUsedCheckBox";
-            this.biologicalAgentsUsedCheckBox.Size = new System.Drawing.Size(151, 36);
-            this.biologicalAgentsUsedCheckBox.TabIndex = 4;
-            this.biologicalAgentsUsedCheckBox.Text = "Agentes Biológicos";
-            this.biologicalAgentsUsedCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.biologicalAgentsUsedCheckBox.UseVisualStyleBackColor = true;
-            this.biologicalAgentsUsedCheckBox.CheckedChanged += new System.EventHandler(this.biologicalAgentsUsedCheckBox_CheckedChanged);
-            // 
             // physicalAgentsUsedCheckBox
             // 
             this.physicalAgentsUsedCheckBox.AutoSize = true;
@@ -218,6 +205,19 @@ namespace RyskTech.Forms.Unit.Controls
             this.concludeButton.Text = "Concluir e gerar APR";
             this.concludeButton.UseVisualStyleBackColor = true;
             this.concludeButton.Click += new System.EventHandler(this.concludeButton_Click);
+            // 
+            // biologicalAgentsUsedCheckBox
+            // 
+            this.biologicalAgentsUsedCheckBox.AutoSize = true;
+            this.biologicalAgentsUsedCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.biologicalAgentsUsedCheckBox.Location = new System.Drawing.Point(369, 45);
+            this.biologicalAgentsUsedCheckBox.Name = "biologicalAgentsUsedCheckBox";
+            this.biologicalAgentsUsedCheckBox.Size = new System.Drawing.Size(151, 36);
+            this.biologicalAgentsUsedCheckBox.TabIndex = 4;
+            this.biologicalAgentsUsedCheckBox.Text = "Agentes Biológicos";
+            this.biologicalAgentsUsedCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.biologicalAgentsUsedCheckBox.UseVisualStyleBackColor = true;
+            this.biologicalAgentsUsedCheckBox.CheckedChanged += new System.EventHandler(this.biologicalAgentsUsedCheckBox_CheckedChanged);
             // 
             // WelcomeControl
             // 
