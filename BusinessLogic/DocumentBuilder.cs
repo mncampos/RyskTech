@@ -446,10 +446,10 @@ namespace RyskTech
         {
             AddSectionWithTitle("Anexos");
 
-            Image table1 = Image.FromFile("../../Resources/Etapa1_Classificacao_de_risco_ANVISA.jpg");
-            Image table2 = Image.FromFile("../../Resources/Quadro2.png");
-            Image table3 = Image.FromFile("../../Resources/Quadro3.png");
-            Image table4 = Image.FromFile("../../Resources/Quadro4.png");
+            Image table1 = Properties.Resources.Quadro1;
+            Image table2 = Properties.Resources.Quadro2;
+            Image table3 = Properties.Resources.Quadro3;
+            Image table4 = Properties.Resources.Quadro4;
 
             AddSubsectionTitle(GetCurrentSection(), "Quadro1");
             IWPicture table1pic = GetCurrentSection().AddParagraph().AppendPicture(table1);

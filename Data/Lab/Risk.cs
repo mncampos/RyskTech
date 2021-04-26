@@ -51,7 +51,10 @@ namespace RyskTech.Data
             this.safetyNet = safetyNet;
             this.severityClassification = severityClassification;
             this.frequencyClassification = frequencyClassification;
-            this.riskClassification = riskClassificationMap[frequencyClassification + severityClassification];
+            if ((frequencyClassification + severityClassification).Length <= 1)
+                riskClassification = -1;
+            else
+                this.riskClassification = riskClassificationMap[frequencyClassification + severityClassification];
         }
 
         public List<String> GetFormattedRiskList()
@@ -80,6 +83,9 @@ namespace RyskTech.Data
                 throw new ApplicationException(Resources.Language.pt_local.ErrorNoSeverityClassification);
 
             if (this.frequencyClassification == null || this.frequencyClassification.Length <= 0)
+                throw new ApplicationException(Resources.Language.pt_local.ErrorNoFrequencyClassificaiton);
+            
+            if (this.riskClassification <= 0 || riskClassification >= 6)
                 throw new ApplicationException(Resources.Language.pt_local.ErrorNoFrequencyClassificaiton);
         }
     }
