@@ -1,7 +1,7 @@
 ﻿
 namespace RyskTech.Forms.Unit
 {
-    partial class UITestForm
+    partial class UnitMainFormBetter
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@ namespace RyskTech.Forms.Unit
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UnitMainFormBetter));
             this.mainTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.navigationLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.methodologyTabButton = new System.Windows.Forms.Button();
@@ -211,7 +212,7 @@ namespace RyskTech.Forms.Unit
             this.activePanelLabel.Name = "activePanelLabel";
             this.activePanelLabel.Size = new System.Drawing.Size(598, 52);
             this.activePanelLabel.TabIndex = 2;
-            this.activePanelLabel.Text = "Bem vindo!";
+            this.activePanelLabel.Text = "Bem Vindo!";
             this.activePanelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bottomBarPanel
@@ -234,16 +235,18 @@ namespace RyskTech.Forms.Unit
             this.nextConcludeButton.UseVisualStyleBackColor = true;
             this.nextConcludeButton.Click += new System.EventHandler(this.nextConcludeButton_Click);
             // 
-            // UITestForm
+            // UnitMainFormBetter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 561);
             this.Controls.Add(this.mainTableLayoutPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(700, 600);
             this.MinimumSize = new System.Drawing.Size(700, 600);
-            this.Name = "UITestForm";
-            this.Text = "UITestForm";
+            this.Name = "UnitMainFormBetter";
+            this.Text = "RyskTech - Unidade";
             this.Load += new System.EventHandler(this.UITestForm_Load);
             this.mainTableLayoutPanel.ResumeLayout(false);
             this.mainTableLayoutPanel.PerformLayout();

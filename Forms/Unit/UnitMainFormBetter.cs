@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace RyskTech.Forms.Unit
 {
-    public partial class UITestForm : Form
+    public partial class UnitMainFormBetter : Form
     {
         private Data.Unit data;
         private int progress;
@@ -17,7 +17,7 @@ namespace RyskTech.Forms.Unit
         private TestHistoryControl testHistoryControl;
         private TestMethodologyControl testMethodologyControl;
 
-        public UITestForm()
+        public UnitMainFormBetter()
         {
             InitializeComponent();
         }

@@ -69,5 +69,10 @@ namespace RyskTech.Forms.Lab.Controls
             else
                 throw new ApplicationException(Resources.Language.pt_local.NotAllTabsVisited);
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

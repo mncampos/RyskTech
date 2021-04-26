@@ -53,9 +53,9 @@ namespace RyskTech.Forms.Unit.Controls
             // mainTableLayoutPanel
             // 
             this.mainTableLayoutPanel.ColumnCount = 3;
-            this.mainTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.mainTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.mainTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.mainTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.41176F));
+            this.mainTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.75433F));
+            this.mainTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.00692F));
             this.mainTableLayoutPanel.Controls.Add(this.logoPictureBox, 1, 0);
             this.mainTableLayoutPanel.Controls.Add(this.label1, 0, 1);
             this.mainTableLayoutPanel.Controls.Add(this.groupBox1, 0, 2);
@@ -63,20 +63,20 @@ namespace RyskTech.Forms.Unit.Controls
             this.mainTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
             this.mainTableLayoutPanel.Name = "mainTableLayoutPanel";
             this.mainTableLayoutPanel.RowCount = 4;
-            this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34.77478F));
-            this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.91892F));
-            this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.05405F));
+            this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.97216F));
+            this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.11777F));
+            this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.49036F));
             this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.07207F));
-            this.mainTableLayoutPanel.Size = new System.Drawing.Size(578, 555);
+            this.mainTableLayoutPanel.Size = new System.Drawing.Size(596, 467);
             this.mainTableLayoutPanel.TabIndex = 0;
             // 
             // logoPictureBox
             // 
             this.logoPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.logoPictureBox.Image = global::RyskTech.Properties.Resources.logo;
-            this.logoPictureBox.Location = new System.Drawing.Point(195, 3);
+            this.logoPictureBox.Location = new System.Drawing.Point(177, 3);
             this.logoPictureBox.Name = "logoPictureBox";
-            this.logoPictureBox.Size = new System.Drawing.Size(186, 187);
+            this.logoPictureBox.Size = new System.Drawing.Size(224, 176);
             this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logoPictureBox.TabIndex = 0;
             this.logoPictureBox.TabStop = false;
@@ -87,9 +87,9 @@ namespace RyskTech.Forms.Unit.Controls
             this.mainTableLayoutPanel.SetColumnSpan(this.label1, 3);
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 193);
+            this.label1.Location = new System.Drawing.Point(3, 182);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(572, 216);
+            this.label1.Size = new System.Drawing.Size(590, 164);
             this.label1.TabIndex = 1;
             this.label1.Text = resources.GetString("label1.Text");
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -99,10 +99,10 @@ namespace RyskTech.Forms.Unit.Controls
             this.mainTableLayoutPanel.SetColumnSpan(this.groupBox1, 3);
             this.groupBox1.Controls.Add(this.generalInfotableLayoutPanel);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(3, 412);
+            this.groupBox1.Location = new System.Drawing.Point(3, 349);
             this.groupBox1.Name = "groupBox1";
             this.mainTableLayoutPanel.SetRowSpan(this.groupBox1, 2);
-            this.groupBox1.Size = new System.Drawing.Size(572, 140);
+            this.groupBox1.Size = new System.Drawing.Size(590, 115);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informações Gerais";
@@ -123,14 +123,14 @@ namespace RyskTech.Forms.Unit.Controls
             this.generalInfotableLayoutPanel.RowCount = 2;
             this.generalInfotableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.generalInfotableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.generalInfotableLayoutPanel.Size = new System.Drawing.Size(566, 121);
+            this.generalInfotableLayoutPanel.Size = new System.Drawing.Size(584, 96);
             this.generalInfotableLayoutPanel.TabIndex = 0;
             // 
             // unitNameLabel
             // 
             this.unitNameLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.unitNameLabel.AutoSize = true;
-            this.unitNameLabel.Location = new System.Drawing.Point(3, 23);
+            this.unitNameLabel.Location = new System.Drawing.Point(3, 17);
             this.unitNameLabel.Name = "unitNameLabel";
             this.unitNameLabel.Size = new System.Drawing.Size(149, 13);
             this.unitNameLabel.TabIndex = 0;
@@ -141,9 +141,9 @@ namespace RyskTech.Forms.Unit.Controls
             // 
             this.unitNameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.generalInfotableLayoutPanel.SetColumnSpan(this.unitNameTextBox, 2);
-            this.unitNameTextBox.Location = new System.Drawing.Point(161, 20);
+            this.unitNameTextBox.Location = new System.Drawing.Point(166, 14);
             this.unitNameTextBox.Name = "unitNameTextBox";
-            this.unitNameTextBox.Size = new System.Drawing.Size(402, 20);
+            this.unitNameTextBox.Size = new System.Drawing.Size(415, 20);
             this.unitNameTextBox.TabIndex = 1;
             this.unitNameTextBox.TextChanged += new System.EventHandler(this.unitNameTextBox_TextChanged);
             // 
@@ -151,7 +151,7 @@ namespace RyskTech.Forms.Unit.Controls
             // 
             this.manipulatedAgentsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.manipulatedAgentsLabel.AutoSize = true;
-            this.manipulatedAgentsLabel.Location = new System.Drawing.Point(63, 60);
+            this.manipulatedAgentsLabel.Location = new System.Drawing.Point(68, 48);
             this.manipulatedAgentsLabel.Name = "manipulatedAgentsLabel";
             this.manipulatedAgentsLabel.Size = new System.Drawing.Size(92, 13);
             this.manipulatedAgentsLabel.TabIndex = 2;
@@ -165,9 +165,9 @@ namespace RyskTech.Forms.Unit.Controls
             this.panel1.Controls.Add(this.biologicalAgentsUsedCheckBox);
             this.panel1.Controls.Add(this.chemicalAgentsUsedCheckBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(161, 63);
+            this.panel1.Location = new System.Drawing.Point(166, 51);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(212, 55);
+            this.panel1.Size = new System.Drawing.Size(219, 42);
             this.panel1.TabIndex = 4;
             // 
             // mechanicalAgentsUsedCheckBox
@@ -220,7 +220,7 @@ namespace RyskTech.Forms.Unit.Controls
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.mainTableLayoutPanel);
             this.Name = "TestWelcomeControl";
-            this.Size = new System.Drawing.Size(578, 555);
+            this.Size = new System.Drawing.Size(596, 467);
             this.Load += new System.EventHandler(this.TestWelcomeControl_Load);
             this.mainTableLayoutPanel.ResumeLayout(false);
             this.mainTableLayoutPanel.PerformLayout();

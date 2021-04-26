@@ -145,6 +145,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.label5.TabIndex = 0;
             this.label5.Text = "Com qual periodicidade?";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 

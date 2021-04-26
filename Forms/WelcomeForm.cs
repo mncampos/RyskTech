@@ -14,7 +14,7 @@ namespace RyskTech.Forms
 
         private void iAmALaboratoryButton_Click(object sender, EventArgs e)
         {
-            Form labForm = new LabMainForm();
+            Form labForm = new LabMainFormBetter();
 
             this.Hide();
             labForm.ShowDialog();
@@ -23,7 +23,7 @@ namespace RyskTech.Forms
 
         private void iAmAUnitManagerButton_Click(object sender, EventArgs e)
         {
-            Form unitForm = new UITestForm();
+            Form unitForm = new UnitMainFormBetter();
 
             this.Hide();
             unitForm.ShowDialog();

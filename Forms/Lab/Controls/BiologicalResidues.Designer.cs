@@ -171,7 +171,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.processedSamplesLayoutPanel.ColumnCount = 3;
             this.processedSamplesLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.31818F));
             this.processedSamplesLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.68182F));
-            this.processedSamplesLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 192F));
+            this.processedSamplesLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 195F));
             this.processedSamplesLayoutPanel.Controls.Add(this.processedSamplesLabel, 0, 0);
             this.processedSamplesLayoutPanel.Controls.Add(this.newProcessedSampleTextBox, 2, 2);
             this.processedSamplesLayoutPanel.Controls.Add(this.addSampleButton, 1, 2);
@@ -205,19 +205,19 @@ namespace RyskTech.Forms.Lab.Controls
             // newProcessedSampleTextBox
             // 
             this.newProcessedSampleTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.newProcessedSampleTextBox.Location = new System.Drawing.Point(253, 175);
+            this.newProcessedSampleTextBox.Location = new System.Drawing.Point(250, 175);
             this.newProcessedSampleTextBox.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
             this.newProcessedSampleTextBox.Name = "newProcessedSampleTextBox";
-            this.newProcessedSampleTextBox.Size = new System.Drawing.Size(187, 20);
+            this.newProcessedSampleTextBox.Size = new System.Drawing.Size(190, 20);
             this.newProcessedSampleTextBox.TabIndex = 2;
             // 
             // addSampleButton
             // 
             this.addSampleButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addSampleButton.Location = new System.Drawing.Point(181, 175);
+            this.addSampleButton.Location = new System.Drawing.Point(179, 175);
             this.addSampleButton.Margin = new System.Windows.Forms.Padding(8);
             this.addSampleButton.Name = "addSampleButton";
-            this.addSampleButton.Size = new System.Drawing.Size(61, 23);
+            this.addSampleButton.Size = new System.Drawing.Size(60, 23);
             this.addSampleButton.TabIndex = 3;
             this.addSampleButton.Text = "Adicionar";
             this.addSampleButton.UseVisualStyleBackColor = true;
@@ -230,7 +230,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.processedSamplesListBox.Location = new System.Drawing.Point(3, 63);
             this.processedSamplesListBox.Name = "processedSamplesListBox";
             this.processedSamplesLayoutPanel.SetRowSpan(this.processedSamplesListBox, 2);
-            this.processedSamplesListBox.Size = new System.Drawing.Size(167, 140);
+            this.processedSamplesListBox.Size = new System.Drawing.Size(165, 140);
             this.processedSamplesListBox.TabIndex = 4;
             // 
             // registryAndCertificationGroupBox
