@@ -270,16 +270,25 @@ namespace RyskTech.Forms.Lab
 
                 APR compilation = new APR(data);
 
-                DocumentBuilder docBuilder = new DocumentBuilder(compilation, "APR_Laboratorio.docx");
+                SaveFileDialog save = new SaveFileDialog();
+                save.Filter = "Word Document|*.docx";
+                save.Title = "Salvar APR";
 
-                int statusCode = docBuilder.CreateLabDocumentFromAPR();
+                DialogResult result = save.ShowDialog();
 
-                if (statusCode == 0)
-                    MessageBox.Show("APR Gerada com sucesso!", "Obrigado por usar RyskTech! :)");
-                else
-                    MessageBox.Show("Foram encontrados alguns erros na geração da APR", ":(");
+                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(save.FileName))
+                {
+                    DocumentBuilder docBuilder = new DocumentBuilder(compilation, save.FileName);
 
-                Close();
+                    int statusCode = docBuilder.CreateLabDocumentFromAPR();
+
+                    if (statusCode == 0)
+                        MessageBox.Show("APR Gerada com sucesso!", "Obrigado por usar RyskTech! :)");
+                    else
+                        MessageBox.Show("Foram encontrados alguns erros na geração da APR", ":(");
+
+                    Close();
+                }
             }
             catch (Exception ex)
             {

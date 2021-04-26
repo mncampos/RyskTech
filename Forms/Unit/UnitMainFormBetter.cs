@@ -165,16 +165,26 @@ namespace RyskTech.Forms.Unit
                 PrepareForGeneration();
 
                 APR compilation = new APR(data);
-                DocumentBuilder docBuilder = new DocumentBuilder(compilation, "APR_Unidade.docx");
 
-                int statusCode = docBuilder.CreateUnitDocumentFromAPR();
+                SaveFileDialog save = new SaveFileDialog();
+                save.Filter = "Word Document|*.docx";
+                save.Title = "Salvar APR";
 
-                if (statusCode == 0)
-                    MessageBox.Show("APR Gerada com sucesso!", "Obrigado por usar RyskTech! :)");
-                else
-                    MessageBox.Show("Foram encontrados alguns erros na geração da APR", ":(");
+                DialogResult result = save.ShowDialog();
 
-                Close();
+                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(save.FileName))
+                {
+                    DocumentBuilder docBuilder = new DocumentBuilder(compilation, save.FileName);
+
+                    int statusCode = docBuilder.CreateUnitDocumentFromAPR();
+
+                    if (statusCode == 0)
+                        MessageBox.Show("APR Gerada com sucesso!", "Obrigado por usar RyskTech! :)");
+                    else
+                        MessageBox.Show("Foram encontrados alguns erros na geração da APR", ":(");
+
+                    Close();
+                }
             }
             catch (Exception ex)
             {

@@ -56,7 +56,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.addBiologicalResidueButton = new System.Windows.Forms.Button();
             this.bioAgentData = new System.Windows.Forms.DataGridView();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.riskClass = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.riskClass = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -354,12 +354,9 @@ namespace RyskTech.Forms.Lab.Controls
             // riskClass
             // 
             this.riskClass.HeaderText = "Classe de Risco";
-            this.riskClass.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4"});
             this.riskClass.Name = "riskClass";
+            this.riskClass.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.riskClass.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // usage
             // 
@@ -398,9 +395,6 @@ namespace RyskTech.Forms.Lab.Controls
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView bioAgentData;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name;
-        private System.Windows.Forms.DataGridViewComboBoxColumn riskClass;
-        private System.Windows.Forms.DataGridViewTextBoxColumn usage;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button addBiologicalResidueButton;
@@ -425,5 +419,8 @@ namespace RyskTech.Forms.Lab.Controls
         private System.Windows.Forms.TextBox bioResidueDestinationTextBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn riskClass;
+        private System.Windows.Forms.DataGridViewTextBoxColumn usage;
     }
 }
