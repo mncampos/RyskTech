@@ -29,6 +29,7 @@ namespace RyskTech.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WelcomeForm));
             this.mainTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.welcomeTextLabel = new System.Windows.Forms.Label();
             this.iAmALaboratoryButton = new System.Windows.Forms.Button();
@@ -114,6 +115,7 @@ namespace RyskTech.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(379, 254);
             this.Controls.Add(this.mainTableLayoutPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(395, 293);
             this.MinimizeBox = false;

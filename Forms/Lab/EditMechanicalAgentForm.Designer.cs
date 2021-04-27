@@ -112,6 +112,7 @@ namespace RyskTech.Forms.Lab
             "Choque eletrico",
             "Outros"});
             this.riskComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.riskComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.riskComboBox.FormattingEnabled = true;
             this.riskComboBox.Items.AddRange(new object[] {
             "Corte",
@@ -170,6 +171,7 @@ namespace RyskTech.Forms.Lab
             // agentComboBox
             // 
             this.agentComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.agentComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.agentComboBox.FormattingEnabled = true;
             this.agentComboBox.Items.AddRange(new object[] {
             "Arranjo físico inadequado",

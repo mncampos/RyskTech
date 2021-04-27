@@ -190,6 +190,7 @@ namespace RyskTech.Forms.Unit.Controls
             // 
             // OtherTextBox
             // 
+            this.OtherTextBox.Enabled = false;
             this.OtherTextBox.Location = new System.Drawing.Point(48, 116);
             this.OtherTextBox.Name = "OtherTextBox";
             this.OtherTextBox.Size = new System.Drawing.Size(133, 20);

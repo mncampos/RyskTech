@@ -30,21 +30,26 @@ namespace RyskTech.Forms.Lab.Controls
         private void InitializeComponent()
         {
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.fispqExplanation = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.hasFISPQRadioButton = new System.Windows.Forms.RadioButton();
+            this.noFISPQRadioButton = new System.Windows.Forms.RadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.yesRadioButton = new System.Windows.Forms.RadioButton();
+            this.noRadioButton = new System.Windows.Forms.RadioButton();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.nbrLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.chemicalResidueData = new System.Windows.Forms.DataGridView();
-            this.chemicalResidueName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chemicalResiduePhysicalState = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chemicalResidueOrigin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chemicalResidueQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.measurement = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chemicalResidueDangers = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dangerCharacteristics = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.inertState = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chemicalResidueStorageLocation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chemicalResidueContainer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.removeReactorButton = new System.Windows.Forms.Button();
+            this.addReactorButton = new System.Windows.Forms.Button();
+            this.removeResidueButton = new System.Windows.Forms.Button();
+            this.addResidueButton = new System.Windows.Forms.Button();
             this.chemicalReactorData = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,31 +62,26 @@ namespace RyskTech.Forms.Lab.Controls
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addResidueButton = new System.Windows.Forms.Button();
-            this.removeResidueButton = new System.Windows.Forms.Button();
-            this.addReactorButton = new System.Windows.Forms.Button();
-            this.removeReactorButton = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.nbrLinkLabel = new System.Windows.Forms.LinkLabel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.noRadioButton = new System.Windows.Forms.RadioButton();
-            this.yesRadioButton = new System.Windows.Forms.RadioButton();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.hasFISPQRadioButton = new System.Windows.Forms.RadioButton();
-            this.noFISPQRadioButton = new System.Windows.Forms.RadioButton();
-            this.fispqExplanation = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.chemicalResidueData = new System.Windows.Forms.DataGridView();
+            this.chemicalResidueName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chemicalResiduePhysicalState = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chemicalResidueOrigin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chemicalResidueQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.measurement = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chemicalResidueDangers = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dangerCharacteristics = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.inertState = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chemicalResidueStorageLocation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chemicalResidueContainer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.mainPanel.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chemicalResidueData)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chemicalReactorData)).BeginInit();
-            this.panel1.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chemicalReactorData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chemicalResidueData)).BeginInit();
             this.SuspendLayout();
             // 
             // mainPanel
@@ -104,16 +104,170 @@ namespace RyskTech.Forms.Lab.Controls
             this.mainPanel.Size = new System.Drawing.Size(596, 467);
             this.mainPanel.TabIndex = 0;
             // 
-            // label1
+            // label7
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(547, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Indique nas tabelas abaixo os reagentes e resíduos químicos que são manipulados e" +
-    "/ou gerados em sua unidade.";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(304, 381);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(191, 13);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Qual o destino dos resíduos químicos?";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(18, 383);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(269, 13);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Como é feito o armazenamento dos resíduos químicos?";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(301, 399);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox2.Size = new System.Drawing.Size(264, 56);
+            this.textBox2.TabIndex = 15;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(18, 399);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox1.Size = new System.Drawing.Size(245, 56);
+            this.textBox1.TabIndex = 14;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // fispqExplanation
+            // 
+            this.fispqExplanation.Enabled = false;
+            this.fispqExplanation.Location = new System.Drawing.Point(131, 356);
+            this.fispqExplanation.Multiline = true;
+            this.fispqExplanation.Name = "fispqExplanation";
+            this.fispqExplanation.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.fispqExplanation.Size = new System.Drawing.Size(201, 22);
+            this.fispqExplanation.TabIndex = 13;
+            this.fispqExplanation.TextChanged += new System.EventHandler(this.fispqExplanation_TextChanged);
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.hasFISPQRadioButton, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.noFISPQRadioButton, 0, 0);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(18, 356);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(107, 22);
+            this.tableLayoutPanel4.TabIndex = 12;
+            // 
+            // hasFISPQRadioButton
+            // 
+            this.hasFISPQRadioButton.AutoSize = true;
+            this.hasFISPQRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.hasFISPQRadioButton.Location = new System.Drawing.Point(56, 3);
+            this.hasFISPQRadioButton.Name = "hasFISPQRadioButton";
+            this.hasFISPQRadioButton.Size = new System.Drawing.Size(48, 16);
+            this.hasFISPQRadioButton.TabIndex = 1;
+            this.hasFISPQRadioButton.Text = "Sim:";
+            this.hasFISPQRadioButton.UseVisualStyleBackColor = true;
+            this.hasFISPQRadioButton.CheckedChanged += new System.EventHandler(this.hasFISPQRadioButton_CheckedChanged);
+            // 
+            // noFISPQRadioButton
+            // 
+            this.noFISPQRadioButton.AutoSize = true;
+            this.noFISPQRadioButton.Checked = true;
+            this.noFISPQRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.noFISPQRadioButton.Location = new System.Drawing.Point(3, 3);
+            this.noFISPQRadioButton.Name = "noFISPQRadioButton";
+            this.noFISPQRadioButton.Size = new System.Drawing.Size(47, 16);
+            this.noFISPQRadioButton.TabIndex = 0;
+            this.noFISPQRadioButton.TabStop = true;
+            this.noFISPQRadioButton.Text = "Não";
+            this.noFISPQRadioButton.UseVisualStyleBackColor = true;
+            this.noFISPQRadioButton.CheckedChanged += new System.EventHandler(this.noFISPQRadioButton_CheckedChanged);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.yesRadioButton);
+            this.panel1.Controls.Add(this.noRadioButton);
+            this.panel1.Location = new System.Drawing.Point(21, 304);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(97, 26);
+            this.panel1.TabIndex = 11;
+            // 
+            // yesRadioButton
+            // 
+            this.yesRadioButton.AutoSize = true;
+            this.yesRadioButton.Location = new System.Drawing.Point(52, 6);
+            this.yesRadioButton.Name = "yesRadioButton";
+            this.yesRadioButton.Size = new System.Drawing.Size(42, 17);
+            this.yesRadioButton.TabIndex = 3;
+            this.yesRadioButton.Text = "Sim";
+            this.yesRadioButton.UseVisualStyleBackColor = true;
+            this.yesRadioButton.CheckedChanged += new System.EventHandler(this.yesRadioButton_CheckedChanged);
+            // 
+            // noRadioButton
+            // 
+            this.noRadioButton.AutoSize = true;
+            this.noRadioButton.Checked = true;
+            this.noRadioButton.Location = new System.Drawing.Point(1, 6);
+            this.noRadioButton.Name = "noRadioButton";
+            this.noRadioButton.Size = new System.Drawing.Size(45, 17);
+            this.noRadioButton.TabIndex = 2;
+            this.noRadioButton.TabStop = true;
+            this.noRadioButton.Text = "Não";
+            this.noRadioButton.UseVisualStyleBackColor = true;
+            this.noRadioButton.CheckedChanged += new System.EventHandler(this.noRadioButton_CheckedChanged);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(269, 333);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(108, 13);
+            this.linkLabel1.TabIndex = 10;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "NBR-14725-4:2014 ?";
+            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(15, 333);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(251, 13);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "O laboratório possui FISPQ em concordância com a";
+            // 
+            // nbrLinkLabel
+            // 
+            this.nbrLinkLabel.AutoSize = true;
+            this.nbrLinkLabel.Location = new System.Drawing.Point(304, 288);
+            this.nbrLinkLabel.Margin = new System.Windows.Forms.Padding(1);
+            this.nbrLinkLabel.Name = "nbrLinkLabel";
+            this.nbrLinkLabel.Size = new System.Drawing.Size(108, 13);
+            this.nbrLinkLabel.TabIndex = 4;
+            this.nbrLinkLabel.TabStop = true;
+            this.nbrLinkLabel.Text = "NBR-14725-3:2017 ?";
+            this.nbrLinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.nbrLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.nbrLinkLabel_LinkClicked);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(15, 288);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(291, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Os recipientes de agentes químicos estão de acordo com a ";
             // 
             // groupBox1
             // 
@@ -133,105 +287,49 @@ namespace RyskTech.Forms.Lab.Controls
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Agentes";
             // 
-            // label2
+            // removeReactorButton
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Reagentes";
+            this.removeReactorButton.Location = new System.Drawing.Point(93, 246);
+            this.removeReactorButton.Margin = new System.Windows.Forms.Padding(8);
+            this.removeReactorButton.Name = "removeReactorButton";
+            this.removeReactorButton.Size = new System.Drawing.Size(68, 27);
+            this.removeReactorButton.TabIndex = 4;
+            this.removeReactorButton.Text = "Remover";
+            this.removeReactorButton.UseVisualStyleBackColor = true;
+            this.removeReactorButton.Click += new System.EventHandler(this.removeReactorButton_Click);
             // 
-            // label3
+            // addReactorButton
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(281, 59);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Resíduos";
+            this.addReactorButton.Location = new System.Drawing.Point(9, 246);
+            this.addReactorButton.Margin = new System.Windows.Forms.Padding(8);
+            this.addReactorButton.Name = "addReactorButton";
+            this.addReactorButton.Size = new System.Drawing.Size(68, 27);
+            this.addReactorButton.TabIndex = 2;
+            this.addReactorButton.Text = "Novo";
+            this.addReactorButton.UseVisualStyleBackColor = true;
+            this.addReactorButton.Click += new System.EventHandler(this.addReactorButton_Click);
             // 
-            // chemicalResidueData
+            // removeResidueButton
             // 
-            this.chemicalResidueData.AllowUserToAddRows = false;
-            this.chemicalResidueData.AllowUserToDeleteRows = false;
-            this.chemicalResidueData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.chemicalResidueData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.chemicalResidueName,
-            this.chemicalResiduePhysicalState,
-            this.chemicalResidueOrigin,
-            this.chemicalResidueQuantity,
-            this.measurement,
-            this.chemicalResidueDangers,
-            this.dangerCharacteristics,
-            this.inertState,
-            this.chemicalResidueStorageLocation,
-            this.chemicalResidueContainer});
-            this.chemicalResidueData.Location = new System.Drawing.Point(284, 75);
-            this.chemicalResidueData.Name = "chemicalResidueData";
-            this.chemicalResidueData.ReadOnly = true;
-            this.chemicalResidueData.Size = new System.Drawing.Size(269, 161);
-            this.chemicalResidueData.TabIndex = 3;
+            this.removeResidueButton.Location = new System.Drawing.Point(370, 246);
+            this.removeResidueButton.Margin = new System.Windows.Forms.Padding(8);
+            this.removeResidueButton.Name = "removeResidueButton";
+            this.removeResidueButton.Size = new System.Drawing.Size(68, 27);
+            this.removeResidueButton.TabIndex = 6;
+            this.removeResidueButton.Text = "Remover";
+            this.removeResidueButton.UseVisualStyleBackColor = true;
+            this.removeResidueButton.Click += new System.EventHandler(this.removeResidueButton_Click);
             // 
-            // chemicalResidueName
+            // addResidueButton
             // 
-            this.chemicalResidueName.HeaderText = "Nome";
-            this.chemicalResidueName.Name = "chemicalResidueName";
-            this.chemicalResidueName.ReadOnly = true;
-            // 
-            // chemicalResiduePhysicalState
-            // 
-            this.chemicalResiduePhysicalState.HeaderText = "Estado Físico";
-            this.chemicalResiduePhysicalState.Name = "chemicalResiduePhysicalState";
-            this.chemicalResiduePhysicalState.ReadOnly = true;
-            // 
-            // chemicalResidueOrigin
-            // 
-            this.chemicalResidueOrigin.HeaderText = "Origem";
-            this.chemicalResidueOrigin.Name = "chemicalResidueOrigin";
-            this.chemicalResidueOrigin.ReadOnly = true;
-            // 
-            // chemicalResidueQuantity
-            // 
-            this.chemicalResidueQuantity.HeaderText = "Quantidade";
-            this.chemicalResidueQuantity.Name = "chemicalResidueQuantity";
-            this.chemicalResidueQuantity.ReadOnly = true;
-            // 
-            // measurement
-            // 
-            this.measurement.HeaderText = "Unidade de Medida";
-            this.measurement.Name = "measurement";
-            this.measurement.ReadOnly = true;
-            // 
-            // chemicalResidueDangers
-            // 
-            this.chemicalResidueDangers.HeaderText = "Perigoso?";
-            this.chemicalResidueDangers.Name = "chemicalResidueDangers";
-            this.chemicalResidueDangers.ReadOnly = true;
-            // 
-            // dangerCharacteristics
-            // 
-            this.dangerCharacteristics.HeaderText = "Características de periculosidade";
-            this.dangerCharacteristics.Name = "dangerCharacteristics";
-            this.dangerCharacteristics.ReadOnly = true;
-            // 
-            // inertState
-            // 
-            this.inertState.HeaderText = "Inerte?";
-            this.inertState.Name = "inertState";
-            this.inertState.ReadOnly = true;
-            // 
-            // chemicalResidueStorageLocation
-            // 
-            this.chemicalResidueStorageLocation.HeaderText = "Armazenamento";
-            this.chemicalResidueStorageLocation.Name = "chemicalResidueStorageLocation";
-            this.chemicalResidueStorageLocation.ReadOnly = true;
-            // 
-            // chemicalResidueContainer
-            // 
-            this.chemicalResidueContainer.HeaderText = "Recipiente";
-            this.chemicalResidueContainer.Name = "chemicalResidueContainer";
-            this.chemicalResidueContainer.ReadOnly = true;
+            this.addResidueButton.Location = new System.Drawing.Point(286, 246);
+            this.addResidueButton.Margin = new System.Windows.Forms.Padding(8);
+            this.addResidueButton.Name = "addResidueButton";
+            this.addResidueButton.Size = new System.Drawing.Size(68, 27);
+            this.addResidueButton.TabIndex = 5;
+            this.addResidueButton.Text = "Novo";
+            this.addResidueButton.UseVisualStyleBackColor = true;
+            this.addResidueButton.Click += new System.EventHandler(this.addResidueButton_Click);
             // 
             // chemicalReactorData
             // 
@@ -322,213 +420,116 @@ namespace RyskTech.Forms.Lab.Controls
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             this.dataGridViewTextBoxColumn10.ReadOnly = true;
             // 
-            // addResidueButton
+            // chemicalResidueData
             // 
-            this.addResidueButton.Location = new System.Drawing.Point(286, 246);
-            this.addResidueButton.Margin = new System.Windows.Forms.Padding(8);
-            this.addResidueButton.Name = "addResidueButton";
-            this.addResidueButton.Size = new System.Drawing.Size(68, 27);
-            this.addResidueButton.TabIndex = 5;
-            this.addResidueButton.Text = "Novo";
-            this.addResidueButton.UseVisualStyleBackColor = true;
-            this.addResidueButton.Click += new System.EventHandler(this.addResidueButton_Click);
+            this.chemicalResidueData.AllowUserToAddRows = false;
+            this.chemicalResidueData.AllowUserToDeleteRows = false;
+            this.chemicalResidueData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.chemicalResidueData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.chemicalResidueName,
+            this.chemicalResiduePhysicalState,
+            this.chemicalResidueOrigin,
+            this.chemicalResidueQuantity,
+            this.measurement,
+            this.chemicalResidueDangers,
+            this.dangerCharacteristics,
+            this.inertState,
+            this.chemicalResidueStorageLocation,
+            this.chemicalResidueContainer});
+            this.chemicalResidueData.Location = new System.Drawing.Point(284, 75);
+            this.chemicalResidueData.Name = "chemicalResidueData";
+            this.chemicalResidueData.ReadOnly = true;
+            this.chemicalResidueData.Size = new System.Drawing.Size(269, 161);
+            this.chemicalResidueData.TabIndex = 3;
             // 
-            // removeResidueButton
+            // chemicalResidueName
             // 
-            this.removeResidueButton.Location = new System.Drawing.Point(370, 246);
-            this.removeResidueButton.Margin = new System.Windows.Forms.Padding(8);
-            this.removeResidueButton.Name = "removeResidueButton";
-            this.removeResidueButton.Size = new System.Drawing.Size(68, 27);
-            this.removeResidueButton.TabIndex = 6;
-            this.removeResidueButton.Text = "Remover";
-            this.removeResidueButton.UseVisualStyleBackColor = true;
-            this.removeResidueButton.Click += new System.EventHandler(this.removeResidueButton_Click);
+            this.chemicalResidueName.HeaderText = "Nome";
+            this.chemicalResidueName.Name = "chemicalResidueName";
+            this.chemicalResidueName.ReadOnly = true;
             // 
-            // addReactorButton
+            // chemicalResiduePhysicalState
             // 
-            this.addReactorButton.Location = new System.Drawing.Point(9, 246);
-            this.addReactorButton.Margin = new System.Windows.Forms.Padding(8);
-            this.addReactorButton.Name = "addReactorButton";
-            this.addReactorButton.Size = new System.Drawing.Size(68, 27);
-            this.addReactorButton.TabIndex = 2;
-            this.addReactorButton.Text = "Novo";
-            this.addReactorButton.UseVisualStyleBackColor = true;
-            this.addReactorButton.Click += new System.EventHandler(this.addReactorButton_Click);
+            this.chemicalResiduePhysicalState.HeaderText = "Estado Físico";
+            this.chemicalResiduePhysicalState.Name = "chemicalResiduePhysicalState";
+            this.chemicalResiduePhysicalState.ReadOnly = true;
             // 
-            // removeReactorButton
+            // chemicalResidueOrigin
             // 
-            this.removeReactorButton.Location = new System.Drawing.Point(93, 246);
-            this.removeReactorButton.Margin = new System.Windows.Forms.Padding(8);
-            this.removeReactorButton.Name = "removeReactorButton";
-            this.removeReactorButton.Size = new System.Drawing.Size(68, 27);
-            this.removeReactorButton.TabIndex = 4;
-            this.removeReactorButton.Text = "Remover";
-            this.removeReactorButton.UseVisualStyleBackColor = true;
-            this.removeReactorButton.Click += new System.EventHandler(this.removeReactorButton_Click);
+            this.chemicalResidueOrigin.HeaderText = "Origem";
+            this.chemicalResidueOrigin.Name = "chemicalResidueOrigin";
+            this.chemicalResidueOrigin.ReadOnly = true;
             // 
-            // label4
+            // chemicalResidueQuantity
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 288);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(291, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Os recipientes de agentes químicos estão de acordo com a ";
+            this.chemicalResidueQuantity.HeaderText = "Quantidade";
+            this.chemicalResidueQuantity.Name = "chemicalResidueQuantity";
+            this.chemicalResidueQuantity.ReadOnly = true;
             // 
-            // nbrLinkLabel
+            // measurement
             // 
-            this.nbrLinkLabel.AutoSize = true;
-            this.nbrLinkLabel.Location = new System.Drawing.Point(304, 288);
-            this.nbrLinkLabel.Margin = new System.Windows.Forms.Padding(1);
-            this.nbrLinkLabel.Name = "nbrLinkLabel";
-            this.nbrLinkLabel.Size = new System.Drawing.Size(108, 13);
-            this.nbrLinkLabel.TabIndex = 4;
-            this.nbrLinkLabel.TabStop = true;
-            this.nbrLinkLabel.Text = "NBR-14725-3:2017 ?";
-            this.nbrLinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.nbrLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.nbrLinkLabel_LinkClicked);
+            this.measurement.HeaderText = "Unidade de Medida";
+            this.measurement.Name = "measurement";
+            this.measurement.ReadOnly = true;
             // 
-            // label5
+            // chemicalResidueDangers
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 333);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(251, 13);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "O laboratório possui FISPQ em concordância com a";
+            this.chemicalResidueDangers.HeaderText = "Perigoso?";
+            this.chemicalResidueDangers.Name = "chemicalResidueDangers";
+            this.chemicalResidueDangers.ReadOnly = true;
             // 
-            // linkLabel1
+            // dangerCharacteristics
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(269, 333);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(108, 13);
-            this.linkLabel1.TabIndex = 10;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "NBR-14725-4:2014 ?";
-            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.dangerCharacteristics.HeaderText = "Características de periculosidade";
+            this.dangerCharacteristics.Name = "dangerCharacteristics";
+            this.dangerCharacteristics.ReadOnly = true;
             // 
-            // panel1
+            // inertState
             // 
-            this.panel1.Controls.Add(this.yesRadioButton);
-            this.panel1.Controls.Add(this.noRadioButton);
-            this.panel1.Location = new System.Drawing.Point(21, 304);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(97, 26);
-            this.panel1.TabIndex = 11;
+            this.inertState.HeaderText = "Inerte?";
+            this.inertState.Name = "inertState";
+            this.inertState.ReadOnly = true;
             // 
-            // noRadioButton
+            // chemicalResidueStorageLocation
             // 
-            this.noRadioButton.AutoSize = true;
-            this.noRadioButton.Location = new System.Drawing.Point(1, 6);
-            this.noRadioButton.Name = "noRadioButton";
-            this.noRadioButton.Size = new System.Drawing.Size(45, 17);
-            this.noRadioButton.TabIndex = 2;
-            this.noRadioButton.TabStop = true;
-            this.noRadioButton.Text = "Não";
-            this.noRadioButton.UseVisualStyleBackColor = true;
-            this.noRadioButton.CheckedChanged += new System.EventHandler(this.noRadioButton_CheckedChanged);
+            this.chemicalResidueStorageLocation.HeaderText = "Armazenamento";
+            this.chemicalResidueStorageLocation.Name = "chemicalResidueStorageLocation";
+            this.chemicalResidueStorageLocation.ReadOnly = true;
             // 
-            // yesRadioButton
+            // chemicalResidueContainer
             // 
-            this.yesRadioButton.AutoSize = true;
-            this.yesRadioButton.Location = new System.Drawing.Point(52, 6);
-            this.yesRadioButton.Name = "yesRadioButton";
-            this.yesRadioButton.Size = new System.Drawing.Size(42, 17);
-            this.yesRadioButton.TabIndex = 3;
-            this.yesRadioButton.TabStop = true;
-            this.yesRadioButton.Text = "Sim";
-            this.yesRadioButton.UseVisualStyleBackColor = true;
-            this.yesRadioButton.CheckedChanged += new System.EventHandler(this.yesRadioButton_CheckedChanged);
+            this.chemicalResidueContainer.HeaderText = "Recipiente";
+            this.chemicalResidueContainer.Name = "chemicalResidueContainer";
+            this.chemicalResidueContainer.ReadOnly = true;
             // 
-            // tableLayoutPanel4
+            // label3
             // 
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.hasFISPQRadioButton, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.noFISPQRadioButton, 0, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(18, 356);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(107, 22);
-            this.tableLayoutPanel4.TabIndex = 12;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(281, 59);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Resíduos";
             // 
-            // hasFISPQRadioButton
+            // label2
             // 
-            this.hasFISPQRadioButton.AutoSize = true;
-            this.hasFISPQRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.hasFISPQRadioButton.Location = new System.Drawing.Point(56, 3);
-            this.hasFISPQRadioButton.Name = "hasFISPQRadioButton";
-            this.hasFISPQRadioButton.Size = new System.Drawing.Size(48, 16);
-            this.hasFISPQRadioButton.TabIndex = 1;
-            this.hasFISPQRadioButton.TabStop = true;
-            this.hasFISPQRadioButton.Text = "Sim:";
-            this.hasFISPQRadioButton.UseVisualStyleBackColor = true;
-            this.hasFISPQRadioButton.CheckedChanged += new System.EventHandler(this.hasFISPQRadioButton_CheckedChanged);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Reagentes";
             // 
-            // noFISPQRadioButton
+            // label1
             // 
-            this.noFISPQRadioButton.AutoSize = true;
-            this.noFISPQRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.noFISPQRadioButton.Location = new System.Drawing.Point(3, 3);
-            this.noFISPQRadioButton.Name = "noFISPQRadioButton";
-            this.noFISPQRadioButton.Size = new System.Drawing.Size(47, 16);
-            this.noFISPQRadioButton.TabIndex = 0;
-            this.noFISPQRadioButton.TabStop = true;
-            this.noFISPQRadioButton.Text = "Não";
-            this.noFISPQRadioButton.UseVisualStyleBackColor = true;
-            this.noFISPQRadioButton.CheckedChanged += new System.EventHandler(this.noFISPQRadioButton_CheckedChanged);
-            // 
-            // fispqExplanation
-            // 
-            this.fispqExplanation.Location = new System.Drawing.Point(131, 356);
-            this.fispqExplanation.Multiline = true;
-            this.fispqExplanation.Name = "fispqExplanation";
-            this.fispqExplanation.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.fispqExplanation.Size = new System.Drawing.Size(201, 22);
-            this.fispqExplanation.TabIndex = 13;
-            this.fispqExplanation.TextChanged += new System.EventHandler(this.fispqExplanation_TextChanged);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(18, 399);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(245, 56);
-            this.textBox1.TabIndex = 14;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(301, 399);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(264, 56);
-            this.textBox2.TabIndex = 15;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(18, 383);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(269, 13);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Como é feito o armazenamento dos resíduos químicos?";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(304, 381);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(191, 13);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "Qual o destino dos resíduos químicos?";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(547, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Indique nas tabelas abaixo os reagentes e resíduos químicos que são manipulados e" +
+    "/ou gerados em sua unidade.";
             // 
             // ChemicalAgentControlBetter
             // 
@@ -540,14 +541,14 @@ namespace RyskTech.Forms.Lab.Controls
             this.Load += new System.EventHandler(this.ChemicalAgentControlBetter_Load);
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chemicalResidueData)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chemicalReactorData)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chemicalReactorData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chemicalResidueData)).EndInit();
             this.ResumeLayout(false);
 
         }

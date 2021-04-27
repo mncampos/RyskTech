@@ -77,6 +77,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.otherEPITextBox = new System.Windows.Forms.TextBox();
             this.maskCheckBox = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.mainPanel.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -87,6 +88,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.tableLayoutPanel4.SuspendLayout();
             this.epiGroupBox.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainPanel
@@ -125,6 +127,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.panel2.Controls.Add(this.monthsRadioButton);
             this.panel2.Controls.Add(this.weeksRadioButton);
             this.panel2.Controls.Add(this.daysRadioButton);
+            this.panel2.Enabled = false;
             this.panel2.Location = new System.Drawing.Point(0, 149);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(223, 31);
@@ -181,6 +184,7 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // numericUpDown1
             // 
+            this.numericUpDown1.Enabled = false;
             this.numericUpDown1.Location = new System.Drawing.Point(111, 130);
             this.numericUpDown1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
             this.numericUpDown1.Name = "numericUpDown1";
@@ -191,6 +195,7 @@ namespace RyskTech.Forms.Lab.Controls
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Enabled = false;
             this.label7.Location = new System.Drawing.Point(54, 132);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(44, 13);
@@ -209,6 +214,7 @@ namespace RyskTech.Forms.Lab.Controls
             // noRadioButton
             // 
             this.noRadioButton.AutoSize = true;
+            this.noRadioButton.Checked = true;
             this.noRadioButton.Location = new System.Drawing.Point(57, 68);
             this.noRadioButton.Name = "noRadioButton";
             this.noRadioButton.Size = new System.Drawing.Size(45, 17);
@@ -225,7 +231,6 @@ namespace RyskTech.Forms.Lab.Controls
             this.yesRadioButton.Name = "yesRadioButton";
             this.yesRadioButton.Size = new System.Drawing.Size(42, 17);
             this.yesRadioButton.TabIndex = 6;
-            this.yesRadioButton.TabStop = true;
             this.yesRadioButton.Text = "Sim";
             this.yesRadioButton.UseVisualStyleBackColor = true;
             this.yesRadioButton.CheckedChanged += new System.EventHandler(this.yesRadioButton_CheckedChanged);
@@ -251,6 +256,7 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // textBox1
             // 
+            this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(224, 37);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -270,14 +276,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.noEmergentyBoxCheckBox);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.otherFirstAidTextBox);
-            this.panel1.Controls.Add(this.otherFirstAidCheckBox);
-            this.panel1.Controls.Add(this.microporeTapeCheckBox);
-            this.panel1.Controls.Add(this.waterCheckBox);
-            this.panel1.Controls.Add(this.scisorsCheckBox);
-            this.panel1.Controls.Add(this.gazeCheckBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 16);
             this.panel1.Name = "panel1";
@@ -287,7 +288,7 @@ namespace RyskTech.Forms.Lab.Controls
             // noEmergentyBoxCheckBox
             // 
             this.noEmergentyBoxCheckBox.AutoSize = true;
-            this.noEmergentyBoxCheckBox.Location = new System.Drawing.Point(6, 49);
+            this.noEmergentyBoxCheckBox.Location = new System.Drawing.Point(6, 42);
             this.noEmergentyBoxCheckBox.Name = "noEmergentyBoxCheckBox";
             this.noEmergentyBoxCheckBox.Size = new System.Drawing.Size(84, 17);
             this.noEmergentyBoxCheckBox.TabIndex = 10;
@@ -308,7 +309,7 @@ namespace RyskTech.Forms.Lab.Controls
             // otherFirstAidTextBox
             // 
             this.otherFirstAidTextBox.Enabled = false;
-            this.otherFirstAidTextBox.Location = new System.Drawing.Point(6, 174);
+            this.otherFirstAidTextBox.Location = new System.Drawing.Point(3, 115);
             this.otherFirstAidTextBox.Margin = new System.Windows.Forms.Padding(3, 18, 3, 3);
             this.otherFirstAidTextBox.Name = "otherFirstAidTextBox";
             this.otherFirstAidTextBox.Size = new System.Drawing.Size(120, 20);
@@ -318,7 +319,7 @@ namespace RyskTech.Forms.Lab.Controls
             // otherFirstAidCheckBox
             // 
             this.otherFirstAidCheckBox.AutoSize = true;
-            this.otherFirstAidCheckBox.Location = new System.Drawing.Point(6, 152);
+            this.otherFirstAidCheckBox.Location = new System.Drawing.Point(3, 93);
             this.otherFirstAidCheckBox.Name = "otherFirstAidCheckBox";
             this.otherFirstAidCheckBox.Size = new System.Drawing.Size(57, 17);
             this.otherFirstAidCheckBox.TabIndex = 7;
@@ -330,7 +331,7 @@ namespace RyskTech.Forms.Lab.Controls
             // microporeTapeCheckBox
             // 
             this.microporeTapeCheckBox.AutoSize = true;
-            this.microporeTapeCheckBox.Location = new System.Drawing.Point(6, 71);
+            this.microporeTapeCheckBox.Location = new System.Drawing.Point(3, 6);
             this.microporeTapeCheckBox.Name = "microporeTapeCheckBox";
             this.microporeTapeCheckBox.Size = new System.Drawing.Size(93, 17);
             this.microporeTapeCheckBox.TabIndex = 6;
@@ -342,7 +343,7 @@ namespace RyskTech.Forms.Lab.Controls
             // waterCheckBox
             // 
             this.waterCheckBox.AutoSize = true;
-            this.waterCheckBox.Location = new System.Drawing.Point(6, 132);
+            this.waterCheckBox.Location = new System.Drawing.Point(3, 71);
             this.waterCheckBox.Name = "waterCheckBox";
             this.waterCheckBox.Size = new System.Drawing.Size(95, 17);
             this.waterCheckBox.TabIndex = 5;
@@ -354,7 +355,7 @@ namespace RyskTech.Forms.Lab.Controls
             // scisorsCheckBox
             // 
             this.scisorsCheckBox.AutoSize = true;
-            this.scisorsCheckBox.Location = new System.Drawing.Point(6, 112);
+            this.scisorsCheckBox.Location = new System.Drawing.Point(3, 49);
             this.scisorsCheckBox.Name = "scisorsCheckBox";
             this.scisorsCheckBox.Size = new System.Drawing.Size(65, 17);
             this.scisorsCheckBox.TabIndex = 4;
@@ -366,7 +367,7 @@ namespace RyskTech.Forms.Lab.Controls
             // gazeCheckBox
             // 
             this.gazeCheckBox.AutoSize = true;
-            this.gazeCheckBox.Location = new System.Drawing.Point(6, 92);
+            this.gazeCheckBox.Location = new System.Drawing.Point(3, 27);
             this.gazeCheckBox.Name = "gazeCheckBox";
             this.gazeCheckBox.Size = new System.Drawing.Size(51, 17);
             this.gazeCheckBox.TabIndex = 3;
@@ -506,8 +507,8 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             this.otherEPCTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.otherEPCTextBox.Enabled = false;
-            this.otherEPCTextBox.Location = new System.Drawing.Point(105, 161);
-            this.otherEPCTextBox.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.otherEPCTextBox.Location = new System.Drawing.Point(105, 164);
+            this.otherEPCTextBox.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
             this.otherEPCTextBox.Name = "otherEPCTextBox";
             this.otherEPCTextBox.Size = new System.Drawing.Size(96, 20);
             this.otherEPCTextBox.TabIndex = 8;
@@ -689,6 +690,19 @@ namespace RyskTech.Forms.Lab.Controls
             this.label1.Text = "Quais EPIs são disponibilizados?";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.microporeTapeCheckBox);
+            this.panel3.Controls.Add(this.gazeCheckBox);
+            this.panel3.Controls.Add(this.scisorsCheckBox);
+            this.panel3.Controls.Add(this.otherFirstAidTextBox);
+            this.panel3.Controls.Add(this.waterCheckBox);
+            this.panel3.Controls.Add(this.otherFirstAidCheckBox);
+            this.panel3.Location = new System.Drawing.Point(3, 57);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(130, 142);
+            this.panel3.TabIndex = 11;
+            // 
             // SafetyControlBetter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -712,6 +726,8 @@ namespace RyskTech.Forms.Lab.Controls
             this.epiGroupBox.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -766,5 +782,6 @@ namespace RyskTech.Forms.Lab.Controls
         private System.Windows.Forms.RadioButton weeksRadioButton;
         private System.Windows.Forms.RadioButton monthsRadioButton;
         private System.Windows.Forms.RadioButton yearsRadioButton;
+        private System.Windows.Forms.Panel panel3;
     }
 }

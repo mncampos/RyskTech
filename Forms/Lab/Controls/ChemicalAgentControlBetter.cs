@@ -170,11 +170,13 @@ namespace RyskTech.Forms.Lab.Controls
         private void noFISPQRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             storageInfo.FISPQCompliant = false;
+            fispqExplanation.Enabled = false;
         }
 
         private void hasFISPQRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             storageInfo.FISPQCompliant = true;
+            fispqExplanation.Enabled = true;
         }
 
         private void fispqExplanation_TextChanged(object sender, EventArgs e)

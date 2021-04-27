@@ -135,6 +135,7 @@ namespace RyskTech.Forms.Lab
             // riskClassificationTextBox
             // 
             this.riskClassificationTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.riskClassificationTextBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.riskClassificationTextBox.FormattingEnabled = true;
             this.riskClassificationTextBox.Items.AddRange(new object[] {
             "1",

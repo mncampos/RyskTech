@@ -158,6 +158,11 @@ namespace RyskTech.Forms.Lab.Controls
         private void noEmergentyBoxCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             data.noFirstAid = !data.noFirstAid;
+
+            if (data.noFirstAid)
+                panel3.Enabled = false;
+            else
+                panel3.Enabled = true;
         }
 
         private void yesRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -166,6 +171,7 @@ namespace RyskTech.Forms.Lab.Controls
             textBox1.Enabled = true;
             panel2.Enabled = true;
             numericUpDown1.Enabled = true;
+            label7.Enabled = true;
         }
 
         private void noRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -174,6 +180,7 @@ namespace RyskTech.Forms.Lab.Controls
             textBox1.Enabled = false;
             panel2.Enabled = false;
             numericUpDown1.Enabled = false;
+            label7.Enabled = false;
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)

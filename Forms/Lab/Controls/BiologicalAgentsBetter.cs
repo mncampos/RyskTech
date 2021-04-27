@@ -56,6 +56,12 @@ namespace RyskTech.Forms.Lab.Controls
             newProcessedSampleTextBox.Text = "";
         }
 
+        private void removeSampleButton_Click(object sender, EventArgs e)
+        {
+            if (processedSamplesListBox.SelectedIndex >= 0)
+                processedSamplesListBox.Items.RemoveAt(processedSamplesListBox.SelectedIndex);
+        }
+
         private void sisgenRegistryNumberTextBox_TextChanged(object sender, EventArgs e)
         {
             data.SISGEN = sisgenRegistryNumberTextBox.Text;

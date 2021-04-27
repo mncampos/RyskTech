@@ -83,6 +83,10 @@ namespace RyskTech.Forms.Unit.Controls
         private void OtherNumericUpDownCounter_ValueChanged(object sender, EventArgs e)
         {
             data.otherCount = (int)OtherNumericUpDownCounter.Value;
+            if (data.otherCount > 0)
+                OtherTextBox.Enabled = true;
+            else
+                OtherTextBox.Enabled = false;
         }
 
         private void StudentsNumericUpDown_ValueChanged(object sender, EventArgs e)

@@ -47,6 +47,8 @@ namespace RyskTech.Forms.Lab.Controls
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.removeSampleButton = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.newProcessedSampleTextBox = new System.Windows.Forms.TextBox();
             this.addSampleButton = new System.Windows.Forms.Button();
             this.processedSamplesListBox = new System.Windows.Forms.ListBox();
@@ -170,6 +172,7 @@ namespace RyskTech.Forms.Lab.Controls
             // ogmNoRadioButton
             // 
             this.ogmNoRadioButton.AutoSize = true;
+            this.ogmNoRadioButton.Checked = true;
             this.ogmNoRadioButton.Location = new System.Drawing.Point(59, 9);
             this.ogmNoRadioButton.Name = "ogmNoRadioButton";
             this.ogmNoRadioButton.Size = new System.Drawing.Size(45, 17);
@@ -186,7 +189,6 @@ namespace RyskTech.Forms.Lab.Controls
             this.ogmYesRadioButton.Name = "ogmYesRadioButton";
             this.ogmYesRadioButton.Size = new System.Drawing.Size(42, 17);
             this.ogmYesRadioButton.TabIndex = 1;
-            this.ogmYesRadioButton.TabStop = true;
             this.ogmYesRadioButton.Text = "Sim";
             this.ogmYesRadioButton.UseVisualStyleBackColor = true;
             this.ogmYesRadioButton.CheckedChanged += new System.EventHandler(this.ogmYesRadioButton_CheckedChanged);
@@ -203,6 +205,7 @@ namespace RyskTech.Forms.Lab.Controls
             // certificateNoRadioButton
             // 
             this.certificateNoRadioButton.AutoSize = true;
+            this.certificateNoRadioButton.Checked = true;
             this.certificateNoRadioButton.Location = new System.Drawing.Point(59, 8);
             this.certificateNoRadioButton.Name = "certificateNoRadioButton";
             this.certificateNoRadioButton.Size = new System.Drawing.Size(45, 17);
@@ -219,7 +222,6 @@ namespace RyskTech.Forms.Lab.Controls
             this.certificateYesRadioButton.Name = "certificateYesRadioButton";
             this.certificateYesRadioButton.Size = new System.Drawing.Size(42, 17);
             this.certificateYesRadioButton.TabIndex = 1;
-            this.certificateYesRadioButton.TabStop = true;
             this.certificateYesRadioButton.Text = "Sim";
             this.certificateYesRadioButton.UseVisualStyleBackColor = true;
             this.certificateYesRadioButton.CheckedChanged += new System.EventHandler(this.certificateYesRadioButton_CheckedChanged);
@@ -253,6 +255,8 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.removeSampleButton);
+            this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.newProcessedSampleTextBox);
             this.groupBox2.Controls.Add(this.addSampleButton);
             this.groupBox2.Controls.Add(this.processedSamplesListBox);
@@ -262,6 +266,25 @@ namespace RyskTech.Forms.Lab.Controls
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Amostras";
+            // 
+            // removeSampleButton
+            // 
+            this.removeSampleButton.Location = new System.Drawing.Point(104, 188);
+            this.removeSampleButton.Name = "removeSampleButton";
+            this.removeSampleButton.Size = new System.Drawing.Size(64, 23);
+            this.removeSampleButton.TabIndex = 9;
+            this.removeSampleButton.Text = "Remover";
+            this.removeSampleButton.UseVisualStyleBackColor = true;
+            this.removeSampleButton.Click += new System.EventHandler(this.removeSampleButton_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(2, 24);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(190, 26);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Que tipos de amostra são processadas\r\nno seu laboratório? (urina, tecido, etc.)";
             // 
             // newProcessedSampleTextBox
             // 
@@ -273,7 +296,7 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // addSampleButton
             // 
-            this.addSampleButton.Location = new System.Drawing.Point(5, 179);
+            this.addSampleButton.Location = new System.Drawing.Point(5, 188);
             this.addSampleButton.Margin = new System.Windows.Forms.Padding(8);
             this.addSampleButton.Name = "addSampleButton";
             this.addSampleButton.Size = new System.Drawing.Size(60, 23);
@@ -285,7 +308,7 @@ namespace RyskTech.Forms.Lab.Controls
             // processedSamplesListBox
             // 
             this.processedSamplesListBox.FormattingEnabled = true;
-            this.processedSamplesListBox.Location = new System.Drawing.Point(6, 34);
+            this.processedSamplesListBox.Location = new System.Drawing.Point(6, 53);
             this.processedSamplesListBox.Name = "processedSamplesListBox";
             this.processedSamplesListBox.Size = new System.Drawing.Size(165, 134);
             this.processedSamplesListBox.TabIndex = 5;
@@ -422,5 +445,7 @@ namespace RyskTech.Forms.Lab.Controls
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn riskClass;
         private System.Windows.Forms.DataGridViewTextBoxColumn usage;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button removeSampleButton;
     }
 }
