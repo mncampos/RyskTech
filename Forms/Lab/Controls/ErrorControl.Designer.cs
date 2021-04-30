@@ -58,9 +58,9 @@ namespace RyskTech.Forms.Lab.Controls
             this.errorMsgLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.errorMsgLabel.Location = new System.Drawing.Point(102, 105);
             this.errorMsgLabel.Name = "errorMsgLabel";
-            this.errorMsgLabel.Size = new System.Drawing.Size(387, 273);
+            this.errorMsgLabel.Size = new System.Drawing.Size(386, 273);
             this.errorMsgLabel.TabIndex = 0;
-            this.errorMsgLabel.Text = "\"Parece que seu laboratório não mainpula agentes químicos. Caso isto não seja ver" +
+            this.errorMsgLabel.Text = "\"Parece que seu laboratório não manipula agentes químicos. Caso isto não seja ver" +
     "dade, retorne à aba inicial e altere sua seleção\"";
             this.errorMsgLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 

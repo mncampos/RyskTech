@@ -41,13 +41,13 @@ namespace RyskTech.Forms.Lab
         {
             if (radiationCheckBox.Checked)
             {
-                ionizingRadioButton.Enabled = true;
-                notIonizingRadioButton.Enabled = true;
+                ionizingCheckBox.Enabled = true;
+                notIonizingCheckBox.Enabled = true;
             }
             else
             {
-                ionizingRadioButton.Enabled = false;
-                notIonizingRadioButton.Enabled = false;
+                ionizingCheckBox.Enabled = false;
+                notIonizingCheckBox.Enabled = false;
             }
         }
 
@@ -86,7 +86,7 @@ namespace RyskTech.Forms.Lab
                 risks += "Pressões Extremas: " + pressureTextBox.Text + "\n";
 
             if (radiationCheckBox.Checked)
-                risks += "Radiação " + (ionizingRadioButton.Checked ? "" : "não") + " Ionizante\n";
+                risks += "Radiação " + (ionizingCheckBox.Checked ? "Ionizante" : "") + (ionizingCheckBox.Checked && notIonizingCheckBox.Checked? " e " : "") + (notIonizingCheckBox.Checked ? "Não Ionizante" : "") + "\n";
 
             if (intensemagnecticFieldCheckBox.Checked)
                 risks += "Campos magnéticos intensos\n";

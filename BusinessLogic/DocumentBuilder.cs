@@ -11,6 +11,7 @@ namespace RyskTech
         private string documentName;
         private WordDocument documentReference;
         private APR apr;
+
         public DocumentBuilder(APR apr, string documentName)
         {
             this.apr = apr;
@@ -164,8 +165,6 @@ namespace RyskTech
         private void AddChemicalResidueStorageInfo()
         {
             AddSubsectionTitle(GetCurrentSection(), "Informações de armazenamento e disposição");
-            
-            AddTextParagraph(apr.lab.chemicalResidueStorageInfo.storageDescription);
             AddTextParagraph(apr.lab.chemicalResidueStorageInfo.residueDestination);
 
             if (!apr.lab.chemicalResidueStorageInfo.NBRCompliant)
@@ -174,9 +173,9 @@ namespace RyskTech
                 AddTextParagraph("O espaço apresenta rotulagem dos seus resíduos armazenados de acordo com a NBR-14725-3:2017");
 
             if (!apr.lab.chemicalResidueStorageInfo.FISPQCompliant)
-                AddTextParagraph("O espaço não apresenta FISPQ em conformidade com a NBR-14725-4:2014");
+                AddTextParagraph("O espaço não apresenta rotulagem dos recipientes com base na FISPQ ,em conformidade com a NBR-14725-4:2014");
             else
-                AddTextParagraph("O espaço apresenta FISPQ em conformidade com a NBR-14725-4:2014. " + apr.lab.chemicalResidueStorageInfo.FISPQExplanation);
+                AddTextParagraph("O espaço apresenta rotulagem dos recipientes com base na FISPQ, em conformidade com a NBR-14725-4:2014. ");
         }
 
         private void AddSafetyInfo()
@@ -270,6 +269,8 @@ namespace RyskTech
 
             if (apr.lab.biologicalAgentsInfo.SISGEN.Length > 0)
                 AddTextParagraph("O espaço possui número de cadastro SISGEN " + apr.lab.biologicalAgentsInfo.SISGEN);
+            else
+                AddTextParagraph("O espaço não possui número de cadastro SISGEN.");
         }
 
         private void AddBioStorageDestinationInformation()
@@ -360,9 +361,9 @@ namespace RyskTech
             List<string> directors = apr.GetDirectorsFormattedDescriptionList();
 
             AddSectionWithTitle(this.documentReference.Sections.Count + ". Equipe");
-            AddTextParagraph("A unidade tem como equipe da direção: ");
+            AddTextParagraph("Direção: ");
             AddListWithItems(directors);
-            AddTextParagraph("A composição do pessoal presente na unidade se encontra na tabela abaixo: ");
+            AddTextParagraph("Público frequentador: ");
             AddTeamCompositionTable();
             AddTextParagraph("Para entrar em contato com a unidade, utilizar o telefone " + apr.unit.team.contactPhone);
         }

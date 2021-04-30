@@ -7,7 +7,7 @@ namespace RyskTech.Forms.Lab.Controls
         public ErrorControl(string agentType)
         {
             InitializeComponent();
-            string msg = "Parece que seu laboratório não mainpula agentes " + agentType + ". Caso isto não seja verdade, retorne à aba inicial e altere sua seleção";
+            string msg = "Parece que seu laboratório não manipula agentes " + agentType + ". Caso isto não seja verdade, retorne à aba inicial e altere sua seleção";
             errorMsgLabel.Text = msg;
         }
     }

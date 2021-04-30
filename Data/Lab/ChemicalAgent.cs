@@ -26,7 +26,7 @@ namespace RyskTech.Data
             this.container = container;
             this.storageDetails = storageDetails;
         }
-
+        
         public void CheckValidity()
         {
             if (name == null || name.Length <= 0)

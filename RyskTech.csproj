@@ -118,24 +118,24 @@
     <Compile Include="Data\Unit\Structure.cs" />
     <Compile Include="Data\Unit\Team.cs" />
     <Compile Include="Data\Unit\Unit.cs" />
-    <Compile Include="Forms\Lab\Controls\BiologicalAgentsBetter.cs">
+    <Compile Include="Forms\Lab\Controls\BiologicalAgentsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Lab\Controls\BiologicalAgentsBetter.Designer.cs">
-      <DependentUpon>BiologicalAgentsBetter.cs</DependentUpon>
+    <Compile Include="Forms\Lab\Controls\BiologicalAgentsControl.Designer.cs">
+      <DependentUpon>BiologicalAgentsControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Lab\Controls\ChemicalAgentControlBetter.cs">
+    <Compile Include="Forms\Lab\Controls\ChemicalAgentControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Lab\Controls\ChemicalAgentControlBetter.Designer.cs">
-      <DependentUpon>ChemicalAgentControlBetter.cs</DependentUpon>
+    <Compile Include="Forms\Lab\Controls\ChemicalAgentControl.Designer.cs">
+      <DependentUpon>ChemicalAgentControl.cs</DependentUpon>
     </Compile>
     <Compile Include="BusinessLogic\DocumentBuilder.cs" />
-    <Compile Include="Forms\Lab\Controls\ConclusionControlBetter.cs">
+    <Compile Include="Forms\Lab\Controls\ConclusionControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Lab\Controls\ConclusionControlBetter.Designer.cs">
-      <DependentUpon>ConclusionControlBetter.cs</DependentUpon>
+    <Compile Include="Forms\Lab\Controls\ConclusionControl.Designer.cs">
+      <DependentUpon>ConclusionControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Lab\Controls\ErrorControl.cs">
       <SubType>UserControl</SubType>
@@ -143,41 +143,41 @@
     <Compile Include="Forms\Lab\Controls\ErrorControl.Designer.cs">
       <DependentUpon>ErrorControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Lab\Controls\GeneralInformationControlBetter.cs">
+    <Compile Include="Forms\Lab\Controls\GeneralInformationControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Lab\Controls\GeneralInformationControlBetter.Designer.cs">
-      <DependentUpon>GeneralInformationControlBetter.cs</DependentUpon>
+    <Compile Include="Forms\Lab\Controls\GeneralInformationControl.Designer.cs">
+      <DependentUpon>GeneralInformationControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Lab\Controls\LabWelcomeControlBetter.cs">
+    <Compile Include="Forms\Lab\Controls\LabWelcomeControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Lab\Controls\LabWelcomeControlBetter.Designer.cs">
-      <DependentUpon>LabWelcomeControlBetter.cs</DependentUpon>
+    <Compile Include="Forms\Lab\Controls\LabWelcomeControl.Designer.cs">
+      <DependentUpon>LabWelcomeControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Lab\Controls\MechanicalAgentControlBetter.cs">
+    <Compile Include="Forms\Lab\Controls\MechanicalAgentControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Lab\Controls\MechanicalAgentControlBetter.Designer.cs">
-      <DependentUpon>MechanicalAgentControlBetter.cs</DependentUpon>
+    <Compile Include="Forms\Lab\Controls\MechanicalAgentControl.Designer.cs">
+      <DependentUpon>MechanicalAgentControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Lab\Controls\PhysicalAgentsControlBetter.cs">
+    <Compile Include="Forms\Lab\Controls\PhysicalAgentsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Lab\Controls\PhysicalAgentsControlBetter.Designer.cs">
-      <DependentUpon>PhysicalAgentsControlBetter.cs</DependentUpon>
+    <Compile Include="Forms\Lab\Controls\PhysicalAgentsControl.Designer.cs">
+      <DependentUpon>PhysicalAgentsControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Lab\Controls\RiskAnalysisControlBetter.cs">
+    <Compile Include="Forms\Lab\Controls\RiskAnalysisControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Lab\Controls\RiskAnalysisControlBetter.Designer.cs">
-      <DependentUpon>RiskAnalysisControlBetter.cs</DependentUpon>
+    <Compile Include="Forms\Lab\Controls\RiskAnalysisControl.Designer.cs">
+      <DependentUpon>RiskAnalysisControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Lab\Controls\SafetyControlBetter.cs">
+    <Compile Include="Forms\Lab\Controls\SafetyControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Lab\Controls\SafetyControlBetter.Designer.cs">
-      <DependentUpon>SafetyControlBetter.cs</DependentUpon>
+    <Compile Include="Forms\Lab\Controls\SafetyControl.Designer.cs">
+      <DependentUpon>SafetyControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Lab\EditBiologicalAgentForm.cs">
       <SubType>Form</SubType>
@@ -210,53 +210,53 @@
     <Compile Include="Forms\Lab\EditPhysicalAgentForm.Designer.cs">
       <DependentUpon>EditPhysicalAgentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Lab\LabMainFormBetter.cs">
+    <Compile Include="Forms\Lab\LabMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Lab\LabMainFormBetter.Designer.cs">
-      <DependentUpon>LabMainFormBetter.cs</DependentUpon>
+    <Compile Include="Forms\Lab\LabMainForm.Designer.cs">
+      <DependentUpon>LabMainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Unit\Controls\TestHistoryControl.cs">
+    <Compile Include="Forms\Unit\Controls\HistoryControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Unit\Controls\TestHistoryControl.Designer.cs">
-      <DependentUpon>TestHistoryControl.cs</DependentUpon>
+    <Compile Include="Forms\Unit\Controls\HistoryControl.Designer.cs">
+      <DependentUpon>HistoryControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Unit\Controls\TestLocationControl.cs">
+    <Compile Include="Forms\Unit\Controls\LocationControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Unit\Controls\TestLocationControl.Designer.cs">
-      <DependentUpon>TestLocationControl.cs</DependentUpon>
+    <Compile Include="Forms\Unit\Controls\LocationControl.Designer.cs">
+      <DependentUpon>LocationControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Unit\Controls\TestMethodologyControl.cs">
+    <Compile Include="Forms\Unit\Controls\MethodologyControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Unit\Controls\TestMethodologyControl.Designer.cs">
-      <DependentUpon>TestMethodologyControl.cs</DependentUpon>
+    <Compile Include="Forms\Unit\Controls\MethodologyControl.Designer.cs">
+      <DependentUpon>MethodologyControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Unit\Controls\TestStructureControl.cs">
+    <Compile Include="Forms\Unit\Controls\StructureControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Unit\Controls\TestStructureControl.Designer.cs">
-      <DependentUpon>TestStructureControl.cs</DependentUpon>
+    <Compile Include="Forms\Unit\Controls\StructureControl.Designer.cs">
+      <DependentUpon>StructureControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Unit\Controls\TestTeamControl.cs">
+    <Compile Include="Forms\Unit\Controls\TeamControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Unit\Controls\TestTeamControl.Designer.cs">
-      <DependentUpon>TestTeamControl.cs</DependentUpon>
+    <Compile Include="Forms\Unit\Controls\TeamControl.Designer.cs">
+      <DependentUpon>TeamControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Unit\Controls\TestWelcomeControl.cs">
+    <Compile Include="Forms\Unit\Controls\WelcomeControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Unit\Controls\TestWelcomeControl.Designer.cs">
-      <DependentUpon>TestWelcomeControl.cs</DependentUpon>
+    <Compile Include="Forms\Unit\Controls\WelcomeControl.Designer.cs">
+      <DependentUpon>WelcomeControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Unit\UnitMainFormBetter.cs">
+    <Compile Include="Forms\Unit\UnitMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Unit\UnitMainFormBetter.Designer.cs">
-      <DependentUpon>UnitMainFormBetter.cs</DependentUpon>
+    <Compile Include="Forms\Unit\UnitMainForm.Designer.cs">
+      <DependentUpon>UnitMainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\WelcomeForm.cs">
       <SubType>Form</SubType>
@@ -277,35 +277,35 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>pt_local.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\Lab\Controls\BiologicalAgentsBetter.resx">
-      <DependentUpon>BiologicalAgentsBetter.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Lab\Controls\BiologicalAgentsControl.resx">
+      <DependentUpon>BiologicalAgentsControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Lab\Controls\ChemicalAgentControlBetter.resx">
-      <DependentUpon>ChemicalAgentControlBetter.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Lab\Controls\ChemicalAgentControl.resx">
+      <DependentUpon>ChemicalAgentControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Lab\Controls\ConclusionControlBetter.resx">
-      <DependentUpon>ConclusionControlBetter.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Lab\Controls\ConclusionControl.resx">
+      <DependentUpon>ConclusionControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lab\Controls\ErrorControl.resx">
       <DependentUpon>ErrorControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Lab\Controls\GeneralInformationControlBetter.resx">
-      <DependentUpon>GeneralInformationControlBetter.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Lab\Controls\GeneralInformationControl.resx">
+      <DependentUpon>GeneralInformationControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Lab\Controls\LabWelcomeControlBetter.resx">
-      <DependentUpon>LabWelcomeControlBetter.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Lab\Controls\LabWelcomeControl.resx">
+      <DependentUpon>LabWelcomeControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Lab\Controls\MechanicalAgentControlBetter.resx">
-      <DependentUpon>MechanicalAgentControlBetter.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Lab\Controls\MechanicalAgentControl.resx">
+      <DependentUpon>MechanicalAgentControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Lab\Controls\PhysicalAgentsControlBetter.resx">
-      <DependentUpon>PhysicalAgentsControlBetter.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Lab\Controls\PhysicalAgentsControl.resx">
+      <DependentUpon>PhysicalAgentsControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Lab\Controls\RiskAnalysisControlBetter.resx">
-      <DependentUpon>RiskAnalysisControlBetter.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Lab\Controls\RiskAnalysisControl.resx">
+      <DependentUpon>RiskAnalysisControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Lab\Controls\SafetyControlBetter.resx">
-      <DependentUpon>SafetyControlBetter.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Lab\Controls\SafetyControl.resx">
+      <DependentUpon>SafetyControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lab\EditBiologicalAgentForm.resx">
       <DependentUpon>EditBiologicalAgentForm.cs</DependentUpon>
@@ -322,29 +322,29 @@
     <EmbeddedResource Include="Forms\Lab\EditPhysicalAgentForm.resx">
       <DependentUpon>EditPhysicalAgentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Lab\LabMainFormBetter.resx">
-      <DependentUpon>LabMainFormBetter.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Lab\LabMainForm.resx">
+      <DependentUpon>LabMainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Unit\Controls\TestHistoryControl.resx">
-      <DependentUpon>TestHistoryControl.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Unit\Controls\HistoryControl.resx">
+      <DependentUpon>HistoryControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Unit\Controls\TestLocationControl.resx">
-      <DependentUpon>TestLocationControl.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Unit\Controls\LocationControl.resx">
+      <DependentUpon>LocationControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Unit\Controls\TestMethodologyControl.resx">
-      <DependentUpon>TestMethodologyControl.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Unit\Controls\MethodologyControl.resx">
+      <DependentUpon>MethodologyControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Unit\Controls\TestStructureControl.resx">
-      <DependentUpon>TestStructureControl.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Unit\Controls\StructureControl.resx">
+      <DependentUpon>StructureControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Unit\Controls\TestTeamControl.resx">
-      <DependentUpon>TestTeamControl.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Unit\Controls\TeamControl.resx">
+      <DependentUpon>TeamControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Unit\Controls\TestWelcomeControl.resx">
-      <DependentUpon>TestWelcomeControl.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Unit\Controls\WelcomeControl.resx">
+      <DependentUpon>WelcomeControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Unit\UnitMainFormBetter.resx">
-      <DependentUpon>UnitMainFormBetter.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Unit\UnitMainForm.resx">
+      <DependentUpon>UnitMainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\WelcomeForm.resx">
       <DependentUpon>WelcomeForm.cs</DependentUpon>
