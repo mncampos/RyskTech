@@ -43,11 +43,6 @@ namespace RyskTech.Forms.Lab.Controls
             data.manipulatesPhysicalAgents = physicalAgentsUsedCheckBox.Checked;
         }
 
-        private void mechanicalAgentsUsedCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-            data.manipulatesMechanicalAgents = mechanicalAgentsUsedCheckBox.Checked;
-        }
-
         public void ValidateData()
         {
             if (data != null)

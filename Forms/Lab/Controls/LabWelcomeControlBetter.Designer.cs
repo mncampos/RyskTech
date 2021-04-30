@@ -35,15 +35,14 @@ namespace RyskTech.Forms.Lab.Controls
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.generalInfotableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.unitNameLabel = new System.Windows.Forms.Label();
             this.unitNameTextBox = new System.Windows.Forms.TextBox();
-            this.manipulatedAgentsLabel = new System.Windows.Forms.Label();
+            this.unitNameLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.mechanicalAgentsUsedCheckBox = new System.Windows.Forms.CheckBox();
             this.physicalAgentsUsedCheckBox = new System.Windows.Forms.CheckBox();
-            this.biologicalAgentsUsedCheckBox = new System.Windows.Forms.CheckBox();
             this.chemicalAgentsUsedCheckBox = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.biologicalAgentsUsedCheckBox = new System.Windows.Forms.CheckBox();
+            this.manipulatedAgentsLabel = new System.Windows.Forms.Label();
             this.labNameTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.mainTableLayoutPanel.SuspendLayout();
@@ -135,6 +134,16 @@ namespace RyskTech.Forms.Lab.Controls
             this.generalInfotableLayoutPanel.Size = new System.Drawing.Size(584, 104);
             this.generalInfotableLayoutPanel.TabIndex = 0;
             // 
+            // unitNameTextBox
+            // 
+            this.unitNameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.generalInfotableLayoutPanel.SetColumnSpan(this.unitNameTextBox, 2);
+            this.unitNameTextBox.Location = new System.Drawing.Point(166, 8);
+            this.unitNameTextBox.Name = "unitNameTextBox";
+            this.unitNameTextBox.Size = new System.Drawing.Size(415, 20);
+            this.unitNameTextBox.TabIndex = 1;
+            this.unitNameTextBox.TextChanged += new System.EventHandler(this.unitNameTextBox_TextChanged);
+            // 
             // unitNameLabel
             // 
             this.unitNameLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -146,27 +155,6 @@ namespace RyskTech.Forms.Lab.Controls
             this.unitNameLabel.Text = "Qual o nome da unidade da qual você faz parte?";
             this.unitNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // unitNameTextBox
-            // 
-            this.unitNameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.generalInfotableLayoutPanel.SetColumnSpan(this.unitNameTextBox, 2);
-            this.unitNameTextBox.Location = new System.Drawing.Point(166, 8);
-            this.unitNameTextBox.Name = "unitNameTextBox";
-            this.unitNameTextBox.Size = new System.Drawing.Size(415, 20);
-            this.unitNameTextBox.TabIndex = 1;
-            this.unitNameTextBox.TextChanged += new System.EventHandler(this.unitNameTextBox_TextChanged);
-            // 
-            // manipulatedAgentsLabel
-            // 
-            this.manipulatedAgentsLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.manipulatedAgentsLabel.AutoSize = true;
-            this.manipulatedAgentsLabel.Location = new System.Drawing.Point(35, 81);
-            this.manipulatedAgentsLabel.Name = "manipulatedAgentsLabel";
-            this.manipulatedAgentsLabel.Size = new System.Drawing.Size(92, 13);
-            this.manipulatedAgentsLabel.TabIndex = 2;
-            this.manipulatedAgentsLabel.Text = "Agentes utilizados";
-            this.manipulatedAgentsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.physicalAgentsUsedCheckBox);
@@ -176,17 +164,6 @@ namespace RyskTech.Forms.Lab.Controls
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(219, 26);
             this.panel1.TabIndex = 4;
-            // 
-            // mechanicalAgentsUsedCheckBox
-            // 
-            this.mechanicalAgentsUsedCheckBox.AutoSize = true;
-            this.mechanicalAgentsUsedCheckBox.Location = new System.Drawing.Point(109, 3);
-            this.mechanicalAgentsUsedCheckBox.Name = "mechanicalAgentsUsedCheckBox";
-            this.mechanicalAgentsUsedCheckBox.Size = new System.Drawing.Size(78, 17);
-            this.mechanicalAgentsUsedCheckBox.TabIndex = 3;
-            this.mechanicalAgentsUsedCheckBox.Text = "Mecânicos";
-            this.mechanicalAgentsUsedCheckBox.UseVisualStyleBackColor = true;
-            this.mechanicalAgentsUsedCheckBox.CheckedChanged += new System.EventHandler(this.mechanicalAgentsUsedCheckBox_CheckedChanged);
             // 
             // physicalAgentsUsedCheckBox
             // 
@@ -198,17 +175,6 @@ namespace RyskTech.Forms.Lab.Controls
             this.physicalAgentsUsedCheckBox.Text = "Físicos";
             this.physicalAgentsUsedCheckBox.UseVisualStyleBackColor = true;
             this.physicalAgentsUsedCheckBox.CheckedChanged += new System.EventHandler(this.physicalAgentsUsedCheckBox_CheckedChanged);
-            // 
-            // biologicalAgentsUsedCheckBox
-            // 
-            this.biologicalAgentsUsedCheckBox.AutoSize = true;
-            this.biologicalAgentsUsedCheckBox.Location = new System.Drawing.Point(3, 3);
-            this.biologicalAgentsUsedCheckBox.Name = "biologicalAgentsUsedCheckBox";
-            this.biologicalAgentsUsedCheckBox.Size = new System.Drawing.Size(74, 17);
-            this.biologicalAgentsUsedCheckBox.TabIndex = 1;
-            this.biologicalAgentsUsedCheckBox.Text = "Biológicos";
-            this.biologicalAgentsUsedCheckBox.UseVisualStyleBackColor = true;
-            this.biologicalAgentsUsedCheckBox.CheckedChanged += new System.EventHandler(this.biologicalAgentsUsedCheckBox_CheckedChanged);
             // 
             // chemicalAgentsUsedCheckBox
             // 
@@ -223,13 +189,34 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.mechanicalAgentsUsedCheckBox);
             this.panel2.Controls.Add(this.biologicalAgentsUsedCheckBox);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(391, 75);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(190, 26);
             this.panel2.TabIndex = 5;
+            // 
+            // biologicalAgentsUsedCheckBox
+            // 
+            this.biologicalAgentsUsedCheckBox.AutoSize = true;
+            this.biologicalAgentsUsedCheckBox.Location = new System.Drawing.Point(3, 3);
+            this.biologicalAgentsUsedCheckBox.Name = "biologicalAgentsUsedCheckBox";
+            this.biologicalAgentsUsedCheckBox.Size = new System.Drawing.Size(74, 17);
+            this.biologicalAgentsUsedCheckBox.TabIndex = 1;
+            this.biologicalAgentsUsedCheckBox.Text = "Biológicos";
+            this.biologicalAgentsUsedCheckBox.UseVisualStyleBackColor = true;
+            this.biologicalAgentsUsedCheckBox.CheckedChanged += new System.EventHandler(this.biologicalAgentsUsedCheckBox_CheckedChanged);
+            // 
+            // manipulatedAgentsLabel
+            // 
+            this.manipulatedAgentsLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.manipulatedAgentsLabel.AutoSize = true;
+            this.manipulatedAgentsLabel.Location = new System.Drawing.Point(35, 81);
+            this.manipulatedAgentsLabel.Name = "manipulatedAgentsLabel";
+            this.manipulatedAgentsLabel.Size = new System.Drawing.Size(92, 13);
+            this.manipulatedAgentsLabel.TabIndex = 2;
+            this.manipulatedAgentsLabel.Text = "Agentes utilizados";
+            this.manipulatedAgentsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labNameTextBox
             // 
@@ -249,7 +236,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(157, 36);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Qual é o nome e/ou descritor do seu espaço?";
+            this.label2.Text = "Qual é o nome e/ou descritoção do seu espaço?";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabWelcomeControlBetter
@@ -285,7 +272,6 @@ namespace RyskTech.Forms.Lab.Controls
         private System.Windows.Forms.TextBox unitNameTextBox;
         private System.Windows.Forms.Label manipulatedAgentsLabel;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.CheckBox mechanicalAgentsUsedCheckBox;
         private System.Windows.Forms.CheckBox physicalAgentsUsedCheckBox;
         private System.Windows.Forms.CheckBox biologicalAgentsUsedCheckBox;
         private System.Windows.Forms.CheckBox chemicalAgentsUsedCheckBox;

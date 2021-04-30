@@ -64,8 +64,7 @@ namespace RyskTech
             if (apr.lab.generalInformation.manipulatesBiologicalAgents)
                 AddLabBiologicalAgentInfo(labSection);
 
-            if (apr.lab.generalInformation.manipulatesMechanicalAgents)
-                AddLabMechAgentInfo(labSection);
+            AddLabMechAgentInfo(labSection);
 
             if (apr.lab.generalInformation.manipulatesPhysicalAgents)
                 AddLabPhysicalAgentInfo(labSection);

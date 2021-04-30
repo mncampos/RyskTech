@@ -83,7 +83,7 @@ namespace RyskTech.Forms.Unit.Controls
                 {
                     data.streetNumber = int.Parse(NumberTextBox.Text);
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     MessageBox.Show("Por favor digite apenas números");
                     NumberTextBox.Text = "";

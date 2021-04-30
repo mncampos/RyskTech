@@ -106,7 +106,7 @@ namespace RyskTech.Forms.Unit.Controls
             this.groupBox1.Size = new System.Drawing.Size(251, 157);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Contato";
+            this.groupBox1.Text = "Contato da Unidade";
             // 
             // textBox3
             // 

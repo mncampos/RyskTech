@@ -65,7 +65,7 @@ namespace RyskTech
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 106F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.44701F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.55299F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 121F));
             this.tableLayoutPanel1.Controls.Add(this.cancelButton, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.concludeButton, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.residueNameLabel, 0, 0);
@@ -84,7 +84,7 @@ namespace RyskTech
             // cancelButton
             // 
             this.cancelButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cancelButton.Location = new System.Drawing.Point(247, 366);
+            this.cancelButton.Location = new System.Drawing.Point(246, 366);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(88, 29);
             this.cancelButton.TabIndex = 0;
@@ -95,9 +95,9 @@ namespace RyskTech
             // concludeButton
             // 
             this.concludeButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.concludeButton.Location = new System.Drawing.Point(341, 366);
+            this.concludeButton.Location = new System.Drawing.Point(340, 366);
             this.concludeButton.Name = "concludeButton";
-            this.concludeButton.Size = new System.Drawing.Size(115, 29);
+            this.concludeButton.Size = new System.Drawing.Size(116, 29);
             this.concludeButton.TabIndex = 1;
             this.concludeButton.Text = "Concluir";
             this.concludeButton.UseVisualStyleBackColor = true;
@@ -121,7 +121,7 @@ namespace RyskTech
             this.residueNameTextBox.Location = new System.Drawing.Point(109, 12);
             this.residueNameTextBox.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
             this.residueNameTextBox.Name = "residueNameTextBox";
-            this.residueNameTextBox.Size = new System.Drawing.Size(226, 20);
+            this.residueNameTextBox.Size = new System.Drawing.Size(225, 20);
             this.residueNameTextBox.TabIndex = 3;
             // 
             // residueInfoGroupBox
@@ -142,7 +142,7 @@ namespace RyskTech
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.92308F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.61539F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.07932F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 155F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 158F));
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.physicalStateComboBox, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 1);
@@ -273,7 +273,7 @@ namespace RyskTech
             this.isInertCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.isInertCheckBox.Location = new System.Drawing.Point(222, 3);
             this.isInertCheckBox.Name = "isInertCheckBox";
-            this.isInertCheckBox.Size = new System.Drawing.Size(64, 25);
+            this.isInertCheckBox.Size = new System.Drawing.Size(63, 25);
             this.isInertCheckBox.TabIndex = 7;
             this.isInertCheckBox.Text = "Inerte?";
             this.isInertCheckBox.UseVisualStyleBackColor = true;
@@ -357,7 +357,7 @@ namespace RyskTech
             this.plasticRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plasticRadioButton.Location = new System.Drawing.Point(222, 169);
             this.plasticRadioButton.Name = "plasticRadioButton";
-            this.plasticRadioButton.Size = new System.Drawing.Size(64, 64);
+            this.plasticRadioButton.Size = new System.Drawing.Size(63, 64);
             this.plasticRadioButton.TabIndex = 14;
             this.plasticRadioButton.TabStop = true;
             this.plasticRadioButton.Text = "Bombona plásitca";
@@ -367,9 +367,9 @@ namespace RyskTech
             // 
             this.otherRadioButton.AutoSize = true;
             this.otherRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.otherRadioButton.Location = new System.Drawing.Point(292, 169);
+            this.otherRadioButton.Location = new System.Drawing.Point(291, 169);
             this.otherRadioButton.Name = "otherRadioButton";
-            this.otherRadioButton.Size = new System.Drawing.Size(152, 64);
+            this.otherRadioButton.Size = new System.Drawing.Size(153, 64);
             this.otherRadioButton.TabIndex = 15;
             this.otherRadioButton.TabStop = true;
             this.otherRadioButton.Text = "Outro (especificar no texto)";

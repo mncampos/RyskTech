@@ -46,14 +46,15 @@ namespace RyskTech.Forms.Lab.Controls
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.microporeTapeCheckBox = new System.Windows.Forms.CheckBox();
+            this.gazeCheckBox = new System.Windows.Forms.CheckBox();
+            this.scisorsCheckBox = new System.Windows.Forms.CheckBox();
+            this.otherFirstAidTextBox = new System.Windows.Forms.TextBox();
+            this.waterCheckBox = new System.Windows.Forms.CheckBox();
+            this.otherFirstAidCheckBox = new System.Windows.Forms.CheckBox();
             this.noEmergentyBoxCheckBox = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.otherFirstAidTextBox = new System.Windows.Forms.TextBox();
-            this.otherFirstAidCheckBox = new System.Windows.Forms.CheckBox();
-            this.microporeTapeCheckBox = new System.Windows.Forms.CheckBox();
-            this.waterCheckBox = new System.Windows.Forms.CheckBox();
-            this.scisorsCheckBox = new System.Windows.Forms.CheckBox();
-            this.gazeCheckBox = new System.Windows.Forms.CheckBox();
             this.epcGroupBox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.sandobxCheckBox = new System.Windows.Forms.CheckBox();
@@ -77,18 +78,17 @@ namespace RyskTech.Forms.Lab.Controls
             this.otherEPITextBox = new System.Windows.Forms.TextBox();
             this.maskCheckBox = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.mainPanel.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.epcGroupBox.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.epiGroupBox.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainPanel
@@ -285,6 +285,89 @@ namespace RyskTech.Forms.Lab.Controls
             this.panel1.Size = new System.Drawing.Size(133, 199);
             this.panel1.TabIndex = 0;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.microporeTapeCheckBox);
+            this.panel3.Controls.Add(this.gazeCheckBox);
+            this.panel3.Controls.Add(this.scisorsCheckBox);
+            this.panel3.Controls.Add(this.otherFirstAidTextBox);
+            this.panel3.Controls.Add(this.waterCheckBox);
+            this.panel3.Controls.Add(this.otherFirstAidCheckBox);
+            this.panel3.Location = new System.Drawing.Point(3, 57);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(130, 142);
+            this.panel3.TabIndex = 11;
+            // 
+            // microporeTapeCheckBox
+            // 
+            this.microporeTapeCheckBox.AutoSize = true;
+            this.microporeTapeCheckBox.Location = new System.Drawing.Point(3, 6);
+            this.microporeTapeCheckBox.Name = "microporeTapeCheckBox";
+            this.microporeTapeCheckBox.Size = new System.Drawing.Size(93, 17);
+            this.microporeTapeCheckBox.TabIndex = 6;
+            this.microporeTapeCheckBox.Text = "Fita Microporo";
+            this.microporeTapeCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.microporeTapeCheckBox.UseVisualStyleBackColor = true;
+            this.microporeTapeCheckBox.CheckedChanged += new System.EventHandler(this.microporeTapeCheckBox_CheckedChanged);
+            // 
+            // gazeCheckBox
+            // 
+            this.gazeCheckBox.AutoSize = true;
+            this.gazeCheckBox.Location = new System.Drawing.Point(3, 27);
+            this.gazeCheckBox.Name = "gazeCheckBox";
+            this.gazeCheckBox.Size = new System.Drawing.Size(51, 17);
+            this.gazeCheckBox.TabIndex = 3;
+            this.gazeCheckBox.Text = "Gaze";
+            this.gazeCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.gazeCheckBox.UseVisualStyleBackColor = true;
+            this.gazeCheckBox.CheckedChanged += new System.EventHandler(this.gazeCheckBox_CheckedChanged);
+            // 
+            // scisorsCheckBox
+            // 
+            this.scisorsCheckBox.AutoSize = true;
+            this.scisorsCheckBox.Location = new System.Drawing.Point(3, 49);
+            this.scisorsCheckBox.Name = "scisorsCheckBox";
+            this.scisorsCheckBox.Size = new System.Drawing.Size(65, 17);
+            this.scisorsCheckBox.TabIndex = 4;
+            this.scisorsCheckBox.Text = "Tesoura";
+            this.scisorsCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.scisorsCheckBox.UseVisualStyleBackColor = true;
+            this.scisorsCheckBox.CheckedChanged += new System.EventHandler(this.scisorsCheckBox_CheckedChanged);
+            // 
+            // otherFirstAidTextBox
+            // 
+            this.otherFirstAidTextBox.Enabled = false;
+            this.otherFirstAidTextBox.Location = new System.Drawing.Point(3, 115);
+            this.otherFirstAidTextBox.Margin = new System.Windows.Forms.Padding(3, 18, 3, 3);
+            this.otherFirstAidTextBox.Name = "otherFirstAidTextBox";
+            this.otherFirstAidTextBox.Size = new System.Drawing.Size(120, 20);
+            this.otherFirstAidTextBox.TabIndex = 8;
+            this.otherFirstAidTextBox.TextChanged += new System.EventHandler(this.otherFirstAidTextBox_TextChanged);
+            // 
+            // waterCheckBox
+            // 
+            this.waterCheckBox.AutoSize = true;
+            this.waterCheckBox.Location = new System.Drawing.Point(3, 71);
+            this.waterCheckBox.Name = "waterCheckBox";
+            this.waterCheckBox.Size = new System.Drawing.Size(95, 17);
+            this.waterCheckBox.TabIndex = 5;
+            this.waterCheckBox.Text = "Água boricada";
+            this.waterCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.waterCheckBox.UseVisualStyleBackColor = true;
+            this.waterCheckBox.CheckedChanged += new System.EventHandler(this.waterCheckBox_CheckedChanged);
+            // 
+            // otherFirstAidCheckBox
+            // 
+            this.otherFirstAidCheckBox.AutoSize = true;
+            this.otherFirstAidCheckBox.Location = new System.Drawing.Point(3, 93);
+            this.otherFirstAidCheckBox.Name = "otherFirstAidCheckBox";
+            this.otherFirstAidCheckBox.Size = new System.Drawing.Size(57, 17);
+            this.otherFirstAidCheckBox.TabIndex = 7;
+            this.otherFirstAidCheckBox.Text = "Outros";
+            this.otherFirstAidCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.otherFirstAidCheckBox.UseVisualStyleBackColor = true;
+            this.otherFirstAidCheckBox.CheckedChanged += new System.EventHandler(this.otherFirstAidCheckBox_CheckedChanged);
+            // 
             // noEmergentyBoxCheckBox
             // 
             this.noEmergentyBoxCheckBox.AutoSize = true;
@@ -305,76 +388,6 @@ namespace RyskTech.Forms.Lab.Controls
             this.label3.Size = new System.Drawing.Size(123, 39);
             this.label3.TabIndex = 9;
             this.label3.Text = "Que equipamentos se \r\nencontram na sua caixa \r\nde primeiros socorros?";
-            // 
-            // otherFirstAidTextBox
-            // 
-            this.otherFirstAidTextBox.Enabled = false;
-            this.otherFirstAidTextBox.Location = new System.Drawing.Point(3, 115);
-            this.otherFirstAidTextBox.Margin = new System.Windows.Forms.Padding(3, 18, 3, 3);
-            this.otherFirstAidTextBox.Name = "otherFirstAidTextBox";
-            this.otherFirstAidTextBox.Size = new System.Drawing.Size(120, 20);
-            this.otherFirstAidTextBox.TabIndex = 8;
-            this.otherFirstAidTextBox.TextChanged += new System.EventHandler(this.otherFirstAidTextBox_TextChanged);
-            // 
-            // otherFirstAidCheckBox
-            // 
-            this.otherFirstAidCheckBox.AutoSize = true;
-            this.otherFirstAidCheckBox.Location = new System.Drawing.Point(3, 93);
-            this.otherFirstAidCheckBox.Name = "otherFirstAidCheckBox";
-            this.otherFirstAidCheckBox.Size = new System.Drawing.Size(57, 17);
-            this.otherFirstAidCheckBox.TabIndex = 7;
-            this.otherFirstAidCheckBox.Text = "Outros";
-            this.otherFirstAidCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.otherFirstAidCheckBox.UseVisualStyleBackColor = true;
-            this.otherFirstAidCheckBox.CheckedChanged += new System.EventHandler(this.otherFirstAidCheckBox_CheckedChanged);
-            // 
-            // microporeTapeCheckBox
-            // 
-            this.microporeTapeCheckBox.AutoSize = true;
-            this.microporeTapeCheckBox.Location = new System.Drawing.Point(3, 6);
-            this.microporeTapeCheckBox.Name = "microporeTapeCheckBox";
-            this.microporeTapeCheckBox.Size = new System.Drawing.Size(93, 17);
-            this.microporeTapeCheckBox.TabIndex = 6;
-            this.microporeTapeCheckBox.Text = "Fita Microporo";
-            this.microporeTapeCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.microporeTapeCheckBox.UseVisualStyleBackColor = true;
-            this.microporeTapeCheckBox.CheckedChanged += new System.EventHandler(this.microporeTapeCheckBox_CheckedChanged);
-            // 
-            // waterCheckBox
-            // 
-            this.waterCheckBox.AutoSize = true;
-            this.waterCheckBox.Location = new System.Drawing.Point(3, 71);
-            this.waterCheckBox.Name = "waterCheckBox";
-            this.waterCheckBox.Size = new System.Drawing.Size(95, 17);
-            this.waterCheckBox.TabIndex = 5;
-            this.waterCheckBox.Text = "Água boricada";
-            this.waterCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.waterCheckBox.UseVisualStyleBackColor = true;
-            this.waterCheckBox.CheckedChanged += new System.EventHandler(this.waterCheckBox_CheckedChanged);
-            // 
-            // scisorsCheckBox
-            // 
-            this.scisorsCheckBox.AutoSize = true;
-            this.scisorsCheckBox.Location = new System.Drawing.Point(3, 49);
-            this.scisorsCheckBox.Name = "scisorsCheckBox";
-            this.scisorsCheckBox.Size = new System.Drawing.Size(65, 17);
-            this.scisorsCheckBox.TabIndex = 4;
-            this.scisorsCheckBox.Text = "Tesoura";
-            this.scisorsCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.scisorsCheckBox.UseVisualStyleBackColor = true;
-            this.scisorsCheckBox.CheckedChanged += new System.EventHandler(this.scisorsCheckBox_CheckedChanged);
-            // 
-            // gazeCheckBox
-            // 
-            this.gazeCheckBox.AutoSize = true;
-            this.gazeCheckBox.Location = new System.Drawing.Point(3, 27);
-            this.gazeCheckBox.Name = "gazeCheckBox";
-            this.gazeCheckBox.Size = new System.Drawing.Size(51, 17);
-            this.gazeCheckBox.TabIndex = 3;
-            this.gazeCheckBox.Text = "Gaze";
-            this.gazeCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.gazeCheckBox.UseVisualStyleBackColor = true;
-            this.gazeCheckBox.CheckedChanged += new System.EventHandler(this.gazeCheckBox_CheckedChanged);
             // 
             // epcGroupBox
             // 
@@ -690,19 +703,6 @@ namespace RyskTech.Forms.Lab.Controls
             this.label1.Text = "Quais EPIs são disponibilizados?";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.microporeTapeCheckBox);
-            this.panel3.Controls.Add(this.gazeCheckBox);
-            this.panel3.Controls.Add(this.scisorsCheckBox);
-            this.panel3.Controls.Add(this.otherFirstAidTextBox);
-            this.panel3.Controls.Add(this.waterCheckBox);
-            this.panel3.Controls.Add(this.otherFirstAidCheckBox);
-            this.panel3.Location = new System.Drawing.Point(3, 57);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(130, 142);
-            this.panel3.TabIndex = 11;
-            // 
             // SafetyControlBetter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -720,14 +720,14 @@ namespace RyskTech.Forms.Lab.Controls
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.epcGroupBox.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
             this.epiGroupBox.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }

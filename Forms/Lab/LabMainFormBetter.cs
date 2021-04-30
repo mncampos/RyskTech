@@ -173,10 +173,7 @@ namespace RyskTech.Forms.Lab
         private void mechanicalAgentsTabButton_Click(object sender, EventArgs e)
         {
             activeControlPanel.Controls.Clear();
-            if (labWelcomeControl.data.manipulatesMechanicalAgents)
-                activeControlPanel.Controls.Add(mechanicalAgentControl);
-            else
-                activeControlPanel.Controls.Add(new ErrorControl("mecânicos"));
+            activeControlPanel.Controls.Add(mechanicalAgentControl);
 
             clearTabButtonColors();
             mechanicalAgentsTabButton.BackColor = Color.DarkGray;
@@ -240,17 +237,13 @@ namespace RyskTech.Forms.Lab
                 data.biologicalAgentsStorage = biologicalAgentControl.storage;
             }
 
-            if (data.generalInformation.manipulatesMechanicalAgents)
-            {
-                mechanicalAgentControl.ValidateData();
-                data.mechanicalAgentsInfo = mechanicalAgentControl.mechanicalAgentList;
-            }
 
-            if (data.generalInformation.manipulatesPhysicalAgents)
-            {
-                physicalAgentControl.ValidateData();
-                data.physicalAgentsInfo = physicalAgentControl.physicalAgentList;
-            }
+            mechanicalAgentControl.ValidateData();
+            data.mechanicalAgentsInfo = mechanicalAgentControl.mechanicalAgentList;
+         
+
+            physicalAgentControl.ValidateData();
+            data.physicalAgentsInfo = physicalAgentControl.physicalAgentList;
 
             riskAnalysisControl.ValidateData();
             conclusionControl.ValidateData();

@@ -10,7 +10,6 @@ namespace RyskTech.Data
         public bool manipulatesChemicalAgents;
         public bool manipulatesBiologicalAgents;
         public bool manipulatesPhysicalAgents;
-        public bool manipulatesMechanicalAgents;
 
 
         public LabScope() 
@@ -18,7 +17,6 @@ namespace RyskTech.Data
             manipulatesChemicalAgents = false;
             manipulatesBiologicalAgents = false;
             manipulatesPhysicalAgents = false;
-            manipulatesMechanicalAgents = false;
         }
 
         public void CheckValidity()
@@ -29,7 +27,7 @@ namespace RyskTech.Data
             if (this.labName == null || this.labName.Length <= 0)
                 throw new ApplicationException(Resources.Language.pt_local.ErrorInvalidLabName);
 
-            if (!manipulatesBiologicalAgents && !manipulatesChemicalAgents && !manipulatesMechanicalAgents && !manipulatesPhysicalAgents)
+            if (!manipulatesBiologicalAgents && !manipulatesChemicalAgents && !manipulatesPhysicalAgents)
                 throw new ApplicationException(Resources.Language.pt_local.ErrorNoManipulatedAreasSelected);
         }
     }
