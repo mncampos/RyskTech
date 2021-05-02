@@ -9,6 +9,7 @@ namespace RyskTech.Data
         public string floorIdentifier;
         public TimeSpan turnStart;
         public TimeSpan turnEnd;
+        public string surroundingsComments;
 
         public Space() { }
 

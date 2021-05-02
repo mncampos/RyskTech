@@ -18,11 +18,11 @@ namespace RyskTech
         {
             string container = "";
             if (transparentGlassRadioButton.Checked)
-                container = Resources.Language.pt_local.TemperedGlassContainer;
+                container += Resources.Language.pt_local.TemperedGlassContainer + "\n";
             if (amberGlassRadioButton.Checked)
-                container = Resources.Language.pt_local.AmberGlassContainer;
+                container += Resources.Language.pt_local.AmberGlassContainer + "\n";
             if (plasticRadioButton.Checked)
-                container = Resources.Language.pt_local.PlasticContainer;
+                container += Resources.Language.pt_local.PlasticContainer + "\n";
 
 
             string origins = "";
@@ -40,7 +40,7 @@ namespace RyskTech
                 new ChemicalResidue(
                     residueNameTextBox.Text,
                     physicalStateComboBox.Text,
-                    isInertCheckBox.Checked,
+                    inertRadioButton.Checked,
                     (float)quantityUpDown.Value,
                     measurementUnitComboBox.Text,
                     origins,

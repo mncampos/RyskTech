@@ -378,6 +378,9 @@
   <data name="Students" xml:space="preserve">
     <value>Alunos e Estudantes</value>
   </data>
+  <data name="SurroundingsComments" xml:space="preserve">
+    <value>Informações sobre os arredores</value>
+  </data>
   <data name="Teachers" xml:space="preserve">
     <value>Professores</value>
   </data>

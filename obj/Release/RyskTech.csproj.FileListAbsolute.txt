@@ -8,7 +8,6 @@ C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\bin\Relea
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\bin\Release\Syncfusion.Compression.Base.xml
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\bin\Release\Syncfusion.DocIO.Base.xml
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\bin\Release\Syncfusion.OfficeChart.Base.xml
-C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Release\RyskTech.csprojAssemblyReference.cache
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Release\RyskTech.Forms.Lab.Controls.ErrorControl.resources
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Release\RyskTech.Forms.Lab.EditBiologicalAgentForm.resources
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Release\RyskTech.Forms.Lab.EditChemicalReactorForm.resources
@@ -41,3 +40,5 @@ C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Relea
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Release\RyskTech.Forms.Unit.Controls.TeamControl.resources
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Release\RyskTech.Forms.Unit.Controls.WelcomeControl.resources
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Release\RyskTech.Forms.Unit.UnitMainForm.resources
+C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Release\RyskTech.Forms.Unit.EditSpaceForm.resources
+C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Release\RyskTech.Forms.Lab.EditRiskForm.resources

@@ -371,7 +371,7 @@ namespace RyskTech
         private void AddUnitLocationInformation()
         {
             AddSectionWithTitle(this.documentReference.Sections.Count + ". Localização");
-            AddTextParagraph("A unidade está localizada em " + apr.GetLocationString() + "." + apr.unit.structure.surroundingsDetails);
+            AddTextParagraph("A unidade está localizada em " + apr.GetLocationString() + ".");
         }
 
         private void AddUnitStructureInformation()
@@ -397,17 +397,19 @@ namespace RyskTech
         {
             // Create table with rooms, buildings and time ranges
             IWTable unit_spaces_table = GetCurrentSection().AddTable();
-            unit_spaces_table.ResetCells(apr.unit.structure.spaces.Count + 1, 4);
+            unit_spaces_table.ResetCells(apr.unit.structure.spaces.Count + 1, 5);
             unit_spaces_table[0, 0].AddParagraph().AppendText(Resources.Language.pt_local.Building);
             unit_spaces_table[0, 1].AddParagraph().AppendText(Resources.Language.pt_local.Room);
             unit_spaces_table[0, 2].AddParagraph().AppendText(Resources.Language.pt_local.Floor);
             unit_spaces_table[0, 3].AddParagraph().AppendText(Resources.Language.pt_local.UsagePeriod);
+            unit_spaces_table[0, 4].AddParagraph().AppendText(Resources.Language.pt_local.SurroundingsComments);
             for (int i = 0; i < apr.unit.structure.spaces.Count; i++)
             {
                 unit_spaces_table[i + 1, 0].AddParagraph().AppendText(apr.unit.structure.spaces[i].buildingIdentifier);
                 unit_spaces_table[i + 1, 1].AddParagraph().AppendText(apr.unit.structure.spaces[i].roomIdentifier);
                 unit_spaces_table[i + 1, 2].AddParagraph().AppendText(apr.unit.structure.spaces[i].floorIdentifier);
                 unit_spaces_table[i + 1, 3].AddParagraph().AppendText(apr.unit.structure.spaces[i].turnStart.ToString() + " - " + apr.unit.structure.spaces[i].turnEnd.ToString()); // TODO Parse times
+                unit_spaces_table[i + 1, 4].AddParagraph().AppendText(apr.unit.structure.spaces[i].surroundingsComments);
             }
         }
 

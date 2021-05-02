@@ -19,16 +19,33 @@ namespace RyskTech.Forms.Lab.Controls
             data = new List<Risk>();
         }
 
-        private void severityClassesButton_Click(object sender, EventArgs e)
+        private void addRiskButton_Click(object sender, EventArgs e)
         {
-            ShowTableForm table = new ShowTableForm(Properties.Resources.Quadro1, "Classificação quanto à severidade");
-            table.ShowDialog();
+            EditRiskForm newRisk = new EditRiskForm();
+            newRisk.ShowDialog();
+
+            AddAgentDataToTable(newRisk.createdRisk);
         }
 
-        private void frequencyClassesButton_Click(object sender, EventArgs e)
+        private void removeRiskButton_Click(object sender, EventArgs e)
         {
-            ShowTableForm table = new ShowTableForm(Properties.Resources.Quadro3, "Classificação quanto à frequência");
-            table.ShowDialog();
+            foreach (DataGridViewRow row in riskDataGridView.SelectedRows)
+                riskDataGridView.Rows.RemoveAt(row.Index);
+        }
+
+        private void AddAgentDataToTable(Risk createdAgent)
+        {
+            if (createdAgent != null)
+            {
+                this.riskDataGridView.Rows.Add(
+                    createdAgent.description,
+                    createdAgent.associatedDanger,
+                    createdAgent.safetyNet,
+                    createdAgent.frequencyClassification,
+                    createdAgent.severityClassification,
+                    createdAgent.riskClassification
+                    );
+            }
         }
 
         private void CreateRiskList()

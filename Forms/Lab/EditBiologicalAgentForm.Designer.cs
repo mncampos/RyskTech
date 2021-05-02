@@ -29,6 +29,7 @@ namespace RyskTech.Forms.Lab
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditBiologicalAgentForm));
             this.mainTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.cancelButton = new System.Windows.Forms.Button();
             this.concludeButton = new System.Windows.Forms.Button();
@@ -222,6 +223,7 @@ namespace RyskTech.Forms.Lab
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(410, 193);
             this.Controls.Add(this.mainTableLayoutPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditBiologicalAgentForm";
             this.Text = "Editar agente biológico";
             this.mainTableLayoutPanel.ResumeLayout(false);

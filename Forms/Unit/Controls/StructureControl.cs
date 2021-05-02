@@ -19,10 +19,34 @@ namespace RyskTech.Forms.Unit.Controls
             data = new Structure();
         }
 
-        private void SurroundingInfoTextBox_TextChanged(object sender, System.EventArgs e)
+        private void addSpaceButton_Click(object sender, EventArgs e)
         {
-            data.surroundingsDetails = SurroundingInfoTextBox.Text;
+            EditSpaceForm form = new EditSpaceForm();
+            form.ShowDialog();
+
+            if (form.data != null)
+                addDataToTable(form.data);
         }
+
+        private void removeSpaceButton_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in InternalStructureDataGridView.SelectedRows)
+                InternalStructureDataGridView.Rows.RemoveAt(row.Index);
+        }
+
+        private void addDataToTable(Space createdSpace)
+        {
+            if (createdSpace != null)
+            {
+                InternalStructureDataGridView.Rows.Add(
+                    createdSpace.buildingIdentifier,
+                    createdSpace.roomIdentifier,
+                    createdSpace.floorIdentifier,
+                    createdSpace.turnStart.ToString(),
+                    createdSpace.turnEnd.ToString(),
+                    createdSpace.surroundingsComments);
+            }
+        }     
 
         private List<Space> GetStructureData()
         {
@@ -43,6 +67,8 @@ namespace RyskTech.Forms.Unit.Controls
                         entry.turnStart = System.TimeSpan.Parse(row.Cells[3].Value.ToString());
                     if (row.Cells[4].Value != null)
                         entry.turnEnd = System.TimeSpan.Parse(row.Cells[4].Value.ToString());
+                    if (row.Cells[5].Value != null)
+                        entry.surroundingsComments = row.Cells[5].Value.ToString();
 
                     result.Add(entry);
                 }

@@ -28,12 +28,11 @@ namespace RyskTech.Forms.Lab
         {
             string container = "";
             if (transparentGlassRadioButton.Checked)
-                container = Resources.Language.pt_local.TemperedGlassContainer;
+                container += Resources.Language.pt_local.TemperedGlassContainer + "\n";
             if (amberGlassRadioButton.Checked)
-                container = Resources.Language.pt_local.AmberGlassContainer;
+                container += Resources.Language.pt_local.AmberGlassContainer + "\n";
             if (plasticRadioButton.Checked)
-                container = Resources.Language.pt_local.PlasticContainer;
-
+                container += Resources.Language.pt_local.PlasticContainer + "\n";
 
             string origins = "";
             foreach (string item in originCheckedListBox.CheckedItems)
@@ -57,7 +56,7 @@ namespace RyskTech.Forms.Lab
                 dangers, 
                 container,
                 storageLocationTextBox.Text,
-                inertCheckbox.Checked);
+                inertRadioButton.Checked);
 
             try
             {

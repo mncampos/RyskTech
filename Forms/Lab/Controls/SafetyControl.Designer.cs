@@ -75,9 +75,9 @@ namespace RyskTech.Forms.Lab.Controls
             this.dustProcetorCheckBox = new System.Windows.Forms.CheckBox();
             this.otherEPICheckBox = new System.Windows.Forms.CheckBox();
             this.masksEPITextBox = new System.Windows.Forms.TextBox();
-            this.otherEPITextBox = new System.Windows.Forms.TextBox();
-            this.maskCheckBox = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.maskCheckBox = new System.Windows.Forms.CheckBox();
+            this.otherEPITextBox = new System.Windows.Forms.TextBox();
             this.mainPanel.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -287,6 +287,7 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // panel3
             // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.microporeTapeCheckBox);
             this.panel3.Controls.Add(this.gazeCheckBox);
             this.panel3.Controls.Add(this.scisorsCheckBox);
@@ -371,7 +372,7 @@ namespace RyskTech.Forms.Lab.Controls
             // noEmergentyBoxCheckBox
             // 
             this.noEmergentyBoxCheckBox.AutoSize = true;
-            this.noEmergentyBoxCheckBox.Location = new System.Drawing.Point(6, 42);
+            this.noEmergentyBoxCheckBox.Location = new System.Drawing.Point(6, 40);
             this.noEmergentyBoxCheckBox.Name = "noEmergentyBoxCheckBox";
             this.noEmergentyBoxCheckBox.Size = new System.Drawing.Size(84, 17);
             this.noEmergentyBoxCheckBox.TabIndex = 10;
@@ -383,7 +384,7 @@ namespace RyskTech.Forms.Lab.Controls
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Location = new System.Drawing.Point(3, -2);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 39);
             this.label3.TabIndex = 9;
@@ -667,16 +668,17 @@ namespace RyskTech.Forms.Lab.Controls
             this.masksEPITextBox.TabIndex = 9;
             this.masksEPITextBox.TextChanged += new System.EventHandler(this.masksEPITextBox_TextChanged);
             // 
-            // otherEPITextBox
+            // label1
             // 
-            this.otherEPITextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.otherEPITextBox.Enabled = false;
-            this.otherEPITextBox.Location = new System.Drawing.Point(111, 175);
-            this.otherEPITextBox.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.otherEPITextBox.Name = "otherEPITextBox";
-            this.otherEPITextBox.Size = new System.Drawing.Size(103, 20);
-            this.otherEPITextBox.TabIndex = 8;
-            this.otherEPITextBox.TextChanged += new System.EventHandler(this.otherEPITextBox_TextChanged);
+            this.label1.AutoSize = true;
+            this.tableLayoutPanel3.SetColumnSpan(this.label1, 2);
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(211, 24);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Quais EPIs são disponibilizados?";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // maskCheckBox
             // 
@@ -691,24 +693,23 @@ namespace RyskTech.Forms.Lab.Controls
             this.maskCheckBox.UseVisualStyleBackColor = true;
             this.maskCheckBox.CheckedChanged += new System.EventHandler(this.maskCheckBox_CheckedChanged);
             // 
-            // label1
+            // otherEPITextBox
             // 
-            this.label1.AutoSize = true;
-            this.tableLayoutPanel3.SetColumnSpan(this.label1, 2);
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 24);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Quais EPIs são disponibilizados?";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.otherEPITextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.otherEPITextBox.Enabled = false;
+            this.otherEPITextBox.Location = new System.Drawing.Point(111, 175);
+            this.otherEPITextBox.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.otherEPITextBox.Name = "otherEPITextBox";
+            this.otherEPITextBox.Size = new System.Drawing.Size(103, 20);
+            this.otherEPITextBox.TabIndex = 8;
+            this.otherEPITextBox.TextChanged += new System.EventHandler(this.otherEPITextBox_TextChanged);
             // 
-            // SafetyControlBetter
+            // SafetyControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.mainPanel);
-            this.Name = "SafetyControlBetter";
+            this.Name = "SafetyControl";
             this.Size = new System.Drawing.Size(596, 467);
             this.Load += new System.EventHandler(this.SafetyControlBetter_Load);
             this.mainPanel.ResumeLayout(false);

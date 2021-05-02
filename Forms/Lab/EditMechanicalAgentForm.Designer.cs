@@ -29,6 +29,7 @@ namespace RyskTech.Forms.Lab
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditMechanicalAgentForm));
             this.mainTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.concludeButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
@@ -238,6 +239,7 @@ namespace RyskTech.Forms.Lab
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(533, 214);
             this.Controls.Add(this.mainTableLayoutPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditMechanicalAgentForm";
             this.Text = "EditMechanicalAgentForm";
             this.mainTableLayoutPanel.ResumeLayout(false);

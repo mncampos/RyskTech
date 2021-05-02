@@ -210,6 +210,12 @@
     <Compile Include="Forms\Lab\EditPhysicalAgentForm.Designer.cs">
       <DependentUpon>EditPhysicalAgentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Lab\EditRiskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\EditRiskForm.Designer.cs">
+      <DependentUpon>EditRiskForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Lab\LabMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -251,6 +257,12 @@
     </Compile>
     <Compile Include="Forms\Unit\Controls\WelcomeControl.Designer.cs">
       <DependentUpon>WelcomeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Unit\EditSpaceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Unit\EditSpaceForm.Designer.cs">
+      <DependentUpon>EditSpaceForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Unit\UnitMainForm.cs">
       <SubType>Form</SubType>
@@ -322,6 +334,9 @@
     <EmbeddedResource Include="Forms\Lab\EditPhysicalAgentForm.resx">
       <DependentUpon>EditPhysicalAgentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\EditRiskForm.resx">
+      <DependentUpon>EditRiskForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lab\LabMainForm.resx">
       <DependentUpon>LabMainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -342,6 +357,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Unit\Controls\WelcomeControl.resx">
       <DependentUpon>WelcomeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Unit\EditSpaceForm.resx">
+      <DependentUpon>EditSpaceForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Unit\UnitMainForm.resx">
       <DependentUpon>UnitMainForm.cs</DependentUpon>

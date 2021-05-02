@@ -844,6 +844,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Informações sobre os arredores.
+        /// </summary>
+        internal static string SurroundingsComments {
+            get {
+                return ResourceManager.GetString("SurroundingsComments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Professores.
         /// </summary>
         internal static string Teachers {
