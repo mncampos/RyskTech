@@ -82,13 +82,13 @@
         "Entry"
         {
         "MsmKey" = "8:_ACFB2E252E5468444EBC477D00CB4B55"
-        "OwnerKey" = "8:_1088652ECC6F4294AE30325AB02E6E05"
+        "OwnerKey" = "8:_41ECBCEBEF3C717B1433B1940A4FEF89"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_ACFB2E252E5468444EBC477D00CB4B55"
-        "OwnerKey" = "8:_41ECBCEBEF3C717B1433B1940A4FEF89"
+        "OwnerKey" = "8:_1088652ECC6F4294AE30325AB02E6E05"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -148,7 +148,31 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_41ECBCEBEF3C717B1433B1940A4FEF89"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_4DC97B2A2B712F1BE23210B86214989A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_ACFB2E252E5468444EBC477D00CB4B55"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_22939E86186F899BB392BEEC275BF571"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_C05B34CEC452C793E55446ECCAFFB6DE"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -181,30 +205,6 @@
         "OwnerKey" = "8:_D891B2E1738DE966272B8BC68552B997"
         "MsmSig" = "8:_UNDEFINED"
         }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_41ECBCEBEF3C717B1433B1940A4FEF89"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4DC97B2A2B712F1BE23210B86214989A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_22939E86186F899BB392BEEC275BF571"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C05B34CEC452C793E55446ECCAFFB6DE"
-        "MsmSig" = "8:_UNDEFINED"
-        }
     }
     "Configurations"
     {
@@ -230,6 +230,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -752,7 +760,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:RyskTech"
         "ProductCode" = "8:{70DEE1EA-8484-450C-AEB4-C924A0461A93}"
-        "PackageCode" = "8:{0E954D31-C885-4AD3-8DB6-7449C692C176}"
+        "PackageCode" = "8:{BC143D54-3693-4B25-A8D2-807267AD4CD1}"
         "UpgradeCode" = "8:{0344C207-0A39-44E0-BD94-EA99C7B1C6A3}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
