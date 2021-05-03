@@ -73,6 +73,8 @@ namespace RyskTech.Forms.Lab.Controls
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.editReactorButton = new System.Windows.Forms.Button();
+            this.editResidueButton = new System.Windows.Forms.Button();
             this.mainPanel.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -235,6 +237,8 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.editResidueButton);
+            this.groupBox1.Controls.Add(this.editReactorButton);
             this.groupBox1.Controls.Add(this.removeReactorButton);
             this.groupBox1.Controls.Add(this.addReactorButton);
             this.groupBox1.Controls.Add(this.removeResidueButton);
@@ -253,7 +257,7 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // removeReactorButton
             // 
-            this.removeReactorButton.Location = new System.Drawing.Point(93, 246);
+            this.removeReactorButton.Location = new System.Drawing.Point(177, 246);
             this.removeReactorButton.Margin = new System.Windows.Forms.Padding(8);
             this.removeReactorButton.Name = "removeReactorButton";
             this.removeReactorButton.Size = new System.Drawing.Size(68, 27);
@@ -275,7 +279,7 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // removeResidueButton
             // 
-            this.removeResidueButton.Location = new System.Drawing.Point(370, 246);
+            this.removeResidueButton.Location = new System.Drawing.Point(454, 246);
             this.removeResidueButton.Margin = new System.Windows.Forms.Padding(8);
             this.removeResidueButton.Name = "removeResidueButton";
             this.removeResidueButton.Size = new System.Drawing.Size(68, 27);
@@ -495,12 +499,34 @@ namespace RyskTech.Forms.Lab.Controls
             this.label1.Text = "Indique nas tabelas abaixo os reagentes e resíduos químicos que são manipulados e" +
     "/ou gerados em sua unidade.";
             // 
-            // ChemicalAgentControlBetter
+            // editReactorButton
+            // 
+            this.editReactorButton.Location = new System.Drawing.Point(93, 246);
+            this.editReactorButton.Margin = new System.Windows.Forms.Padding(8);
+            this.editReactorButton.Name = "editReactorButton";
+            this.editReactorButton.Size = new System.Drawing.Size(68, 27);
+            this.editReactorButton.TabIndex = 7;
+            this.editReactorButton.Text = "Editar";
+            this.editReactorButton.UseVisualStyleBackColor = true;
+            this.editReactorButton.Click += new System.EventHandler(this.editReactorButton_Click);
+            // 
+            // editResidueButton
+            // 
+            this.editResidueButton.Location = new System.Drawing.Point(370, 246);
+            this.editResidueButton.Margin = new System.Windows.Forms.Padding(8);
+            this.editResidueButton.Name = "editResidueButton";
+            this.editResidueButton.Size = new System.Drawing.Size(68, 27);
+            this.editResidueButton.TabIndex = 8;
+            this.editResidueButton.Text = "Editar";
+            this.editResidueButton.UseVisualStyleBackColor = true;
+            this.editResidueButton.Click += new System.EventHandler(this.editResidueButton_Click);
+            // 
+            // ChemicalAgentControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.mainPanel);
-            this.Name = "ChemicalAgentControlBetter";
+            this.Name = "ChemicalAgentControl";
             this.Size = new System.Drawing.Size(596, 467);
             this.Load += new System.EventHandler(this.ChemicalAgentControlBetter_Load);
             this.mainPanel.ResumeLayout(false);
@@ -563,5 +589,7 @@ namespace RyskTech.Forms.Lab.Controls
         private System.Windows.Forms.RadioButton noFISPQRadioButton;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button editReactorButton;
+        private System.Windows.Forms.Button editResidueButton;
     }
 }

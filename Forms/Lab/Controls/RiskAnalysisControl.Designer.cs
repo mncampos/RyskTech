@@ -41,6 +41,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.frequency = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.severity = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.editRIskButton = new System.Windows.Forms.Button();
             this.mainTableLayoutPanel.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.riskDataGridView)).BeginInit();
@@ -75,6 +76,7 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.editRIskButton);
             this.panel2.Controls.Add(this.removeRiskButton);
             this.panel2.Controls.Add(this.addRiskButton);
             this.panel2.Controls.Add(this.riskDataGridView);
@@ -86,7 +88,7 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // removeRiskButton
             // 
-            this.removeRiskButton.Location = new System.Drawing.Point(91, 354);
+            this.removeRiskButton.Location = new System.Drawing.Point(171, 354);
             this.removeRiskButton.Name = "removeRiskButton";
             this.removeRiskButton.Size = new System.Drawing.Size(75, 23);
             this.removeRiskButton.TabIndex = 4;
@@ -174,6 +176,16 @@ namespace RyskTech.Forms.Lab.Controls
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
+            // editRIskButton
+            // 
+            this.editRIskButton.Location = new System.Drawing.Point(90, 354);
+            this.editRIskButton.Name = "editRIskButton";
+            this.editRIskButton.Size = new System.Drawing.Size(75, 23);
+            this.editRIskButton.TabIndex = 5;
+            this.editRIskButton.Text = "Editar";
+            this.editRIskButton.UseVisualStyleBackColor = true;
+            this.editRIskButton.Click += new System.EventHandler(this.editRIskButton_Click);
+            // 
             // RiskAnalysisControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -204,5 +216,6 @@ namespace RyskTech.Forms.Lab.Controls
         private System.Windows.Forms.DataGridViewComboBoxColumn frequency;
         private System.Windows.Forms.DataGridViewComboBoxColumn severity;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.Button editRIskButton;
     }
 }

@@ -36,10 +36,33 @@ namespace RyskTech.Forms.Lab.Controls
 
         private void addBiologicalResidueButton_Click(object sender, EventArgs e)
         {
-            EditBiologicalAgentForm newAgentForm = new EditBiologicalAgentForm();
+            EditBiologicalAgentForm newAgentForm = new EditBiologicalAgentForm(null);
             newAgentForm.ShowDialog();
 
             AddAgentDataToTable(newAgentForm.createdAgent);
+        }
+
+        private void editBioAgentButotn_Click(object sender, EventArgs e)
+        {
+            if (bioAgentData.SelectedRows.Count > 0)
+            {
+                // Take only first if multiple selected
+                BiologicalAgent agent = new BiologicalAgent(
+                bioAgentData.SelectedRows[0].Cells[0].Value.ToString(),
+                bioAgentData.SelectedRows[0].Cells[1].Value.ToString(),
+                bioAgentData.SelectedRows[0].Cells[2].Value.ToString()
+                );
+
+                EditBiologicalAgentForm newAgentForm = new EditBiologicalAgentForm(agent);
+                newAgentForm.ShowDialog();
+
+                if (newAgentForm.createdAgent != null)
+                {
+                    bioAgentData.Rows[bioAgentData.SelectedRows[0].Index].Cells[0].Value = newAgentForm.createdAgent.name;
+                    bioAgentData.Rows[bioAgentData.SelectedRows[0].Index].Cells[1].Value = newAgentForm.createdAgent.riskClassification;
+                    bioAgentData.Rows[bioAgentData.SelectedRows[0].Index].Cells[2].Value = newAgentForm.createdAgent.usageScenarios; 
+                }
+            }
         }
 
         private void removeBioResidueButton_Click(object sender, EventArgs e)

@@ -21,10 +21,37 @@ namespace RyskTech.Forms.Lab.Controls
 
         private void addRiskButton_Click(object sender, EventArgs e)
         {
-            EditRiskForm newRisk = new EditRiskForm();
+            EditRiskForm newRisk = new EditRiskForm(null);
             newRisk.ShowDialog();
 
             AddAgentDataToTable(newRisk.createdRisk);
+        }
+
+        private void editRIskButton_Click(object sender, EventArgs e)
+        {
+            if (riskDataGridView.SelectedRows.Count > 0)
+            {
+                DataGridViewRow row = riskDataGridView.SelectedRows[0];
+                Risk risk = new Risk(
+                    row.Cells[0].Value.ToString(),
+                    row.Cells[1].Value.ToString(),
+                    row.Cells[2].Value.ToString(),
+                    row.Cells[3].Value == null ? "" : row.Cells[3].Value.ToString(),
+                    row.Cells[4].Value == null ? "" : row.Cells[4].Value.ToString());
+
+                EditRiskForm newRisk = new EditRiskForm(risk);
+                newRisk.ShowDialog();
+                
+                if (newRisk.createdRisk != null)
+                {
+                    riskDataGridView.Rows[row.Index].Cells[0].Value = newRisk.createdRisk.description;
+                    riskDataGridView.Rows[row.Index].Cells[1].Value = newRisk.createdRisk.associatedDanger;
+                    riskDataGridView.Rows[row.Index].Cells[2].Value = newRisk.createdRisk.safetyNet;
+                    riskDataGridView.Rows[row.Index].Cells[3].Value = newRisk.createdRisk.frequencyClassification;
+                    riskDataGridView.Rows[row.Index].Cells[4].Value = newRisk.createdRisk.severityClassification;
+                    riskDataGridView.Rows[row.Index].Cells[5].Value = newRisk.createdRisk.riskClassification;
+                }
+            }
         }
 
         private void removeRiskButton_Click(object sender, EventArgs e)

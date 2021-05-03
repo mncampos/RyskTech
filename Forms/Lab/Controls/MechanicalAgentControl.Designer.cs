@@ -34,10 +34,11 @@ namespace RyskTech.Forms.Lab.Controls
             this.agentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.riks = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.additionalInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.addAgentButton = new System.Windows.Forms.Button();
-            this.removeAgentButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.removeAgentButton = new System.Windows.Forms.Button();
+            this.addAgentButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.editMechanicalAgentButton = new System.Windows.Forms.Button();
             this.mainTableLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mechanicalAgentsDataGridView)).BeginInit();
             this.panel1.SuspendLayout();
@@ -92,6 +93,37 @@ namespace RyskTech.Forms.Lab.Controls
             this.additionalInfo.Name = "additionalInfo";
             this.additionalInfo.Width = 150;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.editMechanicalAgentButton);
+            this.panel1.Controls.Add(this.removeAgentButton);
+            this.panel1.Controls.Add(this.addAgentButton);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 418);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(590, 46);
+            this.panel1.TabIndex = 3;
+            // 
+            // removeAgentButton
+            // 
+            this.removeAgentButton.Location = new System.Drawing.Point(174, 11);
+            this.removeAgentButton.Name = "removeAgentButton";
+            this.removeAgentButton.Size = new System.Drawing.Size(75, 23);
+            this.removeAgentButton.TabIndex = 1;
+            this.removeAgentButton.Text = "Remover";
+            this.removeAgentButton.UseVisualStyleBackColor = true;
+            this.removeAgentButton.Click += new System.EventHandler(this.removeAgentButton_Click);
+            // 
+            // addAgentButton
+            // 
+            this.addAgentButton.Location = new System.Drawing.Point(12, 11);
+            this.addAgentButton.Name = "addAgentButton";
+            this.addAgentButton.Size = new System.Drawing.Size(75, 23);
+            this.addAgentButton.TabIndex = 0;
+            this.addAgentButton.Text = "Adicionar";
+            this.addAgentButton.UseVisualStyleBackColor = true;
+            this.addAgentButton.Click += new System.EventHandler(this.addAgentButton_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -105,42 +137,22 @@ namespace RyskTech.Forms.Lab.Controls
     "ço";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // addAgentButton
+            // editMechanicalAgentButton
             // 
-            this.addAgentButton.Location = new System.Drawing.Point(12, 11);
-            this.addAgentButton.Name = "addAgentButton";
-            this.addAgentButton.Size = new System.Drawing.Size(75, 23);
-            this.addAgentButton.TabIndex = 0;
-            this.addAgentButton.Text = "Adicionar";
-            this.addAgentButton.UseVisualStyleBackColor = true;
-            this.addAgentButton.Click += new System.EventHandler(this.addAgentButton_Click);
+            this.editMechanicalAgentButton.Location = new System.Drawing.Point(93, 11);
+            this.editMechanicalAgentButton.Name = "editMechanicalAgentButton";
+            this.editMechanicalAgentButton.Size = new System.Drawing.Size(75, 23);
+            this.editMechanicalAgentButton.TabIndex = 2;
+            this.editMechanicalAgentButton.Text = "Editar";
+            this.editMechanicalAgentButton.UseVisualStyleBackColor = true;
+            this.editMechanicalAgentButton.Click += new System.EventHandler(this.editMechanicalAgentButton_Click);
             // 
-            // removeAgentButton
-            // 
-            this.removeAgentButton.Location = new System.Drawing.Point(93, 11);
-            this.removeAgentButton.Name = "removeAgentButton";
-            this.removeAgentButton.Size = new System.Drawing.Size(75, 23);
-            this.removeAgentButton.TabIndex = 1;
-            this.removeAgentButton.Text = "Remover";
-            this.removeAgentButton.UseVisualStyleBackColor = true;
-            this.removeAgentButton.Click += new System.EventHandler(this.removeAgentButton_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.removeAgentButton);
-            this.panel1.Controls.Add(this.addAgentButton);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 418);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(590, 46);
-            this.panel1.TabIndex = 3;
-            // 
-            // MechanicalAgentControlBetter
+            // MechanicalAgentControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.mainTableLayoutPanel);
-            this.Name = "MechanicalAgentControlBetter";
+            this.Name = "MechanicalAgentControl";
             this.Size = new System.Drawing.Size(596, 467);
             this.Load += new System.EventHandler(this.MechanicalAgentControlBetter_Load);
             this.mainTableLayoutPanel.ResumeLayout(false);
@@ -162,5 +174,6 @@ namespace RyskTech.Forms.Lab.Controls
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button removeAgentButton;
         private System.Windows.Forms.Button addAgentButton;
+        private System.Windows.Forms.Button editMechanicalAgentButton;
     }
 }

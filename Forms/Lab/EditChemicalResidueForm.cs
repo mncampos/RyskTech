@@ -9,9 +9,22 @@ namespace RyskTech
     {
         public ChemicalResidue createdAgent;
 
-        public EditChemicalResidueForm()
+        public EditChemicalResidueForm(ChemicalResidue agent)
         {
             InitializeComponent();
+            if (agent != null)
+            {
+                residueNameTextBox.Text = agent.name;
+                physicalStateComboBox.Text = agent.physicalState;
+                quantityUpDown.Value = (decimal)agent.quantity;
+                measurementUnitComboBox.Text = agent.measurementUnit;
+                if (agent.inert)
+                    inertRadioButton.Checked = true;
+                else
+                    activeRadioButton.Checked = true;
+                isDangerousCheckBox.Checked = agent.dangerCharacteristics.Length > 0;
+                storageLocationTextBox.Text = agent.storageDetails;
+            }
         }
 
         private void concludeButton_Click(object sender, EventArgs e)

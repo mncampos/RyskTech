@@ -21,10 +21,33 @@ namespace RyskTech.Forms.Lab.Controls
 
         private void addAgentButton_Click(object sender, EventArgs e)
         {
-            EditMechanicalAgentForm newAgent = new EditMechanicalAgentForm();
+            EditMechanicalAgentForm newAgent = new EditMechanicalAgentForm(null);
             newAgent.ShowDialog();
 
             AddAgentDataToTable(newAgent.createdAgent);
+        }
+
+        private void editMechanicalAgentButton_Click(object sender, EventArgs e)
+        {
+            if (mechanicalAgentsDataGridView.SelectedRows.Count > 0)
+            {
+                DataGridViewRow row = mechanicalAgentsDataGridView.SelectedRows[0];
+                MechanicalAgent agent = new MechanicalAgent(
+                    row.Cells[0].Value.ToString(),
+                    row.Cells[1].Value.ToString(),
+                    row.Cells[2].Value.ToString()
+                );
+
+                EditMechanicalAgentForm newAgent = new EditMechanicalAgentForm(agent);
+                newAgent.ShowDialog();
+
+                if (newAgent.createdAgent != null)
+                {
+                    mechanicalAgentsDataGridView.Rows[row.Index].Cells[0].Value = newAgent.createdAgent.name;
+                    mechanicalAgentsDataGridView.Rows[row.Index].Cells[1].Value = newAgent.createdAgent.associatedRisk;
+                    mechanicalAgentsDataGridView.Rows[row.Index].Cells[2].Value = newAgent.createdAgent.additionalInfo;
+                }
+            }
         }
 
         private void AddAgentDataToTable(MechanicalAgent createdAgent)
@@ -71,6 +94,5 @@ namespace RyskTech.Forms.Lab.Controls
 
             CreateMechanicalAgentList();
         }
-
     }
 }

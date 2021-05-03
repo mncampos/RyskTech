@@ -8,9 +8,23 @@ namespace RyskTech.Forms.Unit
     {
         public Space data;
 
-        public EditSpaceForm()
+        public EditSpaceForm(Space space)
         {
             InitializeComponent();
+            if (space != null)
+            {
+                buildingTextBox.Text = space.buildingIdentifier;
+                roomTextBox.Text = space.roomIdentifier;
+                floorTextBox.Text = space.floorIdentifier;
+                
+                startHourNumericUpDown.Value = space.turnStart.Hours;
+                startMinutesNumericUpDown.Value = space.turnStart.Minutes;
+
+                endHourNumericUpDown.Value = space.turnEnd.Hours;
+                endMinuteNumericUpDown.Value = space.turnEnd.Minutes;
+
+                surroundingInfoTextBox.Text = space.surroundingsComments;
+            }
         }
 
         private void cancelButton_Click(object sender, EventArgs e)

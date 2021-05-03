@@ -8,9 +8,15 @@ namespace RyskTech.Forms.Lab
     {
         public BiologicalAgent createdAgent;
 
-        public EditBiologicalAgentForm()
+        public EditBiologicalAgentForm(BiologicalAgent agent)
         {
             InitializeComponent();
+            
+            if (agent != null)
+            {
+                agentNameTextBox.Text = agent.name;
+                riskClassificationTextBox.Text = agent.riskClassification;
+            }
         }
 
         private void showRiskClassTableButton_Click(object sender, EventArgs e)

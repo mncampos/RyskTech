@@ -9,9 +9,34 @@ namespace RyskTech.Forms.Lab
     {
         public ChemicalReactor createdAgent;
 
-        public EditChemicalReactorForm()
+        public EditChemicalReactorForm(ChemicalReactor agent)
         {
             InitializeComponent();
+            if (agent != null)
+            {
+                residueNameTextBox.Text = agent.name;
+                physicalStateComboBox.Text = agent.physicalState;
+                quantityUpDown.Value = (decimal)agent.quantity;
+                measurementUnitComboBox.Text = agent.measurementUnit;
+                casNumberTextBox.Text = agent.casNumber;
+                if (agent.inert)
+                    inertRadioButton.Checked = true;
+                else
+                    activeRadioButton.Checked = true;
+                isDangerousCheckBox.Checked = agent.dangerCharacteristics.Length > 0;
+                storageLocationTextBox.Text = agent.storageDetails;
+                if (agent.mixtureDescription == null || agent.mixtureDescription.Length <= 0)
+                {
+                    pureRadioButton.Checked = true;
+                    mixedRadioButton.Checked = false;
+                }
+                else
+                {
+                    pureRadioButton.Checked = false;
+                    mixedRadioButton.Checked = true;
+                    mixedSubstanceTextBox.Text = agent.mixtureDescription;
+                }
+            }
         }
 
         private void pureRadioButton_CheckedChanged(object sender, EventArgs e)

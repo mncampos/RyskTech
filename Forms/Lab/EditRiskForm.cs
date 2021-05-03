@@ -8,9 +8,17 @@ namespace RyskTech.Forms.Lab
     {
         public Risk createdRisk;
 
-        public EditRiskForm()
+        public EditRiskForm(Risk agent)
         {
             InitializeComponent();
+            if (agent != null)
+            {
+                dangerComboBox.Text = agent.associatedDanger;
+                riskComboBox.Text = agent.description;
+                safetyGuardComboBox.Text = agent.safetyNet;
+                frequencyClassificationComboBox.Text = agent.frequencyClassification;
+                severityClassificationComboBox.Text = agent.severityClassification;
+            }
         }
 
         private void frequencyTableButton_Click(object sender, EventArgs e)

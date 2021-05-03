@@ -60,6 +60,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.riskClass = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usage = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.editBioAgentButotn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -326,6 +327,7 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.editBioAgentButotn);
             this.panel2.Controls.Add(this.removeBioResidueButton);
             this.panel2.Controls.Add(this.addBiologicalResidueButton);
             this.panel2.Controls.Add(this.bioAgentData);
@@ -337,7 +339,7 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // removeBioResidueButton
             // 
-            this.removeBioResidueButton.Location = new System.Drawing.Point(113, 221);
+            this.removeBioResidueButton.Location = new System.Drawing.Point(237, 221);
             this.removeBioResidueButton.Margin = new System.Windows.Forms.Padding(9);
             this.removeBioResidueButton.Name = "removeBioResidueButton";
             this.removeBioResidueButton.Size = new System.Drawing.Size(96, 25);
@@ -388,6 +390,17 @@ namespace RyskTech.Forms.Lab.Controls
             this.usage.Name = "usage";
             this.usage.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.usage.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // editBioAgentButotn
+            // 
+            this.editBioAgentButotn.Location = new System.Drawing.Point(123, 221);
+            this.editBioAgentButotn.Margin = new System.Windows.Forms.Padding(9);
+            this.editBioAgentButotn.Name = "editBioAgentButotn";
+            this.editBioAgentButotn.Size = new System.Drawing.Size(96, 25);
+            this.editBioAgentButotn.TabIndex = 4;
+            this.editBioAgentButotn.Text = "Editar";
+            this.editBioAgentButotn.UseVisualStyleBackColor = true;
+            this.editBioAgentButotn.Click += new System.EventHandler(this.editBioAgentButotn_Click);
             // 
             // BiologicalAgentsControl
             // 
@@ -448,5 +461,6 @@ namespace RyskTech.Forms.Lab.Controls
         private System.Windows.Forms.DataGridViewTextBoxColumn usage;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button removeSampleButton;
+        private System.Windows.Forms.Button editBioAgentButotn;
     }
 }

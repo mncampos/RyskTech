@@ -8,9 +8,29 @@ namespace RyskTech.Forms.Lab
     {
         public MechanicalAgent createdAgent;
 
-        public EditMechanicalAgentForm()
+        public EditMechanicalAgentForm(MechanicalAgent agent)
         {
             InitializeComponent();
+            if (agent != null)
+            {
+                if (agentComboBox.Items.Contains(agent.name))
+                    agentComboBox.Text = agent.name;
+                else
+                {
+                    agentComboBox.Text = "Outros";
+                    otherNameTextBox.Text = agent.name;
+                }
+
+                if (riskComboBox.Items.Contains(agent.associatedRisk))
+                    riskComboBox.Text = agent.associatedRisk;
+                else
+                {
+                    riskComboBox.Text = "Outros";
+                    otherRiskTextBox.Text = agent.associatedRisk;
+                }
+
+                additionalInfoTextBox.Text = agent.additionalInfo;
+            }
         }
 
         private void cancelButton_Click(object sender, EventArgs e)

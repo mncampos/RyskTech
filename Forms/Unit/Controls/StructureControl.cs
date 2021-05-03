@@ -21,11 +21,40 @@ namespace RyskTech.Forms.Unit.Controls
 
         private void addSpaceButton_Click(object sender, EventArgs e)
         {
-            EditSpaceForm form = new EditSpaceForm();
+            EditSpaceForm form = new EditSpaceForm(null);
             form.ShowDialog();
 
             if (form.data != null)
                 addDataToTable(form.data);
+        }
+        
+        private void editSpaceButton_Click(object sender, EventArgs e)
+        {
+            if (InternalStructureDataGridView.SelectedRows.Count > 0)
+            {
+                DataGridViewRow row = InternalStructureDataGridView.SelectedRows[0];
+
+                Space entry = new Space();
+                entry.buildingIdentifier = row.Cells[0].Value.ToString();
+                entry.roomIdentifier = row.Cells[1].Value.ToString();
+                entry.floorIdentifier = row.Cells[2].Value.ToString();
+                entry.turnStart = System.TimeSpan.Parse(row.Cells[3].Value.ToString());
+                entry.turnEnd = System.TimeSpan.Parse(row.Cells[4].Value.ToString());
+                entry.surroundingsComments = row.Cells[5].Value.ToString();
+
+                EditSpaceForm form = new EditSpaceForm(entry);
+                form.ShowDialog();
+
+                if (form.data != null)
+                {
+                    InternalStructureDataGridView.Rows[row.Index].Cells[0].Value = form.data.buildingIdentifier;
+                    InternalStructureDataGridView.Rows[row.Index].Cells[1].Value = form.data.roomIdentifier;
+                    InternalStructureDataGridView.Rows[row.Index].Cells[2].Value = form.data.floorIdentifier;
+                    InternalStructureDataGridView.Rows[row.Index].Cells[3].Value = form.data.turnStart.ToString();
+                    InternalStructureDataGridView.Rows[row.Index].Cells[4].Value = form.data.turnEnd.ToString();
+                    InternalStructureDataGridView.Rows[row.Index].Cells[5].Value = form.data.surroundingsComments;
+                }
+            }
         }
 
         private void removeSpaceButton_Click(object sender, EventArgs e)

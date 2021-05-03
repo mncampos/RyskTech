@@ -8,9 +8,13 @@ namespace RyskTech.Forms.Lab
     {
         public PhysicalAgent createdAgent;
 
-        public EditPhysicalAgentForm()
+        public EditPhysicalAgentForm(PhysicalAgent agent)
         {
             InitializeComponent();
+            if (agent != null)
+            {
+                equipmentTextBox.Text = agent.equipment;
+            }
         }
 
         private void noiseCheckBox_CheckedChanged(object sender, EventArgs e)

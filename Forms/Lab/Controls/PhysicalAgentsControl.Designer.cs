@@ -38,6 +38,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.removePhyisicalAgentButton = new System.Windows.Forms.Button();
             this.addPhyisicalAgentButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.editPhyisicalAgentButton = new System.Windows.Forms.Button();
             this.mainTableLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.phyisicalAgentsDataGridView)).BeginInit();
             this.panel1.SuspendLayout();
@@ -96,6 +97,7 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.editPhyisicalAgentButton);
             this.panel1.Controls.Add(this.removePhyisicalAgentButton);
             this.panel1.Controls.Add(this.addPhyisicalAgentButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -106,7 +108,7 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // removePhyisicalAgentButton
             // 
-            this.removePhyisicalAgentButton.Location = new System.Drawing.Point(93, 12);
+            this.removePhyisicalAgentButton.Location = new System.Drawing.Point(174, 12);
             this.removePhyisicalAgentButton.Name = "removePhyisicalAgentButton";
             this.removePhyisicalAgentButton.Size = new System.Drawing.Size(75, 23);
             this.removePhyisicalAgentButton.TabIndex = 1;
@@ -136,12 +138,22 @@ namespace RyskTech.Forms.Lab.Controls
             this.label1.Text = "Preencha a tabela abaixo com os agentes e riscos físicos presentes em seu espaço";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // PhysicalAgentsControlBetter
+            // editPhyisicalAgentButton
+            // 
+            this.editPhyisicalAgentButton.Location = new System.Drawing.Point(93, 12);
+            this.editPhyisicalAgentButton.Name = "editPhyisicalAgentButton";
+            this.editPhyisicalAgentButton.Size = new System.Drawing.Size(75, 23);
+            this.editPhyisicalAgentButton.TabIndex = 2;
+            this.editPhyisicalAgentButton.Text = "Editar";
+            this.editPhyisicalAgentButton.UseVisualStyleBackColor = true;
+            this.editPhyisicalAgentButton.Click += new System.EventHandler(this.editPhyisicalAgentButton_Click);
+            // 
+            // PhysicalAgentsControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.mainTableLayoutPanel);
-            this.Name = "PhysicalAgentsControlBetter";
+            this.Name = "PhysicalAgentsControl";
             this.Size = new System.Drawing.Size(596, 467);
             this.Load += new System.EventHandler(this.PhysicalAgentsControlBetter_Load);
             this.mainTableLayoutPanel.ResumeLayout(false);
@@ -163,5 +175,6 @@ namespace RyskTech.Forms.Lab.Controls
         private System.Windows.Forms.DataGridViewTextBoxColumn usage;
         private System.Windows.Forms.DataGridViewTextBoxColumn risks;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button editPhyisicalAgentButton;
     }
 }
