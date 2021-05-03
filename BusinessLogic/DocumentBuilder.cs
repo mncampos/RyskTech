@@ -267,7 +267,7 @@ namespace RyskTech
             AddTextParagraph("O espaço " + (apr.lab.biologicalAgentsInfo.hasOGM ? "" : "não") + " manipula organismos genéticamente modificados (OGMS), e" +
                 (apr.lab.biologicalAgentsInfo.hasBioSecurityCertificate? "" : "não") + " possui certificado de qualidade em biosegurança.");
 
-            if (apr.lab.biologicalAgentsInfo.SISGEN.Length > 0)
+            if (apr.lab.biologicalAgentsInfo.SISGEN != null && apr.lab.biologicalAgentsInfo.SISGEN.Length > 0)
                 AddTextParagraph("O espaço possui número de cadastro SISGEN " + apr.lab.biologicalAgentsInfo.SISGEN);
             else
                 AddTextParagraph("O espaço não possui número de cadastro SISGEN.");
@@ -521,7 +521,7 @@ namespace RyskTech
         private IWParagraph AddTitleToSection(IWSection section, string title)
         {
             IWParagraph title_paragraph = section.AddParagraph();
-            title_paragraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+            title_paragraph.ParagraphFormat.HorizontalAlignment = Syncfusion.DocIO.DLS.HorizontalAlignment.Left;
 
             IWTextRange title_text = title_paragraph.AppendText(title);
             title_text.CharacterFormat.Bold = true;
@@ -536,7 +536,7 @@ namespace RyskTech
         private void AddTextParagraph(string content)
         {
             IWParagraph paragraph = GetCurrentSection().AddParagraph();
-            paragraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Justify;
+            paragraph.ParagraphFormat.HorizontalAlignment = Syncfusion.DocIO.DLS.HorizontalAlignment.Justify;
             paragraph.AppendText(content);
         }
 

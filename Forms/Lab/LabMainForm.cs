@@ -2,6 +2,7 @@
 using RyskTech.Forms.Lab.Controls;
 using System;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace RyskTech.Forms.Lab
@@ -237,13 +238,14 @@ namespace RyskTech.Forms.Lab
                 data.biologicalAgentsStorage = biologicalAgentControl.storage;
             }
 
-
             mechanicalAgentControl.ValidateData();
             data.mechanicalAgentsInfo = mechanicalAgentControl.mechanicalAgentList;
-         
 
-            physicalAgentControl.ValidateData();
-            data.physicalAgentsInfo = physicalAgentControl.physicalAgentList;
+            if (data.generalInformation.manipulatesPhysicalAgents)
+            {
+                physicalAgentControl.ValidateData();
+                data.physicalAgentsInfo = physicalAgentControl.physicalAgentList;
+            }
 
             riskAnalysisControl.ValidateData();
             conclusionControl.ValidateData();
@@ -271,16 +273,43 @@ namespace RyskTech.Forms.Lab
 
                 if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(save.FileName))
                 {
-                    DocumentBuilder docBuilder = new DocumentBuilder(compilation, save.FileName);
+                    if (compilation.lab.biologicalAgentsInfo.hasBioSecurityCertificate)
+                    {
+                        MessageBox.Show("Por favor, apresente o certificado de biossegurança do seu laboratório");
+                        OpenFileDialog open = new OpenFileDialog();
+                        open.Filter = "Pdf Document|*.pdf";
+                        open.Title = "Certificado de Biossegurança";
 
-                    int statusCode = docBuilder.CreateLabDocumentFromAPR();
+                        DialogResult openResult = open.ShowDialog();
 
-                    if (statusCode == 0)
-                        MessageBox.Show("APR Gerada com sucesso!", "Obrigado por usar RyskTech! :)");
+                        if (openResult == DialogResult.OK && !string.IsNullOrWhiteSpace(open.FileName))
+                        {
+                            DocumentBuilder docBuilder = new DocumentBuilder(compilation, save.FileName);
+
+                            int statusCode = docBuilder.CreateLabDocumentFromAPR();
+                            File.Copy(open.FileName, save.FileName + "_certificado.pdf");
+
+                            if (statusCode == 0)
+                                MessageBox.Show("APR Gerada com sucesso!", "Obrigado por usar RyskTech! :)");
+                            else
+                                MessageBox.Show("Foram encontrados alguns erros na geração da APR", ":(");
+
+                            Close();
+                        }
+                    }
                     else
-                        MessageBox.Show("Foram encontrados alguns erros na geração da APR", ":(");
+                    {
+                        DocumentBuilder docBuilder = new DocumentBuilder(compilation, save.FileName);
 
-                    Close();
+                        int statusCode = docBuilder.CreateLabDocumentFromAPR();
+
+                        if (statusCode == 0)
+                            MessageBox.Show("APR Gerada com sucesso!", "Obrigado por usar RyskTech! :)");
+                        else
+                            MessageBox.Show("Foram encontrados alguns erros na geração da APR", ":(");
+
+                        Close();
+                    }
                 }
             }
             catch (Exception ex)
