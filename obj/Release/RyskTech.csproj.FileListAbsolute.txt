@@ -42,3 +42,4 @@ C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Relea
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Release\RyskTech.Forms.Unit.UnitMainForm.resources
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Release\RyskTech.Forms.Unit.EditSpaceForm.resources
 C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Release\RyskTech.Forms.Lab.EditRiskForm.resources
+C:\Users\Home\Desktop\Laboratorio_de_Software\ProjetoRyskTech\RyskTech\obj\Release\RyskTech.csprojAssemblyReference.cache

@@ -71,9 +71,6 @@ namespace RyskTech.Data
 
         public string GetGoogleMapsSearchURL()
         {
-            string city = "Porto Alegre";
-            string state = "RS";
-
             StringBuilder address = new StringBuilder();
             address.Append("https://maps.google.com/maps?q=");
 
@@ -82,10 +79,19 @@ namespace RyskTech.Data
                 address.Append(streetName + "," + "+");
             }
 
-            address.Append(city + "," + "+");
-            address.Append(state + "," + "+");
+            if (district != null)
+            {
+                address.Append(district + "," + "+");
+            }
+            
+            address.Append(ZIPCode + ",");
+            address.Append("&#8221&z=15");
+            
+            byte[] tempBytes;
+            tempBytes = System.Text.Encoding.GetEncoding("ISO-8859-8").GetBytes(address.ToString());
+            string asciiStr = System.Text.Encoding.UTF8.GetString(tempBytes);
 
-            return address.ToString();
+            return asciiStr;
         }
 
         public void CheckValidity()
