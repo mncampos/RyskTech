@@ -19,7 +19,7 @@ namespace RyskTech.Data
         public string complement;
         public string surroundingsDetails;
 
-        public Location() 
+        public Location()
         {
             prefix = LocationPrefix.Invalid;
             streetNumber = -1;
@@ -83,10 +83,10 @@ namespace RyskTech.Data
             {
                 address.Append(district + "," + "+");
             }
-            
+
             address.Append(ZIPCode + ",");
             address.Append("&#8221&z=15");
-            
+
             byte[] tempBytes;
             tempBytes = System.Text.Encoding.GetEncoding("ISO-8859-8").GetBytes(address.ToString());
             string asciiStr = System.Text.Encoding.UTF8.GetString(tempBytes);

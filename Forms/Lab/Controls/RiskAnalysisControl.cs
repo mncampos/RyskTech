@@ -41,7 +41,7 @@ namespace RyskTech.Forms.Lab.Controls
 
                 EditRiskForm newRisk = new EditRiskForm(risk);
                 newRisk.ShowDialog();
-                
+
                 if (newRisk.createdRisk != null)
                 {
                     riskDataGridView.Rows[row.Index].Cells[0].Value = newRisk.createdRisk.description;

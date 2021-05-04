@@ -52,5 +52,10 @@ namespace RyskTech.Forms.Lab.Controls
         {
             data.CheckValidity();
         }
+
+        private void responsiblePersonOccupation_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

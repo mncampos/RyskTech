@@ -60,7 +60,7 @@ namespace RyskTech.Forms.Lab.Controls
                 {
                     bioAgentData.Rows[bioAgentData.SelectedRows[0].Index].Cells[0].Value = newAgentForm.createdAgent.name;
                     bioAgentData.Rows[bioAgentData.SelectedRows[0].Index].Cells[1].Value = newAgentForm.createdAgent.riskClassification;
-                    bioAgentData.Rows[bioAgentData.SelectedRows[0].Index].Cells[2].Value = newAgentForm.createdAgent.usageScenarios; 
+                    bioAgentData.Rows[bioAgentData.SelectedRows[0].Index].Cells[2].Value = newAgentForm.createdAgent.usageScenarios;
                 }
             }
         }

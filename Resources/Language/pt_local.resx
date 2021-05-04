@@ -165,6 +165,9 @@
   <data name="DangerCharacteristics" xml:space="preserve">
     <value>Características de periculosidade</value>
   </data>
+  <data name="Days" xml:space="preserve">
+    <value>Dias</value>
+  </data>
   <data name="Director" xml:space="preserve">
     <value>Diretor</value>
   </data>
@@ -209,6 +212,9 @@
   </data>
   <data name="ErrorNoManipulatedAreasSelected" xml:space="preserve">
     <value>Selecione pelo menos um tipo de material manipulado na sua unidade!</value>
+  </data>
+  <data name="ErrorNoOccupation" xml:space="preserve">
+    <value>Por favor indique a ocupação de todos os resposáveis</value>
   </data>
   <data name="ErrorNoPhyisicalAgents" xml:space="preserve">
     <value>Por favor cite todos os agentes físicos e seus riscos associados</value>
@@ -329,6 +335,9 @@
   </data>
   <data name="NotAllTabsVisited" xml:space="preserve">
     <value>Por favor preencha todas as abas antes de completar o documento!</value>
+  </data>
+  <data name="NoUsageDays" xml:space="preserve">
+    <value>Por favor indique os dias em que o espaço é utilizado</value>
   </data>
   <data name="Origin" xml:space="preserve">
     <value>Origem</value>

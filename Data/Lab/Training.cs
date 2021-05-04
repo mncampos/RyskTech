@@ -9,7 +9,7 @@ namespace RyskTech.Data
         public string periodicityUnit;
         public string involvedPersonel;
 
-        public Training() 
+        public Training()
         {
             this.providesTraining = false;
         }

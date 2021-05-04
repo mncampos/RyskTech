@@ -84,7 +84,7 @@ namespace RyskTech.Data
 
             if (this.frequencyClassification == null || this.frequencyClassification.Length <= 0)
                 throw new ApplicationException(Resources.Language.pt_local.ErrorNoFrequencyClassificaiton);
-            
+
             if (this.riskClassification <= 0 || riskClassification >= 6)
                 throw new ApplicationException(Resources.Language.pt_local.ErrorNoFrequencyClassificaiton);
         }

@@ -760,7 +760,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:RyskTech"
         "ProductCode" = "8:{70DEE1EA-8484-450C-AEB4-C924A0461A93}"
-        "PackageCode" = "8:{BC143D54-3693-4B25-A8D2-807267AD4CD1}"
+        "PackageCode" = "8:{CA028550-FBC2-4E40-93D4-53DAF5C6E06E}"
         "UpgradeCode" = "8:{0344C207-0A39-44E0-BD94-EA99C7B1C6A3}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

@@ -11,7 +11,7 @@ namespace RyskTech.Forms.Lab
         public EditBiologicalAgentForm(BiologicalAgent agent)
         {
             InitializeComponent();
-            
+
             if (agent != null)
             {
                 agentNameTextBox.Text = agent.name;

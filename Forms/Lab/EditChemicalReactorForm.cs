@@ -1,7 +1,6 @@
-﻿using System;
-using System.Linq;
+﻿using RyskTech.Data;
+using System;
 using System.Windows.Forms;
-using RyskTech.Data;
 
 namespace RyskTech.Forms.Lab
 {
@@ -61,7 +60,7 @@ namespace RyskTech.Forms.Lab
 
             string origins = "";
             foreach (string item in originCheckedListBox.CheckedItems)
-               origins += item + "\n";
+                origins += item + "\n";
 
 
             string dangers = "";
@@ -78,7 +77,7 @@ namespace RyskTech.Forms.Lab
                 origins,
                 casNumberTextBox.Text,
                 mixedRadioButton.Checked ? mixedSubstanceTextBox.Text : "Pura",
-                dangers, 
+                dangers,
                 container,
                 storageLocationTextBox.Text,
                 inertRadioButton.Checked);

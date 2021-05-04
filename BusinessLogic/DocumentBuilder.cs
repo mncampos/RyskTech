@@ -78,7 +78,7 @@ namespace RyskTech
         {
             List<string> items = apr.GetFormattedGeneralInfoList();
 
-            AddSubsectionTitle(section,"Informações gerais");
+            AddSubsectionTitle(section, "Informações gerais");
             AddListWithItems(items);
         }
 
@@ -120,7 +120,7 @@ namespace RyskTech
             chemicalReactorTable[0, 7].AddParagraph().AppendText(Resources.Language.pt_local.Inert);
             chemicalReactorTable[0, 8].AddParagraph().AppendText(Resources.Language.pt_local.Container);
             chemicalReactorTable[0, 9].AddParagraph().AppendText(Resources.Language.pt_local.StorageInfo);
-        
+
             for (int i = 0; i < apr.lab.manipulatedChemicalReactors.Count; i++)
             {
                 chemicalReactorTable[i + 1, 0].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].name);
@@ -130,7 +130,7 @@ namespace RyskTech
                 chemicalReactorTable[i + 1, 4].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].mixtureDescription);
                 chemicalReactorTable[i + 1, 5].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].casNumber);
                 chemicalReactorTable[i + 1, 6].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].dangerCharacteristics);
-                chemicalReactorTable[i + 1, 7].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].inert? Resources.Language.pt_local.Yes : Resources.Language.pt_local.No);
+                chemicalReactorTable[i + 1, 7].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].inert ? Resources.Language.pt_local.Yes : Resources.Language.pt_local.No);
                 chemicalReactorTable[i + 1, 8].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].container);
                 chemicalReactorTable[i + 1, 9].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].storageDetails);
             }
@@ -230,7 +230,7 @@ namespace RyskTech
 
         private void AddLabBiologicalAgentInfo(IWSection section)
         {
-            AddSubsectionTitle(section,"Compilação dos agentes biológicos");
+            AddSubsectionTitle(section, "Compilação dos agentes biológicos");
             AddBiologicalAgentsTable();
 
             AddProcessedBioSamples();
@@ -265,7 +265,7 @@ namespace RyskTech
         private void AddBioRegistryInformation()
         {
             AddTextParagraph("O espaço " + (apr.lab.biologicalAgentsInfo.hasOGM ? "" : "não") + " manipula organismos genéticamente modificados (OGMS), e" +
-                (apr.lab.biologicalAgentsInfo.hasBioSecurityCertificate? "" : "não") + " possui certificado de qualidade em biosegurança.");
+                (apr.lab.biologicalAgentsInfo.hasBioSecurityCertificate ? "" : "não") + " possui certificado de qualidade em biosegurança.");
 
             if (apr.lab.biologicalAgentsInfo.SISGEN != null && apr.lab.biologicalAgentsInfo.SISGEN.Length > 0)
                 AddTextParagraph("O espaço possui número de cadastro SISGEN " + apr.lab.biologicalAgentsInfo.SISGEN);
@@ -284,7 +284,7 @@ namespace RyskTech
             AddSubsectionTitle(section, "Compilação dos agentes mecânicos");
             AddMechanicalAgentsTable();
         }
-        
+
         private void AddMechanicalAgentsTable()
         {
             IWTable mechanicalAgentsTable = GetCurrentSection().AddTable();
@@ -302,7 +302,7 @@ namespace RyskTech
 
         private void AddLabPhysicalAgentInfo(IWSection section)
         {
-            AddSubsectionTitle(section,"Compilação dos agentes físicos");
+            AddSubsectionTitle(section, "Compilação dos agentes físicos");
             AddPhysicalAgentsTable();
         }
 
@@ -313,13 +313,13 @@ namespace RyskTech
             physicalAgentsTable[0, 0].AddParagraph().AppendText(Resources.Language.pt_local.Equipment);
             physicalAgentsTable[0, 1].AddParagraph().AppendText(Resources.Language.pt_local.Usage);
             physicalAgentsTable[0, 2].AddParagraph().AppendText(Resources.Language.pt_local.AssociatedRisk);
-            for (int i = 0; i < apr.lab.physicalAgentsInfo.Count;  i++)
+            for (int i = 0; i < apr.lab.physicalAgentsInfo.Count; i++)
             {
                 physicalAgentsTable[i + 1, 0].AddParagraph().AppendText(apr.lab.physicalAgentsInfo[i].equipment);
                 physicalAgentsTable[i + 1, 1].AddParagraph().AppendText(apr.lab.physicalAgentsInfo[i].usage);
                 physicalAgentsTable[i + 1, 2].AddParagraph().AppendText(apr.lab.physicalAgentsInfo[i].generatedRisks);
             }
-        
+
         }
 
         private void AddLabIdentifiedRisks()
@@ -332,13 +332,13 @@ namespace RyskTech
         {
             IWTable risksTable = GetCurrentSection().AddTable();
             risksTable.ResetCells(apr.lab.riskAnalysisInformation.identifiedRisks.Count + 1, 6);
-            risksTable[0,0].AddParagraph().AppendText(Resources.Language.pt_local.Risk);
-            risksTable[0,1].AddParagraph().AppendText(Resources.Language.pt_local.Danger);
-            risksTable[0,2].AddParagraph().AppendText(Resources.Language.pt_local.SafetyNet);
-            risksTable[0,3].AddParagraph().AppendText(Resources.Language.pt_local.SeverityClassification);
-            risksTable[0,4].AddParagraph().AppendText(Resources.Language.pt_local.FrequencyClassification);
-            risksTable[0,5].AddParagraph().AppendText(Resources.Language.pt_local.RiskClassification);
-            
+            risksTable[0, 0].AddParagraph().AppendText(Resources.Language.pt_local.Risk);
+            risksTable[0, 1].AddParagraph().AppendText(Resources.Language.pt_local.Danger);
+            risksTable[0, 2].AddParagraph().AppendText(Resources.Language.pt_local.SafetyNet);
+            risksTable[0, 3].AddParagraph().AppendText(Resources.Language.pt_local.SeverityClassification);
+            risksTable[0, 4].AddParagraph().AppendText(Resources.Language.pt_local.FrequencyClassification);
+            risksTable[0, 5].AddParagraph().AppendText(Resources.Language.pt_local.RiskClassification);
+
             for (int i = 0; i < apr.lab.riskAnalysisInformation.identifiedRisks.Count; i++)
                 for (int j = 0; j < 6; j++)
                     risksTable[i + 1, j].AddParagraph().AppendText(apr.lab.riskAnalysisInformation.GetFormattedRiskList()[i][j]);
@@ -361,7 +361,7 @@ namespace RyskTech
             List<string> directors = apr.GetDirectorsFormattedDescriptionList();
 
             AddSectionWithTitle(this.documentReference.Sections.Count + ". Equipe");
-            AddTextParagraph("Direção: ");
+            AddTextParagraph("Responsáveis: ");
             AddListWithItems(directors);
             AddTextParagraph("Público frequentador: ");
             AddTeamCompositionTable();
@@ -397,19 +397,21 @@ namespace RyskTech
         {
             // Create table with rooms, buildings and time ranges
             IWTable unit_spaces_table = GetCurrentSection().AddTable();
-            unit_spaces_table.ResetCells(apr.unit.structure.spaces.Count + 1, 5);
+            unit_spaces_table.ResetCells(apr.unit.structure.spaces.Count + 1, 6);
             unit_spaces_table[0, 0].AddParagraph().AppendText(Resources.Language.pt_local.Building);
             unit_spaces_table[0, 1].AddParagraph().AppendText(Resources.Language.pt_local.Room);
             unit_spaces_table[0, 2].AddParagraph().AppendText(Resources.Language.pt_local.Floor);
             unit_spaces_table[0, 3].AddParagraph().AppendText(Resources.Language.pt_local.UsagePeriod);
             unit_spaces_table[0, 4].AddParagraph().AppendText(Resources.Language.pt_local.SurroundingsComments);
+            unit_spaces_table[0, 5].AddParagraph().AppendText(Resources.Language.pt_local.Days);
             for (int i = 0; i < apr.unit.structure.spaces.Count; i++)
             {
                 unit_spaces_table[i + 1, 0].AddParagraph().AppendText(apr.unit.structure.spaces[i].buildingIdentifier);
                 unit_spaces_table[i + 1, 1].AddParagraph().AppendText(apr.unit.structure.spaces[i].roomIdentifier);
                 unit_spaces_table[i + 1, 2].AddParagraph().AppendText(apr.unit.structure.spaces[i].floorIdentifier);
-                unit_spaces_table[i + 1, 3].AddParagraph().AppendText(apr.unit.structure.spaces[i].turnStart.ToString() + " - " + apr.unit.structure.spaces[i].turnEnd.ToString()); // TODO Parse times
+                unit_spaces_table[i + 1, 3].AddParagraph().AppendText(apr.unit.structure.spaces[i].turnStart.ToString() + " - " + apr.unit.structure.spaces[i].turnEnd.ToString());
                 unit_spaces_table[i + 1, 4].AddParagraph().AppendText(apr.unit.structure.spaces[i].surroundingsComments);
+                unit_spaces_table[i + 1, 5].AddParagraph().AppendText(apr.unit.structure.spaces[i].weekDays);
             }
         }
 

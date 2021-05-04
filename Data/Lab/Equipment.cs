@@ -52,7 +52,7 @@ namespace RyskTech.Data
 
             if (EPCS[6])
                 usedEpcs.Add(otherEPC);
-            
+
             return usedEpcs;
         }
 

@@ -16,11 +16,11 @@ namespace RyskTech.Data
 
         public string contactPhone;
 
-        public Team() 
+        public Team()
         {
             director = new Individual();
             viceDirector = new Individual();
-            
+
             generalPublicCount = 0;
             studentsCount = 0;
             teachersCount = 0;
@@ -31,7 +31,7 @@ namespace RyskTech.Data
         public void CheckValidity()
         {
             director.CheckValidity();
-            
+
             viceDirector.CheckValidity();
 
             if (contactPhone == null || contactPhone.Length <= 0)

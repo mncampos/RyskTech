@@ -1,12 +1,5 @@
 ﻿using RyskTech.Data;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RyskTech.Forms.Unit.Controls
@@ -110,6 +103,16 @@ namespace RyskTech.Forms.Unit.Controls
                 data.CheckValidity();
             else
                 throw new ApplicationException(Resources.Language.pt_local.NotAllTabsVisited);
+        }
+
+        private void directorOccupationTextBox_TextChanged(object sender, EventArgs e)
+        {
+            data.director.occupation = directorOccupationTextBox.Text;
+        }
+
+        private void viceOccupationTextBox_TextChanged(object sender, EventArgs e)
+        {
+            data.viceDirector.occupation = viceOccupationTextBox.Text;
         }
     }
 }

@@ -6,6 +6,7 @@ namespace RyskTech.Data
     {
         public string responsiblePersonName;
         public string responsiblePersonContact;
+        public string responsiblePersonOccupation;
 
         public string building;
         public string room;
@@ -21,6 +22,9 @@ namespace RyskTech.Data
 
             if (responsiblePersonContact == null || responsiblePersonContact.Length <= 0)
                 throw new ApplicationException(Resources.Language.pt_local.InvalidPhoneNumber);
+
+            if (responsiblePersonOccupation == null || responsiblePersonOccupation.Length <= 0)
+                throw new ApplicationException(Resources.Language.pt_local.ErrorNoOccupation);
 
             if (building == null || building.Length <= 0)
                 throw new ApplicationException(Resources.Language.pt_local.InvalidSpaceBuilding);

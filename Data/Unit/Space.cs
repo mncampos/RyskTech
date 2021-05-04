@@ -10,16 +10,18 @@ namespace RyskTech.Data
         public TimeSpan turnStart;
         public TimeSpan turnEnd;
         public string surroundingsComments;
+        public string weekDays;
 
         public Space() { }
 
-        public Space(string buildingId, string roomId, string floorId, TimeSpan startTime, TimeSpan endTime)
+        public Space(string buildingId, string roomId, string floorId, TimeSpan startTime, TimeSpan endTime, string weekDays)
         {
             this.buildingIdentifier = buildingId;
             this.roomIdentifier = roomId;
             this.floorIdentifier = floorId;
             this.turnStart = startTime;
             this.turnEnd = endTime;
+            this.weekDays = weekDays;
         }
 
         public void CheckValidity()
@@ -35,6 +37,9 @@ namespace RyskTech.Data
 
             if (turnStart == null || turnEnd == null)
                 throw new ApplicationException(Resources.Language.pt_local.InvalidUsageTurn);
+
+            if (weekDays == null || weekDays.Length <= 0)
+                throw new ApplicationException(Resources.Language.pt_local.NoUsageDays);
         }
     }
 }

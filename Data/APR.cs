@@ -30,7 +30,7 @@ namespace RyskTech
             List<string> directors = new List<string>();
 
             directors.Add(unit.team.director.GetFormattedIndividualString());
-            directors.Add(unit.team.director.GetFormattedIndividualString());
+            directors.Add(unit.team.viceDirector.GetFormattedIndividualString());
 
             return directors;
         }
@@ -42,7 +42,7 @@ namespace RyskTech
             info.Add("Unidade pertencente: " + lab.generalInformation.belongingUnitName);
             info.Add("Prédio: " + lab.spaceCharacterization.building);
             info.Add("Sala: " + lab.spaceCharacterization.room);
-            info.Add("Responsável: " + lab.spaceCharacterization.responsiblePersonName + "(" + lab.spaceCharacterization.responsiblePersonContact+ ")");
+            info.Add(lab.spaceCharacterization.responsiblePersonOccupation + ": " + lab.spaceCharacterization.responsiblePersonName + "(" + lab.spaceCharacterization.responsiblePersonContact + ")");
 
             return info;
         }

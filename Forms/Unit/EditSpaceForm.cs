@@ -1,5 +1,5 @@
-﻿using System;
-using RyskTech.Data;
+﻿using RyskTech.Data;
+using System;
 using System.Windows.Forms;
 
 namespace RyskTech.Forms.Unit
@@ -16,7 +16,7 @@ namespace RyskTech.Forms.Unit
                 buildingTextBox.Text = space.buildingIdentifier;
                 roomTextBox.Text = space.roomIdentifier;
                 floorTextBox.Text = space.floorIdentifier;
-                
+
                 startHourNumericUpDown.Value = space.turnStart.Hours;
                 startMinutesNumericUpDown.Value = space.turnStart.Minutes;
 
@@ -43,12 +43,28 @@ namespace RyskTech.Forms.Unit
             data.turnStart = new TimeSpan((int)startHourNumericUpDown.Value, (int)startMinutesNumericUpDown.Value, 0);
             data.turnEnd = new TimeSpan((int)endHourNumericUpDown.Value, (int)endMinuteNumericUpDown.Value, 0);
             data.surroundingsComments = surroundingInfoTextBox.Text;
+            data.weekDays = "";
+            if (checkBox1.Checked)
+                data.weekDays += "Segunda-Feira\n";
+            if (checkBox2.Checked)
+                data.weekDays += "Terça-Feira\n";
+            if (checkBox3.Checked)
+                data.weekDays += "Quarta-Feira\n";
+            if (checkBox4.Checked)
+                data.weekDays += "Quinta-Feira\n";
+            if (checkBox5.Checked)
+                data.weekDays += "Sexta-Feira\n";
+            if (checkBox6.Checked)
+                data.weekDays += "Sábado\n";
+            if (checkBox7.Checked)
+                data.weekDays += "Domingo\n";
 
             try
             {
                 data.CheckValidity();
                 Close();
-            } catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 data = null;
                 MessageBox.Show(ex.Message);

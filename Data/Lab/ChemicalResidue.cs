@@ -5,7 +5,7 @@
         public bool dangerous;
         public bool inert;
 
-        public ChemicalResidue() 
+        public ChemicalResidue()
         {
         }
 

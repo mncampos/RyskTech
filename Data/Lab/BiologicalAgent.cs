@@ -16,7 +16,7 @@ namespace RyskTech.Data
             this.riskClassification = riskClassification;
             this.usageScenarios = usageScenarios;
         }
-        
+
         public void CheckValidity()
         {
             if (name == null || name.Length <= 0)

@@ -12,7 +12,7 @@ namespace RyskTech.Data
         public bool manipulatesPhysicalAgents;
 
 
-        public LabScope() 
+        public LabScope()
         {
             manipulatesChemicalAgents = false;
             manipulatesBiologicalAgents = false;

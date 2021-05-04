@@ -63,13 +63,13 @@ namespace RyskTech.Forms.Lab
             agent.associatedRisk = riskComboBox.Text == "Outros" ? otherRiskTextBox.Text : riskComboBox.Text;
             agent.additionalInfo = additionalInfoTextBox.Text;
 
-            try 
+            try
             {
                 agent.CheckValidity();
                 createdAgent = agent;
                 Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 this.createdAgent = null;
                 MessageBox.Show(ex.Message);

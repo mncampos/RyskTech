@@ -56,6 +56,9 @@ namespace RyskTech.Forms.Lab
             this.label1 = new System.Windows.Forms.Label();
             this.cancelButton = new System.Windows.Forms.Button();
             this.concludeButton = new System.Windows.Forms.Button();
+            this.safetyMeasuresListBox = new System.Windows.Forms.ListBox();
+            this.addSafetyNetButton = new System.Windows.Forms.Button();
+            this.removeSafetyNetButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -76,7 +79,7 @@ namespace RyskTech.Forms.Lab
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(325, 229);
+            this.panel1.Size = new System.Drawing.Size(325, 321);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -87,11 +90,14 @@ namespace RyskTech.Forms.Lab
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(325, 229);
+            this.panel2.Size = new System.Drawing.Size(325, 321);
             this.panel2.TabIndex = 9;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.removeSafetyNetButton);
+            this.groupBox1.Controls.Add(this.addSafetyNetButton);
+            this.groupBox1.Controls.Add(this.safetyMeasuresListBox);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.severityTableButotn);
@@ -106,7 +112,7 @@ namespace RyskTech.Forms.Lab
             this.groupBox1.Controls.Add(this.riskComboBox);
             this.groupBox1.Location = new System.Drawing.Point(6, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(307, 183);
+            this.groupBox1.Size = new System.Drawing.Size(307, 277);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             // 
@@ -130,7 +136,7 @@ namespace RyskTech.Forms.Lab
             // 
             // severityTableButotn
             // 
-            this.severityTableButotn.Location = new System.Drawing.Point(236, 148);
+            this.severityTableButotn.Location = new System.Drawing.Point(236, 249);
             this.severityTableButotn.Name = "severityTableButotn";
             this.severityTableButotn.Size = new System.Drawing.Size(65, 23);
             this.severityTableButotn.TabIndex = 13;
@@ -141,7 +147,7 @@ namespace RyskTech.Forms.Lab
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 80);
+            this.label8.Location = new System.Drawing.Point(12, 76);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(67, 13);
             this.label8.TabIndex = 4;
@@ -149,7 +155,7 @@ namespace RyskTech.Forms.Lab
             // 
             // frequencyTableButton
             // 
-            this.frequencyTableButton.Location = new System.Drawing.Point(236, 112);
+            this.frequencyTableButton.Location = new System.Drawing.Point(236, 213);
             this.frequencyTableButton.Name = "frequencyTableButton";
             this.frequencyTableButton.Size = new System.Drawing.Size(65, 23);
             this.frequencyTableButton.TabIndex = 12;
@@ -160,7 +166,7 @@ namespace RyskTech.Forms.Lab
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 116);
+            this.label7.Location = new System.Drawing.Point(12, 217);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(140, 13);
             this.label7.TabIndex = 5;
@@ -175,7 +181,7 @@ namespace RyskTech.Forms.Lab
             "2",
             "3",
             "4"});
-            this.severityClassificationComboBox.Location = new System.Drawing.Point(164, 149);
+            this.severityClassificationComboBox.Location = new System.Drawing.Point(164, 250);
             this.severityClassificationComboBox.Name = "severityClassificationComboBox";
             this.severityClassificationComboBox.Size = new System.Drawing.Size(66, 21);
             this.severityClassificationComboBox.TabIndex = 11;
@@ -183,7 +189,7 @@ namespace RyskTech.Forms.Lab
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 152);
+            this.label6.Location = new System.Drawing.Point(12, 253);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(141, 13);
             this.label6.TabIndex = 6;
@@ -199,7 +205,7 @@ namespace RyskTech.Forms.Lab
             "C",
             "D",
             "E"});
-            this.frequencyClassificationComboBox.Location = new System.Drawing.Point(164, 113);
+            this.frequencyClassificationComboBox.Location = new System.Drawing.Point(164, 214);
             this.frequencyClassificationComboBox.Name = "frequencyClassificationComboBox";
             this.frequencyClassificationComboBox.Size = new System.Drawing.Size(66, 21);
             this.frequencyClassificationComboBox.TabIndex = 10;
@@ -224,7 +230,7 @@ namespace RyskTech.Forms.Lab
             "Treinamento de segurança",
             "Kit de primeiros socorros",
             "EPIS adequadas"});
-            this.safetyGuardComboBox.Location = new System.Drawing.Point(164, 77);
+            this.safetyGuardComboBox.Location = new System.Drawing.Point(164, 186);
             this.safetyGuardComboBox.Name = "safetyGuardComboBox";
             this.safetyGuardComboBox.Size = new System.Drawing.Size(133, 21);
             this.safetyGuardComboBox.TabIndex = 9;
@@ -246,7 +252,7 @@ namespace RyskTech.Forms.Lab
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(157, 201);
+            this.button1.Location = new System.Drawing.Point(157, 286);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -256,7 +262,7 @@ namespace RyskTech.Forms.Lab
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(238, 201);
+            this.button2.Location = new System.Drawing.Point(238, 286);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 0;
@@ -345,11 +351,39 @@ namespace RyskTech.Forms.Lab
             this.concludeButton.UseVisualStyleBackColor = true;
             this.concludeButton.Click += new System.EventHandler(this.concludeButton_Click);
             // 
+            // safetyMeasuresListBox
+            // 
+            this.safetyMeasuresListBox.FormattingEnabled = true;
+            this.safetyMeasuresListBox.Location = new System.Drawing.Point(164, 76);
+            this.safetyMeasuresListBox.Name = "safetyMeasuresListBox";
+            this.safetyMeasuresListBox.Size = new System.Drawing.Size(133, 95);
+            this.safetyMeasuresListBox.TabIndex = 14;
+            // 
+            // addSafetyNetButton
+            // 
+            this.addSafetyNetButton.Location = new System.Drawing.Point(128, 185);
+            this.addSafetyNetButton.Name = "addSafetyNetButton";
+            this.addSafetyNetButton.Size = new System.Drawing.Size(30, 23);
+            this.addSafetyNetButton.TabIndex = 16;
+            this.addSafetyNetButton.Text = "+";
+            this.addSafetyNetButton.UseVisualStyleBackColor = true;
+            this.addSafetyNetButton.Click += new System.EventHandler(this.addSafetyNetButton_Click);
+            // 
+            // removeSafetyNetButton
+            // 
+            this.removeSafetyNetButton.Location = new System.Drawing.Point(92, 185);
+            this.removeSafetyNetButton.Name = "removeSafetyNetButton";
+            this.removeSafetyNetButton.Size = new System.Drawing.Size(30, 23);
+            this.removeSafetyNetButton.TabIndex = 17;
+            this.removeSafetyNetButton.Text = "-";
+            this.removeSafetyNetButton.UseVisualStyleBackColor = true;
+            this.removeSafetyNetButton.Click += new System.EventHandler(this.removeSafetyNetButton_Click);
+            // 
             // EditRiskForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(325, 229);
+            this.ClientSize = new System.Drawing.Size(325, 321);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditRiskForm";
@@ -391,5 +425,8 @@ namespace RyskTech.Forms.Lab
         private System.Windows.Forms.Button frequencyTableButton;
         private System.Windows.Forms.Button severityTableButotn;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ListBox safetyMeasuresListBox;
+        private System.Windows.Forms.Button addSafetyNetButton;
+        private System.Windows.Forms.Button removeSafetyNetButton;
     }
 }

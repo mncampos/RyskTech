@@ -81,7 +81,7 @@ namespace RyskTech.Forms.Lab
             string risks = "";
 
             if (noiseCheckBox.Checked)
-                risks += "Ruídos: " + noiseTextBox.Text +  "\n";
+                risks += "Ruídos: " + noiseTextBox.Text + "\n";
 
             if (extremeTemperatureCheckBox.Checked)
                 risks += "Temperaturas Extremas: " + temperatureTextBox.Text + "\n";
@@ -90,7 +90,7 @@ namespace RyskTech.Forms.Lab
                 risks += "Pressões Extremas: " + pressureTextBox.Text + "\n";
 
             if (radiationCheckBox.Checked)
-                risks += "Radiação " + (ionizingCheckBox.Checked ? "Ionizante" : "") + (ionizingCheckBox.Checked && notIonizingCheckBox.Checked? " e " : "") + (notIonizingCheckBox.Checked ? "Não Ionizante" : "") + "\n";
+                risks += "Radiação " + (ionizingCheckBox.Checked ? "Ionizante" : "") + (ionizingCheckBox.Checked && notIonizingCheckBox.Checked ? " e " : "") + (notIonizingCheckBox.Checked ? "Não Ionizante" : "") + "\n";
 
             if (intensemagnecticFieldCheckBox.Checked)
                 risks += "Campos magnéticos intensos\n";
@@ -104,17 +104,17 @@ namespace RyskTech.Forms.Lab
             if (humidityCheckBox.Checked)
                 risks += "Umidade\n";
 
-            agent.generatedRisks = risks;            
+            agent.generatedRisks = risks;
             agent.equipment = equipmentTextBox.Text;
             agent.usage = usageScenarios;
-            
+
             try
             {
                 agent.CheckValidity();
                 createdAgent = agent;
                 Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
                 createdAgent = null;

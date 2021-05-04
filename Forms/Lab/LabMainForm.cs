@@ -22,7 +22,7 @@ namespace RyskTech.Forms.Lab
         private MechanicalAgentControl mechanicalAgentControl;
         private RiskAnalysisControl riskAnalysisControl;
         private ConclusionControl conclusionControl;
-        
+
         public LabMainForm()
         {
             InitializeComponent();
@@ -106,7 +106,7 @@ namespace RyskTech.Forms.Lab
         }
 
         private void safetyTabButton_Click(object sender, EventArgs e)
-        {            
+        {
             activeControlPanel.Controls.Clear();
             activeControlPanel.Controls.Add(safetyControl);
 
@@ -132,12 +132,12 @@ namespace RyskTech.Forms.Lab
             activePanelLabel.Text = "Agentes Químicos";
             nextConcludeButton.Text = "Próximo";
 
-            progress = 4;            
+            progress = 4;
         }
 
         private void biologicalAgentTabButton_Click(object sender, EventArgs e)
         {
-    
+
             activeControlPanel.Controls.Clear();
 
             if (labWelcomeControl.data.manipulatesBiologicalAgents)
@@ -181,7 +181,7 @@ namespace RyskTech.Forms.Lab
             activePanelLabel.Text = "Agentes Mecânicos";
             nextConcludeButton.Text = "Próximo";
 
-            progress = 7;  
+            progress = 7;
         }
 
         private void risksTabButton_Click(object sender, EventArgs e)

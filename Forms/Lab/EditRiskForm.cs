@@ -17,7 +17,6 @@ namespace RyskTech.Forms.Lab
                 riskComboBox.Text = agent.description;
                 safetyGuardComboBox.Text = agent.safetyNet;
                 frequencyClassificationComboBox.Text = agent.frequencyClassification;
-                severityClassificationComboBox.Text = agent.severityClassification;
             }
         }
 
@@ -41,6 +40,12 @@ namespace RyskTech.Forms.Lab
 
         private void concludeButton_Click(object sender, EventArgs e)
         {
+            string safetyMeasures = "";
+            foreach (string item in safetyMeasuresListBox.Items)
+            {
+                safetyMeasures += item + "\n";
+            }
+
             createdRisk = new Risk(
                 riskComboBox.Text,
                 dangerComboBox.Text,
@@ -53,11 +58,25 @@ namespace RyskTech.Forms.Lab
                 createdRisk.CheckValidity();
                 Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
                 createdRisk = null;
             }
+        }
+
+        private void addSafetyNetButton_Click(object sender, EventArgs e)
+        {
+            if (safetyGuardComboBox.Text != null && safetyGuardComboBox.Text.Length > 0)
+                safetyMeasuresListBox.Items.Add(safetyGuardComboBox.Text);
+
+            safetyGuardComboBox.Text = "";
+        }
+
+        private void removeSafetyNetButton_Click(object sender, EventArgs e)
+        {
+            if (safetyMeasuresListBox.SelectedIndex >= 0)
+                safetyMeasuresListBox.Items.RemoveAt(safetyMeasuresListBox.SelectedIndex);
         }
     }
 }

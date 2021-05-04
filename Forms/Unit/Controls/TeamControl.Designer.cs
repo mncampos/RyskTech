@@ -52,7 +52,9 @@ namespace RyskTech.Forms.Unit.Controls
             this.label6 = new System.Windows.Forms.Label();
             this.viceDirectorGroupBox = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
             this.VicePhoneTextBox = new System.Windows.Forms.TextBox();
+            this.viceOccupationTextBox = new System.Windows.Forms.TextBox();
             this.ViceEmailTextBox = new System.Windows.Forms.TextBox();
             this.ViceNameTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -60,6 +62,8 @@ namespace RyskTech.Forms.Unit.Controls
             this.label5 = new System.Windows.Forms.Label();
             this.directorGroupBox = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.directorOccupationTextBox = new System.Windows.Forms.TextBox();
             this.DirectorPhoneTextBox = new System.Windows.Forms.TextBox();
             this.DirectorEmailTextBox = new System.Windows.Forms.TextBox();
             this.DirectorNameTextBox = new System.Windows.Forms.TextBox();
@@ -200,6 +204,11 @@ namespace RyskTech.Forms.Unit.Controls
             // OtherNumericUpDownCounter
             // 
             this.OtherNumericUpDownCounter.Location = new System.Drawing.Point(187, 116);
+            this.OtherNumericUpDownCounter.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.OtherNumericUpDownCounter.Name = "OtherNumericUpDownCounter";
             this.OtherNumericUpDownCounter.Size = new System.Drawing.Size(44, 20);
             this.OtherNumericUpDownCounter.TabIndex = 9;
@@ -208,6 +217,11 @@ namespace RyskTech.Forms.Unit.Controls
             // PublicNumericUpDown
             // 
             this.PublicNumericUpDown.Location = new System.Drawing.Point(187, 89);
+            this.PublicNumericUpDown.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.PublicNumericUpDown.Name = "PublicNumericUpDown";
             this.PublicNumericUpDown.Size = new System.Drawing.Size(44, 20);
             this.PublicNumericUpDown.TabIndex = 8;
@@ -216,6 +230,11 @@ namespace RyskTech.Forms.Unit.Controls
             // StudentsNumericUpDown
             // 
             this.StudentsNumericUpDown.Location = new System.Drawing.Point(187, 61);
+            this.StudentsNumericUpDown.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.StudentsNumericUpDown.Name = "StudentsNumericUpDown";
             this.StudentsNumericUpDown.Size = new System.Drawing.Size(44, 20);
             this.StudentsNumericUpDown.TabIndex = 7;
@@ -224,6 +243,11 @@ namespace RyskTech.Forms.Unit.Controls
             // TeachersNumericUpDown
             // 
             this.TeachersNumericUpDown.Location = new System.Drawing.Point(187, 7);
+            this.TeachersNumericUpDown.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.TeachersNumericUpDown.Name = "TeachersNumericUpDown";
             this.TeachersNumericUpDown.Size = new System.Drawing.Size(44, 20);
             this.TeachersNumericUpDown.TabIndex = 6;
@@ -232,6 +256,11 @@ namespace RyskTech.Forms.Unit.Controls
             // ProfessionalNumericUpDown
             // 
             this.ProfessionalNumericUpDown.Location = new System.Drawing.Point(187, 34);
+            this.ProfessionalNumericUpDown.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.ProfessionalNumericUpDown.Name = "ProfessionalNumericUpDown";
             this.ProfessionalNumericUpDown.Size = new System.Drawing.Size(44, 20);
             this.ProfessionalNumericUpDown.TabIndex = 5;
@@ -287,14 +316,16 @@ namespace RyskTech.Forms.Unit.Controls
             this.viceDirectorGroupBox.Controls.Add(this.panel2);
             this.viceDirectorGroupBox.Location = new System.Drawing.Point(17, 228);
             this.viceDirectorGroupBox.Name = "viceDirectorGroupBox";
-            this.viceDirectorGroupBox.Size = new System.Drawing.Size(283, 157);
+            this.viceDirectorGroupBox.Size = new System.Drawing.Size(283, 170);
             this.viceDirectorGroupBox.TabIndex = 1;
             this.viceDirectorGroupBox.TabStop = false;
-            this.viceDirectorGroupBox.Text = "Vice-Diretor";
+            this.viceDirectorGroupBox.Text = "Responsável";
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.VicePhoneTextBox);
+            this.panel2.Controls.Add(this.viceOccupationTextBox);
             this.panel2.Controls.Add(this.ViceEmailTextBox);
             this.panel2.Controls.Add(this.ViceNameTextBox);
             this.panel2.Controls.Add(this.label3);
@@ -303,20 +334,37 @@ namespace RyskTech.Forms.Unit.Controls
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 16);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(277, 138);
+            this.panel2.Size = new System.Drawing.Size(277, 151);
             this.panel2.TabIndex = 1;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(13, 10);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(35, 13);
+            this.label15.TabIndex = 12;
+            this.label15.Text = "Cargo";
             // 
             // VicePhoneTextBox
             // 
-            this.VicePhoneTextBox.Location = new System.Drawing.Point(67, 104);
+            this.VicePhoneTextBox.Location = new System.Drawing.Point(62, 124);
             this.VicePhoneTextBox.Name = "VicePhoneTextBox";
             this.VicePhoneTextBox.Size = new System.Drawing.Size(207, 20);
             this.VicePhoneTextBox.TabIndex = 9;
             this.VicePhoneTextBox.TextChanged += new System.EventHandler(this.VicePhoneTextBox_TextChanged);
             // 
+            // viceOccupationTextBox
+            // 
+            this.viceOccupationTextBox.Location = new System.Drawing.Point(62, 7);
+            this.viceOccupationTextBox.Name = "viceOccupationTextBox";
+            this.viceOccupationTextBox.Size = new System.Drawing.Size(207, 20);
+            this.viceOccupationTextBox.TabIndex = 11;
+            this.viceOccupationTextBox.TextChanged += new System.EventHandler(this.viceOccupationTextBox_TextChanged);
+            // 
             // ViceEmailTextBox
             // 
-            this.ViceEmailTextBox.Location = new System.Drawing.Point(67, 63);
+            this.ViceEmailTextBox.Location = new System.Drawing.Point(62, 83);
             this.ViceEmailTextBox.Name = "ViceEmailTextBox";
             this.ViceEmailTextBox.Size = new System.Drawing.Size(207, 20);
             this.ViceEmailTextBox.TabIndex = 8;
@@ -324,7 +372,7 @@ namespace RyskTech.Forms.Unit.Controls
             // 
             // ViceNameTextBox
             // 
-            this.ViceNameTextBox.Location = new System.Drawing.Point(67, 23);
+            this.ViceNameTextBox.Location = new System.Drawing.Point(62, 43);
             this.ViceNameTextBox.Name = "ViceNameTextBox";
             this.ViceNameTextBox.Size = new System.Drawing.Size(207, 20);
             this.ViceNameTextBox.TabIndex = 7;
@@ -333,7 +381,7 @@ namespace RyskTech.Forms.Unit.Controls
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 107);
+            this.label3.Location = new System.Drawing.Point(13, 127);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 13);
             this.label3.TabIndex = 2;
@@ -342,7 +390,7 @@ namespace RyskTech.Forms.Unit.Controls
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 66);
+            this.label4.Location = new System.Drawing.Point(13, 86);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 13);
             this.label4.TabIndex = 1;
@@ -351,7 +399,7 @@ namespace RyskTech.Forms.Unit.Controls
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 26);
+            this.label5.Location = new System.Drawing.Point(13, 46);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 0;
@@ -365,10 +413,12 @@ namespace RyskTech.Forms.Unit.Controls
             this.directorGroupBox.Size = new System.Drawing.Size(286, 168);
             this.directorGroupBox.TabIndex = 0;
             this.directorGroupBox.TabStop = false;
-            this.directorGroupBox.Text = "Diretor";
+            this.directorGroupBox.Text = "Responsável";
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.directorOccupationTextBox);
             this.panel1.Controls.Add(this.DirectorPhoneTextBox);
             this.panel1.Controls.Add(this.DirectorEmailTextBox);
             this.panel1.Controls.Add(this.DirectorNameTextBox);
@@ -381,9 +431,26 @@ namespace RyskTech.Forms.Unit.Controls
             this.panel1.Size = new System.Drawing.Size(280, 149);
             this.panel1.TabIndex = 0;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(16, 9);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(35, 13);
+            this.label14.TabIndex = 10;
+            this.label14.Text = "Cargo";
+            // 
+            // directorOccupationTextBox
+            // 
+            this.directorOccupationTextBox.Location = new System.Drawing.Point(65, 6);
+            this.directorOccupationTextBox.Name = "directorOccupationTextBox";
+            this.directorOccupationTextBox.Size = new System.Drawing.Size(207, 20);
+            this.directorOccupationTextBox.TabIndex = 9;
+            this.directorOccupationTextBox.TextChanged += new System.EventHandler(this.directorOccupationTextBox_TextChanged);
+            // 
             // DirectorPhoneTextBox
             // 
-            this.DirectorPhoneTextBox.Location = new System.Drawing.Point(70, 100);
+            this.DirectorPhoneTextBox.Location = new System.Drawing.Point(65, 122);
             this.DirectorPhoneTextBox.Name = "DirectorPhoneTextBox";
             this.DirectorPhoneTextBox.Size = new System.Drawing.Size(207, 20);
             this.DirectorPhoneTextBox.TabIndex = 8;
@@ -391,7 +458,7 @@ namespace RyskTech.Forms.Unit.Controls
             // 
             // DirectorEmailTextBox
             // 
-            this.DirectorEmailTextBox.Location = new System.Drawing.Point(70, 61);
+            this.DirectorEmailTextBox.Location = new System.Drawing.Point(65, 83);
             this.DirectorEmailTextBox.Name = "DirectorEmailTextBox";
             this.DirectorEmailTextBox.Size = new System.Drawing.Size(207, 20);
             this.DirectorEmailTextBox.TabIndex = 7;
@@ -399,7 +466,7 @@ namespace RyskTech.Forms.Unit.Controls
             // 
             // DirectorNameTextBox
             // 
-            this.DirectorNameTextBox.Location = new System.Drawing.Point(70, 23);
+            this.DirectorNameTextBox.Location = new System.Drawing.Point(65, 45);
             this.DirectorNameTextBox.Name = "DirectorNameTextBox";
             this.DirectorNameTextBox.Size = new System.Drawing.Size(207, 20);
             this.DirectorNameTextBox.TabIndex = 6;
@@ -408,7 +475,7 @@ namespace RyskTech.Forms.Unit.Controls
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 107);
+            this.label2.Location = new System.Drawing.Point(13, 129);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 13);
             this.label2.TabIndex = 2;
@@ -417,7 +484,7 @@ namespace RyskTech.Forms.Unit.Controls
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 66);
+            this.label1.Location = new System.Drawing.Point(13, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(36, 13);
             this.label1.TabIndex = 1;
@@ -426,18 +493,18 @@ namespace RyskTech.Forms.Unit.Controls
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(18, 26);
+            this.nameLabel.Location = new System.Drawing.Point(13, 48);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(35, 13);
             this.nameLabel.TabIndex = 0;
             this.nameLabel.Text = "Nome";
             // 
-            // TestTeamControl
+            // TeamControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.mainPanel);
-            this.Name = "TestTeamControl";
+            this.Name = "TeamControl";
             this.Size = new System.Drawing.Size(578, 555);
             this.Load += new System.EventHandler(this.TestTeamControl_Load);
             this.mainPanel.ResumeLayout(false);
@@ -500,5 +567,9 @@ namespace RyskTech.Forms.Unit.Controls
         private System.Windows.Forms.TextBox DirectorPhoneTextBox;
         private System.Windows.Forms.TextBox DirectorEmailTextBox;
         private System.Windows.Forms.TextBox DirectorNameTextBox;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox directorOccupationTextBox;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox viceOccupationTextBox;
     }
 }

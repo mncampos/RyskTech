@@ -30,8 +30,8 @@ namespace RyskTech.Forms.Unit.Controls
         private void InitializeComponent()
         {
             this.mainTableLayout = new System.Windows.Forms.TableLayoutPanel();
-            this.UnitHistoryTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.UnitHistoryTextBox = new System.Windows.Forms.RichTextBox();
             this.mainTableLayout.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,8 +40,8 @@ namespace RyskTech.Forms.Unit.Controls
             this.mainTableLayout.ColumnCount = 2;
             this.mainTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.mainTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.mainTableLayout.Controls.Add(this.UnitHistoryTextBox, 0, 1);
             this.mainTableLayout.Controls.Add(this.label1, 0, 0);
+            this.mainTableLayout.Controls.Add(this.UnitHistoryTextBox, 0, 1);
             this.mainTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainTableLayout.Location = new System.Drawing.Point(0, 0);
             this.mainTableLayout.Name = "mainTableLayout";
@@ -50,20 +50,6 @@ namespace RyskTech.Forms.Unit.Controls
             this.mainTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.15203F));
             this.mainTableLayout.Size = new System.Drawing.Size(596, 467);
             this.mainTableLayout.TabIndex = 0;
-            // 
-            // UnitHistoryTextBox
-            // 
-            this.mainTableLayout.SetColumnSpan(this.UnitHistoryTextBox, 2);
-            this.UnitHistoryTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UnitHistoryTextBox.Location = new System.Drawing.Point(5, 65);
-            this.UnitHistoryTextBox.Margin = new System.Windows.Forms.Padding(5);
-            this.UnitHistoryTextBox.MaxLength = 30000;
-            this.UnitHistoryTextBox.Multiline = true;
-            this.UnitHistoryTextBox.Name = "UnitHistoryTextBox";
-            this.UnitHistoryTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.UnitHistoryTextBox.Size = new System.Drawing.Size(586, 397);
-            this.UnitHistoryTextBox.TabIndex = 0;
-            this.UnitHistoryTextBox.TextChanged += new System.EventHandler(this.UnitHistoryTextBox_TextChanged);
             // 
             // label1
             // 
@@ -78,12 +64,24 @@ namespace RyskTech.Forms.Unit.Controls
             this.label1.Text = "Descreva brevemente o histórico da sua unidade.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TestHistoryControl
+            // UnitHistoryTextBox
+            // 
+            this.mainTableLayout.SetColumnSpan(this.UnitHistoryTextBox, 2);
+            this.UnitHistoryTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UnitHistoryTextBox.Location = new System.Drawing.Point(3, 63);
+            this.UnitHistoryTextBox.Name = "UnitHistoryTextBox";
+            this.UnitHistoryTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.UnitHistoryTextBox.Size = new System.Drawing.Size(590, 401);
+            this.UnitHistoryTextBox.TabIndex = 2;
+            this.UnitHistoryTextBox.Text = "";
+            this.UnitHistoryTextBox.TextChanged += new System.EventHandler(this.UnitHistoryTextBox_TextChanged);
+            // 
+            // HistoryControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.mainTableLayout);
-            this.Name = "TestHistoryControl";
+            this.Name = "HistoryControl";
             this.Size = new System.Drawing.Size(596, 467);
             this.mainTableLayout.ResumeLayout(false);
             this.mainTableLayout.PerformLayout();
@@ -94,7 +92,7 @@ namespace RyskTech.Forms.Unit.Controls
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel mainTableLayout;
-        private System.Windows.Forms.TextBox UnitHistoryTextBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RichTextBox UnitHistoryTextBox;
     }
 }

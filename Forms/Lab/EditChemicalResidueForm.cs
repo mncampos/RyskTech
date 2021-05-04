@@ -1,6 +1,5 @@
 ﻿using RyskTech.Data;
 using System;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace RyskTech
@@ -69,7 +68,7 @@ namespace RyskTech
                 this.createdAgent = new_agent;
                 this.Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 this.createdAgent = null;
                 MessageBox.Show(ex.Message);

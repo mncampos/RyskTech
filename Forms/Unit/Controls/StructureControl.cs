@@ -27,7 +27,7 @@ namespace RyskTech.Forms.Unit.Controls
             if (form.data != null)
                 addDataToTable(form.data);
         }
-        
+
         private void editSpaceButton_Click(object sender, EventArgs e)
         {
             if (InternalStructureDataGridView.SelectedRows.Count > 0)
@@ -53,6 +53,7 @@ namespace RyskTech.Forms.Unit.Controls
                     InternalStructureDataGridView.Rows[row.Index].Cells[3].Value = form.data.turnStart.ToString();
                     InternalStructureDataGridView.Rows[row.Index].Cells[4].Value = form.data.turnEnd.ToString();
                     InternalStructureDataGridView.Rows[row.Index].Cells[5].Value = form.data.surroundingsComments;
+                    InternalStructureDataGridView.Rows[row.Index].Cells[6].Value = form.data.weekDays;
                 }
             }
         }
@@ -73,9 +74,10 @@ namespace RyskTech.Forms.Unit.Controls
                     createdSpace.floorIdentifier,
                     createdSpace.turnStart.ToString(),
                     createdSpace.turnEnd.ToString(),
-                    createdSpace.surroundingsComments);
+                    createdSpace.surroundingsComments,
+                    createdSpace.weekDays);
             }
-        }     
+        }
 
         private List<Space> GetStructureData()
         {
@@ -98,6 +100,8 @@ namespace RyskTech.Forms.Unit.Controls
                         entry.turnEnd = System.TimeSpan.Parse(row.Cells[4].Value.ToString());
                     if (row.Cells[5].Value != null)
                         entry.surroundingsComments = row.Cells[5].Value.ToString();
+                    if (row.Cells[6].Value != null)
+                        entry.weekDays = row.Cells[6].Value.ToString();
 
                     result.Add(entry);
                 }

@@ -205,6 +205,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Dias.
+        /// </summary>
+        internal static string Days {
+            get {
+                return ResourceManager.GetString("Days", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Diretor.
         /// </summary>
         internal static string Director {
@@ -336,6 +345,15 @@ namespace RyskTech.Resources.Language {
         internal static string ErrorNoManipulatedAreasSelected {
             get {
                 return ResourceManager.GetString("ErrorNoManipulatedAreasSelected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor indique a ocupação de todos os resposáveis.
+        /// </summary>
+        internal static string ErrorNoOccupation {
+            get {
+                return ResourceManager.GetString("ErrorNoOccupation", resourceCulture);
             }
         }
         
@@ -696,6 +714,15 @@ namespace RyskTech.Resources.Language {
         internal static string NotAllTabsVisited {
             get {
                 return ResourceManager.GetString("NotAllTabsVisited", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor indique os dias em que o espaço é utilizado.
+        /// </summary>
+        internal static string NoUsageDays {
+            get {
+                return ResourceManager.GetString("NoUsageDays", resourceCulture);
             }
         }
         

@@ -17,9 +17,6 @@ namespace RyskTech.Data
 
             foreach (Space space in spaces)
                 space.CheckValidity();
-
-            if (surroundingsDetails == null || surroundingsDetails.Length <= 0)
-                throw new ApplicationException(Resources.Language.pt_local.NoSurroundingsDetailsAdded);        
         }
     }
 }
