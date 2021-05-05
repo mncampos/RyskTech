@@ -53,9 +53,24 @@ namespace RyskTech.Forms.Lab.Controls
             data.CheckValidity();
         }
 
-        private void responsiblePersonOccupation_TextChanged(object sender, EventArgs e)
+        private void teachersNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
+            data.teachersCount = (int)teachersNumericUpDown.Value;
+        }
 
+        private void technicsNumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            data.technicsCount = (int)technicsNumericUpDown.Value;
+        }
+
+        private void studentsNumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            data.studentsCount = (int)studentsNumericUpDown.Value;
+        }
+
+        private void publicNumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            data.generalPublicCount = (int)publicNumericUpDown.Value;
         }
     }
 }

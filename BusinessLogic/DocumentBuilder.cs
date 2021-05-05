@@ -80,6 +80,33 @@ namespace RyskTech
 
             AddSubsectionTitle(section, "Informações gerais");
             AddListWithItems(items);
+            AddSubsectionTitle(section, "Composição da equipe");
+            AddTeamCompositionTableForLabs();
+        }
+
+        private void AddTeamCompositionTableForLabs()
+        {
+            IWTable labTeamTable = GetCurrentSection().AddTable();
+            labTeamTable.ResetCells(5, 2);
+            labTeamTable[0, 0].AddParagraph().AppendText(Resources.Language.pt_local.Type);
+            labTeamTable[0, 1].AddParagraph().AppendText(Resources.Language.pt_local.Quantity);
+
+            // Public
+            labTeamTable[1, 0].AddParagraph().AppendText(Resources.Language.pt_local.Public);
+            labTeamTable[1, 1].AddParagraph().AppendText(apr.lab.spaceCharacterization.generalPublicCount.ToString());
+
+            // Students
+            labTeamTable[2, 0].AddParagraph().AppendText(Resources.Language.pt_local.Students);
+            labTeamTable[2, 1].AddParagraph().AppendText(apr.lab.spaceCharacterization.studentsCount.ToString());
+
+            // Teachers
+            labTeamTable[3, 0].AddParagraph().AppendText(Resources.Language.pt_local.Teachers);
+            labTeamTable[3, 1].AddParagraph().AppendText(apr.lab.spaceCharacterization.teachersCount.ToString());
+
+            // Technics
+            labTeamTable[4, 0].AddParagraph().AppendText(Resources.Language.pt_local.Technics);
+            labTeamTable[4, 1].AddParagraph().AppendText(apr.lab.spaceCharacterization.technicsCount.ToString());
+
         }
 
         private void AddLabGeneralDescription(IWSection section)

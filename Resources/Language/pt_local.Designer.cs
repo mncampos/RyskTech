@@ -439,6 +439,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Por favor indique a composição do time.
+        /// </summary>
+        internal static string ErrorNoTeamComposition {
+            get {
+                return ResourceManager.GetString("ErrorNoTeamComposition", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Por favor descreva o uso do seu espaço.
         /// </summary>
         internal static string ErrorNoUsageDescription {

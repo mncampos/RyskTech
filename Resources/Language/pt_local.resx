@@ -243,6 +243,9 @@
   <data name="ErrorNoSugestions" xml:space="preserve">
     <value>Por favor sugira formas de melhorar a segurança no seu ambiente</value>
   </data>
+  <data name="ErrorNoTeamComposition" xml:space="preserve">
+    <value>Por favor indique a composição do time</value>
+  </data>
   <data name="ErrorNoUsageDescription" xml:space="preserve">
     <value>Por favor descreva o uso do seu espaço</value>
   </data>
