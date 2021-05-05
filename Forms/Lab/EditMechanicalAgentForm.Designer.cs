@@ -193,6 +193,7 @@ namespace RyskTech.Forms.Lab
             "Problemas elétricos",
             "Equipamentos obsoletos",
             "Falta de sistema de exaustão",
+            "Não há um agente específico",
             "Outros"});
             this.agentComboBox.Location = new System.Drawing.Point(131, 18);
             this.agentComboBox.Margin = new System.Windows.Forms.Padding(3, 18, 3, 3);
@@ -241,7 +242,7 @@ namespace RyskTech.Forms.Lab
             this.Controls.Add(this.mainTableLayoutPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditMechanicalAgentForm";
-            this.Text = "EditMechanicalAgentForm";
+            this.Text = "Agentes Mecânicos";
             this.mainTableLayoutPanel.ResumeLayout(false);
             this.mainTableLayoutPanel.PerformLayout();
             this.ResumeLayout(false);

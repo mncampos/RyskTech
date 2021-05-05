@@ -40,6 +40,8 @@ namespace RyskTech.Forms.Lab.Controls
             this.label5 = new System.Windows.Forms.Label();
             this.contactGroupBox = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.responsiblePersonOccupation = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.responsiblePersonContactTextBox = new System.Windows.Forms.TextBox();
             this.responsiblePersonTextBox = new System.Windows.Forms.TextBox();
@@ -47,8 +49,6 @@ namespace RyskTech.Forms.Lab.Controls
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.responsiblePersonOccupation = new System.Windows.Forms.TextBox();
             this.mainPanel.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -172,6 +172,23 @@ namespace RyskTech.Forms.Lab.Controls
             this.panel1.Size = new System.Drawing.Size(335, 149);
             this.panel1.TabIndex = 0;
             // 
+            // responsiblePersonOccupation
+            // 
+            this.responsiblePersonOccupation.Location = new System.Drawing.Point(68, 37);
+            this.responsiblePersonOccupation.Name = "responsiblePersonOccupation";
+            this.responsiblePersonOccupation.Size = new System.Drawing.Size(254, 20);
+            this.responsiblePersonOccupation.TabIndex = 8;
+            this.responsiblePersonOccupation.TextChanged += new System.EventHandler(this.responsiblePersonOccupation_TextChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(13, 39);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Cargo";
+            // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(68, 119);
@@ -231,23 +248,6 @@ namespace RyskTech.Forms.Lab.Controls
             this.label1.Size = new System.Drawing.Size(277, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Indique quem é o responsável pelo laboratório ou espaço";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(13, 39);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Cargo";
-            // 
-            // responsiblePersonOccupation
-            // 
-            this.responsiblePersonOccupation.Location = new System.Drawing.Point(68, 37);
-            this.responsiblePersonOccupation.Name = "responsiblePersonOccupation";
-            this.responsiblePersonOccupation.Size = new System.Drawing.Size(254, 20);
-            this.responsiblePersonOccupation.TabIndex = 8;
-            this.responsiblePersonOccupation.TextChanged += new System.EventHandler(this.responsiblePersonOccupation_TextChanged);
             // 
             // GeneralInformationControl
             // 

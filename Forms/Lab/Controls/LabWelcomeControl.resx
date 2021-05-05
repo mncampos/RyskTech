@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label1.Text" xml:space="preserve">
-    <value>O objetivo desta aplicação é apresentar uma maneira automatizada de geração de uma análise preliminar de risco (APR) em um formato padronizado para a sua unidade. O gerente da sua unidade já deve ter utilizado este software para gerar a introdução da APR com informações gerais, e agora precisamos que você complete as informações sobre o espaço do qual é responsável. Como gerente de um laboratório será necessário que você preencha informações sobre medidas de segurança e os agentes manipulados do espaço. Quando concluir o preenchimento de todas as informações, por favor retorne para esta aba e pressione o botão abaixo para gerar o seu documento. 
+    <value>O objetivo desta aplicação é apresentar uma forma automatizada de geração de uma análise preliminar de riscos (APR) em um formato padronizado para a sua Unidade. O gerente da sua Unidade já deve ter utilizado este software para gerar a introdução da APR com informações gerais e, agora, precisamos que você complete as informações sobre o espaço do qual é responsável. Será necessário que você preencha informações acerca de agentes químicos, físicos, biológicos e mecânicos, riscos às pessoas e ao meio ambiente e salvaguardas existentes. 
 
 Após gerado o documento, por favor envie-o para &lt;template.email@gmail.com&gt; com o assunto &lt;ASSUNTO-ESPERADO-NO-EMAIL&gt;.
 </value>

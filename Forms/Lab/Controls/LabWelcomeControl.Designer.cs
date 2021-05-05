@@ -236,15 +236,15 @@ namespace RyskTech.Forms.Lab.Controls
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(157, 36);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Qual é o nome e/ou descritoção do seu espaço?";
+            this.label2.Text = "Qual é o nome do seu espaço?";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // LabWelcomeControlBetter
+            // LabWelcomeControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.mainTableLayoutPanel);
-            this.Name = "LabWelcomeControlBetter";
+            this.Name = "LabWelcomeControl";
             this.Size = new System.Drawing.Size(596, 467);
             this.Load += new System.EventHandler(this.LabWelcomeControlBetter_Load);
             this.mainTableLayoutPanel.ResumeLayout(false);
