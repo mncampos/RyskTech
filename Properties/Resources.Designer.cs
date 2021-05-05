@@ -71,6 +71,61 @@ namespace RyskTech.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 75-43-3	
+        ///57-14-7 	
+        ///106-99-0	
+        ///78-93-3	
+        ///141-78-6	
+        ///79-20-9	
+        ///123-86-4	
+        ///105-46-4	
+        ///67-64-1	
+        ///74-90-8	
+        ///7647-01-0	
+        ///7664-39-3	
+        ///7697-37-2	
+        ///79-21-0	
+        ///07783-07-5	
+        ///07783-06-4	
+        ///107-13-1	
+        ///107-02-8	
+        ///107-18-6	
+        ///107-11-9	
+        ///7664-41-7	
+        ///7784-34-1	
+        ///7726-95-6 	
+        ///110-82-7	
+        ///108-91-8	
+        ///506-77-4	
+        ///814-68-6	
+        ///75-00-3	
+        ///74-87-3	
+        ///75-09-2	
+        ///7782-50-5	
+        ///108-23-6	
+        ///79-22-1	
+        ///109-61-5	
+        ///67-66-3	
+        ///542-88-1	
+        ///107-30-2	
+        ///123-73-9	
+        ///98-82-8	
+        ///19287-45-7	
+        ///75-43-4	
+        ///10049-04-4	
+        ///07446-09-5	
+        ///75-15-0	
+        ///106-89-8	
+        ///64-17-5	
+        ///107 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string cas_numbers {
+            get {
+                return ResourceManager.GetString("cas_numbers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap chemical {
@@ -91,9 +146,9 @@ namespace RyskTech.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 	Na análise foram considerados os ricos provocados por agentes químicos, físicos e biológicos. Complementarmente, também foram identificados os riscos de acidente por agêntes mecânicos.
+        ///   Looks up a localized string similar to 	Na análise foram considerados os ricos provocados por agentes químicos, físicos e biológicos. Complementarmente, também foram identificados os riscos de acidente por agentes mecânicos.
         ///  
-        ///	De acordo com a NR-9 do Ministério do Trabalho e Emprego (MTE, 1994), consideram-se agentes químicos substâncias, compostos ou produtos que possam penetrar no orgnismo pela via respiratória, nas formas de poeiras, fumo, névoas, neblinas, gases ou vapores, ou que pela natureza da atividade de exposição, possam ter conta [rest of string was truncated]&quot;;.
+        ///	De acordo com a NR-9 do Ministério do Trabalho e Emprego (MTE, 1994), consideram-se agentes químicos substâncias, compostos ou produtos que possam penetrar no organismo pela via respiratória, nas formas de poeiras, fumo, névoas, neblinas, gases ou vapores, ou que pela natureza da atividade de exposição, possam ter cont [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string default_methodology {
             get {
@@ -248,6 +303,44 @@ namespace RyskTech.Properties {
             get {
                 object obj = ResourceManager.GetObject("structure", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1,1- dicloroetano	
+        ///1,1- dimetilhidrazina	
+        ///1,3- butadieno	
+        ///2-butanona	
+        ///Acetato de etila	
+        ///Acetato de metila	
+        ///Acetato de n-butila	
+        ///Acetato de sec-butila	
+        ///Acetona	
+        ///Ácido cianídrico	
+        ///Ácido clorídrico	
+        ///Ácido fluorídrico	
+        ///Ácido nítrico	
+        ///Ácido peracético	
+        ///Ácido selênico	
+        ///Ácido sulfídrico	
+        ///Acrilonitrila	
+        ///Acroleína	
+        ///Álcool alílico	
+        ///Alilamina	
+        ///Amônia	
+        ///Arsina	
+        ///Bromo	
+        ///Ciclohexano	
+        ///Ciclohexilamina	
+        ///Cloreto cianogênico	
+        ///Cloreto de acrila	
+        ///Cloreto de etila	
+        ///Cloreto de metila	
+        ///Cloreto de metilen [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string substances {
+            get {
+                return ResourceManager.GetString("substances", resourceCulture);
             }
         }
         

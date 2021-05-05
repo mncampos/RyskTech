@@ -1,6 +1,8 @@
 ﻿using RyskTech.Data;
 using System;
 using System.Windows.Forms;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace RyskTech.Forms.Lab
 {
@@ -8,9 +10,34 @@ namespace RyskTech.Forms.Lab
     {
         public ChemicalReactor createdAgent;
 
+        private Dictionary<string, string> subtancesCasNumber = new Dictionary<string, string>();
+
+        private void getAgentNames()
+        {
+            string substanceString = Properties.Resources.substances;
+            string numbersString = Properties.Resources.cas_numbers;
+            string[] substances = substanceString.Split('\n');
+            string[] casNumbers = numbersString.Split('\n');
+
+            // Populate combo box
+            foreach (var substance in substances)
+                residueNameTextBox.Items.Add(String.Concat(substance.Where(c => !Char.IsWhiteSpace(c))));
+
+            // Build dictoinary
+            for (int i = 0; i < substances.Count(); i++)
+            {
+                string substance = String.Concat(substances[i].Where(c => !Char.IsWhiteSpace(c)));
+                string casNumber = String.Concat(casNumbers[i].Where(c => !Char.IsWhiteSpace(c)));
+                subtancesCasNumber.Add(substance, casNumber);
+            }
+        }
+
         public EditChemicalReactorForm(ChemicalReactor agent)
         {
             InitializeComponent();
+
+            getAgentNames();
+
             if (agent != null)
             {
                 residueNameTextBox.Text = agent.name;
@@ -99,6 +126,25 @@ namespace RyskTech.Forms.Lab
         {
             this.createdAgent = null;
             this.Close();
+        }
+
+        private void residueNameTextBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void residueNameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (residueNameTextBox.Items.Contains(residueNameTextBox.Text))
+            {
+                casNumberTextBox.Enabled = false;
+                casNumberTextBox.Text = subtancesCasNumber[residueNameTextBox.Text];
+            }
+            else
+            {
+                casNumberTextBox.Enabled = true;
+                casNumberTextBox.Text = "";
+            }
         }
     }
 }

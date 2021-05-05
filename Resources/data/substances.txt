@@ -1,0 +1,101 @@
+1,1- dicloroetano	
+1,1- dimetilhidrazina	
+1,3- butadieno	
+2-butanona	
+Acetato de etila	
+Acetato de metila	
+Acetato de n-butila	
+Acetato de sec-butila	
+Acetona	
+Ácido cianídrico	
+Ácido clorídrico	
+Ácido fluorídrico	
+Ácido nítrico	
+Ácido peracético	
+Ácido selênico	
+Ácido sulfídrico	
+Acrilonitrila	
+Acroleína	
+Álcool alílico	
+Alilamina	
+Amônia	
+Arsina	
+Bromo	
+Ciclohexano	
+Ciclohexilamina	
+Cloreto cianogênico	
+Cloreto de acrila	
+Cloreto de etila	
+Cloreto de metila	
+Cloreto de metileno	
+Cloro	
+Cloroformiato de isopropila	
+Cloroformiato de metila	
+Cloroformiato de propila	
+Clorofórmio	
+Clorometil éter	
+Clorometil metil éter	
+Crotonaldeído	
+Cumeno	
+Diborano	
+Dicloromonofluorometano	
+Dióxido de cloro	
+Dióxido de enxofre	
+Dissulfeto de carbono	
+Epicloridina	
+Etanol	
+Etilenodiamina	
+Etilenoimina	
+Etil éter	
+Flúor	
+Formaldeído	
+Formiato de metila	
+Fosfina	
+fosgênio	
+Furano	
+Gás liquefeito de petróleo (GLP)	
+Hidrazina	
+Isobutironitrila	
+Isocianato de metila	
+Isopropanol	
+Isopropil éter	
+Metacrilonitrila	
+Metanol	
+Metil acetileno	
+Metil ciclohexano	
+Metil hidrazina	
+Metil mercaptan	
+Metilal	
+Metiltriclorosilano	
+Mistura de metilacetileno e propadieno	
+Morfolina	
+N-butanol	
+N-hexano	
+N-pentano	
+Nafta (carvão)	
+Nafta (petróleo)	
+Níquel carbonil	
+Octano	
+Oxicloreto de fósforo	
+Óxido de etileno	
+Óxido de mesitila	
+Óxido de propileno	
+Óxido nítrico	
+Pentacarbonil ferro	
+Perclorometilmercaptan	
+Piperidina	
+Propano	
+Propilenoimina	
+Propionitrila	
+Tetracloreto de titânio	
+Tetrafluoreto de enxofre	
+Terahidrofurano	
+Tetrametil chumbo	
+Tetranitrometano	
+Tricloreto de arsênio	
+Tricloreto de boro	
+Tricloreto de fósforo	
+Trifluoreto de boro	
+Trimetilclorosilano	
+Trióxido de enxofre	
+Vinil acetato	
