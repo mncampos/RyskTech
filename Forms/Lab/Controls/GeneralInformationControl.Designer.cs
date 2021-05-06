@@ -298,6 +298,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.responsiblePersonOccupation.Name = "responsiblePersonOccupation";
             this.responsiblePersonOccupation.Size = new System.Drawing.Size(254, 20);
             this.responsiblePersonOccupation.TabIndex = 8;
+            this.responsiblePersonOccupation.TextChanged += new System.EventHandler(this.responsiblePersonOccupation_TextChanged);
             // 
             // label8
             // 

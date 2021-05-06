@@ -72,5 +72,10 @@ namespace RyskTech.Forms.Lab.Controls
         {
             data.generalPublicCount = (int)publicNumericUpDown.Value;
         }
+
+        private void responsiblePersonOccupation_TextChanged(object sender, EventArgs e)
+        {
+            data.responsiblePersonOccupation = responsiblePersonOccupation.Text;
+        }
     }
 }
