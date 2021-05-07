@@ -43,6 +43,8 @@ namespace RyskTech.Forms.Lab.Controls
             this.nbrLinkLabel = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.editResidueButton = new System.Windows.Forms.Button();
+            this.editReactorButton = new System.Windows.Forms.Button();
             this.removeReactorButton = new System.Windows.Forms.Button();
             this.addReactorButton = new System.Windows.Forms.Button();
             this.removeResidueButton = new System.Windows.Forms.Button();
@@ -73,8 +75,6 @@ namespace RyskTech.Forms.Lab.Controls
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.editReactorButton = new System.Windows.Forms.Button();
-            this.editResidueButton = new System.Windows.Forms.Button();
             this.mainPanel.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -195,7 +195,7 @@ namespace RyskTech.Forms.Lab.Controls
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(370, 333);
+            this.linkLabel1.Location = new System.Drawing.Point(374, 333);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(108, 13);
             this.linkLabel1.TabIndex = 10;
@@ -209,14 +209,14 @@ namespace RyskTech.Forms.Lab.Controls
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(15, 333);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(356, 13);
+            this.label5.Size = new System.Drawing.Size(362, 13);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Os produtos possuem rótulo com base na FISPQ, em concordância com a";
+            this.label5.Text = "Os reagentes possuem rótulo com base na FISPQ, em concordância com a";
             // 
             // nbrLinkLabel
             // 
             this.nbrLinkLabel.AutoSize = true;
-            this.nbrLinkLabel.Location = new System.Drawing.Point(302, 288);
+            this.nbrLinkLabel.Location = new System.Drawing.Point(314, 288);
             this.nbrLinkLabel.Margin = new System.Windows.Forms.Padding(1);
             this.nbrLinkLabel.Name = "nbrLinkLabel";
             this.nbrLinkLabel.Size = new System.Drawing.Size(108, 13);
@@ -231,9 +231,9 @@ namespace RyskTech.Forms.Lab.Controls
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(15, 288);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(291, 13);
+            this.label4.Size = new System.Drawing.Size(300, 13);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Os recipientes de agentes químicos estão de acordo com a ";
+            this.label4.Text = "Os recipientes de reagentes químicos estão de acordo com a ";
             // 
             // groupBox1
             // 
@@ -254,6 +254,28 @@ namespace RyskTech.Forms.Lab.Controls
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Agentes";
+            // 
+            // editResidueButton
+            // 
+            this.editResidueButton.Location = new System.Drawing.Point(370, 246);
+            this.editResidueButton.Margin = new System.Windows.Forms.Padding(8);
+            this.editResidueButton.Name = "editResidueButton";
+            this.editResidueButton.Size = new System.Drawing.Size(68, 27);
+            this.editResidueButton.TabIndex = 8;
+            this.editResidueButton.Text = "Editar";
+            this.editResidueButton.UseVisualStyleBackColor = true;
+            this.editResidueButton.Click += new System.EventHandler(this.editResidueButton_Click);
+            // 
+            // editReactorButton
+            // 
+            this.editReactorButton.Location = new System.Drawing.Point(93, 246);
+            this.editReactorButton.Margin = new System.Windows.Forms.Padding(8);
+            this.editReactorButton.Name = "editReactorButton";
+            this.editReactorButton.Size = new System.Drawing.Size(68, 27);
+            this.editReactorButton.TabIndex = 7;
+            this.editReactorButton.Text = "Editar";
+            this.editReactorButton.UseVisualStyleBackColor = true;
+            this.editReactorButton.Click += new System.EventHandler(this.editReactorButton_Click);
             // 
             // removeReactorButton
             // 
@@ -498,28 +520,6 @@ namespace RyskTech.Forms.Lab.Controls
             this.label1.TabIndex = 0;
             this.label1.Text = "Indique nas tabelas abaixo os reagentes e resíduos químicos que são manipulados e" +
     "/ou gerados em sua unidade.";
-            // 
-            // editReactorButton
-            // 
-            this.editReactorButton.Location = new System.Drawing.Point(93, 246);
-            this.editReactorButton.Margin = new System.Windows.Forms.Padding(8);
-            this.editReactorButton.Name = "editReactorButton";
-            this.editReactorButton.Size = new System.Drawing.Size(68, 27);
-            this.editReactorButton.TabIndex = 7;
-            this.editReactorButton.Text = "Editar";
-            this.editReactorButton.UseVisualStyleBackColor = true;
-            this.editReactorButton.Click += new System.EventHandler(this.editReactorButton_Click);
-            // 
-            // editResidueButton
-            // 
-            this.editResidueButton.Location = new System.Drawing.Point(370, 246);
-            this.editResidueButton.Margin = new System.Windows.Forms.Padding(8);
-            this.editResidueButton.Name = "editResidueButton";
-            this.editResidueButton.Size = new System.Drawing.Size(68, 27);
-            this.editResidueButton.TabIndex = 8;
-            this.editResidueButton.Text = "Editar";
-            this.editResidueButton.UseVisualStyleBackColor = true;
-            this.editResidueButton.Click += new System.EventHandler(this.editResidueButton_Click);
             // 
             // ChemicalAgentControl
             // 

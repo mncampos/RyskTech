@@ -37,17 +37,10 @@ namespace RyskTech.Forms.Unit.Controls
             this.generalInfotableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.unitNameLabel = new System.Windows.Forms.Label();
             this.unitNameTextBox = new System.Windows.Forms.TextBox();
-            this.manipulatedAgentsLabel = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.mechanicalAgentsUsedCheckBox = new System.Windows.Forms.CheckBox();
-            this.physicalAgentsUsedCheckBox = new System.Windows.Forms.CheckBox();
-            this.biologicalAgentsUsedCheckBox = new System.Windows.Forms.CheckBox();
-            this.chemicalAgentsUsedCheckBox = new System.Windows.Forms.CheckBox();
             this.mainTableLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.generalInfotableLayoutPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainTableLayoutPanel
@@ -115,8 +108,6 @@ namespace RyskTech.Forms.Unit.Controls
             this.generalInfotableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.generalInfotableLayoutPanel.Controls.Add(this.unitNameLabel, 0, 0);
             this.generalInfotableLayoutPanel.Controls.Add(this.unitNameTextBox, 1, 0);
-            this.generalInfotableLayoutPanel.Controls.Add(this.manipulatedAgentsLabel, 0, 1);
-            this.generalInfotableLayoutPanel.Controls.Add(this.panel1, 1, 1);
             this.generalInfotableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.generalInfotableLayoutPanel.Location = new System.Drawing.Point(3, 16);
             this.generalInfotableLayoutPanel.Name = "generalInfotableLayoutPanel";
@@ -147,79 +138,12 @@ namespace RyskTech.Forms.Unit.Controls
             this.unitNameTextBox.TabIndex = 1;
             this.unitNameTextBox.TextChanged += new System.EventHandler(this.unitNameTextBox_TextChanged);
             // 
-            // manipulatedAgentsLabel
-            // 
-            this.manipulatedAgentsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.manipulatedAgentsLabel.AutoSize = true;
-            this.manipulatedAgentsLabel.Location = new System.Drawing.Point(68, 48);
-            this.manipulatedAgentsLabel.Name = "manipulatedAgentsLabel";
-            this.manipulatedAgentsLabel.Size = new System.Drawing.Size(92, 13);
-            this.manipulatedAgentsLabel.TabIndex = 2;
-            this.manipulatedAgentsLabel.Text = "Agentes utilizados";
-            this.manipulatedAgentsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.mechanicalAgentsUsedCheckBox);
-            this.panel1.Controls.Add(this.physicalAgentsUsedCheckBox);
-            this.panel1.Controls.Add(this.biologicalAgentsUsedCheckBox);
-            this.panel1.Controls.Add(this.chemicalAgentsUsedCheckBox);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(166, 51);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(219, 42);
-            this.panel1.TabIndex = 4;
-            // 
-            // mechanicalAgentsUsedCheckBox
-            // 
-            this.mechanicalAgentsUsedCheckBox.AutoSize = true;
-            this.mechanicalAgentsUsedCheckBox.Location = new System.Drawing.Point(107, 27);
-            this.mechanicalAgentsUsedCheckBox.Name = "mechanicalAgentsUsedCheckBox";
-            this.mechanicalAgentsUsedCheckBox.Size = new System.Drawing.Size(78, 17);
-            this.mechanicalAgentsUsedCheckBox.TabIndex = 3;
-            this.mechanicalAgentsUsedCheckBox.Text = "Mecânicos";
-            this.mechanicalAgentsUsedCheckBox.UseVisualStyleBackColor = true;
-            this.mechanicalAgentsUsedCheckBox.CheckedChanged += new System.EventHandler(this.mechanicalAgentsUsedCheckBox_CheckedChanged);
-            // 
-            // physicalAgentsUsedCheckBox
-            // 
-            this.physicalAgentsUsedCheckBox.AutoSize = true;
-            this.physicalAgentsUsedCheckBox.Location = new System.Drawing.Point(107, 4);
-            this.physicalAgentsUsedCheckBox.Name = "physicalAgentsUsedCheckBox";
-            this.physicalAgentsUsedCheckBox.Size = new System.Drawing.Size(60, 17);
-            this.physicalAgentsUsedCheckBox.TabIndex = 2;
-            this.physicalAgentsUsedCheckBox.Text = "Físicos";
-            this.physicalAgentsUsedCheckBox.UseVisualStyleBackColor = true;
-            this.physicalAgentsUsedCheckBox.CheckedChanged += new System.EventHandler(this.physicalAgentsUsedCheckBox_CheckedChanged);
-            // 
-            // biologicalAgentsUsedCheckBox
-            // 
-            this.biologicalAgentsUsedCheckBox.AutoSize = true;
-            this.biologicalAgentsUsedCheckBox.Location = new System.Drawing.Point(4, 27);
-            this.biologicalAgentsUsedCheckBox.Name = "biologicalAgentsUsedCheckBox";
-            this.biologicalAgentsUsedCheckBox.Size = new System.Drawing.Size(74, 17);
-            this.biologicalAgentsUsedCheckBox.TabIndex = 1;
-            this.biologicalAgentsUsedCheckBox.Text = "Biológicos";
-            this.biologicalAgentsUsedCheckBox.UseVisualStyleBackColor = true;
-            this.biologicalAgentsUsedCheckBox.CheckedChanged += new System.EventHandler(this.biologicalAgentsUsedCheckBox_CheckedChanged);
-            // 
-            // chemicalAgentsUsedCheckBox
-            // 
-            this.chemicalAgentsUsedCheckBox.AutoSize = true;
-            this.chemicalAgentsUsedCheckBox.Location = new System.Drawing.Point(4, 4);
-            this.chemicalAgentsUsedCheckBox.Name = "chemicalAgentsUsedCheckBox";
-            this.chemicalAgentsUsedCheckBox.Size = new System.Drawing.Size(71, 17);
-            this.chemicalAgentsUsedCheckBox.TabIndex = 0;
-            this.chemicalAgentsUsedCheckBox.Text = "Químicos";
-            this.chemicalAgentsUsedCheckBox.UseVisualStyleBackColor = true;
-            this.chemicalAgentsUsedCheckBox.CheckedChanged += new System.EventHandler(this.chemicalAgentsUsedCheckBox_CheckedChanged);
-            // 
-            // TestWelcomeControl
+            // WelcomeControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.mainTableLayoutPanel);
-            this.Name = "TestWelcomeControl";
+            this.Name = "WelcomeControl";
             this.Size = new System.Drawing.Size(596, 467);
             this.Load += new System.EventHandler(this.TestWelcomeControl_Load);
             this.mainTableLayoutPanel.ResumeLayout(false);
@@ -228,8 +152,6 @@ namespace RyskTech.Forms.Unit.Controls
             this.groupBox1.ResumeLayout(false);
             this.generalInfotableLayoutPanel.ResumeLayout(false);
             this.generalInfotableLayoutPanel.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -243,11 +165,5 @@ namespace RyskTech.Forms.Unit.Controls
         private System.Windows.Forms.TableLayoutPanel generalInfotableLayoutPanel;
         private System.Windows.Forms.Label unitNameLabel;
         private System.Windows.Forms.TextBox unitNameTextBox;
-        private System.Windows.Forms.Label manipulatedAgentsLabel;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.CheckBox mechanicalAgentsUsedCheckBox;
-        private System.Windows.Forms.CheckBox physicalAgentsUsedCheckBox;
-        private System.Windows.Forms.CheckBox biologicalAgentsUsedCheckBox;
-        private System.Windows.Forms.CheckBox chemicalAgentsUsedCheckBox;
     }
 }

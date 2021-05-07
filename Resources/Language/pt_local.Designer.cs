@@ -682,7 +682,7 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Não.
+        ///   Looks up a localized string similar to Nro..
         /// </summary>
         internal static string No {
             get {

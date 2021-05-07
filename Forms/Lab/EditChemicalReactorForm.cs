@@ -149,18 +149,10 @@ namespace RyskTech.Forms.Lab
 
         private void inertRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            if (inertRadioButton.Checked)
-            {
-                dangerCharacteristicsListBox.Enabled = false;
-            }
         }
 
         private void activeRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            if (activeRadioButton.Checked)
-            {
-                dangerCharacteristicsListBox.Enabled = true;
-            }
         }
     }
 }

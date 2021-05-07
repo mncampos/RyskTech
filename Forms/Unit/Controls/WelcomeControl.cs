@@ -23,26 +23,6 @@ namespace RyskTech.Forms.Unit.Controls
             data.name = unitNameTextBox.Text;
         }
 
-        private void chemicalAgentsUsedCheckBox_CheckedChanged(object sender, System.EventArgs e)
-        {
-            data.manipulatesChemicalAgents = chemicalAgentsUsedCheckBox.Checked;
-        }
-
-        private void biologicalAgentsUsedCheckBox_CheckedChanged(object sender, System.EventArgs e)
-        {
-            data.manipulatesBiologicalAgents = biologicalAgentsUsedCheckBox.Checked;
-        }
-
-        private void physicalAgentsUsedCheckBox_CheckedChanged(object sender, System.EventArgs e)
-        {
-            data.manipulatesPhysicalAgents = physicalAgentsUsedCheckBox.Checked;
-        }
-
-        private void mechanicalAgentsUsedCheckBox_CheckedChanged(object sender, System.EventArgs e)
-        {
-            data.manipulatesMechanicalAgents = mechanicalAgentsUsedCheckBox.Checked;
-        }
-
         public void ValidateData()
         {
             data.CheckValidity();

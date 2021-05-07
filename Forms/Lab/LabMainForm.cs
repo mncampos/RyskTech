@@ -273,7 +273,7 @@ namespace RyskTech.Forms.Lab
 
                 if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(save.FileName))
                 {
-                    if (compilation.lab.biologicalAgentsInfo.hasBioSecurityCertificate)
+                    if (compilation.lab.generalInformation.manipulatesBiologicalAgents && compilation.lab.biologicalAgentsInfo.hasBioSecurityCertificate)
                     {
                         MessageBox.Show("Por favor, apresente o certificado de biossegurança do seu laboratório");
                         OpenFileDialog open = new OpenFileDialog();
@@ -314,7 +314,7 @@ namespace RyskTech.Forms.Lab
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Houve um erro durante a geração, envie esta mensagem para um desenvolvedor:\n" + "Message: " + ex.Message + "\nStack trace:" + ex.StackTrace);
             }
         }
 

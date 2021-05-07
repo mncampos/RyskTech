@@ -238,21 +238,20 @@ namespace RyskTech.Forms.Lab.Controls
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 16);
+            this.label5.Location = new System.Drawing.Point(3, 29);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(182, 39);
+            this.label5.Size = new System.Drawing.Size(221, 26);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Seu local promove treinamento\r\nsobre reagentes e resíduos químicos\r\npara os usuár" +
-    "ios?";
+            this.label5.Text = "Seu local promove treinamento de segurança\r\npara os usuários?";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(223, 16);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(274, 13);
+            this.label4.Size = new System.Drawing.Size(335, 13);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Cite brevemente quem são os envolvidos no treinamento";
+            this.label4.Text = "Cite brevemente quem são os envolvidos e quais são os treinamentos";
             // 
             // textBox1
             // 

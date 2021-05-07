@@ -1,5 +1,6 @@
 ﻿using RyskTech.Data;
 using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace RyskTech.Forms.Lab
@@ -17,6 +18,7 @@ namespace RyskTech.Forms.Lab
                 riskComboBox.Text = agent.description;
                 safetyGuardComboBox.Text = agent.safetyNet;
                 frequencyClassificationComboBox.Text = agent.frequencyClassification;
+                severityClassificationComboBox.Text = agent.severityClassification;
             }
         }
 
@@ -28,7 +30,7 @@ namespace RyskTech.Forms.Lab
 
         private void severityTableButotn_Click(object sender, EventArgs e)
         {
-            ShowTableForm table = new ShowTableForm(Properties.Resources.Quadro1, "Classificação quanto à severidade");
+            ShowTableForm table = new ShowTableForm(Properties.Resources.Quadro2, "Classificação quanto à severidade");
             table.ShowDialog();
         }
 
@@ -41,7 +43,7 @@ namespace RyskTech.Forms.Lab
         private void concludeButton_Click(object sender, EventArgs e)
         {
             string safetyMeasures = "";
-            foreach (string item in safetyMeasuresListBox.Items)
+            foreach (string item in safetyMeasuresListBox.Items.Cast<String>().ToList())
             {
                 safetyMeasures += item + "\n";
             }
@@ -49,7 +51,7 @@ namespace RyskTech.Forms.Lab
             createdRisk = new Risk(
                 riskComboBox.Text,
                 dangerComboBox.Text,
-                safetyGuardComboBox.Text,
+                safetyMeasures,
                 frequencyClassificationComboBox.Text,
                 severityClassificationComboBox.Text);
 

@@ -130,6 +130,7 @@ namespace RyskTech
             }
 
             AddChemicalResidueStorageInfo();
+
             AddSafetyInfo();
         }
 
