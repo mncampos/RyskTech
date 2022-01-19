@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdditionalInformation" xml:space="preserve">
+    <value>Informações Adicionais</value>
+  </data>
+  <data name="AddressComplement" xml:space="preserve">
+    <value>Complemento</value>
+  </data>
+  <data name="AddressZIP" xml:space="preserve">
+    <value>CEP</value>
+  </data>
+  <data name="Agent" xml:space="preserve">
+    <value>Agente</value>
+  </data>
+  <data name="AmberGlassContainer" xml:space="preserve">
+    <value>Vidro temperado âmbar</value>
+  </data>
+  <data name="AssociatedRisk" xml:space="preserve">
+    <value>Risco Associado</value>
+  </data>
+  <data name="Avenue" xml:space="preserve">
+    <value>Avenida</value>
+  </data>
+  <data name="Boulevard" xml:space="preserve">
+    <value>Alameda</value>
+  </data>
+  <data name="Building" xml:space="preserve">
+    <value>Prédio</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="CasNumber" xml:space="preserve">
+    <value>Número CAS</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirmar</value>
+  </data>
+  <data name="Container" xml:space="preserve">
+    <value>Recipiente</value>
+  </data>
+  <data name="Crossing" xml:space="preserve">
+    <value>Travessa</value>
+  </data>
+  <data name="Danger" xml:space="preserve">
+    <value>Perigo</value>
+  </data>
+  <data name="DangerCharacteristics" xml:space="preserve">
+    <value>Características de periculosidade</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>Dias</value>
+  </data>
+  <data name="Director" xml:space="preserve">
+    <value>Diretor</value>
+  </data>
+  <data name="District" xml:space="preserve">
+    <value>Bairro</value>
+  </data>
+  <data name="EMail" xml:space="preserve">
+    <value>Endereço de e-mail</value>
+  </data>
+  <data name="Equipment" xml:space="preserve">
+    <value>Máquina/Equipamento</value>
+  </data>
+  <data name="ErrorInvalidLabName" xml:space="preserve">
+    <value>Por favor informe o nome ou descritor do seu espaço</value>
+  </data>
+  <data name="ErrorInvalidUnitName" xml:space="preserve">
+    <value>Nome de unidade inválido!</value>
+  </data>
+  <data name="ErrorNoAgentName" xml:space="preserve">
+    <value>Por favor indique o nome do agente</value>
+  </data>
+  <data name="ErrorNoAgentOrigin" xml:space="preserve">
+    <value>Por favor indique a origem de todos os agentes químicos</value>
+  </data>
+  <data name="ErrorNoAgentUsage" xml:space="preserve">
+    <value>Por favor indique os usos do seu agente</value>
+  </data>
+  <data name="ErrorNoAssociatedDanger" xml:space="preserve">
+    <value>Por favor insira o perigo assocaido a todos os riscos</value>
+  </data>
+  <data name="ErrorNoBiologicalAgents" xml:space="preserve">
+    <value>Por favor indique os agentes biológicos presentes em seu laboratório</value>
+  </data>
+  <data name="ErrorNoConclusion" xml:space="preserve">
+    <value>Por favor complete as considerações gerais sobre os resultados da análise</value>
+  </data>
+  <data name="ErrorNoFISPQExplanation" xml:space="preserve">
+    <value>Por favor preencha com suas informações de concordância FISPQ</value>
+  </data>
+  <data name="ErrorNoFrequencyClassificaiton" xml:space="preserve">
+    <value>Por favor indique a classe de frequência de todos os riscos</value>
+  </data>
+  <data name="ErrorNoManipulatedAreasSelected" xml:space="preserve">
+    <value>Selecione pelo menos um tipo de material manipulado na sua unidade!</value>
+  </data>
+  <data name="ErrorNoOccupation" xml:space="preserve">
+    <value>Por favor indique a ocupação de todos os resposáveis</value>
+  </data>
+  <data name="ErrorNoPhyisicalAgents" xml:space="preserve">
+    <value>Por favor cite todos os agentes físicos e seus riscos associados</value>
+  </data>
+  <data name="ErrorNoProcessedSamples" xml:space="preserve">
+    <value>Por favor indique todas as amostras biológicasprocessadas pelo seu laboratório</value>
+  </data>
+  <data name="ErrorNoResidueDestination" xml:space="preserve">
+    <value>Por favor indique o destino dos resíduos</value>
+  </data>
+  <data name="ErrorNoResidueStorageDescription" xml:space="preserve">
+    <value>Por favor descreva de maneira geral como são mantidos os resíduos</value>
+  </data>
+  <data name="ErrorNoRiskClassificaiton" xml:space="preserve">
+    <value>Por favor indique a classe de risco do agente</value>
+  </data>
+  <data name="ErrorNoRiskDescription" xml:space="preserve">
+    <value>Por favor descreva todos os riscos listados</value>
+  </data>
+  <data name="ErrorNoRisks" xml:space="preserve">
+    <value>Por favor indique os riscos presentes no seu laboratório</value>
+  </data>
+  <data name="ErrorNoSeverityClassification" xml:space="preserve">
+    <value>Por favor indique a classe de severidade de todos os riscos</value>
+  </data>
+  <data name="ErrorNoSugestions" xml:space="preserve">
+    <value>Por favor sugira formas de melhorar a segurança no seu ambiente</value>
+  </data>
+  <data name="ErrorNoTeamComposition" xml:space="preserve">
+    <value>Por favor indique a composição do time</value>
+  </data>
+  <data name="ErrorNoUsageDescription" xml:space="preserve">
+    <value>Por favor descreva o uso do seu espaço</value>
+  </data>
+  <data name="Floor" xml:space="preserve">
+    <value>Andar</value>
+  </data>
+  <data name="FrequencyClassification" xml:space="preserve">
+    <value>Classificação de Frequência</value>
+  </data>
+  <data name="Highway" xml:space="preserve">
+    <value>Rodovia</value>
+  </data>
+  <data name="IncompleteTeamCounter" xml:space="preserve">
+    <value>Por favor informe a quantidade de cada integrante do time</value>
+  </data>
+  <data name="Inert" xml:space="preserve">
+    <value>Inerte</value>
+  </data>
+  <data name="InvalidAgentContainer" xml:space="preserve">
+    <value>Por favor indique os detalhes de contenção do agente</value>
+  </data>
+  <data name="InvalidAgentMeasureUnit" xml:space="preserve">
+    <value>Por favor indique a unidade de medida utilizada</value>
+  </data>
+  <data name="InvalidAgentName" xml:space="preserve">
+    <value>Por favor digite o nome do agente</value>
+  </data>
+  <data name="InvalidAgentQuantity" xml:space="preserve">
+    <value>Por favor indique a quantidade mantida do agente</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Por favor digite um endereço de e-mail válido</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>Por favor digite um nome válido</value>
+  </data>
+  <data name="InvalidPhoneNumber" xml:space="preserve">
+    <value>Por favor digite um número de telefone válido</value>
+  </data>
+  <data name="InvalidPhysicalState" xml:space="preserve">
+    <value>Por favor indique o estado físico do agente</value>
+  </data>
+  <data name="InvalidSpaceBuilding" xml:space="preserve">
+    <value>Por favor indique o prédio para todos os espaços da sua unidade</value>
+  </data>
+  <data name="InvalidSpaceFloor" xml:space="preserve">
+    <value>Por favor indique o andar para todos os espaços da sua unidade</value>
+  </data>
+  <data name="InvalidSpaceRoom" xml:space="preserve">
+    <value>Por favor indique a sala para todos os espaços da sua unidade</value>
+  </data>
+  <data name="InvalidTimeFormat" xml:space="preserve">
+    <value>Por favor indique horários no formato HH:MM em notação 24h</value>
+  </data>
+  <data name="InvalidUsageTurn" xml:space="preserve">
+    <value>Por favor indique os horários de início e fim de todos os espaços da sua unidade</value>
+  </data>
+  <data name="LocationDistrictInvalid" xml:space="preserve">
+    <value>Por favor digite um bairro válido para sua unidade!</value>
+  </data>
+  <data name="LocationNumberInvalid" xml:space="preserve">
+    <value>Por favor digite um número válido para sua unidade!</value>
+  </data>
+  <data name="LocationPrefixInvalid" xml:space="preserve">
+    <value>Selecione um prefixo para o endereço da sua unidade!</value>
+  </data>
+  <data name="LocationStreetInvalid" xml:space="preserve">
+    <value>Por favor digite o nome do logradouro da sua unidade!</value>
+  </data>
+  <data name="LocationZIPInvalid" xml:space="preserve">
+    <value>Por favor digite o CEP no formato correto!</value>
+  </data>
+  <data name="Mixture" xml:space="preserve">
+    <value>Mistura</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Nro.</value>
+  </data>
+  <data name="NoHistory" xml:space="preserve">
+    <value>Por favor preencha o formulário com o histórico da sua unidade</value>
+  </data>
+  <data name="NoSpacesAdded" xml:space="preserve">
+    <value>Por favor insira os espaços utilizados pela sua unidade</value>
+  </data>
+  <data name="NoSurroundingsDetailsAdded" xml:space="preserve">
+    <value>Por favor insira informações sobre os arredores da sua unidade</value>
+  </data>
+  <data name="NotAllTabsVisited" xml:space="preserve">
+    <value>Por favor preencha todas as abas antes de completar o documento!</value>
+  </data>
+  <data name="NoUsageDays" xml:space="preserve">
+    <value>Por favor indique os dias em que o espaço é utilizado</value>
+  </data>
+  <data name="Origin" xml:space="preserve">
+    <value>Origem</value>
+  </data>
+  <data name="OtherNotSpecified" xml:space="preserve">
+    <value>Por favor especifique o que são "Outros"</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Telefone</value>
+  </data>
+  <data name="PhysicalState" xml:space="preserve">
+    <value>Estado físico</value>
+  </data>
+  <data name="PlasticContainer" xml:space="preserve">
+    <value>Bombona plástica</value>
+  </data>
+  <data name="Public" xml:space="preserve">
+    <value>Público</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantidade</value>
+  </data>
+  <data name="Risk" xml:space="preserve">
+    <value>Risco</value>
+  </data>
+  <data name="RiskClassification" xml:space="preserve">
+    <value>Classe de Risco</value>
+  </data>
+  <data name="Road" xml:space="preserve">
+    <value>Rua</value>
+  </data>
+  <data name="Room" xml:space="preserve">
+    <value>Sala</value>
+  </data>
+  <data name="SafetyNet" xml:space="preserve">
+    <value>Salvaguarda</value>
+  </data>
+  <data name="SeverityClassification" xml:space="preserve">
+    <value>Classificação de severidade</value>
+  </data>
+  <data name="StorageInfo" xml:space="preserve">
+    <value>Informações adicionais de armazenamento</value>
+  </data>
+  <data name="StreetNumber" xml:space="preserve">
+    <value>No.</value>
+  </data>
+  <data name="Students" xml:space="preserve">
+    <value>Alunos e Estudantes</value>
+  </data>
+  <data name="SurroundingsComments" xml:space="preserve">
+    <value>Informações sobre os arredores</value>
+  </data>
+  <data name="Teachers" xml:space="preserve">
+    <value>Professores</value>
+  </data>
+  <data name="Technics" xml:space="preserve">
+    <value>Profissionais Técnico-Administrativos</value>
+  </data>
+  <data name="TemperedGlassContainer" xml:space="preserve">
+    <value>Vidro temperado transparente</value>
+  </data>
+  <data name="TrainingPeriodicityNotComplete" xml:space="preserve">
+    <value>Por favor informe a periodicidade com a qual seu laboratório treina seu pessoal</value>
+  </data>
+  <data name="TrainingPersonelNotSpecified" xml:space="preserve">
+    <value>Por favor especifique quem são aqueles envolvidos no seu treinamento</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="UnitHistoryScreen" xml:space="preserve">
+    <value>[Unidade - Histórico]</value>
+  </data>
+  <data name="UnitLocationScreen" xml:space="preserve">
+    <value>[Unidade - Localização]</value>
+  </data>
+  <data name="UnitMethodologyScreen" xml:space="preserve">
+    <value>[Unidade - Metodologia]</value>
+  </data>
+  <data name="UnitStructureScreen" xml:space="preserve">
+    <value>[Unidade - Estrutura]</value>
+  </data>
+  <data name="UnitTeamScreen" xml:space="preserve">
+    <value>[Unidade - Time]</value>
+  </data>
+  <data name="UnitWelcomeScreen" xml:space="preserve">
+    <value>[Unidade - Bem Vindo!]</value>
+  </data>
+  <data name="Usage" xml:space="preserve">
+    <value>Uso</value>
+  </data>
+  <data name="UsagePeriod" xml:space="preserve">
+    <value>Período de Uso</value>
+  </data>
+  <data name="ViceDirector" xml:space="preserve">
+    <value>Vice-Diretor</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+</root>

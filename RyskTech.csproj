@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F0CF6BA-C04C-4ADD-9685-729BD153F72B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RyskTech</RootNamespace>
+    <AssemblyName>RyskTech</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Syncfusion.Compression.Base, Version=18.4460.0.48, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.Compression.Base.18.4.0.48\lib\net46\Syncfusion.Compression.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Compression.Portable, Version=19.1200.0.58, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.Compression.Net.Core.19.1.0.58\lib\netstandard2.0\Syncfusion.Compression.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.DocIO.Base, Version=18.4460.0.48, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.DocIO.WinForms.18.4.0.48\lib\net46\Syncfusion.DocIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=19.1460.0.58, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.Licensing.19.1.0.58\lib\net46\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.OfficeChart.Base, Version=18.4460.0.48, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.OfficeChart.Base.18.4.0.48\lib\net46\Syncfusion.OfficeChart.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Text.Encoding.CodePages, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encoding.CodePages.4.4.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\APR.cs" />
+    <Compile Include="Data\Lab\BiologicalAgent.cs" />
+    <Compile Include="Data\Lab\BiologicalInfo.cs" />
+    <Compile Include="Data\Lab\Characteristics.cs" />
+    <Compile Include="Data\Lab\ChemicalAgent.cs" />
+    <Compile Include="Data\Lab\ChemicalReactor.cs" />
+    <Compile Include="Data\Lab\ChemicalResidue.cs" />
+    <Compile Include="Data\Lab\Equipment.cs" />
+    <Compile Include="Data\Lab\LabScope.cs" />
+    <Compile Include="Data\Lab\MechanicalAgent.cs" />
+    <Compile Include="Data\Lab\PhysicalAgent.cs" />
+    <Compile Include="Data\Lab\Risk.cs" />
+    <Compile Include="Data\Lab\RiskAnalysis.cs" />
+    <Compile Include="Data\Lab\Storage.cs" />
+    <Compile Include="Data\Lab\Training.cs" />
+    <Compile Include="Data\Unit\Individual.cs" />
+    <Compile Include="Data\Unit\Location.cs" />
+    <Compile Include="Data\Unit\UnitScope.cs" />
+    <Compile Include="Data\Unit\Space.cs" />
+    <Compile Include="Data\Unit\Structure.cs" />
+    <Compile Include="Data\Unit\Team.cs" />
+    <Compile Include="Data\Unit\Unit.cs" />
+    <Compile Include="Forms\Lab\Controls\BiologicalAgentsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\BiologicalAgentsControl.Designer.cs">
+      <DependentUpon>BiologicalAgentsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\ChemicalAgentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\ChemicalAgentControl.Designer.cs">
+      <DependentUpon>ChemicalAgentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessLogic\DocumentBuilder.cs" />
+    <Compile Include="Forms\Lab\Controls\ConclusionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\ConclusionControl.Designer.cs">
+      <DependentUpon>ConclusionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\ErrorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\ErrorControl.Designer.cs">
+      <DependentUpon>ErrorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\GeneralInformationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\GeneralInformationControl.Designer.cs">
+      <DependentUpon>GeneralInformationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\LabWelcomeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\LabWelcomeControl.Designer.cs">
+      <DependentUpon>LabWelcomeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\MechanicalAgentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\MechanicalAgentControl.Designer.cs">
+      <DependentUpon>MechanicalAgentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\PhysicalAgentsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\PhysicalAgentsControl.Designer.cs">
+      <DependentUpon>PhysicalAgentsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\RiskAnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\RiskAnalysisControl.Designer.cs">
+      <DependentUpon>RiskAnalysisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\SafetyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\SafetyControl.Designer.cs">
+      <DependentUpon>SafetyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\EditBiologicalAgentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\EditBiologicalAgentForm.Designer.cs">
+      <DependentUpon>EditBiologicalAgentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\EditChemicalReactorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\EditChemicalReactorForm.Designer.cs">
+      <DependentUpon>EditChemicalReactorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\EditChemicalResidueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\EditChemicalResidueForm.Designer.cs">
+      <DependentUpon>EditChemicalResidueForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Lab\Lab.cs" />
+    <Compile Include="Forms\Lab\EditMechanicalAgentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\EditMechanicalAgentForm.Designer.cs">
+      <DependentUpon>EditMechanicalAgentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\EditPhysicalAgentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\EditPhysicalAgentForm.Designer.cs">
+      <DependentUpon>EditPhysicalAgentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\EditRiskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\EditRiskForm.Designer.cs">
+      <DependentUpon>EditRiskForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\LabMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\LabMainForm.Designer.cs">
+      <DependentUpon>LabMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\HistoryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\HistoryControl.Designer.cs">
+      <DependentUpon>HistoryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\LocationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\LocationControl.Designer.cs">
+      <DependentUpon>LocationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\MethodologyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\MethodologyControl.Designer.cs">
+      <DependentUpon>MethodologyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\StructureControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\StructureControl.Designer.cs">
+      <DependentUpon>StructureControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\TeamControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\TeamControl.Designer.cs">
+      <DependentUpon>TeamControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\WelcomeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Unit\Controls\WelcomeControl.Designer.cs">
+      <DependentUpon>WelcomeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Unit\EditSpaceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Unit\EditSpaceForm.Designer.cs">
+      <DependentUpon>EditSpaceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Unit\UnitMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Unit\UnitMainForm.Designer.cs">
+      <DependentUpon>UnitMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WelcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WelcomeForm.Designer.cs">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShowTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShowTableForm.Designer.cs">
+      <DependentUpon>ShowTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Language\pt_local.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pt_local.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\Lab\Controls\BiologicalAgentsControl.resx">
+      <DependentUpon>BiologicalAgentsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\Controls\ChemicalAgentControl.resx">
+      <DependentUpon>ChemicalAgentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\Controls\ConclusionControl.resx">
+      <DependentUpon>ConclusionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\Controls\ErrorControl.resx">
+      <DependentUpon>ErrorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\Controls\GeneralInformationControl.resx">
+      <DependentUpon>GeneralInformationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\Controls\LabWelcomeControl.resx">
+      <DependentUpon>LabWelcomeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\Controls\MechanicalAgentControl.resx">
+      <DependentUpon>MechanicalAgentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\Controls\PhysicalAgentsControl.resx">
+      <DependentUpon>PhysicalAgentsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\Controls\RiskAnalysisControl.resx">
+      <DependentUpon>RiskAnalysisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\Controls\SafetyControl.resx">
+      <DependentUpon>SafetyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\EditBiologicalAgentForm.resx">
+      <DependentUpon>EditBiologicalAgentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\EditChemicalReactorForm.resx">
+      <DependentUpon>EditChemicalReactorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\EditChemicalResidueForm.resx">
+      <DependentUpon>EditChemicalResidueForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\EditMechanicalAgentForm.resx">
+      <DependentUpon>EditMechanicalAgentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\EditPhysicalAgentForm.resx">
+      <DependentUpon>EditPhysicalAgentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\EditRiskForm.resx">
+      <DependentUpon>EditRiskForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\LabMainForm.resx">
+      <DependentUpon>LabMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Unit\Controls\HistoryControl.resx">
+      <DependentUpon>HistoryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Unit\Controls\LocationControl.resx">
+      <DependentUpon>LocationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Unit\Controls\MethodologyControl.resx">
+      <DependentUpon>MethodologyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Unit\Controls\StructureControl.resx">
+      <DependentUpon>StructureControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Unit\Controls\TeamControl.resx">
+      <DependentUpon>TeamControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Unit\Controls\WelcomeControl.resx">
+      <DependentUpon>WelcomeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Unit\EditSpaceForm.resx">
+      <DependentUpon>EditSpaceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Unit\UnitMainForm.resx">
+      <DependentUpon>UnitMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\ShowTableForm.resx">
+      <DependentUpon>ShowTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Language\pt_local.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>pt_local.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Etapa1_Classificacao_de_risco_ANVISA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <None Include="Resources\data\cas_numbers.txt" />
+    <None Include="Resources\data\substances.txt" />
+    <Content Include="Resources\default_method.txt" />
+    <None Include="Resources\Image1.bmp" />
+    <Content Include="Resources\logo.jpg" />
+    <None Include="Resources\NavbarIcons\history.png" />
+    <None Include="Resources\NavbarIcons\location.png" />
+    <None Include="Resources\NavbarIcons\methodolody.png" />
+    <None Include="Resources\NavbarIcons\structure.png" />
+    <None Include="Resources\NavbarIcons\team.png" />
+    <None Include="Resources\NavbarIcons\welcome.png" />
+    <None Include="Resources\NavbarIcons\home.png" />
+    <None Include="Resources\NavbarIcons\safety.png" />
+    <None Include="Resources\NavbarIcons\information.png" />
+    <None Include="Resources\NavbarIcons\biological.png" />
+    <None Include="Resources\NavbarIcons\chemical.png" />
+    <None Include="Resources\NavbarIcons\mechanical.png" />
+    <None Include="Resources\NavbarIcons\physical.png" />
+    <None Include="Resources\NavbarIcons\risk.png" />
+    <None Include="Resources\NavbarIcons\conclusion.png" />
+    <Content Include="Resources\Quadro2.png" />
+    <Content Include="Resources\Quadro3.png" />
+    <Content Include="Resources\Quadro4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets'))" />
+  </Target>
+</Project>
