@@ -41,7 +41,6 @@ namespace RyskTech.Forms.Lab
                     }
                 }
 
-                MessageBox.Show(agent.generatedRisks);
 
                 foreach(string s in risks)
                 {

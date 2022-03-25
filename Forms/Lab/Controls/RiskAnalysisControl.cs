@@ -35,7 +35,7 @@ namespace RyskTech.Forms.Lab.Controls
                 Risk risk = new Risk(
                     row.Cells[0].Value.ToString(),
                     row.Cells[1].Value.ToString(),
-                    row.Cells[2].Value.ToString(),
+                    row.Cells[2].Value == null ? "" : row.Cells[2].Value.ToString(),
                     row.Cells[3].Value == null ? "" : row.Cells[3].Value.ToString(),
                     row.Cells[4].Value == null ? "" : row.Cells[4].Value.ToString());
 

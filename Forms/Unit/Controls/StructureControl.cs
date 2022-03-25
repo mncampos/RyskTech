@@ -41,6 +41,7 @@ namespace RyskTech.Forms.Unit.Controls
                 entry.turnStart = System.TimeSpan.Parse(row.Cells[3].Value.ToString());
                 entry.turnEnd = System.TimeSpan.Parse(row.Cells[4].Value.ToString());
                 entry.surroundingsComments = row.Cells[5].Value.ToString();
+                entry.weekDays = row.Cells[6].Value.ToString();
 
                 EditSpaceForm form = new EditSpaceForm(entry);
                 form.ShowDialog();
