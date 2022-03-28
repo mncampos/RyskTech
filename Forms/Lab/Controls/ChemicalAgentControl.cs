@@ -265,5 +265,30 @@ namespace RyskTech.Forms.Lab.Controls
             if (storageInfo != null)
                 storageInfo.CheckValidity();
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(residuosCheckbox.Checked == true)
+            {
+                label3.Visible = true;
+                chemicalResidueData.Visible = true;
+                addResidueButton.Visible = true;
+                editResidueButton.Visible = true;
+                removeResidueButton.Visible = true;
+                chemicalReactorData.Width = 252;
+            }
+
+            if(residuosCheckbox.Checked == false)
+            {
+                label3.Visible = false;
+                chemicalResidueData.Visible = false;
+                addResidueButton.Visible = false;
+                editResidueButton.Visible = false;
+                removeResidueButton.Visible = false;
+                chemicalReactorData.Width = 557;
+
+            }
+
+        }
     }
 }

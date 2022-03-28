@@ -208,6 +208,7 @@ namespace RyskTech.Forms.Lab
             nextConcludeButton.Text = "Concluir";
 
             progress = 9;
+           
         }
 
         private void PrepareForGeneration()
@@ -350,6 +351,11 @@ namespace RyskTech.Forms.Lab
                     conclude();
                     break;
             }
+
+        }
+
+        private void activeControlPanel_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

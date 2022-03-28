@@ -27,5 +27,10 @@ namespace RyskTech.Forms.Unit.Controls
         {
             data.CheckValidity();
         }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            data.date = dateTimePicker1.Value;
+        }
     }
 }

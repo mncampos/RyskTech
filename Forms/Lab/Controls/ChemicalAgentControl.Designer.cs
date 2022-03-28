@@ -43,6 +43,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.nbrLinkLabel = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.residuosCheckbox = new System.Windows.Forms.CheckBox();
             this.editResidueButton = new System.Windows.Forms.Button();
             this.editReactorButton = new System.Windows.Forms.Button();
             this.removeReactorButton = new System.Windows.Forms.Button();
@@ -237,6 +238,7 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.residuosCheckbox);
             this.groupBox1.Controls.Add(this.editResidueButton);
             this.groupBox1.Controls.Add(this.editReactorButton);
             this.groupBox1.Controls.Add(this.removeReactorButton);
@@ -255,15 +257,27 @@ namespace RyskTech.Forms.Lab.Controls
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Agentes";
             // 
+            // residuosCheckbox
+            // 
+            this.residuosCheckbox.AutoSize = true;
+            this.residuosCheckbox.Location = new System.Drawing.Point(265, 252);
+            this.residuosCheckbox.Name = "residuosCheckbox";
+            this.residuosCheckbox.Size = new System.Drawing.Size(78, 17);
+            this.residuosCheckbox.TabIndex = 9;
+            this.residuosCheckbox.Text = "Resíduos?";
+            this.residuosCheckbox.UseVisualStyleBackColor = true;
+            this.residuosCheckbox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // editResidueButton
             // 
-            this.editResidueButton.Location = new System.Drawing.Point(370, 246);
+            this.editResidueButton.Location = new System.Drawing.Point(430, 247);
             this.editResidueButton.Margin = new System.Windows.Forms.Padding(8);
             this.editResidueButton.Name = "editResidueButton";
             this.editResidueButton.Size = new System.Drawing.Size(68, 27);
             this.editResidueButton.TabIndex = 8;
             this.editResidueButton.Text = "Editar";
             this.editResidueButton.UseVisualStyleBackColor = true;
+            this.editResidueButton.Visible = false;
             this.editResidueButton.Click += new System.EventHandler(this.editResidueButton_Click);
             // 
             // editReactorButton
@@ -301,24 +315,26 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // removeResidueButton
             // 
-            this.removeResidueButton.Location = new System.Drawing.Point(454, 246);
+            this.removeResidueButton.Location = new System.Drawing.Point(504, 247);
             this.removeResidueButton.Margin = new System.Windows.Forms.Padding(8);
             this.removeResidueButton.Name = "removeResidueButton";
             this.removeResidueButton.Size = new System.Drawing.Size(68, 27);
             this.removeResidueButton.TabIndex = 6;
             this.removeResidueButton.Text = "Remover";
             this.removeResidueButton.UseVisualStyleBackColor = true;
+            this.removeResidueButton.Visible = false;
             this.removeResidueButton.Click += new System.EventHandler(this.removeResidueButton_Click);
             // 
             // addResidueButton
             // 
-            this.addResidueButton.Location = new System.Drawing.Point(286, 246);
+            this.addResidueButton.Location = new System.Drawing.Point(356, 246);
             this.addResidueButton.Margin = new System.Windows.Forms.Padding(8);
             this.addResidueButton.Name = "addResidueButton";
             this.addResidueButton.Size = new System.Drawing.Size(68, 27);
             this.addResidueButton.TabIndex = 5;
             this.addResidueButton.Text = "Novo";
             this.addResidueButton.UseVisualStyleBackColor = true;
+            this.addResidueButton.Visible = false;
             this.addResidueButton.Click += new System.EventHandler(this.addResidueButton_Click);
             // 
             // chemicalReactorData
@@ -342,7 +358,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.chemicalReactorData.Name = "chemicalReactorData";
             this.chemicalReactorData.ReadOnly = true;
             this.chemicalReactorData.ShowCellToolTips = false;
-            this.chemicalReactorData.Size = new System.Drawing.Size(252, 161);
+            this.chemicalReactorData.Size = new System.Drawing.Size(557, 161);
             this.chemicalReactorData.TabIndex = 4;
             // 
             // dataGridViewTextBoxColumn1
@@ -432,6 +448,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.chemicalResidueData.ReadOnly = true;
             this.chemicalResidueData.Size = new System.Drawing.Size(269, 161);
             this.chemicalResidueData.TabIndex = 3;
+            this.chemicalResidueData.Visible = false;
             // 
             // chemicalResidueName
             // 
@@ -501,6 +518,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Resíduos";
+            this.label3.Visible = false;
             // 
             // label2
             // 
@@ -592,5 +610,6 @@ namespace RyskTech.Forms.Lab.Controls
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button editReactorButton;
         private System.Windows.Forms.Button editResidueButton;
+        private System.Windows.Forms.CheckBox residuosCheckbox;
     }
 }

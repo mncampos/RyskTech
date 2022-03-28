@@ -50,5 +50,20 @@ namespace RyskTech.Forms.Lab.Controls
             else
                 throw new ApplicationException(Resources.Language.pt_local.NotAllTabsVisited);
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+            data.date = dateTimePicker2.Value;
+        }
     }
 }

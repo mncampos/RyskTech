@@ -272,6 +272,7 @@ namespace RyskTech.Forms.Lab
             this.activeControlPanel.Padding = new System.Windows.Forms.Padding(5);
             this.activeControlPanel.Size = new System.Drawing.Size(596, 467);
             this.activeControlPanel.TabIndex = 0;
+            this.activeControlPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.activeControlPanel_Paint);
             // 
             // bottomBarPanel
             // 
@@ -293,7 +294,7 @@ namespace RyskTech.Forms.Lab
             this.nextConcludeButton.UseVisualStyleBackColor = true;
             this.nextConcludeButton.Click += new System.EventHandler(this.nextConcludeButton_Click);
             // 
-            // LabMainFormBetter
+            // LabMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -303,7 +304,7 @@ namespace RyskTech.Forms.Lab
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(700, 600);
             this.MinimumSize = new System.Drawing.Size(700, 600);
-            this.Name = "LabMainFormBetter";
+            this.Name = "LabMainForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "RyskTech - Laboratório";
             this.Load += new System.EventHandler(this.LabMainFormBetter_Load);
