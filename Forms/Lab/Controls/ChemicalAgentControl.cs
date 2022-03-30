@@ -286,6 +286,8 @@ namespace RyskTech.Forms.Lab.Controls
                 editResidueButton.Visible = false;
                 removeResidueButton.Visible = false;
                 chemicalReactorData.Width = 557;
+                this.residueData.Clear();
+                chemicalResidueData.Rows.Clear();
 
             }
 
