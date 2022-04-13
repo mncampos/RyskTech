@@ -45,6 +45,7 @@ namespace RyskTech.Forms.Lab
             this.activeControlPanel = new System.Windows.Forms.Panel();
             this.bottomBarPanel = new System.Windows.Forms.Panel();
             this.nextConcludeButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
             this.mainTableLayoutPanel.SuspendLayout();
             this.navigationLayoutPanel.SuspendLayout();
             this.bottomBarPanel.SuspendLayout();
@@ -276,6 +277,7 @@ namespace RyskTech.Forms.Lab
             // 
             // bottomBarPanel
             // 
+            this.bottomBarPanel.Controls.Add(this.saveButton);
             this.bottomBarPanel.Controls.Add(this.nextConcludeButton);
             this.bottomBarPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bottomBarPanel.Location = new System.Drawing.Point(83, 528);
@@ -293,6 +295,16 @@ namespace RyskTech.Forms.Lab
             this.nextConcludeButton.Text = "Próximo";
             this.nextConcludeButton.UseVisualStyleBackColor = true;
             this.nextConcludeButton.Click += new System.EventHandler(this.nextConcludeButton_Click);
+            // 
+            // saveButton
+            // 
+            this.saveButton.Location = new System.Drawing.Point(5, 4);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(113, 23);
+            this.saveButton.TabIndex = 5;
+            this.saveButton.Text = "Salvar Progresso";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // LabMainForm
             // 
@@ -333,5 +345,6 @@ namespace RyskTech.Forms.Lab
         private System.Windows.Forms.Button mechanicalAgentsTabButton;
         private System.Windows.Forms.Button risksTabButton;
         private System.Windows.Forms.Button conclusionTabButton;
+        private System.Windows.Forms.Button saveButton;
     }
 }

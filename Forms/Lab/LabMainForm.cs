@@ -4,6 +4,7 @@ using System;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using System.Text; 
 
 namespace RyskTech.Forms.Lab
 {
@@ -11,6 +12,8 @@ namespace RyskTech.Forms.Lab
     {
         private Data.Lab data;
         private int progress;
+        private bool saved;
+        private string path;
 
         // Tabs
         private LabWelcomeControl labWelcomeControl;
@@ -27,6 +30,16 @@ namespace RyskTech.Forms.Lab
         {
             InitializeComponent();
         }
+
+        public LabMainForm(bool saved, string path)
+        {
+
+            this.saved = saved;
+            this.path = path;
+            InitializeComponent();
+        }
+
+
 
         private void LabMainFormBetter_Load(object sender, EventArgs e)
         {
@@ -64,6 +77,12 @@ namespace RyskTech.Forms.Lab
 
             progress = 1;
             data = new Data.Lab();
+
+            if (saved == true)
+            {
+                labWelcomeControl.loadWelcomeInfo(path);
+               
+            }
         }
 
         private void clearTabButtonColors()
@@ -103,6 +122,11 @@ namespace RyskTech.Forms.Lab
             nextConcludeButton.Text = "Próximo";
 
             progress = 2;
+
+            if(saved == true)
+            {
+                generalInformationControl.loadGeneralInfo(path);
+            }
         }
 
         private void safetyTabButton_Click(object sender, EventArgs e)
@@ -357,6 +381,47 @@ namespace RyskTech.Forms.Lab
         private void activeControlPanel_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        public static void AddText(FileStream fs, string value)
+        {
+            byte[] info = new UTF8Encoding(true).GetBytes(value);
+            fs.Write(info, 0, info.Length);
+        }
+
+        private void saveProgress()
+        {
+            try
+                {
+                string appdata = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+                string newfolder = Path.Combine(appdata, "Rysktech");
+                Directory.CreateDirectory(newfolder);
+                string filename = "progress.rysklab";
+                newfolder = Path.Combine(newfolder, filename);
+                using (System.IO.FileStream fs = System.IO.File.Create(newfolder))
+                {
+                    labWelcomeControl.writeWelcomeInfo(fs);
+                    generalInformationControl.writeGeneralInfo(fs);
+                    
+                }
+
+
+
+
+                    MessageBox.Show("Progresso salvo com sucesso!");
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            saveProgress();
         }
     }
 }

@@ -18,14 +18,14 @@ namespace RyskTech.Forms.Lab.Controls
             data = new Characteristics();
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void textBox3_TextChanged(object sender, EventArgs e) //email
         {
-            // TODO EMAIL
+            data.responsiblePersonEmail = textBox3.Text;
         }
 
         private void responsiblePersonTextBox_TextChanged(object sender, System.EventArgs e)
         {
-            data.responsiblePersonName = responsiblePersonTextBox.Text;
+            data.responsiblePersonOccupation = responsiblePersonTextBox.Text;
         }
 
         private void spaceCharacterizationTextBox_TextChanged(object sender, System.EventArgs e)
@@ -73,14 +73,61 @@ namespace RyskTech.Forms.Lab.Controls
             data.generalPublicCount = (int)publicNumericUpDown.Value;
         }
 
-        private void responsiblePersonOccupation_TextChanged(object sender, EventArgs e)
+        private void responsiblePersonName_TextChanged(object sender, EventArgs e)
         {
-            data.responsiblePersonOccupation = responsiblePersonOccupation.Text;
+            data.responsiblePersonName = responsiblePersonName.Text;
         }
 
         private void label8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public void writeGeneralInfo(System.IO.FileStream fs)
+        {
+            LabMainForm.AddText(fs, "<labGeneralInfo>\n");
+            LabMainForm.AddText(fs, data.responsiblePersonOccupation+'\n');
+            LabMainForm.AddText(fs, data.responsiblePersonName + '\n');
+            LabMainForm.AddText(fs, data.responsiblePersonContact + '\n');
+            LabMainForm.AddText(fs, data.responsiblePersonEmail + '\n');
+            LabMainForm.AddText(fs, data.building + '\n');
+            LabMainForm.AddText(fs, data.room + '\n');
+            LabMainForm.AddText(fs, data.teachersCount.ToString() + '\n');
+            LabMainForm.AddText(fs, data.technicsCount.ToString() + "\n");
+            LabMainForm.AddText(fs, data.studentsCount.ToString() + "\n");
+            LabMainForm.AddText(fs, data.generalPublicCount.ToString() + "\n");
+            LabMainForm.AddText(fs, data.usageCharacterization + "\n");
+            LabMainForm.AddText(fs, "<\\labGeneralInfo>\n");
+        }
+
+        public void loadGeneralInfo(string path)
+        {
+            using (System.IO.StreamReader sr = new System.IO.StreamReader(path))
+            {
+                string line;
+                do { line = sr.ReadLine(); } while (line != "<labGeneralInfo>");
+                this.responsiblePersonName.Text = sr.ReadLine();
+                this.responsiblePersonTextBox.Text = sr.ReadLine();
+                this.responsiblePersonContactTextBox.Text = sr.ReadLine();
+                this.textBox3.Text = sr.ReadLine();
+                this.buildingTextBox.Text = sr.ReadLine();
+                this.roomTextBox.Text = sr.ReadLine();
+                this.teachersNumericUpDown.Value = Convert.ToDecimal(sr.ReadLine());
+                this.technicsNumericUpDown.Value = Convert.ToDecimal(sr.ReadLine());
+                this.studentsNumericUpDown.Value = Convert.ToDecimal(sr.ReadLine());
+                this.publicNumericUpDown.Value = Convert.ToDecimal(sr.ReadLine());
+                do
+                {
+                    line = sr.ReadLine();
+                    if (line == "<\\labGeneralInfo>")
+                        break;
+                    this.spaceCharacterizationTextBox.Text += line;
+                    this.spaceCharacterizationTextBox.Text += Environment.NewLine;
+                }
+                while ( true ) ;
+               
+                sr.Close();
+            }
         }
     }
 }

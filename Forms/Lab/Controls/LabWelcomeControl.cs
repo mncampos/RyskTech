@@ -11,6 +11,7 @@ namespace RyskTech.Forms.Lab.Controls
         public LabWelcomeControl()
         {
             InitializeComponent();
+            
         }
 
         private void LabWelcomeControlBetter_Load(object sender, EventArgs e)
@@ -64,6 +65,43 @@ namespace RyskTech.Forms.Lab.Controls
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
             data.date = dateTimePicker2.Value;
+        }
+
+        public void writeWelcomeInfo(System.IO.FileStream fs)
+        {
+            LabMainForm.AddText(fs, "<LabWelcome>\n");
+            LabMainForm.AddText(fs, this.data.belongingUnitName + '\n');
+            LabMainForm.AddText(fs, this.data.labName + '\n');
+            if (chemicalAgentsUsedCheckBox.Checked)
+                LabMainForm.AddText(fs, "chemical,");
+            if (biologicalAgentsUsedCheckBox.Checked)
+                LabMainForm.AddText(fs, "biological,");
+            if (physicalAgentsUsedCheckBox.Checked)
+                LabMainForm.AddText(fs, "physical");
+            LabMainForm.AddText(fs, "\n");
+            LabMainForm.AddText(fs, this.data.date.ToShortDateString() + '\n');
+            LabMainForm.AddText(fs, "<\\LabWelcome>\n");
+        }
+
+        public void loadWelcomeInfo(string path)
+        {
+            using(System.IO.StreamReader sr = new System.IO.StreamReader(path))
+            {
+                 string line = sr.ReadLine();
+               this.unitNameTextBox.Text = sr.ReadLine();
+               this.labNameTextBox.Text = sr.ReadLine();
+                line = sr.ReadLine();
+                if(line.Contains("chemical"))
+                    chemicalAgentsUsedCheckBox.Checked = true;
+                if(line.Contains("biological"))
+                    biologicalAgentsUsedCheckBox.Checked = true;
+                if(line.Contains("physical"))
+                    physicalAgentsUsedCheckBox.Checked = true;
+                this.dateTimePicker2.Value = Convert.ToDateTime(sr.ReadLine());
+                if (sr.ReadLine() == "<\\LabWelcome>")
+                    sr.Close(); 
+            }
+
         }
     }
 }

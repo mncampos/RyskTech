@@ -49,7 +49,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.label5 = new System.Windows.Forms.Label();
             this.contactGroupBox = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.responsiblePersonOccupation = new System.Windows.Forms.TextBox();
+            this.responsiblePersonName = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.responsiblePersonContactTextBox = new System.Windows.Forms.TextBox();
@@ -277,7 +277,7 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.responsiblePersonOccupation);
+            this.panel1.Controls.Add(this.responsiblePersonName);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.responsiblePersonContactTextBox);
@@ -292,13 +292,13 @@ namespace RyskTech.Forms.Lab.Controls
             this.panel1.Size = new System.Drawing.Size(335, 156);
             this.panel1.TabIndex = 0;
             // 
-            // responsiblePersonOccupation
+            // responsiblePersonName
             // 
-            this.responsiblePersonOccupation.Location = new System.Drawing.Point(68, 37);
-            this.responsiblePersonOccupation.Name = "responsiblePersonOccupation";
-            this.responsiblePersonOccupation.Size = new System.Drawing.Size(254, 20);
-            this.responsiblePersonOccupation.TabIndex = 8;
-            this.responsiblePersonOccupation.TextChanged += new System.EventHandler(this.responsiblePersonOccupation_TextChanged);
+            this.responsiblePersonName.Location = new System.Drawing.Point(68, 37);
+            this.responsiblePersonName.Name = "responsiblePersonName";
+            this.responsiblePersonName.Size = new System.Drawing.Size(254, 20);
+            this.responsiblePersonName.TabIndex = 8;
+            this.responsiblePersonName.TextChanged += new System.EventHandler(this.responsiblePersonName_TextChanged);
             // 
             // label8
             // 
@@ -417,7 +417,7 @@ namespace RyskTech.Forms.Lab.Controls
         private System.Windows.Forms.TextBox buildingTextBox;
         private System.Windows.Forms.TextBox roomTextBox;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox responsiblePersonOccupation;
+        private System.Windows.Forms.TextBox responsiblePersonName;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.NumericUpDown publicNumericUpDown;
         private System.Windows.Forms.NumericUpDown studentsNumericUpDown;
