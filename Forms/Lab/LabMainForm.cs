@@ -81,6 +81,10 @@ namespace RyskTech.Forms.Lab
             if (saved == true)
             {
                 labWelcomeControl.loadWelcomeInfo(path);
+                activeControlPanel.Controls.Add(generalInformationControl);
+                generalInformationControl.loadGeneralInfo(path);
+                activeControlPanel.Controls.Add(safetyControl);
+                safetyControl.loadSafetyInfo(path); 
                
             }
         }
@@ -123,10 +127,6 @@ namespace RyskTech.Forms.Lab
 
             progress = 2;
 
-            if(saved == true)
-            {
-                generalInformationControl.loadGeneralInfo(path);
-            }
         }
 
         private void safetyTabButton_Click(object sender, EventArgs e)
@@ -402,6 +402,7 @@ namespace RyskTech.Forms.Lab
                 {
                     labWelcomeControl.writeWelcomeInfo(fs);
                     generalInformationControl.writeGeneralInfo(fs);
+                    safetyControl.writeSafetyInfo(fs);
                     
                 }
 
