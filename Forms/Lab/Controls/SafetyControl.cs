@@ -291,12 +291,12 @@ namespace RyskTech.Forms.Lab.Controls
                     LabMainForm.AddText(fs, "semanas\n");
 
                 LabMainForm.AddText(fs, textBox1.Text + "\n");
-                LabMainForm.AddText(fs, "<\\labSafetyInfo>");
+                LabMainForm.AddText(fs, "<\\labSafetyInfo>\n");
             }
             else
             {
                 LabMainForm.AddText(fs, "sem segurança\n");
-                LabMainForm.AddText(fs, "<\\labSafetyInfo>");
+                LabMainForm.AddText(fs, "<\\labSafetyInfo>\n");
             }
 
         }
@@ -410,6 +410,7 @@ namespace RyskTech.Forms.Lab.Controls
 
                             line = sr.ReadLine();
                         }
+                        sr.Close();
                     }
                 }
             }

@@ -84,7 +84,9 @@ namespace RyskTech.Forms.Lab
                 activeControlPanel.Controls.Add(generalInformationControl);
                 generalInformationControl.loadGeneralInfo(path);
                 activeControlPanel.Controls.Add(safetyControl);
-                safetyControl.loadSafetyInfo(path); 
+                safetyControl.loadSafetyInfo(path);
+                activeControlPanel.Controls.Add(chemicalAgentControl);
+                chemicalAgentControl.loadChemicalInfo(path);
                
             }
         }
@@ -403,6 +405,7 @@ namespace RyskTech.Forms.Lab
                     labWelcomeControl.writeWelcomeInfo(fs);
                     generalInformationControl.writeGeneralInfo(fs);
                     safetyControl.writeSafetyInfo(fs);
+                    chemicalAgentControl.writeChemicalInfo(fs);
                     
                 }
 
