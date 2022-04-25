@@ -85,8 +85,25 @@ namespace RyskTech.Forms.Lab
                 generalInformationControl.loadGeneralInfo(path);
                 activeControlPanel.Controls.Add(safetyControl);
                 safetyControl.loadSafetyInfo(path);
-                activeControlPanel.Controls.Add(chemicalAgentControl);
-                chemicalAgentControl.loadChemicalInfo(path);
+                if (labWelcomeControl.data.manipulatesChemicalAgents == true)
+                {
+                    activeControlPanel.Controls.Add(chemicalAgentControl);
+                    chemicalAgentControl.loadChemicalInfo(path);
+                }
+                if (labWelcomeControl.data.manipulatesBiologicalAgents == true) { 
+                activeControlPanel.Controls.Add(biologicalAgentControl);
+                biologicalAgentControl.loadBiologicalInfo(path);
+            }
+                if (labWelcomeControl.data.manipulatesPhysicalAgents == true)
+                {
+                    activeControlPanel.Controls.Add(physicalAgentControl);
+                    physicalAgentControl.loadPhysicalInfo(path);
+                }
+
+                activeControlPanel.Controls.Add(mechanicalAgentControl);
+                mechanicalAgentControl.loadMechanicalInfo(path);
+
+
                
             }
         }
@@ -405,13 +422,34 @@ namespace RyskTech.Forms.Lab
                     labWelcomeControl.writeWelcomeInfo(fs);
                     generalInformationControl.writeGeneralInfo(fs);
                     safetyControl.writeSafetyInfo(fs);
-                    chemicalAgentControl.writeChemicalInfo(fs);
-                    
+                    if (labWelcomeControl.data.manipulatesChemicalAgents == true)
+                    {
+                        if(!activeControlPanel.Controls.Contains(chemicalAgentControl))
+                        activeControlPanel.Controls.Add(chemicalAgentControl);
+                        chemicalAgentControl.writeChemicalInfo(fs);
+                    }
+                    if (labWelcomeControl.data.manipulatesBiologicalAgents == true)
+                    {
+                        if(!activeControlPanel.Contains(biologicalAgentControl))
+                        activeControlPanel.Controls.Add(biologicalAgentControl);
+                        biologicalAgentControl.writeBiologicalInfo(fs);
+                    }
+
+                    if( labWelcomeControl.data.manipulatesPhysicalAgents == true)
+                    {
+                        if(!activeControlPanel.Contains(physicalAgentControl))
+                            activeControlPanel.Controls.Add(physicalAgentControl);
+                        physicalAgentControl.writePhysicalInfo(fs);
+                    }
+
+                    if(!activeControlPanel.Contains(mechanicalAgentControl))
+                        activeControlPanel.Controls.Add(mechanicalAgentControl);
+                    mechanicalAgentControl.writeMechanicalInfo(fs);
                 }
 
 
 
-
+                    
                     MessageBox.Show("Progresso salvo com sucesso!");
 
             }

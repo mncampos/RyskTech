@@ -86,17 +86,17 @@ namespace RyskTech.Forms.Lab.Controls
         public void writeGeneralInfo(System.IO.FileStream fs)
         {
             LabMainForm.AddText(fs, "<labGeneralInfo>\n");
-            LabMainForm.AddText(fs, data.responsiblePersonOccupation+'\n');
-            LabMainForm.AddText(fs, data.responsiblePersonName + '\n');
-            LabMainForm.AddText(fs, data.responsiblePersonContact + '\n');
-            LabMainForm.AddText(fs, data.responsiblePersonEmail + '\n');
-            LabMainForm.AddText(fs, data.building + '\n');
-            LabMainForm.AddText(fs, data.room + '\n');
-            LabMainForm.AddText(fs, data.teachersCount.ToString() + '\n');
-            LabMainForm.AddText(fs, data.technicsCount.ToString() + "\n");
-            LabMainForm.AddText(fs, data.studentsCount.ToString() + "\n");
-            LabMainForm.AddText(fs, data.generalPublicCount.ToString() + "\n");
-            LabMainForm.AddText(fs, data.usageCharacterization);
+            LabMainForm.AddText(fs, responsiblePersonName.Text + '\n');
+            LabMainForm.AddText(fs, responsiblePersonTextBox.Text + '\n');
+            LabMainForm.AddText(fs, responsiblePersonContactTextBox.Text + '\n');
+            LabMainForm.AddText(fs, textBox3.Text + '\n');
+            LabMainForm.AddText(fs, buildingTextBox.Text + '\n');
+            LabMainForm.AddText(fs, roomTextBox.Text + '\n');
+            LabMainForm.AddText(fs, teachersNumericUpDown.Value.ToString() + '\n');
+            LabMainForm.AddText(fs, technicsNumericUpDown.Value.ToString() + "\n");
+            LabMainForm.AddText(fs, studentsNumericUpDown.Value.ToString() + "\n");
+            LabMainForm.AddText(fs, publicNumericUpDown.Value.ToString() + "\n");
+            LabMainForm.AddText(fs, spaceCharacterizationTextBox.Text);
             LabMainForm.AddText(fs, "\n<\\labGeneralInfo>\n");
         }
 

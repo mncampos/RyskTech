@@ -79,7 +79,7 @@ namespace RyskTech.Forms.Lab.Controls
             if (physicalAgentsUsedCheckBox.Checked)
                 LabMainForm.AddText(fs, "physical");
             LabMainForm.AddText(fs, "\n");
-            LabMainForm.AddText(fs, this.data.date.ToShortDateString() + '\n');
+            LabMainForm.AddText(fs, this.data.date.ToLongDateString() + '\n');
             LabMainForm.AddText(fs, "<\\LabWelcome>\n");
         }
 
@@ -97,7 +97,12 @@ namespace RyskTech.Forms.Lab.Controls
                     biologicalAgentsUsedCheckBox.Checked = true;
                 if(line.Contains("physical"))
                     physicalAgentsUsedCheckBox.Checked = true;
-                this.dateTimePicker2.Value = Convert.ToDateTime(sr.ReadLine());
+
+                DateTime dateValue = Convert.ToDateTime(sr.ReadLine());
+                if(dateValue == DateTime.MinValue)
+                    dateValue = DateTime.Now;
+                this.dateTimePicker2.Value = dateValue;
+
                 if (sr.ReadLine() == "<\\LabWelcome>")
                     sr.Close(); 
             }
