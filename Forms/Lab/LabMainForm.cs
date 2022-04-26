@@ -103,6 +103,14 @@ namespace RyskTech.Forms.Lab
                 activeControlPanel.Controls.Add(mechanicalAgentControl);
                 mechanicalAgentControl.loadMechanicalInfo(path);
 
+                activeControlPanel.Controls.Add(riskAnalysisControl);
+                riskAnalysisControl.loadRiskInfo(path);
+
+                activeControlPanel.Controls.Add(conclusionControl);
+                conclusionControl.loadConclusionInfo(path);
+
+
+
 
                
             }
@@ -420,8 +428,15 @@ namespace RyskTech.Forms.Lab
                 using (System.IO.FileStream fs = System.IO.File.Create(newfolder))
                 {
                     labWelcomeControl.writeWelcomeInfo(fs);
+
+                    if (!activeControlPanel.Controls.Contains(generalInformationControl))
+                        activeControlPanel.Controls.Add(generalInformationControl);
                     generalInformationControl.writeGeneralInfo(fs);
+
+                    if (!activeControlPanel.Controls.Contains(safetyControl))
+                        activeControlPanel.Controls.Add(safetyControl);
                     safetyControl.writeSafetyInfo(fs);
+
                     if (labWelcomeControl.data.manipulatesChemicalAgents == true)
                     {
                         if(!activeControlPanel.Controls.Contains(chemicalAgentControl))
@@ -445,6 +460,14 @@ namespace RyskTech.Forms.Lab
                     if(!activeControlPanel.Contains(mechanicalAgentControl))
                         activeControlPanel.Controls.Add(mechanicalAgentControl);
                     mechanicalAgentControl.writeMechanicalInfo(fs);
+
+                    if(!activeControlPanel.Contains(riskAnalysisControl))
+                        activeControlPanel.Controls.Add(riskAnalysisControl);
+                    riskAnalysisControl.writeRisksInfo(fs);
+
+                    if(!activeControlPanel.Contains(conclusionControl))
+                        activeControlPanel.Controls.Add(conclusionControl);
+                    conclusionControl.writeConclusionInfo(fs);  
                 }
 
 

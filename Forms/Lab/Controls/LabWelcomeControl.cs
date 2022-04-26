@@ -72,11 +72,11 @@ namespace RyskTech.Forms.Lab.Controls
             LabMainForm.AddText(fs, "<LabWelcome>\n");
             LabMainForm.AddText(fs, this.data.belongingUnitName + '\n');
             LabMainForm.AddText(fs, this.data.labName + '\n');
-            if (chemicalAgentsUsedCheckBox.Checked)
+            if (this.data.manipulatesChemicalAgents)
                 LabMainForm.AddText(fs, "chemical,");
-            if (biologicalAgentsUsedCheckBox.Checked)
+            if (this.data.manipulatesBiologicalAgents)
                 LabMainForm.AddText(fs, "biological,");
-            if (physicalAgentsUsedCheckBox.Checked)
+            if (this.data.manipulatesPhysicalAgents)
                 LabMainForm.AddText(fs, "physical");
             LabMainForm.AddText(fs, "\n");
             LabMainForm.AddText(fs, this.data.date.ToLongDateString() + '\n');

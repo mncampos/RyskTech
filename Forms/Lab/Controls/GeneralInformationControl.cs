@@ -96,7 +96,7 @@ namespace RyskTech.Forms.Lab.Controls
             LabMainForm.AddText(fs, technicsNumericUpDown.Value.ToString() + "\n");
             LabMainForm.AddText(fs, studentsNumericUpDown.Value.ToString() + "\n");
             LabMainForm.AddText(fs, publicNumericUpDown.Value.ToString() + "\n");
-            LabMainForm.AddText(fs, spaceCharacterizationTextBox.Text);
+            LabMainForm.AddText(fs, spaceCharacterizationTextBox.Text.Replace("\r\n", "£££"));
             LabMainForm.AddText(fs, "\n<\\labGeneralInfo>\n");
         }
 
@@ -118,17 +118,7 @@ namespace RyskTech.Forms.Lab.Controls
                 this.technicsNumericUpDown.Value = Convert.ToDecimal(sr.ReadLine());
                 this.studentsNumericUpDown.Value = Convert.ToDecimal(sr.ReadLine());
                 this.publicNumericUpDown.Value = Convert.ToDecimal(sr.ReadLine());
-                line = sr.ReadLine();
-                while(line != "<\\labGeneralInfo>")
-                {
-                    spaceCharacterizationTextBox.Text += line + "\r\n";
-                    if (sr.Peek() == '\n')
-                        break;
-                    
-                    
-                    line = sr.ReadLine();
-                }
-               
+                this.spaceCharacterizationTextBox.Text = sr.ReadLine().Replace("£££", "\r\n");
                 sr.Close();
             }
         }
