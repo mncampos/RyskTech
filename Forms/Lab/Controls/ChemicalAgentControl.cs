@@ -275,7 +275,9 @@ namespace RyskTech.Forms.Lab.Controls
                 addResidueButton.Visible = true;
                 editResidueButton.Visible = true;
                 removeResidueButton.Visible = true;
-                chemicalReactorData.Width = 252;
+                chemicalReactorData.Width = groupBox1.Width/2;
+                chemicalResidueData.Width = groupBox1.Width / 2 - 20;
+                chemicalResidueData.Location = new System.Drawing.Point(groupBox1.Width / 2 + 15, 75);
             }
 
             if(residuosCheckbox.Checked == false)
@@ -285,11 +287,23 @@ namespace RyskTech.Forms.Lab.Controls
                 addResidueButton.Visible = false;
                 editResidueButton.Visible = false;
                 removeResidueButton.Visible = false;
-                chemicalReactorData.Width = 557;
+                chemicalReactorData.Width = groupBox1.Width - 20;
                 this.residueData.Clear();
                 chemicalResidueData.Rows.Clear();
 
             }
+
+        }
+
+        public void resized(object sender, EventArgs e)
+        {
+            if (residuosCheckbox.Checked == true)
+            {
+                chemicalReactorData.Width = groupBox1.Width / 2 - 20;
+                chemicalResidueData.Width = groupBox1.Width / 2 - 20;
+                chemicalResidueData.Location = new System.Drawing.Point(groupBox1.Width/2+15, 75); //Sendo 75 a altura
+            }
+
 
         }
 
@@ -464,6 +478,16 @@ namespace RyskTech.Forms.Lab.Controls
 
                 sr.Close();
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chemicalReactorData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

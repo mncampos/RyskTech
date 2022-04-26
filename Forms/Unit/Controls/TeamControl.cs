@@ -177,5 +177,10 @@ namespace RyskTech.Forms.Unit.Controls
 
             }
         }
+
+        private void viceDirectorGroupBox_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

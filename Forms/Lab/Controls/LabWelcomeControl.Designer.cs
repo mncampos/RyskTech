@@ -45,8 +45,8 @@ namespace RyskTech.Forms.Lab.Controls
             this.label1 = new System.Windows.Forms.Label();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.mainTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.generalInfotableLayoutPanel.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -105,9 +105,9 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // unitNameLabel
             // 
-            this.unitNameLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.unitNameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.unitNameLabel.AutoSize = true;
-            this.unitNameLabel.Location = new System.Drawing.Point(3, 1);
+            this.unitNameLabel.Location = new System.Drawing.Point(12, 1);
             this.unitNameLabel.Name = "unitNameLabel";
             this.unitNameLabel.Size = new System.Drawing.Size(138, 26);
             this.unitNameLabel.TabIndex = 0;
@@ -126,6 +126,7 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // physicalAgentsUsedCheckBox
             // 
+            this.physicalAgentsUsedCheckBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.physicalAgentsUsedCheckBox.AutoSize = true;
             this.physicalAgentsUsedCheckBox.Location = new System.Drawing.Point(124, 3);
             this.physicalAgentsUsedCheckBox.Name = "physicalAgentsUsedCheckBox";
@@ -137,6 +138,7 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // chemicalAgentsUsedCheckBox
             // 
+            this.chemicalAgentsUsedCheckBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chemicalAgentsUsedCheckBox.AutoSize = true;
             this.chemicalAgentsUsedCheckBox.Location = new System.Drawing.Point(18, 3);
             this.chemicalAgentsUsedCheckBox.Name = "chemicalAgentsUsedCheckBox";
@@ -157,6 +159,7 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // biologicalAgentsUsedCheckBox
             // 
+            this.biologicalAgentsUsedCheckBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.biologicalAgentsUsedCheckBox.AutoSize = true;
             this.biologicalAgentsUsedCheckBox.Location = new System.Drawing.Point(3, 3);
             this.biologicalAgentsUsedCheckBox.Name = "biologicalAgentsUsedCheckBox";
@@ -189,11 +192,11 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(3, 29);
+            this.label2.Location = new System.Drawing.Point(4, 37);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 29);
+            this.label2.Size = new System.Drawing.Size(155, 13);
             this.label2.TabIndex = 7;
             this.label2.Text = "Qual é o nome do seu espaço?";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -245,16 +248,6 @@ namespace RyskTech.Forms.Lab.Controls
             this.mainTableLayoutPanel.Size = new System.Drawing.Size(596, 467);
             this.mainTableLayoutPanel.TabIndex = 1;
             // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(189, 433);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker2.TabIndex = 5;
-            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
-            // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -264,6 +257,16 @@ namespace RyskTech.Forms.Lab.Controls
             this.label3.Size = new System.Drawing.Size(30, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Data";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker2.Location = new System.Drawing.Point(189, 433);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker2.TabIndex = 5;
+            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // LabWelcomeControl
             // 

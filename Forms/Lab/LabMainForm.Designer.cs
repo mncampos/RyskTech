@@ -44,8 +44,8 @@ namespace RyskTech.Forms.Lab
             this.risksTabButton = new System.Windows.Forms.Button();
             this.activeControlPanel = new System.Windows.Forms.Panel();
             this.bottomBarPanel = new System.Windows.Forms.Panel();
-            this.nextConcludeButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
+            this.nextConcludeButton = new System.Windows.Forms.Button();
             this.mainTableLayoutPanel.SuspendLayout();
             this.navigationLayoutPanel.SuspendLayout();
             this.bottomBarPanel.SuspendLayout();
@@ -58,7 +58,7 @@ namespace RyskTech.Forms.Lab
             this.activePanelLabel.Font = new System.Drawing.Font("Constantia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.activePanelLabel.Location = new System.Drawing.Point(83, 0);
             this.activePanelLabel.Name = "activePanelLabel";
-            this.activePanelLabel.Size = new System.Drawing.Size(598, 52);
+            this.activePanelLabel.Size = new System.Drawing.Size(594, 52);
             this.activePanelLabel.TabIndex = 2;
             this.activePanelLabel.Text = "Bem Vindo!";
             this.activePanelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -81,7 +81,7 @@ namespace RyskTech.Forms.Lab
             this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.mainTableLayoutPanel.Size = new System.Drawing.Size(684, 561);
+            this.mainTableLayoutPanel.Size = new System.Drawing.Size(680, 557);
             this.mainTableLayoutPanel.TabIndex = 1;
             // 
             // navigationLayoutPanel
@@ -115,7 +115,7 @@ namespace RyskTech.Forms.Lab
             this.navigationLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.navigationLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.navigationLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.navigationLayoutPanel.Size = new System.Drawing.Size(74, 555);
+            this.navigationLayoutPanel.Size = new System.Drawing.Size(74, 551);
             this.navigationLayoutPanel.TabIndex = 1;
             // 
             // conclusionTabButton
@@ -129,7 +129,7 @@ namespace RyskTech.Forms.Lab
             this.conclusionTabButton.Location = new System.Drawing.Point(8, 488);
             this.conclusionTabButton.Margin = new System.Windows.Forms.Padding(2);
             this.conclusionTabButton.Name = "conclusionTabButton";
-            this.conclusionTabButton.Size = new System.Drawing.Size(58, 59);
+            this.conclusionTabButton.Size = new System.Drawing.Size(58, 55);
             this.conclusionTabButton.TabIndex = 14;
             this.conclusionTabButton.UseVisualStyleBackColor = false;
             this.conclusionTabButton.Click += new System.EventHandler(this.conclusionTabButton_Click);
@@ -271,7 +271,7 @@ namespace RyskTech.Forms.Lab
             this.activeControlPanel.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.activeControlPanel.Name = "activeControlPanel";
             this.activeControlPanel.Padding = new System.Windows.Forms.Padding(5);
-            this.activeControlPanel.Size = new System.Drawing.Size(596, 467);
+            this.activeControlPanel.Size = new System.Drawing.Size(592, 463);
             this.activeControlPanel.TabIndex = 0;
             this.activeControlPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.activeControlPanel_Paint);
             // 
@@ -280,21 +280,10 @@ namespace RyskTech.Forms.Lab
             this.bottomBarPanel.Controls.Add(this.saveButton);
             this.bottomBarPanel.Controls.Add(this.nextConcludeButton);
             this.bottomBarPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bottomBarPanel.Location = new System.Drawing.Point(83, 528);
+            this.bottomBarPanel.Location = new System.Drawing.Point(83, 524);
             this.bottomBarPanel.Name = "bottomBarPanel";
-            this.bottomBarPanel.Size = new System.Drawing.Size(598, 30);
+            this.bottomBarPanel.Size = new System.Drawing.Size(594, 30);
             this.bottomBarPanel.TabIndex = 3;
-            // 
-            // nextConcludeButton
-            // 
-            this.nextConcludeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.nextConcludeButton.Location = new System.Drawing.Point(506, 4);
-            this.nextConcludeButton.Name = "nextConcludeButton";
-            this.nextConcludeButton.Size = new System.Drawing.Size(83, 23);
-            this.nextConcludeButton.TabIndex = 4;
-            this.nextConcludeButton.Text = "Próximo";
-            this.nextConcludeButton.UseVisualStyleBackColor = true;
-            this.nextConcludeButton.Click += new System.EventHandler(this.nextConcludeButton_Click);
             // 
             // saveButton
             // 
@@ -306,6 +295,17 @@ namespace RyskTech.Forms.Lab
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
+            // nextConcludeButton
+            // 
+            this.nextConcludeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.nextConcludeButton.Location = new System.Drawing.Point(502, 4);
+            this.nextConcludeButton.Name = "nextConcludeButton";
+            this.nextConcludeButton.Size = new System.Drawing.Size(83, 23);
+            this.nextConcludeButton.TabIndex = 4;
+            this.nextConcludeButton.Text = "Próximo";
+            this.nextConcludeButton.UseVisualStyleBackColor = true;
+            this.nextConcludeButton.Click += new System.EventHandler(this.nextConcludeButton_Click);
+            // 
             // LabMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -314,7 +314,7 @@ namespace RyskTech.Forms.Lab
             this.Controls.Add(this.mainTableLayoutPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(700, 600);
+            this.MaximumSize = new System.Drawing.Size(1800, 800);
             this.MinimumSize = new System.Drawing.Size(700, 600);
             this.Name = "LabMainForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
