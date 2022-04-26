@@ -88,6 +88,7 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // editRIskButton
             // 
+            this.editRIskButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.editRIskButton.Location = new System.Drawing.Point(90, 354);
             this.editRIskButton.Name = "editRIskButton";
             this.editRIskButton.Size = new System.Drawing.Size(75, 23);
@@ -98,6 +99,7 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // removeRiskButton
             // 
+            this.removeRiskButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.removeRiskButton.Location = new System.Drawing.Point(171, 354);
             this.removeRiskButton.Name = "removeRiskButton";
             this.removeRiskButton.Size = new System.Drawing.Size(75, 23);
@@ -108,6 +110,7 @@ namespace RyskTech.Forms.Lab.Controls
             // 
             // addRiskButton
             // 
+            this.addRiskButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.addRiskButton.Location = new System.Drawing.Point(9, 354);
             this.addRiskButton.Name = "addRiskButton";
             this.addRiskButton.Size = new System.Drawing.Size(75, 23);
