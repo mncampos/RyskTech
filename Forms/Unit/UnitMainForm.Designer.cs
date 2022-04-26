@@ -42,6 +42,7 @@ namespace RyskTech.Forms.Unit
             this.activePanelLabel = new System.Windows.Forms.Label();
             this.bottomBarPanel = new System.Windows.Forms.Panel();
             this.nextConcludeButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
             this.mainTableLayoutPanel.SuspendLayout();
             this.navigationLayoutPanel.SuspendLayout();
             this.bottomBarPanel.SuspendLayout();
@@ -217,6 +218,7 @@ namespace RyskTech.Forms.Unit
             // 
             // bottomBarPanel
             // 
+            this.bottomBarPanel.Controls.Add(this.saveButton);
             this.bottomBarPanel.Controls.Add(this.nextConcludeButton);
             this.bottomBarPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bottomBarPanel.Location = new System.Drawing.Point(83, 528);
@@ -235,7 +237,17 @@ namespace RyskTech.Forms.Unit
             this.nextConcludeButton.UseVisualStyleBackColor = true;
             this.nextConcludeButton.Click += new System.EventHandler(this.nextConcludeButton_Click);
             // 
-            // UnitMainFormBetter
+            // saveButton
+            // 
+            this.saveButton.Location = new System.Drawing.Point(5, 4);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(110, 23);
+            this.saveButton.TabIndex = 5;
+            this.saveButton.Text = "Salvar Progresso";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
+            // UnitMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -245,7 +257,7 @@ namespace RyskTech.Forms.Unit
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(700, 600);
             this.MinimumSize = new System.Drawing.Size(700, 600);
-            this.Name = "UnitMainFormBetter";
+            this.Name = "UnitMainForm";
             this.Text = "RyskTech - Unidade";
             this.Load += new System.EventHandler(this.UITestForm_Load);
             this.mainTableLayoutPanel.ResumeLayout(false);
@@ -270,5 +282,6 @@ namespace RyskTech.Forms.Unit
         private System.Windows.Forms.Label activePanelLabel;
         private System.Windows.Forms.Panel bottomBarPanel;
         private System.Windows.Forms.Button nextConcludeButton;
+        private System.Windows.Forms.Button saveButton;
     }
 }

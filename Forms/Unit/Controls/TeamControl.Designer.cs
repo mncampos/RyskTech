@@ -319,7 +319,7 @@ namespace RyskTech.Forms.Unit.Controls
             this.viceDirectorGroupBox.Size = new System.Drawing.Size(283, 170);
             this.viceDirectorGroupBox.TabIndex = 1;
             this.viceDirectorGroupBox.TabStop = false;
-            this.viceDirectorGroupBox.Text = "Responsável";
+            this.viceDirectorGroupBox.Text = "Vice-Responsável";
             // 
             // panel2
             // 

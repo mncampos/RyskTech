@@ -34,6 +34,25 @@ namespace RyskTech.Forms
             else return false;
         }
 
+        private bool checkUnitProgress()
+        {
+            string appdata = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            string fullpath = Path.Combine(appdata, "Rysktech\\progress.ryskunit");
+
+
+            if (File.Exists(fullpath))
+            {
+                DialogResult res = MessageBox.Show("Deseja continuar o progresso salvo anteriormente ?", "Rysktech",
+                    MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (res == DialogResult.OK)
+                    return true;
+                else return false;
+
+
+            }
+            else return false;
+        }
+
         private void iAmALaboratoryButton_Click(object sender, EventArgs e)
         {
             if (checkLabProgress() == false) {
@@ -58,11 +77,24 @@ namespace RyskTech.Forms
 
         private void iAmAUnitManagerButton_Click(object sender, EventArgs e)
         {
-            Form unitForm = new UnitMainForm();
+            if (checkUnitProgress() == false)
+            {
+                Form unitForm = new UnitMainForm();
+                this.Hide();
+                unitForm.ShowDialog();
+                this.Close();
 
-            this.Hide();
-            unitForm.ShowDialog();
-            this.Close();
+            }
+            else
+            {
+                Form unitForm = new UnitMainForm(true, Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+                    "Rysktech\\progress.ryskunit"));
+
+                this.Hide();
+                unitForm.ShowDialog();
+                this.Close();
+            }
+            
         }
     }
 }
