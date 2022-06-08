@@ -50,9 +50,14 @@ namespace RyskTech.Forms.Lab.Controls
             data.EPIS[5] = !data.EPIS[5];
 
             if (data.EPIS[5])
+            {
                 masksEPITextBox.Enabled = true;
+            }
             else
+            {
                 masksEPITextBox.Enabled = false;
+
+            }
         }
 
         private void otherEPICheckBox_CheckedChanged(object sender, EventArgs e)
@@ -225,6 +230,9 @@ namespace RyskTech.Forms.Lab.Controls
                 trainingData.CheckValidity();
             else
                 throw new ApplicationException(Resources.Language.pt_local.NotAllTabsVisited);
+
+            if(maskCheckBox.Checked && masksEPITextBox.Text == "")
+                throw new ApplicationException(Resources.Language.pt_local.MasksNotSpecified);
         }
 
 

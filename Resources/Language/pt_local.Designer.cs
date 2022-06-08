@@ -664,6 +664,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Por favor, preencha o campo das máscaras (na aba de Segurança) especificando os tipos  de máscaras utilizados..
+        /// </summary>
+        internal static string MasksNotSpecified {
+            get {
+                return ResourceManager.GetString("MasksNotSpecified", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mistura.
         /// </summary>
         internal static string Mixture {

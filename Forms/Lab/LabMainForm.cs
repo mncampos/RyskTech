@@ -372,6 +372,7 @@ namespace RyskTech.Forms.Lab
 
         private void nextConcludeButton_Click(object sender, EventArgs e)
         {
+
             switch (progress)
             {
                 case 1:

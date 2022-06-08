@@ -318,6 +318,9 @@
   <data name="LocationZIPInvalid" xml:space="preserve">
     <value>Por favor digite o CEP no formato correto!</value>
   </data>
+  <data name="MasksNotSpecified" xml:space="preserve">
+    <value>Por favor, preencha o campo das máscaras (na aba de Segurança) especificando os tipos  de máscaras utilizados.</value>
+  </data>
   <data name="Mixture" xml:space="preserve">
     <value>Mistura</value>
   </data>
