@@ -264,11 +264,16 @@ namespace RyskTech.Forms.Lab
 
         private void PrepareForGeneration()
         {
+
+
             labWelcomeControl.ValidateData();
             data.generalInformation = labWelcomeControl.data;
 
             generalInformationControl.ValidateData();
             data.spaceCharacterization = generalInformationControl.data;
+
+            float FD = data.spaceCharacterization.vulnerableAreaDistance / 50;
+          
 
             safetyControl.ValidateData();
             data.safetyEquipment = safetyControl.data;
@@ -276,7 +281,10 @@ namespace RyskTech.Forms.Lab
 
             if (data.generalInformation.manipulatesChemicalAgents)
             {
+              
+
                 chemicalAgentControl.ValidateData();
+                chemicalAgentControl.calculateRiskIndice(FD);
                 data.manipulatedChemicalResidues = chemicalAgentControl.residueData;
                 data.manipulatedChemicalReactors = chemicalAgentControl.reactorData;
                 data.chemicalResidueStorageInfo = chemicalAgentControl.storageInfo;
@@ -313,7 +321,10 @@ namespace RyskTech.Forms.Lab
         {
             try
             {
+              
                 PrepareForGeneration();
+
+                MessageBox.Show(data.manipulatedChemicalReactors[0].dangerFactor.ToString());
 
                 APR compilation = new APR(data);
 
@@ -346,7 +357,7 @@ namespace RyskTech.Forms.Lab
                             else
                                 MessageBox.Show("Foram encontrados alguns erros na geração da APR", ":(");
 
-                            Close();
+                             Close();
                         }
                     }
                     else
@@ -489,5 +500,9 @@ namespace RyskTech.Forms.Lab
         {
             saveProgress();
         }
+
+
+
+
     }
 }

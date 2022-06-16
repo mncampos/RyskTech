@@ -139,7 +139,7 @@ namespace RyskTech
         private void AddChemicalReactorsTable()
         {
             IWTable chemicalReactorTable = GetCurrentSection().AddTable();
-            chemicalReactorTable.ResetCells(apr.lab.manipulatedChemicalReactors.Count + 1, 10);
+            chemicalReactorTable.ResetCells(apr.lab.manipulatedChemicalReactors.Count + 1, 11);
             chemicalReactorTable[0, 0].AddParagraph().AppendText(Resources.Language.pt_local.Name);
             chemicalReactorTable[0, 1].AddParagraph().AppendText(Resources.Language.pt_local.PhysicalState);
             chemicalReactorTable[0, 2].AddParagraph().AppendText(Resources.Language.pt_local.Origin);
@@ -150,6 +150,7 @@ namespace RyskTech
             chemicalReactorTable[0, 7].AddParagraph().AppendText(Resources.Language.pt_local.Inert);
             chemicalReactorTable[0, 8].AddParagraph().AppendText(Resources.Language.pt_local.Container);
             chemicalReactorTable[0, 9].AddParagraph().AppendText(Resources.Language.pt_local.StorageInfo);
+            chemicalReactorTable[0, 10].AddParagraph().AppendText(Resources.Language.pt_local.RiskIndice);
 
             for (int i = 0; i < apr.lab.manipulatedChemicalReactors.Count; i++)
             {
@@ -163,6 +164,9 @@ namespace RyskTech
                 chemicalReactorTable[i + 1, 7].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].inert ? Resources.Language.pt_local.Yes : Resources.Language.pt_local.No);
                 chemicalReactorTable[i + 1, 8].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].container);
                 chemicalReactorTable[i + 1, 9].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].storageDetails);
+                chemicalReactorTable[i + 1, 10].AddParagraph().AppendText(apr.lab.manipulatedChemicalReactors[i].riskIndice.ToString());
+
+
             }
         }
 

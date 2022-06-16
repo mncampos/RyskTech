@@ -372,6 +372,9 @@
   <data name="RiskClassification" xml:space="preserve">
     <value>Classe de Risco</value>
   </data>
+  <data name="RiskIndice" xml:space="preserve">
+    <value>Índice de Risco</value>
+  </data>
   <data name="Road" xml:space="preserve">
     <value>Rua</value>
   </data>
@@ -440,6 +443,9 @@
   </data>
   <data name="ViceDirector" xml:space="preserve">
     <value>Vice-Diretor</value>
+  </data>
+  <data name="VulnerableAreaError" xml:space="preserve">
+    <value>A sessão de área vulnerável não foi preenchida corretamente. Favor indicar a distância e o nome corretamente.</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Sim</value>

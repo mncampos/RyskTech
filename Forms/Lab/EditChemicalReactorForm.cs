@@ -11,13 +11,17 @@ namespace RyskTech.Forms.Lab
         public ChemicalReactor createdAgent;
 
         private Dictionary<string, string> subtancesCasNumber = new Dictionary<string, string>();
+        private Dictionary<string, string> referenceMass = new Dictionary<string, string>();
 
         private void getAgentNames()
         {
             string substanceString = Properties.Resources.substances;
             string numbersString = Properties.Resources.cas_numbers;
+            string referenceMasses = Properties.Resources.massaReferencia;
+
             string[] substances = substanceString.Split('\n');
             string[] casNumbers = numbersString.Split('\n');
+            string[] masses = referenceMasses.Split('\n');
 
             // Populate combo box
             foreach (var substance in substances)
@@ -30,6 +34,15 @@ namespace RyskTech.Forms.Lab
                 string casNumber = String.Concat(casNumbers[i].Where(c => !Char.IsWhiteSpace(c)));
                 subtancesCasNumber.Add(substance, casNumber);
             }
+
+            for( int i =0; i < substances.Count(); i++)
+            {
+                string substance = String.Concat(substances[i].Where(c => !Char.IsWhiteSpace(c)));
+                string referenceMassNumber = String.Concat(masses[i].Where(c => !Char.IsWhiteSpace(c)));
+                referenceMass.Add(substance, referenceMassNumber);
+                
+            }
+         
         }
 
         public EditChemicalReactorForm(ChemicalReactor agent)
@@ -175,6 +188,8 @@ namespace RyskTech.Forms.Lab
                 dangers += item + "\n";
 
 
+            
+
             // Create agent
             ChemicalReactor new_agent = new ChemicalReactor(
                 residueNameTextBox.Text,
@@ -187,7 +202,7 @@ namespace RyskTech.Forms.Lab
                 dangers,
                 container,
                 storageLocationTextBox.Text,
-                inertRadioButton.Checked);
+                inertRadioButton.Checked, (float)quantityUpDown.Value/(float)refMassUpdown.Value);
 
             try
             {
@@ -219,11 +234,17 @@ namespace RyskTech.Forms.Lab
             {
                 casNumberTextBox.Enabled = false;
                 casNumberTextBox.Text = subtancesCasNumber[residueNameTextBox.Text];
+
+                refMassUpdown.Enabled = false;
+                refMassUpdown.Value = Convert.ToInt32(referenceMass[residueNameTextBox.Text]);
             }
             else
             {
                 casNumberTextBox.Enabled = true;
                 casNumberTextBox.Text = "";
+
+                refMassUpdown.Enabled = true;
+                refMassUpdown.Value = 0;
             }
         }
 
@@ -264,5 +285,6 @@ namespace RyskTech.Forms.Lab
         {
 
         }
+
     }
 }

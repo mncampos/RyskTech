@@ -97,6 +97,10 @@ namespace RyskTech.Forms.Lab.Controls
             LabMainForm.AddText(fs, studentsNumericUpDown.Value.ToString() + "\n");
             LabMainForm.AddText(fs, publicNumericUpDown.Value.ToString() + "\n");
             LabMainForm.AddText(fs, spaceCharacterizationTextBox.Text.Replace("\r\n", "£££"));
+            LabMainForm.AddText(fs, "\n");
+            LabMainForm.AddText(fs, textBox1.Text + '\n');
+            LabMainForm.AddText(fs, textBox4.Text + '\n');
+            LabMainForm.AddText(fs, numericUpDown1.Value.ToString());
             LabMainForm.AddText(fs, "\n<\\labGeneralInfo>\n");
         }
 
@@ -119,6 +123,9 @@ namespace RyskTech.Forms.Lab.Controls
                 this.studentsNumericUpDown.Value = Convert.ToDecimal(sr.ReadLine());
                 this.publicNumericUpDown.Value = Convert.ToDecimal(sr.ReadLine());
                 this.spaceCharacterizationTextBox.Text = sr.ReadLine().Replace("£££", "\r\n");
+                this.textBox1.Text = sr.ReadLine();
+                this.textBox4.Text = sr.ReadLine();
+                this.numericUpDown1.Value = Convert.ToDecimal(sr.ReadLine());
                 sr.Close();
             }
         }
@@ -126,6 +133,26 @@ namespace RyskTech.Forms.Lab.Controls
         private void groupBox2_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            data.vulnerableAreaName = textBox1.Text;
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            data.vulnerableAreaType = textBox4.Text;
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            data.vulnerableAreaDistance = (int)numericUpDown1.Value;
         }
     }
 }

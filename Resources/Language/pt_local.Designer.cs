@@ -826,6 +826,15 @@ namespace RyskTech.Resources.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Índice de Risco.
+        /// </summary>
+        internal static string RiskIndice {
+            get {
+                return ResourceManager.GetString("RiskIndice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Rua.
         /// </summary>
         internal static string Road {
@@ -1029,6 +1038,15 @@ namespace RyskTech.Resources.Language {
         internal static string ViceDirector {
             get {
                 return ResourceManager.GetString("ViceDirector", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A sessão de área vulnerável não foi preenchida corretamente. Favor indicar a distância e o nome corretamente..
+        /// </summary>
+        internal static string VulnerableAreaError {
+            get {
+                return ResourceManager.GetString("VulnerableAreaError", resourceCulture);
             }
         }
         

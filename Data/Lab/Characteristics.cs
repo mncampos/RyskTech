@@ -19,6 +19,10 @@ namespace RyskTech.Data
 
         public string usageCharacterization;
 
+        public string vulnerableAreaName;
+        public string vulnerableAreaType;
+        public int vulnerableAreaDistance;
+
         public Characteristics() {
             generalPublicCount = 0;
             studentsCount = 0;
@@ -48,6 +52,9 @@ namespace RyskTech.Data
 
             if (generalPublicCount + studentsCount + teachersCount + technicsCount == 0)
                 throw new ApplicationException(Resources.Language.pt_local.ErrorNoTeamComposition);
+
+            if (vulnerableAreaName == null || vulnerableAreaType == null || vulnerableAreaDistance <= 0)
+                throw new ApplicationException(Resources.Language.pt_local.VulnerableAreaError);
         }
     }
 }

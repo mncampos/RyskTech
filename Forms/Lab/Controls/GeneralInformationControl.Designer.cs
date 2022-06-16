@@ -29,6 +29,7 @@ namespace RyskTech.Forms.Lab.Controls
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GeneralInformationControl));
             this.mainPanel = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.publicNumericUpDown = new System.Windows.Forms.NumericUpDown();
@@ -58,6 +59,16 @@ namespace RyskTech.Forms.Lab.Controls
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.Região = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.mainPanel.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.publicNumericUpDown)).BeginInit();
@@ -68,10 +79,13 @@ namespace RyskTech.Forms.Lab.Controls
             this.groupBox1.SuspendLayout();
             this.contactGroupBox.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.Região.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // mainPanel
             // 
+            this.mainPanel.Controls.Add(this.Região);
             this.mainPanel.Controls.Add(this.groupBox3);
             this.mainPanel.Controls.Add(this.groupBox2);
             this.mainPanel.Controls.Add(this.groupBox1);
@@ -214,7 +228,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.roomTextBox.Margin = new System.Windows.Forms.Padding(12);
             this.roomTextBox.Name = "roomTextBox";
             this.roomTextBox.Size = new System.Drawing.Size(125, 20);
-            this.roomTextBox.TabIndex = 4;
+            this.roomTextBox.TabIndex = 6;
             this.roomTextBox.TextChanged += new System.EventHandler(this.roomTextBox_TextChanged);
             // 
             // buildingTextBox
@@ -224,7 +238,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.buildingTextBox.Margin = new System.Windows.Forms.Padding(12);
             this.buildingTextBox.Name = "buildingTextBox";
             this.buildingTextBox.Size = new System.Drawing.Size(125, 20);
-            this.buildingTextBox.TabIndex = 3;
+            this.buildingTextBox.TabIndex = 5;
             this.buildingTextBox.TextChanged += new System.EventHandler(this.buildingTextBox_TextChanged);
             // 
             // label7
@@ -254,7 +268,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Location = new System.Drawing.Point(22, 202);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(550, 236);
+            this.groupBox1.Size = new System.Drawing.Size(550, 125);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Caracterização";
@@ -264,10 +278,10 @@ namespace RyskTech.Forms.Lab.Controls
             this.spaceCharacterizationTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.spaceCharacterizationTextBox.Location = new System.Drawing.Point(24, 41);
+            this.spaceCharacterizationTextBox.Location = new System.Drawing.Point(24, 32);
             this.spaceCharacterizationTextBox.Multiline = true;
             this.spaceCharacterizationTextBox.Name = "spaceCharacterizationTextBox";
-            this.spaceCharacterizationTextBox.Size = new System.Drawing.Size(511, 189);
+            this.spaceCharacterizationTextBox.Size = new System.Drawing.Size(511, 87);
             this.spaceCharacterizationTextBox.TabIndex = 1;
             this.spaceCharacterizationTextBox.TextChanged += new System.EventHandler(this.spaceCharacterizationTextBox_TextChanged);
             // 
@@ -316,7 +330,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.responsiblePersonName.Location = new System.Drawing.Point(68, 37);
             this.responsiblePersonName.Name = "responsiblePersonName";
             this.responsiblePersonName.Size = new System.Drawing.Size(254, 20);
-            this.responsiblePersonName.TabIndex = 8;
+            this.responsiblePersonName.TabIndex = 1;
             this.responsiblePersonName.TextChanged += new System.EventHandler(this.responsiblePersonName_TextChanged);
             // 
             // label8
@@ -336,7 +350,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.textBox3.Location = new System.Drawing.Point(68, 119);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(254, 20);
-            this.textBox3.TabIndex = 6;
+            this.textBox3.TabIndex = 4;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // responsiblePersonContactTextBox
@@ -346,7 +360,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.responsiblePersonContactTextBox.Location = new System.Drawing.Point(68, 90);
             this.responsiblePersonContactTextBox.Name = "responsiblePersonContactTextBox";
             this.responsiblePersonContactTextBox.Size = new System.Drawing.Size(254, 20);
-            this.responsiblePersonContactTextBox.TabIndex = 5;
+            this.responsiblePersonContactTextBox.TabIndex = 3;
             this.responsiblePersonContactTextBox.TextChanged += new System.EventHandler(this.responsiblePersonContactTextBox_TextChanged);
             // 
             // responsiblePersonTextBox
@@ -356,7 +370,7 @@ namespace RyskTech.Forms.Lab.Controls
             this.responsiblePersonTextBox.Location = new System.Drawing.Point(68, 63);
             this.responsiblePersonTextBox.Name = "responsiblePersonTextBox";
             this.responsiblePersonTextBox.Size = new System.Drawing.Size(254, 20);
-            this.responsiblePersonTextBox.TabIndex = 4;
+            this.responsiblePersonTextBox.TabIndex = 2;
             this.responsiblePersonTextBox.TextChanged += new System.EventHandler(this.responsiblePersonTextBox_TextChanged);
             // 
             // label4
@@ -395,6 +409,96 @@ namespace RyskTech.Forms.Lab.Controls
             this.label1.TabIndex = 0;
             this.label1.Text = "Indique quem é o responsável pelo local";
             // 
+            // Região
+            // 
+            this.Região.Controls.Add(this.label16);
+            this.Região.Controls.Add(this.textBox4);
+            this.Região.Controls.Add(this.textBox2);
+            this.Região.Controls.Add(this.numericUpDown1);
+            this.Região.Controls.Add(this.label15);
+            this.Região.Controls.Add(this.label14);
+            this.Região.Controls.Add(this.label13);
+            this.Região.Controls.Add(this.textBox1);
+            this.Região.Location = new System.Drawing.Point(22, 327);
+            this.Região.Name = "Região";
+            this.Região.Size = new System.Drawing.Size(550, 137);
+            this.Região.TabIndex = 4;
+            this.Região.TabStop = false;
+            this.Região.Text = "Área Vulnerável";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(98, 29);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(240, 20);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(7, 36);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(75, 13);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "Nome da Área";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(12, 89);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(51, 13);
+            this.label14.TabIndex = 3;
+            this.label14.Text = "Distância";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(117, 89);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(38, 13);
+            this.label15.TabIndex = 4;
+            this.label15.Text = "metros";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(68, 87);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(43, 20);
+            this.numericUpDown1.TabIndex = 5;
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Enabled = false;
+            this.textBox2.HideSelection = false;
+            this.textBox2.Location = new System.Drawing.Point(350, 19);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(194, 112);
+            this.textBox2.TabIndex = 6;
+            this.textBox2.Text = resources.GetString("textBox2.Text");
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(7, 62);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(28, 13);
+            this.label16.TabIndex = 8;
+            this.label16.Text = "Tipo";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(98, 55);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(240, 20);
+            this.textBox4.TabIndex = 2;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
             // GeneralInformationControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -417,6 +521,9 @@ namespace RyskTech.Forms.Lab.Controls
             this.contactGroupBox.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.Região.ResumeLayout(false);
+            this.Região.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -452,5 +559,15 @@ namespace RyskTech.Forms.Lab.Controls
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.GroupBox Região;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }

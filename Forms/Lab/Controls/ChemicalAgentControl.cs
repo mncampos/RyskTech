@@ -172,6 +172,8 @@ namespace RyskTech.Forms.Lab.Controls
                     agent.inert = row.Cells[8].Value.Equals("Sim");
                     agent.storageDetails = row.Cells[9].Value.ToString();
                     agent.container = row.Cells[10].Value.ToString();
+                    agent.dangerFactor = (float)row.Cells[11].Value;
+
 
                     reactorData.Add(agent);
                 }
@@ -212,7 +214,8 @@ namespace RyskTech.Forms.Lab.Controls
                      createdAgent.dangerCharacteristics, //
                      createdAgent.inert ? "Sim" : "Não",
                      createdAgent.storageDetails,
-                     createdAgent.container
+                     createdAgent.container,
+                     createdAgent.dangerFactor
                      );
             }
         }
@@ -357,7 +360,7 @@ namespace RyskTech.Forms.Lab.Controls
             string line;
             line = '\n' + cr.name + "£" + cr.physicalState + "£" + cr.origin.Replace("\n", ",") + "£" + cr.quantity + "£" +
                 cr.measurementUnit + "£" + cr.mixtureDescription + "£" + cr.casNumber + "£" + cr.dangerCharacteristics.Replace("\n", ",") + "£" +
-                cr.inert + "£" + cr.storageDetails + "£" + cr.container.Replace("\n", ",");
+                cr.inert + "£" + cr.storageDetails + "£" + cr.container.Replace("\n", ",") + "£" + cr.dangerFactor;
             return line;
         }
 
@@ -395,7 +398,8 @@ namespace RyskTech.Forms.Lab.Controls
             loadedReagent.dangerCharacteristics = information[7].Replace(',', '\n');
             loadedReagent.inert = Convert.ToBoolean(information[8]);
             loadedReagent.storageDetails = information[9];
-            loadedReagent.container = information[10].Replace(',', '\n');          
+            loadedReagent.container = information[10].Replace(',', '\n');
+            loadedReagent.dangerFactor = (float)Convert.ToDouble(information[11]);
             
             this.addReactorDataToTable(loadedReagent);
         }
@@ -489,5 +493,14 @@ namespace RyskTech.Forms.Lab.Controls
         {
 
         }
+
+        public void calculateRiskIndice(float FD)
+        {
+            foreach (ChemicalReactor CR in this.reactorData)
+            {
+                CR.riskIndice = CR.dangerFactor / FD;
+            }
+        }
+
     }
 }

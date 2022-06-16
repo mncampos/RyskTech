@@ -19,7 +19,7 @@ namespace RyskTech.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -203,6 +203,116 @@ namespace RyskTech.Properties {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 750
+        ///100
+        ///250
+        ///750
+        ///750
+        ///750
+        ///1000
+        ///1000
+        ///750
+        ///50
+        ///50
+        ///50
+        ///100
+        ///250
+        ///50
+        ///50
+        ///100
+        ///100
+        ///250
+        ///100
+        ///100
+        ///50
+        ///100
+        ///750
+        ///250
+        ///100
+        ///100
+        ///250
+        ///100
+        ///750
+        ///50
+        ///250
+        ///100
+        ///250
+        ///250
+        ///100
+        ///100
+        ///250
+        ///1000
+        ///50
+        ///500
+        ///50
+        ///50
+        ///250
+        ///500
+        ///1000
+        ///750
+        ///100
+        ///500
+        ///50
+        ///50
+        ///750
+        ///50
+        ///50
+        ///50
+        ///250
+        ///250
+        ///750
+        ///50
+        ///750
+        ///500
+        ///100
+        ///1000
+        ///250
+        ///750
+        ///250
+        ///100
+        ///750
+        ///100
+        ///250
+        ///1000
+        ///1000
+        ///500
+        ///500
+        ///1000
+        ///750
+        ///50
+        ///1000
+        ///100
+        ///250
+        ///1000
+        ///250
+        ///50
+        ///250
+        ///250
+        ///500
+        ///250
+        ///250
+        ///100
+        ///500
+        ///50
+        ///500
+        ///250
+        ///250
+        ///50
+        ///100
+        ///50
+        ///250
+        ///250
+        ///250
+        ///250
+        ///.
+        /// </summary>
+        internal static string massaReferencia {
+            get {
+                return ResourceManager.GetString("massaReferencia", resourceCulture);
             }
         }
         
