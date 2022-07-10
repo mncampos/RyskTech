@@ -6,6 +6,8 @@ using System.IO;
 using System.Windows.Forms;
 using System.Text; 
 
+//Pricipal form do sistema
+
 namespace RyskTech.Forms.Lab
 {
     public partial class LabMainForm : Form
@@ -41,7 +43,7 @@ namespace RyskTech.Forms.Lab
 
 
 
-        private void LabMainFormBetter_Load(object sender, EventArgs e)
+        private void LabMainFormBetter_Load(object sender, EventArgs e) 
         {
             labWelcomeControl = new LabWelcomeControl();
             labWelcomeControl.Dock = DockStyle.Fill;
@@ -78,10 +80,10 @@ namespace RyskTech.Forms.Lab
             progress = 1;
             data = new Data.Lab();
 
-            if (saved == true)
+            if (saved == true) //Se já houver progresso salvo na máquina, carrega as informações em ordem
             {
-                labWelcomeControl.loadWelcomeInfo(path);
-                activeControlPanel.Controls.Add(generalInformationControl);
+                labWelcomeControl.loadWelcomeInfo(path); //Carrega as informações da primeira tela
+                activeControlPanel.Controls.Add(generalInformationControl); //Aloca a tela de informações gerais na memória, se não causa seg fault
                 generalInformationControl.loadGeneralInfo(path);
                 activeControlPanel.Controls.Add(safetyControl);
                 safetyControl.loadSafetyInfo(path);
@@ -262,7 +264,7 @@ namespace RyskTech.Forms.Lab
            
         }
 
-        private void PrepareForGeneration()
+        private void PrepareForGeneration() //Valida os dados inseridos pelo usuário
         {
 
 
@@ -272,7 +274,7 @@ namespace RyskTech.Forms.Lab
             generalInformationControl.ValidateData();
             data.spaceCharacterization = generalInformationControl.data;
 
-            float FD = data.spaceCharacterization.vulnerableAreaDistance / 50;
+            float FD = data.spaceCharacterization.vulnerableAreaDistance / 50; //Calcula o FD do manual de analise de riscos ambientais
           
 
             safetyControl.ValidateData();
@@ -284,7 +286,7 @@ namespace RyskTech.Forms.Lab
               
 
                 chemicalAgentControl.ValidateData();
-                chemicalAgentControl.calculateRiskIndice(FD);
+                data.riskIndice = chemicalAgentControl.calculateRiskIndice(FD); //Calcula o índice de risco de cada reagente utilizando o FD
                 data.manipulatedChemicalResidues = chemicalAgentControl.residueData;
                 data.manipulatedChemicalReactors = chemicalAgentControl.reactorData;
                 data.chemicalResidueStorageInfo = chemicalAgentControl.storageInfo;
@@ -323,8 +325,6 @@ namespace RyskTech.Forms.Lab
             {
               
                 PrepareForGeneration();
-
-                MessageBox.Show(data.manipulatedChemicalReactors[0].dangerFactor.ToString());
 
                 APR compilation = new APR(data);
 

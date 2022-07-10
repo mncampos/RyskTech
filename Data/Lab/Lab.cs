@@ -11,6 +11,7 @@ namespace RyskTech.Data
 
         public List<ChemicalResidue> manipulatedChemicalResidues;
         public List<ChemicalReactor> manipulatedChemicalReactors;
+        public float riskIndice; //Risco geral
         public Storage chemicalResidueStorageInfo;
 
         public BiologicalInfo biologicalAgentsInfo;

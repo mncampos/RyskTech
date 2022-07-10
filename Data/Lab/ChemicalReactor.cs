@@ -5,8 +5,8 @@
         public string casNumber;
         public string mixtureDescription;
         public bool inert;
-        public float dangerFactor;
-        public float riskIndice;
+        public float dangerFactor; //Facot de perigo FEPAM
+        public float riskIndice; //Índice de risco FEPAM
 
 
         public ChemicalReactor()

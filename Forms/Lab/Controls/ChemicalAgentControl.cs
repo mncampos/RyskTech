@@ -494,12 +494,20 @@ namespace RyskTech.Forms.Lab.Controls
 
         }
 
-        public void calculateRiskIndice(float FD)
+        public float calculateRiskIndice(float FD) //Calcula o indice de risco de cada reagente, e retorna o risco geral (média de todos)
         {
+            float indiceGeral = 0;
+            int index = 0;
+
             foreach (ChemicalReactor CR in this.reactorData)
             {
                 CR.riskIndice = CR.dangerFactor / FD;
+                indiceGeral += CR.riskIndice;
+                index++;
             }
+
+            return indiceGeral = indiceGeral / index;
+            
         }
 
     }

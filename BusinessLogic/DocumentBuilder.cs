@@ -168,6 +168,31 @@ namespace RyskTech
 
 
             }
+
+            AddSubsectionTitle(GetCurrentSection(), "Índice de Risco total :");
+            AddTextParagraph(apr.lab.riskIndice.ToString());
+            if(apr.lab.riskIndice <= 1)
+            {
+                AddTextParagraph("Categoria de risco 1 - corresponde àquelas instalações/atividades que podem ser" +
+                    " consideradas como de risco desprezível por terem quantidades muito pequenas(ou " +
+                    "não terem) de substâncias perigosas em processo ou armazenagem ou por estarem" +
+                    "muito distantes dos recursos vulneráveis.");
+            }
+            else if(apr.lab.riskIndice > 1 && apr.lab.riskIndice <= 2)
+            {
+                AddTextParagraph("Categoria de risco 2 - corresponde àquelas instalações/atividades que podem causar " +
+                    "danos significativos em distâncias de até 100 m do local.");
+            }
+            else if(apr.lab.riskIndice > 2 && apr.lab.riskIndice <= 4)
+            {
+                AddTextParagraph("Categoria de risco 3 - corresponde àquelas instalações/atividades que podem causar" +
+                    "danos significativos em distâncias entre 100 m e 500 m do local.");
+            }
+            else if(apr.lab.riskIndice > 4)
+            {
+                AddTextParagraph("Categoria de risco 4 - corresponde àquelas instalações/atividades que podem causar" +
+                    "danos significativos em distâncias superiores a 500 m do local.");
+            }
         }
 
         private void AddChemicalResidueTable()
