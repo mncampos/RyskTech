@@ -25,20 +25,20 @@ namespace RyskTech.Forms.Lab
 
             // Populate combo box
             foreach (var substance in substances)
-                residueNameTextBox.Items.Add(String.Concat(substance.Where(c => !Char.IsWhiteSpace(c))));
+                residueNameTextBox.Items.Add(String.Concat(substance.Trim()));
 
             // Build dictoinary
             for (int i = 0; i < substances.Count(); i++)
             {
-                string substance = String.Concat(substances[i].Where(c => !Char.IsWhiteSpace(c)));
-                string casNumber = String.Concat(casNumbers[i].Where(c => !Char.IsWhiteSpace(c)));
+                string substance = String.Concat(substances[i].Trim());
+                string casNumber = String.Concat(casNumbers[i].Trim());
                 subtancesCasNumber.Add(substance, casNumber);
             }
 
             for( int i =0; i < substances.Count(); i++)
             {
-                string substance = String.Concat(substances[i].Where(c => !Char.IsWhiteSpace(c)));
-                string referenceMassNumber = String.Concat(masses[i].Where(c => !Char.IsWhiteSpace(c)));
+                string substance = String.Concat(substances[i].Trim());
+                string referenceMassNumber = String.Concat(masses[i].Trim());
                 referenceMass.Add(substance, referenceMassNumber);
                 
             }
@@ -229,7 +229,11 @@ namespace RyskTech.Forms.Lab
         }
 
         private void residueNameTextBox_TextChanged(object sender, EventArgs e)
-        {
+        {   if(residueNameTextBox.Text == "")
+            {
+                return;
+            }
+
             if (residueNameTextBox.Items.Contains(residueNameTextBox.Text))
             {
                 casNumberTextBox.Enabled = false;
@@ -286,5 +290,9 @@ namespace RyskTech.Forms.Lab
 
         }
 
+        private void residueNameTextBox_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

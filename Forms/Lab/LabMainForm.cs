@@ -274,8 +274,8 @@ namespace RyskTech.Forms.Lab
             generalInformationControl.ValidateData();
             data.spaceCharacterization = generalInformationControl.data;
 
-            float FD = data.spaceCharacterization.vulnerableAreaDistance / 50; //Calcula o FD do manual de analise de riscos ambientais
-          
+            float FD = data.spaceCharacterization.vulnerableAreaDistance / 50f; //Calcula o FD do manual de analise de riscos ambientais
+            MessageBox.Show(FD.ToString());          
 
             safetyControl.ValidateData();
             data.safetyEquipment = safetyControl.data;

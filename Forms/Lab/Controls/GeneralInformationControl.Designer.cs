@@ -31,6 +31,15 @@ namespace RyskTech.Forms.Lab.Controls
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GeneralInformationControl));
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.Região = new System.Windows.Forms.GroupBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.publicNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.studentsNumericUpDown = new System.Windows.Forms.NumericUpDown();
@@ -60,16 +69,9 @@ namespace RyskTech.Forms.Lab.Controls
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.Região = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.mainPanel.SuspendLayout();
+            this.Região.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.publicNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentsNumericUpDown)).BeginInit();
@@ -79,8 +81,6 @@ namespace RyskTech.Forms.Lab.Controls
             this.groupBox1.SuspendLayout();
             this.contactGroupBox.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.Região.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // mainPanel
@@ -95,6 +95,101 @@ namespace RyskTech.Forms.Lab.Controls
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(596, 467);
             this.mainPanel.TabIndex = 0;
+            // 
+            // Região
+            // 
+            this.Região.Controls.Add(this.label16);
+            this.Região.Controls.Add(this.textBox4);
+            this.Região.Controls.Add(this.textBox2);
+            this.Região.Controls.Add(this.numericUpDown1);
+            this.Região.Controls.Add(this.label15);
+            this.Região.Controls.Add(this.label14);
+            this.Região.Controls.Add(this.label13);
+            this.Região.Controls.Add(this.textBox1);
+            this.Região.Location = new System.Drawing.Point(22, 327);
+            this.Região.Name = "Região";
+            this.Região.Size = new System.Drawing.Size(550, 137);
+            this.Região.TabIndex = 4;
+            this.Região.TabStop = false;
+            this.Região.Text = "Área Vulnerável";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(7, 62);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(28, 13);
+            this.label16.TabIndex = 8;
+            this.label16.Text = "Tipo";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(98, 55);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(240, 20);
+            this.textBox4.TabIndex = 2;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Enabled = false;
+            this.textBox2.HideSelection = false;
+            this.textBox2.Location = new System.Drawing.Point(350, 19);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(194, 112);
+            this.textBox2.TabIndex = 6;
+            this.textBox2.Text = resources.GetString("textBox2.Text");
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(68, 87);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(43, 20);
+            this.numericUpDown1.TabIndex = 5;
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(117, 89);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(38, 13);
+            this.label15.TabIndex = 4;
+            this.label15.Text = "metros";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(12, 89);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(51, 13);
+            this.label14.TabIndex = 3;
+            this.label14.Text = "Distância";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(7, 36);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(75, 13);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "Nome da Área";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(98, 29);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(240, 20);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // groupBox3
             // 
@@ -409,96 +504,6 @@ namespace RyskTech.Forms.Lab.Controls
             this.label1.TabIndex = 0;
             this.label1.Text = "Indique quem é o responsável pelo local";
             // 
-            // Região
-            // 
-            this.Região.Controls.Add(this.label16);
-            this.Região.Controls.Add(this.textBox4);
-            this.Região.Controls.Add(this.textBox2);
-            this.Região.Controls.Add(this.numericUpDown1);
-            this.Região.Controls.Add(this.label15);
-            this.Região.Controls.Add(this.label14);
-            this.Região.Controls.Add(this.label13);
-            this.Região.Controls.Add(this.textBox1);
-            this.Região.Location = new System.Drawing.Point(22, 327);
-            this.Região.Name = "Região";
-            this.Região.Size = new System.Drawing.Size(550, 137);
-            this.Região.TabIndex = 4;
-            this.Região.TabStop = false;
-            this.Região.Text = "Área Vulnerável";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(98, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(240, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(7, 36);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(75, 13);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "Nome da Área";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(12, 89);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(51, 13);
-            this.label14.TabIndex = 3;
-            this.label14.Text = "Distância";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(117, 89);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(38, 13);
-            this.label15.TabIndex = 4;
-            this.label15.Text = "metros";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(68, 87);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(43, 20);
-            this.numericUpDown1.TabIndex = 5;
-            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Enabled = false;
-            this.textBox2.HideSelection = false;
-            this.textBox2.Location = new System.Drawing.Point(350, 19);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(194, 112);
-            this.textBox2.TabIndex = 6;
-            this.textBox2.Text = resources.GetString("textBox2.Text");
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(7, 62);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(28, 13);
-            this.label16.TabIndex = 8;
-            this.label16.Text = "Tipo";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(98, 55);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(240, 20);
-            this.textBox4.TabIndex = 2;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
             // GeneralInformationControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -508,6 +513,9 @@ namespace RyskTech.Forms.Lab.Controls
             this.Size = new System.Drawing.Size(596, 467);
             this.Load += new System.EventHandler(this.GeneralInformationControlBetter_Load);
             this.mainPanel.ResumeLayout(false);
+            this.Região.ResumeLayout(false);
+            this.Região.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.publicNumericUpDown)).EndInit();
@@ -521,9 +529,6 @@ namespace RyskTech.Forms.Lab.Controls
             this.contactGroupBox.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.Região.ResumeLayout(false);
-            this.Região.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
