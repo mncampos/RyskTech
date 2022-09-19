@@ -298,6 +298,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>pt_local.resx</DependentUpon>
     </Compile>
+    <Compile Include="RiskIndice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RiskIndice.Designer.cs">
+      <DependentUpon>RiskIndice.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\Lab\Controls\BiologicalAgentsControl.resx">
       <DependentUpon>BiologicalAgentsControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -393,6 +399,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>pt_local.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RiskIndice.resx">
+      <DependentUpon>RiskIndice.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

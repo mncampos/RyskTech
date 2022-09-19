@@ -96,5 +96,15 @@ namespace RyskTech.Forms
             }
             
         }
+
+        private void welcomeTextLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void welcomeTextLabel_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
