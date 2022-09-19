@@ -31,10 +31,10 @@ namespace RyskTech.Forms
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WelcomeForm));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.manualButton = new System.Windows.Forms.Button();
+            this.administrativeUnitButton = new System.Windows.Forms.Button();
+            this.laboratoryButton = new System.Windows.Forms.Button();
             this.welcomeTextLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -46,9 +46,9 @@ namespace RyskTech.Forms
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Controls.Add(this.button3, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.manualButton, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.administrativeUnitButton, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.laboratoryButton, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 445);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -56,6 +56,45 @@ namespace RyskTech.Forms
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(818, 84);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // manualButton
+            // 
+            this.manualButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.manualButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.manualButton.Location = new System.Drawing.Point(554, 10);
+            this.manualButton.Margin = new System.Windows.Forms.Padding(10);
+            this.manualButton.Name = "manualButton";
+            this.manualButton.Size = new System.Drawing.Size(254, 64);
+            this.manualButton.TabIndex = 2;
+            this.manualButton.Text = "Conferir Manual";
+            this.manualButton.UseVisualStyleBackColor = true;
+            this.manualButton.Click += new System.EventHandler(this.manualButton_Click);
+            // 
+            // administrativeUnitButton
+            // 
+            this.administrativeUnitButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.administrativeUnitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.administrativeUnitButton.Location = new System.Drawing.Point(282, 10);
+            this.administrativeUnitButton.Margin = new System.Windows.Forms.Padding(10);
+            this.administrativeUnitButton.Name = "administrativeUnitButton";
+            this.administrativeUnitButton.Size = new System.Drawing.Size(252, 64);
+            this.administrativeUnitButton.TabIndex = 1;
+            this.administrativeUnitButton.Text = "Somos Uma Unidade Administrativa";
+            this.administrativeUnitButton.UseVisualStyleBackColor = true;
+            this.administrativeUnitButton.Click += new System.EventHandler(this.administrativeUnitButton_Click);
+            // 
+            // laboratoryButton
+            // 
+            this.laboratoryButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.laboratoryButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.laboratoryButton.Location = new System.Drawing.Point(10, 10);
+            this.laboratoryButton.Margin = new System.Windows.Forms.Padding(10);
+            this.laboratoryButton.Name = "laboratoryButton";
+            this.laboratoryButton.Size = new System.Drawing.Size(252, 64);
+            this.laboratoryButton.TabIndex = 0;
+            this.laboratoryButton.Text = "Somos Um Laboratório";
+            this.laboratoryButton.UseVisualStyleBackColor = true;
+            this.laboratoryButton.Click += new System.EventHandler(this.laboratoryButton_Click_1);
             // 
             // welcomeTextLabel
             // 
@@ -68,43 +107,6 @@ namespace RyskTech.Forms
             this.welcomeTextLabel.TabIndex = 2;
             this.welcomeTextLabel.Text = "Bem vindo à versão de teste do RyskTech!";
             this.welcomeTextLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.welcomeTextLabel.Click += new System.EventHandler(this.welcomeTextLabel_Click_1);
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button1.Location = new System.Drawing.Point(10, 10);
-            this.button1.Margin = new System.Windows.Forms.Padding(10);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(252, 64);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Somos Um Laboratório";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button2.Location = new System.Drawing.Point(282, 10);
-            this.button2.Margin = new System.Windows.Forms.Padding(10);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(252, 64);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Somos Uma Unidade Administrativa";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button3.Location = new System.Drawing.Point(554, 10);
-            this.button3.Margin = new System.Windows.Forms.Padding(10);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(254, 64);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Conferir Manual";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -125,7 +127,7 @@ namespace RyskTech.Forms
             this.Controls.Add(this.welcomeTextLabel);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "WelcomeForm";
@@ -142,9 +144,9 @@ namespace RyskTech.Forms
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label welcomeTextLabel;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button manualButton;
+        private System.Windows.Forms.Button administrativeUnitButton;
+        private System.Windows.Forms.Button laboratoryButton;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

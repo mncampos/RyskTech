@@ -231,6 +231,12 @@
     <Compile Include="Forms\Lab\LabMainForm.Designer.cs">
       <DependentUpon>LabMainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ManualForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManualForm.Designer.cs">
+      <DependentUpon>ManualForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Unit\Controls\HistoryControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -298,12 +304,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>pt_local.resx</DependentUpon>
     </Compile>
-    <Compile Include="RiskIndice.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RiskIndice.Designer.cs">
-      <DependentUpon>RiskIndice.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Forms\Lab\Controls\BiologicalAgentsControl.resx">
       <DependentUpon>BiologicalAgentsControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -355,6 +355,9 @@
     <EmbeddedResource Include="Forms\Lab\LabMainForm.resx">
       <DependentUpon>LabMainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManualForm.resx">
+      <DependentUpon>ManualForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Unit\Controls\HistoryControl.resx">
       <DependentUpon>HistoryControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -399,9 +402,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>pt_local.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RiskIndice.resx">
-      <DependentUpon>RiskIndice.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

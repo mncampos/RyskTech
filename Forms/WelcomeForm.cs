@@ -53,9 +53,10 @@ namespace RyskTech.Forms
             else return false;
         }
 
-        private void iAmALaboratoryButton_Click(object sender, EventArgs e)
+        private void laboratoryButton_Click_1(object sender, EventArgs e)
         {
-            if (checkLabProgress() == false) {
+            if (checkLabProgress() == false)
+            {
 
                 Form labForm = new LabMainForm();
 
@@ -67,15 +68,15 @@ namespace RyskTech.Forms
             {
                 Form labForm = new LabMainForm(true, Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)
                     , "Rysktech\\progress.rysklab"));
-                
+
                 this.Hide();
                 labForm.ShowDialog();
                 this.Close();
             }
-        }
+        }        
         
 
-        private void iAmAUnitManagerButton_Click(object sender, EventArgs e)
+        private void administrativeUnitButton_Click(object sender, EventArgs e)
         {
             if (checkUnitProgress() == false)
             {
@@ -94,17 +95,12 @@ namespace RyskTech.Forms
                 unitForm.ShowDialog();
                 this.Close();
             }
-            
         }
 
-        private void welcomeTextLabel_Click(object sender, EventArgs e)
+        private void manualButton_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void welcomeTextLabel_Click_1(object sender, EventArgs e)
-        {
-
+            Form manualForm = new ManualForm();
+            manualForm.ShowDialog();
         }
     }
 }
