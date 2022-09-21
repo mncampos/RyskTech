@@ -231,6 +231,12 @@
     <Compile Include="Forms\Lab\LabMainForm.Designer.cs">
       <DependentUpon>LabMainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Lab\RiskCalculateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\RiskCalculateForm.Designer.cs">
+      <DependentUpon>RiskCalculateForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ManualForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -354,6 +360,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lab\LabMainForm.resx">
       <DependentUpon>LabMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\RiskCalculateForm.resx">
+      <DependentUpon>RiskCalculateForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManualForm.resx">
       <DependentUpon>ManualForm.cs</DependentUpon>

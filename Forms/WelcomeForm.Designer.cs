@@ -100,12 +100,12 @@ namespace RyskTech.Forms
             // 
             this.welcomeTextLabel.AutoSize = true;
             this.welcomeTextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.welcomeTextLabel.Location = new System.Drawing.Point(37, 9);
+            this.welcomeTextLabel.Location = new System.Drawing.Point(98, 9);
             this.welcomeTextLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.welcomeTextLabel.Name = "welcomeTextLabel";
-            this.welcomeTextLabel.Size = new System.Drawing.Size(619, 36);
+            this.welcomeTextLabel.Size = new System.Drawing.Size(621, 36);
             this.welcomeTextLabel.TabIndex = 2;
-            this.welcomeTextLabel.Text = "Bem vindo à versão de teste do RyskTech!";
+            this.welcomeTextLabel.Text = "Bem-vindo a versão de teste do RyskTech!";
             this.welcomeTextLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1

@@ -20,6 +20,7 @@ namespace RyskTech.Forms
         {
             string appdata = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
             string fullpath = Path.Combine(appdata, "Rysktech\\progress.rysklab");
+            MessageBox.Show(appdata);
 
             if (File.Exists(fullpath))
             {
