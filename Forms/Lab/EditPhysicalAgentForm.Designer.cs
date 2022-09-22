@@ -65,7 +65,7 @@ namespace RyskTech.Forms.Lab
             this.mainTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.76744F));
             this.mainTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.02326F));
             this.mainTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.25581F));
-            this.mainTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
+            this.mainTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 149F));
             this.mainTableLayoutPanel.Controls.Add(this.equipmentLabel, 0, 0);
             this.mainTableLayoutPanel.Controls.Add(this.equipmentTextBox, 1, 0);
             this.mainTableLayoutPanel.Controls.Add(this.generatedRisksLabel, 0, 2);
@@ -92,8 +92,9 @@ namespace RyskTech.Forms.Lab
             this.mainTableLayoutPanel.Controls.Add(this.notIonizingCheckBox, 2, 6);
             this.mainTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
+            this.mainTableLayoutPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mainTableLayoutPanel.Name = "mainTableLayoutPanel";
-            this.mainTableLayoutPanel.Padding = new System.Windows.Forms.Padding(2);
+            this.mainTableLayoutPanel.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mainTableLayoutPanel.RowCount = 9;
             this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.16614F));
@@ -104,16 +105,17 @@ namespace RyskTech.Forms.Lab
             this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.85266F));
             this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.28527F));
             this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.91223F));
-            this.mainTableLayoutPanel.Size = new System.Drawing.Size(542, 321);
+            this.mainTableLayoutPanel.Size = new System.Drawing.Size(723, 395);
             this.mainTableLayoutPanel.TabIndex = 0;
             // 
             // equipmentLabel
             // 
             this.equipmentLabel.AutoSize = true;
             this.equipmentLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.equipmentLabel.Location = new System.Drawing.Point(5, 2);
+            this.equipmentLabel.Location = new System.Drawing.Point(7, 2);
+            this.equipmentLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.equipmentLabel.Name = "equipmentLabel";
-            this.equipmentLabel.Size = new System.Drawing.Size(139, 35);
+            this.equipmentLabel.Size = new System.Drawing.Size(184, 43);
             this.equipmentLabel.TabIndex = 0;
             this.equipmentLabel.Text = "Fonte (ex.: equipamentos)";
             this.equipmentLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -122,10 +124,10 @@ namespace RyskTech.Forms.Lab
             // 
             this.mainTableLayoutPanel.SetColumnSpan(this.equipmentTextBox, 3);
             this.equipmentTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.equipmentTextBox.Location = new System.Drawing.Point(150, 12);
-            this.equipmentTextBox.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.equipmentTextBox.Location = new System.Drawing.Point(199, 14);
+            this.equipmentTextBox.Margin = new System.Windows.Forms.Padding(4, 12, 4, 4);
             this.equipmentTextBox.Name = "equipmentTextBox";
-            this.equipmentTextBox.Size = new System.Drawing.Size(275, 20);
+            this.equipmentTextBox.Size = new System.Drawing.Size(366, 22);
             this.equipmentTextBox.TabIndex = 1;
             // 
             // generatedRisksLabel
@@ -133,9 +135,10 @@ namespace RyskTech.Forms.Lab
             this.generatedRisksLabel.AutoSize = true;
             this.mainTableLayoutPanel.SetColumnSpan(this.generatedRisksLabel, 5);
             this.generatedRisksLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.generatedRisksLabel.Location = new System.Drawing.Point(5, 79);
+            this.generatedRisksLabel.Location = new System.Drawing.Point(7, 96);
+            this.generatedRisksLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.generatedRisksLabel.Name = "generatedRisksLabel";
-            this.generatedRisksLabel.Size = new System.Drawing.Size(532, 26);
+            this.generatedRisksLabel.Size = new System.Drawing.Size(709, 32);
             this.generatedRisksLabel.TabIndex = 3;
             this.generatedRisksLabel.Text = "Riscos gerados pela fonte";
             this.generatedRisksLabel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -144,9 +147,10 @@ namespace RyskTech.Forms.Lab
             // 
             this.usageLabel.AutoSize = true;
             this.usageLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.usageLabel.Location = new System.Drawing.Point(5, 37);
+            this.usageLabel.Location = new System.Drawing.Point(7, 45);
+            this.usageLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.usageLabel.Name = "usageLabel";
-            this.usageLabel.Size = new System.Drawing.Size(139, 42);
+            this.usageLabel.Size = new System.Drawing.Size(184, 51);
             this.usageLabel.TabIndex = 4;
             this.usageLabel.Text = "Utilização";
             this.usageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -155,9 +159,10 @@ namespace RyskTech.Forms.Lab
             // 
             this.researchCheckBox.AutoSize = true;
             this.researchCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.researchCheckBox.Location = new System.Drawing.Point(150, 40);
+            this.researchCheckBox.Location = new System.Drawing.Point(199, 49);
+            this.researchCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.researchCheckBox.Name = "researchCheckBox";
-            this.researchCheckBox.Size = new System.Drawing.Size(78, 36);
+            this.researchCheckBox.Size = new System.Drawing.Size(104, 43);
             this.researchCheckBox.TabIndex = 5;
             this.researchCheckBox.Text = "Pesquisa";
             this.researchCheckBox.UseVisualStyleBackColor = true;
@@ -166,9 +171,10 @@ namespace RyskTech.Forms.Lab
             // 
             this.teachingCheckBox.AutoSize = true;
             this.teachingCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.teachingCheckBox.Location = new System.Drawing.Point(234, 40);
+            this.teachingCheckBox.Location = new System.Drawing.Point(311, 49);
+            this.teachingCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.teachingCheckBox.Name = "teachingCheckBox";
-            this.teachingCheckBox.Size = new System.Drawing.Size(92, 36);
+            this.teachingCheckBox.Size = new System.Drawing.Size(122, 43);
             this.teachingCheckBox.TabIndex = 6;
             this.teachingCheckBox.Text = "Ensino";
             this.teachingCheckBox.UseVisualStyleBackColor = true;
@@ -177,9 +183,10 @@ namespace RyskTech.Forms.Lab
             // 
             this.extensionCheckBox.AutoSize = true;
             this.extensionCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.extensionCheckBox.Location = new System.Drawing.Point(332, 40);
+            this.extensionCheckBox.Location = new System.Drawing.Point(441, 49);
+            this.extensionCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.extensionCheckBox.Name = "extensionCheckBox";
-            this.extensionCheckBox.Size = new System.Drawing.Size(93, 36);
+            this.extensionCheckBox.Size = new System.Drawing.Size(124, 43);
             this.extensionCheckBox.TabIndex = 7;
             this.extensionCheckBox.Text = "Extensão";
             this.extensionCheckBox.UseVisualStyleBackColor = true;
@@ -188,9 +195,10 @@ namespace RyskTech.Forms.Lab
             // 
             this.productiveProcessCheckBox.AutoSize = true;
             this.productiveProcessCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.productiveProcessCheckBox.Location = new System.Drawing.Point(431, 40);
+            this.productiveProcessCheckBox.Location = new System.Drawing.Point(573, 49);
+            this.productiveProcessCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.productiveProcessCheckBox.Name = "productiveProcessCheckBox";
-            this.productiveProcessCheckBox.Size = new System.Drawing.Size(106, 36);
+            this.productiveProcessCheckBox.Size = new System.Drawing.Size(143, 43);
             this.productiveProcessCheckBox.TabIndex = 8;
             this.productiveProcessCheckBox.Text = "Processo produtivo";
             this.productiveProcessCheckBox.UseVisualStyleBackColor = true;
@@ -198,10 +206,10 @@ namespace RyskTech.Forms.Lab
             // cancelButton
             // 
             this.cancelButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cancelButton.Location = new System.Drawing.Point(337, 288);
-            this.cancelButton.Margin = new System.Windows.Forms.Padding(8);
+            this.cancelButton.Location = new System.Drawing.Point(448, 352);
+            this.cancelButton.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(83, 23);
+            this.cancelButton.Size = new System.Drawing.Size(110, 31);
             this.cancelButton.TabIndex = 10;
             this.cancelButton.Text = "Cancelar";
             this.cancelButton.UseVisualStyleBackColor = true;
@@ -210,10 +218,10 @@ namespace RyskTech.Forms.Lab
             // concludeButton
             // 
             this.concludeButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.concludeButton.Location = new System.Drawing.Point(436, 288);
-            this.concludeButton.Margin = new System.Windows.Forms.Padding(8);
+            this.concludeButton.Location = new System.Drawing.Point(580, 352);
+            this.concludeButton.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
             this.concludeButton.Name = "concludeButton";
-            this.concludeButton.Size = new System.Drawing.Size(96, 23);
+            this.concludeButton.Size = new System.Drawing.Size(129, 31);
             this.concludeButton.TabIndex = 9;
             this.concludeButton.Text = "Concluir";
             this.concludeButton.UseVisualStyleBackColor = true;
@@ -223,9 +231,10 @@ namespace RyskTech.Forms.Lab
             // 
             this.noiseCheckBox.AutoSize = true;
             this.noiseCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.noiseCheckBox.Location = new System.Drawing.Point(5, 108);
+            this.noiseCheckBox.Location = new System.Drawing.Point(7, 132);
+            this.noiseCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.noiseCheckBox.Name = "noiseCheckBox";
-            this.noiseCheckBox.Size = new System.Drawing.Size(139, 24);
+            this.noiseCheckBox.Size = new System.Drawing.Size(184, 29);
             this.noiseCheckBox.TabIndex = 11;
             this.noiseCheckBox.Text = "Ruído";
             this.noiseCheckBox.UseVisualStyleBackColor = true;
@@ -236,19 +245,20 @@ namespace RyskTech.Forms.Lab
             this.mainTableLayoutPanel.SetColumnSpan(this.noiseTextBox, 2);
             this.noiseTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.noiseTextBox.Enabled = false;
-            this.noiseTextBox.Location = new System.Drawing.Point(150, 110);
-            this.noiseTextBox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
+            this.noiseTextBox.Location = new System.Drawing.Point(199, 134);
+            this.noiseTextBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 4);
             this.noiseTextBox.Name = "noiseTextBox";
-            this.noiseTextBox.Size = new System.Drawing.Size(176, 20);
+            this.noiseTextBox.Size = new System.Drawing.Size(234, 22);
             this.noiseTextBox.TabIndex = 12;
             // 
             // extremeTemperatureCheckBox
             // 
             this.extremeTemperatureCheckBox.AutoSize = true;
             this.extremeTemperatureCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.extremeTemperatureCheckBox.Location = new System.Drawing.Point(5, 138);
+            this.extremeTemperatureCheckBox.Location = new System.Drawing.Point(7, 169);
+            this.extremeTemperatureCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.extremeTemperatureCheckBox.Name = "extremeTemperatureCheckBox";
-            this.extremeTemperatureCheckBox.Size = new System.Drawing.Size(139, 31);
+            this.extremeTemperatureCheckBox.Size = new System.Drawing.Size(184, 37);
             this.extremeTemperatureCheckBox.TabIndex = 13;
             this.extremeTemperatureCheckBox.Text = "Temperaturas extremas";
             this.extremeTemperatureCheckBox.UseVisualStyleBackColor = true;
@@ -259,19 +269,20 @@ namespace RyskTech.Forms.Lab
             this.mainTableLayoutPanel.SetColumnSpan(this.temperatureTextBox, 2);
             this.temperatureTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.temperatureTextBox.Enabled = false;
-            this.temperatureTextBox.Location = new System.Drawing.Point(150, 142);
-            this.temperatureTextBox.Margin = new System.Windows.Forms.Padding(3, 7, 3, 3);
+            this.temperatureTextBox.Location = new System.Drawing.Point(199, 174);
+            this.temperatureTextBox.Margin = new System.Windows.Forms.Padding(4, 9, 4, 4);
             this.temperatureTextBox.Name = "temperatureTextBox";
-            this.temperatureTextBox.Size = new System.Drawing.Size(176, 20);
+            this.temperatureTextBox.Size = new System.Drawing.Size(234, 22);
             this.temperatureTextBox.TabIndex = 14;
             // 
             // pressureCheckBox
             // 
             this.pressureCheckBox.AutoSize = true;
             this.pressureCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pressureCheckBox.Location = new System.Drawing.Point(5, 175);
+            this.pressureCheckBox.Location = new System.Drawing.Point(7, 214);
+            this.pressureCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pressureCheckBox.Name = "pressureCheckBox";
-            this.pressureCheckBox.Size = new System.Drawing.Size(139, 25);
+            this.pressureCheckBox.Size = new System.Drawing.Size(184, 30);
             this.pressureCheckBox.TabIndex = 15;
             this.pressureCheckBox.Text = "Pressões extremas";
             this.pressureCheckBox.UseVisualStyleBackColor = true;
@@ -282,19 +293,20 @@ namespace RyskTech.Forms.Lab
             this.mainTableLayoutPanel.SetColumnSpan(this.pressureTextBox, 2);
             this.pressureTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pressureTextBox.Enabled = false;
-            this.pressureTextBox.Location = new System.Drawing.Point(150, 177);
-            this.pressureTextBox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
+            this.pressureTextBox.Location = new System.Drawing.Point(199, 216);
+            this.pressureTextBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 4);
             this.pressureTextBox.Name = "pressureTextBox";
-            this.pressureTextBox.Size = new System.Drawing.Size(176, 20);
+            this.pressureTextBox.Size = new System.Drawing.Size(234, 22);
             this.pressureTextBox.TabIndex = 16;
             // 
             // radiationCheckBox
             // 
             this.radiationCheckBox.AutoSize = true;
             this.radiationCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radiationCheckBox.Location = new System.Drawing.Point(5, 206);
+            this.radiationCheckBox.Location = new System.Drawing.Point(7, 252);
+            this.radiationCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radiationCheckBox.Name = "radiationCheckBox";
-            this.radiationCheckBox.Size = new System.Drawing.Size(139, 35);
+            this.radiationCheckBox.Size = new System.Drawing.Size(184, 42);
             this.radiationCheckBox.TabIndex = 20;
             this.radiationCheckBox.Text = "Radiação";
             this.radiationCheckBox.UseVisualStyleBackColor = true;
@@ -304,9 +316,10 @@ namespace RyskTech.Forms.Lab
             // 
             this.intensemagnecticFieldCheckBox.AutoSize = true;
             this.intensemagnecticFieldCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.intensemagnecticFieldCheckBox.Location = new System.Drawing.Point(5, 247);
+            this.intensemagnecticFieldCheckBox.Location = new System.Drawing.Point(7, 302);
+            this.intensemagnecticFieldCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.intensemagnecticFieldCheckBox.Name = "intensemagnecticFieldCheckBox";
-            this.intensemagnecticFieldCheckBox.Size = new System.Drawing.Size(139, 30);
+            this.intensemagnecticFieldCheckBox.Size = new System.Drawing.Size(184, 36);
             this.intensemagnecticFieldCheckBox.TabIndex = 23;
             this.intensemagnecticFieldCheckBox.Text = "Campos magnéticos intensos";
             this.intensemagnecticFieldCheckBox.UseVisualStyleBackColor = true;
@@ -315,9 +328,10 @@ namespace RyskTech.Forms.Lab
             // 
             this.infraSoundCheckBox.AutoSize = true;
             this.infraSoundCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.infraSoundCheckBox.Location = new System.Drawing.Point(150, 247);
+            this.infraSoundCheckBox.Location = new System.Drawing.Point(199, 302);
+            this.infraSoundCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.infraSoundCheckBox.Name = "infraSoundCheckBox";
-            this.infraSoundCheckBox.Size = new System.Drawing.Size(78, 30);
+            this.infraSoundCheckBox.Size = new System.Drawing.Size(104, 36);
             this.infraSoundCheckBox.TabIndex = 22;
             this.infraSoundCheckBox.Text = "Infrassom";
             this.infraSoundCheckBox.UseVisualStyleBackColor = true;
@@ -326,9 +340,10 @@ namespace RyskTech.Forms.Lab
             // 
             this.ultrasoundCheckBox.AutoSize = true;
             this.ultrasoundCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ultrasoundCheckBox.Location = new System.Drawing.Point(234, 247);
+            this.ultrasoundCheckBox.Location = new System.Drawing.Point(311, 302);
+            this.ultrasoundCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ultrasoundCheckBox.Name = "ultrasoundCheckBox";
-            this.ultrasoundCheckBox.Size = new System.Drawing.Size(92, 30);
+            this.ultrasoundCheckBox.Size = new System.Drawing.Size(122, 36);
             this.ultrasoundCheckBox.TabIndex = 21;
             this.ultrasoundCheckBox.Text = "Ultrassom";
             this.ultrasoundCheckBox.UseVisualStyleBackColor = true;
@@ -337,9 +352,10 @@ namespace RyskTech.Forms.Lab
             // 
             this.vibrationCheckBox.AutoSize = true;
             this.vibrationCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.vibrationCheckBox.Location = new System.Drawing.Point(332, 247);
+            this.vibrationCheckBox.Location = new System.Drawing.Point(441, 302);
+            this.vibrationCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.vibrationCheckBox.Name = "vibrationCheckBox";
-            this.vibrationCheckBox.Size = new System.Drawing.Size(93, 30);
+            this.vibrationCheckBox.Size = new System.Drawing.Size(124, 36);
             this.vibrationCheckBox.TabIndex = 17;
             this.vibrationCheckBox.Text = "Vibrações";
             this.vibrationCheckBox.UseVisualStyleBackColor = true;
@@ -348,9 +364,10 @@ namespace RyskTech.Forms.Lab
             // 
             this.humidityCheckBox.AutoSize = true;
             this.humidityCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.humidityCheckBox.Location = new System.Drawing.Point(431, 247);
+            this.humidityCheckBox.Location = new System.Drawing.Point(573, 302);
+            this.humidityCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.humidityCheckBox.Name = "humidityCheckBox";
-            this.humidityCheckBox.Size = new System.Drawing.Size(106, 30);
+            this.humidityCheckBox.Size = new System.Drawing.Size(143, 36);
             this.humidityCheckBox.TabIndex = 24;
             this.humidityCheckBox.Text = "Umidade";
             this.humidityCheckBox.UseVisualStyleBackColor = true;
@@ -360,9 +377,10 @@ namespace RyskTech.Forms.Lab
             this.ionizingCheckBox.AutoSize = true;
             this.ionizingCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ionizingCheckBox.Enabled = false;
-            this.ionizingCheckBox.Location = new System.Drawing.Point(150, 206);
+            this.ionizingCheckBox.Location = new System.Drawing.Point(199, 252);
+            this.ionizingCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ionizingCheckBox.Name = "ionizingCheckBox";
-            this.ionizingCheckBox.Size = new System.Drawing.Size(78, 35);
+            this.ionizingCheckBox.Size = new System.Drawing.Size(104, 42);
             this.ionizingCheckBox.TabIndex = 25;
             this.ionizingCheckBox.Text = "Ionizante";
             this.ionizingCheckBox.UseVisualStyleBackColor = true;
@@ -372,20 +390,22 @@ namespace RyskTech.Forms.Lab
             this.notIonizingCheckBox.AutoSize = true;
             this.notIonizingCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.notIonizingCheckBox.Enabled = false;
-            this.notIonizingCheckBox.Location = new System.Drawing.Point(234, 206);
+            this.notIonizingCheckBox.Location = new System.Drawing.Point(311, 252);
+            this.notIonizingCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.notIonizingCheckBox.Name = "notIonizingCheckBox";
-            this.notIonizingCheckBox.Size = new System.Drawing.Size(92, 35);
+            this.notIonizingCheckBox.Size = new System.Drawing.Size(122, 42);
             this.notIonizingCheckBox.TabIndex = 26;
             this.notIonizingCheckBox.Text = "Não ionizante";
             this.notIonizingCheckBox.UseVisualStyleBackColor = true;
             // 
             // EditPhysicalAgentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(542, 321);
+            this.ClientSize = new System.Drawing.Size(723, 395);
             this.Controls.Add(this.mainTableLayoutPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "EditPhysicalAgentForm";
             this.Text = "Editar Agente Físico";
             this.mainTableLayoutPanel.ResumeLayout(false);

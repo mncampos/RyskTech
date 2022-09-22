@@ -133,6 +133,12 @@
     <Compile Include="Forms\Lab\Controls\BiologicalAgentsControl.Designer.cs">
       <DependentUpon>BiologicalAgentsControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Lab\Controls\CalculateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\Controls\CalculateControl.Designer.cs">
+      <DependentUpon>CalculateControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Lab\Controls\ChemicalAgentControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -310,8 +316,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>pt_local.resx</DependentUpon>
     </Compile>
+    <Compile Include="Utils.cs" />
     <EmbeddedResource Include="Forms\Lab\Controls\BiologicalAgentsControl.resx">
       <DependentUpon>BiologicalAgentsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\Controls\CalculateControl.resx">
+      <DependentUpon>CalculateControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lab\Controls\ChemicalAgentControl.resx">
       <DependentUpon>ChemicalAgentControl.cs</DependentUpon>

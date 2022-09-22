@@ -32,20 +32,20 @@ namespace RyskTech.Forms.Lab
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LabMainForm));
             this.activePanelLabel = new System.Windows.Forms.Label();
             this.navigationLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.risksTabButton = new System.Windows.Forms.Button();
-            this.mechanicalAgentsTabButton = new System.Windows.Forms.Button();
-            this.physicalAgentTabButton = new System.Windows.Forms.Button();
-            this.biologicalAgentTabButton = new System.Windows.Forms.Button();
-            this.chemicalAgentsTabButton = new System.Windows.Forms.Button();
-            this.safetyTabButton = new System.Windows.Forms.Button();
-            this.generalInfoTabButton = new System.Windows.Forms.Button();
-            this.welcomeTabButton = new System.Windows.Forms.Button();
             this.conclusionTabButton = new System.Windows.Forms.Button();
+            this.welcomeTabButton = new System.Windows.Forms.Button();
+            this.generalInfoTabButton = new System.Windows.Forms.Button();
+            this.safetyTabButton = new System.Windows.Forms.Button();
+            this.chemicalAgentsTabButton = new System.Windows.Forms.Button();
+            this.biologicalAgentTabButton = new System.Windows.Forms.Button();
+            this.physicalAgentTabButton = new System.Windows.Forms.Button();
+            this.mechanicalAgentsTabButton = new System.Windows.Forms.Button();
+            this.risksTabButton = new System.Windows.Forms.Button();
             this.mainTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.activeControlPanel = new System.Windows.Forms.Panel();
-            this.nextConcludeButton = new System.Windows.Forms.Button();
-            this.saveButton = new System.Windows.Forms.Button();
             this.bottomBarPanel = new System.Windows.Forms.Panel();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.nextConcludeButton = new System.Windows.Forms.Button();
             this.navigationLayoutPanel.SuspendLayout();
             this.mainTableLayoutPanel.SuspendLayout();
             this.bottomBarPanel.SuspendLayout();
@@ -99,117 +99,21 @@ namespace RyskTech.Forms.Lab
             this.navigationLayoutPanel.Size = new System.Drawing.Size(99, 682);
             this.navigationLayoutPanel.TabIndex = 1;
             // 
-            // risksTabButton
+            // conclusionTabButton
             // 
-            this.risksTabButton.BackColor = System.Drawing.Color.LightGray;
-            this.risksTabButton.BackgroundImage = global::RyskTech.Properties.Resources.risk;
-            this.risksTabButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.risksTabButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.risksTabButton.FlatAppearance.BorderSize = 0;
-            this.risksTabButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.risksTabButton.Location = new System.Drawing.Point(11, 527);
-            this.risksTabButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.risksTabButton.Name = "risksTabButton";
-            this.risksTabButton.Size = new System.Drawing.Size(77, 69);
-            this.risksTabButton.TabIndex = 13;
-            this.risksTabButton.UseVisualStyleBackColor = false;
-            this.risksTabButton.Click += new System.EventHandler(this.risksTabButton_Click);
-            // 
-            // mechanicalAgentsTabButton
-            // 
-            this.mechanicalAgentsTabButton.BackColor = System.Drawing.Color.LightGray;
-            this.mechanicalAgentsTabButton.BackgroundImage = global::RyskTech.Properties.Resources.mechanical;
-            this.mechanicalAgentsTabButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.mechanicalAgentsTabButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mechanicalAgentsTabButton.FlatAppearance.BorderSize = 0;
-            this.mechanicalAgentsTabButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mechanicalAgentsTabButton.Location = new System.Drawing.Point(11, 453);
-            this.mechanicalAgentsTabButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.mechanicalAgentsTabButton.Name = "mechanicalAgentsTabButton";
-            this.mechanicalAgentsTabButton.Size = new System.Drawing.Size(77, 69);
-            this.mechanicalAgentsTabButton.TabIndex = 12;
-            this.mechanicalAgentsTabButton.UseVisualStyleBackColor = false;
-            this.mechanicalAgentsTabButton.Click += new System.EventHandler(this.mechanicalAgentsTabButton_Click);
-            // 
-            // physicalAgentTabButton
-            // 
-            this.physicalAgentTabButton.BackColor = System.Drawing.Color.LightGray;
-            this.physicalAgentTabButton.BackgroundImage = global::RyskTech.Properties.Resources.physical;
-            this.physicalAgentTabButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.physicalAgentTabButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.physicalAgentTabButton.FlatAppearance.BorderSize = 0;
-            this.physicalAgentTabButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.physicalAgentTabButton.Location = new System.Drawing.Point(11, 379);
-            this.physicalAgentTabButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.physicalAgentTabButton.Name = "physicalAgentTabButton";
-            this.physicalAgentTabButton.Size = new System.Drawing.Size(77, 69);
-            this.physicalAgentTabButton.TabIndex = 11;
-            this.physicalAgentTabButton.UseVisualStyleBackColor = false;
-            this.physicalAgentTabButton.Click += new System.EventHandler(this.physicalAgentTabButton_Click);
-            // 
-            // biologicalAgentTabButton
-            // 
-            this.biologicalAgentTabButton.BackColor = System.Drawing.Color.LightGray;
-            this.biologicalAgentTabButton.BackgroundImage = global::RyskTech.Properties.Resources.biological;
-            this.biologicalAgentTabButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.biologicalAgentTabButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.biologicalAgentTabButton.FlatAppearance.BorderSize = 0;
-            this.biologicalAgentTabButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.biologicalAgentTabButton.Location = new System.Drawing.Point(11, 305);
-            this.biologicalAgentTabButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.biologicalAgentTabButton.Name = "biologicalAgentTabButton";
-            this.biologicalAgentTabButton.Size = new System.Drawing.Size(77, 69);
-            this.biologicalAgentTabButton.TabIndex = 10;
-            this.biologicalAgentTabButton.UseVisualStyleBackColor = false;
-            this.biologicalAgentTabButton.Click += new System.EventHandler(this.biologicalAgentTabButton_Click);
-            // 
-            // chemicalAgentsTabButton
-            // 
-            this.chemicalAgentsTabButton.BackColor = System.Drawing.Color.LightGray;
-            this.chemicalAgentsTabButton.BackgroundImage = global::RyskTech.Properties.Resources.chemical;
-            this.chemicalAgentsTabButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.chemicalAgentsTabButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chemicalAgentsTabButton.FlatAppearance.BorderSize = 0;
-            this.chemicalAgentsTabButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chemicalAgentsTabButton.Location = new System.Drawing.Point(11, 231);
-            this.chemicalAgentsTabButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chemicalAgentsTabButton.Name = "chemicalAgentsTabButton";
-            this.chemicalAgentsTabButton.Size = new System.Drawing.Size(77, 69);
-            this.chemicalAgentsTabButton.TabIndex = 9;
-            this.chemicalAgentsTabButton.UseVisualStyleBackColor = false;
-            this.chemicalAgentsTabButton.Click += new System.EventHandler(this.chemicalAgentsTabButton_Click);
-            // 
-            // safetyTabButton
-            // 
-            this.safetyTabButton.BackColor = System.Drawing.Color.LightGray;
-            this.safetyTabButton.BackgroundImage = global::RyskTech.Properties.Resources.safety;
-            this.safetyTabButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.safetyTabButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.safetyTabButton.FlatAppearance.BorderSize = 0;
-            this.safetyTabButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.safetyTabButton.Location = new System.Drawing.Point(11, 157);
-            this.safetyTabButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.safetyTabButton.Name = "safetyTabButton";
-            this.safetyTabButton.Size = new System.Drawing.Size(77, 69);
-            this.safetyTabButton.TabIndex = 8;
-            this.safetyTabButton.UseVisualStyleBackColor = false;
-            this.safetyTabButton.Click += new System.EventHandler(this.safetyTabButton_Click);
-            // 
-            // generalInfoTabButton
-            // 
-            this.generalInfoTabButton.BackColor = System.Drawing.Color.LightGray;
-            this.generalInfoTabButton.BackgroundImage = global::RyskTech.Properties.Resources.information;
-            this.generalInfoTabButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.generalInfoTabButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.generalInfoTabButton.FlatAppearance.BorderSize = 0;
-            this.generalInfoTabButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.generalInfoTabButton.Location = new System.Drawing.Point(11, 83);
-            this.generalInfoTabButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.generalInfoTabButton.Name = "generalInfoTabButton";
-            this.generalInfoTabButton.Size = new System.Drawing.Size(77, 69);
-            this.generalInfoTabButton.TabIndex = 7;
-            this.generalInfoTabButton.UseVisualStyleBackColor = false;
-            this.generalInfoTabButton.Click += new System.EventHandler(this.generalInfoTabButton_Click);
+            this.conclusionTabButton.BackColor = System.Drawing.Color.LightGray;
+            this.conclusionTabButton.BackgroundImage = global::RyskTech.Properties.Resources.conclusion;
+            this.conclusionTabButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.conclusionTabButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.conclusionTabButton.FlatAppearance.BorderSize = 0;
+            this.conclusionTabButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.conclusionTabButton.Location = new System.Drawing.Point(11, 601);
+            this.conclusionTabButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.conclusionTabButton.Name = "conclusionTabButton";
+            this.conclusionTabButton.Size = new System.Drawing.Size(77, 72);
+            this.conclusionTabButton.TabIndex = 14;
+            this.conclusionTabButton.UseVisualStyleBackColor = false;
+            this.conclusionTabButton.Click += new System.EventHandler(this.conclusionTabButton_Click);
             // 
             // welcomeTabButton
             // 
@@ -227,21 +131,117 @@ namespace RyskTech.Forms.Lab
             this.welcomeTabButton.UseVisualStyleBackColor = false;
             this.welcomeTabButton.Click += new System.EventHandler(this.welcomeTabButton_Click);
             // 
-            // conclusionTabButton
+            // generalInfoTabButton
             // 
-            this.conclusionTabButton.BackColor = System.Drawing.Color.LightGray;
-            this.conclusionTabButton.BackgroundImage = global::RyskTech.Properties.Resources.conclusion;
-            this.conclusionTabButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.conclusionTabButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.conclusionTabButton.FlatAppearance.BorderSize = 0;
-            this.conclusionTabButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.conclusionTabButton.Location = new System.Drawing.Point(11, 601);
-            this.conclusionTabButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.conclusionTabButton.Name = "conclusionTabButton";
-            this.conclusionTabButton.Size = new System.Drawing.Size(77, 72);
-            this.conclusionTabButton.TabIndex = 14;
-            this.conclusionTabButton.UseVisualStyleBackColor = false;
-            this.conclusionTabButton.Click += new System.EventHandler(this.conclusionTabButton_Click);
+            this.generalInfoTabButton.BackColor = System.Drawing.Color.LightGray;
+            this.generalInfoTabButton.BackgroundImage = global::RyskTech.Properties.Resources.information;
+            this.generalInfoTabButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.generalInfoTabButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.generalInfoTabButton.FlatAppearance.BorderSize = 0;
+            this.generalInfoTabButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.generalInfoTabButton.Location = new System.Drawing.Point(11, 83);
+            this.generalInfoTabButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.generalInfoTabButton.Name = "generalInfoTabButton";
+            this.generalInfoTabButton.Size = new System.Drawing.Size(77, 69);
+            this.generalInfoTabButton.TabIndex = 7;
+            this.generalInfoTabButton.UseVisualStyleBackColor = false;
+            this.generalInfoTabButton.Click += new System.EventHandler(this.generalInfoTabButton_Click);
+            // 
+            // safetyTabButton
+            // 
+            this.safetyTabButton.BackColor = System.Drawing.Color.LightGray;
+            this.safetyTabButton.BackgroundImage = global::RyskTech.Properties.Resources.safety;
+            this.safetyTabButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.safetyTabButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.safetyTabButton.FlatAppearance.BorderSize = 0;
+            this.safetyTabButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.safetyTabButton.Location = new System.Drawing.Point(11, 157);
+            this.safetyTabButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.safetyTabButton.Name = "safetyTabButton";
+            this.safetyTabButton.Size = new System.Drawing.Size(77, 69);
+            this.safetyTabButton.TabIndex = 8;
+            this.safetyTabButton.UseVisualStyleBackColor = false;
+            this.safetyTabButton.Click += new System.EventHandler(this.safetyTabButton_Click);
+            // 
+            // chemicalAgentsTabButton
+            // 
+            this.chemicalAgentsTabButton.BackColor = System.Drawing.Color.LightGray;
+            this.chemicalAgentsTabButton.BackgroundImage = global::RyskTech.Properties.Resources.chemical;
+            this.chemicalAgentsTabButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.chemicalAgentsTabButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chemicalAgentsTabButton.FlatAppearance.BorderSize = 0;
+            this.chemicalAgentsTabButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chemicalAgentsTabButton.Location = new System.Drawing.Point(11, 231);
+            this.chemicalAgentsTabButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chemicalAgentsTabButton.Name = "chemicalAgentsTabButton";
+            this.chemicalAgentsTabButton.Size = new System.Drawing.Size(77, 69);
+            this.chemicalAgentsTabButton.TabIndex = 9;
+            this.chemicalAgentsTabButton.UseVisualStyleBackColor = false;
+            this.chemicalAgentsTabButton.Click += new System.EventHandler(this.chemicalAgentsTabButton_Click);
+            // 
+            // biologicalAgentTabButton
+            // 
+            this.biologicalAgentTabButton.BackColor = System.Drawing.Color.LightGray;
+            this.biologicalAgentTabButton.BackgroundImage = global::RyskTech.Properties.Resources.biological;
+            this.biologicalAgentTabButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.biologicalAgentTabButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.biologicalAgentTabButton.FlatAppearance.BorderSize = 0;
+            this.biologicalAgentTabButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.biologicalAgentTabButton.Location = new System.Drawing.Point(11, 305);
+            this.biologicalAgentTabButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.biologicalAgentTabButton.Name = "biologicalAgentTabButton";
+            this.biologicalAgentTabButton.Size = new System.Drawing.Size(77, 69);
+            this.biologicalAgentTabButton.TabIndex = 10;
+            this.biologicalAgentTabButton.UseVisualStyleBackColor = false;
+            this.biologicalAgentTabButton.Click += new System.EventHandler(this.biologicalAgentTabButton_Click);
+            // 
+            // physicalAgentTabButton
+            // 
+            this.physicalAgentTabButton.BackColor = System.Drawing.Color.LightGray;
+            this.physicalAgentTabButton.BackgroundImage = global::RyskTech.Properties.Resources.physical;
+            this.physicalAgentTabButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.physicalAgentTabButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.physicalAgentTabButton.FlatAppearance.BorderSize = 0;
+            this.physicalAgentTabButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.physicalAgentTabButton.Location = new System.Drawing.Point(11, 379);
+            this.physicalAgentTabButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.physicalAgentTabButton.Name = "physicalAgentTabButton";
+            this.physicalAgentTabButton.Size = new System.Drawing.Size(77, 69);
+            this.physicalAgentTabButton.TabIndex = 11;
+            this.physicalAgentTabButton.UseVisualStyleBackColor = false;
+            this.physicalAgentTabButton.Click += new System.EventHandler(this.physicalAgentTabButton_Click);
+            // 
+            // mechanicalAgentsTabButton
+            // 
+            this.mechanicalAgentsTabButton.BackColor = System.Drawing.Color.LightGray;
+            this.mechanicalAgentsTabButton.BackgroundImage = global::RyskTech.Properties.Resources.mechanical;
+            this.mechanicalAgentsTabButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.mechanicalAgentsTabButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mechanicalAgentsTabButton.FlatAppearance.BorderSize = 0;
+            this.mechanicalAgentsTabButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mechanicalAgentsTabButton.Location = new System.Drawing.Point(11, 453);
+            this.mechanicalAgentsTabButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.mechanicalAgentsTabButton.Name = "mechanicalAgentsTabButton";
+            this.mechanicalAgentsTabButton.Size = new System.Drawing.Size(77, 69);
+            this.mechanicalAgentsTabButton.TabIndex = 12;
+            this.mechanicalAgentsTabButton.UseVisualStyleBackColor = false;
+            this.mechanicalAgentsTabButton.Click += new System.EventHandler(this.mechanicalAgentsTabButton_Click);
+            // 
+            // risksTabButton
+            // 
+            this.risksTabButton.BackColor = System.Drawing.Color.LightGray;
+            this.risksTabButton.BackgroundImage = global::RyskTech.Properties.Resources.risk;
+            this.risksTabButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.risksTabButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.risksTabButton.FlatAppearance.BorderSize = 0;
+            this.risksTabButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.risksTabButton.Location = new System.Drawing.Point(11, 527);
+            this.risksTabButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.risksTabButton.Name = "risksTabButton";
+            this.risksTabButton.Size = new System.Drawing.Size(77, 69);
+            this.risksTabButton.TabIndex = 13;
+            this.risksTabButton.UseVisualStyleBackColor = false;
+            this.risksTabButton.Click += new System.EventHandler(this.risksTabButton_Click);
             // 
             // mainTableLayoutPanel
             // 
@@ -278,17 +278,16 @@ namespace RyskTech.Forms.Lab
             this.activeControlPanel.TabIndex = 0;
             this.activeControlPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.activeControlPanel_Paint);
             // 
-            // nextConcludeButton
+            // bottomBarPanel
             // 
-            this.nextConcludeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.nextConcludeButton.Location = new System.Drawing.Point(674, 4);
-            this.nextConcludeButton.Margin = new System.Windows.Forms.Padding(4);
-            this.nextConcludeButton.Name = "nextConcludeButton";
-            this.nextConcludeButton.Size = new System.Drawing.Size(111, 28);
-            this.nextConcludeButton.TabIndex = 4;
-            this.nextConcludeButton.Text = "Próximo";
-            this.nextConcludeButton.UseVisualStyleBackColor = true;
-            this.nextConcludeButton.Click += new System.EventHandler(this.nextConcludeButton_Click);
+            this.bottomBarPanel.Controls.Add(this.saveButton);
+            this.bottomBarPanel.Controls.Add(this.nextConcludeButton);
+            this.bottomBarPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bottomBarPanel.Location = new System.Drawing.Point(111, 650);
+            this.bottomBarPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.bottomBarPanel.Name = "bottomBarPanel";
+            this.bottomBarPanel.Size = new System.Drawing.Size(797, 36);
+            this.bottomBarPanel.TabIndex = 3;
             // 
             // saveButton
             // 
@@ -301,16 +300,17 @@ namespace RyskTech.Forms.Lab
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
-            // bottomBarPanel
+            // nextConcludeButton
             // 
-            this.bottomBarPanel.Controls.Add(this.saveButton);
-            this.bottomBarPanel.Controls.Add(this.nextConcludeButton);
-            this.bottomBarPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bottomBarPanel.Location = new System.Drawing.Point(111, 650);
-            this.bottomBarPanel.Margin = new System.Windows.Forms.Padding(4);
-            this.bottomBarPanel.Name = "bottomBarPanel";
-            this.bottomBarPanel.Size = new System.Drawing.Size(797, 36);
-            this.bottomBarPanel.TabIndex = 3;
+            this.nextConcludeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.nextConcludeButton.Location = new System.Drawing.Point(674, 4);
+            this.nextConcludeButton.Margin = new System.Windows.Forms.Padding(4);
+            this.nextConcludeButton.Name = "nextConcludeButton";
+            this.nextConcludeButton.Size = new System.Drawing.Size(111, 28);
+            this.nextConcludeButton.TabIndex = 4;
+            this.nextConcludeButton.Text = "Próximo";
+            this.nextConcludeButton.UseVisualStyleBackColor = true;
+            this.nextConcludeButton.Click += new System.EventHandler(this.nextConcludeButton_Click);
             // 
             // LabMainForm
             // 
@@ -319,8 +319,7 @@ namespace RyskTech.Forms.Lab
             this.ClientSize = new System.Drawing.Size(912, 690);
             this.Controls.Add(this.mainTableLayoutPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MaximizeBox = false;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(2394, 974);
             this.MinimumSize = new System.Drawing.Size(927, 728);
             this.Name = "LabMainForm";

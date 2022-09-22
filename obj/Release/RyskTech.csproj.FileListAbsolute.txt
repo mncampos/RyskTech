@@ -338,3 +338,4 @@ C:\Users\david\Projetos\RyskTech\obj\Release\RyskTech.exe
 C:\Users\david\Projetos\RyskTech\obj\Release\RyskTech.pdb
 C:\Users\david\Projetos\RyskTech\obj\Release\RyskTech.Forms.ManualForm.resources
 C:\Users\david\Projetos\RyskTech\obj\Release\RyskTech.Forms.Lab.RiskCalculateForm.resources
+C:\Users\david\Projetos\RyskTech\obj\Release\RyskTech.Forms.Lab.Controls.CalculateControl.resources
