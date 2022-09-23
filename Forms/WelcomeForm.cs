@@ -101,7 +101,19 @@ namespace RyskTech.Forms
         private void manualButton_Click(object sender, EventArgs e)
         {
             Form manualForm = new ManualForm();
+
+            this.Hide();
             manualForm.ShowDialog();
+            this.Close();
+        }
+
+        private void calculateRiskIndicebutton_Click(object sender, EventArgs e)
+        {
+            Form riskCalculateForm = new RiskCalculateForm();
+
+            this.Hide();
+            riskCalculateForm.ShowDialog();
+            this.Close();
         }
     }
 }

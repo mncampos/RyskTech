@@ -276,7 +276,6 @@ namespace RyskTech.Forms.Lab
             this.activeControlPanel.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.activeControlPanel.Size = new System.Drawing.Size(794, 574);
             this.activeControlPanel.TabIndex = 0;
-            this.activeControlPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.activeControlPanel_Paint);
             // 
             // bottomBarPanel
             // 

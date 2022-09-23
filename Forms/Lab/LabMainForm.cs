@@ -417,10 +417,6 @@ namespace RyskTech.Forms.Lab
 
         }
 
-        private void activeControlPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         public static void AddText(FileStream fs, string value)
         {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RyskTech.Forms.Lab.RiskCalculate;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace RyskTech.Forms.Lab.Controls
         public CalculateControl()
         {
             InitializeComponent();
+        }
+
+        private void addReactorButton_Click(object sender, EventArgs e)
+        {
+            Form editReator = new EditChemicalReatorForm2();
+            editReator.ShowDialog();
         }
     }
 }

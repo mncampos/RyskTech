@@ -237,10 +237,16 @@
     <Compile Include="Forms\Lab\LabMainForm.Designer.cs">
       <DependentUpon>LabMainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Lab\RiskCalculateForm.cs">
+    <Compile Include="Forms\Lab\RiskCalculate\EditChemicalReatorForm2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Lab\RiskCalculateForm.Designer.cs">
+    <Compile Include="Forms\Lab\RiskCalculate\EditChemicalReatorForm2.Designer.cs">
+      <DependentUpon>EditChemicalReatorForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lab\RiskCalculate\RiskCalculateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lab\RiskCalculate\RiskCalculateForm.Designer.cs">
       <DependentUpon>RiskCalculateForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ManualForm.cs">
@@ -371,7 +377,7 @@
     <EmbeddedResource Include="Forms\Lab\LabMainForm.resx">
       <DependentUpon>LabMainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Lab\RiskCalculateForm.resx">
+    <EmbeddedResource Include="Forms\Lab\RiskCalculate\RiskCalculateForm.resx">
       <DependentUpon>RiskCalculateForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManualForm.resx">

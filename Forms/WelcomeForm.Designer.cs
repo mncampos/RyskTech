@@ -36,6 +36,7 @@ namespace RyskTech.Forms
             this.laboratoryButton = new System.Windows.Forms.Button();
             this.welcomeTextLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.calculateRiskIndicebutton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -118,11 +119,23 @@ namespace RyskTech.Forms
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // calculateRiskIndicebutton
+            // 
+            this.calculateRiskIndicebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.calculateRiskIndicebutton.Location = new System.Drawing.Point(35, 290);
+            this.calculateRiskIndicebutton.Name = "calculateRiskIndicebutton";
+            this.calculateRiskIndicebutton.Size = new System.Drawing.Size(154, 56);
+            this.calculateRiskIndicebutton.TabIndex = 4;
+            this.calculateRiskIndicebutton.Text = "Calcular IR";
+            this.calculateRiskIndicebutton.UseVisualStyleBackColor = true;
+            this.calculateRiskIndicebutton.Click += new System.EventHandler(this.calculateRiskIndicebutton_Click);
+            // 
             // WelcomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(818, 529);
+            this.Controls.Add(this.calculateRiskIndicebutton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.welcomeTextLabel);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -148,5 +161,6 @@ namespace RyskTech.Forms
         private System.Windows.Forms.Button administrativeUnitButton;
         private System.Windows.Forms.Button laboratoryButton;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button calculateRiskIndicebutton;
     }
 }
