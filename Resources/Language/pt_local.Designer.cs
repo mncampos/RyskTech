@@ -257,7 +257,18 @@ namespace RyskTech.Resources.Language {
                 return ResourceManager.GetString("ErrorInvalidLabName", resourceCulture);
             }
         }
-        
+
+        /// <summary>
+        ///   Looks up a localized string similar to Por favor informe o número CAS.
+        /// </summary>
+        internal static string ErrorInvalidCasNumber
+        {
+            get
+            {
+                return ResourceManager.GetString("ErrorInvalidCasNumber", resourceCulture);
+            }
+        }
+
         /// <summary>
         ///   Looks up a localized string similar to Nome de unidade inválido!.
         /// </summary>

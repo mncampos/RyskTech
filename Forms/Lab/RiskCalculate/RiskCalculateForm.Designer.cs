@@ -34,9 +34,9 @@
             this.nextConcludeButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
             this.navigationLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.generalInfoButton = new System.Windows.Forms.Button();
+            this.calculatePageButton = new System.Windows.Forms.Button();
+            this.chemicalAgentsButton = new System.Windows.Forms.Button();
             this.welcomeTabButton = new System.Windows.Forms.Button();
             this.activePanelLabel = new System.Windows.Forms.Label();
             this.activeControlPanel = new System.Windows.Forms.Panel();
@@ -110,9 +110,9 @@
             this.navigationLayoutPanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.navigationLayoutPanel.ColumnCount = 1;
             this.navigationLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.navigationLayoutPanel.Controls.Add(this.button4, 0, 3);
-            this.navigationLayoutPanel.Controls.Add(this.button3, 0, 2);
-            this.navigationLayoutPanel.Controls.Add(this.button2, 0, 1);
+            this.navigationLayoutPanel.Controls.Add(this.generalInfoButton, 0, 3);
+            this.navigationLayoutPanel.Controls.Add(this.calculatePageButton, 0, 2);
+            this.navigationLayoutPanel.Controls.Add(this.chemicalAgentsButton, 0, 1);
             this.navigationLayoutPanel.Controls.Add(this.welcomeTabButton, 0, 0);
             this.navigationLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.navigationLayoutPanel.Location = new System.Drawing.Point(4, 4);
@@ -129,51 +129,51 @@
             this.navigationLayoutPanel.Size = new System.Drawing.Size(99, 682);
             this.navigationLayoutPanel.TabIndex = 1;
             // 
-            // button4
+            // generalInfoButton
             // 
-            this.button4.BackColor = System.Drawing.Color.LightGray;
-            this.button4.BackgroundImage = global::RyskTech.Properties.Resources.information;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(11, 510);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(77, 163);
-            this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = false;
+            this.generalInfoButton.BackColor = System.Drawing.Color.LightGray;
+            this.generalInfoButton.BackgroundImage = global::RyskTech.Properties.Resources.information;
+            this.generalInfoButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.generalInfoButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.generalInfoButton.FlatAppearance.BorderSize = 0;
+            this.generalInfoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.generalInfoButton.Location = new System.Drawing.Point(11, 510);
+            this.generalInfoButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.generalInfoButton.Name = "generalInfoButton";
+            this.generalInfoButton.Size = new System.Drawing.Size(77, 163);
+            this.generalInfoButton.TabIndex = 3;
+            this.generalInfoButton.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // calculatePageButton
             // 
-            this.button3.BackColor = System.Drawing.Color.LightGray;
-            this.button3.BackgroundImage = global::RyskTech.Properties.Resources.methodolody;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(11, 343);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(77, 162);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = false;
+            this.calculatePageButton.BackColor = System.Drawing.Color.LightGray;
+            this.calculatePageButton.BackgroundImage = global::RyskTech.Properties.Resources.methodolody;
+            this.calculatePageButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.calculatePageButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.calculatePageButton.FlatAppearance.BorderSize = 0;
+            this.calculatePageButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.calculatePageButton.Location = new System.Drawing.Point(11, 343);
+            this.calculatePageButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.calculatePageButton.Name = "calculatePageButton";
+            this.calculatePageButton.Size = new System.Drawing.Size(77, 162);
+            this.calculatePageButton.TabIndex = 2;
+            this.calculatePageButton.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // chemicalAgentsButton
             // 
-            this.button2.BackColor = System.Drawing.Color.LightGray;
-            this.button2.BackgroundImage = global::RyskTech.Properties.Resources.chemical;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(11, 176);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(77, 162);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.chemicalAgentsButton.BackColor = System.Drawing.Color.LightGray;
+            this.chemicalAgentsButton.BackgroundImage = global::RyskTech.Properties.Resources.chemical;
+            this.chemicalAgentsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.chemicalAgentsButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chemicalAgentsButton.FlatAppearance.BorderSize = 0;
+            this.chemicalAgentsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chemicalAgentsButton.Location = new System.Drawing.Point(11, 176);
+            this.chemicalAgentsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chemicalAgentsButton.Name = "chemicalAgentsButton";
+            this.chemicalAgentsButton.Size = new System.Drawing.Size(77, 162);
+            this.chemicalAgentsButton.TabIndex = 1;
+            this.chemicalAgentsButton.UseVisualStyleBackColor = false;
+            this.chemicalAgentsButton.Click += new System.EventHandler(this.button2_Click);
             // 
             // welcomeTabButton
             // 
@@ -242,8 +242,8 @@
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Button nextConcludeButton;
         private System.Windows.Forms.Button welcomeTabButton;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button generalInfoButton;
+        private System.Windows.Forms.Button calculatePageButton;
+        private System.Windows.Forms.Button chemicalAgentsButton;
     }
 }

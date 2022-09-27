@@ -38,12 +38,13 @@
             this.removeResidueButton = new System.Windows.Forms.Button();
             this.addResidueButton = new System.Windows.Forms.Button();
             this.chemicalReactorData = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.substance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CASNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IDLH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PVAP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.referenceMass = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chemicalResidueData = new System.Windows.Forms.DataGridView();
             this.chemicalResidueName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chemicalResiduePhysicalState = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -133,6 +134,7 @@
             this.editReactorButton.TabIndex = 7;
             this.editReactorButton.Text = "Editar";
             this.editReactorButton.UseVisualStyleBackColor = true;
+            this.editReactorButton.Click += new System.EventHandler(this.editReactorButton_Click);
             // 
             // removeReactorButton
             // 
@@ -190,12 +192,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.chemicalReactorData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.chemicalReactorData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
+            this.substance,
+            this.CASNumber,
+            this.quantity,
+            this.IDLH,
+            this.PVAP,
+            this.category,
+            this.referenceMass});
             this.chemicalReactorData.Location = new System.Drawing.Point(12, 92);
             this.chemicalReactorData.Margin = new System.Windows.Forms.Padding(4);
             this.chemicalReactorData.MinimumSize = new System.Drawing.Size(376, 0);
@@ -206,53 +209,61 @@
             this.chemicalReactorData.Size = new System.Drawing.Size(743, 198);
             this.chemicalReactorData.TabIndex = 4;
             // 
-            // dataGridViewTextBoxColumn1
+            // substance
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Substância";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 125;
+            this.substance.HeaderText = "Substância";
+            this.substance.MinimumWidth = 6;
+            this.substance.Name = "substance";
+            this.substance.ReadOnly = true;
+            this.substance.Width = 125;
             // 
-            // dataGridViewTextBoxColumn2
+            // CASNumber
             // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nº CAS";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 125;
+            this.CASNumber.HeaderText = "Nº CAS";
+            this.CASNumber.MinimumWidth = 6;
+            this.CASNumber.Name = "CASNumber";
+            this.CASNumber.ReadOnly = true;
+            this.CASNumber.Width = 125;
             // 
-            // dataGridViewTextBoxColumn3
+            // quantity
             // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "IDLH";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 125;
+            this.quantity.HeaderText = "Quantidade";
+            this.quantity.MinimumWidth = 6;
+            this.quantity.Name = "quantity";
+            this.quantity.ReadOnly = true;
+            this.quantity.Width = 125;
             // 
-            // dataGridViewTextBoxColumn4
+            // IDLH
             // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Pvap (mmHg)";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 125;
+            this.IDLH.HeaderText = "IDLH";
+            this.IDLH.MinimumWidth = 6;
+            this.IDLH.Name = "IDLH";
+            this.IDLH.ReadOnly = true;
+            this.IDLH.Width = 125;
             // 
-            // dataGridViewTextBoxColumn5
+            // PVAP
             // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Categoria";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 125;
+            this.PVAP.HeaderText = "Pvap (mmHg)";
+            this.PVAP.MinimumWidth = 6;
+            this.PVAP.Name = "PVAP";
+            this.PVAP.ReadOnly = true;
+            this.PVAP.Width = 125;
             // 
-            // dataGridViewTextBoxColumn6
+            // category
             // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "MR (kg)";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 125;
+            this.category.HeaderText = "Categoria";
+            this.category.MinimumWidth = 6;
+            this.category.Name = "category";
+            this.category.ReadOnly = true;
+            this.category.Width = 125;
+            // 
+            // referenceMass
+            // 
+            this.referenceMass.HeaderText = "MR (kg)";
+            this.referenceMass.MinimumWidth = 6;
+            this.referenceMass.Name = "referenceMass";
+            this.referenceMass.ReadOnly = true;
+            this.referenceMass.Width = 125;
             // 
             // chemicalResidueData
             // 
@@ -438,11 +449,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn substance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CASNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDLH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PVAP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn category;
+        private System.Windows.Forms.DataGridViewTextBoxColumn referenceMass;
     }
 }

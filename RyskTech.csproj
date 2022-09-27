@@ -377,6 +377,9 @@
     <EmbeddedResource Include="Forms\Lab\LabMainForm.resx">
       <DependentUpon>LabMainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lab\RiskCalculate\EditChemicalReatorForm2.resx">
+      <DependentUpon>EditChemicalReatorForm2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lab\RiskCalculate\RiskCalculateForm.resx">
       <DependentUpon>RiskCalculateForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -484,7 +487,9 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Data\RiskAnalysis\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

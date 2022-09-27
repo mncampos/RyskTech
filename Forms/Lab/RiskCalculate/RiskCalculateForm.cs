@@ -32,6 +32,7 @@ namespace RyskTech.Forms.Lab
             calculateControl.Dock = DockStyle.Fill;
 
             welcomeControl = new LabWelcomeControl();
+            welcomeControl.Dock = DockStyle.Fill;
 
             activeControlPanel.Controls.Add(welcomeControl);
             welcomeTabButton.BackColor = Color.DarkGray;
@@ -40,7 +41,7 @@ namespace RyskTech.Forms.Lab
         private void clearTabButtonColors()
         {
             welcomeTabButton.BackColor = Color.LightGray;
-            button2.BackColor = Color.LightGray;
+            chemicalAgentsButton.BackColor = Color.LightGray;
             
         }
 
@@ -62,7 +63,7 @@ namespace RyskTech.Forms.Lab
             activeControlPanel.Controls.Add(calculateControl);
 
             clearTabButtonColors();
-            button2.BackColor = Color.DarkGray;
+            chemicalAgentsButton.BackColor = Color.DarkGray;
             activePanelLabel.Text = "Agentes Químicos";
             nextConcludeButton.Text = "Próximo";
         }

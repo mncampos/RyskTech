@@ -23,5 +23,11 @@ namespace RyskTech.Forms.Lab.Controls
             Form editReator = new EditChemicalReatorForm2();
             editReator.ShowDialog();
         }
+
+        private void editReactorButton_Click(object sender, EventArgs e)
+        {
+            var substance = chemicalReactorData.SelectedRows[0].Cells["Substância"].Value;
+
+        }
     }
 }
