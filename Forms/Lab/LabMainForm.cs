@@ -435,7 +435,7 @@ namespace RyskTech.Forms.Lab
                 newfolder = Path.Combine(newfolder, filename);
                 using (System.IO.FileStream fs = System.IO.File.Create(newfolder))
                 {
-                    labWelcomeControl.writeWelcomeInfo(fs);
+                    labWelcomeControl.writeWelcomeInfo(fs); 
 
                     if (!activeControlPanel.Controls.Contains(generalInformationControl))
                         activeControlPanel.Controls.Add(generalInformationControl);

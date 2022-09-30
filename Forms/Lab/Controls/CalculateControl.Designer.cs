@@ -38,13 +38,6 @@
             this.removeResidueButton = new System.Windows.Forms.Button();
             this.addResidueButton = new System.Windows.Forms.Button();
             this.chemicalReactorData = new System.Windows.Forms.DataGridView();
-            this.substance = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CASNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IDLH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PVAP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.category = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.referenceMass = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chemicalResidueData = new System.Windows.Forms.DataGridView();
             this.chemicalResidueName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chemicalResiduePhysicalState = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,6 +52,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.substance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CASNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.measurementUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.referenceMass = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.riskIndice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chemicalReactorData)).BeginInit();
@@ -146,6 +145,7 @@
             this.removeReactorButton.TabIndex = 4;
             this.removeReactorButton.Text = "Remover";
             this.removeReactorButton.UseVisualStyleBackColor = true;
+            this.removeReactorButton.Click += new System.EventHandler(this.removeReactorButton_Click);
             // 
             // addReactorButton
             // 
@@ -195,10 +195,9 @@
             this.substance,
             this.CASNumber,
             this.quantity,
-            this.IDLH,
-            this.PVAP,
-            this.category,
-            this.referenceMass});
+            this.measurementUnit,
+            this.referenceMass,
+            this.riskIndice});
             this.chemicalReactorData.Location = new System.Drawing.Point(12, 92);
             this.chemicalReactorData.Margin = new System.Windows.Forms.Padding(4);
             this.chemicalReactorData.MinimumSize = new System.Drawing.Size(376, 0);
@@ -208,62 +207,6 @@
             this.chemicalReactorData.ShowCellToolTips = false;
             this.chemicalReactorData.Size = new System.Drawing.Size(743, 198);
             this.chemicalReactorData.TabIndex = 4;
-            // 
-            // substance
-            // 
-            this.substance.HeaderText = "Substância";
-            this.substance.MinimumWidth = 6;
-            this.substance.Name = "substance";
-            this.substance.ReadOnly = true;
-            this.substance.Width = 125;
-            // 
-            // CASNumber
-            // 
-            this.CASNumber.HeaderText = "Nº CAS";
-            this.CASNumber.MinimumWidth = 6;
-            this.CASNumber.Name = "CASNumber";
-            this.CASNumber.ReadOnly = true;
-            this.CASNumber.Width = 125;
-            // 
-            // quantity
-            // 
-            this.quantity.HeaderText = "Quantidade";
-            this.quantity.MinimumWidth = 6;
-            this.quantity.Name = "quantity";
-            this.quantity.ReadOnly = true;
-            this.quantity.Width = 125;
-            // 
-            // IDLH
-            // 
-            this.IDLH.HeaderText = "IDLH";
-            this.IDLH.MinimumWidth = 6;
-            this.IDLH.Name = "IDLH";
-            this.IDLH.ReadOnly = true;
-            this.IDLH.Width = 125;
-            // 
-            // PVAP
-            // 
-            this.PVAP.HeaderText = "Pvap (mmHg)";
-            this.PVAP.MinimumWidth = 6;
-            this.PVAP.Name = "PVAP";
-            this.PVAP.ReadOnly = true;
-            this.PVAP.Width = 125;
-            // 
-            // category
-            // 
-            this.category.HeaderText = "Categoria";
-            this.category.MinimumWidth = 6;
-            this.category.Name = "category";
-            this.category.ReadOnly = true;
-            this.category.Width = 125;
-            // 
-            // referenceMass
-            // 
-            this.referenceMass.HeaderText = "MR (kg)";
-            this.referenceMass.MinimumWidth = 6;
-            this.referenceMass.Name = "referenceMass";
-            this.referenceMass.ReadOnly = true;
-            this.referenceMass.Width = 125;
             // 
             // chemicalResidueData
             // 
@@ -407,6 +350,54 @@
             this.label1.Text = "Indique nas tabelas abaixo os reagentes e resíduos químicos que são manipulados e" +
     "/ou gerados no local.";
             // 
+            // substance
+            // 
+            this.substance.HeaderText = "Substância";
+            this.substance.MinimumWidth = 6;
+            this.substance.Name = "substance";
+            this.substance.ReadOnly = true;
+            this.substance.Width = 125;
+            // 
+            // CASNumber
+            // 
+            this.CASNumber.HeaderText = "Nº CAS";
+            this.CASNumber.MinimumWidth = 6;
+            this.CASNumber.Name = "CASNumber";
+            this.CASNumber.ReadOnly = true;
+            this.CASNumber.Width = 125;
+            // 
+            // quantity
+            // 
+            this.quantity.HeaderText = "Quantidade";
+            this.quantity.MinimumWidth = 6;
+            this.quantity.Name = "quantity";
+            this.quantity.ReadOnly = true;
+            this.quantity.Width = 125;
+            // 
+            // measurementUnit
+            // 
+            this.measurementUnit.HeaderText = "Unidade de Medida";
+            this.measurementUnit.MinimumWidth = 6;
+            this.measurementUnit.Name = "measurementUnit";
+            this.measurementUnit.ReadOnly = true;
+            this.measurementUnit.Width = 125;
+            // 
+            // referenceMass
+            // 
+            this.referenceMass.HeaderText = "MR (kg)";
+            this.referenceMass.MinimumWidth = 6;
+            this.referenceMass.Name = "referenceMass";
+            this.referenceMass.ReadOnly = true;
+            this.referenceMass.Width = 125;
+            // 
+            // riskIndice
+            // 
+            this.riskIndice.HeaderText = "Índice de Risco";
+            this.riskIndice.MinimumWidth = 6;
+            this.riskIndice.Name = "riskIndice";
+            this.riskIndice.ReadOnly = true;
+            this.riskIndice.Width = 125;
+            // 
             // CalculateControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -414,6 +405,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "CalculateControl";
             this.Size = new System.Drawing.Size(795, 575);
+            this.Load += new System.EventHandler(this.CalculateControlBetter_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -452,9 +444,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn substance;
         private System.Windows.Forms.DataGridViewTextBoxColumn CASNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IDLH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PVAP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn category;
+        private System.Windows.Forms.DataGridViewTextBoxColumn measurementUnit;
         private System.Windows.Forms.DataGridViewTextBoxColumn referenceMass;
+        private System.Windows.Forms.DataGridViewTextBoxColumn riskIndice;
     }
 }

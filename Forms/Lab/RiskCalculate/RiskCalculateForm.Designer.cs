@@ -110,9 +110,9 @@
             this.navigationLayoutPanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.navigationLayoutPanel.ColumnCount = 1;
             this.navigationLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.navigationLayoutPanel.Controls.Add(this.generalInfoButton, 0, 3);
-            this.navigationLayoutPanel.Controls.Add(this.calculatePageButton, 0, 2);
-            this.navigationLayoutPanel.Controls.Add(this.chemicalAgentsButton, 0, 1);
+            this.navigationLayoutPanel.Controls.Add(this.generalInfoButton, 0, 1);
+            this.navigationLayoutPanel.Controls.Add(this.calculatePageButton, 0, 3);
+            this.navigationLayoutPanel.Controls.Add(this.chemicalAgentsButton, 0, 2);
             this.navigationLayoutPanel.Controls.Add(this.welcomeTabButton, 0, 0);
             this.navigationLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.navigationLayoutPanel.Location = new System.Drawing.Point(4, 4);
@@ -137,12 +137,13 @@
             this.generalInfoButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.generalInfoButton.FlatAppearance.BorderSize = 0;
             this.generalInfoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.generalInfoButton.Location = new System.Drawing.Point(11, 510);
+            this.generalInfoButton.Location = new System.Drawing.Point(11, 176);
             this.generalInfoButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.generalInfoButton.Name = "generalInfoButton";
-            this.generalInfoButton.Size = new System.Drawing.Size(77, 163);
+            this.generalInfoButton.Size = new System.Drawing.Size(77, 162);
             this.generalInfoButton.TabIndex = 3;
             this.generalInfoButton.UseVisualStyleBackColor = false;
+            this.generalInfoButton.Click += new System.EventHandler(this.generalInfoButton_Click);
             // 
             // calculatePageButton
             // 
@@ -152,10 +153,10 @@
             this.calculatePageButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.calculatePageButton.FlatAppearance.BorderSize = 0;
             this.calculatePageButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.calculatePageButton.Location = new System.Drawing.Point(11, 343);
+            this.calculatePageButton.Location = new System.Drawing.Point(11, 510);
             this.calculatePageButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.calculatePageButton.Name = "calculatePageButton";
-            this.calculatePageButton.Size = new System.Drawing.Size(77, 162);
+            this.calculatePageButton.Size = new System.Drawing.Size(77, 163);
             this.calculatePageButton.TabIndex = 2;
             this.calculatePageButton.UseVisualStyleBackColor = false;
             // 
@@ -167,13 +168,13 @@
             this.chemicalAgentsButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chemicalAgentsButton.FlatAppearance.BorderSize = 0;
             this.chemicalAgentsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chemicalAgentsButton.Location = new System.Drawing.Point(11, 176);
+            this.chemicalAgentsButton.Location = new System.Drawing.Point(11, 343);
             this.chemicalAgentsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chemicalAgentsButton.Name = "chemicalAgentsButton";
             this.chemicalAgentsButton.Size = new System.Drawing.Size(77, 162);
             this.chemicalAgentsButton.TabIndex = 1;
             this.chemicalAgentsButton.UseVisualStyleBackColor = false;
-            this.chemicalAgentsButton.Click += new System.EventHandler(this.button2_Click);
+            this.chemicalAgentsButton.Click += new System.EventHandler(this.chemicalAgentsButton_Click);
             // 
             // welcomeTabButton
             // 

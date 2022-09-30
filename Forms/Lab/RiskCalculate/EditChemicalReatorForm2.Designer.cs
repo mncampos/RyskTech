@@ -45,8 +45,8 @@
             this.referenceMassUpDown = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.concludeButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
+            this.concludeButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.agentQuantity)).BeginInit();
@@ -303,18 +303,6 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(847, 194);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
-            // concludeButton
-            // 
-            this.concludeButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.concludeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.concludeButton.Location = new System.Drawing.Point(214, 100);
-            this.concludeButton.Name = "concludeButton";
-            this.concludeButton.Size = new System.Drawing.Size(205, 91);
-            this.concludeButton.TabIndex = 0;
-            this.concludeButton.Text = "Concluir";
-            this.concludeButton.UseVisualStyleBackColor = true;
-            this.concludeButton.Click += new System.EventHandler(this.concludeButton_Click);
-            // 
             // cancelButton
             // 
             this.cancelButton.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -327,6 +315,18 @@
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
+            // concludeButton
+            // 
+            this.concludeButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.concludeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.concludeButton.Location = new System.Drawing.Point(214, 100);
+            this.concludeButton.Name = "concludeButton";
+            this.concludeButton.Size = new System.Drawing.Size(205, 91);
+            this.concludeButton.TabIndex = 0;
+            this.concludeButton.Text = "Concluir";
+            this.concludeButton.UseVisualStyleBackColor = true;
+            this.concludeButton.Click += new System.EventHandler(this.concludeButton_Click);
+            // 
             // EditChemicalReatorForm2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -336,6 +336,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditChemicalReatorForm2";
             this.Text = "Editar Reagente";
+            this.Load += new System.EventHandler(this.EditChemicalReatorForm2_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

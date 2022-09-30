@@ -13,12 +13,13 @@
 
         }
 
-        public ChemicalReactor(string name, float quantity, string measurementUnit, string casNumber)
+        public ChemicalReactor(string name, float quantity, string measurementUnit, string casNumber, float riskIndice)
         {
             this.name = name;
             this.casNumber = casNumber;
             this.quantity = quantity;
             this.measurementUnit = measurementUnit;
+            this.riskIndice = riskIndice;
             
         }
 

@@ -51,21 +51,21 @@ namespace RyskTech.Forms
             this.tableLayoutPanel1.Controls.Add(this.administrativeUnitButton, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.laboratoryButton, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 445);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 488);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(818, 84);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(841, 84);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // manualButton
             // 
             this.manualButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.manualButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.manualButton.Location = new System.Drawing.Point(554, 10);
+            this.manualButton.Location = new System.Drawing.Point(570, 10);
             this.manualButton.Margin = new System.Windows.Forms.Padding(10);
             this.manualButton.Name = "manualButton";
-            this.manualButton.Size = new System.Drawing.Size(254, 64);
+            this.manualButton.Size = new System.Drawing.Size(261, 64);
             this.manualButton.TabIndex = 2;
             this.manualButton.Text = "Conferir Manual";
             this.manualButton.UseVisualStyleBackColor = true;
@@ -75,10 +75,10 @@ namespace RyskTech.Forms
             // 
             this.administrativeUnitButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.administrativeUnitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.administrativeUnitButton.Location = new System.Drawing.Point(282, 10);
+            this.administrativeUnitButton.Location = new System.Drawing.Point(290, 10);
             this.administrativeUnitButton.Margin = new System.Windows.Forms.Padding(10);
             this.administrativeUnitButton.Name = "administrativeUnitButton";
-            this.administrativeUnitButton.Size = new System.Drawing.Size(252, 64);
+            this.administrativeUnitButton.Size = new System.Drawing.Size(260, 64);
             this.administrativeUnitButton.TabIndex = 1;
             this.administrativeUnitButton.Text = "Somos Uma Unidade Administrativa";
             this.administrativeUnitButton.UseVisualStyleBackColor = true;
@@ -91,7 +91,7 @@ namespace RyskTech.Forms
             this.laboratoryButton.Location = new System.Drawing.Point(10, 10);
             this.laboratoryButton.Margin = new System.Windows.Forms.Padding(10);
             this.laboratoryButton.Name = "laboratoryButton";
-            this.laboratoryButton.Size = new System.Drawing.Size(252, 64);
+            this.laboratoryButton.Size = new System.Drawing.Size(260, 64);
             this.laboratoryButton.TabIndex = 0;
             this.laboratoryButton.Text = "Somos Um Laboratório";
             this.laboratoryButton.UseVisualStyleBackColor = true;
@@ -122,9 +122,9 @@ namespace RyskTech.Forms
             // calculateRiskIndicebutton
             // 
             this.calculateRiskIndicebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.calculateRiskIndicebutton.Location = new System.Drawing.Point(35, 290);
+            this.calculateRiskIndicebutton.Location = new System.Drawing.Point(290, 397);
             this.calculateRiskIndicebutton.Name = "calculateRiskIndicebutton";
-            this.calculateRiskIndicebutton.Size = new System.Drawing.Size(154, 56);
+            this.calculateRiskIndicebutton.Size = new System.Drawing.Size(260, 64);
             this.calculateRiskIndicebutton.TabIndex = 4;
             this.calculateRiskIndicebutton.Text = "Calcular IR";
             this.calculateRiskIndicebutton.UseVisualStyleBackColor = true;
@@ -134,7 +134,7 @@ namespace RyskTech.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(818, 529);
+            this.ClientSize = new System.Drawing.Size(841, 572);
             this.Controls.Add(this.calculateRiskIndicebutton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.welcomeTextLabel);

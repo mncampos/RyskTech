@@ -1,4 +1,5 @@
 ﻿using RyskTech.Data;
+using RyskTech.Forms.Lab.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,12 +14,17 @@ namespace RyskTech.Forms.Lab.RiskCalculate
 {
     public partial class EditChemicalReatorForm2 : Form
     {
+        public GeneralInformationControl generalInformationControl;
         public ChemicalReactor createdAgent;
         private bool isEditMode;
 
         private Dictionary<string, string> substancesCasNumber = new Dictionary<string, string>();
         private Dictionary<string, string> referenceMass = new Dictionary<string, string>();
 
+        private void EditChemicalReatorForm2_Load(object sender, EventArgs e)
+        {
+            generalInformationControl = new GeneralInformationControl();
+        }
         private void getAgentNames()
         {
             string substanceString = Properties.Resources.substances;
@@ -50,12 +56,31 @@ namespace RyskTech.Forms.Lab.RiskCalculate
             }
 
         }
-        public EditChemicalReatorForm2(ChemicalReactor agent = null)
+        private float riskIndiceCalculation()
+        {
+            float distanceFactor = generalInformationControl.data.vulnerableAreaDistance;
+            float dangerFactor = (float)0.2 / (float)referenceMassUpDown.Value;
+            return dangerFactor / distanceFactor;
+        }
+
+        public EditChemicalReatorForm2(ChemicalReactor agent)
         {
             InitializeComponent();
             this.Text = "Adicionar Reagente";
 
             getAgentNames();
+
+            if (agent != null)
+            {
+                string[] origins = agent.origin.Split('\n');
+                string[] dangers = agent.dangerCharacteristics.Split('\n');
+                string[] containers = agent.container.Split('\n');            
+
+                chemicalAgentComboBox.Text = agent.name;
+                agentQuantity.Value = (decimal)agent.quantity;
+                measurementUnitComboBox.Text = agent.measurementUnit;
+                casNumberTextBox.Text = agent.casNumber;
+            }
         }
 
         private void chemicalAgentComboBox_SelectedValueChanged(object sender, EventArgs e)
@@ -81,13 +106,13 @@ namespace RyskTech.Forms.Lab.RiskCalculate
 
         private void concludeButton_Click(object sender, EventArgs e)
         {
-            string CAS = casNumberTextBox.Text;
             // Create agent
             ChemicalReactor new_agent = new ChemicalReactor(
                 chemicalAgentComboBox.Text,
                 (float)agentQuantity.Value,
                 measurementUnitComboBox.Text,
-                CAS
+                casNumberTextBox.Text,
+                riskIndiceCalculation()
                 );
 
             try
@@ -104,10 +129,12 @@ namespace RyskTech.Forms.Lab.RiskCalculate
             }
         }
 
+
         private void cancelButton_Click(object sender, EventArgs e)
         {
             this.createdAgent = null;
             this.Close();
         }
+
     }
 }

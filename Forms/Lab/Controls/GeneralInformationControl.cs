@@ -154,5 +154,8 @@ namespace RyskTech.Forms.Lab.Controls
         {
             data.vulnerableAreaDistance = (int)numericUpDown1.Value;
         }
+
+
+
     }
 }
